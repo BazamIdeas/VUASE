@@ -1,15 +1,10 @@
 export const state = () => ({
-  todos: [
-    { id: 1, body: 'Comprar comida', done: false },
-    { id: 2, body: 'Comprar televisor', done: false },
-    { id: 3, body: 'Comprar cama', done: false },
-    { id: 4, body: 'Comprar algo mas', done: false }
-  ]
+  todos: []
 })
 
 export const mutations = {
-  GET_TODO (state, todo) {
-    state.body = todo
+  GET_TODOS (state, todos) {
+    state.todos = todos
   },
   ADD_TODO (state, todo) {
     todo.id = state.todos.length + 1
@@ -30,20 +25,25 @@ export const mutations = {
   COMPLETE_TODO (state, id) {
     state.todos.map(todo => {
       if (todo.id === id) {
-        todo.done = !todo.done
+        todo.completed = !todo.completed
       }
     })
   },
   CLEAR_TODOS (state) {
     state.todos = state.todos.filter(todo => {
-      return !todo.done
+      return !todo.completed
     })
   }
 }
 
 export const actions = {
-  getTodo ({ commit }, todo) {
-    commit('GET_TODO', todo)
+  async getTodos ({ commit }) {
+    try {
+      const data = await this.$axios.$get('todos', { headers: { 'Content-Type': 'application/json' }, responseEncoding: 'utf8' })
+      commit('GET_TODOS', data)
+    } catch (err) {
+      console.log(err)
+    }
   },
   addTodo ({ commit }, todo) {
     commit('ADD_TODO', todo)

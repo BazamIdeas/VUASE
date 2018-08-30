@@ -56,13 +56,13 @@
             <v-card color="blue-grey lighten-4" class="white--text mx-2 mb-5" transition="scale-transition" origin="center center">
               <v-card-text>
                 <div>
-                  <v-checkbox  v-if="edit == null || edit !== todo.id" @change="completeTodo(todo.id)" :label="todo.body + '.'" :value="todo.done" color="green"></v-checkbox>
+                  <v-checkbox  v-if="edit == null || edit !== todo.id" @change="completeTodo(todo.id)" :label="todo.title + '.'" :value="todo.completed" input-value="todo.completed" color="green"></v-checkbox>
                 </div>
                 <div>
                   <v-btn v-if="edit == null || edit !== todo.id" @click="toEditTodo(todo.id)" color="yellow darken-4" class="elevation-0" style="width:100%; margin:0" small dark>
                     Editar
                   </v-btn>
-                  <v-text-field v-if="edit === todo.id" v-validate.initial="'required'" name="body_edit" v-on:keyup.enter="editTodo(todo.id, $event)" :value="todo.body" :error-messages="errors.first('body_edit')" label="Editar" autofocus flat solo></v-text-field>
+                  <v-text-field v-if="edit === todo.id" v-validate.initial="'required'" name="body_edit" v-on:keyup.enter="editTodo(todo.id, $event)" :value="todo.title" :error-messages="errors.first('body_edit')" label="Editar" autofocus flat solo></v-text-field>
                 </div>
               </v-card-text>
               <v-card-actions>
@@ -109,24 +109,30 @@
         completados: 0
       }
     },
+    async fetch ({ store, params }) {
+      await store.dispatch('getTodos')
+    },
     watch: {
       todos: {
         handler (val, oldVal) {
           var n = 0
           val.forEach(todo => {
-            if (todo.done === true) n++
+            if (todo.completed === true) n++
           })
           this.completados = n ? 1 : 0
         },
         deep: true
       }
     },
+    mounted () {
+      this.$toast.show('Bienvenido a la aplicación')
+    },
     computed: {
       todos () { return this.$store.state.todos }
     },
     methods: {
       addTodo () {
-        this.$store.dispatch('addTodo', { body: this.body, done: false })
+        this.$store.dispatch('addTodo', { body: this.body, completed: false })
         this.body = ''
       },
       editTodo (id, e) {
@@ -152,9 +158,11 @@
     filters: {
       byStatus: function (todos, status) {
         var n = 0
-        todos.forEach(todo => {
-          if (todo.done === status) n++
-        })
+        if (Array.isArray(todos)) {
+          todos.forEach(todo => {
+            if (todo.completed === status) n++
+          })
+        }
         return n
       }
     }

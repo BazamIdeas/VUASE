@@ -2,25 +2,31 @@ const nodeExternals = require('webpack-node-externals')
 const resolve = (dir) => require('path').join(__dirname, dir)
 
 module.exports = {
+  srcDir: 'src/',
   /*
   ** Headers of the page
   */
   head: {
-    title: 'nuxt',
+    title: 'liderlogo',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js + Vuetify.js project' }
+      { hid: 'description', name: 'description', content: 'Lorem Ipsum' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/toast'
+  ],
   plugins: [
     '~/plugins/vuetify.js',
     { src: '~/plugins/vee-validate.js', ssr: true },
     { src: '~/plugins/vue2-storage.js', ssr: false },
+    { src: '~/plugins/axios.js', ssr: true }
   ],
   css: [
     '~/assets/style/app.styl'
@@ -32,6 +38,18 @@ module.exports = {
   /*
   ** Build configuration
   */
+  axios: {
+    baseURL: 'https://jsonplaceholder.typicode.com/',
+    browserBaseURL: 'https://jsonplaceholder.typicode.com/',
+    retry: { retries: 3 },
+    debug: false
+  },
+  toast: {
+    position: 'top-right',
+    duration: 40000,
+    className: 'toast',
+    singleton: true
+  },
   build: {
     babel: {
       plugins: [
@@ -47,6 +65,7 @@ module.exports = {
       '~/plugins/vuetify.js',
       '~/plugins/vee-validate.js',
       '~/plugins/vue2-storage.js',
+      '~/plugins/axios.js',
     ],
     extractCSS: true,
     /*
