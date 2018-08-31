@@ -3,6 +3,9 @@ const resolve = (dir) => require('path').join(__dirname, dir)
 
 module.exports = {
   srcDir: 'src/',
+  serverMiddleware: [
+    '~~/server_middleware/geoip'
+  ],
   /*
   ** Headers of the page
   */
