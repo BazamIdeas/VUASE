@@ -10,10 +10,10 @@ export const mutations = {
     todo.id = state.todos.length + 1
     state.todos.push(todo)
   },
-  EDIT_TODO (state, { id, body }) {
+  EDIT_TODO (state, { id, title }) {
     state.todos.map(todo => {
       if (todo.id === id) {
-        todo.body = body
+        todo.title = title
       }
     })
   },
@@ -33,6 +33,12 @@ export const mutations = {
     state.todos = state.todos.filter(todo => {
       return !todo.completed
     })
+  }
+}
+
+export const getters = {
+  completedTodos: state => {
+    return state.todos.filter(todo => todo.completed)
   }
 }
 

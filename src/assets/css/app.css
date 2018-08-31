@@ -1,0 +1,8 @@
+.toasted.toast {
+    font-family: 'Roboto', sans-serif;
+}
+
+.toasted-container.top-right {
+    top: 2% !important;
+    right: 2% !important;
+}

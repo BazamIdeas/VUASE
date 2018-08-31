@@ -29,7 +29,8 @@ module.exports = {
     { src: '~/plugins/axios.js', ssr: true }
   ],
   css: [
-    '~/assets/style/app.styl'
+    '~/assets/style/app.styl',
+    '~/assets/css/app.css'
   ],
   /*
   ** Customize the progress bar color
@@ -46,11 +47,12 @@ module.exports = {
   },
   toast: {
     position: 'top-right',
-    duration: 40000,
+    duration: 2000,
     className: 'toast',
     singleton: true
   },
   build: {
+    cssSourceMap: false,
     babel: {
       plugins: [
         ["transform-imports", {
