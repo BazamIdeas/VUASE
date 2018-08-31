@@ -1,5 +1,7 @@
 export const state = () => ({
-  todos: []
+  index: {
+    title: 'Hola mundo'
+  }
 })
 
 export const mutations = {
