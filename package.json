@@ -18,7 +18,7 @@
     "nuxt": "^1.0.0",
     "vee-validate": "^2.0.3",
     "vue2-storage": "^3.3.0",
-    "vuetify": "^1.0.0"
+    "vuetify": "^1.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
