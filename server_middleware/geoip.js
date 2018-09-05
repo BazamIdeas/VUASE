@@ -6,7 +6,7 @@ module.exports = function (req, res, next) {
   let query = url.parse(req.url, true).query
 
   let ip = null
-  console.log(query)
+  //console.log(query)
 
   if (query && query.pais){
     req.iso = query.pais
