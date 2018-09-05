@@ -1,6 +1,6 @@
 <template>
   
-<h1>{{name}}</h1>
+<h1>PAIS: {{pais}}</h1>
 </template>
 
 <script>
@@ -8,7 +8,7 @@
 export default {
   asyncData (context) {
     // called every time before loading the component
-    return { name: 'World' }
+    return { pais: context.res }
   }
   // and more functionality to discover
 }
