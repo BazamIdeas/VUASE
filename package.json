@@ -5,7 +5,7 @@
   "author": "Daniel Torres (danieljtorres94@gmail.com)",
   "private": true,
   "scripts": {
-    "dev": "cross-env HOST=0.0.0.0 PORT=3000 nuxt",
+    "dev": "nodemon --watch server_middleware --exec \"nuxt\"",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/toast": "^3.0.1",
+    "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",
     "mmdb-reader": "^1.2.0",
     "nuxt": "^1.0.0",
@@ -31,6 +32,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.18.4",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
   }

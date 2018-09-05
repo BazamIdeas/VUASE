@@ -1,10 +1,12 @@
 const nodeExternals = require('webpack-node-externals')
+const bodyParser = require('body-parser')
 const resolve = (dir) => require('path').join(__dirname, dir)
 
 module.exports = {
   srcDir: 'src/',
   serverMiddleware: [
-    '~~/server_middleware/geoip'
+    '~~/server_middleware/geoip',
+    '~~/server_middleware/redireccion'
   ],
   /*
   ** Headers of the page
