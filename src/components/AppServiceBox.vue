@@ -1,0 +1,155 @@
+<template>
+  <v-layout v-resize="showBorders" row wrap class="service-box-container px-3 pt-5 pb-2" :class="{ 'br': br && borders, 'bb': bb && borders, 'bt': bt && borders }">
+    <v-flex xs12 v-if="name" class="service-box-title" align-content-center>
+      <v-img src="/images/services/icono-2.png" width="50" max-width="50" class="mr-2" style="float: left;"></v-img>
+      <div>
+        <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
+        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ currency }} {{ price }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }">comenzar</v-btn>
+      </div>
+    </v-flex>
+    <v-flex xs12 v-if="description" class="service-box-description">
+      <br>
+      <p class="caption font-weight-medium">{{description}}</p>
+    </v-flex>
+    <v-flex xs12 v-if="list && list.length" class="service-box-list">
+      <ul :class="{ 'outstanding': outstanding }">
+        <li v-for="(item, i) in list" :key="i" class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
+        <li class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
+        <li class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
+        <li class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
+      </ul>
+    </v-flex>
+    <v-flex xs12 v-if="startButton" class="service-box-more-button">
+      <v-btn flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
+        conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+      </v-btn>
+    </v-flex>
+  </v-layout>
+</template>
+
+<script>
+  export default {
+    props: {
+      icon: String,
+      name: String,
+      price: Number | String,
+      currency: {
+        default: '$',
+        type: String
+      },
+      description: String,
+      list: {
+        type: Array
+      },
+      startButton: {
+        default: false,
+        type: Boolean
+      },
+      br: {
+        default: false,
+        type: Boolean
+      },
+      bb: {
+        default: false,
+        type: Boolean
+      },
+      bt: {
+        default: false,
+        type: Boolean
+      },
+      outstanding: {
+        default: false,
+        type: Boolean
+      }
+    },
+    data () {
+      return {
+        borders: false
+      }
+    },
+    mounted () {
+      this.showBorders()
+    },
+    methods: {
+      showBorders () {
+        if (window.innerWidth > 960) {
+          this.borders = true
+        } else {
+          this.borders = false
+        }
+      }
+    },
+    filters: {
+      uppercase (value) {
+        return value.toUpperCase()
+      }
+    }
+  }
+</script>
+
+<style scoped>
+
+  .layout.service-box-container {
+    position: relative;
+  }
+
+  .service-box-container.bt:after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #a5a5a5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .service-box-container.bb:before {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #a5a5a5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .service-box-container.br:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #a5a5a5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  *, button.v-btn{
+    color: #5e5e5e;
+    font-weight: 700;
+  }
+
+  .outstanding {
+    color: #4a6eb4 !important;
+  }
+
+  button.v-btn.outstanding-button {
+    font-weight: 700;
+    color: #4a6eb4 !important;
+    border: 1px solid #4a6eb4 !important;
+  }
+
+  button.v-btn.v-btn--outline {
+    border: 1px solid #5e5e5e;
+    font-weight: 700;
+  }
+
+  .service-box-list ul, .service-box-list ol {
+    padding-left: 17px;
+    list-style-image: url('/images/icons/check.png');
+  }
+
+  .service-box-list ul.outstanding, .service-box-list ol.outstanding {
+    padding-left: 17px;
+    list-style-image: url('/images/icons/check-blue.png');
+  }
+</style>

@@ -1,47 +1,35 @@
 export const state = () => ({
-  index: {
-    title: 'Hola mundo'
+  app: {
+    links: {
+      header: [
+        { url: '/nuestros-servicios', title: 'Servicios' },
+        { url: '/ejemplos', title: 'Ejemplos' },
+        { url: '/precios', title: 'Precios' },
+        { url: 'servicios-profesionales', title: 'Servicios Profesionales' },
+        { url: '/contacto', title: 'Contacto' }
+      ],
+      footer: [
+        { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },
+        { url: '/avisos-legales', title: 'AVISO LEGAL' },
+        { url: '/terminos-y-condiciones', title: 'TÉRMINOS Y CONDICIONES' },
+        { url: '#', title: 'BLOG' }
+      ],
+      whatsapp: '#'
+    },
+    drawer: false
   }
 })
 
 export const mutations = {
-  GET_TODOS (state, todos) {
-    state.todos = todos
+  GET_TODOS (state, data) {
+    console.log(data)
   },
-  ADD_TODO (state, todo) {
-    todo.id = state.todos.length + 1
-    state.todos.push(todo)
-  },
-  EDIT_TODO (state, { id, title }) {
-    state.todos.map(todo => {
-      if (todo.id === id) {
-        todo.title = title
-      }
-    })
-  },
-  REMOVE_TODO (state, id) {
-    state.todos = state.todos.filter(todo => {
-      return todo.id !== id
-    })
-  },
-  COMPLETE_TODO (state, id) {
-    state.todos.map(todo => {
-      if (todo.id === id) {
-        todo.completed = !todo.completed
-      }
-    })
-  },
-  CLEAR_TODOS (state) {
-    state.todos = state.todos.filter(todo => {
-      return !todo.completed
-    })
+  SHOW_DRAWER (state, value) {
+    state.app.drawer = value !== undefined ? value : !state.app.drawer
   }
 }
 
 export const getters = {
-  completedTodos: state => {
-    return state.todos.filter(todo => todo.completed)
-  }
 }
 
 export const actions = {
@@ -53,19 +41,7 @@ export const actions = {
       console.log(err)
     }
   },
-  addTodo ({ commit }, todo) {
-    commit('ADD_TODO', todo)
-  },
-  editTodo ({ commit }, playload) {
-    commit('EDIT_TODO', playload)
-  },
-  removeTodo ({ commit }, id) {
-    commit('REMOVE_TODO', id)
-  },
-  completeTodo ({ commit }, id) {
-    commit('COMPLETE_TODO', id)
-  },
-  clearTodos ({ commit }) {
-    commit('CLEAR_TODOS')
+  showDrawer ({ commit }, value) {
+    commit('SHOW_DRAWER', value)
   }
 }

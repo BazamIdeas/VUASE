@@ -20,7 +20,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css" }
+
     ]
   },
   modules: [
@@ -31,7 +33,8 @@ module.exports = {
     '~/plugins/vuetify.js',
     { src: '~/plugins/vee-validate.js', ssr: true },
     { src: '~/plugins/vue2-storage.js', ssr: false },
-    { src: '~/plugins/axios.js', ssr: true }
+    { src: '~/plugins/axios.js', ssr: true },
+    { src: '~/plugins/components.js', ssr: true }
   ],
   css: [
     '~/assets/style/app.styl',
@@ -40,7 +43,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#004b7b' },
   /*
   ** Build configuration
   */
@@ -73,6 +76,7 @@ module.exports = {
       '~/plugins/vee-validate.js',
       '~/plugins/vue2-storage.js',
       '~/plugins/axios.js',
+      '~/plugins/components.js'
     ],
     extractCSS: true,
     /*

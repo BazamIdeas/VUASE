@@ -18,7 +18,7 @@ module.exports = function (req, res, next) {
     let paises =  {
       "AR" : "liderlogo.com",
       "ES" : "liderlogo.es"
-      }
+    }
 
     if (paises[iso]){
       if (paises[iso] == dominio){

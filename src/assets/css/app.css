@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/Montserrat-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Montserrat-ExtraBold.ttf) format('truetype');
+}
+
+* {
+    font-family: 'montserrat';
+}
+
+.display-4, .display-3, .display-2, .display-1, .headline, .title, .subheading, .body-2, .body-1, .caption {
+    font-family: 'montserrat' !important;
+} 
+
 .toasted.toast {
     font-family: 'Roboto', sans-serif;
 }
@@ -5,4 +41,27 @@
 .toasted-container.top-right {
     top: 2% !important;
     right: 2% !important;
+}
+
+div.v-carousel__controls {
+    background: none;
+}
+
+@media all and (min-height: 300px) {
+    .v-carousel.main-carousel {
+        height: 100vh;
+        min-height: 640px;
+    }
+}
+
+.v-btn__content {
+    font-weight: 700 !important;
+}
+
+.v-messages__message {
+    line-height: 16px;
+}
+
+input, textarea, label.v-label, .v-messages {
+    font-weight: 500;
 }
