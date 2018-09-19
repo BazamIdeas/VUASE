@@ -21,10 +21,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  GET_TODOS (state, data) {
-    console.log(data)
-  },
-  SHOW_DRAWER (state, value) {
+  TOGGLE_DRAWER (state, value) {
     state.app.drawer = value !== undefined ? value : !state.app.drawer
   }
 }
@@ -33,15 +30,19 @@ export const getters = {
 }
 
 export const actions = {
-  async getTodos ({ commit }) {
-    try {
-      const data = await this.$axios.$get('todos', { headers: { 'Content-Type': 'application/json' }, responseEncoding: 'utf8' })
-      commit('GET_TODOS', data)
-    } catch (err) {
-      console.log(err)
-    }
+  toggleDrawer ({ commit }, value) {
+    commit('TOGGLE_DRAWER', value)
   },
-  showDrawer ({ commit }, value) {
-    commit('SHOW_DRAWER', value)
+  async nuxtServerInit ({ dispatch }, { $axios, req }) {
+    let countries = []
+    let countriesObj = {}
+    try { countries = await $axios.$get('countries') } catch (error) { console.log(error) }
+    if (countries.length) {
+      countries.forEach(country => {
+        countriesObj[country.iso] = country
+      })
+    }
+    let country = countriesObj[req.iso] ? countriesObj[req.iso] : countriesObj['US'] ? countriesObj['US'] : null
+    dispatch('countries/setData', country)
   }
 }

@@ -5,23 +5,33 @@ export const state = () => ({
     { icon: '/icons/folletos_y_publicidades_hover.svg', name: 'Folletos y Publicidades' },
     { icon: '/icons/rotulo_hover.svg', name: 'Rotulos' },
     { icon: '/images/services/icono-1.png', name: 'Perfiles de Redes Sociales' }
-  ]
+  ],
+  list: []
 })
 
 export const mutations = {
-  GET_TODOS (state, todos) {
-    state.todos = todos
+  GET_ALL (state, services) {
+    state.list = services
   }
 }
 
 export const getters = {
-  completedTodos: state => {
-    return state.todos.filter(todo => todo.completed)
+  getBySlug: (state) => (slug) => {
+    return state.list.find(el => el.slug === slug)
+  },
+  forSelectField (state) {
+    let formattedServices = state.list.map(x => { return { text: x.name, field: x.slug } })
+    return [{ text: 'Todos los servicios', field: 'servicios' }].concat(formattedServices)
   }
 }
 
 export const actions = {
-  async getTodos ({ commit }) {
-    commit('GET_TODOS')
+  async getAll ({ rootState, commit }) {
+    try {
+      let services = await this.$axios.$get('services')
+      commit('GET_ALL', services)
+    } catch (error) {
+      console.log(error)
+    }
   }
 }

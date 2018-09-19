@@ -8,6 +8,7 @@ module.exports = {
     '~~/server_middleware/geoip',
     '~~/server_middleware/redireccion'
   ],
+
   /*
   ** Headers of the page
   */
@@ -31,6 +32,7 @@ module.exports = {
   ],
   plugins: [
     '~/plugins/vuetify.js',
+    // { src: '~/plugins/watch-countries.js', ssr: true },
     { src: '~/plugins/vee-validate.js', ssr: true },
     { src: '~/plugins/vue2-storage.js', ssr: false },
     { src: '~/plugins/axios.js', ssr: true },
@@ -48,8 +50,8 @@ module.exports = {
   ** Build configuration
   */
   axios: {
-    baseURL: 'https://jsonplaceholder.typicode.com/',
-    browserBaseURL: 'https://jsonplaceholder.typicode.com/',
+    baseURL: 'http://192.168.0.19:9090/v1/',
+    browserBaseURL: 'http://192.168.0.19:9090/v1/',
     retry: { retries: 3 },
     debug: false
   },
@@ -72,6 +74,7 @@ module.exports = {
       ]
     },
     vendor: [
+      // '~/plugins/watch-countries.js',
       '~/plugins/vuetify.js',
       '~/plugins/vee-validate.js',
       '~/plugins/vue2-storage.js',

@@ -17,7 +17,7 @@
               </div>
             </v-flex>
             <v-flex xs12 md6 v-if="list && list.length" class="service-box-list" justify-center>
-              <ul :class="{ 'outstanding': outstanding }">
+              <ul>
                 <li v-for="(item, i) in list" :key="i" class="body-2">Lorem ipsum es un texto de prueba para</li>
                 <li class="body-2">Lorem ipsum es un texto de prueba para</li>
                 <li class="body-2">Lorem ipsum es un texto de prueba para</li>

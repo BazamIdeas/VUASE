@@ -156,7 +156,6 @@
       }
     },
     mounted () {
-      this.$store.dispatch('getTodos')
     }
   }
 </script>

@@ -22,7 +22,7 @@
     methods: {
       hiddenOnResize () {
         if (window.innerWidth > 960) {
-          this.$store.dispatch('showDrawer', false)
+          this.$store.dispatch('toggleDrawer', false)
         }
       }
     },

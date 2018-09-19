@@ -34,6 +34,14 @@
           </v-layout>
         </v-radio-group>
       </v-flex>
+      <v-flex order-md3>
+        <v-tooltip right color="white darken-3 light-green--text text--darken-2" class="hidden-md-and-down">
+          <v-btn slot="activator" fab dark small class="elevation-1 ws-float-btn">
+            <v-icon>fab fa-whatsapp</v-icon>
+          </v-btn>
+          <span>{{ countryData.phone }}</span>
+        </v-tooltip>
+      </v-flex> 
     </v-layout>
   </v-form>
 </template>
@@ -45,11 +53,15 @@
         name: '',
         email: '',
         message: '',
+        phone: '',
         times: [
           'Hola'
         ],
         for_phone: true
       }
+    },
+    computed: {
+      countryData () { return this.$store.state.countries.data }
     },
     methods: {
       submit () {
@@ -66,4 +78,8 @@
 </script>
 
 <style scoped>
+  .ws-float-btn {
+    background-color: #87C438 !important;
+  }
+
 </style>

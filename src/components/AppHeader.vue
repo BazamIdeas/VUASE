@@ -11,10 +11,10 @@
       <v-btn slot="activator" fab dark small class="elevation-1 ws-float-btn">
         <v-icon>fab fa-whatsapp</v-icon>
       </v-btn>
-      <span>+54 9 339 0000 453</span>
+      <span>{{ countryData.phone }}</span>
     </v-tooltip>
     <v-spacer></v-spacer>
-    <v-toolbar-side-icon @click.stop="$store.dispatch('showDrawer')" class="hidden-md-and-up"></v-toolbar-side-icon>
+    <v-toolbar-side-icon @click.stop="$store.dispatch('toggleDrawer')" class="hidden-md-and-up"></v-toolbar-side-icon>
   </v-toolbar>
 </template>
 
@@ -22,7 +22,8 @@
   export default {
     name: 'app-header',
     computed: {
-      links () { return this.$store.state.app.links.header }
+      links () { return this.$store.state.app.links.header },
+      countryData () { return this.$store.state.countries.data }
     }
   }
 </script>

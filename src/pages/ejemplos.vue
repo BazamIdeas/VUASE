@@ -9,8 +9,8 @@
         <v-flex xs12>
           <nuxt-child :key="$route.params.servicio" />
         </v-flex>
-        <v-flex xs12>
-          No cambio
+        <v-flex xs3 v-for="portfolio in portfolios" :key="portfolio.id">
+          {{ portfolio.id }} - {{ portfolio.name }}
         </v-flex>
       </v-layout>
     </v-container>
@@ -21,6 +21,12 @@
   export default {
     asyncData ({ params }) {
       return { params: params }
+    },
+    async fetch ({ store }) {
+      await store.dispatch('portfolios/getAll')
+    },
+    computed: {
+      portfolios () { return this.$store.state.portfolios.list }
     }
   }
 </script>

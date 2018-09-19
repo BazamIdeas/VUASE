@@ -35,7 +35,7 @@
           return this.$store.state.app.drawer
         },
         set: function (newValue) {
-          this.$store.dispatch('showDrawer', newValue)
+          this.$store.dispatch('toggleDrawer', newValue)
         }
       }
     }

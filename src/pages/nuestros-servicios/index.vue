@@ -5,6 +5,9 @@
     <transition appear :name="transitionGroupContent">
       <v-container d-block grid-list-md text-xs-left v-if="groupContent == 0" key="0">
         <v-layout row wrap class="mb-5">
+          <v-flex xs12>
+            {{ services }}
+          </v-flex>
           <v-flex xs12 md4>
             <AppServiceBox br outstanding name="Lorem Ipsum" currency="$" price="13.4" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" :list="['asdad']" start-button />
           </v-flex>
@@ -62,8 +65,8 @@
 
 <script>
   export default {
-    asyncData (context) {
-      return { name: 'NUESTROS SERVICIOS' }
+    async fetch ({ store }) {
+      await store.dispatch('services/getAll')
     },
     data () {
       return {
@@ -75,13 +78,14 @@
         ]
       }
     },
+    computed: {
+      services () { return this.$store.state.services.list },
+      getBySlug (slug) { return this.$store.getters.services.getBySlug(slug) }
+    },
     methods: {
       setGroup: function (index) {
-        if (this.groupContent < index) {
-          this.transitionGroupContent = 'slide-x-reverse-transition'
-        } else {
-          this.transitionGroupContent = 'slide-x-transition'
-        }
+        if (this.groupContent < index) this.transitionGroupContent = 'slide-x-reverse-transition'
+        else this.transitionGroupContent = 'slide-x-transition'
         this.groupContent = index
       }
     }
