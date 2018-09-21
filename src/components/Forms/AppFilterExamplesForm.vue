@@ -26,13 +26,6 @@
         type: Object
       }
     },
-    created () {
-      this.$store.dispatch('services/getAll')
-      if (this.params.servicio) this.$store.dispatch('sectors/getAll')
-      if (this.params.sector) this.$store.dispatch('sectors/activities/getAll')
-      if (this.params.actividad) this.$store.dispatch('countries/getAll')
-      if (this.params.pais) this.$store.dispatch('countries/locations/getAll')
-    },
     data () {
       return {
         paramsData: this.params
@@ -55,17 +48,15 @@
       redirect (event, action, index) {
         if (event === undefined || event === 'undefined') return
         if (action) this.$store.dispatch(action)
-
         let route = this.$router.currentRoute.path.split('/').filter(el => el !== '')
-
         if (route[index]) {
+          route.splice(index)
           route[index] = event
           route = '/' + route.join('/')
         } else {
           route.push(event)
           route = '/' + route.join('/')
         }
-
         this.$router.push(route)
       }
     }

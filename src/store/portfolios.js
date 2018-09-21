@@ -13,6 +13,7 @@ export const getters = {
 
 export const actions = {
   async getAll ({ rootGetters, commit }, params) {
+    console.log(params)
     let requestParams = {}
     if (params) {
       if (params.servicio && rootGetters['services/getBySlug'](params.servicio)) {
@@ -33,12 +34,12 @@ export const actions = {
     }
 
     try {
-      let portfolios = await this.$axios.$get('portfolios', {
+      let portfolios = await this.$axios.$get('portfolios/custom-search', {
         params: requestParams
       })
       commit('GET_ALL', portfolios)
     } catch (error) {
-      console.log(error)
+      if (error.response.status === 404) commit('GET_ALL', [])
     }
   }
 }

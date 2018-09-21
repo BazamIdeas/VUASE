@@ -15,3 +15,7 @@ export { default as AppServicesCarousel } from './Carousels/AppServicesCarousel.
 // FORMS
 export { default as AppContactForm } from './Forms/AppContactForm.vue'
 export { default as AppFilterExamplesForm } from './Forms/AppFilterExamplesForm.vue'
+
+// FORMS BRIEF STEPS
+
+export { default as AppStepProgressBar } from './Forms/Brief/AppStepProgressBar.vue'
