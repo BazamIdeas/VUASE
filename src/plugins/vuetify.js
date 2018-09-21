@@ -51,12 +51,14 @@ import {
   VSystemBar,
   VTabs,
   VTextField,
+  VTextarea,
   VTimePicker,
   VToolbar,
   VTooltip,
+  VImg,
   transitions
 } from 'vuetify'
-import directives from 'vuetify/es5/directives'
+import resize from 'vuetify/es5/directives/resize'
 
 Vue.use(Vuetify, {
   components: {
@@ -110,10 +112,14 @@ Vue.use(Vuetify, {
     VSystemBar,
     VTabs,
     VTextField,
+    VTextarea,
     VTimePicker,
     VToolbar,
     VTooltip,
+    VImg,
     transitions
   },
-  directives
+  directives: {
+    resize: resize
+  }
 })

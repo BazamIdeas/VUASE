@@ -5,7 +5,7 @@
   "author": "Daniel Torres (danieljtorres94@gmail.com)",
   "private": true,
   "scripts": {
-    "dev": "nodemon --watch server_middleware --exec \"nuxt\"",
+    "dev": "nodemon --watch server_middleware --exec \"cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 nuxt\"",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -13,13 +13,15 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/toast": "^3.0.1",
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",
     "mmdb-reader": "^1.2.0",
+    "mpm": "0.0.1",
     "nuxt": "^1.0.0",
     "vee-validate": "^2.0.3",
     "vue2-storage": "^3.3.0",
-    "vuetify": "^1.0.0"
+    "vuetify": "^1.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

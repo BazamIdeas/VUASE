@@ -5,7 +5,8 @@
 <script>
   export default {
     asyncData ({ params }) {
-      return { name: 'EJEMPLOS' }
+      // called every time before loading the component
+      return { params }
     }
   }
 </script>

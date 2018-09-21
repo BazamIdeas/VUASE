@@ -1,71 +1,48 @@
 export const state = () => ({
-  index: {
-    title: 'Hola mundo'
+  app: {
+    links: {
+      header: [
+        { url: '/nuestros-servicios', title: 'Servicios' },
+        { url: '/ejemplos', title: 'Ejemplos' },
+        { url: '/precios', title: 'Precios' },
+        { url: 'servicios-profesionales', title: 'Servicios Profesionales' },
+        { url: '/contacto', title: 'Contacto' }
+      ],
+      footer: [
+        { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },
+        { url: '/avisos-legales', title: 'AVISO LEGAL' },
+        { url: '/terminos-y-condiciones', title: 'TÉRMINOS Y CONDICIONES' },
+        { url: '#', title: 'BLOG' }
+      ],
+      whatsapp: '#'
+    },
+    drawer: false
   }
 })
 
 export const mutations = {
-  GET_TODOS (state, todos) {
-    state.todos = todos
-  },
-  ADD_TODO (state, todo) {
-    todo.id = state.todos.length + 1
-    state.todos.push(todo)
-  },
-  EDIT_TODO (state, { id, title }) {
-    state.todos.map(todo => {
-      if (todo.id === id) {
-        todo.title = title
-      }
-    })
-  },
-  REMOVE_TODO (state, id) {
-    state.todos = state.todos.filter(todo => {
-      return todo.id !== id
-    })
-  },
-  COMPLETE_TODO (state, id) {
-    state.todos.map(todo => {
-      if (todo.id === id) {
-        todo.completed = !todo.completed
-      }
-    })
-  },
-  CLEAR_TODOS (state) {
-    state.todos = state.todos.filter(todo => {
-      return !todo.completed
-    })
+  TOGGLE_DRAWER (state, value) {
+    state.app.drawer = value !== undefined ? value : !state.app.drawer
   }
 }
 
 export const getters = {
-  completedTodos: state => {
-    return state.todos.filter(todo => todo.completed)
-  }
 }
 
 export const actions = {
-  async getTodos ({ commit }) {
-    try {
-      const data = await this.$axios.$get('todos', { headers: { 'Content-Type': 'application/json' }, responseEncoding: 'utf8' })
-      commit('GET_TODOS', data)
-    } catch (err) {
-      console.log(err)
+  toggleDrawer ({ commit }, value) {
+    commit('TOGGLE_DRAWER', value)
+  },
+  async nuxtServerInit ({ dispatch }, { $axios, req }) {
+    let countries = []
+    let countriesObj = {}
+    try { countries = await $axios.$get('countries') } catch (error) { console.log(error) }
+    if (countries.length) {
+      countries.forEach(country => {
+        countriesObj[country.iso] = country
+      })
     }
-  },
-  addTodo ({ commit }, todo) {
-    commit('ADD_TODO', todo)
-  },
-  editTodo ({ commit }, playload) {
-    commit('EDIT_TODO', playload)
-  },
-  removeTodo ({ commit }, id) {
-    commit('REMOVE_TODO', id)
-  },
-  completeTodo ({ commit }, id) {
-    commit('COMPLETE_TODO', id)
-  },
-  clearTodos ({ commit }) {
-    commit('CLEAR_TODOS')
+    let country = countriesObj[req.iso] ? countriesObj[req.iso] : countriesObj['US'] ? countriesObj['US'] : null
+    dispatch('countries/setData', country)
   }
 }

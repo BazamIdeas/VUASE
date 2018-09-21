@@ -3,14 +3,12 @@ const url = require("url");
 
 module.exports = function (req, res, next) {
 
-  let query = url.parse(req.url, true).query
+  let query = url.parse(req.url, true).query;
 
-  let ip = null
-  //console.log(query)
+  let ip = null;
 
-  if (query && query.pais){
+  if (query && query.pais) {
     req.iso = query.pais
-
     next()
   }
 
@@ -20,7 +18,7 @@ module.exports = function (req, res, next) {
     req.iso = reader.lookup(ip).country.iso_code
   }
 
-  else{
+  else {
     req.iso = "VE"
   }
 
