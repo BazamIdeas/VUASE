@@ -2,6 +2,9 @@ const nodeExternals = require('webpack-node-externals')
 const bodyParser = require('body-parser')
 const resolve = (dir) => require('path').join(__dirname, dir)
 
+let axiosUrl = 'http://api.liderlogos.com/v1/'
+if (process.env.NODE_ENV === 'production') axiosUrl = 'http://api.liderlogos.com/v1/'
+
 module.exports = {
   srcDir: 'src/',
   serverMiddleware: [
@@ -50,10 +53,10 @@ module.exports = {
   ** Build configuration
   */
   axios: {
-    baseURL: 'http://192.168.0.19:9090/v1/',
-    browserBaseURL: 'http://192.168.0.19:9090/v1/',
+    baseURL: axiosUrl,
+    browserBaseURL: axiosUrl,
     retry: { retries: 3 },
-    debug: false
+    debug: (process.env.NODE_ENV !== 'production')
   },
   toast: {
     position: 'top-right',

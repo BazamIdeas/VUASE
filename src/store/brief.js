@@ -8,7 +8,7 @@ export const state = () => ({
           label: 'Promocionar un servicio o producto',
           includes: ['logo-a-medida'],
           secciones: 1
-        },
+        }
       },
       amount: 0,
       priority: false
@@ -30,7 +30,7 @@ export const state = () => ({
     },
     infomation: null,
     pay: {}
-  },
+  }
 })
 
 export const mutations = {
