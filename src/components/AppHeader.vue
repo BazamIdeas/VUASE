@@ -1,7 +1,7 @@
 <template>
   <v-toolbar class="transparent" height="100" flat style="position:absolute; z-index: 4;">
     <v-spacer class="hidden-md-and-down"></v-spacer>
-    <nuxt-link to="/" style="height: 36px"><img src="~/assets/images/logo.png" height="36" alt="LiderLogo"></nuxt-link>
+    <nuxt-link to="/" style="height: 60px"><img src="~/assets/images/logo.png" height="60" alt="LiderLogo"></nuxt-link>
     <div class="px-4 hidden-md-and-down">
       <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
         <span class="nav-item-label">{{link.title}}</span>

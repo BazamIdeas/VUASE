@@ -1,7 +1,8 @@
 <template>
   <section>
-    <AppPricesCarousel />
-    <v-container fluid grid-list-md>
+    <img src="/images/pages/franja_precios.svg" alt="" style="position: absolute; width: 100%;">
+    <AppPricesCarousel/>
+    <v-container fluid grid-list-md class="mt-5">
       <v-layout row wrap>
         <v-flex xs12 offset-md2 md8 class="mb-5">
           <v-layout row wrap>

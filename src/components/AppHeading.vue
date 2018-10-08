@@ -4,7 +4,7 @@
       <v-flex xs12>
         <h1 :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size">{{ title }}</h1>
       </v-flex>
-      <v-flex v-if="subtitle" :offset-md4="align === 'center'" :offset-md8="align === 'right'" xs12 md4>
+      <v-flex v-if="subtitle" :offset-md3="align === 'center'" :offset-md8="align === 'right'" xs12 md6>
         <p :class="'body-2 font-weight-regular text-xs-' + align">
           {{ subtitle }}
         </p>
@@ -32,7 +32,7 @@
 
 <style scoped>
   h1 {
-    color: #303032;
+    color: #434343;
   }
   p {
     font-weight: 600;

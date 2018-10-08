@@ -8,7 +8,7 @@ export { default as AppServicesSlider } from './AppServicesSlider.vue'
 // CAROUSELS
 export { default as AppAboutUsCarousel } from './Carousels/AppAboutUsCarousel.vue'
 export { default as AppHomeCarousel } from './Carousels/AppHomeCarousel.vue'
-export { default as AppPricesCarousel } from './Carousels/AppServicesCarousel.vue'
+export { default as AppPricesCarousel } from './Carousels/AppPricesCarousel.vue'
 export { default as AppProServicesCarousel } from './Carousels/AppProServicesCarousel.vue'
 export { default as AppServicesCarousel } from './Carousels/AppServicesCarousel.vue'
 

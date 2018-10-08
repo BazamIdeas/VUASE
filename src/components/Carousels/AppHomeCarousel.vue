@@ -13,26 +13,6 @@
         </div>
       </div>
     </v-carousel-item>
-    <v-carousel-item transition="none" reverse-transition="none">
-      <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-2">
-          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-2">
-          <h1>Empresa vanguardista en diseño y comunicación</h1>
-        </div>
-        <div class="layer" id="hc-layer-3-item-2">
-            <v-img class="animate-img" src="images/carousels/home2.png"></v-img>
-        </div>
-      </div>
-    </v-carousel-item>
-    <!--<v-carousel-item :transition="'slide-x-transition'">
-      <div class="layers-container">
-        <div class="layer-1" id="xxx">
-
-        </div>
-      </div>
-    </v-carousel-item>-->
   </v-carousel>
 </template>
 
@@ -79,7 +59,7 @@
       opacity: 1;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
@@ -170,21 +150,21 @@
       width: 39%;
       line-height: 90px;
       top: 25%;
-      left: 22%;
+      left: 16%;
     }
 
     div#hc-layer-2-item-1 {
       font-size: 17px;
       width: 28%;
       top: 66%;
-      left: 22.25%;
+      left: 16%;
       line-height: 28px;
     }
 
     div#hc-layer-3-item-1 {
-      width: 48%;
-      left: 51%;
-      top: 16%;
+      width: 49%;
+      left: 45.3%;
+      top: 13%;
     }
 
     /*ITEM-2*/
@@ -193,14 +173,14 @@
       width: 39%;
       line-height: 90px;
       top: 25%;
-      left: 22%;
+      left: 16%;
     }
 
     div#hc-layer-2-item-2 {
       font-size: 17px;
       width: 28%;
       top: 66%;
-      left: 22.25%;
+      left: 16%;
       line-height: 28px;
     }
 

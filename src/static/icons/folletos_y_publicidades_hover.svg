@@ -4,11 +4,11 @@
 	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
 <g>
 	
-		<polyline fill="none" stroke="#666666" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		<polyline fill="none" stroke="#434343" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		189,392 112,392 112,109 282,109 282,228 	"/>
 	
-		<rect x="181.2" y="229.3" fill="none" stroke="#666666" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="207.1" height="162"/>
+		<rect x="181.2" y="229.3" fill="none" stroke="#434343" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="207.1" height="162"/>
 	
-		<line fill="none" stroke="#666666" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235" y1="275" x2="332" y2="275"/>
+		<line fill="none" stroke="#434343" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="235" y1="275" x2="332" y2="275"/>
 </g>
 </svg>

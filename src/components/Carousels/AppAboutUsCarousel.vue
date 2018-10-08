@@ -3,36 +3,14 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-1">
-          <h1>Empresa vanguardista en diseño y comunicación</h1>
+          <h1>DISEÑAMOS MARCAS EXITOSAS</h1>
+          <v-btn flat outline class="px-2 mx-5 mt-4" style="background-color: #004b7b !important; border-color: #004b7b; color: white; line-height: initial;">COMPRUEBALO</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img class="animate-img" src="images/carousels/home1.png"></v-img>
+          <v-img class="animate-img" src="images/carousels/about_us1.png"></v-img>
         </div>
       </div>
     </v-carousel-item>
-    <v-carousel-item transition="none" reverse-transition="none">
-      <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-2">
-          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-2">
-          <h1>Empresa vanguardista en diseño y comunicación</h1>
-        </div>
-        <div class="layer" id="hc-layer-3-item-2">
-          <v-img class="animate-img" src="images/carousels/home2.png"></v-img>
-        </div>
-      </div>
-    </v-carousel-item>
-    <!--<v-carousel-item :transition="'slide-x-transition'">
-      <div class="layers-container">
-        <div class="layer-1" id="xxx">
-
-        </div>
-      </div>
-    </v-carousel-item>-->
   </v-carousel>
 </template>
 
@@ -83,7 +61,7 @@
     }
 
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
@@ -95,7 +73,7 @@
 
   /*ITEM-1*/
   div#hc-layer-1-item-1>* {
-    color: #B80000;
+    color: #004b7b;
     font-weight: 700;
   }
 
@@ -169,11 +147,11 @@
 
     /*ITEM-1*/
     div#hc-layer-1-item-1 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 22%;
+      font-size: 35px;
+      width: 26%;
+      line-height: 55px;
+      top: 23%;
+      left: 56%;
     }
 
     div#hc-layer-2-item-1 {
@@ -185,9 +163,9 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 48%;
-      left: 51%;
-      top: 16%;
+      width: 65%;
+      left: 2%;
+      top: 0%;
     }
 
     /*ITEM-2*/

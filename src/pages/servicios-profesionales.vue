@@ -54,8 +54,24 @@
               <img src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
               <h1 class="pl-5 font-weight-bold mb-5 text-uppercase" style="font-size: 40px; line-height: 34px; color: #303032">RECONMENDADOS POR GRANDES</h1>
             </v-flex>
-            <v-flex xs12>
-              Slider
+            <v-flex xs12 offset-md1 md10>
+              <v-carousel hide-delimiters class="profesional-services-slider">
+                <v-carousel-item>
+                  <v-container fluid grid-list-md>
+                    <v-layout row wrap>
+                      <v-flex xs12 md6 class="px-5" style="display: flex; flex-flow: column;justify-content: center;">
+                        <h2 style="color: #f58220" class="mb-2"> LIDERLOGO ES MI MEJOR OPCIÓN... </h2>
+                        <p>
+                          Cuando necesitamos completar proyectos grandes y no contamos con mucho tiempo.
+                        </p>
+                      </v-flex>
+                      <v-flex xs12 md6>
+                        <img width="100%" src="/images/pages/web_jet_computer_pro_services.png" alt="">
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
+                </v-carousel-item>
+              </v-carousel>
             </v-flex>
           </v-layout>
         </v-flex>

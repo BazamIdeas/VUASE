@@ -3,36 +3,16 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
+          <h1>¿QUÉ NECESITAS?</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h1>Empresa vanguardista en diseño y comunicación</h1>
+          <h1>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h1>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img class="animate-img" src="images/carousels/home1.png"></v-img>
+          <v-img class="animate-img" src="images/carousels/services1.png"></v-img>
         </div>
       </div>
     </v-carousel-item>
-    <v-carousel-item transition="none" reverse-transition="none">
-      <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-2">
-          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-2">
-          <h1>Empresa vanguardista en diseño y comunicación</h1>
-        </div>
-        <div class="layer" id="hc-layer-3-item-2">
-          <v-img class="animate-img" src="images/carousels/home2.png"></v-img>
-        </div>
-      </div>
-    </v-carousel-item>
-    <!--<v-carousel-item :transition="'slide-x-transition'">
-      <div class="layers-container">
-        <div class="layer-1" id="xxx">
-
-        </div>
-      </div>
-    </v-carousel-item>-->
   </v-carousel>
 </template>
 
@@ -83,7 +63,7 @@
     }
 
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
@@ -95,7 +75,7 @@
 
   /*ITEM-1*/
   div#hc-layer-1-item-1>* {
-    color: #B80000;
+    color: #4167b1;
     font-weight: 700;
   }
 
@@ -169,25 +149,26 @@
 
     /*ITEM-1*/
     div#hc-layer-1-item-1 {
-      font-size: 64px;
+      font-size: 28px;
       width: 39%;
       line-height: 90px;
       top: 25%;
-      left: 22%;
+      left: 57%;
     }
 
     div#hc-layer-2-item-1 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 22.25%;
-      line-height: 28px;
+      font-size: 10px;
+      width: 34%;
+      top: 39%;
+      left: 55.25%;
+      line-height: 19px;
+      text-align: center;
     }
 
     div#hc-layer-3-item-1 {
-      width: 48%;
-      left: 47%;
-      top: 20%;
+      width: 70%;
+      left: -13%;
+      top: -2%;
     }
 
     /*ITEM-2*/
