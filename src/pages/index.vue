@@ -162,41 +162,41 @@
               </v-flex>
               <v-flex xs12 md4>
                 <v-card flat class="pa-4 my-4" color="transparent">
-                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">24Hrs</h1>
+                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">100%</h1>
                   <p class="body-2 font-weight-regular text-xs-center white--text">
-                    Conceptos y perfeccionamientos
+                    Garantia de conformidad y confidencialidad
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4>
                 <v-card flat class="pa-4 my-4" color="transparent">
-                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">24Hrs</h1>
+                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">40</h1>
                   <p class="body-2 font-weight-regular text-xs-center white--text">
-                    Conceptos y perfeccionamientos
+                    Lideres de Proyecto brindandote Atención profesional
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4>
                 <v-card flat class="pa-4 my-4" color="transparent">
-                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">24Hrs</h1>
+                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">22</h1>
                   <p class="body-2 font-weight-regular text-xs-center white--text">
-                    Conceptos y perfeccionamientos
+                    Paises reciben nuestra atención
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4>
                 <v-card flat class="pa-4 my-4" color="transparent">
-                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">24Hrs</h1>
+                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">+15</h1>
                   <p class="body-2 font-weight-regular text-xs-center white--text">
-                    Conceptos y perfeccionamientos
+                    Años de Trayectoria internacional
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4>
                 <v-card flat class="pa-4 my-4" color="transparent">
-                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">24Hrs</h1>
+                  <h1 class="display-2 font-weight-bold text-uppercase text-xs-center white--text">+75.000</h1>
                   <p class="body-2 font-weight-regular text-xs-center white--text">
-                    Conceptos y perfeccionamientos
+                    Creaciones realizadas
                   </p>
                 </v-card>
               </v-flex>
@@ -211,7 +211,7 @@
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h1 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px">SERVICIOS PROFESIONALES</h1>
+            <h1 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS PROFESIONALES</h1>
             <p class="text-xs-center mb-5" style="font-weight: 500;">
               Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
             </p>
@@ -221,7 +221,7 @@
 
         <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
           <div>
-            <h1 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px">¿QUÉ OPINAN NUESTROS CLIENTES?</h1>
+            <h1 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px; color: #434343;">¿QUÉ OPINAN NUESTROS CLIENTES?</h1>
             <v-carousel hide-delimiters class="rating-user">
               <v-carousel-item>
                 <div class="text-xs-center">
@@ -243,7 +243,7 @@
           <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5">
-          <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px; color: #434343;">¿TIENES ALGUNA DUDA?</h1>
           <AppContactForm />
         </v-flex>
       </v-layout>
