@@ -23,7 +23,7 @@ module.exports = function (req, res, next) {
         return res.end()
       }
     } else {
-      res.writeHead(301, {Location: 'https://www.liderlogo.com' + path})
+      res.writeHead(301, {Location: 'http://www.liderlogos.com' + path})
       return res.end()
     }
   }
