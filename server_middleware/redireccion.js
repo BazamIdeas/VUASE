@@ -13,8 +13,7 @@ module.exports = function (req, res, next) {
 
     let paises = {
       'ES': 'liderlogo.es',
-      'AR': 'liderlogos.com',
-      'VE': 'liderlogos.com',
+      'VE': 'liderlogos.com'
     }
 
     if (paises[iso]) {
