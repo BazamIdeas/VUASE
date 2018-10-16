@@ -12,8 +12,8 @@ module.exports = function (req, res, next) {
     let path = url.parse(req.url).pathname
 
     let paises = {
-      'AR': 'liderlogo.com',
-      'ES': 'liderlogo.es'
+      'ES': 'liderlogo.es',
+      'VE': 'liderlogos.com'
     }
 
     if (paises[iso]) {
