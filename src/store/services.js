@@ -1,10 +1,70 @@
+import { servicesHardcoded } from './servicesHardcoded'
+
 export const state = () => ({
   groups: [
-    { icon: '/icons/logo_a_medida_hover.svg', name: 'Logos e Identidades' },
-    { icon: '/icons/app_hover.svg', name: 'Web y App' },
-    { icon: '/icons/folletos_y_publicidades_hover.svg', name: 'Folletos y Publicidades' },
-    { icon: '/icons/rotulo_hover.svg', name: 'Rotulos' },
-    { icon: '/images/services/icono-1.png', name: 'Perfiles de Redes Sociales' }
+    {
+      name: 'Logos e Identidades',
+      layouts: [],
+      carousel: [
+        { src: 'images/carousels/servicios_folletos.png' },
+        { src: 'images/carousels/servicios_folletos.png' }
+      ]
+    },
+    {
+      icon: '/icons/app_hover.svg',
+      name: 'Web y App',
+      layouts: [],
+      carousel: [
+        { src: 'images/carousels/servicios_folletos.png' },
+        { src: 'images/carousels/servicios_folletos.png' }
+      ]
+    },
+    {
+      name: 'Folletos y Publicidades',
+      layouts: [],
+      carousel: [
+        { src: 'images/carousels/servicios_folletos.png' },
+        { src: 'images/carousels/servicios_folletos.png' }
+      ]
+    },
+    {
+      name: 'Rotulos',
+      rows: [
+        [
+          'rotulo-vehicular',
+          'rotulo-local',
+          'rotulo-banner'
+        ],
+        [
+          'rotulo-furgoneta-camion',
+          'carousel'
+        ],
+        [
+          'rotulo-etiqueta-packaging',
+          'rotulo-vestimenta-uniforme'
+        ]
+      ],
+      layouts: [],
+      carousel: [
+        { src: 'images/carousels/servicios_folletos.png' },
+        { src: 'images/carousels/servicios_folletos.png' }
+      ]
+    },
+    {
+      name: 'Perfiles de Redes Sociales',
+      rows: [
+        [
+          'perfiles-de-redes-sociales',
+          'carousel'
+        ]
+      ],
+      layouts: [],
+      carousel: [
+        { src: 'images/carousels/servicios_folletos.png' },
+        { src: 'images/carousels/servicios_folletos.png' }
+      ],
+      noBorder: true
+    }
   ],
   list: []
 })
@@ -12,6 +72,39 @@ export const state = () => ({
 export const mutations = {
   GET_ALL (state, services) {
     state.list = services
+
+    for (let group of state.groups) {
+      if (!group.rows) { continue }
+      for (const arrSlugs of group.rows) {
+        var row = {
+          services: []
+        }
+
+        for (let slug of arrSlugs) {
+          let service = services.find(function (el) {
+            return el.slug === slug ? el : false
+          })
+
+          if (!service) {
+            if (slug === 'carousel') {
+              row.carousel = group.carousel
+            }
+            continue
+          }
+
+          // Service Items
+          if (servicesHardcoded[slug]) {
+            service.list = servicesHardcoded[slug].list || ['']
+            service.description = servicesHardcoded[slug].description || ''
+            service.icon = servicesHardcoded[slug].icon || ''
+            service.url = servicesHardcoded[slug].url || ''
+          }
+
+          row.services.push(service)
+        }
+        group.layouts.push(row)
+      }
+    }
   }
 }
 
