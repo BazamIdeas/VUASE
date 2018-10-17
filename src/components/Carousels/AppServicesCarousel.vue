@@ -6,7 +6,7 @@
           <h1>¿QUÉ NECESITAS?</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h1>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h1>
+          <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
 
           <div class="input-search mt-4">
             <input

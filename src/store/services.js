@@ -3,6 +3,7 @@ import { servicesHardcoded } from './servicesHardcoded'
 export const state = () => ({
   groups: [
     {
+      icon: '/icons/logo_a_medida_hover.svg',
       name: 'Logos e Identidades',
       layouts: [],
       carousel: [
@@ -20,6 +21,7 @@ export const state = () => ({
       ]
     },
     {
+      icon: '/icons/folletos_y_publicidades_hover.svg',
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
@@ -28,6 +30,7 @@ export const state = () => ({
       ]
     },
     {
+      icon: '/icons/rotulo_hover.svg',
       name: 'Rotulos',
       rows: [
         [
@@ -51,6 +54,7 @@ export const state = () => ({
       ]
     },
     {
+      icon: '/images/services/icono-1.png',
       name: 'Perfiles de Redes Sociales',
       rows: [
         [
