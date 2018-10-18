@@ -1,24 +1,24 @@
 <template>
   <section>
     <AppAboutUsCarousel />
-    <v-container fluid grid-list-md>
+    <v-container fluid grid-list-md class="mt-5">
       <v-layout row wrap>
         <v-flex xs12 offset-md1 md10 class="mb-5">
           <v-layout row wrap>
             <v-flex xs12 md6>
-              <h1 class="font-weight-bold mb-5 text-uppercase" style="font-size: 30px; color: #004B7B">QUIÉNES SOMOS</h1>
-              <p class="text-xs-justify" style="font-weight: 500;">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
-                relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
-                imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos
-                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos,
-                quedando esencialmente igual al original.
-                <br><br>
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
-                relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
-                imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos
-                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos,
-                quedando esencialmente igual al original.
+              <!--<h1 class="font-weight-bold mb-5 text-uppercase" style="font-size: 30px; color: #004B7B">QUIÉNES SOMOS</h1>-->
+              <AppHeading number="2" title="QUIÉNES SOMOS" size="display-1" align="left" ccolor="blue-medium"/>
+              <p class="text-xs-justify" style="font-weight: 600; margin-top: 40px">
+                Somos una agencia referente de diseño que trabaja incansablemente, apoyando a pequeñas y medianas empresas, creando su identidad.
+              </p>
+              <p class="text-xs-justify" style="font-weight: 600;">
+                Creemos en los emprendedores y atendemos como propio cada proyecto.
+              </p>
+              <p class="text-xs-justify" style="font-weight: 600;">
+                Nuestra trayectoria internacional de más de 14 años presencia en 22 países, +75000 creaciones, Nuestra garantía de conformidad 100% y nuestros competitivos precios cerrados hacen que todos los días nuevos clientes confíen en Liderlogo.
+              </p>
+              <p class="text-xs-justify" style="font-weight: 600;">
+                Vamos en direccón a un mundo mejor, sustentado por nuestros diseños ecólogicos, con cada proyecto que nos confian, brindamos más posibilidades donando un libro a un niño carenciado. Conocemos la importancia de nuestro trabajo y sabemos cómo hacerlo.
               </p>
             </v-flex>
             <v-flex xs12 md6>
@@ -27,15 +27,17 @@
           </v-layout>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="mt-5 text-xs-center">
-          <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">NUESTROS SERVICIOS</h1>
+          <!--<h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">NUESTROS SERVICIOS</h1>-->
+          <AppHeading number="2" title="NUESTROS SERVICIOS" size="display-1"/>
         </v-flex>
       </v-layout>
     </v-container>
-    <AppServicesGrid color="#004B7B"/>
+    <AppServicesGrid color="#0088c6"/>
     <v-container>
       <v-layout row wrap>
         <v-flex xs12>
-          <h1 class="headline font-weight-bold text-xs-center mb-4" style="color: #303032;">COMO TRABAJAMOS</h1>
+          <!--<h1 class="headline font-weight-bold text-xs-center mb-4" style="color: #303032;">COMO TRABAJAMOS</h1>-->
+          <AppHeading number="2" title="¿CÓMO TRABAJAMOS?" size="display-1"/>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
           <iframe width="100%" height="480" src="https://www.youtube.com/embed/f3XlIQ5pmdQ" frameborder="0" allow="autoplay; encrypted-media"
