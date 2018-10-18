@@ -12,8 +12,7 @@ module.exports = function (req, res, next) {
     let path = url.parse(req.url).pathname
 
     let paises = {
-      'ES': 'liderlogo.es',
-      'VE': 'liderlogos.com'
+      'ES': 'liderlogo.es'
     }
 
     if (paises[iso]) {
@@ -24,8 +23,7 @@ module.exports = function (req, res, next) {
         return res.end()
       }
     } else {
-      res.writeHead(301, {Location: 'https://www.liderlogo.com' + path})
-      return res.end()
+      next()
     }
   }
 }

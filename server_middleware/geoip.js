@@ -9,7 +9,7 @@ module.exports = function (req, res, next) {
     next()
   }
 
-  if (process.env.NODE_ENV == 'production') {
+  if (process.env.NODE_ENV === 'production') {
     let ip = req.headers['x-real-ip']
     let reader = new MMDBReader('src/static/GeoIP2-Country.mmdb')
     req.iso = reader.lookup(ip).country.iso_code
