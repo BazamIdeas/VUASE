@@ -1,22 +1,22 @@
 <template lang="html">
-	<section>
+	<v-flex xs12>
     <v-container fluid grid-list-md text-xs-center class="mt-5 pt-5 pb-0">
       <v-layout row wrap align-center justify-center>
 				<v-flex xs12 class="mb-5">
-					<h2 class="display-2 font-weight-medium text-uppercase">{{title}}</h2>
+					<h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
 				</v-flex>
 				<v-layout class="characteristics mb-5" row wrap>
-					<v-flex xs12 md4 v-for="item in list">
+					<v-flex xs12 md4 v-for="(item, i) in list" :key="i">
 						<v-layout row xs12 wrap d-flex align-center justify-center column>
 							<v-img width="80px" :src="item.icon" class="mb-1 mt-2"></v-img>
-							<h1 class="title font-weight-bold mb-2" color="dark">{{ item.title | uppercase }}</h1> 
+							<h1 class="title font-weight-bold mb-2" color="dark">{{ item.title }}</h1> 
 							<span class="subheading mb-3" >{{ item.description }}</span>
 						</v-layout>
 					</v-flex>
 				</v-layout>
 			</v-layout>
 		</v-container>
-  </section>
+  </v-flex>
 </template>
 
 <script lang="js">

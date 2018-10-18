@@ -51,11 +51,7 @@
     data () {
       return {
         groupContent: 0,
-        transitionGroupContent: 'slide-x-transition',
-        carouselItems: [
-          { src: 'images/carousels/servicios_folletos.png' },
-          { src: 'images/carousels/servicios_folletos.png' }
-        ]
+        transitionGroupContent: 'slide-x-transition'
       }
     },
     computed: {
