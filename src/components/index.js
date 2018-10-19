@@ -12,6 +12,7 @@ export { default as AppHomeCarousel } from './Carousels/AppHomeCarousel.vue'
 export { default as AppPricesCarousel } from './Carousels/AppPricesCarousel.vue'
 export { default as AppProServicesCarousel } from './Carousels/AppProServicesCarousel.vue'
 export { default as AppServicesCarousel } from './Carousels/AppServicesCarousel.vue'
+export { default as AppCreativeProccess } from './AppCreativeProccess.vue'
 
 // FORMS
 export { default as AppContactForm } from './Forms/AppContactForm.vue'
