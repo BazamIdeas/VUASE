@@ -1,6 +1,6 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md text-xs-center class="mt-5 pt-5 pb-0">
+    <v-container fluid grid-list-md text-xs-center class="mt-5 pb-0">
       <v-layout row wrap align-center justify-center>
 				<v-flex xs12 class="mb-5">
 					<h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>

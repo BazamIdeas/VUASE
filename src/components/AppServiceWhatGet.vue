@@ -1,6 +1,6 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5 pt-5 pb-0">
+    <v-container fluid grid-list-md class="mt-5 pb-0">
       <v-flex xs12 class="mb-5">
         <h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
       </v-flex>
@@ -17,7 +17,7 @@
                 </v-flex>
                 <v-flex xs12 v-if="item.items && item.items.length" class="service-box-list"  :class="{'mb-4': key !== column.length - 1}">
                   <ul>
-                    <li v-for="(checkItem, i) in item.items" :key="i" class="caption font-weight-medium">{{checkItem}}</li>
+                    <li v-for="(checkItem, i) in item.items" :key="i" class="body-2 font-weight-medium mb-2">{{checkItem}}</li>
                   </ul>
                 </v-flex>
               </v-flex>

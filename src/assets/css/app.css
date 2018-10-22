@@ -65,3 +65,11 @@ div.v-carousel__controls {
 input, textarea, label.v-label, .v-messages {
     font-weight: 500;
 }
+
+.btn-simple{
+    border: 1px solid silver;
+    color: #a09d9d;
+}
+.btn-simple:hover{
+    color: black;
+}

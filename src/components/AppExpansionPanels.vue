@@ -1,6 +1,6 @@
 <template>
 	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5 pt-5 pb-0">
+    <v-container fluid grid-list-md class="mt-5 pb-0">
       <v-flex xs12 class="mb-5">
         <h2 class="display-1 font-weight-bold text-uppercase text-xs-center">{{title}}</h2>
       </v-flex>
@@ -12,8 +12,8 @@
           class="pt-1 pb-1"
         >
           <div slot="header" class="font-weight-bold">{{item.question}}</div>
-          <v-card>
-            <v-card-text class="grey lighten-3 font-weight-medium">{{item.response}}</v-card-text>
+          <v-card class="response">
+            <v-card-text class="font-weight-medium" >{{item.response}}</v-card-text>
           </v-card>
         </v-expansion-panel-content>
 
@@ -24,8 +24,8 @@
           class="pt-1 pb-1"
         >
           <div slot="header" class="font-weight-bold">{{item.question}}</div>
-          <v-card>
-            <v-card-text class="grey lighten-3 font-weight-medium">{{item.response}}</v-card-text>
+          <v-card class="response">
+            <v-card-text class="font-weight-medium">{{item.response}}</v-card-text>
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -62,11 +62,8 @@
     font-size: 35px;
   }
 
-  .btn-simple{
-    border: 1px solid silver;
-    color: #a09d9d;
+  .theme--light.v-expansion-panel .v-expansion-panel__container, .v-expansion-panel .response{
+    background-color: transparent;
   }
-  .btn-simple:hover{
-    color: black;
-  }
+
 </style>
