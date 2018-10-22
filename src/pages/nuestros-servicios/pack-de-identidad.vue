@@ -19,28 +19,39 @@ export default {
     return {
       slides: [
         {
-          src:
-            'https://www.lenovo.com/medias/lenovo-laptop-legion-y720-15-hero.png?context=bWFzdGVyfGltYWdlc3w4Mzg2OXxpbWFnZS9wbmd8aW1hZ2VzL2hjOC9oYjEvOTM1OTcwMjA2NTE4Mi5wbmd8OGRjZGEyODA5OTRmMTk0YzE2MDczZjdkZjhkZmQ4ODEzYjZiZmE3NGZiODFiZjM3YzQ3Yjg3NjRiNjNjY2ViZg'
+          src: '/images/carousels/creative-process-1.png',
+          alt: 'creative-process-1'
+        },
+        {
+          src: '/images/carousels/creative-process-2.png',
+          alt: 'creative-process-2'
+        },
+        {
+          src: '/images/carousels/creative-process-3.png',
+          alt: 'creative-process-3'
         }
       ],
       steps: [
         {
-          title: 'prueba',
-          color: 'black',
-          icon: 'X',
-          description: 'lorem ipsum'
+          title: '1. BRIEF Y SELECTOR',
+          color: '#323c9e',
+          icon: '/icons/creative-process-1.svg',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+          alt: 'brief-y-selector'
         },
         {
-          title: 'prueba 2',
-          color: 'white',
-          icon: 'X',
-          description: 'lorem ipsum'
+          title: '2. CONCEPTOS',
+          color: '#1d8127',
+          icon: '/icons/creative-process-2.svg',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+          alt: 'conceptos'
         },
         {
-          title: 'prueba 3',
-          color: 'red',
-          icon: 'X',
-          description: 'lorem ipsum'
+          title: '3. ENTREGA Y DOCUMENTACIÓN',
+          color: '#c3953f',
+          icon: '/icons/creative-process-3.svg',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+          alt: 'entrega-y-documentacion'
         }
       ]
     }
