@@ -1,6 +1,6 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5 pt-5 pb-0">
+    <v-container fluid grid-list-md class="mt-5 pb-0">
       <v-flex xs12 class="mb-5">
         <h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
       </v-flex>
@@ -17,7 +17,7 @@
                 </v-flex>
                 <v-flex xs12 v-if="item.items && item.items.length" class="service-box-list"  :class="{'mb-4': key !== column.length - 1}">
                   <ul>
-                    <li v-for="(checkItem, i) in item.items" :key="i" class="caption font-weight-medium">{{checkItem}}</li>
+                    <li v-for="(checkItem, i) in item.items" :key="i" class="body-2 font-weight-medium mb-2">{{checkItem}}</li>
                   </ul>
                 </v-flex>
               </v-flex>
@@ -36,16 +36,16 @@
                     </v-flex>
                     <v-layout xs6 row d-flex>
                       <v-flex xs4 style="border-right:1px solid silver;" class="mr-3">
-                        <h3 class="title">{{service.percentage}}</h3>
+                        <h3 class="title">{{service.percentage}}%</h3>
                         <h5 class="body-2">al iniciar</h5>
                       </v-flex>
                       <v-flex xs4>
-                        <h3 class="title">{{service.percentage}}</h3> 
+                        <h3 class="title">{{finalPercertage}}%</h3> 
                         <h5 class="body-2">al finalizar</h5>
                       </v-flex>
                     </v-layout>
                   </v-layout>
-                  <v-btn color="231F20" dark class="mt-3 ml-0">INICIAR MI PROYECTO</v-btn>
+                  <v-btn color="231F20" dark class="mt-3 ml-0" :to="url">INICIAR MI PROYECTO</v-btn>
               </v-flex>
             </v-layout>
           </v-flex>
@@ -58,7 +58,6 @@
   export default {
     props: ['list', 'title', 'service'],
     mounted () {
-
     },
     data () {
       return {
@@ -69,7 +68,12 @@
 
     },
     computed: {
-
+      finalPercertage () {
+        return 100 - this.service.percentage
+      },
+      url () {
+        return this.$router.currentRoute.path + '/brief'
+      }
     }
   }
 </script>

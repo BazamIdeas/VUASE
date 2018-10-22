@@ -1,4 +1,4 @@
-export const servicesHardcoded = {
+export const services = {
   // Redes Sociales
   'perfiles-de-redes-sociales': {
     list: ['Prueba 3', 'Prueba 4'],

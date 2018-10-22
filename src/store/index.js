@@ -1,3 +1,5 @@
+import { staticData } from './data-app/staticData.js'
+
 export const state = () => ({
   app: {
     links: {
@@ -16,7 +18,8 @@ export const state = () => ({
       ],
       whatsapp: '#'
     },
-    drawer: false
+    drawer: false,
+    staticData: staticData
   }
 })
 

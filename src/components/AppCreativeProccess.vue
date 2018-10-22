@@ -3,7 +3,7 @@
   <v-container grid-list-md fluid class="pa-0 creative-process">
       <v-layout row>
         <v-flex xs12 class="creative-process-carousel">
-          <v-carousel>
+          <v-carousel :hide-delimiters="true">
             <v-carousel-item v-for="(slide,i) in slides" :key="i" :src="slide.src">
             </v-carousel-item>
           </v-carousel>

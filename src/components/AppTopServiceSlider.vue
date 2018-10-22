@@ -1,0 +1,83 @@
+<template lang="html">
+	<v-flex xs12>
+    <v-container fluid grid-list-md>
+      <v-layout xs12 row wrap class="top-service-slider">
+        <v-flex xs6>
+          <v-carousel>
+            <v-carousel-item
+              v-for="(item,i) in list"
+              :key="i"
+              transition="fade"
+              :src="item"
+              hide-controls
+            ></v-carousel-item>
+          </v-carousel>
+        </v-flex>
+        <v-flex xs6 class="pl-3">
+          <v-img width="80px" :src="service.icon"></v-img>
+          <v-flex xs12 class="mb-2">
+            <h2 class="headline font-weight-bold text-uppercase" style="color:#004E7E;">{{service.title}}</h2>
+          </v-flex>
+          <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
+            <span class="body-2">{{ service.description }}</span>
+          </v-flex>
+          <v-flex xs12 v-if="service.characteristics" class="service-box-list">
+            <ul>
+              <li v-for="(checkItem, i) in service.characteristics" :key="i" class="body-1 font-weight-medium mb-2">{{checkItem}}</li>
+            </ul>
+          </v-flex>
+          <v-layout xs12 row wrap>
+            <v-flex xs4>
+              <v-btn flat class="btn-simple" style="background:#004E7E; color:white;">COMENZAR</v-btn>
+            </v-flex>
+            <v-flex xs5>
+              <v-btn flat class="btn-simple" block>¿QUÉ TE OFRECEMOS?</v-btn>
+              <v-btn flat class="btn-simple" block>¿CÓMO FUNCIONA?</v-btn>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+			</v-layout>
+		</v-container>
+  </v-flex>
+</template>
+
+<script lang="js">
+  export default {
+    props: ['list', 'service'],
+    mounted () {
+    },
+    data () {
+      return {
+
+      }
+    },
+    methods: {
+
+    },
+    computed: {
+    }
+  }
+</script>
+
+<style>
+.top-service-slider .v-carousel{
+  box-shadow: unset;
+}
+
+.top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next{
+  display: none;
+}
+
+.top-service-slider div.v-carousel__controls{
+  position: absolute;
+
+}
+.top-service-slider div.v-carousel__controls button{
+  color: #4b4b4b;
+}
+.service-box-list ul, .service-box-list ol {
+  padding-left: 17px;
+  list-style-image: url('/images/icons/check-blue.png');
+}
+
+</style>
