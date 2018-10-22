@@ -15,7 +15,8 @@ import {
   AppServicesSlider,
   AppStepProgressBar,
   AppServiceCharacteristics,
-  AppServiceWhatGet
+  AppServiceWhatGet,
+  AppExpansionPanels
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
@@ -34,3 +35,4 @@ Vue.component('AppServicesSlider', AppServicesSlider)
 Vue.component('AppStepProgressBar', AppStepProgressBar)
 Vue.component('AppServiceCharacteristics', AppServiceCharacteristics)
 Vue.component('AppServiceWhatGet', AppServiceWhatGet)
+Vue.component('AppExpansionPanels', AppExpansionPanels)

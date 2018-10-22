@@ -6,6 +6,7 @@ export { default as AppServicesGrid } from './AppServicesGrid.vue'
 export { default as AppServicesSlider } from './AppServicesSlider.vue'
 export { default as AppServiceCharacteristics } from './AppServiceCharacteristics.vue'
 export { default as AppServiceWhatGet } from './AppServiceWhatGet.vue'
+export { default as AppExpansionPanels } from './AppExpansionPanels.vue'
 
 // CAROUSELS
 export { default as AppAboutUsCarousel } from './Carousels/AppAboutUsCarousel.vue'

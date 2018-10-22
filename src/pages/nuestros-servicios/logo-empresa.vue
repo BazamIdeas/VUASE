@@ -5,6 +5,8 @@
         <AppServiceCharacteristics :title="'Prueba'" :list="list" />
       
         <AppServiceWhatGet :title="'¿QUE TE LLEVAS?'" :list="whatYouGet" :service="service" />
+
+        <AppExpansionPanels :title="'PREGUNTAS FRECUENTES'" :list="frequentQuestions" />
       </v-layout>
     </v-container>
   </section>
@@ -72,10 +74,11 @@
             icon: '/icons/logo_a_medida_hover.svg'
           }]
         ],
+        frequentQuestions: this.$store.state.app.staticData.frequentQuestions,
         service: {
           img: '../images/pages/mockup-ferreteria-flores.png',
           price: '$ 237',
-          percentage: '10%'
+          percentage: 10
         }
       }
     },
