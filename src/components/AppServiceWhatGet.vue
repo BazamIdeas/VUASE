@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-5 pb-0">
       <v-flex xs12 class="mb-5" v-if="!justOne">
-        <h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
+        <AppHeading :number="'1'" :size="'display-2'" :title="title" />
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get mb-5">
           <v-flex xs12 md4  v-for="(column, i) in service.whatYouGet.columns" :key="i" class="pa-3 column" :class="{'no-border md6': justOne}">

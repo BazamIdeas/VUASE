@@ -111,7 +111,38 @@ export const servicesHardcoded = {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
         alt: 'entrega-y-documentacion'
       }
-    ]
+    ],
+    carousel: {
+      items1: [
+        { img: '/images/examples/1.png' },
+        { img: '/images/examples/2.png' },
+        { img: '/images/examples/3.png' },
+        { img: '/images/examples/4.png' },
+        { img: '/images/examples/1.png' },
+        { img: '/images/examples/2.png' },
+        { img: '/images/examples/3.png' },
+        { img: '/images/examples/4.png' },
+        { img: '/images/examples/1.png' },
+        { img: '/images/examples/2.png' },
+        { img: '/images/examples/3.png' },
+        { img: '/images/examples/4.png' },
+        { img: '/images/examples/1.png' }
+      ],
+      items2: [
+        { img: '/images/examples/5.png' },
+        { img: '/images/examples/6.png' },
+        { img: '/images/examples/7.png' },
+        { img: '/images/examples/8.png' },
+        { img: '/images/examples/5.png' },
+        { img: '/images/examples/6.png' },
+        { img: '/images/examples/7.png' },
+        { img: '/images/examples/8.png' },
+        { img: '/images/examples/5.png' },
+        { img: '/images/examples/6.png' },
+        { img: '/images/examples/7.png' },
+        { img: '/images/examples/8.png' }
+      ]
+    }
   },
   // Redes Sociales
   'perfiles-de-redes-sociales': {

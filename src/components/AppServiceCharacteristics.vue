@@ -3,7 +3,7 @@
     <v-container fluid grid-list-md text-xs-center class="mt-5 pb-0">
       <v-layout row wrap align-center justify-center>
 				<v-flex xs12 class="mb-5">
-					<h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
+					<AppHeading :number="'1'" :size="'display-2'" :title="title" />
 				</v-flex>
 				<v-layout class="characteristics mb-5" row wrap :class="{'ocho': list.length > 6 }">
 					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7, 'xs12 md3': list.length > 6}">

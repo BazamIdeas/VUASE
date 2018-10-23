@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-5 pb-0">
       <v-flex xs12 class="mb-5">
-        <h2 class="display-1 font-weight-bold text-uppercase text-xs-center">{{title}}</h2>
+        <AppHeading :number="'1'" :size="'display-1'" :title="title" />
       </v-flex>
       <v-expansion-panel class="expansion-panel">
         <!-- SHOW ONLY 4 -->
