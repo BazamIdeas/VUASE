@@ -20,7 +20,7 @@
                   NUESTROS CLIENTES?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
-                  <v-img width="32px" max-width="32px" class="mr-2" :src="'/icons/star.svg'" v-for="n in item.stars"></v-img>
+                  <v-img width="32px" max-width="32px" class="mr-2" :src="'/icons/star.svg'" v-for="(n, i) in item.stars" :key="i"></v-img>
                 </v-layout>
                 <h3 class="subheading font-weight-medium text-xs-center mt-3 px-5 pb-2" style="color:rgb(151, 147, 147);">
                   {{item.description}}

@@ -1,4 +1,4 @@
-import {services as servicesHardcoded} from './data-app/services.js'
+import { servicesHardcoded } from './data-app/services.js'
 
 export const state = () => ({
   groups: [
