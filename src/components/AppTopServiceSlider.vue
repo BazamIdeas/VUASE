@@ -5,7 +5,7 @@
         <v-flex xs12>
           <v-carousel>
             <v-carousel-item
-              v-for="(item,i) in list"
+              v-for="(item,i) in service.topSlider"
               :key="i"
               transition="fade"
               hide-controls
@@ -22,9 +22,9 @@
                   <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
                     <span class="body-2">{{ service.description }}</span>
                   </v-flex>
-                  <v-flex xs12 v-if="service.characteristics" class="service-box-list">
+                  <v-flex xs12 v-if="service.list" class="service-box-list">
                     <ul>
-                      <li v-for="(checkItem, i) in service.characteristics" :key="i" class="body-1 font-weight-medium mb-2">{{checkItem}}</li>
+                      <li v-for="(checkItem, i) in service.list" :key="i" class="body-1 font-weight-medium mb-2">{{checkItem}}</li>
                     </ul>
                   </v-flex>
                   <v-layout xs12 row wrap>
@@ -48,7 +48,7 @@
 
 <script lang="js">
   export default {
-    props: ['list', 'service'],
+    props: ['service'],
     mounted () {
     },
     data () {

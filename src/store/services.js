@@ -125,7 +125,8 @@ export const getters = {
 export const actions = {
   async getAll ({ rootState, commit }) {
     try {
-      let services = await this.$axios.$get('services')
+      let services = await this.$axios.$get('services?limit=1000')
+      console.log(services)
       commit('GET_ALL', services)
     } catch (error) {
       console.log(error)

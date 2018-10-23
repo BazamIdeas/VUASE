@@ -5,7 +5,7 @@
         <h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get mb-5">
-          <v-flex xs12 md4  v-for="(column, i) in list" :key="i" class="pa-3 column" :class="{'no-border md6': justOne}">
+          <v-flex xs12 md4  v-for="(column, i) in service.whatYouGet.columns" :key="i" class="pa-3 column" :class="{'no-border md6': justOne}">
             <v-layout  d-flex column>
               <v-flex xs12 v-for="(item, key) in column" :key="key" class="mb-4 pb-2 pt-2">
                 <!-- if just one -->
@@ -35,17 +35,17 @@
           <v-flex xs12 md4 :class="{'offset-md2': justOne}">
             <v-layout row wrap d-flex column>
               <v-flex class="ml-2">
-                  <v-img :max-width="justOne ? '90%' : '100%'" :src="service.img"></v-img>
+                  <v-img :max-width="justOne ? '90%' : '100%'" :src="service.whatYouGet.img"></v-img>
                   <h2 class="title font-weight-bold text-uppercase">
                     PRECIO CERRADO EN:
                   </h2>
                   <v-layout xs12 row d-flex>
                     <v-flex xs4>
-                      <h2 style="color:#F7941F;" class="display-1">{{service.price}}</h2>
+                      <h2 style="color:#F7941F;" class="display-1">{{price.currency.symbol}} {{price.value}}</h2>
                     </v-flex>
                     <v-layout xs6 row d-flex>
                       <v-flex xs4 style="border-right:1px solid silver;" class="mr-3">
-                        <h3 class="title">{{service.percentage}}%</h3>
+                        <h3 class="title">{{percentage}}%</h3>
                         <h5 class="body-2">al iniciar</h5>
                       </v-flex>
                       <v-flex xs4>
@@ -65,7 +65,7 @@
 
 <script lang="js">
   export default {
-    props: ['list', 'title', 'service', 'justOne'],
+    props: ['title', 'service', 'justOne', 'price', 'percentage'],
     mounted () {
     },
     data () {
@@ -78,7 +78,7 @@
     },
     computed: {
       finalPercertage () {
-        return 100 - this.service.percentage
+        return 100 - this.percentage
       },
       url () {
         return this.$router.currentRoute.path + '/brief'

@@ -17,9 +17,8 @@
                   'bt bb': layout.carousel && !container.noBorder, 
                   'br': !layout.carousel && (index !== layout.services.length - 1) && !container.noBorder
                 }"  
-                :name="service.name" 
-                :currency="service.prices[0].currency.symbol" 
-                :price="service.prices[0].value" 
+                :name="service.name"  
+                :price="service.price" 
                 :description="service.description"
                 :list="service.list"
                 :icon="service.icon"
