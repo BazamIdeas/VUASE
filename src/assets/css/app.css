@@ -32,6 +32,7 @@
 
 .display-4, .display-3, .display-2, .display-1, .headline, .title, .subheading, .body-2, .body-1, .caption {
     font-family: 'montserrat' !important;
+    color: #434343;
 } 
 
 .toasted.toast {
@@ -64,4 +65,17 @@ div.v-carousel__controls {
 
 input, textarea, label.v-label, .v-messages {
     font-weight: 500;
+}
+
+.btn-simple{
+    border: 1px solid silver;
+    color: #a09d9d !important;
+}
+.btn-simple:hover{
+    color: black !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

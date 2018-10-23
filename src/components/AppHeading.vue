@@ -2,12 +2,12 @@
   <v-container grid-list-md v-if="title" class="pa-0 mt-4">
     <v-layout row wrap>
       <v-flex xs12>
-        <h1 v-if="number=='1'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{ color: fcolor}" >{{ title }}</h1>
-        <h2 v-if="number=='2'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin">{{ title }}</h2>
-        <h3 v-if="number=='3'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin">{{ title }}</h3>
-        <h4 v-if="number=='4'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin">{{ title }}</h4>
-        <h5 v-if="number=='5'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin">{{ title }}</h5>
-        <h6 v-if="number=='6'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin">{{ title }}</h6>
+        <h1 v-if="number=='1'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h1>
+        <h2 v-if="number=='2'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h2>
+        <h3 v-if="number=='3'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h3>
+        <h4 v-if="number=='4'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h4>
+        <h5 v-if="number=='5'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h5>
+        <h6 v-if="number=='6'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h6>
       </v-flex>
       <v-flex v-if="subtitle" :offset-md3="align === 'center'" :offset-md8="align === 'right'" xs12 md6>
         <p :class="'body-2 font-weight-regular text-xs-' + align">
@@ -39,6 +39,10 @@
         default: '',
         type: String
       },
+      color: {
+        default: '',
+        type: String
+      },
       margin: {
         default: '',
         type: String
@@ -67,5 +71,7 @@
   .blue-light{
     color: #0088c6
   }
+
+  
 
 </style>

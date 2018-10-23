@@ -1,10 +1,21 @@
 <template>
-  <v-layout v-resize="showBorders" row wrap class="service-box-container px-3 pt-5 pb-2" :class="{ 'br': br && borders, 'bb': bb && borders, 'bt': bt && borders }">
-    <v-flex xs12 v-if="name" class="service-box-title" align-content-center>
-      <v-img src="/images/services/icono-2.png" width="50" max-width="50" class="mr-2" style="float: left;"></v-img>
+  <v-layout 
+    @mouseover="outstanding = true" 
+    @mouseleave="outstanding = false"  
+    v-resize="showBorders" 
+    row wrap 
+    class="service-box-container px-3 pt-5 pb-2" 
+    :class="{ 'br': br && borders, 'bb': bb && borders, 'bt': bt && borders }">
+
+    <v-flex 
+    xs12 
+    v-if="name" 
+    class="service-box-title" 
+    align-content-center>
+      <v-img :src="icon" width="50" max-width="50" class="mr-2" style="float: left;"></v-img>
       <div>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
-        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ currency }} {{ price }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }">comenzar</v-btn>
+        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ currency }} {{ price }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" :to="'/nuestros-servicios/'+url+'/brief'">comenzar</v-btn>
       </div>
     </v-flex>
     <v-flex xs12 v-if="description" class="service-box-description">
@@ -13,14 +24,11 @@
     </v-flex>
     <v-flex xs12 v-if="list && list.length" class="service-box-list">
       <ul :class="{ 'outstanding': outstanding }">
-        <li v-for="(item, i) in list" :key="i" class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
-        <li class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
-        <li class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
-        <li class="caption font-weight-medium">Lorem ipsum es un texto de prueba para</li>
+        <li v-for="(item, i) in list" :key="i" class="caption font-weight-medium">{{item}}</li>
       </ul>
     </v-flex>
     <v-flex xs12 v-if="startButton" class="service-box-more-button">
-      <v-btn flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
+      <v-btn :to="'/nuestros-servicios/'+url" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
         conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
       </v-btn>
     </v-flex>
@@ -57,14 +65,15 @@
         default: false,
         type: Boolean
       },
-      outstanding: {
-        default: false,
-        type: Boolean
+      url: {
+        default: '/nuestros-servicios/',
+        type: String
       }
     },
     data () {
       return {
-        borders: false
+        borders: false,
+        outstanding: false
       }
     },
     mounted () {

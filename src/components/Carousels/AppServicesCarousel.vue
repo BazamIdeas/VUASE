@@ -6,7 +6,16 @@
           <h1>¿QUÉ NECESITAS?</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h1>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h1>
+          <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
+
+          <div class="input-search mt-4">
+            <input
+              v-model="find"
+              placeholder="Logo, pagina web, rotulo..."
+              required
+            >
+            <v-icon>search</v-icon>
+          </div>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
           <v-img class="animate-img" src="images/carousels/services1.png"></v-img>
@@ -23,14 +32,43 @@
         default: 8000,
         type: Number
       },
-      items: Array
+      items: Array,
+      find: ''
     }
   }
 </script>
 
 <style scoped>
+  /* input-search */
+  .input-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-search input{
+    border: 1px solid silver;
+    padding: 12px;
+    font-size: 20px !important;
+  }
+  .input-search input::placeholder {
+    color: #c1c0c0 !important;
+  }
+  .input-search.mt-4 i {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: #4167b1;
+    font-size: 40px;
+  }
+  
   .v-carousel {
     box-shadow: none;
+  }
+
+  .v-carousel.main-carousel {
+      height: 114vh;
+      min-height: 640px;
   }
 
   .layers-container {
@@ -80,7 +118,7 @@
   }
 
   div#hc-layer-2-item-1>* {
-    color: #676767;
+    color: #bbbbbb;
     font-weight: 600;
   }
 
@@ -167,8 +205,8 @@
 
     div#hc-layer-3-item-1 {
       width: 70%;
-      left: -13%;
-      top: -2%;
+      left: -12%;
+      top: 2%;
     }
 
     /*ITEM-2*/
