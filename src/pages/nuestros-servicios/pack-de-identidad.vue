@@ -3,7 +3,7 @@
     <v-container grid-list-md class="mt-5 pt-5 pb-0">
       <v-layout row wrap>
         <v-flex xs12>
-          <AppCreativeProccess :slides=slides :steps=steps />.
+          <AppCreativeProccess :slides=slides :steps=steps />
         </v-flex>
       </v-layout>
     </v-container>

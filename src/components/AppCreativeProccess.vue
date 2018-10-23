@@ -1,32 +1,33 @@
 <template lang="html">
-	 
-  <v-container grid-list-md fluid class="pa-0 creative-process">
-      <v-layout row>
-        <v-flex xs12 class="creative-process-carousel">
-          <v-carousel :hide-delimiters="true">
-            <v-carousel-item v-for="(slide,i) in slides" :key="i" :src="slide.src">
-            </v-carousel-item>
-          </v-carousel>
-        </v-flex>
-      </v-layout>
-      <v-layout row class="py-5 process-steps">
-        <v-flex xs4 v-for="(step,i) in steps" :key="i" class="px-5">
-          <v-layout row>
-            <v-flex xs2 align-center d-flex>
-              <img class="img-process-step" :src="step.icon" :alt="step.alt"/>
-            </v-flex>
-            <v-flex xs10 align-center d-flex class="process-step">
-              <AppHeading :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
-            </v-flex>             
-          </v-layout>
-          <v-layout row>
-            <v-flex xs12>
-              <p class="text-xs-justify">{{step.description}}</p>
-            </v-flex>
-          </v-layout>
-        </v-flex>
-      </v-layout>
-  </v-container>
+	<v-flex xs12>
+    <v-container grid-list-md fluid class="pa-0 creative-process mt-5">
+        <v-layout row>
+          <v-flex xs12 class="creative-process-carousel">
+            <v-carousel :hide-delimiters="true">
+              <v-carousel-item v-for="(slide,i) in slides" :key="i" :src="slide.src">
+              </v-carousel-item>
+            </v-carousel>
+          </v-flex>
+        </v-layout>
+        <v-layout row class="py-5 process-steps">
+          <v-flex xs4 v-for="(step,i) in steps" :key="i" class="px-5">
+            <v-layout row>
+              <v-flex xs2 align-center d-flex>
+                <img class="img-process-step" :src="step.icon" :alt="step.alt"/>
+              </v-flex>
+              <v-flex xs10 align-center d-flex class="process-step">
+                <AppHeading :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
+              </v-flex>             
+            </v-layout>
+            <v-layout row>
+              <v-flex xs12>
+                <p class="text-xs-justify">{{step.description}}</p>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+        </v-layout>
+    </v-container>
+  </v-flex>
 </template>
 
 <script lang="js">
@@ -72,7 +73,7 @@
   display:none;
 }
 
-.creative-process .creative-process-carousel .v-carousel__prev, .v-carousel__next {
+.creative-process .creative-process-carousel .v-carousel__prev, .creative-process .v-carousel__next {
   top: 50% !important;
   border: none !important;
 }

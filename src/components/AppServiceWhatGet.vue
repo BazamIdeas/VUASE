@@ -1,18 +1,27 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-5 pb-0">
-      <v-flex xs12 class="mb-5">
+      <v-flex xs12 class="mb-5" v-if="!justOne">
         <h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
       </v-flex>
-      <v-layout xs12 row wrap class="what-you-get">
-          <v-flex xs12 md4  v-for="(column, i) in list" :key="i" class="pa-3 column">
+      <v-layout xs12 row wrap class="what-you-get mb-5">
+          <v-flex xs12 md4  v-for="(column, i) in list" :key="i" class="pa-3 column" :class="{'no-border md6': justOne}">
             <v-layout  d-flex column>
               <v-flex xs12 v-for="(item, key) in column" :key="key" class="mb-4 pb-2 pt-2">
+                <!-- if just one -->
+                <v-flex xs12 class="mb-5" v-if="justOne">
+                  <h2 class="display-1 font-weight-bold text-uppercase">{{title}}</h2>
+                </v-flex>
+                <v-flex xs12 v-if="item.description && justOne" class="text-xs-justify mb-4">
+                  <span class="body-2">{{ item.description }}</span>
+                </v-flex>
+
                 <v-layout align-center justify-start row fill-height class="mb-2">
-                  <v-img :src="item.icon" width="60" max-width="50" class="mr-2"></v-img>
-                  <h1 class="title font-weight-bold mb-0" color="dark">{{ item.title }}</h1>
+                  <v-img :src="item.icon" :max-width="justOne ? 80 : 40" class="mr-2"></v-img>
+                  <h1 class="font-weight-bold mb-0" color="dark" :class="{'display-1': justOne, 'title': !justOne}">{{ item.title }}</h1>
                 </v-layout>
-                <v-flex xs12 v-if="item.description" class="text-xs-justify" :class="{'mb-4': key !== column.length - 1}">
+
+                <v-flex xs12 v-if="item.description && !justOne" class="text-xs-justify" :class="{'mb-4': key !== column.length - 1}">
                   <span class="body-2">{{ item.description }}</span>
                 </v-flex>
                 <v-flex xs12 v-if="item.items && item.items.length" class="service-box-list"  :class="{'mb-4': key !== column.length - 1}">
@@ -23,10 +32,10 @@
               </v-flex>
             </v-layout>
           </v-flex>
-          <v-flex xs12 md4>
+          <v-flex xs12 md4 :class="{'offset-md2': justOne}">
             <v-layout row wrap d-flex column>
               <v-flex class="ml-2">
-                  <v-img :src="service.img"></v-img>
+                  <v-img :max-width="justOne ? '90%' : '100%'" :src="service.img"></v-img>
                   <h2 class="title font-weight-bold text-uppercase">
                     PRECIO CERRADO EN:
                   </h2>
@@ -56,7 +65,7 @@
 
 <script lang="js">
   export default {
-    props: ['list', 'title', 'service'],
+    props: ['list', 'title', 'service', 'justOne'],
     mounted () {
     },
     data () {
@@ -83,7 +92,7 @@
     border-bottom: 1px solid silver;
 }
 
-.what-you-get > :nth-child(1) {
+.what-you-get > :nth-child(1):not(.no-border) {
     border-right: 1px solid silver;
 }
 

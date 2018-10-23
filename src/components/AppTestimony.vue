@@ -9,20 +9,20 @@
             active-class="active-testimony"
             transition="fade"
             height="'350'"
-            hide-delimiters
+            hide-delimiters="true"
             next-icon="arrow_right"
             prev-icon="arrow_left"
           >
             <v-layout row>
               <v-flex xs6 class="pt-5">
-                <h2 class="headline font-weight-bold text-uppercase text-xs-center">
+                <h2 class="display-1 font-weight-bold text-uppercase text-xs-center" style="color:#434343;">
                   ¿QUE OPINAN <br>
                   NUESTROS CLIENTES?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
                   <v-img width="32px" max-width="32px" class="mr-2" :src="'/icons/star.svg'" v-for="n in item.stars"></v-img>
                 </v-layout>
-                <h3 class="body-2 font-weight-medium text-xs-center mt-3 px-5 pb-2" style="color:rgb(151, 147, 147);">
+                <h3 class="subheading font-weight-medium text-xs-center mt-3 px-5 pb-2" style="color:rgb(151, 147, 147);">
                   {{item.description}}
                 </h3>
               </v-flex>
@@ -77,6 +77,10 @@
 .testimonies .v-carousel__prev .v-icon, .testimonies .v-carousel__next .v-icon{
   color: silver !important;
   font-size: 32px !important;
+}
+
+.testimonies div.v-carousel__controls {
+  display: none;
 }
 
 .logo-testimony {

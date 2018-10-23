@@ -23,7 +23,7 @@
                 :description="service.description"
                 :list="service.list"
                 :icon="service.icon"
-                :url="service.url" 
+                :url="service.slug" 
                 start-button 
               />
           </v-flex>

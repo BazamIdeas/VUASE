@@ -15,7 +15,7 @@
       <v-img :src="icon" width="50" max-width="50" class="mr-2" style="float: left;"></v-img>
       <div>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
-        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ currency }} {{ price }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" :to="url">comenzar</v-btn>
+        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ currency }} {{ price }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" :to="'/nuestros-servicios/'+url+'/brief'">comenzar</v-btn>
       </div>
     </v-flex>
     <v-flex xs12 v-if="description" class="service-box-description">
@@ -28,7 +28,7 @@
       </ul>
     </v-flex>
     <v-flex xs12 v-if="startButton" class="service-box-more-button">
-      <v-btn :to="url" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
+      <v-btn :to="'/nuestros-servicios/'+url" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
         conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
       </v-btn>
     </v-flex>
@@ -66,7 +66,7 @@
         type: Boolean
       },
       url: {
-        default: '/nuestros-servicios',
+        default: '/nuestros-servicios/',
         type: String
       }
     },
