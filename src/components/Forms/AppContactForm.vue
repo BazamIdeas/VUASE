@@ -55,7 +55,9 @@
         message: '',
         phone: '',
         times: [
-          'Hola'
+          '9am a 14hs – Dia de semana',
+          '14hs a 20hs – Dia de semana',
+          '9am a 14hs – Fin de semana'
         ],
         for_phone: true
       }
