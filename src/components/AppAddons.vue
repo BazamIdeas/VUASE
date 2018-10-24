@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md fluid>
     <v-layout row py-5>
-      <v-flex xs4 offset-xs2 px-5 class="addons-first">
+      <v-flex xs5 offset-xs1 px-3 class="addons-first">
         <img :src="first.image" class="addons-image"/>
         <v-layout row>
           <v-flex xs12  class="text-xs-center adddons-title-container">
@@ -13,18 +13,18 @@
             <span class="addons-subtitle mt-0 mb-4">{{first.subtitle}}</span>
           </v-flex>
         </v-layout>
-        <v-layout row>
-          <v-flex xs6 d-flex justify-end>
-            <v-btn :to="first.startUrl" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
+        <v-layout row wrap align-center justify-center>
+          <v-flex xs5 offset-xs1 d-flex justify-end>
+            <v-btn :to="first.url+ '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
           <v-flex xs6>
-            <v-btn :to="first.moreUrl" flat class="ma-0 px-2 know-more" large >
+            <v-btn :to="first.url" flat class="ma-0 px-2 know-more" large >
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs4 px-5 class="addons-last">
+      <v-flex xs5 px-3 class="addons-last">
         <img :src="last.image" class="addons-image"/>
         <v-layout row>
           <v-flex xs12 class="text-xs-center adddons-title-container">
@@ -36,12 +36,12 @@
             <span class="addons-subtitle mt-0 mb-4">{{last.subtitle}}</span>
           </v-flex>
         </v-layout>
-        <v-layout row>
-          <v-flex xs6 d-flex justify-end>
-            <v-btn :to="last.startUrl" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
+        <v-layout row wrap align-center justify-center>
+          <v-flex xs5 offset-xs1 d-flex justify-end>
+            <v-btn :to="last.url + '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
           <v-flex xs6>
-            <v-btn :to="last.moreUrl" flat class="ma-0 px-2 know-more" large>
+            <v-btn :to="last.url" flat class="ma-0 px-2 know-more" large>
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
           </v-flex>
@@ -59,8 +59,7 @@
         image: '',
         title: '',
         subtitle: '',
-        startUrl: '',
-        moreUrl: ''
+        url: ''
       }
     }
   }

@@ -202,7 +202,21 @@ export const servicesHardcoded = {
         { img: '/images/pages/logo-empresa/carousel/32.-Terra-Agro.png' },
         { img: '/images/pages/logo-empresa/carousel/33.-Bellek.png' }
       ]
-    }
+    },
+    packs: [
+      {
+        image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+        title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
+        subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
+        moreUrl: '/nuestros-servicios/imagen-corporativa'
+      },
+      {
+        image: '/images/pages/packs/addons-logo+web.png',
+        title: 'LOGO + WEB',
+        subtitle: '50% OFF EN DISEÑO DE LOGO',
+        moreUrl: '/nuestros-servicios/imagen-corporativa'
+      }
+    ]
   },
   'rediseno-de-logo': {
     list: ['Prueba 3', 'Prueba 4'],

@@ -24,6 +24,10 @@
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet id="que-te-ofrecemos" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" color="#472210" :percentage="service.percentage" />
 
+        <!-- PACKS -->
+        <AppHeading v-if="dataService.packs" :number="'1'" :size="'display-2'" title="APROVECHA NUESTROS PACKS" class="mb-3" />
+        <AppAddons v-if="dataService.packs" :first="dataService.packs[0]" :last="dataService.packs[1]" />
+
         <!-- TESTIMONIOS -->  
         <AppTestimony :list="dataService.testimonies" />
 
@@ -52,7 +56,10 @@ export default {
   async fetch ({ store }) {
     await store.dispatch('services/getAll')
   },
-  asyncData ({ params }) {
+  asyncData ({ params, store, redirect }) {
+    if (!store.state.app.staticData.services[params.servicio]) {
+      return redirect('/nuestros-servicios')
+    }
     return { serviceSlug: params.servicio }
   },
   computed: {
