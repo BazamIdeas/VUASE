@@ -21,7 +21,7 @@ export const state = () => ({
           'carousel'
         ],
         [
-          'pack-identidad-visual',
+          'imagen-corporativa',
           'pack-rediseno-de-logo'
         ]
       ]
@@ -54,8 +54,7 @@ export const state = () => ({
       ],
       rows: [
         [
-          'diseno-folletos-dipticos-tripticos',
-          'imagen-corporativa'
+          'diseno-folletos-dipticos-tripticos'
         ],
         [
           'papeleria',
