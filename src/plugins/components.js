@@ -19,7 +19,8 @@ import {
   AppServiceWhatGet,
   AppExpansionPanels,
   AppTestimony,
-  AppTopServiceSlider
+  AppTopServiceSlider,
+  AppAddons
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
@@ -42,3 +43,4 @@ Vue.component('AppServiceWhatGet', AppServiceWhatGet)
 Vue.component('AppExpansionPanels', AppExpansionPanels)
 Vue.component('AppTestimony', AppTestimony)
 Vue.component('AppTopServiceSlider', AppTopServiceSlider)
+Vue.component('AppAddons', AppAddons)
