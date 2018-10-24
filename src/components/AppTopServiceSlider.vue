@@ -7,15 +7,11 @@
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i"
-              transition="fade"
-              hide-controls
+              :src="item.url"
             >
               <v-layout xs12 row wrap>
-                <v-flex xs6>
-                  <v-img :src="item.url"></v-img>
-                </v-flex>
-                <v-flex xs6>
-                  <v-img width="80px" :src="service.icon"></v-img>
+                <v-flex xs5 offset-xs7>
+                  <v-img width="120px" :src="service.icon"></v-img>
                   <v-flex xs12 class="mb-2">
                     <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+item.color">{{service.title}}</h2>
                   </v-flex>
@@ -28,8 +24,8 @@
                     </ul>
                   </v-flex>
                   <v-layout xs12 row wrap>
-                    <v-flex xs4>
-                      <v-btn flat class="btn-simple" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
+                    <v-flex xs5>
+                      <v-btn flat class="btn-simple" style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
                     </v-flex>
                     <v-flex xs5>
                       <v-btn flat class="btn-simple" block><a href="#que-te-ofrecemos">¿QUÉ TE OFRECEMOS?</a></v-btn>
@@ -69,20 +65,40 @@
   box-shadow: unset;
 }
 
+.top-service-slider .v-btn--small{
+  width:20px !important;
+  height: 20px !important;
+}
+
+.top-service-slider .v-responsive__sizer, .top-service-slider .v-carousel__item {
+  transition: unset !important;
+  -webkit-transition: unset !important; 
+}
+
 .top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next{
   display: none;
 }
 
-.top-service-slider div.v-carousel__controls{
-  position: absolute;
-
+.top-service-slider .v-carousel__item > .v-image__image--cover {
+  background-size: 50%;
+  background-position: left !important;
 }
+
+.top-service-slider div.v-carousel__controls {
+  position: absolute;
+  left: 15%;
+}
+
+.top-service-slider .v-carousel__controls button {
+  margin: 0 !important;
+}
+
 .top-service-slider div.v-carousel__controls button{
   color: #4b4b4b;
 }
 .service-box-list ul, .service-box-list ol {
   padding-left: 17px;
-  list-style-image: url('/images/icons/check-blue.png');
+  list-style-image: url('/images/icons/check.png');
 }
 
 </style>

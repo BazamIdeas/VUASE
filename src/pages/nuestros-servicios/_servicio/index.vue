@@ -22,7 +22,7 @@
         <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides=dataService.creativeProcess :steps=dataService.steps />
       
         <!-- QUE TE LLEVAS -->  
-        <AppServiceWhatGet id="que-te-ofrecemos" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" just-one="true" />
+        <AppServiceWhatGet id="que-te-ofrecemos" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" color="#472210" :percentage="service.percentage" />
 
         <!-- TESTIMONIOS -->  
         <AppTestimony :list="dataService.testimonies" />

@@ -13,7 +13,7 @@
         >
           <div slot="header" class="font-weight-bold">{{item.question}}</div>
           <v-card class="response">
-            <v-card-text class="font-weight-medium" >{{item.response}}</v-card-text>
+            <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
           </v-card>
         </v-expansion-panel-content>
 
@@ -25,13 +25,17 @@
         >
           <div slot="header" class="font-weight-bold">{{item.question}}</div>
           <v-card class="response">
-            <v-card-text class="font-weight-medium">{{item.response}}</v-card-text>
+            <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-layout row d-flex justify-center>
         <v-flex xs2>
-          <v-btn flat class="btn-simple" @click="showLess = !showLess">VER MAS</v-btn>
+          <v-btn flat class="btn-simple" @click="showLess = !showLess">
+            VER  
+            <span v-if="showLess" class="ml-1">MAS</span> 
+            <span v-if="!showLess" class="ml-1">MENOS</span>
+          </v-btn>
         </v-flex>
       </v-layout>
     </v-container>

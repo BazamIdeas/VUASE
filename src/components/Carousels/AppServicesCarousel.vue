@@ -8,14 +8,31 @@
         <div class="layer" id="hc-layer-2-item-1">
           <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
 
-          <div class="input-search mt-4">
-            <input
-              v-model="find"
-              placeholder="Logo, pagina web, rotulo..."
-              required
-            >
-            <v-icon>search</v-icon>
-          </div>
+          <v-layout row wrap align-center justify-center class="mt-5">
+            <v-flex xs9>
+              <v-autocomplete
+                v-model="find"
+                :items="services"
+                label="Logo, pagina web, rotulo..."
+                persistent-hint
+                browser-autocomplete
+                hide-no-data
+                hide-selected
+                item-text="name"
+                item-value="slug"
+                class="input-search"
+                light
+              >
+              </v-autocomplete>
+            </v-flex>
+            <v-flex>
+              <v-slide-x-reverse-transition slot="append-outer" mode="out-in" >
+                <v-btn :to="url+'/'+ find +'/brief'" class="boton-buscar">
+                  <v-icon>search</v-icon>
+                </v-btn>
+              </v-slide-x-reverse-transition>
+            </v-flex>
+          </v-layout>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
           <v-img class="animate-img" src="images/carousels/services1.png"></v-img>
@@ -34,34 +51,68 @@
       },
       items: Array,
       find: ''
+    },
+    computed: {
+      services () { return this.$store.state.services.list },
+      url () {
+        return this.$router.currentRoute.path
+      }
     }
   }
 </script>
 
-<style scoped>
+<style>
   /* input-search */
-  .input-search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .input-search input{
-    border: 1px solid silver;
-    padding: 12px;
-    font-size: 20px !important;
-  }
-  .input-search input::placeholder {
-    color: #c1c0c0 !important;
-  }
-  .input-search.mt-4 i {
+  .boton-buscar {
     width: 50px;
     height: 50px;
-    color: white;
-    background: #4167b1;
-    font-size: 40px;
+    margin: 0;
+    background: #4167b1 !important;
+    box-shadow: none !important;
   }
   
+  boton-buscar i {
+    color: white;
+    font-size: 40px;
+  }
+
+  .input-search .v-input__append-inner {
+    display: none !important;
+  }
+
+  .input-search .v-input__slot {
+      margin-bottom: 0;
+      border:1px solid silver;
+  }
+  
+  .input-search .v-input__slot:before, .input-search .v-input__slot:after{
+    display: none;
+  }
+
+  .input-search .v-select__slot{
+    padding: 8px;
+  }
+
+  .input-search .v-input__control, .input-search{
+    margin: 0px;
+  }
+
+
+  .v-input.input-search * {
+    color: #202020 !important;
+  }
+
+  .input-search .v-input--is-label-active label, .input-search .v-label--active {
+      display: none;
+  }
+
+  .v-input.input-search label {
+    left: 8px !important;
+    margin-top: 8px;
+  }
+</style>
+
+<style scoped>  
   .v-carousel {
     box-shadow: none;
   }

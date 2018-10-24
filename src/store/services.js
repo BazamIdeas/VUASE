@@ -9,6 +9,21 @@ export const state = () => ({
       carousel: [
         { src: 'images/carousels/servicios_folletos.png' },
         { src: 'images/carousels/servicios_folletos.png' }
+      ],
+      rows: [
+        [
+          'logo-empresa',
+          'rediseno-de-logo',
+          'diseno-logo-y-pagina-web'
+        ],
+        [
+          'vectorizacion',
+          'carousel'
+        ],
+        [
+          'pack-identidad-visual',
+          'pack-rediseno-de-logo'
+        ]
       ]
     },
     {
@@ -18,6 +33,15 @@ export const state = () => ({
       carousel: [
         { src: 'images/carousels/servicios_folletos.png' },
         { src: 'images/carousels/servicios_folletos.png' }
+      ],
+      rows: [
+        [
+          'diseno-de-app'
+        ],
+        [
+          'diseno-pagina-web',
+          'carousel'
+        ]
       ]
     },
     {
@@ -27,6 +51,16 @@ export const state = () => ({
       carousel: [
         { src: 'images/carousels/servicios_folletos.png' },
         { src: 'images/carousels/servicios_folletos.png' }
+      ],
+      rows: [
+        [
+          'diseno-folletos-dipticos-tripticos',
+          'imagen-corporativa'
+        ],
+        [
+          'papeleria',
+          'carousel'
+        ]
       ]
     },
     {
@@ -58,7 +92,7 @@ export const state = () => ({
       name: 'Perfiles de Redes Sociales',
       rows: [
         [
-          'perfiles-de-redes-sociales',
+          'diseno-perfil-redes-sociales',
           'carousel'
         ]
       ],
@@ -79,6 +113,8 @@ export const mutations = {
 
     for (let group of state.groups) {
       if (!group.rows) { continue }
+      group.layouts = []
+
       for (const arrSlugs of group.rows) {
         var row = {
           services: []
@@ -126,7 +162,6 @@ export const actions = {
   async getAll ({ rootState, commit }) {
     try {
       let services = await this.$axios.$get('services?limit=1000')
-      console.log(services)
       commit('GET_ALL', services)
     } catch (error) {
       console.log(error)
