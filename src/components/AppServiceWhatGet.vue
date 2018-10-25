@@ -1,8 +1,8 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-5 pb-0">
-      <v-flex xs12 class="mb-5" v-if="!justOne">
-        <AppHeading number="1" size="display-2" align="left" :title="title" />
+      <v-flex xs8 class="mb-5" v-if="!justOne">
+        <AppHeading number="1" size="display-2" align="center" :title="title" />
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get mb-5">
           <v-flex xs12 md4  v-for="(column, i) in service.whatYouGet.columns" :key="i" class="pa-3 mt-5 column" :class="{'no-border md6': justOne}">

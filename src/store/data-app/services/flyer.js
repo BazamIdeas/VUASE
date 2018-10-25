@@ -51,38 +51,38 @@ export const flyer = {
   },
   frequentQuestions: [
     {
-      question: '¿Cuántas series de opciones y perfeccionamientos crean para mi proyecto?',
-      response: 'Usualmente el cliente encuentra en la primer serie de bocetos un diseño de su entera conformidad dado que los mismos han sido creados en exclusiva atendiendo sus necesidades y preferencias, aunque hay casos en los cuales no se encuentra 100% identificado en el diseño y desea recibir más opciones las cuales se realizan hasta sin cargo adicional y hasta lograr su entera aprobación. En el caso que al recibir la primer decena de bocetos no quisiera seguir adelante se le reintegra su dinero sin hacerle pregunta alguna.'
+      question: '¿Quiénes crean los diseños?',
+      response: 'Nuestro equipo interdisciplinario de profesionales en diseño gráfico, publicidad e ilustración.'
     }, {
-      question: '¿El logo que adquiero es exclusivo?',
-      response: 'Sí, todos los diseños son únicos y originales, realizados a la medida del cliente bajo su requerimiento. Una vez completado el proceso creativo, se le transfieren a usted los derechos intelectuales sobre el diseño. Complementariamente recomendamos el registro de su marca?'
+      question: '¿Cuántas opciones de diseños originales y perfeccionamientos realizan para mi folleto?',
+      response: 'Todas las que sean necesarias hasta que usted este 100% conforme.'
     }, {
-      question: 'Tengo una idea en mente para mi logo, ¿Ustedes podrían llevarla adelante de manera creativa y profesional?',
-      response: 'Sí, en estos casos dicho concepto es considerado y llevado adelante por el equipo de profesionales a cargo de su proyecto. De manera complementaria a esta idea aportada por el cliente, se confeccionan conceptos originales creados desde un punto de vista objetivo y distante que muchas veces sorprenden al cliente y decantan su proyecto.'
+      question: '¿Qué piezas se pueden diseñar?',
+      response: 'Podemos crear todo tipo de piezas publicitarias, las más habituales son flyer, dípticos, trípticos, catálogos, publicidades.'
     }, {
-      question: 'No estoy seguro del nombre para mi logo, ¿pueden ayudarme?',
-      response: 'Si, de manera complementaria y gratuita nuestro equipo de profesionales le presentará 10 opciones ideales para su proyecto.'
+      question: '¿Qué es un diptico?',
+      response: 'Es un una pieza publicitaria con una tapa, contratapa, y dos caras interiores. El tamaño más comunes (desplegado) son: A3 (29.7 x 42 cm), A4 (21 x 29.7 cm), A5 (15 x 21 cm).'
     }, {
-      question: 'Aun no tengo los datos definitivos de mi empresa, ¿puedo comenzar con el diseño del proyecto?',
-      response: 'Sí, la empresa le brinda un plazo de 2 meses para realizar cualquier cambio en su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto.'
+      question: '¿Qué es el diseño de un tríptico?',
+      response: 'Es el diseño de una pieza publicitaria con una tapa, contratapa, y cuatro carillas internas. Las dimensiones más comunes (desplegado) son: A3 (29.7 x 42 cm), A4 (21 x 29.7 cm) y 21 x 45 cm.'
     }, {
-      question: '¿En dónde puedo colocar mi logo?',
-      response: 'El logo se entrega listo para ser utilizado en: Imprenta profesional, documentos de Microsoft Word, Excel, Power Point, Outlook, Access, Open Office, sistemas de gestión empresarial, facturación y contabilidad. Rotulación vehicular, de locales, de envases, de uniformes, publicidades impresas y digitales. Sitios web, e-mails y TV. Pegatinas, sellos y bordados.'
+      question: '¿Qué es un Flyer y octavilla?',
+      response: 'Es un diseño publicitario de buzoneo o entrega en mano, generalmente de tamaño A6 (10.5 x 15 cm).'
     }, {
-      question: '¿En qué formatos recibo mi logo?',
-      response: 'GIF: archivo en formato de imagen ideal para aplicaciones en web.<br> JPG: archivo en formato de imagen para impresión y aplicación en web.<br> AI: archivo vectorial editable del programa Adobe Illustrator, imprimible en cualquier tamaño y material.<br> EPS: archivo vectorial editable habitualmente utilizado en imprentas y compatible con diferentes programas de diseño. Cualquier otro formato requerido será facilitado, sin cargo adicional.'
+      question: '¿Qué elementos debo brindar para el diseño de un folleto?',
+      response: 'Logo, textos e imágenes que desee presentar sobre los cuales trabajará nuestro equipo.'
     }, {
-      question: '¿Cuánto tiempo lleva realizar mi logo?',
-      response: 'Los proyectos llevan normalmente entre 1 y 4 días dependiendo la cantidad de conceptos que debemos crear hasta lograr su entera conformidad. El cliente cuenta con un plazo de hasta 2 meses para realizar el proyecto.'
+      question: '¿No poseo imágenes para mi folleto?',
+      response: 'No es un problema, le buscaremos fotos en bancos de imágenes libres de derecho y/o económicas.'
     }, {
-      question: '¿Cómo recibo la entrega de mi proyecto?',
-      response: 'Es enviado vía email dentro de las primeras 24 hrs. hábiles de comunicada la entera conformidad en el diseño y abonado el saldo de su proyecto.'
+      question: '¿Qué incluye el diseño de un folleto?',
+      response: 'La creación publicitaria profesional 100% original de hasta tres opciones iniciales y ajustes ilimitados hasta entera conformidad. Revisión de sus textos y optimización de fotos. <br> <br> El trabajo es llevado a cabo por un equipo de cuatro profesionales interdisciplinarios y un líder de proyecto quien interactúa con el cliente.'
     }, {
-      question: '¿Existe un coste adicional a los informados?',
-      response: 'No, nuestros precios son cerrados y sin costes ocultos.'
+      question: '¿En qué formatos se entregan los diseños?',
+      response: 'Una vez confirmado el diseño de su entera conformidad usted recibe el diseño en formatos PDF de alta resolución, para que su imprenta pueda realizar la impresión de su pieza, PDF de baja resolución, lista para enviar por email o publicar en Internet, AI (formato vectorial editable del programa Adobe Illustrator, imprimible en cualquier tamaño y material) y EPS (formato vectorial editable comúnmente utilizado en imprentas).'
     }, {
-      question: '¿Cómo puedo abonar mi proyecto?',
-      response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
+      question: '¿Cuánto tiempo supone el diseño de un folleto?',
+      response: 'Entre dos y cuatro días dependiendo la cantidad de perfeccionamientos que fueran necesarios para su pieza.'
     }
   ],
   testimonies: [{
@@ -192,15 +192,13 @@ export const flyer = {
   packs: [
     {
       image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
-      title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
-      subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
-      moreUrl: '/nuestros-servicios/imagen-corporativa'
+      title: 'CATÁLOGO',
+      moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
     },
     {
       image: '/images/pages/packs/addons-logo+web.png',
-      title: 'LOGO + WEB',
-      subtitle: '50% OFF EN DISEÑO DE LOGO',
-      moreUrl: '/nuestros-servicios/imagen-corporativa'
+      title: 'TRÍPTICO',
+      moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
     }
   ]
 }

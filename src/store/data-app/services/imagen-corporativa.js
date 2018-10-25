@@ -1,5 +1,5 @@
 export const imagenCorporativa = {
-  list: ['Prueba 3', 'Prueba 4'],
+  list: ['logo hasta entera conformidad', 'Diseños 100% exclusivos', 'Conceptos ilimitados', 'Elige 6 piezas entre 65 opciones', 'Tus piezas listas para imprimir y usar digitalmente'],
   title: 'IMAGEN CORPORATIVA',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/logo_a_medida_hover.svg',
@@ -42,18 +42,27 @@ export const imagenCorporativa = {
         title: 'MANUAL DE USO DE LA MARCA',
         items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
         icon: '/icons/logo_a_medida_hover.svg'
+      }, {
+        title: 'TUTORIALES DE USO',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        icon: '/icons/logo_a_medida_hover.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
-        title: 'TUTORIALES DE USO',
+        title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
-        title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
+        title: '6 piezas de PAPELERÍA Y MERCHANDISING Y REDES SOCIALES',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        icon: '/icons/logo_a_medida_hover.svg'
+      }, {
+        title: 'LOGO ANIMADO',
+        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
         icon: '/icons/logo_a_medida_hover.svg'
       }]
     ]

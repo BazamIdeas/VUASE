@@ -20,7 +20,9 @@
                   </v-flex>
                   <v-flex xs12 v-if="service.list" class="service-box-list">
                     <ul>
-                      <li v-for="(checkItem, i) in service.list" :key="i" class="body-1 font-weight-medium mb-2">{{checkItem}}</li>
+                      <li v-for="(checkItem, i) in service.list" :key="i" class="body-1 font-weight-medium mb-2">
+                        <v-icon :color="item.color" class="mr-3 font-weight-bold">check</v-icon> {{checkItem}}
+                        </li>
                     </ul>
                   </v-flex>
                   <v-layout xs12 row wrap>
@@ -98,8 +100,18 @@
   color: #4b4b4b;
 }
 .service-box-list ul, .service-box-list ol {
-  padding-left: 17px;
-  list-style-image: url('/images/icons/check.png');
+  list-style-type: none;
+  padding-left: 0px;
 }
+
+.service-box-list li {
+  padding-left: 0px;
+}
+
+.top-service-slider .v-carousel{
+      min-height: 100vh;
+      height: auto;
+}
+
 
 </style>
