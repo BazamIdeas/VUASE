@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- TOP SLIDER -->
-    <v-container grid-list-md class="mt-5 mb-5 pt-5 pb-0">
+    <v-container grid-list-md class="mt-5 mb-5 pt-5 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
         <AppTopServiceSlider :service="dataService" />
       </v-layout>
@@ -16,13 +16,13 @@
     <v-container grid-list-md class="mt-3 pb-0">
       <v-layout row wrap>
          <!-- CARACTERISTICAS -->  
-        <AppServiceCharacteristics title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
+        <AppServiceCharacteristics id="que-te-ofrecemos" title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
 
         <!-- PROCESO CREATIVO -->  
         <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides=dataService.creativeProcess :steps=dataService.steps />
       
         <!-- QUE TE LLEVAS -->  
-        <AppServiceWhatGet id="que-te-ofrecemos" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" color="#472210" :percentage="service.percentage" />
+        <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
         <!-- PACKS -->
         <AppHeading v-if="dataService.packs" :number="'1'" :size="'display-2'" title="APROVECHA NUESTROS PACKS" class="mb-3" />

@@ -8,7 +8,7 @@
             <AppHeading :title="first.title" :size="''" :number="'2'" :margin="'ma-0'"></AppHeading>
           </v-flex>
         </v-layout>
-        <v-layout row>
+        <v-layout row v-if="first.subtitle">
           <v-flex xs12 class="text-xs-center">
             <span class="addons-subtitle mt-0 mb-4">{{first.subtitle}}</span>
           </v-flex>
@@ -31,7 +31,7 @@
             <AppHeading :title="last.title" :size="''" :number="'2'"></AppHeading>
           </v-flex>
         </v-layout>
-        <v-layout row class="text-xs-center">
+        <v-layout row class="text-xs-center" v-if="last.subtitle">
           <v-flex xs12>
             <span class="addons-subtitle mt-0 mb-4">{{last.subtitle}}</span>
           </v-flex>

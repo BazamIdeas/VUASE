@@ -1,5 +1,5 @@
-import {servicesHardcoded} from './services.js'
+import { services } from './services'
 
 export const staticData = {
-  services: servicesHardcoded
+  services: services
 }
