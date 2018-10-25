@@ -16,7 +16,7 @@
                     <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+item.color">{{service.title}}</h2>
                   </v-flex>
                   <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
-                    <span class="body-2">{{ service.description }}</span>
+                    <span class="body-2" v-html="service.description"></span>
                   </v-flex>
                   <v-flex xs12 v-if="service.list" class="service-box-list">
                     <ul>
@@ -28,8 +28,8 @@
                       <v-btn flat class="btn-simple" style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
                     </v-flex>
                     <v-flex xs5>
-                      <v-btn flat class="btn-simple" block><a href="#que-te-ofrecemos">¿QUÉ TE OFRECEMOS?</a></v-btn>
-                      <v-btn flat class="btn-simple" block><a href="#como-funciona">¿CÓMO FUNCIONA?</a></v-btn>
+                      <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#que-te-ofrecemos')">¿QUÉ TE OFRECEMOS?</v-btn>
+                      <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#como-funciona')">¿CÓMO FUNCIONA?</v-btn>
                     </v-flex>
                   </v-layout>
                 </v-flex>
@@ -86,7 +86,8 @@
 
 .top-service-slider div.v-carousel__controls {
   position: absolute;
-  left: 15%;
+  width: 15%;
+  left: 58%;
 }
 
 .top-service-slider .v-carousel__controls button {

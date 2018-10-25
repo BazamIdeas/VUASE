@@ -9,7 +9,7 @@
 					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7, 'xs12 md3': list.length > 6}">
 						<div class="characteristic">
 							<img max-width="90px" width="90px" :src="item.icon" class="mb-1 mt-2"></img>
-							<h1 class="title font-weight-bold mb-3 px-5" color="dark">{{ item.title }}</h1> 
+							<h1 class="title font-weight-bold mb-3" color="dark" :class="{'px-5': list.length < 6}">{{ item.title }}</h1> 
 							<span class="body-2 mb-2" >{{ item.description }}</span>
 						</div>
 					</v-flex>
