@@ -164,7 +164,7 @@ export const rVehicular = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/34.-costaserveis_mock up.jpg' },
+      { img: '/images/pages/services-carousel/34.-costaserveis_mock up.jpg' },
       { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
       { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
       { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
