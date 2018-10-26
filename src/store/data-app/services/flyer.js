@@ -192,12 +192,12 @@ export const flyer = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
       moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
     },
     last: {
-      image: '/images/pages/packs/addons-logo+web.png',
+      image: '/images/pages/packs/oferta-triptico-gloss.png',
       title: 'TRÍPTICO',
       moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
     }
