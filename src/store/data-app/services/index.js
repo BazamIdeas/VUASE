@@ -18,7 +18,7 @@ import { diptico } from './diptico.js'
 import { tripticos } from './tripticos.js'
 
 import { rBanner } from './rotulo-banner.js'
-import { rEtiqueta } from './rotulo-etiqueta-packaging.js'
+import { rPackaging } from './packaging.js'
 import { rFurgoneta } from './rotulo-furgoneta-camion.js'
 import { rLocal } from './rotulo-local.js'
 import { rVehicular } from './rotulo-vehicular.js'
@@ -37,7 +37,7 @@ export const services = {
   'papeleria': papeleria,
   'rediseno-de-logo': redisenoLogo,
   'rotulo-banner': rBanner,
-  'rotulo-etiqueta-packaging': rEtiqueta,
+  'packaging': rPackaging,
   'rotulo-furgoneta-camion': rFurgoneta,
   'rotulo-local': rLocal,
   'rotulo-vehicular': rVehicular,
