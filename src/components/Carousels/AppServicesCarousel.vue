@@ -203,6 +203,12 @@
       text-align: center;
     }
 
+    div#hc-layer-3-item-1 {
+      width: 70%;
+      left: -2%;
+      top: 20%;
+    }
+
     /*ITEM-2*/
     div#hc-layer-1-item-2 {
       font-size: 28px;
@@ -251,8 +257,8 @@
 
     div#hc-layer-3-item-1 {
       width: 70%;
-      left: -12%;
-      top: 2%;
+      left: -2%;
+      top: 20%;
     }
 
     /*ITEM-2*/
