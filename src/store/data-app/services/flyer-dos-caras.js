@@ -205,12 +205,12 @@ export const flyerDosCaras = {
     first: {
       image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
-      moreUrl: '/nuestros-servicios/catalogo'
+      url: '/nuestros-servicios/catalogo'
     },
     last: {
       image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
       title: 'PUBLICIDAD',
-      moreUrl: '/nuestros-servicios/publicidad'
+      url: '/nuestros-servicios/publicidad'
     }
   }
 }

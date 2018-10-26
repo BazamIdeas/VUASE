@@ -205,12 +205,12 @@ export const diptico = {
     first: {
       image: '/images/pages/packs/flyer-retro-cafe.png',
       title: 'FLYER',
-      moreUrl: '/nuestros-servicios/flyer'
+      url: '/nuestros-servicios/flyer'
     },
     last: {
       image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
-      moreUrl: '/nuestros-servicios/catalogo'
+      url: '/nuestros-servicios/catalogo'
     }
   }
 }

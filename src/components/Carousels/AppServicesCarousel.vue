@@ -203,11 +203,6 @@
       text-align: center;
     }
 
-    div#hc-layer-3-item-1 {
-      width: 100%;
-      top: 17%;
-    }
-
     /*ITEM-2*/
     div#hc-layer-1-item-2 {
       font-size: 28px;

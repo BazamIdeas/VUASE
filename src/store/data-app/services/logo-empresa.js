@@ -238,13 +238,13 @@ export const logoEmpresa = {
       image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
       title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
       subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
-      moreUrl: '/nuestros-servicios/imagen-corporativa'
+      url: '/nuestros-servicios/imagen-corporativa'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
       subtitle: '50% OFF EN DISEÑO DE LOGO',
-      moreUrl: '/nuestros-servicios/imagen-corporativa'
+      url: '/nuestros-servicios/imagen-corporativa'
     }
   }
 }

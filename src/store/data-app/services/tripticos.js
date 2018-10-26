@@ -205,12 +205,12 @@ export const tripticos = {
     first: {
       image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
       title: 'REDISEÑO DE LOGO + PAPELERÍA',
-      moreUrl: '/nuestros-servicios/pack-rediseno-de-logo'
+      url: '/nuestros-servicios/pack-rediseno-de-logo'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'REDISEÑO DE LOGO + WEB',
-      moreUrl: '/nuestros-servicios/pack-rediseno-de-logo'
+      url: '/nuestros-servicios/pack-rediseno-de-logo'
     }
   }
 }
