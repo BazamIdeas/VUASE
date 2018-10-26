@@ -1,5 +1,5 @@
-export const flyer = {
-  title: 'FLYER',
+export const flyerDosCaras = {
+  title: 'FLYER DOS CARAS',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/logo_a_medida_hover.svg',
   whatWeOffer: [
@@ -38,13 +38,17 @@ export const flyer = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/flyer/flyer-willian-&-perkins.png',
-    color: '#3566B2',
+    img: '/images/pages/flyer-dos-caras/flyer-dos-caras-hacienda-santiago-tepayuca.png',
+    color: '#404040',
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: 'loremp',
-        items: ['<b>PDF</b> Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+        items: [
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }]
     ]
@@ -86,30 +90,46 @@ export const flyer = {
     }
   ],
   testimonies: [{
-    stars: 4,
+    stars: 5,
     logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Ha sido excelente trabajar con ustedes”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Profesionales, competentes, rápidos.!”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
   }],
   topSlider: [
     {
-      url: '/images/pages/flyer/flyer-gemba.png',
-      color: '#194979'
+      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-compubot.png',
+      color: '#19A1D5'
     },
     {
-      url: '/images/pages/flyer/flyer-hnos-duarte.png',
-      color: '#A8B800'
+      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-granja-el-arenon.png',
+      color: '#9C5529'
     },
     {
-      url: '/images/pages/flyer/flyer-hotel-montecarlo.png',
-      color: '#3B9BD5'
+      url: '/images/pages/flyer-dos-caras/flyer-hotel-montecarlo.png',
+      color: '#3B9BD7'
     },
     {
-      url: '/images/pages/flyer/flyer-retro-cafe.png',
-      color: '#EB1C24'
+      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-knot.png',
+      color: '#F35A3A'
     },
     {
-      url: '/images/pages/flyer/flyer-camaleon.png',
-      color: '#9AC43C'
+      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-vital-herbolarios.png',
+      color: '#92D305'
     }
   ],
   creativeProcess: [
@@ -151,55 +171,46 @@ export const flyer = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/logo-empresa/carousel/1.-New-Cool.png' },
-      { img: '/images/pages/logo-empresa/carousel/2.-Chikas.png' },
-      { img: '/images/pages/logo-empresa/carousel/3.-Family-TV.png' },
-      { img: '/images/pages/logo-empresa/carousel/4.-Fauna-Domestica.png' },
-      { img: '/images/pages/logo-empresa/carousel/5.-Stemmedic.png' },
-      { img: '/images/pages/logo-empresa/carousel/6.-Antartik.png' },
-      { img: '/images/pages/logo-empresa/carousel/7.-Arlu.png' },
-      { img: '/images/pages/logo-empresa/carousel/8.-Aixo-Hotel-Suites.png' },
-      { img: '/images/pages/logo-empresa/carousel/9.-food-chef.png' },
-      { img: '/images/pages/logo-empresa/carousel/10.-y-si-me-toca-a-mi.png' },
-      { img: '/images/pages/logo-empresa/carousel/11.-Black-Bird.png' },
-      { img: '/images/pages/logo-empresa/carousel/12.-Paralelo-0.png' },
-      { img: '/images/pages/logo-empresa/carousel/13.-Hostal-La-Colegiata.png' },
-      { img: '/images/pages/logo-empresa/carousel/14.-Ingenium.png' },
-      { img: '/images/pages/logo-empresa/carousel/15.-Hobbie.png' },
-      { img: '/images/pages/logo-empresa/carousel/16.-Bricoaching.png' },
-      { img: '/images/pages/logo-empresa/carousel/17.-Osmaservice.png' }
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' }
     ],
     items2: [
-      { img: '/images/pages/logo-empresa/carousel/18.-La-Casa-de-Kett.png' },
-      { img: '/images/pages/logo-empresa/carousel/19.-Avicola-Pungurume.png' },
-      { img: '/images/pages/logo-empresa/carousel/20.Arquitectura-Sin-Limites.png' },
-      { img: '/images/pages/logo-empresa/carousel/21.-Ares.png' },
-      { img: '/images/pages/logo-empresa/carousel/22.-Geoit.png' },
-      { img: '/images/pages/logo-empresa/carousel/23.-Lextres-abogados.png' },
-      { img: '/images/pages/logo-empresa/carousel/24. Limpverd.png' },
-      { img: '/images/pages/logo-empresa/carousel/24.-Avedrone.png' },
-      { img: '/images/pages/logo-empresa/carousel/25.-Lormanic.png' },
-      { img: '/images/pages/logo-empresa/carousel/26.Cielo.png' },
-      { img: '/images/pages/logo-empresa/carousel/27.-Majavilitas.png' },
-      { img: '/images/pages/logo-empresa/carousel/28.-Esparvel.png' },
-      { img: '/images/pages/logo-empresa/carousel/29.-Orgui.png' },
-      { img: '/images/pages/logo-empresa/carousel/30.-Nipponair.png' },
-      { img: '/images/pages/logo-empresa/carousel/31. Dulces para Paula.png' },
-      { img: '/images/pages/logo-empresa/carousel/32.-Terra-Agro.png' },
-      { img: '/images/pages/logo-empresa/carousel/33.-Bellek.png' }
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' }
     ]
   },
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+      image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
       title: 'CATÁLOGO',
-      moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
+      moreUrl: '/nuestros-servicios/catalogo'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
-      title: 'TRÍPTICO',
-      moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
+      title: 'PUBLICIDAD',
+      moreUrl: '/nuestros-servicios/publicidad'
     }
   }
 }

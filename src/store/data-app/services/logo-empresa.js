@@ -6,15 +6,15 @@ export const logoEmpresa = {
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad.',
+      description: 'Creaciones a medida, únicas y de calidad',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especialistas.',
+      description: 'Tu proyecto en manos de expertos especializados',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
@@ -22,38 +22,50 @@ export const logoEmpresa = {
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/logo_a_medida_hover.svg'
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
-    color: '#472210',
+    img: '/images/pages/rediseno-de-logo/mockup-ferreteria-flores.png',
+    color: '#211F20',
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['<b>PDF</b> Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
+          'Códigos de colores.',
+          'Tipos de letra utilizada en tu logo.',
+          'Proporciones.',
+          'Uso debido e indebido de los componentes del diseño.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
         icon: '/icons/logo_a_medida_hover.svg'
       }]
     ]
@@ -94,11 +106,29 @@ export const logoEmpresa = {
       response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
     }
   ],
-  testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
-  }],
+  testimonies: [
+    {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Ha sido excelente trabajar con ustedes”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Profesionales, competentes, rápidos.!”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
+    }
+  ],
   topSlider: [
     {
       url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
@@ -202,18 +232,19 @@ export const logoEmpresa = {
       { img: '/images/pages/logo-empresa/carousel/33.-Bellek.png' }
     ]
   },
-  packs: [
-    {
+  packs: {
+    title: 'APROVECHA NUESTROS PACK',
+    first: {
       image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
       title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
       subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
       moreUrl: '/nuestros-servicios/imagen-corporativa'
     },
-    {
+    last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
       subtitle: '50% OFF EN DISEÑO DE LOGO',
       moreUrl: '/nuestros-servicios/imagen-corporativa'
     }
-  ]
+  }
 }

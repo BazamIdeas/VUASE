@@ -7,7 +7,6 @@
             v-for="(item,i) in list"
             :key="i"
             active-class="active-testimony"
-            transition="fade"
             height="'350'"
             hide-delimiters="true"
             next-icon="arrow_right"
@@ -58,6 +57,11 @@
 </script>
 
 <style>
+.testimonies .v-responsive__sizer, .testimonies .v-carousel__item {
+  transition: unset !important;
+  -webkit-transition: unset !important; 
+}
+
 .testimonies .v-carousel{
   height: 350px;
   box-shadow: unset;

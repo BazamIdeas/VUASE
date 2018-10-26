@@ -25,8 +25,7 @@
         <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
         <!-- PACKS -->
-        <AppHeading v-if="dataService.packs" :number="'1'" :size="'display-2'" title="APROVECHA NUESTROS PACKS" class="mb-3" />
-        <AppAddons v-if="dataService.packs" :first="dataService.packs[0]" :last="dataService.packs[1]" />
+        <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
         <AppTestimony :list="dataService.testimonies" />

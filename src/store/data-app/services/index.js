@@ -1,15 +1,21 @@
 /* SERVICIOS */
 import { disenoApp } from './diseno-de-app.js'
-import { folletos } from './diseno-folletos-dipticos-tripticos.js'
+
 import { logoWeb } from './diseno-logo-y-pagina-web.js'
 import { web } from './diseno-pagina-web.js'
+import { logoEmpresa } from './logo-empresa.js'
 import { redesSociales } from './diseno-perfil-redes-sociales.js'
 import { imagenCorporativa } from './imagen-corporativa.js'
-import { logoEmpresa } from './logo-empresa.js'
+
 import { packRediseno } from './pack-rediseno-de-logo.js'
-import { papeleria } from './papeleria.js'
 import { redisenoLogo } from './rediseno-de-logo.js'
+
+import { papeleria } from './papeleria.js'
+import { folletos } from './diseno-folletos-dipticos-tripticos.js'
 import { flyer } from './flyer.js'
+import { flyerDosCaras } from './flyer-dos-caras.js'
+import { diptico } from './diptico.js'
+import { tripticos } from './tripticos.js'
 
 import { rBanner } from './rotulo-banner.js'
 import { rEtiqueta } from './rotulo-etiqueta-packaging.js'
@@ -37,5 +43,8 @@ export const services = {
   'rotulo-vehicular': rVehicular,
   'rotulo-vestimenta-uniforme': rVestimenta,
   'vectorizacion': vectorizacion,
-  'flyer': flyer
+  'flyer': flyer,
+  'diptico': diptico,
+  'tripticos': tripticos,
+  'flyer-dos-caras': flyerDosCaras
 }

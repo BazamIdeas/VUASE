@@ -6,27 +6,27 @@ export const imagenCorporativa = {
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
+      description: 'Creaciones a medida, únicas y de calidad',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Descripción',
+      description: 'Tu proyecto en manos de expertos especializados',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/logo_a_medida_hover.svg'
     }
   ],
@@ -36,33 +36,55 @@ export const imagenCorporativa = {
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
+          'Códigos de colores.',
+          'Tipos de letra utilizada en tu logo.',
+          'Proporciones.',
+          'Uso debido e indebido de los componentes del diseño.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
         icon: '/icons/logo_a_medida_hover.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: '6 piezas de PAPELERÍA Y MERCHANDISING Y REDES SOCIALES',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        description: 'A elección dentro de nuestro menu de 65 elementos de entera comformidad. listas para utilizar en los siguentes formatos:',
+        items: [
+          '<b>Word</b>',
+          '<b>PDF</b>',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'LOGO ANIMADO',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          '<b>Word</b>',
+          '<b>FLA</b> Archivo 100% editable en Abobe Flash.',
+          '<b>SWF</b> Archivo ejecutable para ser aplicado en sitios web.',
+          '<b>EXE</b> Archivo ejecutable, compatible para cualquier tipo de ordenador.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }]
     ]
