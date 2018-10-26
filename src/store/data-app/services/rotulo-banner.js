@@ -2,7 +2,7 @@ export const rBanner = {
   list: ['Diseño publicitario impactante', 'Creaciones Ilimitadas', 'Fotomontajes de tus diseños', 'Entrega lista para imprimir'],
   title: 'ROTULO BANNER',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  icon: '/icons/logo_a_medida_hover.svg',
+  icon: '/icons/rotulo_banner.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
@@ -150,5 +150,18 @@ export const rBanner = {
       { img: '/images/examples/7.png' },
       { img: '/images/examples/8.png' }
     ]
+  },
+  packs: {
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    first: {
+      image: '/images/pages/packs/pack-rotulo-vannamel.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/packaging'
+    },
+    last: {
+      image: '/images/pages/packs/pack-rotulo-local-sanidae.png',
+      title: 'TRÍPTICO',
+      url: '/nuestros-servicios/rotulo-local'
+    }
   }
 }
