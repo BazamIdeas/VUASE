@@ -155,12 +155,12 @@ export const rBanner = {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
       image: '/images/pages/packs/pack-rotulo-vannamel.png',
-      title: 'CATÁLOGO',
+      title: 'PACKAGING',
       url: '/nuestros-servicios/packaging'
     },
     last: {
       image: '/images/pages/packs/pack-rotulo-local-sanidae.png',
-      title: 'TRÍPTICO',
+      title: 'RÓTULO LOCAL',
       url: '/nuestros-servicios/rotulo-local'
     }
   }
