@@ -203,14 +203,14 @@ export const diptico = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/flyer/flyer-retro-cafe.png',
+      image: '/images/pages/packs/flyer-retro-cafe.png',
       title: 'FLYER',
-      moreUrl: '/nuestros-servicios/flyer'
+      url: '/nuestros-servicios/flyer'
     },
     last: {
-      image: '/images/pages/packs/addons-logo+web.png',
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
-      moreUrl: '/nuestros-servicios/catalogo'
+      url: '/nuestros-servicios/catalogo'
     }
   }
 }
