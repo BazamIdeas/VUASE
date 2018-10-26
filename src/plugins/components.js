@@ -3,6 +3,7 @@ import {
   AppAboutUsCarousel,
   AppCarousel,
   AppContactForm,
+  AppDesignsForm,
   AppExamplesSlider,
   AppFilterExamplesForm,
   AppHeading,
@@ -19,12 +20,14 @@ import {
   AppServiceWhatGet,
   AppExpansionPanels,
   AppTestimony,
-  AppTopServiceSlider
+  AppTopServiceSlider,
+  AppAddons
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
 Vue.component('AppCarousel', AppCarousel)
 Vue.component('AppContactForm', AppContactForm)
+Vue.component('AppDesignsForm', AppDesignsForm)
 Vue.component('AppExamplesSlider', AppExamplesSlider)
 Vue.component('AppFilterExamplesForm', AppFilterExamplesForm)
 Vue.component('AppHeading', AppHeading)
@@ -42,3 +45,4 @@ Vue.component('AppServiceWhatGet', AppServiceWhatGet)
 Vue.component('AppExpansionPanels', AppExpansionPanels)
 Vue.component('AppTestimony', AppTestimony)
 Vue.component('AppTopServiceSlider', AppTopServiceSlider)
+Vue.component('AppAddons', AppAddons)

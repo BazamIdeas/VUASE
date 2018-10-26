@@ -7,7 +7,6 @@
             v-for="(item,i) in list"
             :key="i"
             active-class="active-testimony"
-            transition="fade"
             height="'350'"
             hide-delimiters="true"
             next-icon="arrow_right"
@@ -20,7 +19,9 @@
                   NUESTROS CLIENTES?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
-                  <v-img width="32px" max-width="32px" class="mr-2" :src="'/icons/star.svg'" v-for="(n, i) in item.stars" :key="i"></v-img>
+                  <div class="text-xs-center">
+                    <v-rating class="testimony-rating" :value="item.stars" readonly></v-rating>
+                  </div>
                 </v-layout>
                 <h3 class="subheading font-weight-medium text-xs-center mt-3 px-5 pb-2" style="color:rgb(151, 147, 147);">
                   {{item.description}}
@@ -56,6 +57,11 @@
 </script>
 
 <style>
+.testimonies .v-responsive__sizer, .testimonies .v-carousel__item {
+  transition: unset !important;
+  -webkit-transition: unset !important; 
+}
+
 .testimonies .v-carousel{
   height: 350px;
   box-shadow: unset;
@@ -97,5 +103,9 @@
     height: 200px;
     margin-left: 22%;
     margin-top: 12%;
+}
+
+.testimony-rating i.v-icon.v-icon--link.material-icons.theme--dark.accent--text {
+    color: silver !important;
 }
 </style>

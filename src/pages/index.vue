@@ -11,8 +11,8 @@
     <AppHeading title="¿Qué necesitas?" subtitle="Deja el diseño de tu imagen en manos de profesionales, que te ofreceran la más amplia gama de opciones" />
     <AppServicesGrid color="#B80000"/>
     <AppHeading title="Portfolio" />
-    <AppExamplesSlider :examples="examplesItems1" init-scroll="75" />
-    <AppExamplesSlider :examples="examplesItems2" init-scroll="170" />
+    <AppExamplesSlider :examples="sliderExamples[0]" init-scroll="75" />
+    <AppExamplesSlider :examples="sliderExamples[1]" init-scroll="170" />
     <div class="my-5" style="height: 1px;"></div>
     <AppHeading title="Proceso Creativo"/>
     <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -236,11 +236,11 @@ viewBox="0 0 1366 768" enable-background="new 0 0 1366 768" xml:space="preserve"
         </v-flex>
 
         <v-flex xs12 md7>
-          <img src="/images/pages/profesional_services.png" alt="" width="100%">
+          <img src="/images/pages/profesional_services.png" :alt="alt" width="100%">
         </v-flex>
 
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
+          <img src="/images/pages/muchacho_contacto.png" :alt="alt" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5">
           <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px; color: #434343;">¿TIENES ALGUNA DUDA?</h1>
@@ -253,44 +253,23 @@ viewBox="0 0 1366 768" enable-background="new 0 0 1366 768" xml:space="preserve"
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: '%s | Inicio',
+        meta: [
+          { name: 'og:title', content: 'bar' }
+        ]
+      }
+    },
     data () {
       return {
         name: 'INICIO',
         interval: 8000,
-        carouselItems: [
-          { src: 'https://www.liderlogo.com/wp-content/uploads/Botella-Jugos-Andrés-compressor.png' },
-          { src: 'https://www.liderlogo.com/wp-content/uploads/2017/08/Taza-Arlu-compressor.png' }
-        ],
-        examplesItems1: [
-          { img: '/images/examples/1.png' },
-          { img: '/images/examples/2.png' },
-          { img: '/images/examples/3.png' },
-          { img: '/images/examples/4.png' },
-          { img: '/images/examples/1.png' },
-          { img: '/images/examples/2.png' },
-          { img: '/images/examples/3.png' },
-          { img: '/images/examples/4.png' },
-          { img: '/images/examples/1.png' },
-          { img: '/images/examples/2.png' },
-          { img: '/images/examples/3.png' },
-          { img: '/images/examples/4.png' },
-          { img: '/images/examples/1.png' }
-        ],
-        examplesItems2: [
-          { img: '/images/examples/5.png' },
-          { img: '/images/examples/6.png' },
-          { img: '/images/examples/7.png' },
-          { img: '/images/examples/8.png' },
-          { img: '/images/examples/5.png' },
-          { img: '/images/examples/6.png' },
-          { img: '/images/examples/7.png' },
-          { img: '/images/examples/8.png' },
-          { img: '/images/examples/5.png' },
-          { img: '/images/examples/6.png' },
-          { img: '/images/examples/7.png' },
-          { img: '/images/examples/8.png' }
-        ]
+        alt: 'Lorem ipsum'
       }
+    },
+    computed: {
+      sliderExamples () { return this.$store.state.portfolios.indexExamples }
     },
     mounted () {
     }

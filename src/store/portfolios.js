@@ -1,5 +1,36 @@
 export const state = () => ({
-  list: []
+  list: [],
+  indexExamples: [
+    [
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' }
+    ],
+    [
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' }
+    ]
+  ]
 })
 
 export const mutations = {

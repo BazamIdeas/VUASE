@@ -15,7 +15,7 @@
       <v-img :src="icon" width="50" max-width="50" class="mr-2" style="float: left;"></v-img>
       <div>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
-        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ currency }} {{ price }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" :to="'/nuestros-servicios/'+url+'/brief'">comenzar</v-btn>
+        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ price.currency.symbol }} {{ price.value }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">comenzar</v-btn>
       </div>
     </v-flex>
     <v-flex xs12 v-if="description" class="service-box-description">
@@ -38,9 +38,10 @@
 <script>
   export default {
     props: {
+      id: Number,
       icon: String,
       name: String,
-      price: Number | String,
+      price: Object,
       currency: {
         default: '$',
         type: String
@@ -66,7 +67,7 @@
         type: Boolean
       },
       url: {
-        default: '/nuestros-servicios/',
+        default: '',
         type: String
       }
     },
@@ -86,6 +87,10 @@
         } else {
           this.borders = false
         }
+      },
+      async selectService () {
+        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url } })
+        this.$router.push('/nuestros-servicios/' + this.url + '/brief/disenos')
       }
     },
     filters: {

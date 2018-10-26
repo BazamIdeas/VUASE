@@ -9,6 +9,7 @@ export { default as AppServiceWhatGet } from './AppServiceWhatGet.vue'
 export { default as AppExpansionPanels } from './AppExpansionPanels.vue'
 export { default as AppTestimony } from './AppTestimony.vue'
 export { default as AppTopServiceSlider } from './AppTopServiceSlider.vue'
+export { default as AppAddons } from './AppAddons.vue'
 
 // CAROUSELS
 export { default as AppAboutUsCarousel } from './Carousels/AppAboutUsCarousel.vue'
@@ -24,4 +25,5 @@ export { default as AppFilterExamplesForm } from './Forms/AppFilterExamplesForm.
 
 // FORMS BRIEF STEPS
 
+export { default as AppDesignsForm } from './Forms/Brief/AppDesignsForm.vue'
 export { default as AppStepProgressBar } from './Forms/Brief/AppStepProgressBar.vue'

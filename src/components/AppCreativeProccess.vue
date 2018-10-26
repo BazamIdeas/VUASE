@@ -1,6 +1,9 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container grid-list-md fluid class="pa-0 creative-process mt-5">
+        <v-flex xs12 class="mb-5">
+          <AppHeading :number="'1'" :size="'display-1'" :title="title" class="mb-3" />
+        </v-flex>
         <v-layout row>
           <v-flex xs12 class="creative-process-carousel">
             <v-carousel :hide-delimiters="true">
@@ -40,7 +43,8 @@
       slides: {
         type: Array,
         default: []
-      }
+      },
+      title: String
     }
   }
 </script>

@@ -1,0 +1,167 @@
+export const rBanner = {
+  list: ['Diseño publicitario impactante', 'Creaciones Ilimitadas', 'Fotomontajes de tus diseños', 'Entrega lista para imprimir'],
+  title: 'ROTULO BANNER',
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  icon: '/icons/rotulo_banner.svg',
+  whatWeOffer: [
+    {
+      title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
+      description: 'Creaciones a medida, únicas y de calidad',
+      icon: '/icons/logo_a_medida_hover.svg'
+    }, {
+      title: '+40 PROFESIONALES',
+      description: 'Tu proyecto en manos de expertos especializados',
+      icon: '/icons/logo_a_medida_hover.svg'
+    }, {
+      title: 'DISEÑOS DE UN DÍA PARA OTRO',
+      description: 'Diseños y perfeccionamiento en 24 hs hábiles',
+      icon: '/icons/logo_a_medida_hover.svg'
+    }, {
+      title: 'FOTOMONTAJES DE SUS DISEÑOS',
+      description: 'Antes de rotular visualice opciones de diseño maquetadas sobre sus propias superficies',
+      icon: '/icons/logo_a_medida_hover.svg'
+    }, {
+      title: 'SOPORTE POST-VENTA GRATUITO',
+      description: 'Gratuitamente te guardamos una copa de seguridad y atendemos a su rotulista durante 2 años',
+      icon: '/icons/logo_a_medida_hover.svg'
+    }, {
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamiento hasta entera conformidad, a precio cerrado',
+      icon: '/icons/logo_a_medida_hover.svg'
+    }
+  ],
+  whatYouGet: {
+    img: '/images/pages/rotulo-banner/rotulo-banner-dual.png',
+    color: '#70371b',
+    columns: [
+      [
+        {
+          title: 'MANUAL DE USO DE LA MARCA',
+          description: 'Diseño llamativo y eficiente de un banner publicitario para la presentación de su empresa, productos y servicios. <br> La creación es llevada a cabo por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios desde cero y hasta entera aprobación, y su entrega se realiza en los siguientes formatos:',
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)'],
+          icon: '/icons/rotulo_banner.svg'
+        }
+      ]
+    ]
+  },
+  frequentQuestions: [
+    {
+      question: '¿Qué se considera el diseño de un rótulo?',
+      response: 'Es un diseño gráfico publicitario llamativo donde se aplica el logo de la empresa, textos comerciales, se presentan productos, servicios y datos de contacto aprovechando al máximo las superficies propias de la empresa.'
+    }, {
+      question: '¿Cómo se lleva adelante el diseño de un rótulo?',
+      response: 'El diseño de un rótulo profesional es llevado adelante por un publicista que basándose en las necesidades de comunicación de la empresa y los espacios disponibles de rotulación crea diseños que resuelven las dichas necesidades de manera óptima.'
+    }, {
+      question: '¿Quién y cómo se realiza la fabricación material de un rótulo?',
+      response: 'La fabricación de un rótulo ya sea para un vehiculo, local, producto o uniforme lo realiza un rotulista en base al diseño publicitario diseñado por un publicista.'
+    }
+  ],
+  testimonies: [{
+    stars: 4,
+    logo: 'papeleria.svg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+  }],
+  topSlider: [
+    {
+      url: '/images/pages/rotulo-banner/rotulo-banner-bohonitas.png',
+      color: '#f030a7'
+    },
+    {
+      url: '/images/pages/rotulo-banner/rotulo-banner+carbon.png',
+      color: '#231f20'
+    },
+    {
+      url: '/images/pages/rotulo-banner/rotulo-banner-condal-&-capital.png',
+      color: '#823f9e'
+    },
+    {
+      url: '/images/pages/rotulo-banner/rotulo-banner-julia.png',
+      color: '#5f321b'
+    },
+    {
+      url: '/images/pages/rotulo-banner/rotulo-banner-olivaria.png',
+      color: '#777b64'
+    }
+  ],
+  creativeProcess: [
+    {
+      src: '/images/carousels/creative-process-1.png',
+      alt: 'creative-process-1'
+    },
+    {
+      src: '/images/carousels/creative-process-2.png',
+      alt: 'creative-process-2'
+    },
+    {
+      src: '/images/carousels/creative-process-3.png',
+      alt: 'creative-process-3'
+    }
+  ],
+  steps: [
+    {
+      title: '1. BRIEF Y SELECTOR',
+      color: '#323c9e',
+      icon: '/icons/creative-process-1.svg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      alt: 'brief-y-selector'
+    },
+    {
+      title: '2. CONCEPTOS',
+      color: '#1d8127',
+      icon: '/icons/creative-process-2.svg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      alt: 'conceptos'
+    },
+    {
+      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      color: '#c3953f',
+      icon: '/icons/creative-process-3.svg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      alt: 'entrega-y-documentacion'
+    }
+  ],
+  carousel: {
+    items1: [
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' },
+      { img: '/images/examples/2.png' },
+      { img: '/images/examples/3.png' },
+      { img: '/images/examples/4.png' },
+      { img: '/images/examples/1.png' }
+    ],
+    items2: [
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' }
+    ]
+  },
+  packs: {
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    first: {
+      image: '/images/pages/packs/pack-rotulo-vannamel.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/packaging'
+    },
+    last: {
+      image: '/images/pages/packs/pack-rotulo-local-sanidae.png',
+      title: 'TRÍPTICO',
+      url: '/nuestros-servicios/rotulo-local'
+    }
+  }
+}
