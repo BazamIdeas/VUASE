@@ -171,33 +171,22 @@ export const flyerDosCaras = {
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
+      { img: '/images/pages/services-carousel/50.-Asetys.jpg' },
+      { img: '/images/pages/services-carousel/57.-duarte.jpg' },
+      { img: '/images/pages/services-carousel/56.-compubot.jpg' },
+      { img: '/images/pages/services-carousel/54.-catálogo-compressor.jpg' },
+      { img: '/images/pages/services-carousel/52.-Formasystem-calidad-media.jpg' },
+      { img: '/images/pages/services-carousel/61.-darioFajardo-2.jpg' },
+      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' }
     ],
     items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/pages/services-carousel/51.-Geotermia.png' },
+      { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
+      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
+      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
+      { img: '/images/pages/services-carousel/59.jpg' },
+      { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
+      { img: '/images/pages/services-carousel/63.-.jpg' }
     ]
   },
   packs: {

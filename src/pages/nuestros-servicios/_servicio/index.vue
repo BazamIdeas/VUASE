@@ -8,9 +8,9 @@
     </v-container>
 
     <!-- CAROUSEL -->
-    <AppHeading :number="'1'" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-3" />
-    <AppExamplesSlider :examples="dataService.carousel.items1" init-scroll="75" />
-    <AppExamplesSlider :examples="dataService.carousel.items2" init-scroll="170" />
+    <AppHeading :number="'1'" v-if="dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-3" />
+    <AppExamplesSlider v-if="dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
+    <AppExamplesSlider v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" />
 
     <!-- SECCION 3 -->  
     <v-container grid-list-md class="mt-3 pb-0">

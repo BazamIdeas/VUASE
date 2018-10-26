@@ -191,33 +191,18 @@ export const imagenCorporativa = {
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
+      { img: '/images/pages/services-carousel/46.-mock up 2px.jpg' },
+      { img: '/images/pages/services-carousel/45.-Dulce-detalles-2.png' },
+      { img: '/images/pages/services-carousel/42.-Areté Ingeniería 3.jpg' },
+      { img: '/images/pages/services-carousel/39.jpg' },
+      { img: '/images/pages/services-carousel/47.-mock up 3 berenguel.jpg' }
     ],
     items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/pages/services-carousel/44.-Comercial Andres Mock up 2.jpg' },
+      { img: '/images/pages/services-carousel/43.-Arq. sin limites mock up 3.jpg' },
+      { img: '/images/pages/services-carousel/41.-Aquafrost Mock up 3.jpg' },
+      { img: '/images/pages/services-carousel/48.-Mock up 3 Gloss.jpg' },
+      { img: '/images/pages/services-carousel/40.jpg' }
     ]
   }
 }

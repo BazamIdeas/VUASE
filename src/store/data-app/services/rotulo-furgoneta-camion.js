@@ -164,33 +164,11 @@ export const rFurgoneta = {
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
-    ],
-    items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/pages/34.-costaserveis_mock up.jpg' },
+      { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
+      { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
+      { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
+      { img: '/images/pages/services-carousel/38.-Sistema-Velites.png' }
     ]
   }
 }
