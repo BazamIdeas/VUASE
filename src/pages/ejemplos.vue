@@ -30,6 +30,14 @@
       if (params.pais) await store.dispatch('countries/locations/getAll')
       await store.dispatch('portfolios/getAll', params)
     },
+    head () {
+      return {
+        titleTemplate: '%s | Servicios',
+        meta: [
+          { name: 'og:title', content: 'bar' }
+        ]
+      }
+    },
     computed: {
       portfolios () { return this.$store.state.portfolios.list }
     }

@@ -25,4 +25,5 @@ export { default as AppFilterExamplesForm } from './Forms/AppFilterExamplesForm.
 
 // FORMS BRIEF STEPS
 
+export { default as AppDesignsForm } from './Forms/Brief/AppDesignsForm.vue'
 export { default as AppStepProgressBar } from './Forms/Brief/AppStepProgressBar.vue'

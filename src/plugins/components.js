@@ -3,6 +3,7 @@ import {
   AppAboutUsCarousel,
   AppCarousel,
   AppContactForm,
+  AppDesignsForm,
   AppExamplesSlider,
   AppFilterExamplesForm,
   AppHeading,
@@ -26,6 +27,7 @@ import {
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
 Vue.component('AppCarousel', AppCarousel)
 Vue.component('AppContactForm', AppContactForm)
+Vue.component('AppDesignsForm', AppDesignsForm)
 Vue.component('AppExamplesSlider', AppExamplesSlider)
 Vue.component('AppFilterExamplesForm', AppFilterExamplesForm)
 Vue.component('AppHeading', AppHeading)

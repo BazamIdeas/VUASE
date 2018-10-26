@@ -1,5 +1,8 @@
 <template>
-  <v-container grid-list-md fluid>
+  <v-container grid-list-md fluid class="mt-5 pt-5 mb-3">
+    <v-flex xs12 class="mb-5">
+      <AppHeading :number="'1'" :size="'display-2'" align="center"  :title="title"/>
+    </v-flex>
     <v-layout row py-5>
       <v-flex xs5 offset-xs1 px-3 class="addons-first">
         <img :src="first.image" class="addons-image"/>
@@ -67,15 +70,16 @@
   export default {
     props: {
       first: defaultService,
-      last: defaultService
+      last: defaultService,
+      title: String
     }
   }
 </script>
 
 <style scoped>
   .addons-image{
-    max-width: 100%;
-    height: 250px;
+    max-width: 85%;
+    max-height: 54%;
     display: block;
     margin: auto;
   }

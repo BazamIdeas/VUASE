@@ -1,25 +1,25 @@
 <template>
   <div class="brief-header__progress">
     <div class="step-progress-bar">
-      <div class="step-progress-bar__progress" style="width: 20%;"></div>
+      <div class="step-progress-bar__progress" :class="{ 'width-25': activeStep == 2, 'width-50': activeStep == 3, 'width-75': activeStep == 4, 'width-100': activeStep == 5 }"></div>
       <div>
-        <div class="step-progress-bar__step step-progress-bar__step--highlight" style="left: 0%;"></div>
+        <div class="step-progress-bar__step" v-bind:class="{ 'step-progress-bar__step--current': activeStep == 1, 'step-progress-bar__step--highlight': activeStep > 1 }" style="left: 0%;"></div>
       </div>
       <div>
-        <div class="step-progress-bar__step step-progress-bar__step--current" style="left: 20%;"></div>
+        <div class="step-progress-bar__step" v-bind:class="{ 'step-progress-bar__step--current': activeStep == 2, 'step-progress-bar__step--highlight': activeStep > 2, 'step-progress-bar__step--future': activeStep < 2 }" style="left: 25%;"></div>
       </div>
       <div>
-        <div class="step-progress-bar__step step-progress-bar__step--future" style="left: 40%;"></div>
+        <div class="step-progress-bar__step" v-bind:class="{ 'step-progress-bar__step--current': activeStep == 3, 'step-progress-bar__step--highlight': activeStep > 3, 'step-progress-bar__step--future': activeStep < 3 }" style="left: 50%;"></div>
       </div>
       <div>
-        <div class="step-progress-bar__step step-progress-bar__step--future" style="left: 60%;"></div>
+        <div class="step-progress-bar__step" v-bind:class="{ 'step-progress-bar__step--current': activeStep == 4, 'step-progress-bar__step--highlight': activeStep > 4, 'step-progress-bar__step--future': activeStep < 4 }" style="left: 75%;"></div>
       </div>
       <div>
-        <div class="step-progress-bar__step step-progress-bar__step--future" style="left: 80%;"></div>
+        <div class="step-progress-bar__step" v-bind:class="{ 'step-progress-bar__step--current': activeStep == 5, 'step-progress-bar__step--highlight': activeStep > 5, 'step-progress-bar__step--future': activeStep < 5 }" style="left: 100%;"></div>
       </div>
-      <div>
-        <div class="step-progress-bar__step step-progress-bar__step--future" style="left: 100%;"></div>
-      </div>
+      <!--<div>
+        <div class="step-progress-bar__step" v-bind:class="{ 'step-progress-bar__step--current': activeStep == 6, 'step-progress-bar__step--highlight': activeStep > 6, 'step-progress-bar__step--future': activeStep < 6 }" style="left: 100%;"></div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -32,7 +32,8 @@
       }
     },
     computed: {
-      serviceBrief () { return this.$store.state.brief.data.service.name }
+      serviceBrief () { return this.$store.state.brief.data.service.name },
+      activeStep () { return this.$store.state.brief.activeStep }
     }
   }
 </script>
@@ -121,6 +122,19 @@
 
   .step-progress-bar__step--future {
     cursor: help;
+  }
+
+  .width-25 {
+    width: 25%;
+  }
+  .width-50 {
+    width: 50%;
+  }
+  .width-75 {
+    width: 75%;
+  }
+  .width-100 {
+    width: 100%;
   }
   
 </style>

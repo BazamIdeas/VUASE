@@ -16,17 +16,16 @@
     <v-container grid-list-md class="mt-3 pb-0">
       <v-layout row wrap>
          <!-- CARACTERISTICAS -->  
-        <AppServiceCharacteristics title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
+        <AppServiceCharacteristics id="que-te-ofrecemos" title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
 
         <!-- PROCESO CREATIVO -->  
         <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides=dataService.creativeProcess :steps=dataService.steps />
       
         <!-- QUE TE LLEVAS -->  
-        <AppServiceWhatGet id="que-te-ofrecemos" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
+        <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
         <!-- PACKS -->
-        <AppHeading v-if="dataService.packs" :number="'1'" :size="'display-2'" title="APROVECHA NUESTROS PACKS" class="mb-3" />
-        <AppAddons v-if="dataService.packs" :first="dataService.packs[0]" :last="dataService.packs[1]" />
+        <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
         <AppTestimony :list="dataService.testimonies" />

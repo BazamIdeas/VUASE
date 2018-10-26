@@ -7,7 +7,7 @@
       <v-expansion-panel class="expansion-panel">
         <!-- SHOW ONLY 4 -->
         <v-expansion-panel-content v-if="showLess"
-          v-for="(item,i) in list.slice(0, 4)"
+          v-for="(item,i) in list.slice(0, 3)"
           :key="i"
           class="pt-1 pb-1"
         >
@@ -29,7 +29,7 @@
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-layout row d-flex justify-center>
+      <v-layout row d-flex justify-center v-show="list.lenght > 3">
         <v-flex xs2>
           <v-btn flat class="btn-simple" @click="showLess = !showLess">
             VER  
