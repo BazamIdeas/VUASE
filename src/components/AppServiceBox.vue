@@ -89,7 +89,7 @@
         }
       },
       async selectService () {
-        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url } })
+        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [] })
         this.$router.push('/nuestros-servicios/' + this.url + '/brief/disenos')
       }
     },

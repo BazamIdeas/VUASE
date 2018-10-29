@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12 class="my-4 py-4"></v-flex>
         <v-flex xs12 offset-md1 md10 style="position: relative">
-          <h1 class="display-1 font-weight-bold">
+          <h1 class="display-1 font-weight-bold mb-2">
             {{ stepData.title }} {{ stepData.number == 4 && brief.service ? ' - ' + brief.service.name : '' }}
           </h1>
           <p> {{ stepData.subtitle }}</p>
@@ -13,7 +13,9 @@
           <AppStepProgressBar/>
         </v-flex>
         <v-flex xs12 offset-md1 md10 class="mt-3" style="position: relative">
-          <AppDesignsForm/>
+          <AppDesignsForm v-if="stepData.number == 1"/>
+          <AppStylesForm v-if="stepData.number == 2"/>
+          <AppColorsForm v-if="stepData.number == 3"/>
         </v-flex>
       </v-layout>
     </v-container>

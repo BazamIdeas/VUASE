@@ -1,5 +1,14 @@
 export const state = () => ({
-  data: {},
+  data: {
+    service: {
+      id: null,
+      name: null,
+      slug: null
+    },
+    designs: [],
+    styles: {},
+    colors: []
+  },
   activeStep: 1,
   steps: {
     designs: {

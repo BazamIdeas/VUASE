@@ -32,7 +32,6 @@
       }
     },
     computed: {
-      serviceBrief () { return this.$store.state.brief.data.service.name },
       activeStep () { return this.$store.state.brief.activeStep }
     }
   }
