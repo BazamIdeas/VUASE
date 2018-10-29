@@ -151,54 +151,35 @@ export const flyer = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/logo-empresa/carousel/1.-New-Cool.png' },
-      { img: '/images/pages/logo-empresa/carousel/2.-Chikas.png' },
-      { img: '/images/pages/logo-empresa/carousel/3.-Family-TV.png' },
-      { img: '/images/pages/logo-empresa/carousel/4.-Fauna-Domestica.png' },
-      { img: '/images/pages/logo-empresa/carousel/5.-Stemmedic.png' },
-      { img: '/images/pages/logo-empresa/carousel/6.-Antartik.png' },
-      { img: '/images/pages/logo-empresa/carousel/7.-Arlu.png' },
-      { img: '/images/pages/logo-empresa/carousel/8.-Aixo-Hotel-Suites.png' },
-      { img: '/images/pages/logo-empresa/carousel/9.-food-chef.png' },
-      { img: '/images/pages/logo-empresa/carousel/10.-y-si-me-toca-a-mi.png' },
-      { img: '/images/pages/logo-empresa/carousel/11.-Black-Bird.png' },
-      { img: '/images/pages/logo-empresa/carousel/12.-Paralelo-0.png' },
-      { img: '/images/pages/logo-empresa/carousel/13.-Hostal-La-Colegiata.png' },
-      { img: '/images/pages/logo-empresa/carousel/14.-Ingenium.png' },
-      { img: '/images/pages/logo-empresa/carousel/15.-Hobbie.png' },
-      { img: '/images/pages/logo-empresa/carousel/16.-Bricoaching.png' },
-      { img: '/images/pages/logo-empresa/carousel/17.-Osmaservice.png' }
+      { img: '/images/pages/services-carousel/50.-Asetys.jpg' },
+      { img: '/images/pages/services-carousel/57.-duarte.jpg' },
+      { img: '/images/pages/services-carousel/56.-compubot.jpg' },
+      { img: '/images/pages/services-carousel/54.-catálogo-compressor.jpg' },
+      { img: '/images/pages/services-carousel/52.-Formasystem-calidad-media.jpg' },
+      { img: '/images/pages/services-carousel/61.-darioFajardo-2.jpg' },
+      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' }
     ],
     items2: [
-      { img: '/images/pages/logo-empresa/carousel/18.-La-Casa-de-Kett.png' },
-      { img: '/images/pages/logo-empresa/carousel/19.-Avicola-Pungurume.png' },
-      { img: '/images/pages/logo-empresa/carousel/20.Arquitectura-Sin-Limites.png' },
-      { img: '/images/pages/logo-empresa/carousel/21.-Ares.png' },
-      { img: '/images/pages/logo-empresa/carousel/22.-Geoit.png' },
-      { img: '/images/pages/logo-empresa/carousel/23.-Lextres-abogados.png' },
-      { img: '/images/pages/logo-empresa/carousel/24. Limpverd.png' },
-      { img: '/images/pages/logo-empresa/carousel/24.-Avedrone.png' },
-      { img: '/images/pages/logo-empresa/carousel/25.-Lormanic.png' },
-      { img: '/images/pages/logo-empresa/carousel/26.Cielo.png' },
-      { img: '/images/pages/logo-empresa/carousel/27.-Majavilitas.png' },
-      { img: '/images/pages/logo-empresa/carousel/28.-Esparvel.png' },
-      { img: '/images/pages/logo-empresa/carousel/29.-Orgui.png' },
-      { img: '/images/pages/logo-empresa/carousel/30.-Nipponair.png' },
-      { img: '/images/pages/logo-empresa/carousel/31. Dulces para Paula.png' },
-      { img: '/images/pages/logo-empresa/carousel/32.-Terra-Agro.png' },
-      { img: '/images/pages/logo-empresa/carousel/33.-Bellek.png' }
+      { img: '/images/pages/services-carousel/51.-Geotermia.png' },
+      { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
+      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
+      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
+      { img: '/images/pages/services-carousel/59.jpg' },
+      { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
+      { img: '/images/pages/services-carousel/63.-.jpg' }
     ]
   },
-  packs: [
-    {
-      image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+  packs: {
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    first: {
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
-      moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
+      url: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
     },
-    {
-      image: '/images/pages/packs/addons-logo+web.png',
+    last: {
+      image: '/images/pages/packs/oferta-triptico-gloss.png',
       title: 'TRÍPTICO',
-      moreUrl: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
+      url: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
     }
-  ]
+  }
 }

@@ -1,8 +1,13 @@
 <template>
-  <v-container grid-list-md fluid>
+  <v-container grid-list-md fluid class="mt-5 pt-5 mb-3">
+    <v-flex xs12 class="mb-5">
+      <AppHeading :number="'1'" :size="'display-2'" align="center"  :title="title"/>
+    </v-flex>
     <v-layout row py-5>
       <v-flex xs5 offset-xs1 px-3 class="addons-first">
-        <img :src="first.image" class="addons-image"/>
+        <div class="addons-image-container">
+          <img :src="first.image" class="addons-image"/>
+        </div>
         <v-layout row>
           <v-flex xs12  class="text-xs-center adddons-title-container">
             <AppHeading :title="first.title" :size="''" :number="'2'" :margin="'ma-0'"></AppHeading>
@@ -25,7 +30,9 @@
         </v-layout>
       </v-flex>
       <v-flex xs5 px-3 class="addons-last">
-        <img :src="last.image" class="addons-image"/>
+        <div class="addons-image-container">
+          <img :src="last.image" class="addons-image"/>
+        </div>
         <v-layout row>
           <v-flex xs12 class="text-xs-center adddons-title-container">
             <AppHeading :title="last.title" :size="''" :number="'2'"></AppHeading>
@@ -67,7 +74,8 @@
   export default {
     props: {
       first: defaultService,
-      last: defaultService
+      last: defaultService,
+      title: String
     }
   }
 </script>
@@ -75,7 +83,7 @@
 <style scoped>
   .addons-image{
     max-width: 100%;
-    height: 250px;
+    max-height: 100%;
     display: block;
     margin: auto;
   }
@@ -102,6 +110,12 @@
 
   .addons-last{
     border-left: 1px solid #adadad
+  }
+
+  .addons-image-container{
+    height: 350px;
+    display: flex;
+    align-items: center;
   }
 
 </style>

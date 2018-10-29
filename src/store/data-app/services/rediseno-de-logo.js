@@ -6,27 +6,27 @@ export const redisenoLogo = {
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
+      description: 'Creaciones a medida, únicas y de calidad',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Descripción',
+      description: 'Tu proyecto en manos de expertos especializados',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
       icon: '/icons/logo_a_medida_hover.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/logo_a_medida_hover.svg'
     }
   ],
@@ -36,24 +36,36 @@ export const redisenoLogo = {
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        items: [
+          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
+          'Códigos de colores.',
+          'Tipos de letra utilizada en tu logo.',
+          'Proporciones.',
+          'Uso debido e indebido de los componentes del diseño.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
         icon: '/icons/logo_a_medida_hover.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
+        description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
         icon: '/icons/logo_a_medida_hover.svg'
       }]
     ]
@@ -94,11 +106,29 @@ export const redisenoLogo = {
       response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
     }
   ],
-  testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
-  }],
+  testimonies: [
+    {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Ha sido excelente trabajar con ustedes”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Profesionales, competentes, rápidos.!”'
+    }, {
+      stars: 5,
+      logo: 'papeleria.svg',
+      description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
+    }
+  ],
   topSlider: [
     {
       url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
@@ -160,45 +190,55 @@ export const redisenoLogo = {
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
+      { img: '/images/pages/services-carousel/1.-New-Cool.png' },
+      { img: '/images/pages/services-carousel/2.-Chikas.png' },
+      { img: '/images/pages/services-carousel/3.-Family-TV.png' },
+      { img: '/images/pages/services-carousel/4.-Fauna-Domestica.png' },
+      { img: '/images/pages/services-carousel/5.-Stemmedic.png' },
+      { img: '/images/pages/services-carousel/6.-Antartik.png' },
+      { img: '/images/pages/services-carousel/7.-Arlu.png' },
+      { img: '/images/pages/services-carousel/8.-Aixo-Hotel-Suites.png' },
+      { img: '/images/pages/services-carousel/9.-food-chef.png' },
+      { img: '/images/pages/services-carousel/10.-y-si-me-toca-a-mi.png' },
+      { img: '/images/pages/services-carousel/11.-Black-Bird.png' },
+      { img: '/images/pages/services-carousel/12.-Paralelo-0.png' },
+      { img: '/images/pages/services-carousel/13.-Hostal-La-Colegiata.png' },
+      { img: '/images/pages/services-carousel/14.-Ingenium.png' },
+      { img: '/images/pages/services-carousel/15.-Hobbie.png' },
+      { img: '/images/pages/services-carousel/16.-Bricoaching.png' },
+      { img: '/images/pages/services-carousel/17.-Osmaservice.png' }
     ],
     items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/pages/services-carousel/18.-La-Casa-de-Kett.png' },
+      { img: '/images/pages/services-carousel/19.-Avicola-Pungurume.png' },
+      { img: '/images/pages/services-carousel/20.Arquitectura-Sin-Limites.png' },
+      { img: '/images/pages/services-carousel/21.-Ares.png' },
+      { img: '/images/pages/services-carousel/22.-Geoit.png' },
+      { img: '/images/pages/services-carousel/23.-Lextres-abogados.png' },
+      { img: '/images/pages/services-carousel/24. Limpverd.png' },
+      { img: '/images/pages/services-carousel/24.-Avedrone.png' },
+      { img: '/images/pages/services-carousel/25.-Lormanic.png' },
+      { img: '/images/pages/services-carousel/26.Cielo.png' },
+      { img: '/images/pages/services-carousel/27.-Majavilitas.png' },
+      { img: '/images/pages/services-carousel/28.-Esparvel.png' },
+      { img: '/images/pages/services-carousel/29.-Orgui.png' },
+      { img: '/images/pages/services-carousel/30.-Nipponair.png' },
+      { img: '/images/pages/services-carousel/31. Dulces para Paula.png' },
+      { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
+      { img: '/images/pages/services-carousel/33.-Bellek.png' }
     ]
   },
-  packs: [
-    {
+  packs: {
+    title: 'APROVECHA NUESTROS PACK',
+    first: {
       image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
       title: 'REDISEÑO DE LOGO + PAPELERÍA',
-      moreUrl: '/nuestros-servicios/pack-rediseno-de-logo'
+      url: '/nuestros-servicios/pack-rediseno-de-logo'
     },
-    {
+    last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'REDISEÑO DE LOGO + WEB',
-      moreUrl: '/nuestros-servicios/pack-rediseno-de-logo'
+      url: '/nuestros-servicios/pack-rediseno-de-logo'
     }
-  ]
+  }
 }

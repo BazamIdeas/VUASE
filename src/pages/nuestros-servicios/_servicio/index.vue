@@ -8,9 +8,9 @@
     </v-container>
 
     <!-- CAROUSEL -->
-    <AppHeading :number="'1'" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-3" />
-    <AppExamplesSlider :examples="dataService.carousel.items1" init-scroll="75" />
-    <AppExamplesSlider :examples="dataService.carousel.items2" init-scroll="170" />
+    <AppHeading :number="'1'" v-if="dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-3" />
+    <AppExamplesSlider v-if="dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
+    <AppExamplesSlider v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" />
 
     <!-- SECCION 3 -->  
     <v-container grid-list-md class="mt-3 pb-0">
@@ -25,8 +25,7 @@
         <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
         <!-- PACKS -->
-        <AppHeading v-if="dataService.packs" :number="'1'" :size="'display-2'" title="APROVECHA NUESTROS PACKS" class="mb-3" />
-        <AppAddons v-if="dataService.packs" :first="dataService.packs[0]" :last="dataService.packs[1]" />
+        <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
         <AppTestimony :list="dataService.testimonies" />
