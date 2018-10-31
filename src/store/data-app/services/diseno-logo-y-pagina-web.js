@@ -33,7 +33,7 @@ export const logoWeb = {
   whatYouGet: {
     img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
     color: 'black',
-    columns:  [
+    columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
         items: [

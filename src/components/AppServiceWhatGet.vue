@@ -19,7 +19,7 @@
                 <v-flex>
                   <v-layout  xs12 align-center justify-start row fill-height class="mb-2">
                   <v-flex xs3 class="mr-2 ml-0">
-                    <v-img :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'"></v-img>
+                    <img :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'">
                   </v-flex>
                   <v-flex class="mr-3">
                     <h1 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h1>
