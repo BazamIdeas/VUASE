@@ -1,6 +1,6 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5 pb-0">
+    <v-container fluid grid-list-md class="mt-4 pb-0">
       <v-flex xs8 class="mb-5" v-if="!justOne">
         <AppHeading number="1" size="display-2" align="center" :title="title" />
       </v-flex>
@@ -16,14 +16,17 @@
                   <span class="subheading font-weight-medium text-xs-justify" v-html="item.description"></span>
                 </v-flex>
                 
-                <v-layout align-center justify-start row fill-height class="mb-2">
+                <v-flex>
+                  <v-layout  xs12 align-center justify-start row fill-height class="mb-2">
                   <v-flex xs3 class="mr-2 ml-0">
-                    <v-img :src="item.icon" :width="!justOne ? '70px' : '110px'"></v-img>
+                    <v-img :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'"></v-img>
                   </v-flex>
                   <v-flex class="mr-3">
                     <h1 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h1>
                   </v-flex>
                 </v-layout>
+                </v-flex>
+                
 
                 <v-flex xs12 v-if="item.description && !justOne" class="text-xs-justify" :class="{'mb-4': key !== column.length - 1}">
                   <span class="caption font-weight-medium" v-html="item.description"></span>
@@ -48,7 +51,7 @@
                       <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h2>
                     </v-flex>
                     <v-layout xs6 row d-flex>
-                      <v-flex xs3 style="border-right:1px solid silver;" class="mr-3">
+                      <v-flex xs4 style="border-right:1px solid silver;" class="mr-2">
                         <h3 class="title">{{percentage}}%</h3>
                         <h5 class="body-2">al iniciar</h5>
                       </v-flex>

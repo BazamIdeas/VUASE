@@ -5,7 +5,7 @@
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
           <v-layout row d-block>
             <v-flex v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center>
-              <v-img :src="example.img" width="260" max-width="260" class="mr-3"></v-img>
+              <v-img :src="example.img" height="260" max-height="260" width="260" max-width="260" class="mr-3"></v-img>
             </v-flex>
           </v-layout>
         </div>
