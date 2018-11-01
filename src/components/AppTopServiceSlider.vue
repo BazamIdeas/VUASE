@@ -11,7 +11,7 @@
             >
               <v-layout xs12 row wrap>
                 <v-flex xs5 offset-xs7>
-                  <v-img width="120px" :src="service.icon"></v-img>
+                  <img width="80px" class="mb-2" :src="service.icon">
                   <v-flex xs12 class="mb-2">
                     <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+item.color">{{service.title}}</h2>
                   </v-flex>
@@ -108,9 +108,9 @@
   padding-left: 0px;
 }
 
-.top-service-slider .v-carousel{
-      min-height: 100vh;
-      height: auto;
+.top-service-slider .v-carousel {
+    min-height: 550px;
+    height: auto;
 }
 
 

@@ -1,6 +1,6 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container grid-list-md fluid class="pa-0 creative-process mt-5">
+    <v-container grid-list-md fluid class="pa-0 creative-process mt-4">
         <v-flex xs12 class="mb-5">
           <AppHeading :number="'1'" :size="'display-1'" :title="title" class="mb-3" />
         </v-flex>
@@ -12,7 +12,7 @@
             </v-carousel>
           </v-flex>
         </v-layout>
-        <v-layout row class="py-5 process-steps">
+        <v-layout row class="pt-5 process-steps">
           <v-flex xs4 v-for="(step,i) in steps" :key="i" class="px-5">
             <v-layout row>
               <v-flex xs2 align-center d-flex>

@@ -12,17 +12,16 @@ export const state = () => ({
       ],
       rows: [
         [
-          'logo-empresa',
-          'rediseno-de-logo',
-          'diseno-logo-y-pagina-web'
+          'imagen-corporativa',
+          'pack-rediseno-de-logo'
         ],
         [
-          'vectorizacion',
+          'logo-empresa',
           'carousel'
         ],
         [
-          'imagen-corporativa',
-          'pack-rediseno-de-logo'
+          'diseno-logo-y-pagina-web',
+          'vectorizacion'
         ]
       ]
     },
@@ -54,11 +53,17 @@ export const state = () => ({
       ],
       rows: [
         [
-          'diseno-folletos-dipticos-tripticos'
+          'flyer',
+          'diptico',
+          'tripticos'
         ],
         [
-          'papeleria',
+          'flyer-dos-caras',
           'carousel'
+        ],
+        [
+          'catalogo',
+          'publicidad'
         ]
       ]
     },
@@ -76,8 +81,8 @@ export const state = () => ({
           'carousel'
         ],
         [
-          'rotulo-etiqueta-packaging',
-          'rotulo-vestimenta-uniforme'
+          'rotulo-vestimenta-uniforme',
+          'packaging'
         ]
       ],
       layouts: [],
