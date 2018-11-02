@@ -39,7 +39,7 @@ export const rLocal = {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
           description: 'El rótulo para local es el diseño gráfico y publicitario aplicado a la superficie externa del local. El proyecto es llevado adelante por nuestro equipo interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios que aportan conceptos originales y perfeccionamientos ilimitados. <br><br> La presentación se realiza a partir de fotomontajes reales, y la entrega de artes digitales listas para que el rotulista realice la fabricación y colocación del diseño creado, se presenta con sus medidas y plantillas de corte en los siguientes formatos:',
           items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)'],
-          icon: '/icons/rotulo_banner.svg'
+          icon: '/icons/rotulo-local.svg'
         }
       ]
     ]

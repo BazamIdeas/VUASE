@@ -39,7 +39,7 @@ export const rVestimenta = {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
           description: 'Diseño corporativo de indumentaria para la presentación formal de uniformes, presentados dentro de un sistema gráfico y publicitario. <br><br> Nuestro equipo de creativos expertos en el área de diseño gráfico y publicitario crea conceptos y perfeccionamientos ilimitados hasta entera aprobación. La entrega del arte final se envía por correo electrónico, lista para bordar o imprimir en serigrafía, en los siguientes formatos:',
           items: ['BMP (archivo de imagen de gráfico, con pixeles almacenados)', 'EPS (archivo vectorial editable utilizado por las imprentas)', 'JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)'],
-          icon: '/icons/rotulo_banner.svg'
+          icon: '/icons/rotulo-vestimenta.svg'
         }
       ]
     ]

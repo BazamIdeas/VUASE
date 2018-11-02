@@ -39,7 +39,7 @@ export const rBanner = {
           title: 'MANUAL DE USO DE LA MARCA',
           description: 'Diseño llamativo y eficiente de un banner publicitario para la presentación de su empresa, productos y servicios. <br> La creación es llevada a cabo por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios desde cero y hasta entera aprobación, y su entrega se realiza en los siguientes formatos:',
           items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)'],
-          icon: '/icons/rotulo_banner.svg'
+          icon: '/icons/rotulo-banner.svg'
         }
       ]
     ]
