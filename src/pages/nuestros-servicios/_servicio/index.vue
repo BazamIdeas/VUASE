@@ -28,7 +28,7 @@
         <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
-        <AppTestimony :list="dataService.testimonies" />
+        <AppTestimony class="mt-5" :list="dataService.testimonies" />
 
         <!-- PREGUNTAS FRECUENTES -->  
         <AppExpansionPanels title="PREGUNTAS FRECUENTES" :list="dataService.frequentQuestions" />
