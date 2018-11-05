@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import {
   AppAboutUsCarousel,
+  AppBriefingForm,
   AppCarousel,
+  AppCheckoutForm,
   AppContactForm,
   AppColorsForm,
   AppDesignsForm,
@@ -27,7 +29,9 @@ import {
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
+Vue.component('AppBriefingForm', AppBriefingForm)
 Vue.component('AppCarousel', AppCarousel)
+Vue.component('AppCheckoutForm', AppCheckoutForm)
 Vue.component('AppContactForm', AppContactForm)
 Vue.component('AppColorsForm', AppColorsForm)
 Vue.component('AppDesignsForm', AppDesignsForm)

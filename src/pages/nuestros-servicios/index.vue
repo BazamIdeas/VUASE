@@ -64,7 +64,7 @@
     },
     computed: {
       services () { return this.$store.state.services.list },
-      getBySlug (slug) { return this.$store.getters.services.getBySlug(slug) },
+      getBySlug (slug) { return this.$store.getters['services/getBySlug'](slug) },
       containers () {
         return this.$store.state.services.groups
       }

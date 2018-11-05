@@ -113,10 +113,10 @@
 
   .step-progress-bar__step--current:after {
     background: #004b7b;
-    width: 18px;
-    height: 18px;
-    top: 13px;
-    left: 13px;
+    width: 22px;
+    height: 22px;
+    top: 11px;
+    left: 11px;
   }
 
   .step-progress-bar__step--future {
