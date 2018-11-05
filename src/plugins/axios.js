@@ -1,9 +1,7 @@
 export default function ({ $axios, store, req, redirect }) {
-  if (store.state.countries.data) {
-    $axios.onRequest(config => {
-      config.headers['Country-Iso'] = store.state.countries.data.iso
-    })
-  }
+  $axios.onRequest(config => {
+    config.headers['Country-Iso'] = store.state.countries.data ? store.state.countries.data.iso : 'US'
+  })
 
   $axios.onError(error => {
     const code = parseInt(error.response && error.response.status)
@@ -21,4 +19,8 @@ export default function ({ $axios, store, req, redirect }) {
       console.log('axiosConfig: ' + prettyMessage)
     }
   })
+
+  /*  $axios.onResponse(res => {
+    console.log(res)
+  }) */
 }

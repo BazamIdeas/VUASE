@@ -2,18 +2,18 @@
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-5 pb-0">
       <v-flex xs12 class="mb-5">
-        <h2 class="display-1 font-weight-bold text-uppercase text-xs-center">{{title}}</h2>
+        <AppHeading :number="'1'" :size="'display-1'" :title="title" />
       </v-flex>
       <v-expansion-panel class="expansion-panel">
         <!-- SHOW ONLY 4 -->
         <v-expansion-panel-content v-if="showLess"
-          v-for="(item,i) in list.slice(0, 4)"
+          v-for="(item,i) in list.slice(0, 3)"
           :key="i"
           class="pt-1 pb-1"
         >
           <div slot="header" class="font-weight-bold">{{item.question}}</div>
           <v-card class="response">
-            <v-card-text class="font-weight-medium" >{{item.response}}</v-card-text>
+            <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
           </v-card>
         </v-expansion-panel-content>
 
@@ -25,13 +25,17 @@
         >
           <div slot="header" class="font-weight-bold">{{item.question}}</div>
           <v-card class="response">
-            <v-card-text class="font-weight-medium">{{item.response}}</v-card-text>
+            <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-layout row d-flex justify-center>
+      <v-layout row d-flex justify-center v-show="list.lenght > 3">
         <v-flex xs2>
-          <v-btn flat class="btn-simple" @click="showLess = !showLess">VER MAS</v-btn>
+          <v-btn flat class="btn-simple" @click="showLess = !showLess">
+            VER  
+            <span v-if="showLess" class="ml-1">MAS</span> 
+            <span v-if="!showLess" class="ml-1">MENOS</span>
+          </v-btn>
         </v-flex>
       </v-layout>
     </v-container>

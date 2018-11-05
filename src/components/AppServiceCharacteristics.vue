@@ -1,17 +1,19 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md text-xs-center class="mt-5 pb-0">
+    <v-container fluid grid-list-md text-xs-center class="mt-4 pb-0">
       <v-layout row wrap align-center justify-center>
-				<v-flex xs12 class="mb-5">
-					<h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
+				<v-flex xs12 class="mb-5 pb-5">
+					<AppHeading :number="'1'" :size="'display-2'" :title="title" />
 				</v-flex>
 				<v-layout class="characteristics mb-5" row wrap :class="{'ocho': list.length > 6 }">
 					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7, 'xs12 md3': list.length > 6}">
-						<v-layout row xs12 wrap d-flex align-center justify-center column>
-							<v-img width="80px" :src="item.icon" class="mb-1 mt-2"></v-img>
-							<h1 class="title font-weight-bold mb-2" color="dark">{{ item.title }}</h1> 
-							<span class="subheading mb-3" >{{ item.description }}</span>
-						</v-layout>
+						<div class="characteristic">
+							<img height="70px" width="80px" :src="item.icon" class="mb-3 mt-2">
+                            <div class="mb-2">
+                                <h2 style="font-size:18px;" class="font-weight-bold" color="dark" :class="{'px-5': list.length <= 6}">{{ item.title }}</h2> 
+                            </div>
+							<span class="body-2 mb-2" >{{ item.description }}</span>
+						</div>
 					</v-flex>
 				</v-layout>
 			</v-layout>
@@ -76,4 +78,23 @@
 	color: #4b4b4b;
 }
 
+.characteristic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.characteristic h2{
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.characteristic > div{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 </style>

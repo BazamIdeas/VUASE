@@ -1,60 +1,67 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5 pb-0">
-      <v-flex xs12 class="mb-5" v-if="!justOne">
-        <h2 class="display-2 font-weight-bold text-uppercase">{{title}}</h2>
+    <v-container fluid grid-list-md class="mt-4 pb-0">
+      <v-flex xs8 class="mb-5" v-if="!justOne">
+        <AppHeading number="1" size="display-2" align="center" :title="title" />
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get mb-5">
-          <v-flex xs12 md4  v-for="(column, i) in list" :key="i" class="pa-3 column" :class="{'no-border md6': justOne}">
+          <v-flex xs12 md4  v-for="(column, i) in service.whatYouGet.columns" :key="i" class="pa-3 column" :class="{'no-border md6': justOne, 'mt-5 ': !justOne}">
             <v-layout  d-flex column>
               <v-flex xs12 v-for="(item, key) in column" :key="key" class="mb-4 pb-2 pt-2">
                 <!-- if just one -->
                 <v-flex xs12 class="mb-5" v-if="justOne">
-                  <h2 class="display-1 font-weight-bold text-uppercase">{{title}}</h2>
+                  <h2 class="display-2 font-weight-bold  text-xs-center text-uppercase">{{title}}</h2>
                 </v-flex>
-                <v-flex xs12 v-if="item.description && justOne" class="text-xs-justify mb-4">
-                  <span class="body-2">{{ item.description }}</span>
+                <v-flex xs12 v-if="item.description && justOne" class="text-xs-justify mb-4 ml-3">
+                  <span class="subheading font-weight-medium text-xs-justify" v-html="item.description"></span>
                 </v-flex>
-
-                <v-layout align-center justify-start row fill-height class="mb-2">
-                  <v-img :src="item.icon" :max-width="justOne ? 80 : 40" class="mr-2"></v-img>
-                  <h1 class="font-weight-bold mb-0" color="dark" :class="{'display-1': justOne, 'title': !justOne}">{{ item.title }}</h1>
+                
+                <v-flex>
+                  <v-layout  xs12 align-center justify-start row fill-height class="mb-2">
+                  <v-flex xs3 class="mr-2 ml-0">
+                    <img :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'">
+                  </v-flex>
+                  <v-flex class="mr-3">
+                    <h1 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h1>
+                  </v-flex>
                 </v-layout>
+                </v-flex>
+                
 
                 <v-flex xs12 v-if="item.description && !justOne" class="text-xs-justify" :class="{'mb-4': key !== column.length - 1}">
-                  <span class="body-2">{{ item.description }}</span>
+                  <span class="caption font-weight-medium" v-html="item.description"></span>
                 </v-flex>
                 <v-flex xs12 v-if="item.items && item.items.length" class="service-box-list"  :class="{'mb-4': key !== column.length - 1}">
                   <ul>
-                    <li v-for="(checkItem, i) in item.items" :key="i" class="body-2 font-weight-medium mb-2">{{checkItem}}</li>
+                    <li v-for="(checkItem, i) in item.items" :key="i" v-html="checkItem" :class="{'subheading ml-3 mb-4': justOne, 'caption mb-2': !justOne}" class="font-weight-medium"></li>
                   </ul>
                 </v-flex>
               </v-flex>
             </v-layout>
           </v-flex>
-          <v-flex xs12 md4 :class="{'offset-md2': justOne}">
-            <v-layout row wrap d-flex column>
+          <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
+            <v-layout row wrap d-flex column class="ml-4">
               <v-flex class="ml-2">
-                  <v-img :max-width="justOne ? '90%' : '100%'" :src="service.img"></v-img>
-                  <h2 class="title font-weight-bold text-uppercase">
+                  <img :src="service.whatYouGet.img"  width="100%"></img>
+                  <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
                     PRECIO CERRADO EN:
                   </h2>
-                  <v-layout xs12 row d-flex>
+                  <v-layout xs12 row d-flex class="mt-2">
                     <v-flex xs4>
-                      <h2 style="color:#F7941F;" class="display-1">{{service.price}}</h2>
+                      <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h2>
                     </v-flex>
                     <v-layout xs6 row d-flex>
-                      <v-flex xs4 style="border-right:1px solid silver;" class="mr-3">
-                        <h3 class="title">{{service.percentage}}%</h3>
+                      <v-flex xs4 style="border-right:1px solid silver;" class="mr-2">
+                        <h3 class="title">{{percentage}}%</h3>
                         <h5 class="body-2">al iniciar</h5>
                       </v-flex>
-                      <v-flex xs4>
+                      <v-flex xs5>
                         <h3 class="title">{{finalPercertage}}%</h3> 
                         <h5 class="body-2">al finalizar</h5>
                       </v-flex>
                     </v-layout>
                   </v-layout>
-                  <v-btn color="231F20" dark class="mt-3 ml-0" :to="url">INICIAR MI PROYECTO</v-btn>
+                  <v-btn :style="'background:'+service.whatYouGet.color" dark class="mt-3 ml-0" :to="url">INICIAR MI PROYECTO</v-btn>
               </v-flex>
             </v-layout>
           </v-flex>
@@ -65,7 +72,7 @@
 
 <script lang="js">
   export default {
-    props: ['list', 'title', 'service', 'justOne'],
+    props: ['title', 'service', 'price', 'percentage'],
     mounted () {
     },
     data () {
@@ -78,10 +85,13 @@
     },
     computed: {
       finalPercertage () {
-        return 100 - this.service.percentage
+        return 100 - this.percentage
       },
       url () {
         return this.$router.currentRoute.path + '/brief'
+      },
+      justOne () {
+        return this.service.whatYouGet.columns.length === 1
       }
     }
   }
@@ -89,11 +99,11 @@
 
 <style scoped lang="css">
 .what-you-get .column > div:not(:last-child) {
-    border-bottom: 1px solid silver;
+    border-bottom: 2px solid silver;
 }
 
 .what-you-get > :nth-child(1):not(.no-border) {
-    border-right: 1px solid silver;
+    border-right: 2px solid silver;
 }
 
 .service-box-list ul, .service-box-list ol {
@@ -101,8 +111,7 @@
   list-style-image: url('/images/icons/check.png');
 }
 
-[color="dark"]{
-	color: #4b4b4b;
+.title-custom {
+    font-size: 16px;
 }
-
 </style>

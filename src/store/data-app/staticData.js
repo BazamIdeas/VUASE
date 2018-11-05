@@ -1,7 +1,5 @@
-import {servicesHardcoded} from './services.js'
-import {frequentQuestions} from './frequentQuestions.js'
+import { services } from './services'
 
 export const staticData = {
-  services: servicesHardcoded,
-  frequentQuestions: frequentQuestions
+  services: services
 }

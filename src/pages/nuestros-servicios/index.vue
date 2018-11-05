@@ -16,10 +16,10 @@
                 :class="{
                   'bt bb': layout.carousel && !container.noBorder, 
                   'br': !layout.carousel && (index !== layout.services.length - 1) && !container.noBorder
-                }"  
-                :name="service.name" 
-                :currency="service.prices[0].currency.symbol" 
-                :price="service.prices[0].value" 
+                }"
+                :id="service.id" 
+                :name="service.name"  
+                :price="service.price" 
                 :description="service.description"
                 :list="service.list"
                 :icon="service.icon"
@@ -47,6 +47,14 @@
   export default {
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
+    },
+    head () {
+      return {
+        titleTemplate: '%s | Servicios',
+        meta: [
+          { name: 'og:title', content: 'bar' }
+        ]
+      }
     },
     data () {
       return {

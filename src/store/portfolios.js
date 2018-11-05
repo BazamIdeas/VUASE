@@ -1,5 +1,35 @@
 export const state = () => ({
-  list: []
+  list: [],
+  indexExamples: [
+    [
+      { img: '/images/examples/1.png', icon: '/icons/white/whatsapp.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/2.png', icon: '/icons/white/pack-identidad.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/3.png', icon: '/icons/white/app.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/4.png', icon: '/icons/white/catalogo.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/1.png', icon: '/icons/white/diptico.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/2.png', icon: '/icons/white/flyer.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/3.png', icon: '/icons/white/logo-a-medida.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/4.png', icon: '/icons/white/logo-y-web.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/1.png', icon: '/icons/white/vectorizacion.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/2.png', icon: '/icons/white/perfil-red.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/3.png', icon: '/icons/white/publicidad.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' },
+      { img: '/images/examples/4.png', icon: '/icons/white/whatsapp.svg', service: 'App Movil', url: '/diseno-de-app', color: 'rgba(222, 58, 58, 0.80)', textColor: 'white' }
+    ],
+    [
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' },
+      { img: '/images/examples/5.png' },
+      { img: '/images/examples/6.png' },
+      { img: '/images/examples/7.png' },
+      { img: '/images/examples/8.png' }
+    ]
+  ]
 })
 
 export const mutations = {
