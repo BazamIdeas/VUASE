@@ -12,7 +12,7 @@
     v-if="name" 
     class="service-box-title" 
     align-content-center>
-      <v-img :src="icon" width="50" max-width="50" class="mr-2" style="float: left;"></v-img>
+      <img :src="icon" height="70" width="70" class="mr-2" style="float: left;">
       <div>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ price.currency.symbol }} {{ price.value }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">comenzar</v-btn>
@@ -22,7 +22,7 @@
       <br>
       <p class="caption font-weight-medium">{{description}}</p>
     </v-flex>
-    <v-flex xs12 v-if="list && list.length" class="service-box-list">
+    <v-flex xs12 v-if="list && list.length > 0 && list[0] != ''" class="service-box-list">
       <ul :class="{ 'outstanding': outstanding }">
         <li v-for="(item, i) in list" :key="i" class="caption font-weight-medium">{{item}}</li>
       </ul>
@@ -48,7 +48,8 @@
       },
       description: String,
       list: {
-        type: Array
+        type: Array,
+        default: undefined
       },
       startButton: {
         default: false,
@@ -175,4 +176,10 @@
     padding-left: 17px;
     list-style-image: url('/images/icons/check-blue.png');
   }
+
+  .flex.service-box-title {
+    display: flex;
+    align-items: flex-end;
+
+}
 </style>

@@ -1,5 +1,23 @@
 <template>
-  <v-carousel :interval="interval" hide-controls class="main-carousel">
+  <!-- theme 1 -->
+  <v-carousel :interval="interval" hide-controls class="main-carousel theme1" v-if="theme == '1'">
+    <v-carousel-item transition="none" reverse-transition="none">
+      <div class="layers-container">
+        <div class="layer" id="hc-layer-1-item-1">
+          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
+        </div>
+        <div class="layer" id="hc-layer-2-item-1">
+          <h2>Empresa vanguardista en diseño y comunicación</h2>
+        </div>
+        <div class="layer" id="hc-layer-3-item-1">
+            <v-img class="animate-img" src="images/carousels/home1.png"></v-img>
+        </div>
+      </div>
+    </v-carousel-item>
+  </v-carousel>
+
+  <!-- theme 2 -->
+  <v-carousel :interval="interval" hide-controls class="main-carousel theme2" v-else-if="theme == '2'">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
@@ -7,9 +25,14 @@
         </div>
         <div class="layer" id="hc-layer-2-item-1">
           <h1>Empresa vanguardista en diseño y comunicación</h1>
+          <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#B80000;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+        </div>
+        <div class="layer" id="hc-layer-4-item-1">
+          <h2>"El diseño es el embajador silencioso de una marca" </h2>
+          <h5>- Paul Rand -</h5>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
-            <v-img class="animate-img" src="images/carousels/home1.png"></v-img>
+            <v-img class="animate-img" src="images/carousels/slider-de-home.png"></v-img>
         </div>
       </div>
     </v-carousel-item>
@@ -23,7 +46,8 @@
         default: 8000,
         type: Number
       },
-      items: Array
+      items: Array,
+      theme: String
     }
   }
 </script>
@@ -41,6 +65,11 @@
 
   .layers-container .layer {
     position: absolute;
+  }
+
+  .v-carousel.main-carousel.theme2 {
+        height: 100vh;
+        min-height: 730px;
   }
 
   @keyframes FadeIn { 
@@ -91,6 +120,15 @@
     font-weight: 600;
   }
 
+  /*ITEM-4 cita*/
+  div#hc-layer-4-item-1 > * {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  div#hc-layer-4-item-1 h5 {
+      margin-top: 12px;
+  }
 
 
   @media (max-width: 600px) {
@@ -188,6 +226,65 @@
       width: 55%;
       left: 30.5%;
       top: 4%;
+    }
+
+
+    /* theme 2 */
+    /*ITEM-1*/
+    .theme2 div#hc-layer-1-item-1 {
+      font-size: 44px;
+      width: 30%;
+      line-height: 56px;
+      top: 33%;
+      left: 58%;
+    }
+
+    .theme2 div#hc-layer-2-item-1 {
+      font-size: 14px;
+      width: 26%;
+      top: 57%;
+      left: 58%;
+      line-height: 28px;
+    }
+
+    .theme2 div#hc-layer-3-item-1 {
+      width: 42%;
+      left: 14.3%;
+      top: 13%;
+    }
+
+    /*ITEM-2*/
+    .theme2 div#hc-layer-1-item-2 {
+      font-size: 64px;
+      width: 39%;
+      line-height: 90px;
+      top: 25%;
+      left: 20%;
+    }
+
+    .theme2 div#hc-layer-2-item-2 {
+      font-size: 17px;
+      width: 28%;
+      top: 66%;
+      left: 16%;
+      line-height: 28px;
+    }
+
+    .theme2 div#hc-layer-3-item-2 {
+      width: 55%;
+      left: 30.5%;
+      top: 4%;
+    }
+
+    /* ITEM 4 */
+    .theme2 div#hc-layer-4-item-1 {
+        font-size: 10px;
+        width: 15%;
+        text-align: center;
+        line-height: 16px;
+        top: 84%;
+        left: 18.3%;
+        z-index: 99;
     }
   }
 

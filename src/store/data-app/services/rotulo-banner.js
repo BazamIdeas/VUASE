@@ -2,7 +2,7 @@ export const rBanner = {
   list: ['Diseño publicitario impactante', 'Creaciones Ilimitadas', 'Fotomontajes de tus diseños', 'Entrega lista para imprimir'],
   title: 'ROTULO BANNER',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  icon: '/icons/rotulo_banner.svg',
+  icon: '/icons/rotulo-banner.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
@@ -39,7 +39,7 @@ export const rBanner = {
           title: 'MANUAL DE USO DE LA MARCA',
           description: 'Diseño llamativo y eficiente de un banner publicitario para la presentación de su empresa, productos y servicios. <br> La creación es llevada a cabo por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios desde cero y hasta entera aprobación, y su entrega se realiza en los siguientes formatos:',
           items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)'],
-          icon: '/icons/rotulo_banner.svg'
+          icon: '/icons/rotulo-banner.svg'
         }
       ]
     ]
