@@ -90,8 +90,17 @@
         }
       },
       async selectService () {
-        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [] })
-        this.$router.push('/nuestros-servicios/' + this.url + '/brief/disenos')
+        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} })
+
+        var target = null
+
+        if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
+          target = 'cotizacion'
+        } else {
+          target = 'brief/disenos'
+        }
+
+        this.$router.push('/nuestros-servicios/' + this.url + '/' + target)
       }
     },
     filters: {

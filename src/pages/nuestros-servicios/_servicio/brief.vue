@@ -16,6 +16,8 @@
           <AppDesignsForm v-if="stepData.number == 1"/>
           <AppStylesForm v-if="stepData.number == 2"/>
           <AppColorsForm v-if="stepData.number == 3"/>
+          <AppBriefingForm :submit="submit" :slug="brief.service.slug" @submitBrief="submitBrief" v-if="stepData.number == 4"/>
+          <AppCheckoutForm :slug="brief.service.slug" v-if="stepData.number == 5"/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -26,8 +28,24 @@
       <span>Completa los datos</span>
       <v-spacer></v-spacer>
       <div class="hidden-sm-and-down">
-        <v-btn v-if="stepData.next" @click="nextStep(stepData.next)">Omitir</v-btn>
-        <v-btn color="primary" v-if="stepData.next" @click="nextStep(stepData.next)">Continuar</v-btn>
+        <v-btn v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Omitir</v-btn>
+        <v-btn color="primary" v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Continuar</v-btn>
+        <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true">Continuar Brief: {{ submit }}</v-btn>
+        <v-dialog v-if="stepData.number === 5" v-model="dialog" persistent max-width="50%">
+          <v-btn slot="activator" color="primary" dark>Pagar</v-btn>
+          <v-card>
+            <v-card-title class="headline text-xs-center"><p style="width: 100%;">Métodos de pago</p></v-card-title>
+            <v-layout row wrap>
+              <v-flex md4 class="text-xs-center">1</v-flex>
+              <v-flex md4 class="text-xs-center">2</v-flex>
+              <v-flex md4 class="text-xs-center">3</v-flex>
+            </v-layout>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="green darken-1" flat @click.native="dialog = false">Cancelar</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
       </div>
     </v-toolbar>
   </section>
@@ -37,6 +55,11 @@
   export default {
     asyncData ({ params }) {
       return { params: params }
+    },
+    data () {
+      return {
+        submit: false
+      }
     },
     async beforeCreate () {
       await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
@@ -55,6 +78,18 @@
       async nextStep (pass) {
         await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](pass).number)
         this.$router.push('/nuestros-servicios/' + this.$store.state.brief.data.service.slug + '/brief/' + pass)
+      },
+      async submitBrief (data) {
+        if (!data) {
+          this.submit = false
+          return
+        }
+
+        var brief = this.$storage.get('brief')
+
+        await this.$store.dispatch('user/loginOrRegister', brief.information.email)
+
+        await this.$store.dispatch('brief/storeBrief', brief)
       }
     }
   }
