@@ -50,7 +50,7 @@ export const catalogo = {
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }]
     ]
   },
@@ -183,6 +183,8 @@ export const catalogo = {
     items2: [
       { img: '/images/pages/services-carousel/51.-Geotermia.png' },
       { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
+      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
+      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
       { img: '/images/pages/services-carousel/59.jpg' },
       { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
       { img: '/images/pages/services-carousel/63.-.jpg' }

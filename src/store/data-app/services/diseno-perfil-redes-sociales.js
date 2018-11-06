@@ -36,25 +36,37 @@ export const redesSociales = {
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        items: [
+          '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+        ],
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        items: [
+          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
+          'Códigos de colores.',
+          'Tipos de letra utilizada en tu logo.',
+          'Proporciones.',
+          'Uso debido e indebido de los componentes del diseño.'
+        ],
+        icon: '/icons/catalogo.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
+        icon: '/icons/cesion-de-derechos.svg'
       }, {
         title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
+        icon: '/icons/tutorial-de-uso.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
+        icon: '/icons/servicio-postventa.svg'
       }]
     ]
   },

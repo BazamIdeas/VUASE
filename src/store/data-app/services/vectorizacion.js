@@ -5,18 +5,6 @@ export const vectorizacion = {
   icon: '/icons/vectorizacion.svg',
   whatWeOffer: [
     {
-      title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad',
-      icon: '/icons/logo-unico-original.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/equipo-interidisciplinario.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/un-dia-para-el-otro.svg'
-    }, {
       title: 'ATENCION PERSONALIZADA',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
       icon: '/icons/atencion-personalizada.svg'
@@ -25,36 +13,36 @@ export const vectorizacion = {
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
       icon: '/icons/garantia-de-conformidad.svg'
     }, {
-      title: 'PROPUESTAS ILIMITADAS',
+      title: 'DISEÑOS DE UN DÍA PARA OTRO',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/propuestas-ilimitadas.svg'
+      icon: '/icons/un-dia-para-el-otro.svg'
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
+    img: '/images/pages/vectorizacion/vectorizacion-aterel.png',
     color: 'black',
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
-      }, {
-        title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        items: [
+          '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+        ],
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }],
       [{
-        title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
-      }, {
-        title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
-      }, {
-        title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        title: 'MANUAL DE USO DE LA MARCA',
+        items: [
+          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
+          'Códigos de colores.',
+          'Tipos de letra utilizada en tu logo.',
+          'Proporciones.',
+          'Uso debido e indebido de los componentes del diseño.'
+        ],
+        icon: '/icons/catalogo.svg'
       }]
     ]
   },
@@ -96,32 +84,32 @@ export const vectorizacion = {
   ],
   testimonies: [{
     stars: 4,
-    logo: 'papeleria.svg',
+    logo: '/icons/papeleria.svg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
-      color: '#75BA50'
-    },
-    {
-      url: '/images/pages/logo-empresa/logo-la-parroquia-azcapo.png',
-      color: '#BA2700'
-    },
-    {
-      url: '/images/pages/logo-empresa/logo-maese-escriba.png',
+      url: '/images/pages/vectorizacion/vectorizacion-hostal-la-colegiata.png',
       color: 'black'
     },
     {
-      url: '/images/pages/logo-empresa/logo-malarrassa.png',
-      color: '#7C7F81'
+      url: '/images/pages/vectorizacion/vectorizacion-almazara-la-esperanza.png',
+      color: 'black'
     },
     {
-      url: '/images/pages/logo-empresa/logo-one-seagate.png',
-      color: '#0065AE'
+      url: '/images/pages/vectorizacion/vectorizacion-comercial-andres.png',
+      color: '#4BEDE4'
     },
     {
-      url: '/images/pages/logo-empresa/logo-wellcan.png',
+      url: '/images/pages/vectorizacion/vectorizacion-hobbie.png',
+      color: '#183C69'
+    },
+    {
+      url: '/images/pages/vectorizacion/vectorizacion-star-road.png',
+      color: '#E4E4E4'
+    },
+    {
+      url: '/images/pages/vectorizacion/logo-wellcan.png',
       color: '#FBD20B'
     }
   ],
@@ -201,5 +189,20 @@ export const vectorizacion = {
       { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
       { img: '/images/pages/services-carousel/33.-Bellek.png' }
     ]
+  },
+  packs: {
+    title: 'APROVECHA NUESTROS PACK',
+    first: {
+      image: '/images/pages/packs/rediseño-de-logo-+-papeleria.png',
+      title: 'VECTORIZACIÓN DE LOGO + PAPELERÍA',
+      url: '/nuestros-servicios/vectorizacion-mas-papeleria',
+      notSecondButton: true
+    },
+    last: {
+      image: '/images/pages/packs/rediseno-de-logo+web.png',
+      title: 'VECTORIZACIÓN DE LOGO + WEB',
+      url: '/nuestros-servicios/vectorizacion-mas-web',
+      notSecondButton: true
+    }
   }
 }

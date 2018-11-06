@@ -45,7 +45,7 @@ export const papeleria = {
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
         items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
         items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],

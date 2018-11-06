@@ -39,8 +39,8 @@ export const tripticos = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/flyer/flyer-willian-&-perkins.png',
-    color: '#3566B2',
+    img: '/images/pages/tripticos/triptico-antartik.png',
+    color: '#5690CC',
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
@@ -50,7 +50,7 @@ export const tripticos = {
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }]
     ]
   },
@@ -113,24 +113,24 @@ export const tripticos = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
+      url: '/images/pages/tripticos/triptico-surtel.png',
       color: '#15427D'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-arquitectura-sin-limites.png',
-      color: '#BA2700'
+      url: '/images/pages/tripticos/triptico-gloss.png',
+      color: '#E044A0'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-ferreteria-flores.png',
-      color: '#F89422'
+      url: '/images/pages/tripticos/triptico-majavilitas.png',
+      color: '#245482'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-infriman.png',
-      color: '#F2591D'
+      url: '/images/pages/tripticos/triptico-majavillas.png',
+      color: '#78CEE2'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
-      color: '#3FB13F'
+      url: '/images/pages/tripticos/triptico-orgui.png',
+      color: '#211F20'
     }
   ],
   creativeProcess: [
@@ -191,16 +191,16 @@ export const tripticos = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS PACK',
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
-      title: 'REDISEÑO DE LOGO + PAPELERÍA',
-      url: '/nuestros-servicios/pack-rediseno-de-logo'
+      image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
+      title: 'PUBLICIDAD',
+      url: '/nuestros-servicios/publicidad'
     },
     last: {
-      image: '/images/pages/packs/addons-logo+web.png',
-      title: 'REDISEÑO DE LOGO + WEB',
-      url: '/nuestros-servicios/pack-rediseno-de-logo'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico'
     }
   }
 }

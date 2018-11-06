@@ -50,7 +50,7 @@ export const diptico = {
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }]
     ]
   },
