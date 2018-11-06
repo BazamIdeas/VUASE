@@ -1,60 +1,72 @@
 export const web = {
-  list: ['Prueba 3', 'Prueba 4'],
-  title: 'SITIO WEB',
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  title: 'SITIO WEB PROFESIONAL',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/sitio-web.svg',
   whatWeOffer: [
     {
-      title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
-    }, {
-      title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
+      description: 'Diseño Gráfico, Estructura, Navegación y funcionalidades conformes a los resultados que desea lograr.',
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
+      icon: '/icons/garantia-de-conformidad.svg'
     }, {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'VERSATILIDAD',
+      description: 'Gracias a las múltiples integraciones su sitio web puede ser escalable a las necesidades de su negocio.',
+      icon: '/icons/versatilidad.svg'
+    }, {
+      title: 'DOMINIO WEB PROPIO, EMAIL Y ALOJAMIENTO',
+      description: 'Servicios incluidos para el primer año.',
+      icon: '/icons/integracion-con-web.svg'
+    }, {
+      title: 'EQUIPO MULTIDICIPLINARIO',
+      description: 'Tu proyecto en manos de expertos especializados',
+      icon: '/icons/equipo-interidisciplinario.svg'
+    }, {
+      title: 'SITIO WEB PUBLICADO Y FUNCIONANDO',
+      description: 'Entregamos su proyecto llave en manosin costos adicionales ni sorpresas. Brindamos soporte post venta gratuito por 2 años.',
+      icon: '/icons/sitio-web-publicado-y-funcionando.svg'
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
+    img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
     color: 'black',
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        items: [
+          '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+        ],
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        items: [
+          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
+          'Códigos de colores.',
+          'Tipos de letra utilizada en tu logo.',
+          'Proporciones.',
+          'Uso debido e indebido de los componentes del diseño.'
+        ],
+        icon: '/icons/catalogo.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
+        icon: '/icons/cesion-de-derechos.svg'
       }, {
         title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
+        icon: '/icons/tutorial-de-uso.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
+        icon: '/icons/servicio-postventa.svg'
       }]
     ]
   },
@@ -96,33 +108,29 @@ export const web = {
   ],
   testimonies: [{
     stars: 4,
-    logo: 'papeleria.svg',
+    logo: '/icons/papeleria.svg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
-      color: '#75BA50'
+      url: '/images/pages/logo-mas-web/web-ahl-fenix.png',
+      color: '#F6C312'
     },
     {
-      url: '/images/pages/logo-empresa/logo-la-parroquia-azcapo.png',
-      color: '#BA2700'
+      url: '/images/pages/logo-mas-web/web-fdrd.png',
+      color: '#C72228'
     },
     {
-      url: '/images/pages/logo-empresa/logo-maese-escriba.png',
-      color: 'black'
+      url: '/images/pages/logo-mas-web/web-meraki.png',
+      color: '#DAAE71'
     },
     {
-      url: '/images/pages/logo-empresa/logo-malarrassa.png',
-      color: '#7C7F81'
+      url: '/images/pages/logo-mas-web/web-muddanzas-armel.png',
+      color: '#3DAE60'
     },
     {
-      url: '/images/pages/logo-empresa/logo-one-seagate.png',
-      color: '#0065AE'
-    },
-    {
-      url: '/images/pages/logo-empresa/logo-wellcan.png',
-      color: '#FBD20B'
+      url: '/images/pages/logo-mas-web/web-vincit.png',
+      color: '#F19025'
     }
   ],
   creativeProcess: [
@@ -164,33 +172,42 @@ export const web = {
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
+      { img: '/images/pages/services-carousel/1.-New-Cool.png' },
+      { img: '/images/pages/services-carousel/2.-Chikas.png' },
+      { img: '/images/pages/services-carousel/3.-Family-TV.png' },
+      { img: '/images/pages/services-carousel/4.-Fauna-Domestica.png' },
+      { img: '/images/pages/services-carousel/5.-Stemmedic.png' },
+      { img: '/images/pages/services-carousel/6.-Antartik.png' },
+      { img: '/images/pages/services-carousel/7.-Arlu.png' },
+      { img: '/images/pages/services-carousel/8.-Aixo-Hotel-Suites.png' },
+      { img: '/images/pages/services-carousel/9.-food-chef.png' },
+      { img: '/images/pages/services-carousel/10.-y-si-me-toca-a-mi.png' },
+      { img: '/images/pages/services-carousel/11.-Black-Bird.png' },
+      { img: '/images/pages/services-carousel/12.-Paralelo-0.png' },
+      { img: '/images/pages/services-carousel/13.-Hostal-La-Colegiata.png' },
+      { img: '/images/pages/services-carousel/14.-Ingenium.png' },
+      { img: '/images/pages/services-carousel/15.-Hobbie.png' },
+      { img: '/images/pages/services-carousel/16.-Bricoaching.png' },
+      { img: '/images/pages/services-carousel/17.-Osmaservice.png' }
     ],
     items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/pages/services-carousel/18.-La-Casa-de-Kett.png' },
+      { img: '/images/pages/services-carousel/19.-Avicola-Pungurume.png' },
+      { img: '/images/pages/services-carousel/20.Arquitectura-Sin-Limites.png' },
+      { img: '/images/pages/services-carousel/21.-Ares.png' },
+      { img: '/images/pages/services-carousel/22.-Geoit.png' },
+      { img: '/images/pages/services-carousel/23.-Lextres-abogados.png' },
+      { img: '/images/pages/services-carousel/24. Limpverd.png' },
+      { img: '/images/pages/services-carousel/24.-Avedrone.png' },
+      { img: '/images/pages/services-carousel/25.-Lormanic.png' },
+      { img: '/images/pages/services-carousel/26.Cielo.png' },
+      { img: '/images/pages/services-carousel/27.-Majavilitas.png' },
+      { img: '/images/pages/services-carousel/28.-Esparvel.png' },
+      { img: '/images/pages/services-carousel/29.-Orgui.png' },
+      { img: '/images/pages/services-carousel/30.-Nipponair.png' },
+      { img: '/images/pages/services-carousel/31. Dulces para Paula.png' },
+      { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
+      { img: '/images/pages/services-carousel/33.-Bellek.png' }
     ]
   }
 }

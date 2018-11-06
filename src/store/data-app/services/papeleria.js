@@ -1,33 +1,41 @@
 export const papeleria = {
-  list: ['Prueba 3', 'Prueba 4'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   title: 'PAPELERIA',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/papeleria-merchadising-redes-sociales.svg',
   whatWeOffer: [
     {
-      title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
+      description: 'Creaciones a medida, únicas y de calidad.',
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Tu proyecto en manos de expertos especialistas.',
+      icon: '/icons/mas-de-40-profesionales.svg'
     }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
+      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
-      title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'PERFECCIONAMIENTO DE TEXTOS',
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
-      title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
+      icon: '/icons/archivos_listos.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      icon: '/icons/archivos_listos.svg'
+    }, {
+      title: 'SOPORTE POST VENTA GRATUITO',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
@@ -37,7 +45,7 @@ export const papeleria = {
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
         items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
         items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],

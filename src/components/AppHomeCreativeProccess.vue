@@ -1,11 +1,11 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container grid-list-md fluid class="pa-0 creative-process-home">
-        <v-flex xs12 class="mb-4">
+        <v-flex xs12 class="mb-5">
           <AppHeading :number="'1'" :size="'display-1'" :title="title" class="mb-3" />
         </v-flex>
         <v-layout class="content-pasos">
-          <v-flex offset-md3 xs12 md6>
+          <v-flex xs10 offset-xs1 offset-md3 md6>
             <v-stepper non-linear class="pasos mb-3">
               <v-stepper-header>
                 <v-stepper-step step="1"> </v-stepper-step>
@@ -20,7 +20,7 @@
           <v-layout class="characteristics home mb-5" row>
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
-                <img height="70px" width="80px" src="/icons/app.svg">
+                <img height="70px" width="80px" src="/icons/te escuchamos.svg">
               </div>
               <div class="mb-2">
                   <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">TE ESCUCHAMOS</h2> 
@@ -30,7 +30,7 @@
 
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
-                <img height="70px" width="80px" src="/icons/app.svg">
+                <img height="70px" width="80px" src="/icons/logo-a-medida-pink.svg">
               </div>
               <div class="mb-2">
                   <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">GARANTÍA DE CONFORMIDAD 100%</h2> 
@@ -39,7 +39,7 @@
             </div>
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
-                <img height="70px" width="80px" src="/icons/app.svg">
+                <img height="70px" width="80px" src="/icons/recomendados-por-grandes-pink.svg">
               </div>
               <div class="mb-2">
                   <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">LISTO!</h2> 
@@ -48,7 +48,7 @@
             </div>    
         </v-layout>
         <v-layout align-center justify-center row> 
-            <v-btn color="my-5" to="/nuestros-servicios" class="elevation-0 white--text title font-weight-regular" style="background-color:#EE205E;">
+            <v-btn color="my-5 xs-mt-0" to="/nuestros-servicios" class="elevation-0 white--text title font-weight-regular" style="background-color:#EE205E;">
               COMENZAR
             </v-btn>
         </v-layout>
@@ -67,6 +67,10 @@
       background: #fff;
       box-shadow: none;
       background: transparent;
+  }
+  
+  .v-stepper__header{
+    box-shadow: none;
   }
 
   .pasos .v-divider {
@@ -94,6 +98,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 14.5%;
+    flex-wrap: wrap;
   }
 
   .characteristics.home > :nth-child(1) h2 {
@@ -133,5 +138,11 @@
     border-radius: 50%;
     background: white;
     box-shadow: 0 14px 42px 0 rgba(0,0,0,.2);
+  }
+
+  @media (min-width: 320px) and (max-width: 640px) {
+    .characteristics.home .characteristic{
+      margin-top: 20px;
+    }
   }
 </style>

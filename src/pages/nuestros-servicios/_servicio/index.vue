@@ -10,7 +10,7 @@
     <!-- CAROUSEL -->
     <AppHeading :number="'1'" v-if="dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-5" />
     <AppExamplesSlider v-if="dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
-    <AppExamplesSlider v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" />
+    <AppExamplesSlider class="mt-2" v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" />
 
     <!-- SECCION 3 -->  
     <v-container grid-list-md class="mt-3 pb-0">

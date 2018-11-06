@@ -3,7 +3,7 @@
     <v-layout row class="ma-0" style="position:relative">
       <v-flex xs12 class="examples-slider-container pa-0" ref="examplesSliderContainer" :class="{'shadow': shadow}" >
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
-          <v-layout row d-block>
+          <v-layout row>
             <v-flex v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center>
               <v-img :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
               <span class="hidden-box" v-if="hovered" :style="'background-color:'+example.color+'; color:'+example.textColor">

@@ -109,7 +109,7 @@
 }
 
 .top-service-slider .v-carousel {
-    min-height: 550px;
+    min-height: 590px;
     height: auto;
 }
 

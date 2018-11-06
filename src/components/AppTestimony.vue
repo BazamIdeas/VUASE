@@ -1,6 +1,6 @@
 <template lang="html">
-	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5">
+	<v-flex :class="width">
+    <v-container fluid grid-list-md>
       <v-layout xs12 row wrap class="testimonies">
         <v-carousel>
           <v-carousel-item
@@ -12,10 +12,10 @@
             next-icon="arrow_right"
             prev-icon="arrow_left"
           >
-            <v-layout row>
-              <v-flex xs6 class="pt-5">
-                <h2 class="display-1 font-weight-bold text-uppercase text-xs-center" style="color:#434343;">
-                  ¿QUE OPINAN <br>
+            <v-layout row wrap>
+              <v-flex xs12 md6 class="pt-5">
+                <h2 class="display-1 xs-subheading font-weight-bold text-uppercase text-xs-center" style="color:#434343;">
+                  ¿QUE OPINAN <br class="hidden-xs-and-down">
                   NUESTROS CLIENTES?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
@@ -23,12 +23,13 @@
                     <v-rating class="testimony-rating" :value="item.stars" readonly></v-rating>
                   </div>
                 </v-layout>
-                <h3 class="subheading font-weight-medium text-xs-center mt-3 px-5 pb-2" style="color:rgb(151, 147, 147);">
+                <h3 class="subheading font-weight-medium text-xs-center mt-3 px-5 xs-px-0 pb-2" style="color:rgb(151, 147, 147);">
                   {{item.description}}
                 </h3>
               </v-flex>
-              <v-flex xs6 class="logo-testimony">
-                <div class="lt-img" :style="'background-image:url(/images/testimonies/'+item.logo">.</div>
+              <v-flex xs12 md6 class="logo-testimony">
+                <img class="--puntos" src="/icons/puntos_de_fondo.svg">
+                <img class="lt-img" :src="item.logo">
               </v-flex>
             </v-layout>
           </v-carousel-item>
@@ -40,7 +41,15 @@
 
 <script lang="js">
   export default {
-    props: ['list'],
+    props: {
+      list: {
+        type: Array,
+        default: undefined
+      },
+      width: {
+        default: 'xs12'
+      }
+    },
     mounted () {
     },
     data () {
@@ -57,6 +66,36 @@
 </script>
 
 <style>
+@media (min-width: 320px) and (max-width: 640px) {
+  .testimonies .v-carousel__prev, .testimonies .v-carousel__next {
+    display: none;
+  }
+  .testimonies .v-carousel {
+    height: 650px !important;
+  }
+   .testimonies .logo-testimony .lt-img {
+      position: initial;
+      max-width: 95%;
+      width: auto;
+      margin: auto;
+      display: block;
+  }
+  .logo-testimony .\--puntos {
+    display: none;
+  }
+  .logo-testimony {
+      position: relative;
+      min-height: 200px;
+  }
+  .logo-testimony .lt-img {
+      position: initial;
+      max-width: 95%;
+      margin: auto;
+      display: block;
+  }
+}
+
+
 .testimonies .v-responsive__sizer, .testimonies .v-carousel__item {
   transition: unset !important;
   -webkit-transition: unset !important; 
@@ -89,23 +128,26 @@
   display: none;
 }
 
-.logo-testimony {
-    background-image: url(/icons/puntos_de_fondo.svg);
-    background-position: right;
-    background-size: 80%;
-}
-
-.lt-img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: transparent;
-    width: 200px;
-    height: 200px;
-    margin-left: 22%;
-    margin-top: 12%;
-}
-
 .testimony-rating i.v-icon.v-icon--link.material-icons.theme--dark.accent--text {
     color: silver !important;
 }
+
+.logo-testimony {
+    position: relative;
+    min-height: 360px;
+}
+
+  .logo-testimony .--puntos {
+      position: absolute;
+      width: 500px;
+      right: -15%;
+      top: -28%;
+  }
+
+  .logo-testimony .lt-img {
+      position: absolute;
+      width: 40%;
+      left: 34%;
+      top: 31%;
+  }
 </style>
