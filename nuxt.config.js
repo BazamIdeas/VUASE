@@ -49,6 +49,7 @@ module.exports = {
     '~/plugins/vuetify.js',
     // { src: '~/plugins/watch-countries.js', ssr: true },
     { src: '~/plugins/vee-validate.js', ssr: true },
+    { src: '~/plugins/vue-cookies.js', ssr: false },
     { src: '~/plugins/vue2-storage.js', ssr: false },
     { src: '~/plugins/axios.js', ssr: true },
     { src: '~/plugins/components.js', ssr: true }
@@ -93,6 +94,7 @@ module.exports = {
       '~/plugins/vuetify.js',
       '~/plugins/vee-validate.js',
       '~/plugins/vue2-storage.js',
+      '~/plugins/vue-cookies.js',
       '~/plugins/axios.js',
       '~/plugins/components.js'
     ],

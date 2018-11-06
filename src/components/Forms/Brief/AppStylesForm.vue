@@ -34,7 +34,6 @@
       async setStyle (name, v, index, event) {
         var brief = this.$storage.get('brief')
         brief.styles[name] = v
-        this.$storage.set('brief', brief)
         await this.$store.dispatch('brief/setData', brief)
       },
       dataActiveStyle (event) {
