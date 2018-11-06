@@ -24,7 +24,7 @@
     </v-flex>
     <v-flex xs12 v-if="list && list.length > 0 && list[0] != ''" class="service-box-list">
       <ul :class="{ 'outstanding': outstanding }">
-        <li v-for="(item, i) in list" :key="i" class="caption font-weight-medium">{{item}}</li>
+        <li v-for="(item, i) in list" :key="i" class="my-2 caption font-weight-medium">{{item}}</li>
       </ul>
     </v-flex>
     <v-flex xs12 v-if="startButton" class="service-box-more-button">

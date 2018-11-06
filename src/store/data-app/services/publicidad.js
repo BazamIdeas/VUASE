@@ -1,8 +1,8 @@
-export const flyer = {
-  title: 'FLYER',
+export const publicidad = {
+  title: 'PUBLICIDAD',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  icon: '/icons/flyer.svg',
+  icon: '/icons/diptico.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
@@ -39,13 +39,17 @@ export const flyer = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/flyer/flyer-willian-&-perkins.png',
-    color: '#3566B2',
+    img: '/images/pages/diptico/diptico-solegar.png',
+    color: '#B43347',
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: 'loremp',
-        items: ['<b>PDF</b> Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+        items: [
+          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+        ],
         icon: '/icons/logo_a_medida_hover.svg'
       }]
     ]
@@ -87,30 +91,46 @@ export const flyer = {
     }
   ],
   testimonies: [{
-    stars: 4,
+    stars: 5,
     logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Ha sido excelente trabajar con ustedes”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Profesionales, competentes, rápidos.!”'
+  }, {
+    stars: 5,
+    logo: 'papeleria.svg',
+    description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
   }],
   topSlider: [
     {
-      url: '/images/pages/flyer/flyer-gemba.png',
-      color: '#194979'
+      url: '/images/pages/diptico/diptico-la-parroquia-azcapo.png',
+      color: '#BC1F26'
     },
     {
-      url: '/images/pages/flyer/flyer-hnos-duarte.png',
-      color: '#A8B800'
+      url: '/images/pages/diptico/diptico-gesvetia.png',
+      color: '#EEB729'
     },
     {
-      url: '/images/pages/flyer/flyer-hotel-montecarlo.png',
-      color: '#3B9BD5'
+      url: '/images/pages/diptico/diptico-normopalet.png',
+      color: '#97C15F'
     },
     {
-      url: '/images/pages/flyer/flyer-retro-cafe.png',
-      color: '#EB1C24'
+      url: '/images/pages/diptico/diptico-orlan-inversiones.png',
+      color: 'black'
     },
     {
-      url: '/images/pages/flyer/flyer-camaleon.png',
-      color: '#9AC43C'
+      url: '/images/pages/diptico/diptico-vincit.png',
+      color: '#F0AA5E'
     }
   ],
   creativeProcess: [
@@ -173,14 +193,14 @@ export const flyer = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
+      image: '/images/pages/packs/flyer-retro-cafe.png',
+      title: 'FLYER',
+      url: '/nuestros-servicios/flyer'
     },
     last: {
-      image: '/images/pages/packs/oferta-triptico-gloss.png',
-      title: 'TRÍPTICO',
-      url: '/nuestros-servicios/diseno-folletos-dipticos-tripticos'
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/catalogo'
     }
   }
 }

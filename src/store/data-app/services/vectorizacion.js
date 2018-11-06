@@ -1,33 +1,33 @@
 export const vectorizacion = {
-  list: ['Prueba 3', 'Prueba 4'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   title: 'VECTORIZACIÓN',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/vectorizacion.svg',
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Creaciones a medida, únicas y de calidad',
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Tu proyecto en manos de expertos especializados',
+      icon: '/icons/equipo-interidisciplinario.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/un-dia-para-el-otro.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
+      icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/propuestas-ilimitadas.svg'
     }
   ],
   whatYouGet: {

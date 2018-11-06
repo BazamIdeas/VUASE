@@ -7,27 +7,27 @@ export const redisenoLogo = {
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
       description: 'Creaciones a medida, únicas y de calidad',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
       description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/equipo-interidisciplinario.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/un-dia-para-el-otro.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/propuestas-ilimitadas.svg'
     }
   ],
   whatYouGet: {

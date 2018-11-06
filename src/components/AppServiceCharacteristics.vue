@@ -8,7 +8,7 @@
 				<v-layout class="characteristics mb-5" row wrap :class="{'ocho': list.length > 6 }">
 					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7, 'xs12 md3': list.length > 6}">
 						<div class="characteristic">
-							<img height="70px" width="80px" :src="item.icon" class="mb-3 mt-2">
+							<img height="70px" width="80px" :src="item.icon" class="mb-3 mt-3 ">
                             <div class="mb-2">
                                 <h2 style="font-size:18px;" class="font-weight-bold" color="dark" :class="{'px-5': list.length <= 6}">{{ item.title }}</h2> 
                             </div>

@@ -9,6 +9,7 @@ import { imagenCorporativa } from './imagen-corporativa.js'
 
 import { packRediseno } from './pack-rediseno-de-logo.js'
 import { redisenoLogo } from './rediseno-de-logo.js'
+import { vectorizacion } from './vectorizacion.js'
 
 import { papeleria } from './papeleria.js'
 import { folletos } from './diseno-folletos-dipticos-tripticos.js'
@@ -16,6 +17,8 @@ import { flyer } from './flyer.js'
 import { flyerDosCaras } from './flyer-dos-caras.js'
 import { diptico } from './diptico.js'
 import { tripticos } from './tripticos.js'
+import { catalogo } from './catalogo.js'
+import { publicidad } from './publicidad.js'
 
 import { rBanner } from './rotulo-banner.js'
 import { rPackaging } from './packaging.js'
@@ -23,7 +26,6 @@ import { rFurgoneta } from './rotulo-furgoneta-camion.js'
 import { rLocal } from './rotulo-local.js'
 import { rVehicular } from './rotulo-vehicular.js'
 import { rVestimenta } from './rotulo-vestimenta-uniforme.js'
-import { vectorizacion } from './vectorizacion.js'
 
 export const services = {
   'diseno-de-app': disenoApp,
@@ -46,5 +48,7 @@ export const services = {
   'flyer': flyer,
   'diptico': diptico,
   'tripticos': tripticos,
-  'flyer-dos-caras': flyerDosCaras
+  'flyer-dos-caras': flyerDosCaras,
+  'catalogo': catalogo,
+  'publicidad': publicidad
 }

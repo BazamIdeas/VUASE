@@ -162,6 +162,12 @@
       transform: translate(-50%, -0px) !important;
   }
 
+  @media (min-width: 320px) and (max-width: 980px) {
+    .xs-no-border{
+      border:none !important;
+    }
+  }
+
   @media (min-width: 320px) and (max-width: 640px) {
     h2.display-2, h2.display-1 {
         font-size: 33px !important;
@@ -169,9 +175,6 @@
 
     .xs-mt-0{
       margin-top:0 !important;
-    }
-    .xs-no-border{
-      border:none !important;
     }
     .xs-height-auto{
       height: auto !important;

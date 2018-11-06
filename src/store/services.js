@@ -7,8 +7,11 @@ export const state = () => ({
       name: 'Logos e Identidades',
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/logo-identidades/pan-&-miri.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/hnos-duarte.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/meraki.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/mudanzas-armel.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/probelleza.png' }
       ],
       rows: [
         [
@@ -30,11 +33,16 @@ export const state = () => ({
       name: 'Web y App',
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/web-y-app/app-pio-chicken-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/redes-finanpay.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/web-fdrd-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/web-macroservicios-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/web-vincit-2.png' }
       ],
       rows: [
         [
+          'diseno-logo-y-pagina-web',
+          'ecommerce',
           'diseno-de-app'
         ],
         [
@@ -48,8 +56,11 @@ export const state = () => ({
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/folletos/civefa-publicidad-servicio.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/diptico-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/folletos/flyer-duarte-servicio.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/hotel-montecarlo.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/triptico-(servicios).png' }
       ],
       rows: [
         [
@@ -87,8 +98,11 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/rotulos/banner-dual.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/empaque-vannamei.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/gps-serville-tour.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-smart-escolar-(servicios).png' }
       ]
     },
     {
@@ -102,8 +116,12 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-lacoladaencasa-servicio.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/andes-facility-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-marsanz-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-nueva-europa-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-sinergia-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-tecnotransformacion-servicios.png' }
       ],
       noBorder: true
     }
@@ -142,6 +160,7 @@ export const mutations = {
             service.description = servicesHardcoded[slug].description || ''
             service.icon = servicesHardcoded[slug].icon || ''
             service.url = servicesHardcoded[slug].url || ''
+            service.title = servicesHardcoded[slug].title || ''
           }
 
           row.services.push(service)
