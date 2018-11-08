@@ -33,10 +33,10 @@
         default: 0
       },
       itemWidth: {
-        default: '260'
+        default: '300px'
       },
       itemHeight: {
-        default: '260'
+        default: '300px'
       },
       shadow: {
         default: false

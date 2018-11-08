@@ -9,15 +9,15 @@
     
     <!-- PORTFAFOLIO -->
     <AppHeading title="Portafolio" number="2" class="mb-5" />
-    <AppExamplesSlider :examples="sliderExamples[0]" hovered="true" shadow="true" puntos="true" item-width="440" item-height="440"  class="mb-5 pb-5" />
+    <AppExamplesSlider :examples="sliderExamples[0]" hovered="true" shadow="true" puntos="true" item-width="400" item-height="400"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
     <AppHeading class="mb-5" number="2" title="¿Qué necesitas?" subtitle="Deja el diseño de tu imagen en manos de profesionales, que te ofreceran la más amplia gama de opciones" />
     <AppServicesGrid color="#F29F01" class="mb-5"/>
     
-    <AppHomeCreativeProccess class="mb-5" title="Proceso Creativo" />
+    <AppHomeCreativeProccess title="Proceso Creativo" />
 
-    <v-parallax src="/images/pages/mapa.svg" class="parallax-opacity">
+    <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
@@ -159,7 +159,7 @@
 
 <style>
   .parallax-opacity .v-parallax__image-container img {
-      transform: translate(-50%, -0px) !important;
+    transform: translate(-62%, 27px) !important;
   }
 
   @media (min-width: 320px) and (max-width: 980px) {
@@ -200,17 +200,17 @@
   }
 
   .parallax-opacity {
-    height: 738px !important;
+    height: 775px !important;
   }
 
-  .parallax-opacity:before {
+/*   .parallax-opacity:before {
     content: "";
     width: 100%;
     height: 100%;
     background-color: rgba(249, 249, 249, 0.6);
     position: absolute;
     z-index: 2;
-  }
+  } */
 
 /*   .pluma-background {
     position: relative;

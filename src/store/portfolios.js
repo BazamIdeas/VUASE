@@ -4,9 +4,9 @@ export const state = () => ({
     [
       {
         img: '/images/examples/1.png',
-        icon: '/icons/white/perfil-red.svg',
+        icon: '/icons/white/app.svg',
         service: 'App Movil',
-        url: '/diseno-de-app',
+        url: 'diseno-de-app',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -14,7 +14,7 @@ export const state = () => ({
         img: '/images/examples/2.png',
         icon: '/icons/white/pack-identidad.svg',
         service: 'Imagen Corporativa',
-        url: '/diseno-de-app',
+        url: 'imagen-corporativa',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -22,7 +22,7 @@ export const state = () => ({
         img: '/images/examples/3.png',
         icon: '/icons/white/app.svg',
         service: 'App Movil',
-        url: '/diseno-de-app',
+        url: 'diseno-de-app',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -30,7 +30,7 @@ export const state = () => ({
         img: '/images/examples/4.png',
         icon: '/icons/white/catalogo.svg',
         service: 'Catálogo',
-        url: '/diseno-de-app',
+        url: 'catalogo',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -38,7 +38,7 @@ export const state = () => ({
         img: '/images/examples/1.png',
         icon: '/icons/white/diptico.svg',
         service: 'Diptico',
-        url: '/diseno-de-app',
+        url: 'diptico',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -46,7 +46,7 @@ export const state = () => ({
         img: '/images/examples/2.png',
         icon: '/icons/white/flyer.svg',
         service: 'Flyer',
-        url: '/diseno-de-app',
+        url: 'Flyer',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -54,7 +54,7 @@ export const state = () => ({
         img: '/images/examples/3.png',
         icon: '/icons/white/logo-a-medida.svg',
         service: 'Logo a medida',
-        url: '/diseno-de-app',
+        url: 'logo-empresa',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -62,7 +62,7 @@ export const state = () => ({
         img: '/images/examples/4.png',
         icon: '/icons/white/logo-y-web.svg',
         service: 'Logo y sitio web',
-        url: '/diseno-de-app',
+        url: 'diseno-logo-y-pagina-web',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -70,7 +70,7 @@ export const state = () => ({
         img: '/images/examples/1.png',
         icon: '/icons/white/vectorizacion.svg',
         service: 'Vectorización',
-        url: '/diseno-de-app',
+        url: 'vectorizacion',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -78,7 +78,7 @@ export const state = () => ({
         img: '/images/examples/2.png',
         icon: '/icons/white/perfil-red.svg',
         service: 'Perfil Red',
-        url: '/diseno-de-app',
+        url: 'diseno-perfil-redes-sociales',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
@@ -86,15 +86,15 @@ export const state = () => ({
         img: '/images/examples/3.png',
         icon: '/icons/white/publicidad.svg',
         service: 'Publicidad',
-        url: '/diseno-de-app',
+        url: 'publicidad',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       },
       {
         img: '/images/examples/4.png',
-        icon: '/icons/white/perfil-red.svg',
+        icon: '/icons/white/app.svg',
         service: 'App Movil',
-        url: '/diseno-de-app',
+        url: 'diseno-de-app',
         color: 'rgba(222, 58, 58, 0.80)',
         textColor: 'white'
       }

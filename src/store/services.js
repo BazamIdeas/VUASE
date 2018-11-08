@@ -3,7 +3,7 @@ import { services as servicesHardcoded } from './data-app/services'
 export const state = () => ({
   groups: [
     {
-      icon: '/icons/logo_a_medida_hover.svg',
+      icon: '/icons/logo-a-medida.svg',
       name: 'Logos e Identidades',
       layouts: [],
       carousel: [
@@ -52,7 +52,7 @@ export const state = () => ({
       ]
     },
     {
-      icon: '/icons/folletos_y_publicidades_hover.svg',
+      icon: '/icons/folleto-y-publicidades.svg',
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
@@ -106,7 +106,7 @@ export const state = () => ({
       ]
     },
     {
-      icon: '/images/services/icono-1.png',
+      icon: '/icons/perfil-red.svg',
       name: 'Perfiles de Redes Sociales',
       rows: [
         [
@@ -156,11 +156,7 @@ export const mutations = {
 
           // Service Items
           if (servicesHardcoded[slug]) {
-            service.list = servicesHardcoded[slug].list || ['']
-            service.description = servicesHardcoded[slug].description || ''
-            service.icon = servicesHardcoded[slug].icon || ''
-            service.url = servicesHardcoded[slug].url || ''
-            service.title = servicesHardcoded[slug].title || ''
+            service.dataService = servicesHardcoded[slug]
           }
 
           row.services.push(service)
