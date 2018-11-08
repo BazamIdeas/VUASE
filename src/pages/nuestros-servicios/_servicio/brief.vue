@@ -31,7 +31,7 @@
         <v-btn v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Omitir</v-btn>
         <v-btn color="primary" v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Continuar</v-btn>
         <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true">Continuar Brief: {{ submit }}</v-btn>
-        <v-dialog v-if="stepData.number === 5" v-model="dialog" persistent max-width="50%">
+        <v-dialog v-if="stepData.number === 5" v-model="pay" persistent max-width="50%">
           <v-btn slot="activator" color="primary" dark>Pagar</v-btn>
           <v-card>
             <v-card-title class="headline text-xs-center"><p style="width: 100%;">Métodos de pago</p></v-card-title>
@@ -42,7 +42,7 @@
             </v-layout>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="green darken-1" flat @click.native="dialog = false">Cancelar</v-btn>
+              <v-btn color="green darken-1" flat @click.native="pay = false">Cancelar</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -53,12 +53,16 @@
 
 <script>
   export default {
+    async fetch ({ store }) {
+      await store.dispatch('services/getAll')
+    },
     asyncData ({ params }) {
       return { params: params }
     },
     data () {
       return {
-        submit: false
+        submit: false,
+        pay: false
       }
     },
     async beforeCreate () {
@@ -80,16 +84,24 @@
         this.$router.push('/nuestros-servicios/' + this.$store.state.brief.data.service.slug + '/brief/' + pass)
       },
       async submitBrief (data) {
-        if (!data) {
-          this.submit = false
+        this.submit = false
+
+        if (!data) return
+
+        var loginOrRegister = await this.$store.dispatch('user/loginOrRegister')
+
+        if (!loginOrRegister) {
+          this.$toast.error('Ha ocurrido un error, intente de nuevo!')
           return
         }
 
-        var brief = this.$storage.get('brief')
+        var storeBrief = await this.$store.dispatch('brief/storeBrief')
 
-        await this.$store.dispatch('user/loginOrRegister', brief.information.email)
+        if (!storeBrief) {
+          this.$toast.error('Ha ocurrido un error, intente de nuevo!')
+        }
 
-        await this.$store.dispatch('brief/storeBrief', brief)
+        this.nextStep(this.stepData.next)
       }
     }
   }

@@ -92,16 +92,17 @@
         }
       },
       async selectService () {
-        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} })
-
+        const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
         /* TODO: PENDIENTE */
         if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
+          brief.subServices = []
           target = 'cotizacion'
         } else {
           target = 'brief/disenos'
         }
 
+        this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.url + '/' + target)
       }
     },

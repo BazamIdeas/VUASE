@@ -59,7 +59,6 @@
             brief.designs.push(n)
           }
         }
-        this.$storage.set('brief', brief)
         await this.$store.dispatch('brief/setData', brief)
       }
     }
