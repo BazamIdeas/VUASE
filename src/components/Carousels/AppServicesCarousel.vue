@@ -59,6 +59,7 @@
     },
     computed: {
       services () { return this.$store.state.services.list },
+      /* TODO: */
       url () {
         if (this.find === 'diseno-logo-y-pagina-web' || this.find === 'diseno-pagina-web') {
           return this.$router.currentRoute.path + '/' + this.find + '/cotizacion'

@@ -9,7 +9,7 @@
               <span class="hidden-box" v-if="hovered" :style="'background-color:'+example.color+'; color:'+example.textColor">
                 <img :src="example.icon" class="mb-5" width="100" height="80" />
                 <h2 class="text-uppercase font-weight-bold headline mb-5">{{example.service}}</h2>
-                <v-btn :to="'/nuestros-servicios/'+example.url" flat class="ma-0 px-2 more-button font-weight-light" large>
+                <v-btn :to="'/nuestros-servicios/'+example.url" flat class="ma-0 px-2 more-button font-weight-light" dark large>
                   conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
                 </v-btn>
               </span>
@@ -111,27 +111,5 @@
     bottom: -200px;
     left: 100px;
     z-index:1;
-  }
-
-  .hidden-box {
-    opacity:0;
-    position: absolute;
-    width: calc(100% - 16px);
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s;
-  }
-
-  .hidden-box * {
-    color:inherit;
-  }
-
-  .example-slider-item:hover .hidden-box{
-    opacity:1;
   }
 </style>

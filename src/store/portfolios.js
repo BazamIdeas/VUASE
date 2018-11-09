@@ -118,7 +118,9 @@ export const state = () => ({
 
 export const mutations = {
   GET_ALL (state, portfolios) {
-    state.list = portfolios
+    portfolios.forEach(portfolio => {
+      state.list.push(portfolio)
+    })
   }
 }
 
@@ -126,7 +128,6 @@ export const getters = {}
 
 export const actions = {
   async getAll ({ rootGetters, commit }, params) {
-    console.log(params)
     let requestParams = {}
     if (params) {
       if (
@@ -162,9 +163,13 @@ export const actions = {
     }
 
     try {
-      let portfolios = await this.$axios.$get('portfolios/custom-search', {
+      params.offset = params.offset || 0
+      let url = 'portfolios/custom-search?offset=' + params.offset + '&limit=9'
+
+      let portfolios = await this.$axios.$get(url, {
         params: requestParams
       })
+
       commit('GET_ALL', portfolios)
     } catch (error) {
       if (error.response.status === 404) commit('GET_ALL', [])
