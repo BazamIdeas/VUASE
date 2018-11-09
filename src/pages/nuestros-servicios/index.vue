@@ -21,7 +21,7 @@
                 :id="service.id" 
                 :name="service.dataService.title"  
                 :price="service.price" 
-                :description="service.dataService.description"
+                :description="service.dataService.shortDescription"
                 :list="service.dataService.list"
                 :icon="service.dataService.icon"
                 :url="service.slug" 

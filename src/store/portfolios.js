@@ -117,10 +117,14 @@ export const state = () => ({
 })
 
 export const mutations = {
-  GET_ALL (state, portfolios) {
-    portfolios.forEach(portfolio => {
-      state.list.push(portfolio)
-    })
+  GET_ALL (state, data) {
+    if (data.push) {
+      data.portfolios.forEach(el => {
+        state.list.push(el)
+      })
+    } else {
+      state.list = data.portfolios
+    }
   }
 }
 
@@ -170,9 +174,12 @@ export const actions = {
         params: requestParams
       })
 
-      commit('GET_ALL', portfolios)
+      if (params.offset === 0) {
+        return commit('GET_ALL', {portfolios: portfolios})
+      }
+      commit('GET_ALL', {portfolios: portfolios, push: true})
     } catch (error) {
-      if (error.response.status === 404) commit('GET_ALL', [])
+      if (error.response.status === 404) commit('GET_ALL', {portfolios: [], push: true})
     }
   }
 }

@@ -55,7 +55,7 @@
       if (params.pais) await store.dispatch('countries/locations/getAll')
       await store.dispatch('portfolios/getAll', params)
     },
-    created: function () {
+    mounted: function () {
       if (process.browser) {
         window.onscroll = () => {
           let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight

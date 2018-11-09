@@ -5,43 +5,41 @@
         <v-flex class="mt-5" xs12 md6 v-if="portfolio.images && portfolio.images.length > 1">
           <img class="mt-3" :src="urlHosting + image.slug" v-for="image in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
         </v-flex>
-        <v-flex xs12 offset-md1 md5 class="mt-5">
-          <AppHeading number="2" :title="name" align="center"/>
-          <p class="text-xs-justify mt-3" style="font-weight:500;">
-            {{portfolio.description}}
-          </p>
-
-          <p class="text-xs-justify title" style="font-weight: 600; margin-top: 40px">
-            Etiquetas: 
-          </p>  
-          <p class="text-xs-justify mt-3 pl-2" style="font-weight:500;">
-            <v-chip>
-              Servicio:
-              {{portfolio.service.name}}
-            </v-chip>
-            <br><br>
-            <v-chip>
-              Sector:
-             {{portfolio.activity.sector.name}}
-            </v-chip>
-            <br><br>
-            <v-chip>
-              Actividad:
-             {{portfolio.activity.name}}
-            </v-chip>
-            <br><br>
-            <v-chip>
-              Ubicación:
-             {{portfolio.location.name}} - {{portfolio.location.country.name}}  
-            </v-chip>        
-          </p>          
+        <v-flex xs12 md6 class="pl-5 mt-5" style="position:relative;">
+          <div class="box-sticky">
+            <AppHeading number="2" size="headline" :title="name" align="center"/>
+            <p class="text-xs-justify mt-3" style="font-weight:500;">
+              {{portfolio.description}}
+            </p>
+            <p class="text-xs-justify mt-3" style="font-weight:500;">
+              <span class="mr-1 chip-title">Servicio:</span>
+              <v-chip>
+                {{portfolio.service.name}}
+              </v-chip>
+              <br>
+              <span class="mr-1 chip-title">Sector:</span>
+              <v-chip>
+              {{portfolio.activity.sector.name}}
+              </v-chip>
+              <br>
+              <span class="mr-1 chip-title">Actividad:</span>
+              <v-chip>
+              {{portfolio.activity.name}}
+              </v-chip>
+              <br>
+              <span class="mr-1 chip-title">Ubicación:</span>
+              <v-chip>
+              {{portfolio.location.name}} - {{portfolio.location.country.name}}  
+              </v-chip>        
+            </p>
+          </div>          
         </v-flex>
       </v-layout>
     </v-container>
-    <v-container fluid grid-list-md>
+    <v-container grid-list-md class="mt-3">
       <v-layout row wrap>
         <!-- RELACIONADOS -->
-        <AppHeading class="mb-5" number="2" title="EJEMPLOS RELACIONADOS" />
+        <AppHeading class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
         <v-layout xs12 row wrap class="portfolios mb-5">
           <v-flex v-if="portfolios && portfolios.length" v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 md4 class="pr-2">
             <v-card :to="'/ejemplo/'+ item.service.slug +'/'+ item.slug">
@@ -65,21 +63,20 @@
           </v-flex>
         </v-layout>
 
-        <v-flex  xs12 class="mb-5">
+        <v-flex  xs12 class="my-3">
           <v-layout xs12 row wrap justify-center>
-            <v-btn color="#0081c1" dark raised large :to="'/nuestros-servicios/'+ serviceSlug">
+            <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'+ serviceSlug">
               CONOCER MAS SOBRE EL SERVICIO
             </v-btn>
-            <v-btn color="rgb(247, 148, 29)" raised dark large="" :to="'/nuestros-servicios/'+ briefUrl">
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/nuestros-servicios/'+ briefUrl">
               INICIAR MI PROYECTO AHORA
             </v-btn>
           </v-layout>
         </v-flex>
-
-        <!-- QUE NECESITAS -->
-        <AppHeading class="mb-5" number="2" title="¿Qué necesitas?" subtitle="Deja el diseño de tu imagen en manos de profesionales, que te ofreceran la más amplia gama de opciones" />
-        <AppServicesGrid color="#F29F01" class="mb-5"/>
-
+      </v-layout>
+    </v-container>
+    <v-container fluid grid-list-md>
+      <v-layout row wrap>
         <v-flex xs12 md5 >
           <img src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
@@ -153,3 +150,42 @@
     }
   }
 </script>
+
+<style>
+  .chip-title{
+    font-weight: 600; 
+    width: 80px; 
+    display: inline-block;
+  }
+
+  .box-sticky{
+    position: sticky;
+    top: 15px;
+  }
+
+  .arrow-left, .arrow-right{
+    height: 70px;
+    width: 400px;
+    text-align: center;
+    border-radius: 0px !important;
+  }
+
+  .arrow-left::after, .arrow-right::after{
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .arrow-left::after {
+    border-right: 52px solid #0081c1;
+    content: '';
+    position: absolute;
+    left: -52px;
+  }
+
+  .arrow-right::after {
+    border-left: 52px solid #f7941d;
+    content: '';
+    position: absolute;
+    right: -52px;
+  }
+</style>
