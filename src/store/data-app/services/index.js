@@ -19,6 +19,7 @@ import { diptico } from './diptico.js'
 import { tripticos } from './tripticos.js'
 import { catalogo } from './catalogo.js'
 import { publicidad } from './publicidad.js'
+import { ecommerce } from './ecommerce.js'
 
 import { rBanner } from './rotulo-banner.js'
 import { rPackaging } from './packaging.js'
@@ -50,5 +51,6 @@ export const services = {
   'tripticos': tripticos,
   'flyer-dos-caras': flyerDosCaras,
   'catalogo': catalogo,
-  'publicidad': publicidad
+  'publicidad': publicidad,
+  'ecommerce': ecommerce
 }

@@ -40,7 +40,7 @@
           <AppHeading number="2" title="¿CÓMO TRABAJAMOS?" size="display-1"/>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
-          <iframe width="100%" height="480" src="https://www.youtube.com/embed/f3XlIQ5pmdQ" frameborder="0" allow="autoplay; encrypted-media"
+          <iframe width="100%" height="480" src="https://www.youtube.com/embed/sgyafw6Uw50" frameborder="0" allow="autoplay; encrypted-media"
             allowfullscreen></iframe>
         </v-flex>
       </v-layout>

@@ -3,14 +3,14 @@
     <!-- TOP SLIDER -->
     <v-container grid-list-md class="mt-5 mb-5 pt-5 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
-        <AppTopServiceSlider :service="dataService" />
+        <AppTopServiceSlider :service="dataService" :slug="service.slug" />
       </v-layout>
     </v-container>
 
     <!-- CAROUSEL -->
     <AppHeading :number="'1'" v-if="dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-5" />
-    <AppExamplesSlider v-if="dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
-    <AppExamplesSlider class="mt-2" v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" />
+    <AppExamplesSlider item-width="350" item-height="350" v-if="dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
+    <!-- <AppExamplesSlider class="mt-2" v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" /> -->
 
     <!-- SECCION 3 -->  
     <v-container grid-list-md class="mt-3 pb-0">
@@ -24,6 +24,7 @@
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
+        <AppServiceOptions v-if="dataService.serviceOptions" :img="dataService.serviceOptions.img" :color="dataService.serviceOptions.color" :price="service.price"/>
         <!-- PACKS -->
         <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
@@ -59,6 +60,7 @@ export default {
     if (!store.state.app.staticData.services[params.servicio]) {
       return redirect('/nuestros-servicios')
     }
+
     return { serviceSlug: params.servicio }
   },
   computed: {

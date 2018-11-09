@@ -1,7 +1,8 @@
 export const logoWeb = {
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoria especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable', 'Integración con miles de complementos y funcionalidades'],
   title: 'LOGO + WEB',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
   icon: '/icons/logo-y-web.svg',
   whatWeOffer: [
     {
@@ -30,6 +31,10 @@ export const logoWeb = {
       icon: '/icons/sitio-web-publicado-y-funcionando.svg'
     }
   ],
+  serviceOptions: {
+    img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
+    color: 'black'
+  },
   whatYouGet: {
     img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
     color: 'black',
@@ -209,5 +214,18 @@ export const logoWeb = {
       { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
       { img: '/images/pages/services-carousel/33.-Bellek.png' }
     ]
+  },
+  packs: {
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    first: {
+      image: '/images/pages/packs/flyer-retro-cafe.png',
+      title: 'FLYER',
+      url: '/nuestros-servicios/flyer'
+    },
+    last: {
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/catalogo'
+    }
   }
 }

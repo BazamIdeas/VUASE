@@ -5,31 +5,31 @@
         <v-layout row wrap class="services-grid">
           <v-flex xs12 md3 class="px-2 xs-no-border" style="border-left: 2px solid #cccccc; border-right: 2px solid #cccccc">
             <v-layout row wrap>
-              <v-flex @click="$router.push('/nuestros-servicios/logo-empresa')"  md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
+              <v-flex @click="$router.push('/nuestros-servicios#servicios')"  md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
                 <img src="/icons/logo_a_medida.svg" class="out"  width="100" height="80" />
                 <img src="/icons/logo_a_medida_hover.svg" class="in"  width="100" height="80" />
                 <h1 class="text-uppercase font-weight-bold">diseño de logos</h1>
               </v-flex>
-              <v-flex @click="$router.push('/nuestros-servicios/diseno-perfil-redes-sociales')" md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
+              <v-flex @click="$router.push('/nuestros-servicios?tab=4#servicios')" md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
                 <img src="/icons/logo_predisenado.svg" class="out"  width="100" height="80" />
                 <img src="/icons/logo_predisenado_hover.svg" class="in"  width="100" height="80" />
                 <h1 class="text-uppercase font-weight-bold">Perfil Redes Sociales</h1>
               </v-flex>
             </v-layout>
           </v-flex>
-          <v-flex @click="$router.push('/nuestros-servicios/imagen-corporativa')"  xs12 md3 class="px-2 service-icon-box xs-height-auto" column justify-center style="height: 400px; display: flex; flex-flow: column">
+          <v-flex @click="$router.push('/nuestros-servicios#servicios')"  xs12 md3 class="px-2 service-icon-box xs-height-auto" column justify-center style="height: 400px; display: flex; flex-flow: column">
             <img src="/icons/pack_de_identidad.svg" class="out"  width="100" height="80" />
             <img src="/icons/pack_de_identidad_hover.svg" class="in"  width="100" height="80" />
             <h1 class="text-uppercase font-weight-bold">pack de identidad visual corporativa</h1>
           </v-flex>
           <v-flex xs12 md3 class="px-2 xs-no-border " style="border-left: 2px solid #cccccc; border-right: 2px solid #cccccc">
             <v-layout row wrap>
-              <v-flex @click="$router.push('/nuestros-servicios/diseno-pagina-web')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
+              <v-flex @click="$router.push('/nuestros-servicios?tab=1#servicios')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
                 <img src="/icons/sitio_web.svg" class="out"  width="100" height="80" />
                 <img src="/icons/sitio_web_hover.svg" class="in"  width="100" height="80" />
                 <h1 class="text-uppercase font-weight-bold">sitio web</h1>
               </v-flex>
-              <v-flex @click="$router.push('/nuestros-servicios/diseno-de-app')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
+              <v-flex @click="$router.push('/nuestros-servicios?tab=1#servicios')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
                 <img src="/icons/app_silver.svg" class="out" width="80" height="80"  />
                 <img src="/icons/app_hover.svg" class="in" width="80" height="80"  />
                 <h1 class="text-uppercase font-weight-bold mt-1">app</h1>
@@ -38,12 +38,12 @@
           </v-flex>
           <v-flex xs12 md3 class="px-2 xs-no-border xs-height-auto" style="border-right: 2px solid #cccccc">
             <v-layout row wrap>
-              <v-flex @click="$router.push('/nuestros-servicios/diptico')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
+              <v-flex @click="$router.push('/nuestros-servicios?tab=2#servicios')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
                 <img src="/icons/folletos_y_publicidades.svg" class="out"  width="100" height="80" />
                 <img src="/icons/folletos_y_publicidades_hover.svg" class="in"  width="100" height="80" />
                 <h1 class="text-uppercase font-weight-bold">folletos y publicidades</h1>
               </v-flex>
-              <v-flex @click="$router.push('/nuestros-servicios/rotulo-banner')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
+              <v-flex @click="$router.push('/nuestros-servicios?tab=3#servicios')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
                 <img src="/icons/rotulo_silver.svg" class="out" width="80" height="80"  />
                 <img src="/icons/rotulo_hover.svg" class="in" width="80" height="80" />
                 <h1 class="text-uppercase font-weight-bold  mt-1">rótulos</h1>

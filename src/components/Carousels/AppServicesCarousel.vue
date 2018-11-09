@@ -5,10 +5,10 @@
         <div class="layer" id="hc-layer-1-item-1">
           <h1>¿QUÉ NECESITAS?</h1>
         </div>
-        <div class="layer" id="hc-layer-2-item-1">
+        <div class="layer" id="hc-layer-2-item-1" style="z-index: 99;">
           <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
 
-          <v-layout row wrap align-center justify-center class="mt-5">
+          <v-layout row wrap align-center justify-center class="mt-5" style="z-index: 99;">
             <v-flex xs9>
               <v-autocomplete
                 v-model="find"
@@ -27,7 +27,7 @@
             </v-flex>
             <v-flex>
               <v-slide-x-reverse-transition slot="append-outer" mode="out-in" >
-                <v-btn :to="url+'/'+ find +'/brief'" class="boton-buscar">
+                <v-btn :to="url" class="boton-buscar">
                   <v-icon>search</v-icon>
                 </v-btn>
               </v-slide-x-reverse-transition>
@@ -50,12 +50,22 @@
         type: Number
       },
       items: Array,
-      find: ''
+      serviceSlug: ''
+    },
+    data () {
+      return {
+        find: ''
+      }
     },
     computed: {
       services () { return this.$store.state.services.list },
+      /* TODO: */
       url () {
-        return this.$router.currentRoute.path
+        if (this.find === 'diseno-logo-y-pagina-web' || this.find === 'diseno-pagina-web') {
+          return this.$router.currentRoute.path + '/' + this.find + '/cotizacion'
+        } else {
+          return this.$router.currentRoute.path + '/' + this.find + '/brief/disenos'
+        }
       }
     }
   }

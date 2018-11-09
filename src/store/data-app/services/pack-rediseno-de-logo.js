@@ -2,7 +2,8 @@ export const packRediseno = {
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   title: 'PACK REDISEÑO DE LOGO',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  icon: '/icons/logo_a_medida_hover.svg',
+  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+  icon: '/icons/redisenio.svg',
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
@@ -113,28 +114,24 @@ export const packRediseno = {
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
-      color: '#75BA50'
+      url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
+      color: '#15427D'
     },
     {
-      url: '/images/pages/logo-empresa/logo-la-parroquia-azcapo.png',
+      url: '/images/pages/rediseno-de-logo/rediseno-arquitectura-sin-limites.png',
       color: '#BA2700'
     },
     {
-      url: '/images/pages/logo-empresa/logo-maese-escriba.png',
-      color: 'black'
+      url: '/images/pages/rediseno-de-logo/rediseno-ferreteria-flores.png',
+      color: '#F89422'
     },
     {
-      url: '/images/pages/logo-empresa/logo-malarrassa.png',
-      color: '#7C7F81'
+      url: '/images/pages/rediseno-de-logo/rediseno-infriman.png',
+      color: '#F2591D'
     },
     {
-      url: '/images/pages/logo-empresa/logo-one-seagate.png',
-      color: '#0065AE'
-    },
-    {
-      url: '/images/pages/logo-empresa/logo-wellcan.png',
-      color: '#FBD20B'
+      url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
+      color: '#3FB13F'
     }
   ],
   creativeProcess: [

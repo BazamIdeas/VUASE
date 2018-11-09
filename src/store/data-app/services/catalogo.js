@@ -2,6 +2,7 @@ export const catalogo = {
   title: 'CATÁLOGO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
   icon: '/icons/catalogo.svg',
   whatWeOffer: [
     {
@@ -178,8 +179,15 @@ export const catalogo = {
       { img: '/images/pages/services-carousel/54.-catálogo-compressor.jpg' },
       { img: '/images/pages/services-carousel/52.-Formasystem-calidad-media.jpg' },
       { img: '/images/pages/services-carousel/61.-darioFajardo-2.jpg' },
-      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' }
-    ],
+      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' },
+      { img: '/images/pages/services-carousel/51.-Geotermia.png' },
+      { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
+      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
+      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
+      { img: '/images/pages/services-carousel/59.jpg' },
+      { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
+      { img: '/images/pages/services-carousel/63.-.jpg' }
+    ]/* ,
     items2: [
       { img: '/images/pages/services-carousel/51.-Geotermia.png' },
       { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
@@ -188,7 +196,7 @@ export const catalogo = {
       { img: '/images/pages/services-carousel/59.jpg' },
       { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
       { img: '/images/pages/services-carousel/63.-.jpg' }
-    ]
+    ] */
   },
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',

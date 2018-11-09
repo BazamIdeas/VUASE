@@ -46,18 +46,16 @@
 
 <script lang="js">
   export default {
-    props: ['service'],
-    mounted () {
-    },
-    data () {
-      return {
-        comenzarUrl: this.$router.currentRoute.path + '/brief'
-      }
-    },
-    methods: {
-
-    },
+    props: ['service', 'slug'],
     computed: {
+      /* TODO: PENDIENTE */
+      comenzarUrl () {
+        if (this.slug === 'diseno-logo-y-pagina-web' || this.slug === 'diseno-pagina-web') {
+          return this.$router.currentRoute.path + '/cotizacion'
+        } else {
+          return this.$router.currentRoute.path + '/brief/disenos'
+        }
+      }
     }
   }
 </script>

@@ -1,10 +1,10 @@
 <template>
   <section>
     <AppServicesCarousel/>
-    <AppServicesSlider @select-group="setGroup" class="mb-4"/>
+    <AppServicesSlider id="servicios" @select-group="setGroup" class="mb-4"/>
     <transition-group appear :name="transitionGroupContent">
       <v-container d-block grid-list-md text-xs-left v-if="groupContent === i" :key="i" v-for="(container, i) in containers">
-        <v-layout row wrap v-for="(layout, i) in container.layouts" :key="i" class="mb-5">
+        <v-layout align-center justify-center row v-for="(layout, i) in container.layouts" :key="i" class="mb-5">
           <v-flex 
             :class="{
               'flex xs12 md6': layout.carousel, 
@@ -14,27 +14,29 @@
             v-for="(service, index) in layout.services" :key="service.slug">
               <AppServiceBox 
                 :class="{
-                  'bt bb': layout.carousel && !container.noBorder, 
+                  'bt': layout.carousel && !container.noBorder,
+                  'bb': layout.carousel && !container.noBorder && container.layouts.length > 2, 
                   'br': !layout.carousel && (index !== layout.services.length - 1) && !container.noBorder
                 }"
                 :id="service.id" 
-                :name="service.title"  
+                :name="service.dataService.title"  
                 :price="service.price" 
-                :description="service.description"
-                :list="service.list"
-                :icon="service.icon"
+                :description="service.dataService.shortDescription"
+                :list="service.dataService.list"
+                :icon="service.dataService.icon"
                 :url="service.slug" 
-                start-button 
+                :addon-service="service.dataService.addonService"
+                :start-with="service.dataService.startWith"
               />
           </v-flex>
-          <v-layout xs12 md6 align-center justify-center row class="container-carousel">
-              <v-flex xs12 style="height: 80%;" v-if="layout.carousel">
+          <v-layout xs12 md6 align-center justify-center row class="container-carousel mt-0">
+              <v-flex xs12 style="height: 100%;" v-if="layout.carousel" >
                 <v-carousel 
                   interval="8000" 
                   hide-controls hide-delimiters 
-                  style="height: 100%;">
+                  style="height: 100%; width:100%;">
                   <v-carousel-item v-for="(item, i) in layout.carousel" :key="i" :transition="'slide-x-transition'">
-                    <img :src="item.src" alt="" style="height: 400px; display: block; margin: auto;"/>
+                    <img :src="item.src" style=" width:90%; height:100%; display: block; margin: auto;"/>
                   </v-carousel-item>
                 </v-carousel>
               </v-flex>
@@ -47,8 +49,15 @@
 
 <script>
   export default {
+    props: ['tab'],
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
+    },
+    created () {
+      let index = parseInt(this.$router.app._route.query.tab)
+      if (index) {
+        this.setGroup(index)
+      }
     },
     head () {
       return {
@@ -60,8 +69,8 @@
     },
     data () {
       return {
-        groupContent: 0,
-        transitionGroupContent: 'slide-x-transition'
+        transitionGroupContent: 'slide-x-transition',
+        groupContent: 0
       }
     },
     computed: {
@@ -89,6 +98,6 @@
   }
 
   .container-carousel{
-    height: 500px;
+    height: 420px;
   }
 </style>
