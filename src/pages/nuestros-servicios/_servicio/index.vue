@@ -24,6 +24,7 @@
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
+        <AppServiceOptions v-if="dataService.serviceOptions" :img="dataService.serviceOptions.img" :color="dataService.serviceOptions.color" :price="service.price"/>
         <!-- PACKS -->
         <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
@@ -59,6 +60,7 @@ export default {
     if (!store.state.app.staticData.services[params.servicio]) {
       return redirect('/nuestros-servicios')
     }
+
     return { serviceSlug: params.servicio }
   },
   computed: {

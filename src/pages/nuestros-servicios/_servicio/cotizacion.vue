@@ -20,7 +20,7 @@
             <v-flex md12 class="mt-1">
               <p class="headline font-weight-medium section-title" style="border-bottom: 2px solid #004b7b;">Detalles</p>
             </v-flex>
-            <v-flex md6 v-for="service in servicesQuote" v-if="service.section === 'details'" :key="slug" class="pa-2">
+            <v-flex md6 v-for="service in servicesQuote" v-if="service.section === 'details'" :key="service.slug" class="pa-2">
               <v-card class="py-1 service-package" :class="{ 'selected': pkg === packageSelected }">
                 <v-layout row wrap>
                   <v-flex xs3 class="service-package-img">
@@ -38,7 +38,7 @@
             <v-flex md12 class="mt-3">
               <p class="headline font-weight-medium section-title" style="border-bottom: 2px solid #004b7b;">Funcionalidades</p>
             </v-flex>
-            <v-flex md3 v-for="service in servicesQuote" v-if="service.section === 'functionalities'" :key="slug" class="px-2 mb-2">
+            <v-flex md3 v-for="service in servicesQuote" v-if="service.section === 'functionalities'" :key="service.slug" class="px-2 mb-2">
               <v-card :class="{ 'selected': pkg === packageSelected }">
                 <div class="px-3 pt-2">
                   <img :src="'/images/quote/services/' + service.slug + '.svg'">
