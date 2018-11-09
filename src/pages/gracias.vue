@@ -1,6 +1,6 @@
 <template>
   
-<h1>PAIS: {{pais}}</h1>
+<h1>GRACIAS POR SU COMPRA</h1>
 </template>
 
 <script>

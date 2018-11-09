@@ -80,7 +80,7 @@
   }
 
   div#hc-layer-2-item-1>* {
-    color: #ffffff;
+    color: #000000;
     font-weight: 600;
   }
 
@@ -165,9 +165,9 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 57%;
+      width: 49%;
       left: 0%;
-      top: 21%;
+      top: 14%;
     }
 
     /*ITEM-2*/

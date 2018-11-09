@@ -96,7 +96,8 @@ module.exports = {
       '~/plugins/vue2-storage.js',
       '~/plugins/vue-cookies.js',
       '~/plugins/axios.js',
-      '~/plugins/components.js'
+      '~/plugins/components.js',
+      'paypal-checkout'
     ],
     extractCSS: true,
     /*

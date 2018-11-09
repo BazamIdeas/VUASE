@@ -30,22 +30,23 @@
       <div class="hidden-sm-and-down">
         <v-btn v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Omitir</v-btn>
         <v-btn color="primary" v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Continuar</v-btn>
-        <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true">Continuar Brief: {{ submit }}</v-btn>
-        <v-dialog v-if="stepData.number === 5" v-model="pay" persistent max-width="50%">
+        <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true">Continuar</v-btn>
+        <v-btn color="primary" v-if="stepData.number == 5" @click="setPay">Pagar</v-btn>
+        <!--<v-dialog v-if="stepData.number === 5" v-model="pay" persistent max-width="50%">
           <v-btn slot="activator" color="primary" dark>Pagar</v-btn>
           <v-card>
-            <v-card-title class="headline text-xs-center"><p style="width: 100%;">Métodos de pago</p></v-card-title>
+            <v-card-title class="headline font-weight-bold text-xs-center"><p style="width: 100%;">Métodos de pago</p></v-card-title>
             <v-layout row wrap>
-              <v-flex md4 class="text-xs-center">1</v-flex>
-              <v-flex md4 class="text-xs-center">2</v-flex>
-              <v-flex md4 class="text-xs-center">3</v-flex>
+              <v-flex v-for="gateway in gateways" :key="gateway.id" md4 class="text-xs-center"> 
+                <AppPaypal v-if="gateway.name === 'Paypal'" :gateway-id="gateway.id"/>
+              </v-flex>
             </v-layout>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="green darken-1" flat @click.native="pay = false">Cancelar</v-btn>
+              <v-btn color="red darken-1" flat @click.native="pay = false">Cancelar</v-btn>
             </v-card-actions>
           </v-card>
-        </v-dialog>
+        </v-dialog>-->
       </div>
     </v-toolbar>
   </section>
@@ -55,6 +56,7 @@
   export default {
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
+      await store.dispatch('gateways/getAll')
     },
     asyncData ({ params }) {
       return { params: params }
@@ -65,7 +67,7 @@
         pay: false
       }
     },
-    async beforeCreate () {
+    async mounted () {
       await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
       await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
     },
@@ -102,7 +104,8 @@
         }
 
         this.nextStep(this.stepData.next)
-      }
+      },
+      setPay () { this.$store.commit('cart/SET_PAY') }
     }
   }
 </script>
