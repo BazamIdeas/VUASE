@@ -1,45 +1,46 @@
 export const tripticos = {
-  title: 'TRIPTICOS',
+  title: 'TRÍPTICO',
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/triptico.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
       description: 'Creaciones a medida, únicas y de calidad.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
       description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/mas-de-40-profesionales.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
       description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
       title: 'ATENCIÓN PERSONALIZADA',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/archivos_listos.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/propuestas-ilimitadas.svg'
     }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/archivos_listos.svg'
     }, {
       title: 'SOPORTE POST VENTA GRATUITO',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
-    img: '/images/pages/flyer/flyer-willian-&-perkins.png',
-    color: '#3566B2',
+    img: '/images/pages/tripticos/triptico-antartik.png',
+    color: '#5690CC',
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
@@ -49,7 +50,7 @@ export const tripticos = {
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }]
     ]
   },
@@ -112,24 +113,24 @@ export const tripticos = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
+      url: '/images/pages/tripticos/triptico-surtel.png',
       color: '#15427D'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-arquitectura-sin-limites.png',
-      color: '#BA2700'
+      url: '/images/pages/tripticos/triptico-gloss.png',
+      color: '#E044A0'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-ferreteria-flores.png',
-      color: '#F89422'
+      url: '/images/pages/tripticos/triptico-majavilitas.png',
+      color: '#245482'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-infriman.png',
-      color: '#F2591D'
+      url: '/images/pages/tripticos/triptico-majavillas.png',
+      color: '#78CEE2'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
-      color: '#3FB13F'
+      url: '/images/pages/tripticos/triptico-orgui.png',
+      color: '#211F20'
     }
   ],
   creativeProcess: [
@@ -190,16 +191,16 @@ export const tripticos = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS PACK',
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
-      title: 'REDISEÑO DE LOGO + PAPELERÍA',
-      url: '/nuestros-servicios/pack-rediseno-de-logo'
+      image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
+      title: 'PUBLICIDAD',
+      url: '/nuestros-servicios/publicidad'
     },
     last: {
-      image: '/images/pages/packs/addons-logo+web.png',
-      title: 'REDISEÑO DE LOGO + WEB',
-      url: '/nuestros-servicios/pack-rediseno-de-logo'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico'
     }
   }
 }

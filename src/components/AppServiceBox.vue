@@ -6,32 +6,36 @@
     row wrap 
     class="service-box-container px-3 pt-5 pb-2" 
     :class="{ 'br': br && borders, 'bb': bb && borders, 'bt': bt && borders }">
-
-    <v-flex 
-    xs12 
-    v-if="name" 
-    class="service-box-title" 
-    align-content-center>
-      <img :src="icon" height="70" width="70" class="mr-2" style="float: left;">
-      <div>
+    <v-layout xs12 v-if="name" class="service-box-title" row align-center>
+      <img :src="icon" height="70" width="70" class="mr-2">
+      <v-flex>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
-        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">{{ price.currency.symbol }} {{ price.value }}</span> <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">comenzar</v-btn>
-      </div>
-    </v-flex>
+        <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
+          <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
+          {{ price.currency.symbol }} 
+          {{ price.value }}
+        </span> 
+        <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
+          comenzar
+        </v-btn>
+      </v-flex>
+    </v-layout>
     <v-flex xs12 v-if="description" class="service-box-description">
       <br>
       <p class="caption font-weight-medium">{{description}}</p>
     </v-flex>
     <v-flex xs12 v-if="list && list.length > 0 && list[0] != ''" class="service-box-list">
       <ul :class="{ 'outstanding': outstanding }">
-        <li v-for="(item, i) in list" :key="i" class="caption font-weight-medium">{{item}}</li>
+        <li v-for="(item, i) in list" :key="i" class="my-3 caption font-weight-medium">{{item}}</li>
       </ul>
     </v-flex>
-    <v-flex xs12 v-if="startButton" class="service-box-more-button">
+
+    <v-flex xs12 v-if="!addonService" >
       <v-btn :to="'/nuestros-servicios/'+url" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
         conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
       </v-btn>
     </v-flex>
+    <v-flex xs12 v-if="addonService" style="height:60px"></v-flex>
   </v-layout>
 </template>
 
@@ -42,6 +46,8 @@
       icon: String,
       name: String,
       price: Object,
+      addonService: Boolean,
+      startWith: Boolean,
       currency: {
         default: '$',
         type: String
@@ -50,10 +56,6 @@
       list: {
         type: Array,
         default: undefined
-      },
-      startButton: {
-        default: false,
-        type: Boolean
       },
       br: {
         default: false,
@@ -90,16 +92,17 @@
         }
       },
       async selectService () {
-        this.$storage.set('brief', { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} })
-
+        const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
-
+        /* TODO: PENDIENTE */
         if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
+          brief.subServices = []
           target = 'cotizacion'
         } else {
           target = 'brief/disenos'
         }
 
+        this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.url + '/' + target)
       }
     },

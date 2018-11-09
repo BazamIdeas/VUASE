@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md fluid class="mt-5 pt-5 mb-3">
+  <v-container grid-list-md fluid class="pt-5 mb-3">
     <v-flex xs12 class="mb-5">
       <AppHeading :number="'1'" :size="'display-2'" align="center"  :title="title"/>
     </v-flex>
@@ -22,7 +22,7 @@
           <v-flex xs5 offset-xs1 d-flex justify-end>
             <v-btn :to="first.url+ '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
-          <v-flex xs6>
+          <v-flex xs6 v-if="!first.notSecondButton">
             <v-btn :to="first.url" flat class="ma-0 px-2 know-more" large >
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
@@ -47,7 +47,7 @@
           <v-flex xs5 offset-xs1 d-flex justify-end>
             <v-btn :to="last.url + '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
-          <v-flex xs6>
+          <v-flex xs6 v-if="!last.notSecondButton">
             <v-btn :to="last.url" flat class="ma-0 px-2 know-more" large>
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>

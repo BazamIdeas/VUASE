@@ -3,12 +3,15 @@ import { services as servicesHardcoded } from './data-app/services'
 export const state = () => ({
   groups: [
     {
-      icon: '/icons/logo_a_medida_hover.svg',
+      icon: '/icons/logo-a-medida.svg',
       name: 'Logos e Identidades',
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/logo-identidades/pan-&-miri.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/hnos-duarte.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/meraki.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/mudanzas-armel.png' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/probelleza.png' }
       ],
       rows: [
         [
@@ -30,11 +33,16 @@ export const state = () => ({
       name: 'Web y App',
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/web-y-app/app-pio-chicken-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/redes-finanpay.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/web-fdrd-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/web-macroservicios-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/web-vincit-2.png' }
       ],
       rows: [
         [
+          'diseno-logo-y-pagina-web',
+          'ecommerce',
           'diseno-de-app'
         ],
         [
@@ -44,12 +52,15 @@ export const state = () => ({
       ]
     },
     {
-      icon: '/icons/folletos_y_publicidades_hover.svg',
+      icon: '/icons/folleto-y-publicidades.svg',
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/folletos/civefa-publicidad-servicio.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/diptico-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/folletos/flyer-duarte-servicio.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/hotel-montecarlo.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/triptico-(servicios).png' }
       ],
       rows: [
         [
@@ -87,12 +98,15 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/rotulos/banner-dual.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/empaque-vannamei.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/gps-serville-tour.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-smart-escolar-(servicios).png' }
       ]
     },
     {
-      icon: '/images/services/icono-1.png',
+      icon: '/icons/perfil-red.svg',
       name: 'Perfiles de Redes Sociales',
       rows: [
         [
@@ -102,8 +116,12 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/carousels/servicios_folletos.png' },
-        { src: 'images/carousels/servicios_folletos.png' }
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-lacoladaencasa-servicio.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/andes-facility-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-marsanz-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-nueva-europa-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-sinergia-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-tecnotransformacion-servicios.png' }
       ],
       noBorder: true
     }
@@ -138,10 +156,7 @@ export const mutations = {
 
           // Service Items
           if (servicesHardcoded[slug]) {
-            service.list = servicesHardcoded[slug].list || ['']
-            service.description = servicesHardcoded[slug].description || ''
-            service.icon = servicesHardcoded[slug].icon || ''
-            service.url = servicesHardcoded[slug].url || ''
+            service.dataService = servicesHardcoded[slug]
           }
 
           row.services.push(service)

@@ -47,7 +47,7 @@ export const logoWeb = {
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
         items: [
@@ -57,20 +57,20 @@ export const logoWeb = {
           'Proporciones.',
           'Uso debido e indebido de los componentes del diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/catalogo.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
         description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/cesion-de-derechos.svg'
       }, {
         title: 'TUTORIALES DE USO',
         description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/tutorial-de-uso.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
         description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/servicio-postventa.svg'
       }]
     ]
   },
@@ -213,5 +213,18 @@ export const logoWeb = {
       { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
       { img: '/images/pages/services-carousel/33.-Bellek.png' }
     ]
+  },
+  packs: {
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    first: {
+      image: '/images/pages/packs/flyer-retro-cafe.png',
+      title: 'FLYER',
+      url: '/nuestros-servicios/flyer'
+    },
+    last: {
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/catalogo'
+    }
   }
 }

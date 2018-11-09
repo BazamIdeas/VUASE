@@ -1,3 +1,6 @@
+import Vue from 'vue'
+const vueInstance = new Vue()
+
 export const state = () => ({
   data: {
     service: {
@@ -117,6 +120,7 @@ export const state = () => ({
 
 export const mutations = {
   SET_DATA (state, data) {
+    vueInstance.$storage.set('brief', data)
     state.data = Object.assign(state.data, data)
   },
   SET_STEP (state, data) {
@@ -150,5 +154,50 @@ export const actions = {
   },
   setStep ({ commit }, data) {
     commit('SET_STEP', data)
+  },
+  async storeBrief ({ commit }) {
+    let brief = vueInstance.$storage.get('brief')
+    let bodyFormData = new FormData()
+
+    for (let color of brief.colors) {
+      bodyFormData.append('data[colors][]', color)
+    }
+
+    bodyFormData.append('data[customColors]', brief.customColors)
+
+    for (let design of brief.designs) {
+      bodyFormData.append('data[designs][]', design)
+    }
+
+    for (let key in brief.service) {
+      bodyFormData.append('data[service][' + key + ']', brief.service[key])
+    }
+
+    for (let key in brief.styles) {
+      bodyFormData.append('data[styles][' + key + ']', brief.styles[key])
+    }
+
+    for (let key in brief.information) {
+      bodyFormData.append('data[information][' + key + '][label]', brief.information[key]['label'])
+      console.log(typeof brief.information[key]['value'])
+      bodyFormData.append('data[information][' + key + '][value]', brief.information[key]['value'])
+    }
+
+    let saveBrief
+
+    try {
+      saveBrief = await this.$axios.$post('brief', bodyFormData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          'Authorization': vueInstance.$storage.get('token_session')
+        }
+      })
+    } catch (error) {
+      return true // false
+    }
+
+    vueInstance.$storage.set('brief', saveBrief.data)
+    vueInstance.$storage.set('brief_key', saveBrief.coockie)
+    return false // true
   }
 }
