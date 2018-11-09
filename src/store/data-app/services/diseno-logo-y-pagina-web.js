@@ -1,6 +1,5 @@
 export const logoWeb = {
-  startWith: true,
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoria especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable', 'Integración con miles de complementos y funcionalidades'],
   title: 'LOGO + WEB',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
   icon: '/icons/logo-y-web.svg',
@@ -31,6 +30,10 @@ export const logoWeb = {
       icon: '/icons/sitio-web-publicado-y-funcionando.svg'
     }
   ],
+  serviceOptions: {
+    img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
+    color: 'black'
+  },
   whatYouGet: {
     img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
     color: 'black',

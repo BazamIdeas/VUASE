@@ -11,6 +11,7 @@ export { default as AppTestimony } from './AppTestimony.vue'
 export { default as AppTopServiceSlider } from './AppTopServiceSlider.vue'
 export { default as AppAddons } from './AppAddons.vue'
 export { default as AppHomeCreativeProccess } from './AppHomeCreativeProccess.vue'
+export { default as AppServiceOptions } from './AppServiceOptions.vue'
 
 // CAROUSELS
 export { default as AppAboutUsCarousel } from './Carousels/AppAboutUsCarousel.vue'
