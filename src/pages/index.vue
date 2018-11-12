@@ -8,16 +8,16 @@
     </v-container>
     
     <!-- PORTFAFOLIO -->
-    <AppHeading title="Portafolio" class="mb-5" />
-    <AppExamplesSlider :examples="sliderExamples[0]" hovered="true" shadow="true" puntos="true" item-width="440" item-height="440"  class="mb-5 pb-5" />
+    <AppHeading title="LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!" number="2" class="mb-5" />
+    <AppExamplesSlider :examples="sliderExamples[0]" hovered="true" shadow="true" puntos="true" item-width="400" item-height="400"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
-    <AppHeading class="mt-4 pt-5" title="¿Qué necesitas?" subtitle="Deja el diseño de tu imagen en manos de profesionales, que te ofreceran la más amplia gama de opciones" />
-    <AppServicesGrid color="#F29F01"/>
+    <AppHeading class="mb-5" number="2" title="¿QUE NECESITAS CREAR?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio" />
+    <AppServicesGrid color="#F29F01" class="mb-5"/>
+    
+    <AppHomeCreativeProccess title="COMO FUNCIONA"/>
 
-    <AppHomeCreativeProccess class="mt-4" title="Proceso Creativo" />
-
-    <v-parallax src="/images/pages/mapa.svg" class="parallax-opacity">
+    <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
@@ -80,15 +80,18 @@
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS PROFESIONALES</h2>
+            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A PROFESIONALES</h2>
             <p class="text-xs-center mb-5 font-weight-bold">
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+              Amplia tu portfolio de servicios rapidamente. Ponemos a disposicion de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atencion especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo.
             </p>
-            <v-btn xlink:href="/nuestros-servicios" flat outline class="px-2" style="background-color: #004B7B !important; border-color: #004B7B; color: white;">SABER MÁs</v-btn>
+            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white;">Quiero conocer mas</v-btn>
           </div>
         </v-flex>
 
-        <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
+        <!-- TESTIMONIOS -->  
+        <AppTestimony width="xs12 offset-md1 md10" :list="testimonies" />
+
+        <!-- <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
           <div>
             <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px; color: #434343;">¿QUÉ OPINAN NUESTROS CLIENTES?</h2>
             <v-carousel hide-delimiters class="rating-user">
@@ -102,17 +105,17 @@
               </v-carousel-item>
             </v-carousel>
           </div>
-        </v-flex>
+        </v-flex> -->
 
-        <v-flex xs12 md7>
+        <!-- <v-flex xs12 md7>
           <img src="/images/pages/profesional_services.png" :alt="alt" width="100%">
-        </v-flex>
+        </v-flex> -->
 
-        <v-flex xs12 md5>
+        <v-flex xs12 md5 >
           <img src="/images/pages/muchacho_contacto.png" :alt="alt" width="100%">
         </v-flex>
-        <v-flex xs12 md6 class="mt-5">
-          <h2 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px; color: #434343;">¿TIENES ALGUNA DUDA?</h2>
+        <v-flex xs12 md6 class="mt-5 xs-mt-0">
+          <h2 class="display-2 font-weight-bold mb-4 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
           <AppContactForm />
         </v-flex>
       </v-layout>
@@ -134,7 +137,16 @@
       return {
         name: 'INICIO',
         interval: 8000,
-        alt: 'Lorem ipsum'
+        alt: 'Lorem ipsum',
+        testimonies: [{
+          stars: 5,
+          logo: '/images/pages/services-carousel/11.-Black-Bird.png',
+          description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/papeleria.svg',
+          description: '“Ha sido excelente trabajar con ustedes”'
+        }]
       }
     },
     computed: {
@@ -147,7 +159,34 @@
 
 <style>
   .parallax-opacity .v-parallax__image-container img {
-      transform: translate(-50%, -0px) !important;
+    transform: translate(-62%, 27px) !important;
+  }
+
+  @media (min-width: 320px) and (max-width: 980px) {
+    .xs-no-border{
+      border:none !important;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 640px) {
+    h2.display-2, h2.display-1 {
+        font-size: 33px !important;
+    }
+
+    .xs-mt-0{
+      margin-top:0 !important;
+    }
+    .xs-height-auto{
+      height: auto !important;
+    }
+
+    .xs-px-0{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .xs-text-size-30{
+      font-size: 30px !important;
+    }
   }
 </style>
 
@@ -161,17 +200,17 @@
   }
 
   .parallax-opacity {
-    height: 738px !important;
+    height: 775px !important;
   }
 
-  .parallax-opacity:before {
+/*   .parallax-opacity:before {
     content: "";
     width: 100%;
     height: 100%;
     background-color: rgba(249, 249, 249, 0.6);
     position: absolute;
     z-index: 2;
-  }
+  } */
 
 /*   .pluma-background {
     position: relative;

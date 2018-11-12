@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import {
   AppAboutUsCarousel,
+  AppBriefingForm,
   AppCarousel,
+  AppCheckoutForm,
   AppContactForm,
   AppColorsForm,
   AppDesignsForm,
@@ -9,6 +11,7 @@ import {
   AppFilterExamplesForm,
   AppHeading,
   AppHomeCarousel,
+  AppPaypal,
   AppPricesCarousel,
   AppProServicesCarousel,
   AppServicesCarousel,
@@ -24,11 +27,14 @@ import {
   AppTestimony,
   AppTopServiceSlider,
   AppAddons,
-  AppHomeCreativeProccess
+  AppHomeCreativeProccess,
+  AppServiceOptions
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
+Vue.component('AppBriefingForm', AppBriefingForm)
 Vue.component('AppCarousel', AppCarousel)
+Vue.component('AppCheckoutForm', AppCheckoutForm)
 Vue.component('AppContactForm', AppContactForm)
 Vue.component('AppColorsForm', AppColorsForm)
 Vue.component('AppDesignsForm', AppDesignsForm)
@@ -36,6 +42,7 @@ Vue.component('AppExamplesSlider', AppExamplesSlider)
 Vue.component('AppFilterExamplesForm', AppFilterExamplesForm)
 Vue.component('AppHeading', AppHeading)
 Vue.component('AppHomeCarousel', AppHomeCarousel)
+Vue.component('AppPaypal', AppPaypal)
 Vue.component('AppPricesCarousel', AppPricesCarousel)
 Vue.component('AppProServicesCarousel', AppProServicesCarousel)
 Vue.component('AppServicesCarousel', AppServicesCarousel)
@@ -52,3 +59,4 @@ Vue.component('AppTestimony', AppTestimony)
 Vue.component('AppTopServiceSlider', AppTopServiceSlider)
 Vue.component('AppAddons', AppAddons)
 Vue.component('AppHomeCreativeProccess', AppHomeCreativeProccess)
+Vue.component('AppServiceOptions', AppServiceOptions)

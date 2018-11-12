@@ -46,7 +46,12 @@
     </v-flex>
 
     <v-flex md12 class="mt-3"   v-if="!custom">
-      <p class="subheading font-weight-normal text-xs-center" v-if="!custom" style="text-decoration: underline" @click="custom = !custom">Tengo colores específicos con los que me gustaría trabajar</p>
+      <p class="subheading font-weight-normal text-xs-center" v-if="!custom" style="text-decoration: underline; cursor: pointer" @click="custom = !custom">Tengo colores específicos con los que me gustaría trabajar</p>
+    </v-flex>
+
+    <v-flex md12 class="mt-3" v-if="custom">
+      <p>Diganos que colores desea:</p>
+      <v-textarea solo name="custom_colors" label="Colores perzonalizados" v-model="customColors" value="#000000, #ffffff, black, rojo" @keyup="setCustomColors($event)"></v-textarea>
     </v-flex>
   </v-layout>
 </template>
@@ -56,7 +61,9 @@
     data () {
       return {
         limit: 3,
-        custom: false
+        custom: false,
+        customColors: '#000000, #ffffff, black, rojo',
+        timer: null
       }
     },
     computed: {
@@ -72,8 +79,20 @@
             brief.colors.push(n)
           }
         }
-        this.$storage.set('brief', brief)
         await this.$store.dispatch('brief/setData', brief)
+      },
+      setCustomColors (event) {
+        if (this.timer) {
+          clearTimeout(this.timer)
+          this.timer = null
+        }
+        var context = this
+        this.timer = setTimeout(async function () {
+          var brief = context.$storage.get('brief')
+          brief.customColors = context.customColors
+          context.$storage.set('brief', brief)
+          await context.$store.dispatch('brief/setData', brief)
+        }, 300)
       }
     }
   }

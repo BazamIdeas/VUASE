@@ -7,7 +7,7 @@ export const state = () => ({
         { url: '/nuestros-servicios', title: 'Servicios' },
         { url: '/ejemplos', title: 'Ejemplos' },
         { url: '/precios', title: 'Precios' },
-        { url: 'servicios-profesionales', title: 'Servicios Profesionales' },
+        { url: '/servicios-profesionales', title: 'Servicios Profesionales' },
         { url: '/contacto', title: 'Contacto' }
       ],
       footer: [

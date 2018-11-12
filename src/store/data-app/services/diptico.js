@@ -1,40 +1,42 @@
 export const diptico = {
-  title: 'DIPTICO',
+  title: 'DÍPTICO',
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  shortDescription: `La presentacion profesional de tu negocio en 4 caras`,
   icon: '/icons/diptico.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
       description: 'Creaciones a medida, únicas y de calidad.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
       description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/mas-de-40-profesionales.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
       description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
       title: 'ATENCIÓN PERSONALIZADA',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/archivos_listos.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/propuestas-ilimitadas.svg'
     }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/archivos_listos.svg'
     }, {
       title: 'SOPORTE POST VENTA GRATUITO',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
@@ -49,7 +51,7 @@ export const diptico = {
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }]
     ]
   },

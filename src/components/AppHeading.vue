@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md v-if="title" class="pa-0 mt-4">
     <v-layout row wrap>
-      <v-flex xs12>
+      <v-flex offset-xs1 xs10 offset-md0 md12 class="container-heading">
         <h1 v-if="number=='1'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h1>
         <h2 v-if="number=='2'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h2>
         <h3 v-if="number=='3'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h3>
@@ -9,7 +9,7 @@
         <h5 v-if="number=='5'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h5>
         <h6 v-if="number=='6'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h6>
       </v-flex>
-      <v-flex v-if="subtitle" :offset-md3="align === 'center'" :offset-md8="align === 'right'" xs12 md6>
+      <v-flex v-if="subtitle" md6 :offset-md3="align === 'center'" :offset-md8="align === 'right'" offset-xs1 xs10>
         <p :class="'body-2 font-weight-regular text-xs-' + align">
           {{ subtitle }}
         </p>
@@ -72,6 +72,8 @@
     color: #0088c6
   }
 
-  
+  @media (min-width: 320px) and (max-width: 640px) {
+    
+  }
 
 </style>

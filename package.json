@@ -19,7 +19,9 @@
     "mmdb-reader": "^1.2.0",
     "mpm": "0.0.1",
     "nuxt": "^1.0.0",
+    "paypal-checkout": "^4.0.233",
     "vee-validate": "^2.0.3",
+    "vue-cookies": "^1.5.7",
     "vue2-storage": "^3.3.0",
     "vuetify": "^1.2.2"
   },

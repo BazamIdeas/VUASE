@@ -4,7 +4,7 @@
       <v-flex xs8 class="mb-5" v-if="!justOne">
         <AppHeading number="1" size="display-2" align="center" :title="title" />
       </v-flex>
-      <v-layout xs12 row wrap class="what-you-get mb-5">
+      <v-layout xs12 row wrap class="what-you-get">
           <v-flex xs12 md4  v-for="(column, i) in service.whatYouGet.columns" :key="i" class="pa-3 column" :class="{'no-border md6': justOne, 'mt-5 ': !justOne}">
             <v-layout  d-flex column>
               <v-flex xs12 v-for="(item, key) in column" :key="key" class="mb-4 pb-2 pt-2">

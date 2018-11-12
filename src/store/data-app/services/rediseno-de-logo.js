@@ -2,32 +2,33 @@ export const redisenoLogo = {
   list: ['Diseños 100% profesionales de renovación', 'Opciones ilimitadas hasta tu aprobación', 'Diseños en 24 hrs', 'Tu logo listo para usar (editables e imágenes)'],
   title: 'REDISEÑO DE LOGO',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  icon: '/icons/rediseno.svg',
+  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+  icon: '/icons/redisenio.svg',
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
       description: 'Creaciones a medida, únicas y de calidad',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
       description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/equipo-interidisciplinario.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/un-dia-para-el-otro.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/logo_a_medida_hover.svg'
+      icon: '/icons/propuestas-ilimitadas.svg'
     }
   ],
   whatYouGet: {
@@ -43,7 +44,7 @@ export const redisenoLogo = {
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/logo-en-diversos-formatos.svg'
       }, {
         title: 'MANUAL DE USO DE LA MARCA',
         items: [
@@ -53,20 +54,20 @@ export const redisenoLogo = {
           'Proporciones.',
           'Uso debido e indebido de los componentes del diseño.'
         ],
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/catalogo.svg'
       }],
       [{
         title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
         description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/cesion-de-derechos.svg'
       }, {
         title: 'TUTORIALES DE USO',
         description: 'Se te enviarán tutoriales creados por un profecional de Liderlogo para que le saques el máximo provecho a tu diseño.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/tutorial-de-uso.svg'
       }, {
         title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
         description: '¿Tienes alguna duda o tu producto requiere alguna adaptación? No hay problema! Comunicate con nosotros y te ayudaremos sun costo alguno.',
-        icon: '/icons/logo_a_medida_hover.svg'
+        icon: '/icons/servicio-postventa.svg'
       }]
     ]
   },
@@ -233,12 +234,14 @@ export const redisenoLogo = {
     first: {
       image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
       title: 'REDISEÑO DE LOGO + PAPELERÍA',
-      url: '/nuestros-servicios/pack-rediseno-de-logo'
+      url: '/nuestros-servicios/rediseno-de-logo-papeleria',
+      notSecondButton: true
     },
     last: {
-      image: '/images/pages/packs/addons-logo+web.png',
+      image: '/images/pages/packs/rediseno-de-logo+web.png',
       title: 'REDISEÑO DE LOGO + WEB',
-      url: '/nuestros-servicios/pack-rediseno-de-logo'
+      url: '/nuestros-servicios/rediseno-de-logo-web',
+      notSecondButton: true
     }
   }
 }

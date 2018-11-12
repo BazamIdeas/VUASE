@@ -6,8 +6,8 @@
           <v-layout row d-block>
             <v-flex v-for="(group, i) in groupsServices" :key="i" class="service-slider-item" align-content-center>
               <v-btn flat class="ma-0 service-slider-item-button" :class="{ 'selected': i === selected }" @click="selectGroup(i, $event)" large>
-                <v-img v-if="group.icon" :src="group.icon" height="50" max-height="50" width="50" max-width="50"  contain></v-img>
-                {{ group.name }}
+                <img v-if="group.icon" :src="group.icon" height="40" width="50">
+                <span class=" ml-3 ">{{ group.name }}</span>
               </v-btn>
             </v-flex>
           </v-layout>
@@ -22,6 +22,12 @@
     data () {
       return {
         selected: 0
+      }
+    },
+    created () {
+      let index = parseInt(this.$router.app._route.query.tab)
+      if (index) {
+        this.selectGroup(index)
       }
     },
     computed: {
