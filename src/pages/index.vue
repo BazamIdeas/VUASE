@@ -8,14 +8,14 @@
     </v-container>
     
     <!-- PORTFAFOLIO -->
-    <AppHeading title="Portafolio" number="2" class="mb-5" />
+    <AppHeading title="LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!" number="2" class="mb-5" />
     <AppExamplesSlider :examples="sliderExamples[0]" hovered="true" shadow="true" puntos="true" item-width="400" item-height="400"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
-    <AppHeading class="mb-5" number="2" title="¿Qué necesitas?" subtitle="Deja el diseño de tu imagen en manos de profesionales, que te ofreceran la más amplia gama de opciones" />
+    <AppHeading class="mb-5" number="2" title="¿QUE NECESITAS CREAR?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio" />
     <AppServicesGrid color="#F29F01" class="mb-5"/>
     
-    <AppHomeCreativeProccess title="Proceso Creativo" />
+    <AppHomeCreativeProccess title="COMO FUNCIONA"/>
 
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
@@ -80,11 +80,11 @@
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS PROFESIONALES</h2>
+            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A PROFESIONALES</h2>
             <p class="text-xs-center mb-5 font-weight-bold">
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+              Amplia tu portfolio de servicios rapidamente. Ponemos a disposicion de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atencion especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo.
             </p>
-            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white;">SABER MÁs</v-btn>
+            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white;">Quiero conocer mas</v-btn>
           </div>
         </v-flex>
 

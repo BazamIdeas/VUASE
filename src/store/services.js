@@ -4,7 +4,7 @@ export const state = () => ({
   groups: [
     {
       icon: '/icons/logo-a-medida.svg',
-      name: 'Logos e Identidades',
+      name: 'LOGO E IDENTIDAD',
       layouts: [],
       carousel: [
         { src: 'images/pages/nuestros-servicios/logo-identidades/pan-&-miri.png' },
@@ -16,14 +16,14 @@ export const state = () => ({
       rows: [
         [
           'imagen-corporativa',
-          'pack-rediseno-de-logo'
-        ],
-        [
-          'logo-empresa',
-          'carousel'
+          'logo-empresa'
         ],
         [
           'diseno-logo-y-pagina-web',
+          'carousel'
+        ],
+        [
+          'pack-rediseno-de-logo',
           'vectorizacion'
         ]
       ]
@@ -65,16 +65,16 @@ export const state = () => ({
       rows: [
         [
           'flyer',
-          'diptico',
-          'tripticos'
+          'flyer-dos-caras',
+          'diptico'
         ],
         [
-          'flyer-dos-caras',
+          'tripticos',
           'carousel'
         ],
         [
-          'catalogo',
-          'publicidad'
+          'publicidad',
+          'catalogo'
         ]
       ]
     },
@@ -88,12 +88,12 @@ export const state = () => ({
           'rotulo-banner'
         ],
         [
-          'rotulo-furgoneta-camion',
+          'packaging',
           'carousel'
         ],
         [
           'rotulo-vestimenta-uniforme',
-          'packaging'
+          'rotulo-furgoneta-camion'
         ]
       ],
       layouts: [],

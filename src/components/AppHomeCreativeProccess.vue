@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container grid-list-md fluid class="pa-0 creative-process-home">
         <v-flex xs12 class="mb-5">
-          <AppHeading :number="'1'" :size="'display-1'" :title="title" class="mb-3" />
+          <AppHeading :number="'1'" :size="'display-1'" subtitle="SIMPLE, AGIL Y PROFESIONAL" :title="title" class="mb-3" />
         </v-flex>
         <v-layout class="content-pasos">
           <v-flex xs10 offset-xs1 offset-md3 md6>
@@ -23,9 +23,9 @@
                 <img height="70px" width="80px" src="/icons/te escuchamos.svg">
               </div>
               <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">TE ESCUCHAMOS</h2> 
+                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">BRIEFING</h2> 
               </div>
-              <span class="body-2 mb-2  px-3 text-xs-center" >Coméntanos tus necesidades preferencias y objetivos</span>
+              <span class="body-2 mb-2  px-3 text-xs-center">Comentanos que necesitas diseñar, cuales son tus preferencias y especificaciones.</span>
             </div>
 
             <div class="characteristic">
@@ -33,18 +33,19 @@
                 <img height="70px" width="80px" src="/icons/logo-a-medida-pink.svg">
               </div>
               <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">GARANTÍA DE CONFORMIDAD 100%</h2> 
+                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">DISEÑOS IILIMITADOS</h2> 
               </div>
-              <span class="body-2 mb-2 px-3 text-xs-center" >Nuestros equipos de expertos desarrollrán tu proyecto de manera personalizada has tu entera aprobación</span>
+              <span class="body-2 mb-2 px-3 text-xs-center">Creamos conceptos unicos, exclusivos y originales desde cero, ilimitados y hasta tu entera conformidad.</span>
             </div>
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
                 <img height="70px" width="80px" src="/icons/recomendados-por-grandes-pink.svg">
               </div>
               <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">LISTO!</h2> 
+                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">RECIBE TU PROYECTO</h2> 
               </div>
-              <span class="body-2 mb-2  px-3 text-xs-center" >Una vez aprobado tu proyecto te enviamos todo listo para usarlo en diferentes formatos</span>
+              <span class="body-2 mb-2  px-3 text-xs-center">Tus diseños listos para usar en formato digital o papel, listos para aplicar donde necesites, acompañados
+de tu certificado de derechos, manuales de uso y soporte post venta gratuito por 2 años.</span>
             </div>    
         </v-layout>
         <v-layout align-center justify-center row> 

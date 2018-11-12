@@ -1,8 +1,8 @@
 export const logoWeb = {
-  list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoria especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable', 'Integración con miles de complementos y funcionalidades'],
-  title: 'LOGO + WEB',
+  list: ['Logo exclusivo realizado a tu medida listo para utilizar donde necesites con tu manual de marca y certificado de derechos', 'Diseño, maquetacion, programación y publicación de sitio web profesional autogestionable, registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
+  title: 'LOGO Y SITIO WEB',
   description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+  shortDescription: `Logo original de tu entera conformidad y sitio web listo para lanzar su negocio.`,
   icon: '/icons/logo-y-web.svg',
   whatWeOffer: [
     {
