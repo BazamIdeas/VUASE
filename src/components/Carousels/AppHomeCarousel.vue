@@ -4,10 +4,11 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
+          <h1>CREATIVIDAD Y TALENTO PARA PRESENTAR TU NEGOCIO</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h2>Empresa vanguardista en diseño y comunicación</h2>
+          <h2>Creatividad y talento para potenciar tu negocio. <br> Obten un diseño que amaras por ser capaz de todo. Diseños profesionales, a tu medida, ilimitados y hasta tu
+          completa conformidad.</h2>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
             <v-img class="animate-img" src="images/carousels/home1.png"></v-img>
@@ -32,10 +33,12 @@
 
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>DISEÑOS ÚNICOS Y EXITOSOS</h1>
+            <h1>CREATIVIDAD Y TALENTO PARA PRESENTAR TU NEGOCIO</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <h1>Empresa vanguardista en diseño y comunicación</h1>
+            <h1>Creatividad y talento para potenciar tu negocio. <br> Obten un diseño que amaras por ser capaz de todo. Diseños
+            profesionales, a tu medida, ilimitados y hasta tu
+            completa conformidad.</h1>
             <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#B80000;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
           </div>
         </div>

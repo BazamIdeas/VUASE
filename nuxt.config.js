@@ -23,6 +23,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Lorem Ipsum' },
+      { name: 'robots', content: 'noindex' },
       { name: 'twitter:title', content: '' },
       { name: 'twitter:description', content: 'Lorem Ipsum' },
       { property: 'og:title', content: '' },
@@ -94,7 +95,8 @@ module.exports = {
       '~/plugins/vue2-storage.js',
       '~/plugins/vue-cookies.js',
       '~/plugins/axios.js',
-      '~/plugins/components.js'
+      '~/plugins/components.js',
+      'paypal-checkout'
     ],
     extractCSS: true,
     /*

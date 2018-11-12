@@ -33,3 +33,7 @@ export { default as AppColorsForm } from './Forms/Brief/AppColorsForm.vue'
 export { default as AppDesignsForm } from './Forms/Brief/AppDesignsForm.vue'
 export { default as AppStepProgressBar } from './Forms/Brief/AppStepProgressBar.vue'
 export { default as AppStylesForm } from './Forms/Brief/AppStylesForm.vue'
+
+// GATEWAYS
+
+export { default as AppPaypal } from './Gateways/AppPaypal.vue'

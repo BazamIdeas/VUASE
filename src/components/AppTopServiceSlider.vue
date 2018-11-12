@@ -48,12 +48,12 @@
   export default {
     props: ['service', 'slug'],
     computed: {
-      /* TODO: PENDIENTE */
       comenzarUrl () {
         if (this.slug === 'diseno-logo-y-pagina-web' || this.slug === 'diseno-pagina-web') {
           return this.$router.currentRoute.path + '/cotizacion'
         } else {
-          return this.$router.currentRoute.path + '/brief/disenos'
+          if (this.slug.includes('logo')) return this.$router.currentRoute.path + 'brief/disenos'
+          return this.$router.currentRoute.path + 'brief/estilos'
         }
       }
     }
