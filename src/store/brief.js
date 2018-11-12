@@ -179,7 +179,7 @@ export const actions = {
 
     for (let key in brief.information) {
       bodyFormData.append('data[information][' + key + '][label]', brief.information[key]['label'])
-      console.log(typeof brief.information[key]['value'])
+      // console.log(typeof brief.information[key]['value'])
       bodyFormData.append('data[information][' + key + '][value]', brief.information[key]['value'])
     }
 

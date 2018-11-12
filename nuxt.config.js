@@ -1,6 +1,4 @@
 const nodeExternals = require('webpack-node-externals')
-const bodyParser = require('body-parser')
-const resolve = (dir) => require('path').join(__dirname, dir)
 
 let axiosUrl = 'http://api.liderlogos.com/v1/'
 if (process.env.NODE_ENV === 'production') axiosUrl = 'http://api.liderlogos.com/v1/'
@@ -33,12 +31,12 @@ module.exports = {
       { property: 'og:image', content: '' },
       { property: 'og:description', content: 'Lorem Ipsum' },
       { property: 'og:site_name', content: 'Liderlogo' },
-      { property: 'fb:admins', content: '00000000000000000000' },
+      { property: 'fb:admins', content: '00000000000000000000' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
-      { rel: 'stylesheet', href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css" }
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' }
     ]
   },
   modules: [
@@ -69,7 +67,7 @@ module.exports = {
     baseURL: axiosUrl,
     browserBaseURL: axiosUrl,
     retry: { retries: 3 },
-    debug: (process.env.NODE_ENV !== 'production')
+    debug: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'development')
   },
   toast: {
     position: 'top-right',
@@ -81,10 +79,10 @@ module.exports = {
     cssSourceMap: false,
     babel: {
       plugins: [
-        ["transform-imports", {
-          "vuetify": {
-            "transform": "vuetify/es5/components/${member}",
-            "preventFullImport": true
+        ['transform-imports', {
+          'vuetify': {
+            'transform': 'vuetify/es5/components/${member}',
+            'preventFullImport': true
           }
         }]
       ]

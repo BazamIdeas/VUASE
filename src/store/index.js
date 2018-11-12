@@ -39,7 +39,10 @@ export const actions = {
   async nuxtServerInit ({ dispatch }, { $axios, req }) {
     let countries = []
     let countriesObj = {}
-    try { countries = await $axios.$get('countries') } catch (error) { console.log(error) }
+    try { countries = await $axios.$get('countries') } catch (error) {
+      console.log(error)
+      return
+    }
     if (countries.length) {
       countries.forEach(country => {
         countriesObj[country.iso] = country
