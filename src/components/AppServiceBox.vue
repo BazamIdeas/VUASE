@@ -99,7 +99,8 @@
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          target = 'brief/disenos'
+          if (this.url.includes('logo')) target = 'brief/disenos'
+          else target = 'brief/estilos'
         }
 
         this.$storage.set('brief', brief)

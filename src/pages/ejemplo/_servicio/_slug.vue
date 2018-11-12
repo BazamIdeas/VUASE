@@ -133,11 +133,11 @@
         return portfolios
       },
       briefUrl () {
-        /* TODO: */
         if (this.service === 'diseno-logo-y-pagina-web' || this.service === 'diseno-pagina-web') {
           return 'cotizacion'
         } else {
-          return 'brief/disenos'
+          if (this.service.includes('logo')) return 'brief/disenos'
+          else return 'brief/estilos'
         }
       }
     },

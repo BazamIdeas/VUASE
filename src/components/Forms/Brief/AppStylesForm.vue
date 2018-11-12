@@ -22,7 +22,12 @@
       return {
         attrs: [
           { labels: ['Clásico', 'Moderno'], name: 'clasic_modern', default: 0 },
-          { labels: ['Adulto', 'Juvenil'], name: 'mature_youthful', default: 0 }
+          { labels: ['Adulto', 'Juvenil'], name: 'mature_youthful', default: 0 },
+          { labels: ['Abstracto', 'Literal'], name: 'abstract_literal', default: 0 },
+          { labels: ['Geométrico', 'Orgánico'], name: 'geometric_organic', default: 0 },
+          { labels: ['Femenino', 'Masculino'], name: 'feminine_masculine', default: 0 },
+          { labels: ['Juguetón', 'Sofisticado'], name: 'playful_sophisticated', default: 0 },
+          { labels: ['Económico', 'Lujoso'], name: 'economical_luxurious', default: 0 }
         ],
         values: [-3, -2, -1, 0, 1, 2, 3]
       }

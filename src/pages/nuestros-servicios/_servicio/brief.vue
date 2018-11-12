@@ -23,7 +23,7 @@
     </v-container>
     <v-toolbar fixed style="top: inherit;bottom: 0;">
       <div class="hidden-sm-and-down">
-        <v-btn color="primary" v-if="stepData.prev" @click="nextStep(stepData.prev)">Atras</v-btn>
+        <v-btn color="primary" v-if="showBack" @click="nextStep(stepData.prev)">Atras</v-btn>
       </div>
       <span>Completa los datos</span>
       <v-spacer></v-spacer>
@@ -67,7 +67,7 @@
         pay: false
       }
     },
-    async mounted () {
+    async created () {
       await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
       await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
     },
@@ -78,7 +78,20 @@
     },
     computed: {
       brief () { return this.$store.state.brief.data },
-      stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) }
+      stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) },
+      showBack () {
+        if (this.brief.service.slug.includes('logo')) {
+          if (this.stepData.prev) return true
+          else return false
+        } else {
+          if (this.stepData.prev) {
+            if (this.stepData.prev === 'disenos') return false
+            else return true
+          } else {
+            return false
+          }
+        }
+      }
     },
     methods: {
       async nextStep (pass) {
