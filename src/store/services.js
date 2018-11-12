@@ -101,8 +101,8 @@ export const state = () => ({
         { src: 'images/pages/nuestros-servicios/rotulos/banner-dual.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/empaque-vannamei.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/gps-serville-tour.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural-(servicios).png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-smart-escolar-(servicios).png' }
+        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-smart-escolar.png' }
       ]
     },
     {

@@ -13,22 +13,22 @@
             </p>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
               <span class="mr-1 chip-title">Servicio:</span>
-              <v-chip>
+              <v-chip @click="$router.push('/nuestros-servicios/'+ portfolio.service.slug)">
                 {{portfolio.service.name}}
               </v-chip>
               <br>
               <span class="mr-1 chip-title">Sector:</span>
-              <v-chip>
+              <v-chip @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug)">
               {{portfolio.activity.sector.name}}
               </v-chip>
               <br>
               <span class="mr-1 chip-title">Actividad:</span>
-              <v-chip>
+              <v-chip @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug)">
               {{portfolio.activity.name}}
               </v-chip>
               <br>
               <span class="mr-1 chip-title">Ubicación:</span>
-              <v-chip>
+              <v-chip @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug + '/' + portfolio.location.country.name.toLowerCase() + '/' + portfolio.location.slug)">
               {{portfolio.location.name}} - {{portfolio.location.country.name}}  
               </v-chip>        
             </p>

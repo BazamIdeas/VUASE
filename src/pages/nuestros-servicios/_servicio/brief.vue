@@ -113,6 +113,7 @@
 <style>
   .chat-cloud {
       bottom: 46px !important;
+      z-index: 999;
   }
   .brief + footer {
     display: none;
