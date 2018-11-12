@@ -4,7 +4,7 @@
     <AppServicesSlider id="servicios" @select-group="setGroup" class="mb-4"/>
     <transition-group appear :name="transitionGroupContent">
       <v-container d-block grid-list-md text-xs-left v-if="groupContent === i" :key="i" v-for="(container, i) in containers">
-        <v-layout align-center justify-center row v-for="(layout, i) in container.layouts" :key="i" class="mb-5">
+        <v-layout justify-center row v-for="(layout, i) in container.layouts" :key="i" class="mb-5">
           <v-flex 
             :class="{
               'flex xs12 md6': layout.carousel, 
