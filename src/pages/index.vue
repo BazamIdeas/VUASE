@@ -8,7 +8,10 @@
     </v-container>
     
     <!-- PORTFAFOLIO -->
-    <AppHeading title="LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!" number="2" class="mb-5" />
+    <h2 class="mb-5 text-xs-center display-2 font-weight-bold" >
+      LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!
+    </h2>
+
     <AppExamplesSlider :examples="sliderExamples[0]" hovered="true" shadow="true" puntos="true" item-width="400" item-height="400"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
