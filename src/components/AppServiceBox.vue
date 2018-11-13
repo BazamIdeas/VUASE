@@ -99,7 +99,7 @@
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          if (this.url.includes('logo')) target = 'brief/disenos'
+          if (this.url.includes('logo') || this.find === 'imagen-corporativa') target = 'brief/disenos'
           else target = 'brief/estilos'
         }
 

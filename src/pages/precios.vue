@@ -76,11 +76,12 @@
         const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
 
-        if (this.serviceObject.url === 'diseno-logo-y-pagina-web' || this.serviceObject.url === 'diseno-pagina-web') {
+        if (this.serviceObject.slug === 'diseno-logo-y-pagina-web' || this.serviceObject.slug === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          target = 'brief/disenos'
+          if (this.serviceObject.slug.includes('logo') || this.serviceObject.slug === 'imagen-corporativa') target = 'brief/disenos'
+          else target = 'brief/estilos'
         }
 
         this.$storage.set('brief', brief)
