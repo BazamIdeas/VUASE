@@ -19,6 +19,7 @@
           </v-layout>
         </v-radio-group>
       </v-flex>
+      
       <v-flex xs12 sm6 md6 v-show="for_phone">
         <v-text-field v-model="phone" v-validate="'required'" name="contact.phone" label="Telefono" placeholder="Telefono"
           :error-messages="errors.collect('contact.phone')" solo flat></v-text-field>
