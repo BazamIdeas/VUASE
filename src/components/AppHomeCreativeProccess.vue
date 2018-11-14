@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container grid-list-md fluid class="pa-0 creative-process-home">
         <v-flex xs12 class="mb-5">
-          <AppHeading :number="'1'" :size="'display-1'" subtitle="SIMPLE, AGIL Y PROFESIONAL" :title="title" class="mb-3" />
+          <AppHeading number="2" size="display-1" subtitle="Simple, agil y profesional" :title="title" class="mb-3" />
         </v-flex>
         <v-layout class="content-pasos">
           <v-flex xs10 offset-xs1 offset-md3 md6>
@@ -49,7 +49,7 @@ de tu certificado de derechos, manuales de uso y soporte post venta gratuito por
             </div>    
         </v-layout>
         <v-layout align-center justify-center row> 
-            <v-btn color="my-5 xs-mt-0" to="/nuestros-servicios" class="elevation-0 white--text title font-weight-regular" style="background-color:#EE205E;">
+            <v-btn to="/nuestros-servicios" class="elevation-0 white--text title font-weight-regular" style="background-color:#EE205E;">
               COMENZAR
             </v-btn>
         </v-layout>

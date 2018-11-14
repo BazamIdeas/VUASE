@@ -13,9 +13,9 @@
             prev-icon="arrow_left"
           >
             <v-layout row wrap>
-              <v-flex xs12 md6 class="pt-5">
+              <v-flex xs12 md6>
                 <h2 class="display-1 xs-subheading font-weight-bold text-uppercase text-xs-center" style="color:#434343;">
-                  ¿QUE OPINAN <br class="hidden-xs-and-down">
+                  ¿QUÉ OPINAN <br class="hidden-xs-and-down">
                   NUESTROS CLIENTES?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>

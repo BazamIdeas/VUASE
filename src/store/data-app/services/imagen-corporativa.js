@@ -131,6 +131,7 @@ export const imagenCorporativa = {
     logo: 'papeleria.svg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
   }],
+  topSliderHeight: '770px',
   topSlider: [
     {
       url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-duarte.png',

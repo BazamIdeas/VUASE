@@ -2,10 +2,23 @@
   <section class="content">
     <v-container grid-list-md>
       <v-layout row wrap class="mt-5">
-        <v-flex class="mt-5" xs12 md6 v-if="portfolio.images && portfolio.images.length > 1">
+        <!-- CAROUSEL RESPONSIVE -->
+        <v-flex style="height: 50vw;" class="mt-5" hidden-md-and-up xs12 v-if="portfolio.images && portfolio.images.length > 1">
+          <v-carousel 
+            :interval="'3000'" 
+            hide-controls hide-delimiters 
+            style="height: 100%; width:100%;">
+            <v-carousel-item v-for="(item, i) in portfolio.images" :key="i"   :transition="'slide-x-transition'">
+              <svg class="img-cuadrada-ejemplos" viewBox="0 0 100 100 " :style="'background: url(' + urlHosting + item.slug +')'"></svg>
+            </v-carousel-item>
+          </v-carousel>
+        </v-flex>
+            
+        <!-- DESKTOP -->
+        <v-flex hidden-sm-and-down class="mt-5" xs12 md6 v-if="portfolio.images && portfolio.images.length > 1">
           <img class="mt-3" :src="urlHosting + image.slug" v-for="image in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
         </v-flex>
-        <v-flex xs12 md6 class="pl-5 mt-5" style="position:relative;">
+        <v-flex xs12 md6 class="pl-5 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
           <div class="box-sticky">
             <AppHeading number="2" size="headline" :title="name" align="center"/>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
@@ -13,22 +26,22 @@
             </p>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
               <span class="mr-1 chip-title">Servicio:</span>
-              <v-chip>
+              <v-chip class="cursor-pointer" @click="$router.push('/nuestros-servicios/'+ portfolio.service.slug)">
                 {{portfolio.service.name}}
               </v-chip>
               <br>
               <span class="mr-1 chip-title">Sector:</span>
-              <v-chip>
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug)">
               {{portfolio.activity.sector.name}}
               </v-chip>
               <br>
               <span class="mr-1 chip-title">Actividad:</span>
-              <v-chip>
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug)">
               {{portfolio.activity.name}}
               </v-chip>
               <br>
               <span class="mr-1 chip-title">Ubicación:</span>
-              <v-chip>
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug + '/' + portfolio.location.country.name.toLowerCase() + '/' + portfolio.location.slug)">
               {{portfolio.location.name}} - {{portfolio.location.country.name}}  
               </v-chip>        
             </p>
@@ -41,17 +54,12 @@
         <!-- RELACIONADOS -->
         <AppHeading class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
         <v-layout xs12 row wrap class="portfolios mb-5">
-          <v-flex v-if="portfolios && portfolios.length" v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 md4 class="pr-2">
+          <v-flex v-if="portfolios && portfolios.length" v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
             <v-card :to="'/ejemplo/'+ item.service.slug +'/'+ item.slug">
-              <v-carousel 
-                interval="6000" 
-                hide-controls hide-delimiters 
-                style="width: 100%; max-height: calc( 80vw / 3 );" class="portfolio-carousel">
-                <v-carousel-item style="position:relative;" v-for="(itemImage, i) in item.images.slice(0,1)" :key="itemImage.slug + i" :transition="'slide-x-transition'">
-                  <div class="img-portf" :style="'background:url('+urlHosting + itemImage.slug+');'"></div>
-                </v-carousel-item>
-              </v-carousel>
-              <v-flex class="my-0" style="border-top: 1px solid #6a6a6a38;">
+              <div class="img-cuadrada-ejemplos-container" >
+                  <svg class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
+              </div>
+              <v-flex class="my-0">
                 <h2 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
                   {{item.service.name}} - 
@@ -68,7 +76,7 @@
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'+ serviceSlug">
               CONOCER MAS SOBRE EL SERVICIO
             </v-btn>
-            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/nuestros-servicios/'+ briefUrl">
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/nuestros-servicios/'+ serviceSlug + '/' + briefUrl">
               INICIAR MI PROYECTO AHORA
             </v-btn>
           </v-layout>
@@ -188,4 +196,21 @@
     position: absolute;
     right: -52px;
   }
+
+  .portfolio-carousel{
+    width: 100%; 
+    max-height: calc( 80vw / 3 );
+  }
+
+@media (min-width: 320px) and (max-width: 980px) {
+  
+  .arrow-left, .arrow-right{
+    width: 80%;
+  }
+
+  .arrow-left::after, .arrow-right::after{
+    display: none;
+  }
+}
+
 </style>

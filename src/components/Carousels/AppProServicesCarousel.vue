@@ -1,13 +1,13 @@
 <template>
-  <v-carousel :interval="interval" hide-controls class="main-carousel">
+  <v-carousel :interval="interval" hide-controls class="main-carousel --pro">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>¿SERVICIOS PROFESIONALES?</h1>
+          <h1>SERVICIOS A PROFESIONALES</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h1>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen</h1>
-          <v-btn flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">CONTÁCTANOS</v-btn>
+          <h1>¿Eres agencia de diseño gráfico, web, Apps o simplemente deseas ampliar tus servicios y ganar mas?</h1>
+          <v-btn to="/contacto" flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">Solicita una llamada</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
           <v-img class="animate-img" src="images/carousels/pro_services1.png"></v-img>
@@ -30,6 +30,10 @@
 </script>
 
 <style scoped>
+  .v-carousel.main-carousel--pro {
+      min-height: 680px;
+  }
+
   .v-carousel {
     box-shadow: none;
   }

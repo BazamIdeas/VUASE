@@ -7,15 +7,40 @@ export const state = () => ({
         { url: '/nuestros-servicios', title: 'Servicios' },
         { url: '/ejemplos', title: 'Ejemplos' },
         { url: '/precios', title: 'Precios' },
-        { url: '/servicios-profesionales', title: 'Servicios Profesionales' },
-        { url: '/contacto', title: 'Contacto' }
+        { url: '/servicios-profesionales', title: 'Servicios Profesionales' }
       ],
       footer: [
         { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },
         { url: '/avisos-legales', title: 'AVISO LEGAL' },
         { url: '/terminos-y-condiciones', title: 'TÉRMINOS Y CONDICIONES' },
+        { url: '/contacto', title: 'Contacto' },
         { url: '#', title: 'BLOG' }
       ],
+      redes: [{
+        icon: 'fa-facebook',
+        url: 'https://www.facebook.com/liderlogo'
+      }, {
+        icon: 'fa-twitter',
+        url: 'https://twitter.com/lider_logo'
+      }, {
+        icon: 'fa-google',
+        url: 'https://plus.google.com/114230428674579789847'
+      }, {
+        icon: 'fa-linkedin',
+        url: 'https://www.linkedin.com/company-beta/2369935'
+      }, {
+        icon: 'fa-pinterest',
+        url: 'https://es.pinterest.com/liderlogo/'
+      }, {
+        icon: 'fa-instagram',
+        url: 'https://instagram.com/liderlogo/'
+      }, {
+        icon: 'fa-flickr',
+        url: 'https://www.flickr.com/people/lider-logo/'
+      }, {
+        icon: 'fa-tumblr',
+        url: 'http://liderlogo.tumblr.com/'
+      }],
       whatsapp: '#'
     },
     drawer: false,
