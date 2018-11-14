@@ -49,7 +49,7 @@ de tu certificado de derechos, manuales de uso y soporte post venta gratuito por
             </div>    
         </v-layout>
         <v-layout align-center justify-center row> 
-            <v-btn color="mt-3 xs-mt-0" to="/nuestros-servicios" class="elevation-0 white--text title font-weight-regular" style="background-color:#EE205E;">
+            <v-btn to="/nuestros-servicios" class="elevation-0 white--text title font-weight-regular" style="background-color:#EE205E;">
               COMENZAR
             </v-btn>
         </v-layout>

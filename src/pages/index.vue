@@ -118,7 +118,7 @@
           <img src="/images/pages/muchacho_contacto.png" :alt="alt" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-1 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
+          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>

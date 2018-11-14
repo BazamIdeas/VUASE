@@ -38,7 +38,7 @@
           <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
-          <h1 class="font-weight-bold mb-2 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <h1 class="font-weight-bold mb-3 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>
