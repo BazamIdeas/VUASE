@@ -554,7 +554,7 @@
 
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
-      font-size: 44px;
+      font-size: 35px;
       width: 100%;
       margin-top: 50px;
       line-height: 56px;
@@ -672,7 +672,7 @@
 
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
-      font-size: 44px;
+      font-size: 35px;
       width: 100%;
       margin-top: 50px;
       line-height: 56px;

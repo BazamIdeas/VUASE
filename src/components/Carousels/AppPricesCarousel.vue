@@ -3,10 +3,10 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>LOS MEJORES DISEÑOS</h1>
+          <h1>LOS MEJORES DISEÑOS </h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h1>A precios incomparables</h1>
+          <h1>GARANTÍA DE CONFORMIDAD 100%</h1>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
           <v-img class="animate-img" src="images/carousels/prices1.png"></v-img>
@@ -158,8 +158,8 @@
 
     div#hc-layer-2-item-1 {
       font-size: 17px;
-      width: 28%;
-      top: 70%;
+      width: 41%;
+      top: 60%;
       left: 48.25%;
       line-height: 28px;
     }

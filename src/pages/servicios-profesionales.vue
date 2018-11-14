@@ -7,18 +7,9 @@
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 py-5" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_1.png" alt="" class="ml-5 mt-5">
-              <!--<h1 class="pl-5 font-weight-bold mb-5 text-uppercase" style="font-size: 40px; line-height: 34px; color: #303032">ATENCION PROFESIONAL</h1>-->
-              <AppHeading number="2" title="ATENCION PROFESIONAL" size="display-2" align="left" margin="pl-5 mb-5"/>
+              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-2" align="left" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-                sido el texto de
-                relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
-                dedica a la
-                imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de
-                textos
-                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos
-                electrónicos,
-                quedando esencialmente igual al original.
+                Nuestro equipo elabora y te acompaña en cada paso de tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia tu negocio.
               </p>
             </v-flex>
             <v-flex xs12 md6>
@@ -33,18 +24,9 @@
             </v-flex>
             <v-flex xs12 md6 class="pl-5 py-5 text-xs-right" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_2.png" alt="" class="ml-5 mt-5">
-              <!--<h1 class="pl-5 font-weight-bold mb-5 text-uppercase text-xs-right" style="font-size: 40px; line-height: 34px; color: #303032">PRIVACIDAD GARANTIZADA</h1>-->
               <AppHeading number="2" title="PRIVACIDAD GARANTIZADA" size="display-2" align="right" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-                sido el texto de
-                relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
-                dedica a la
-                imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de
-                textos
-                especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos
-                electrónicos,
-                quedando esencialmente igual al original.
+                Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre
               </p>
             </v-flex>
 
@@ -54,8 +36,7 @@
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 pt-5" >
               <img src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
-              <!--<h1 class="pl-5 font-weight-bold mb-5 text-uppercase" style="font-size: 40px; line-height: 34px; color: #303032">RECONMENDADOS POR GRANDES</h1>-->
-              <AppHeading number="2" title="RECONMENDADOS POR GRANDES" size="display-2" align="left" margin="pl-5"/>
+              <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-2" align="left" margin="pl-5"/>
             </v-flex>
             <v-flex xs12 offset-md1 md10>
               <v-carousel hide-delimiters class="profesional-services-slider">
@@ -79,11 +60,8 @@
           </v-layout>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
-         <!--  <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿NECESITAS UN SERVICIO
-            PROFESIONAL?</h1> -->
-          <AppHeading number="2" title="¿NECESITAS UN SERVICIO
-            PROFESIONAL?" size="display-1" align="center" margin="pl-5 mb-2"/>
-          <v-btn large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Comencemos</v-btn>
+          <AppHeading number="2" title="¿Listo para hacer crecer tu negocio? " size="display-1" align="center" margin="pl-5 mb-2"/>
+          <v-btn to="/contacto" large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
         </v-flex>
       </v-layout>
     </v-container>

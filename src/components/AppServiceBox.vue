@@ -144,6 +144,7 @@
     content: "";
     width: 2px;
     height: 100%;
+    min-height: 400px;
     background-color: #a5a5a5;
     position: absolute;
     right: 0;

@@ -31,14 +31,15 @@
           </v-layout>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
-          <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿NECESITAS UN SERVICIO PROFESIONAL?</h1>
-          <v-btn flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">Comencemos</v-btn>
+          <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector.</h1>
+          <v-btn flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
-          <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <h1 class="font-weight-bold mb-2 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>
       </v-layout>

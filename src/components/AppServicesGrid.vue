@@ -52,7 +52,7 @@
           </v-flex>
           <v-flex>
             <v-btn color="mt-5" to="/nuestros-servicios" class="elevation-0 white--text" :style="'background-color: ' + color">
-              Descubre todas las categorias de servicios
+              descubre todos nuestros servicios
             </v-btn>
           </v-flex>
         </v-layout>
