@@ -146,8 +146,8 @@
 
   .logo-testimony .lt-img {
       position: absolute;
-      width: 40%;
-      left: 34%;
-      top: 31%;
+      width: 45%;
+      left: 31%;
+      top: 26%;
   }
 </style>

@@ -96,22 +96,22 @@ export const catalogo = {
     logo: '/images/testimonies/folletos/56.-compubot -min.jpg',
     company: 'Compublot',
     description: '“Los diseños han tenido mucho éxito, era lo que esperábamos.”'
-  },{
+  }, {
     stars: 5,
     logo: '/images/testimonies/folletos/costaserveis-testimonio.jpg',
     company: 'Costaserveis',
     description: '“Su trabajo ha sido muy bueno y las implentaciones aun mejores, estamos realmente conformes.”'
-  },{
+  }, {
     stars: 5,
     logo: '/images/testimonies/folletos/la gateada - flyer -testimonio.jpg',
     company: 'La Gateada',
     description: '“Mi experiencia fue muy positiva. Trabajan con mucha responsabilidad y rapidez.”'
-  },{
+  }, {
     stars: 5,
     logo: '/images/testimonies/folletos/la-julia-testimonio.jpg',
     company: 'La Julia',
     description: '“Gracias al equipo por la realización del flyer, el resultado nos encanta! Gran trabajo.”'
-  },{
+  }, {
     stars: 5,
     logo: '/images/testimonies/folletos/talawin - catalogo.jpg',
     company: 'Talawin',

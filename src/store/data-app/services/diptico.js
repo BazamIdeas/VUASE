@@ -4,7 +4,6 @@ export const diptico = {
   description: `La presentacion profesional de tu negocio en 4 caras`,
   icon: '/icons/diptico.svg',
   shortDescription: `La presentacion profesional de tu negocio en 4 caras`,
-  icon: '/icons/diptico.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
