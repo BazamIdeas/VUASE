@@ -1,7 +1,8 @@
 export const diptico = {
   title: 'DÍPTICO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `La presentacion profesional de tu negocio en 4 caras`,
+  icon: '/icons/diptico.svg',
   shortDescription: `La presentacion profesional de tu negocio en 4 caras`,
   icon: '/icons/diptico.svg',
   whatWeOffer: [
@@ -93,24 +94,29 @@ export const diptico = {
   ],
   testimonies: [{
     stars: 5,
-    logo: 'papeleria.svg',
-    description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+    logo: '/images/testimonies/folletos/56.-compubot -min.jpg',
+    company: 'Compublot',
+    description: '“Los diseños han tenido mucho éxito, era lo que esperábamos.”'
   }, {
     stars: 5,
-    logo: 'papeleria.svg',
-    description: '“Ha sido excelente trabajar con ustedes”'
+    logo: '/images/testimonies/folletos/costaserveis-testimonio.jpg',
+    company: 'Costaserveis',
+    description: '“Su trabajo ha sido muy bueno y las implentaciones aun mejores, estamos realmente conformes.”'
   }, {
     stars: 5,
-    logo: 'papeleria.svg',
-    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
+    logo: '/images/testimonies/folletos/la gateada - flyer -testimonio.jpg',
+    company: 'La Gateada',
+    description: '“Mi experiencia fue muy positiva. Trabajan con mucha responsabilidad y rapidez.”'
   }, {
     stars: 5,
-    logo: 'papeleria.svg',
-    description: '“Profesionales, competentes, rápidos.!”'
+    logo: '/images/testimonies/folletos/la-julia-testimonio.jpg',
+    company: 'La Julia',
+    description: '“Gracias al equipo por la realización del flyer, el resultado nos encanta! Gran trabajo.”'
   }, {
     stars: 5,
-    logo: 'papeleria.svg',
-    description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
+    logo: '/images/testimonies/folletos/talawin - catalogo.jpg',
+    company: 'Talawin',
+    description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
   topSlider: [
     {

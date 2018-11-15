@@ -11,8 +11,6 @@ import { packRediseno } from './pack-rediseno-de-logo.js'
 import { redisenoLogo } from './rediseno-de-logo.js'
 import { vectorizacion } from './vectorizacion.js'
 
-import { papeleria } from './papeleria.js'
-import { folletos } from './diseno-folletos-dipticos-tripticos.js'
 import { flyer } from './flyer.js'
 import { flyerDosCaras } from './flyer-dos-caras.js'
 import { diptico } from './diptico.js'
@@ -31,13 +29,11 @@ import { rVestimenta } from './rotulo-vestimenta-uniforme.js'
 export const services = {
   'diseno-de-app': disenoApp,
   'diseno-logo-y-pagina-web': logoWeb,
-  'diseno-folletos-dipticos-tripticos': folletos,
   'diseno-pagina-web': web,
   'diseno-perfil-redes-sociales': redesSociales,
   'imagen-corporativa': imagenCorporativa,
   'logo-empresa': logoEmpresa,
   'pack-rediseno-de-logo': packRediseno,
-  'papeleria': papeleria,
   'rediseno-de-logo': redisenoLogo,
   'rotulo-banner': rBanner,
   'packaging': rPackaging,
