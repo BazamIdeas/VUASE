@@ -144,11 +144,12 @@ export const rBanner = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/34.-costaserveis_mock up.jpg' },
-      { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
-      { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
-      { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
-      { img: '/images/pages/services-carousel/38.-Sistema-Velites.png' }
+      { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-dietetica.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-farmacia.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-liderplan.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/gesdupla - rotulo valla publicitaria.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/mabisat - rotulo local.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/punto smart - rotulo local 640px.jpg' }
     ]
   },
   packs: {

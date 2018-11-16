@@ -144,11 +144,16 @@ export const rFurgoneta = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/34.-costaserveis_mock up.jpg' },
-      { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
-      { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
-      { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
-      { img: '/images/pages/services-carousel/38.-Sistema-Velites.png' }
+      { img: '/images/services-carousel/rotulo-vehicular/36.-mockup_lamolineta3.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/37.-rotulo-araucaria.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/38.-sistema-velites.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/costaserveise-rotulo vehiculo.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automovil-bebida.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles-mueblepass.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-vehiculo-consultoria.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/mudanzas armel - rotulo camion 640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vehicular/smart escolar - rotulo camioneta 640.jpg' }
     ]
   },
   packs: {
