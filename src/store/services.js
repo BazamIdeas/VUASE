@@ -42,12 +42,15 @@ export const state = () => ({
       rows: [
         [
           'diseno-logo-y-pagina-web',
-          'ecommerce',
-          'diseno-de-app'
+          'diseno-pagina-web',
+          'ecommerce'
         ],
         [
-          'diseno-pagina-web',
+          'diseno-de-app',
           'carousel'
+        ],
+        [
+          'presencia-web'
         ]
       ]
     },

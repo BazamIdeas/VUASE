@@ -7,8 +7,9 @@
             <v-flex v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center>
               <v-img :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
               <span class="hidden-box" v-if="hovered" :style="'background-color:'+example.color+'; color:'+example.textColor">
-                <img :src="example.icon" class="mb-5" width="100" height="80" />
-                <h2 class="text-uppercase font-weight-bold headline mb-5">{{example.service}}</h2>
+                <img :src="example.icon" class="mb-2" width="100" height="80" />
+                <h2 class="text-uppercase font-weight-bold headline mb-2">{{example.service}}</h2>
+                <h2 v-if="example.description" class="font-weight-medium text-xs-justify body-2 mb-2" style=" max-width:90%;    white-space: normal; ">{{example.description}}</h2>
                 <v-btn :to="'/nuestros-servicios/'+example.url" flat class="ma-0 px-2 more-button font-weight-light" dark large>
                   conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
                 </v-btn>
@@ -112,4 +113,5 @@
     left: 100px;
     z-index:1;
   }
+
 </style>

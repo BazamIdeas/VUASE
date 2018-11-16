@@ -23,9 +23,17 @@
                     <v-rating class="testimony-rating" :value="item.stars" readonly></v-rating>
                   </div>
                 </v-layout>
-                <h3 class="subheading font-weight-medium text-xs-center mt-3 px-5 xs-px-0 pb-2" style="color:rgb(151, 147, 147);">
+                <h3 class="subheading font-weight-medium text-xs-center mt-3 pb-2" style="color:rgb(151, 147, 147);">
                   {{item.description}}
                 </h3>
+                <h3 class="subheading font-weight-medium text-xs-center mt-0 pb-2" style="color:rgb(67, 67, 67);">
+                  {{item.company}}
+                </h3>
+                <v-flex>
+                  <a @click="$router.push('/testimonios')" class="text-xs-center font-weight-medium" style="margin:auto; display:block;     color: #ff9800 !important;">
+                    VER TODOS
+                  </a>
+                </v-flex>
               </v-flex>
               <v-flex xs12 md6 class="logo-testimony">
                 <img class="--puntos" src="/icons/puntos_de_fondo.svg">
@@ -102,7 +110,7 @@
 }
 
 .testimonies .v-carousel{
-  height: 350px;
+  height: 400px;
   box-shadow: unset;
 }
 
@@ -137,17 +145,17 @@
     min-height: 360px;
 }
 
-  .logo-testimony .--puntos {
-      position: absolute;
-      width: 500px;
-      right: -15%;
-      top: -28%;
-  }
+.logo-testimony .\--puntos {
+    position: absolute;
+    width: 600px;
+    right: -31%;
+    top: -43%;
+}
 
-  .logo-testimony .lt-img {
-      position: absolute;
-      width: 45%;
-      left: 31%;
-      top: 26%;
-  }
+.logo-testimony .lt-img {
+    position: absolute;
+    width: 53%;
+    left: 28%;
+    top: 19%;
+}
 </style>

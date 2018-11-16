@@ -15,9 +15,9 @@
           {{ price.currency.symbol }} 
           {{ price.value }}
         </span> 
-        <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
+        <!-- <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
           comenzar
-        </v-btn>
+        </v-btn> -->
       </v-flex>
     </v-layout>
     <v-flex xs12 v-if="description" class="service-box-description">

@@ -1,7 +1,7 @@
 export const imagenCorporativa = {
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tasas, etiquetas y mucho mas (elija entre 65 piezas)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube', 'Elige 6 piezas entre 65 opciones', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel+diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
   shortDescription: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel+diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
   icon: '/icons/pack-identidad.svg',
   whatWeOffer: [
@@ -189,21 +189,21 @@ export const imagenCorporativa = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
