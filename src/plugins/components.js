@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import {
   AppAboutUsCarousel,
+  AppBankTransfer,
   AppBriefingForm,
   AppCarousel,
   AppCheckoutForm,
@@ -20,6 +21,7 @@ import {
   AppServicesSlider,
   AppStepProgressBar,
   AppStylesForm,
+  AppStripe,
   AppServiceCharacteristics,
   AppCreativeProccess,
   AppServiceWhatGet,
@@ -44,6 +46,8 @@ Vue.component('AppFilterExamplesForm', AppFilterExamplesForm)
 Vue.component('AppHeading', AppHeading)
 Vue.component('AppHomeCarousel', AppHomeCarousel)
 Vue.component('AppPaypal', AppPaypal)
+Vue.component('AppStripe', AppStripe)
+Vue.component('AppBankTransfer', AppBankTransfer)
 Vue.component('AppPricesCarousel', AppPricesCarousel)
 Vue.component('AppProServicesCarousel', AppProServicesCarousel)
 Vue.component('AppServicesCarousel', AppServicesCarousel)

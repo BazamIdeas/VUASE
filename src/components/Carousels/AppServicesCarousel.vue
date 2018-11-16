@@ -266,8 +266,8 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 70%;
-      left: -2%;
+      width: 63%;
+      left: 0%;
       top: 20%;
     }
 

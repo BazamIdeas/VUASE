@@ -16,9 +16,9 @@
             <img :src="service.icon" width="100%">
           </v-flex>
           <v-flex xs6>
-            <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.name }} </h1>
+            <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.dataService.title }} </h1>
             <p class="caption" style="text-align: justify; color: #666666;" v-if="!brief.subServices">
-              {{ service.description }}
+              {{ service.dataService.description }}
             </p>
           </v-flex>
           <v-flex md2>
@@ -120,22 +120,36 @@
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-dialog v-if="service" v-model="pay" persistent max-width="50%">
+    <v-dialog v-if="service" v-model="pay" :class="{ 'hidden': chargePayMethods }" persistent max-width="200px">
       <v-card>
-        <v-card-title class="headline font-weight-bold text-xs-center">
-          <p style="width: 100%;">Métodos de pago</p>
+        <v-card-title class="title font-weight-bold text-xs-center pb-0">
+          <p style="width: 100%;">PAGA CON</p>
         </v-card-title>
-        <v-layout row wrap>
-          <v-flex v-for="gateway in gateways" :key="gateway.id" v-if="checkCurrencies(gateway.currencies)" md4 class="text-xs-center">
+        <v-layout column wrap>
+          <v-flex v-for="gateway in gateways" :key="gateway.id" v-if="checkCurrencies(gateway.currencies)" class="text-xs-center">
             <no-ssr v-if="gateway.name ==='Paypal'">
-              <AppPaypal :gateway-id="gateway.id" :currency="$store.state.countries.data.currency.iso" :amount="initialWithTaxs" :cart="cartObject" :order="paypalObject" />
+              <AppPaypal :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
             </no-ssr>
+            <no-ssr v-if="gateway.name ==='Stripe'">
+              <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+            </no-ssr>
+            <AppBankTransfer v-if="gateway.name ==='Transferencia Bancaria'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
           </v-flex>
         </v-layout>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="red darken-1" flat @click.native="setPay">Cancelar</v-btn>
+          <v-btn color="red darken-1" small flat @click.native="setPay">Cancelar</v-btn>
+          <v-spacer></v-spacer>
         </v-card-actions>
+      </v-card>    
+    </v-dialog>
+    <v-dialog v-model="chargePayMethods" persistent width="210">
+      <v-card>
+        <v-card-text>
+          <div style="width: 100%; height: 186px; display: flex; align-items: center; justify-content: center">
+            <v-progress-circular :size="50" color="primary" indeterminate ></v-progress-circular>
+          </div>
+        </v-card-text>
       </v-card>
     </v-dialog>
   </v-layout>
@@ -151,10 +165,20 @@
         coupon: null
       }
     },
+    watch: {
+      chargePayMethods (val) {
+        if (!val) return
+        setTimeout(() => (this.$store.commit('cart/OVER_LOADING')), 2000)
+      }
+    },
     computed: {
       brief () { return this.$store.state.brief.data },
       pay () { return this.$store.state.cart.pay },
-      gateways () { return this.$store.state.gateways.list },
+      chargePayMethods () { return this.$store.state.cart.chargePayMethods },
+      gateways () {
+        let gateways = this.$store.state.gateways.list.concat([{ id: 3, name: 'Transferencia Bancaria' }])
+        return gateways
+      },
       service () { return this.$store.getters['services/getBySlug'](this.brief.service.slug) },
       subServices () {
         const services = []
@@ -212,27 +236,13 @@
         if (this.brief.subServices) {
           for (let subService in this.brief.subServices) {
             let service = this.$store.getters['services/getBySlug'](subService.slug)
-            if (service) cartObject.services.push({ id: service.id })
+            if (service) cartObject.services.push({ id: service.id, quantity: 1 })
           }
         } else {
-          cartObject.services.push({ id: this.service.id })
+          cartObject.services.push({ id: this.service.id, quantity: 1 })
         }
 
         return cartObject
-      },
-      paypalObject () {
-        let paypalObject = {
-          order: {
-            brief_cookie: this.$storage.get('brief_cookie'),
-            gateways: {}
-          }
-        }
-
-        if (this.coupon) {
-          paypalObject.coupons = [{ id: this.coupon.id }]
-        }
-
-        return paypalObject
       }
     },
     methods: {
@@ -263,6 +273,7 @@
         return format
       },
       checkCurrencies (currencies) {
+        if (!currencies) return true
         let iso = this.$store.state.countries.data.currency.iso
         let currenciesArray = []
 
@@ -272,11 +283,18 @@
 
         return currenciesArray.includes(iso)
       },
-      setPay () { this.$store.commit('cart/SET_PAY') }
+      setPay () {
+        this.$store.dispatch('cart/setPay')
+      }
+    },
+    beforeDestroy () {
+      if (this.pay) this.setPay()
     }
   }
 </script>
 
 <style>
-
+  .v-dialog.hidden {
+    visibility: hidden;
+  }
 </style>

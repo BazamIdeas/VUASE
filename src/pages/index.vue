@@ -15,7 +15,7 @@
     <AppExamplesSlider :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="350" item-height="350"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
-    <AppHeading class="mb-5" number="2" size="display-1" title="¿QUE NECESITAS CREAR?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio" />
+    <AppHeading class="mb-3" number="2" size="display-1" title="¿QUE NECESITAS CREAR?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio" />
     <AppServicesGrid color="#F29F01" class="mb-5"/>
     
     <AppHomeCreativeProccess title="¿CÓMO FUNCIONA?"/>
@@ -92,7 +92,7 @@
         </v-flex>
 
         <!-- TESTIMONIOS -->  
-        <AppTestimony width="xs12 offset-md1 md10" :list="testimonies" />
+        <AppTestimony width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
         <!-- <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
           <div>
@@ -144,12 +144,55 @@
         alt: 'Lorem ipsum',
         testimonies: [{
           stars: 5,
-          logo: '/images/pages/services-carousel/11.-Black-Bird.png',
-          description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+          logo: '/images/testimonies/home/hotel-aixo.jpg',
+          company: 'Hotel Aixo Suites',
+          description: '“La atención de Liderlogo ha sido excelente, lo recomiendo.”'
         }, {
           stars: 5,
-          logo: '/images/testimonies/papeleria.svg',
-          description: '“Ha sido excelente trabajar con ustedes”'
+          logo: '/images/testimonies/home/grupo-hivasa.jpg',
+          company: 'Grupo Hivasa',
+          description: '“Mi experiencia ha sido muy buena en general, tiempo, costos y respuesta.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/arlu.jpg',
+          company: 'Arlu',
+          description: '"Excelente en términos generales...Lo recomiendo ampliamente. Gracias a todo el equipo.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/policia-local-dalior.jpg',
+          company: 'Policía Dalaior',
+          description: '“Nuestra experiencia con Liderlogo ha sido muy satisfactoria y profesional.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/fauna-domestica.jpg',
+          company: 'Fauna Doméstica',
+          description: '“Profesionales al 100%, como siempre!”'
+        },
+        {
+          stars: 5,
+          logo: '/images/testimonies/home/finanpay.jpg',
+          company: 'Finanpay',
+          description: '“La atención recibida por parte de Liderlogo ha sido excelente. Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/rocabike.jpg',
+          company: 'Rocabike',
+          description: '“Para ser la primera vez que trabajo con Liderlogo y la experiencia ha resultado excelente.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/terra-agro.jpg',
+          company: 'Terra Agro',
+          description: '“Trabajar con Liderlogo ha sido una experiencia muy buena.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/rodriago.jpg',
+          company: 'Rodriago SRL Transporte Internacional',
+          description: '“Son muy dedicados y preocupados en cumplir su trabajo solicitado hasta el final.” '
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/home/bichitos.jpg',
+          company: 'Bichitos Kids',
+          description: '“Es la segunda vez que me hacen un logo y estoy super contenta.”'
         }]
       }
     },

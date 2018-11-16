@@ -1,9 +1,9 @@
 export const web = {
   startWith: true,
-  list: [`Diseño, maquetacion, programación y publicación de sitio web profesional autogestionable`, 'Registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
+  list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoría especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable'],
   title: 'SITIO WEB PROFESIONAL',
-  description: `Su empresa va a destacar por su imagen de calidad`,
-  shortDescription: `Su empresa va a destacar por su imagen de calidad`,
+  description: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,
+  shortDescription: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,
   icon: '/icons/sitio-web-profesional.svg',
   whatWeOffer: [
     {
@@ -165,21 +165,21 @@ export const web = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],

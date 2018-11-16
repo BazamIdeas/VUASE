@@ -39,9 +39,16 @@
 .subheading,
 .body-2,
 .body-1,
-.caption {
+.caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "montserrat" !important;
   color: #434343;
+  cursor: default;
 }
 
 .toasted.toast {
@@ -136,6 +143,9 @@ a {
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s;
+}
+.hidden-box h2{
+  cursor: default;
 }
 
 .hidden-box * {
