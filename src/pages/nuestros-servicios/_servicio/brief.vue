@@ -2,7 +2,6 @@
   <section class="brief">
     <v-container grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 class="my-4 py-4"></v-flex>
         <v-flex xs12 offset-md1 md10 style="position: relative">
           <h1 class="display-1 font-weight-bold mb-2">
             {{ stepData.title }} {{ stepData.number == 4 && brief.service ? ' - ' + brief.service.name : '' }}
@@ -32,21 +31,6 @@
         <v-btn color="primary" v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Continuar</v-btn>
         <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true">Continuar</v-btn>
         <v-btn color="primary" v-if="stepData.number == 5" @click="setPay">Pagar</v-btn>
-        <!--<v-dialog v-if="stepData.number === 5" v-model="pay" persistent max-width="50%">
-          <v-btn slot="activator" color="primary" dark>Pagar</v-btn>
-          <v-card>
-            <v-card-title class="headline font-weight-bold text-xs-center"><p style="width: 100%;">Métodos de pago</p></v-card-title>
-            <v-layout row wrap>
-              <v-flex v-for="gateway in gateways" :key="gateway.id" md4 class="text-xs-center"> 
-                <AppPaypal v-if="gateway.name === 'Paypal'" :gateway-id="gateway.id"/>
-              </v-flex>
-            </v-layout>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="red darken-1" flat @click.native="pay = false">Cancelar</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>-->
       </div>
     </v-toolbar>
   </section>
@@ -54,6 +38,7 @@
 
 <script>
   export default {
+    layout: 'blank',
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
       await store.dispatch('gateways/getAll')
@@ -67,7 +52,7 @@
         pay: false
       }
     },
-    async created () {
+    async mounted () {
       await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
       await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
     },
@@ -80,15 +65,17 @@
       brief () { return this.$store.state.brief.data },
       stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) },
       showBack () {
-        if (this.brief.service.slug.includes('logo')) {
-          if (this.stepData.prev) return true
-          else return false
-        } else {
-          if (this.stepData.prev) {
-            if (this.stepData.prev === 'disenos') return false
-            else return true
+        if (this.brief.service.slug) {
+          if (this.brief.service.slug.includes('logo')) {
+            if (this.stepData.prev) return true
+            else return false
           } else {
-            return false
+            if (this.stepData.prev) {
+              if (this.stepData.prev === 'disenos') return false
+              else return true
+            } else {
+              return false
+            }
           }
         }
       }
@@ -97,6 +84,7 @@
       async nextStep (pass) {
         await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](pass).number)
         this.$router.push('/nuestros-servicios/' + this.$store.state.brief.data.service.slug + '/brief/' + pass)
+        window.scrollTo(0, 0)
       },
       async submitBrief (data) {
         this.submit = false
@@ -118,7 +106,7 @@
 
         this.nextStep(this.stepData.next)
       },
-      setPay () { this.$store.commit('cart/SET_PAY') }
+      setPay () { this.$store.dispatch('cart/setPay') }
     }
   }
 </script>
@@ -126,9 +114,6 @@
 <style>
   .chat-cloud {
       bottom: 46px !important;
-  }
-  .brief + footer {
-    display: none;
   }
 </style>
 

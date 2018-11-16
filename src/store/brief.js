@@ -159,6 +159,17 @@ export const actions = {
     let brief = vueInstance.$storage.get('brief')
     let bodyFormData = new FormData()
 
+    bodyFormData.append('data', JSON.stringify(brief))
+
+    for (let key in brief.information) {
+      if (key.includes('files')) {
+        if (brief.information[key].value) {
+          bodyFormData.append('files', brief.information[key].value)
+        }
+      }
+    }
+
+    /*
     for (let color of brief.colors) {
       bodyFormData.append('data[colors][]', color)
     }
@@ -178,26 +189,31 @@ export const actions = {
     }
 
     for (let key in brief.information) {
-      bodyFormData.append('data[information][' + key + '][label]', brief.information[key]['label'])
-      // console.log(typeof brief.information[key]['value'])
-      bodyFormData.append('data[information][' + key + '][value]', brief.information[key]['value'])
+      if (key.includes('files')) {
+        bodyFormData.append('data[information][file][label]', brief.information[key]['label'])
+        bodyFormData.append('data[information][file][value]', brief.information[key]['value'])
+      } else {
+        bodyFormData.append('data[information][' + key + '][label]', brief.information[key]['label'])
+        bodyFormData.append('data[information][' + key + '][value]', brief.information[key]['value'])
+      }
     }
+    */
 
     let saveBrief
 
     try {
-      saveBrief = await this.$axios.$post('brief', bodyFormData, {
+      saveBrief = await this.$axios.$post('briefs', bodyFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': vueInstance.$storage.get('token_session')
         }
       })
     } catch (error) {
-      return true // false
+      return false
     }
 
     vueInstance.$storage.set('brief', saveBrief.data)
-    vueInstance.$storage.set('brief_key', saveBrief.coockie)
-    return false // true
+    vueInstance.$storage.set('brief_key', saveBrief.cookie)
+    return true
   }
 }

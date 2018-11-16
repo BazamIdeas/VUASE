@@ -5,12 +5,12 @@
         <v-layout row wrap class="services-grid">
           <v-flex xs12 md3 class="px-2 xs-no-border" style="border-left: 2px solid #cccccc; border-right: 2px solid #cccccc">
             <v-layout row wrap>
-              <v-flex @click="$router.push('/nuestros-servicios#servicios')"  md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
+              <v-flex @click="$router.push('/nuestros-servicios#servicios')" xs12  md12 class="pt-2 pb-3 service-icon-box" style="height: 200px; border-bottom: 2px solid #cccccc">
                 <img src="/icons/logo_a_medida.svg" class="out"  width="100" height="80" />
                 <img src="/icons/logo_a_medida_hover.svg" class="in"  width="100" height="80" />
                 <h1 class="text-uppercase font-weight-bold">LOGO</h1>
               </v-flex>
-              <v-flex @click="$router.push('/nuestros-servicios?tab=4#servicios')" md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
+              <v-flex @click="$router.push('/nuestros-servicios?tab=4#servicios')" xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
                 <img src="/icons/logo_predisenado.svg" class="out"  width="100" height="80" />
                 <img src="/icons/logo_predisenado_hover.svg" class="in"  width="100" height="80" />
                 <h1 class="text-uppercase font-weight-bold">Perfil Redes Sociales</h1>
@@ -51,8 +51,8 @@
             </v-layout>
           </v-flex>
           <v-flex>
-            <v-btn color="mt-5" to="/nuestros-servicios" class="elevation-0 white--text" :style="'background-color: ' + color">
-              Descubre todas las categorias de servicios
+            <v-btn color="mt-5" to="/nuestros-servicios" class="elevation-0 white--text" :style="'background-color: ' + color" style="line-height: 14px;" wrap>
+              Descubre todas las <br>categorias de servicios
             </v-btn>
           </v-flex>
         </v-layout>
@@ -128,7 +128,7 @@
   }
 
 
-  @media (min-width: 320px) and (max-width: 640px) {
+  @media (min-width: 320px) and (max-width: 960px) {
     .service-icon-box {
       border: none !important;
       height:  auto !important;
@@ -146,6 +146,18 @@
 
     .service-icon-box .out {
       display: none;
+    }
+
+    .services-grid > :nth-child(2).service-icon-box  .in {
+      display: initial !important;
+    }
+
+    .services-grid > :nth-child(2).service-icon-box  .out {
+      display: none !important;
+    }
+
+    .services-grid > :nth-child(2).service-icon-box  h1 {
+      color: #434343 !important;
     }
   }
 </style>

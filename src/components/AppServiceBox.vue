@@ -22,11 +22,11 @@
     </v-layout>
     <v-flex xs12 v-if="description" class="service-box-description">
       <br>
-      <p class="caption font-weight-medium">{{description}}</p>
+      <p class="body-2 font-weight-medium">{{description}}</p>
     </v-flex>
     <v-flex xs12 v-if="list && list.length > 0 && list[0] != ''" class="service-box-list">
       <ul :class="{ 'outstanding': outstanding }">
-        <li v-for="(item, i) in list" :key="i" class="my-3 caption font-weight-medium">{{item}}</li>
+        <li v-for="(item, i) in list" :key="i" class="my-3 body-2 font-weight-medium">{{item}}</li>
       </ul>
     </v-flex>
 

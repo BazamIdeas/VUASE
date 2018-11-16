@@ -165,6 +165,8 @@
       arrayPackages () { return Object.keys(this.packages) }
     }
   }
+
+  // 'quotePacksOptions'
 </script>
 
 <style>

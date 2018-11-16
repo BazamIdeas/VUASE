@@ -8,12 +8,9 @@
   }
 
   export default {
-    props: ['gatewayId', 'currency', 'amount', 'cart', 'order'],
+    props: ['gatewayId', 'currency', 'amount', 'cart', 'coupon'],
     mounted () {
-      console.log(this.cart)
-      console.log(this.order)
-
-      var vue = this
+      var vueInstance = this
       paypal.Button.render({
         // Configure environment
         env: 'sandbox',
@@ -32,23 +29,48 @@
           return actions.payment.create({
             transactions: [{
               amount: {
-                total: vue.amount,
-                currency: vue.currency
+                total: vueInstance.amount,
+                currency: vueInstance.currency.iso
               }
             }]
           })
         },
         // Execute the payment
         onAuthorize: function (data, actions) {
-          return actions.payment.get().then(function (paymentDetails) {
-            vue.$axios.$post('cart', {}).then(function (data) {
+          vueInstance.cart.currency = { id: vueInstance.currency.id }
+          vueInstance.$axios.$post('carts', vueInstance.cart).then(function (cart) {
+            vueInstance.$storage.set('cart', cart)
+            vueInstance.$storage.set('cart_key', cart.cookie)
 
+            let orderObject = {}
+            orderObject.payment = { id: data.paymentID, payer_id: data.payerID }
+            orderObject.order = {
+              brief_cookie: vueInstance.$storage.get('brief_key'),
+              gateways: { id: vueInstance.gatewayId }
+            }
+
+            if (vueInstance.coupon) {
+              orderObject.order.coupons = [{ id: vueInstance.coupon.id }]
+            }
+
+            vueInstance.$axios.$post('orders', orderObject, {
+              headers: {
+                'Cart-Id': cart.cookie,
+                'Authorization': vueInstance.$storage.get('token_session')
+              }
+            }).then(function (data) {
+              vueInstance.$router.push('/gracias')
             }).catch(function (error) {
-              if (error) { alert('error') }
-              alert(paymentDetails.id)
-              // guardar cart y order
-              vue.$router.push('/gracias')
+              if (error) {
+                alert('error')
+                vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 2')
+              }
             })
+          }).catch(function (error) {
+            if (error) {
+              alert('error')
+              vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 1')
+            }
           })
         }
       }, '#paypal-button')

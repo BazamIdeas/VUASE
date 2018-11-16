@@ -37,3 +37,5 @@ export { default as AppStylesForm } from './Forms/Brief/AppStylesForm.vue'
 // GATEWAYS
 
 export { default as AppPaypal } from './Gateways/AppPaypal.vue'
+export { default as AppStripe } from './Gateways/AppStripe.vue'
+export { default as AppBankTransfer } from './Gateways/AppBankTransfer.vue'
