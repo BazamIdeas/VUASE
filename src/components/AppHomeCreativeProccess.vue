@@ -1,7 +1,7 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container grid-list-md fluid class="pa-0 creative-process-home">
-        <v-flex xs12 class="mb-5">
+        <v-flex xs12 class="mb-3">
           <AppHeading number="2" size="display-1" subtitle="Simple, agil y profesional" :title="title" class="mb-3" />
         </v-flex>
         <v-layout class="content-pasos">

@@ -128,21 +128,21 @@ export const rVestimenta = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],

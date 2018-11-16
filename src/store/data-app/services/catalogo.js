@@ -45,7 +45,7 @@ export const catalogo = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+        description: `Descripción`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
@@ -158,21 +158,21 @@ export const catalogo = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],

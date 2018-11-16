@@ -7,9 +7,9 @@
         <span class="nav-item-label">{{link.title}}</span>
       </v-btn>
     </div>
-    <v-tooltip right color="white darken-3 light-green--text text--darken-2" class="hidden-md-and-down">
-      <v-btn target="_new" :href="'https://api.whatsapp.com/send?phone='+countryData.phone+'&text=Hola%20tengo%20una%20consulta'" slot="activator" fab dark small class="elevation-1 ws-float-btn">
-        <v-icon>fab fa-whatsapp</v-icon>
+    <v-tooltip right color="white darken-3 light-blue--text text--darken-2" class="hidden-md-and-down">
+      <v-btn :href="'tel:'+countryData.phone" slot="activator" fab light small class="elevation-1 ">
+        <v-icon>fa-phone-volume</v-icon>
       </v-btn>
       <span>{{ countryData.phone }}</span>
     </v-tooltip>

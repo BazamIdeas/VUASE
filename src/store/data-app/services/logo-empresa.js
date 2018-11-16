@@ -1,7 +1,7 @@
 export const logoEmpresa = {
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.'],
   title: 'LOGO',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Logo original de tu entera conformidad.`,
   shortDescription: `Logo original de tu entera conformidad.`,
   icon: '/icons/logo-a-medida.svg',
   whatWeOffer: [
@@ -107,29 +107,52 @@ export const logoEmpresa = {
       response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
     }
   ],
-  testimonies: [
-    {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Ha sido excelente trabajar con ustedes”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Profesionales, competentes, rápidos.!”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
-    }
-  ],
+  testimonies: [{
+    stars: 5,
+    logo: '/images/testimonies/logo/sanidae.jpg',
+    company: 'SANIDAE',
+    description: '“En nombre de nuestro equipo queremos agradeceros vuestro magnífico trabajo.Si seguís así seguro que se os augura un gran futuro profesional. Muy agradecido.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/hispanoamericana.jpg',
+    company: 'Hispanamericana',
+    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/malarrasa.jpg',
+    company: 'Malarrassa',
+    description: '“Hemos repetido con su empresa porque nos han presentados trabajos que realmente representan a las marcas y lo hacen de forma rápida, por lo que estamos muy contentos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/wellcan.jpg',
+    company: 'Wellcan',
+    description: '“Estoy muy contenta por la libertar y seguridad que da su trabajo por no tener límite en los bocetos ni en el tiempo para el desarrollo del diseño. Elegimos algo mejor de lo que buscábamos como idea previa.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/la-casa-de-ketty.jpg',
+    company: 'La Casa de Ketty',
+    description: '“Es el segundo diseño que realizo con ustedes, los volvería a elejir para nuevos proyectos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/amo.jpg',
+    company: 'Amo',
+    description: '“El proceso a sido muy rápido y con resultado esperado.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/camaleon.jpg',
+    company: 'Camaleón',
+    description: '“Hicimos muchos proyectos con su empresa, estamos contentos con los resultados.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/oceanrov.jpg',
+    company: 'OceanRov',
+    description: '“He quedado muy conforme porque el proceso ha sido muy efectivo; mejor servicio en menor tiempo. Las personas que ven nuestro logo quedan encantadas con el mismo. Pensaría en su empresa para realizar nuevos diseños.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/torneleria-madrilena.jpg',
+    company: 'Tonelería Madrileña',
+    description: '“Muy profesionales, competentes y rápidos.”'
+  }],
   topSlider: [
     {
       url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
@@ -175,21 +198,21 @@ export const logoEmpresa = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
