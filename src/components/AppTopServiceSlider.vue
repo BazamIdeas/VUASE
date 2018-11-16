@@ -11,7 +11,7 @@
             >
               <style>
                 .top-service-slider .v-carousel {
-                    min-height: {{service.topSliderHeight || '650px'}};
+                    min-height: {{service.topSliderHeight || '530px'}};
                     height: auto;
                 }
               </style>
