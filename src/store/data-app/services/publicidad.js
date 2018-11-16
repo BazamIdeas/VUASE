@@ -1,7 +1,7 @@
 export const publicidad = {
   title: 'PUBLICIDAD',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu publicidad listo para usar (editable e imágenes)'],
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Comunica tu negocio donde necesites y que tu negocio crezca`,
   shortDescription: `Comunica tu negocio donde necesites y que tu negocio crezca`,
   icon: '/icons/publicidad.svg',
   whatWeOffer: [
@@ -45,7 +45,7 @@ export const publicidad = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+        description: `Descripción`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
@@ -153,42 +153,33 @@ export const publicidad = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/50.-Asetys.jpg' },
-      { img: '/images/pages/services-carousel/57.-duarte.jpg' },
-      { img: '/images/pages/services-carousel/56.-compubot.jpg' },
-      { img: '/images/pages/services-carousel/54.-catálogo-compressor.jpg' },
-      { img: '/images/pages/services-carousel/52.-Formasystem-calidad-media.jpg' },
-      { img: '/images/pages/services-carousel/61.-darioFajardo-2.jpg' },
-      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/51.-Geotermia.png' },
-      { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
-      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
-      { img: '/images/pages/services-carousel/59.jpg' },
-      { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
-      { img: '/images/pages/services-carousel/63.-.jpg' }
+      { img: '/images/services-carousel/flyer/53.-slider-flyer-compressor -min.jpg' },
+      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' },
+      { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/grupo almansa - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/hnos duarte - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' }
     ]
   },
   packs: {

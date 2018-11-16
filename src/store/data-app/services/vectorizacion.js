@@ -1,7 +1,7 @@
 export const vectorizacion = {
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   title: 'VECTORIZACIÓN DE TU LOGO',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,
   shortDescription: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,
   icon: '/icons/vectorizacion.svg',
   whatWeOffer: [
@@ -133,62 +133,34 @@ export const vectorizacion = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/1.-New-Cool.png' },
-      { img: '/images/pages/services-carousel/2.-Chikas.png' },
-      { img: '/images/pages/services-carousel/3.-Family-TV.png' },
-      { img: '/images/pages/services-carousel/4.-Fauna-Domestica.png' },
-      { img: '/images/pages/services-carousel/5.-Stemmedic.png' },
-      { img: '/images/pages/services-carousel/6.-Antartik.png' },
-      { img: '/images/pages/services-carousel/7.-Arlu.png' },
-      { img: '/images/pages/services-carousel/8.-Aixo-Hotel-Suites.png' },
-      { img: '/images/pages/services-carousel/9.-food-chef.png' },
-      { img: '/images/pages/services-carousel/10.-y-si-me-toca-a-mi.png' },
-      { img: '/images/pages/services-carousel/11.-Black-Bird.png' },
-      { img: '/images/pages/services-carousel/12.-Paralelo-0.png' },
-      { img: '/images/pages/services-carousel/13.-Hostal-La-Colegiata.png' },
-      { img: '/images/pages/services-carousel/14.-Ingenium.png' },
-      { img: '/images/pages/services-carousel/15.-Hobbie.png' },
-      { img: '/images/pages/services-carousel/16.-Bricoaching.png' },
-      { img: '/images/pages/services-carousel/17.-Osmaservice.png' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/18.-La-Casa-de-Kett.png' },
-      { img: '/images/pages/services-carousel/19.-Avicola-Pungurume.png' },
-      { img: '/images/pages/services-carousel/20.Arquitectura-Sin-Limites.png' },
-      { img: '/images/pages/services-carousel/21.-Ares.png' },
-      { img: '/images/pages/services-carousel/22.-Geoit.png' },
-      { img: '/images/pages/services-carousel/23.-Lextres-abogados.png' },
-      { img: '/images/pages/services-carousel/24. Limpverd.png' },
-      { img: '/images/pages/services-carousel/24.-Avedrone.png' },
-      { img: '/images/pages/services-carousel/25.-Lormanic.png' },
-      { img: '/images/pages/services-carousel/26.Cielo.png' },
-      { img: '/images/pages/services-carousel/27.-Majavilitas.png' },
-      { img: '/images/pages/services-carousel/28.-Esparvel.png' },
-      { img: '/images/pages/services-carousel/29.-Orgui.png' },
-      { img: '/images/pages/services-carousel/30.-Nipponair.png' },
-      { img: '/images/pages/services-carousel/31. Dulces para Paula.png' },
-      { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
-      { img: '/images/pages/services-carousel/33.-Bellek.png' }
+      { img: '/images/services-carousel/vectorizacion/26.cielo.jpg' },
+      { img: '/images/services-carousel/vectorizacion/27.-majavilitas.jpg' },
+      { img: '/images/services-carousel/vectorizacion/28.-esparvel.jpg' },
+      { img: '/images/services-carousel/vectorizacion/29.-orgui.jpg' },
+      { img: '/images/services-carousel/vectorizacion/30.-nipponair.jpg' },
+      { img: '/images/services-carousel/vectorizacion/31. dulces para paula.jpg' },
+      { img: '/images/services-carousel/vectorizacion/32.-terra-agro.jpg' },
+      { img: '/images/services-carousel/vectorizacion/33.-bellek.jpg' }
     ]
   },
   packs: {

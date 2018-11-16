@@ -1,7 +1,7 @@
 export const rVestimenta = {
   list: ['Diseño corporativo de indumentaria', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Tu diseño listo para bordar imprimir'],
   title: 'ROTULO VESTIMENTA/UNIFORME ',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `La ropa de tu negocio que todos querran lucir.`,
   shortDescription: `La ropa de tu negocio que todos querran lucir.`,
   icon: '/icons/rotulo-vestimenta.svg',
   whatWeOffer: [
@@ -58,9 +58,30 @@ export const rVestimenta = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/rotulos/ejemplo-etiqueta-lormanic.jpg',
+    company: 'Lormanic',
+    description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/rotulos/ejemplo-rotulo-vehicular-geoit.jpg',
+    company: 'Geoit',
+    description: '“He quedado muy satisfecho con su trabajo, realmente diseñaron mi rótulo tal cual lo pedí y en los tiempos acordados; gracias por su profesionalismo y paciencia.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/rotulos/biokima - rotulo camioneta.jpg',
+    company: 'Biokima',
+    description: '“Perfecta experiencia, cumpliendo todas las expectativas.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/rotulos/selpak - rotulo etiqueta.jpg',
+    company: 'Selpak',
+    description: 'Tengo el agrado de decir que es una empresa seria y responsable. Me gustó mucho el trabajo (diseño) y la amabilidad de todos sus departamentos que me tocó dialogar. Estoy muy convencido de que la empresa se interesa para poder entregar un buen servicio. Aprovecho de felicitar a sus trabajadores por la dedicación a la empresa.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/rotulos/ejemplo-rotulo-local-liderplan.jpg',
+    company: 'Liderplan',
+    description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
   topSlider: [
     {
@@ -107,31 +128,43 @@ export const rVestimenta = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/34.-costaserveis_mock up.jpg' },
-      { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
-      { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
-      { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
-      { img: '/images/pages/services-carousel/38.-Sistema-Velites.png' }
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/aquafrost_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/bichitos kids - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/club nautico pontevedra - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/colchoneria el cairo-rotulo etiqueta 640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-etiqueta-lormanic.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-packaing-alimentos-congelados.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-rotulo-vestimenta-movil.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-vestimenta-super-foods-.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/el tirao - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ibinatural - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/instagram 640x640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/kafeslito - rotulo packaging.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maremma - rotulo packaging - tazas.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maxifood_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/natufree_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/puzzles - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/pym colorao - rotulo etiqueta.jpg' }
     ]
   },
   packs: {

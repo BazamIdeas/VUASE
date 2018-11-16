@@ -1,7 +1,7 @@
 export const logoEmpresa = {
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.'],
   title: 'LOGO',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Logo original de tu entera conformidad.`,
   shortDescription: `Logo original de tu entera conformidad.`,
   icon: '/icons/logo-a-medida.svg',
   whatWeOffer: [
@@ -107,29 +107,52 @@ export const logoEmpresa = {
       response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
     }
   ],
-  testimonies: [
-    {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Ha sido excelente trabajar con ustedes”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Profesionales, competentes, rápidos.!”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
-    }
-  ],
+  testimonies: [{
+    stars: 5,
+    logo: '/images/testimonies/logo/sanidae.jpg',
+    company: 'SANIDAE',
+    description: '“En nombre de nuestro equipo queremos agradeceros vuestro magnífico trabajo.Si seguís así seguro que se os augura un gran futuro profesional. Muy agradecido.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/hispanoamericana.jpg',
+    company: 'Hispanamericana',
+    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/malarrasa.jpg',
+    company: 'Malarrassa',
+    description: '“Hemos repetido con su empresa porque nos han presentados trabajos que realmente representan a las marcas y lo hacen de forma rápida, por lo que estamos muy contentos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/wellcan.jpg',
+    company: 'Wellcan',
+    description: '“Estoy muy contenta por la libertar y seguridad que da su trabajo por no tener límite en los bocetos ni en el tiempo para el desarrollo del diseño. Elegimos algo mejor de lo que buscábamos como idea previa.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/la-casa-de-ketty.jpg',
+    company: 'La Casa de Ketty',
+    description: '“Es el segundo diseño que realizo con ustedes, los volvería a elejir para nuevos proyectos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/amo.jpg',
+    company: 'Amo',
+    description: '“El proceso a sido muy rápido y con resultado esperado.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/camaleon.jpg',
+    company: 'Camaleón',
+    description: '“Hicimos muchos proyectos con su empresa, estamos contentos con los resultados.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/oceanrov.jpg',
+    company: 'OceanRov',
+    description: '“He quedado muy conforme porque el proceso ha sido muy efectivo; mejor servicio en menor tiempo. Las personas que ven nuestro logo quedan encantadas con el mismo. Pensaría en su empresa para realizar nuevos diseños.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/torneleria-madrilena.jpg',
+    company: 'Tonelería Madrileña',
+    description: '“Muy profesionales, competentes y rápidos.”'
+  }],
   topSlider: [
     {
       url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
@@ -175,62 +198,42 @@ export const logoEmpresa = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/1.-New-Cool.png' },
-      { img: '/images/pages/services-carousel/2.-Chikas.png' },
-      { img: '/images/pages/services-carousel/3.-Family-TV.png' },
-      { img: '/images/pages/services-carousel/4.-Fauna-Domestica.png' },
-      { img: '/images/pages/services-carousel/5.-Stemmedic.png' },
-      { img: '/images/pages/services-carousel/6.-Antartik.png' },
-      { img: '/images/pages/services-carousel/7.-Arlu.png' },
-      { img: '/images/pages/services-carousel/8.-Aixo-Hotel-Suites.png' },
-      { img: '/images/pages/services-carousel/9.-food-chef.png' },
-      { img: '/images/pages/services-carousel/10.-y-si-me-toca-a-mi.png' },
-      { img: '/images/pages/services-carousel/11.-Black-Bird.png' },
-      { img: '/images/pages/services-carousel/12.-Paralelo-0.png' },
-      { img: '/images/pages/services-carousel/13.-Hostal-La-Colegiata.png' },
-      { img: '/images/pages/services-carousel/14.-Ingenium.png' },
-      { img: '/images/pages/services-carousel/15.-Hobbie.png' },
-      { img: '/images/pages/services-carousel/16.-Bricoaching.png' },
-      { img: '/images/pages/services-carousel/17.-Osmaservice.png' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/18.-La-Casa-de-Kett.png' },
-      { img: '/images/pages/services-carousel/19.-Avicola-Pungurume.png' },
-      { img: '/images/pages/services-carousel/20.Arquitectura-Sin-Limites.png' },
-      { img: '/images/pages/services-carousel/21.-Ares.png' },
-      { img: '/images/pages/services-carousel/22.-Geoit.png' },
-      { img: '/images/pages/services-carousel/23.-Lextres-abogados.png' },
-      { img: '/images/pages/services-carousel/24. Limpverd.png' },
-      { img: '/images/pages/services-carousel/24.-Avedrone.png' },
-      { img: '/images/pages/services-carousel/25.-Lormanic.png' },
-      { img: '/images/pages/services-carousel/26.Cielo.png' },
-      { img: '/images/pages/services-carousel/27.-Majavilitas.png' },
-      { img: '/images/pages/services-carousel/28.-Esparvel.png' },
-      { img: '/images/pages/services-carousel/29.-Orgui.png' },
-      { img: '/images/pages/services-carousel/30.-Nipponair.png' },
-      { img: '/images/pages/services-carousel/31. Dulces para Paula.png' },
-      { img: '/images/pages/services-carousel/32.-Terra-Agro.png' },
-      { img: '/images/pages/services-carousel/33.-Bellek.png' }
+      { img: '/images/services-carousel/logo/1.-New-Cool.png' },
+      { img: '/images/services-carousel/logo/2.-Chikas.png' },
+      { img: '/images/services-carousel/logo/3.-Family-TV.png' },
+      { img: '/images/services-carousel/logo/4.-Fauna-Domestica.png' },
+      { img: '/images/services-carousel/logo/5.-Stemmedic.png' },
+      { img: '/images/services-carousel/logo/6.-Antartik.png' },
+      { img: '/images/services-carousel/logo/7.-Arlu.png' },
+      { img: '/images/services-carousel/logo/8.-Aixo-Hotel-Suites.png' },
+      { img: '/images/services-carousel/logo/9.-food-chef.png' },
+      { img: '/images/services-carousel/logo/10.-y-si-me-toca-a-mi.png' },
+      { img: '/images/services-carousel/logo/11.-Black-Bird.png' },
+      { img: '/images/services-carousel/logo/12.-Paralelo-0.png' },
+      { img: '/images/services-carousel/logo/13.-Hostal-La-Colegiata.png' },
+      { img: '/images/services-carousel/logo/14.-Ingenium.png' },
+      { img: '/images/services-carousel/logo/15.-Hobbie.png' },
+      { img: '/images/services-carousel/logo/16.-Bricoaching.png' }
     ]
   },
   packs: {

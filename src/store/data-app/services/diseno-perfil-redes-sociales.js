@@ -1,34 +1,34 @@
 export const redesSociales = {
   list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
   title: 'PERFILES DE REDES SOCIALES',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Portadas y avatars para destacar tu marca en.`,
   shortDescription: `Portadas y avatars para destacar tu marca en.`,
   icon: '/icons/perfiles-redes-sociales.svg',
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Creaciones a medida, únicas y de calidad',
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Tu proyecto en manos de expertos especializados',
+      icon: '/icons/equipo-interidisciplinario.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/un-dia-para-el-otro.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
+      icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/propuestas-ilimitadas.svg'
     }
   ],
   whatYouGet: {
@@ -108,9 +108,25 @@ export const redesSociales = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/mabisat.jpg',
+    company: 'Mabisat',
+    description: '“Nos ha gustado el trato personal cualificado, la rapidez de los diseños y la calidad de éstos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/el-arenon.jpg',
+    company: 'Granja El Arenón',
+    description: '“Muy buena experiencia. Seguro que realizo más trabajos con vosotros, entendéis lo que el cliente busca.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/lagrap.jpg',
+    company: 'Lagrap',
+    description: '“Magnifica experiencia, super recomendables y espero hacer muchos proyectos con ustedes.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/nueva-europa.jpg',
+    company: 'Nueva Europa',
+    description: '“Trato muy cercano, fácil y rápido.”'
   }],
   topSlider: [
     {
@@ -157,53 +173,42 @@ export const redesSociales = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
-    ],
-    items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/services-carousel/perfil-redes/admin prime - linkedin.jpg' },
+      { img: '/images/services-carousel/perfil-redes/alpha circus - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/arlu - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/bonorum 36 - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/casalia - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ecomercado el bierzo - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ecoshine - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/estudios bowen - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/finanpay - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/geotermia vertical - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/my friend padellys - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ovisan - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/rentum realty - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/tic tac vintage - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/tradox mediterranea.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ven y veras - facebook.jpg' }
     ]
   }
 }

@@ -1,9 +1,9 @@
 export const web = {
   startWith: true,
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoría especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable'],
   title: 'SITIO WEB PROFESIONAL',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+  description: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,
+  shortDescription: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,
   icon: '/icons/sitio-web-profesional.svg',
   whatWeOffer: [
     {
@@ -109,9 +109,20 @@ export const web = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: '/icons/papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/web/arquitectura.jpg',
+    company: 'Arquitectura Sin Límites',
+    description: '“Nuestra experiencia fue excelente!”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/web/fauna.jpg',
+    company: 'Fauna Doméstica',
+    description: '“Profesionales 100%, como siempre.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/web/proyecta.jpg',
+    company: 'Proyecta Telecom',
+    description: '“La atención personalizada por parte del equipo ha sido muy buena, así como la implicación en el proyecto.”'
   }],
   topSlider: [
     {
@@ -154,21 +165,21 @@ export const web = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],

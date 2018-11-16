@@ -1,7 +1,7 @@
 export const imagenCorporativa = {
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tasas, etiquetas y mucho mas (elija entre 65 piezas)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube', 'Elige 6 piezas entre 65 opciones', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel+diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
   shortDescription: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel+diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
   icon: '/icons/pack-identidad.svg',
   whatWeOffer: [
@@ -127,9 +127,25 @@ export const imagenCorporativa = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/baliguors.jpg',
+    company: 'Baliquors',
+    description: '“Excelente trabajo el de Liderlogo. Comprendieron rápidamente lo que estábamos buscando. Proceso sencillo, expeditivo y eficiente. Muchas gracias!”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/cita-cafe.jpg',
+    company: 'Citta Café',
+    description: '“La imagen cumplió con las características que amerita nuestro negocio y superó nuestras expectativas.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/seteg.jpg',
+    company: 'Seteg',
+    description: '“He tenido muy buena experiencia con Liderlogo. La relación calidad-precio es excelente. Trato personalizado, profesionalidad total.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/finanpay.jpg',
+    company: 'Finanpay',
+    description: '“Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
   }],
   topSliderHeight: '770px',
   topSlider: [
@@ -173,38 +189,43 @@ export const imagenCorporativa = {
       title: '1. BRIEF Y SELECTOR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'brief-y-selector'
     },
     {
       title: '2. CONCEPTOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'conceptos'
     },
     {
       title: '3. ENTREGA Y DOCUMENTACIÓN',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis diam ut dui commodo finibus. Sed at metus condimentum, mollis justo eget, venenatis metus. In eu mi fringilla, pharetra purus ac, venenatis nisi. ',
+      description: 'Descripcion',
       alt: 'entrega-y-documentacion'
     }
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/46.-mock up 2px.jpg' },
-      { img: '/images/pages/services-carousel/45.-Dulce-detalles-2.png' },
-      { img: '/images/pages/services-carousel/42.-Areté Ingeniería 3.jpg' },
-      { img: '/images/pages/services-carousel/39.jpg' },
-      { img: '/images/pages/services-carousel/47.-mock up 3 berenguel.jpg' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/44.-Comercial Andres Mock up 2.jpg' },
-      { img: '/images/pages/services-carousel/43.-Arq. sin limites mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/41.-Aquafrost Mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/48.-Mock up 3 Gloss.jpg' },
-      { img: '/images/pages/services-carousel/40.jpg' }
+      { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
+      { img: '/images/services-carousel/pack-identidad/ies puertas del campo instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/maese.jpg' },
+      { img: '/images/services-carousel/pack-identidad/maese-2.jpg' },
+      { img: '/images/services-carousel/pack-identidad/presentación de power point.jpg' },
+      { img: '/images/services-carousel/pack-identidad/prounit carpeta.jpg' },
+      { img: '/images/services-carousel/pack-identidad/prounit notas.jpg' },
+      { img: '/images/services-carousel/pack-identidad/prounit paraguas.jpg' },
+      { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },
+      { img: '/images/services-carousel/pack-identidad/surtel.jpg' },
+      { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
+      { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
+      { img: '/images/services-carousel/pack-identidad/terra-agro-2.jpg' },
+      { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/vincit.jpg' },
+      { img: '/images/services-carousel/pack-identidad/vincit-2.jpg' }
     ]
   },
   packs: {
