@@ -52,7 +52,8 @@ module.exports = {
     { src: '~/plugins/vue-cookies.js', ssr: false },
     { src: '~/plugins/vue2-storage.js', ssr: false },
     { src: '~/plugins/axios.js', ssr: true },
-    { src: '~/plugins/components.js', ssr: true }
+    { src: '~/plugins/components.js', ssr: true },
+    { src: '~/plugins/vue-stripe-checkout.js', ssr: false }
   ],
   css: [
     '~/assets/style/app.styl',
@@ -97,7 +98,8 @@ module.exports = {
       '~/plugins/vue-cookies.js',
       '~/plugins/axios.js',
       '~/plugins/components.js',
-      'paypal-checkout'
+      'paypal-checkout',
+      '~/plugins/vue-stripe-checkout.js'
     ],
     extractCSS: true,
     /*

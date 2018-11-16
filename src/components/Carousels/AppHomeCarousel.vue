@@ -1,23 +1,5 @@
 <template>
-  <!-- theme 1 -->
-  <v-carousel :interval="interval" hide-controls class="main-carousel theme1" v-if="theme == '1'">
-    <v-carousel-item transition="none" reverse-transition="none">
-      <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-1">
-          <h1>CREATIVIDAD Y TALENTO PARA PRESENTAR TU NEGOCIO</h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-1">
-          <h2>Creatividad y talento para potenciar tu negocio. <br> Obten un diseño que amaras por ser capaz de todo. Diseños profesionales, a tu medida, ilimitados y hasta tu
-          completa conformidad.</h2>
-        </div>
-        <div class="layer" id="hc-layer-3-item-1">
-            <v-img class="animate-img" src="images/carousels/home1.png"></v-img>
-        </div>
-      </div>
-    </v-carousel-item>
-  </v-carousel>
 
-  <!-- theme 2 -->
   <v-carousel :interval="interval" hide-controls class="main-carousel theme2" v-else-if="theme == '2'">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
@@ -141,45 +123,6 @@
 
 
   @media (min-width: 320px) and (max-width: 480px) {
-    /*ITEM-1*/
-    .theme1 div#hc-layer-1-item-1 {
-      font-size: 28px;
-      line-height: 39px;
-      top: 60%;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-2-item-1 {
-      font-size: 17px;
-      top: 80%;
-      line-height: 28px;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-3-item-1 {
-      width: 100%;
-      top: 17%;
-    }
-    /*ITEM-2*/
-    .theme1 div#hc-layer-1-item-2 {
-      font-size: 28px;
-      line-height: 39px;
-      top: 60%;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      top: 80%;
-      line-height: 28px;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-3-item-2 {
-      width: 100%;
-      left: -16%;
-      top: 17%;
-    }
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
@@ -210,7 +153,7 @@
 
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
-      font-size: 18px;
+      font-size: 15px;
       width: 100%;
       margin-top: 20px;
       line-height: 30px;
@@ -255,45 +198,6 @@
   }
 
   @media (min-width: 481px) and (max-width: 639px) {
-    /*ITEM-1*/
-    .theme1 div#hc-layer-1-item-1 {
-      font-size: 28px;
-      line-height: 39px;
-      top: 60%;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-2-item-1 {
-      font-size: 17px;
-      top: 80%;
-      line-height: 28px;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-3-item-1 {
-      width: 100%;
-      top: 17%;
-    }
-    /*ITEM-2*/
-    .theme1 div#hc-layer-1-item-2 {
-      font-size: 28px;
-      line-height: 39px;
-      top: 60%;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      top: 80%;
-      line-height: 28px;
-      text-align: center;
-    }
-
-    .theme1 div#hc-layer-3-item-2 {
-      width: 100%;
-      left: -16%;
-      top: 17%;
-    }
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
@@ -374,10 +278,9 @@
 
   @media (min-width: 640px) and (max-width: 960px) {
 
-    /* theme 2 */
-    .theme2.v-carousel.main-carousel {
-        height: auto;
-        min-height: 60vw;
+    .v-carousel.main-carousel {
+        height: 100vh;
+        min-height: 500px;
     }
 
     .theme2 .layers-container {
@@ -400,7 +303,7 @@
 
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
-      font-size: 28px;
+      font-size: 18px;
       width: 100%;
       margin-top: 20px;
       line-height: 41px;
@@ -507,29 +410,6 @@
         display: none;
     }
 
-    /*ITEM-2*/
-    .theme1 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 16%;
-    }
-
-    .theme1 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 16%;
-      line-height: 28px;
-    }
-
-    .theme1 div#hc-layer-3-item-2 {
-      width: 55%;
-      left: 30.5%;
-      top: 4%;
-    }
-
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
@@ -602,52 +482,6 @@
   }
 
   @media (min-width: 1264px) and (max-width: 1904px) {
-    /*ITEM-1*/
-    .theme1 div#hc-layer-1-item-1 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 16%;
-    }
-
-    .theme1 div#hc-layer-2-item-1 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 16%;
-      line-height: 28px;
-    }
-
-    .theme1 div#hc-layer-3-item-1 {
-      width: 49%;
-      left: 45.3%;
-      top: 13%;
-    }
-
-    /*ITEM-2*/
-    .theme1 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 16%;
-    }
-
-    .theme1 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 16%;
-      line-height: 28px;
-    }
-
-    .theme1 div#hc-layer-3-item-2 {
-      width: 55%;
-      left: 30.5%;
-      top: 4%;
-    }
-
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
@@ -720,51 +554,6 @@
   }
 
   @media (min-width: 1904px) {
-    /*ITEM-1*/
-    .theme1 div#hc-layer-1-item-1 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 16%;
-    }
-
-    .theme1 div#hc-layer-2-item-1 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 16%;
-      line-height: 28px;
-    }
-
-    .theme1 div#hc-layer-3-item-1 {
-      width: 49%;
-      left: 45.3%;
-      top: 13%;
-    }
-
-    /*ITEM-2*/
-    .theme1 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 16%;
-    }
-
-    .theme1 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 16%;
-      line-height: 28px;
-    }
-
-    .theme1 div#hc-layer-3-item-2 {
-      width: 55%;
-      left: 30.5%;
-      top: 4%;
-    }
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
