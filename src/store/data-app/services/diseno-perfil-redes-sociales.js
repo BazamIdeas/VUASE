@@ -193,33 +193,22 @@ export const redesSociales = {
   ],
   carousel: {
     items1: [
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' },
-      { img: '/images/examples/2.png' },
-      { img: '/images/examples/3.png' },
-      { img: '/images/examples/4.png' },
-      { img: '/images/examples/1.png' }
-    ],
-    items2: [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
+      { img: '/images/services-carousel/perfil-redes/admin prime - linkedin.jpg' },
+      { img: '/images/services-carousel/perfil-redes/alpha circus - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/arlu - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/bonorum 36 - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/casalia - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ecomercado el bierzo - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ecoshine - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/estudios bowen - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/finanpay - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/geotermia vertical - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/my friend padellys - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ovisan - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/rentum realty - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/tic tac vintage - facebook.jpg' },
+      { img: '/images/services-carousel/perfil-redes/tradox mediterranea.jpg' },
+      { img: '/images/services-carousel/perfil-redes/ven y veras - facebook.jpg' }
     ]
   }
 }

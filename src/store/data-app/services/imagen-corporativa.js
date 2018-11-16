@@ -209,18 +209,23 @@ export const imagenCorporativa = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/46.-mock up 2px.jpg' },
-      { img: '/images/pages/services-carousel/45.-Dulce-detalles-2.png' },
-      { img: '/images/pages/services-carousel/42.-Areté Ingeniería 3.jpg' },
-      { img: '/images/pages/services-carousel/39.jpg' },
-      { img: '/images/pages/services-carousel/47.-mock up 3 berenguel.jpg' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/44.-Comercial Andres Mock up 2.jpg' },
-      { img: '/images/pages/services-carousel/43.-Arq. sin limites mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/41.-Aquafrost Mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/48.-Mock up 3 Gloss.jpg' },
-      { img: '/images/pages/services-carousel/40.jpg' }
+      { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
+      { img: '/images/services-carousel/pack-identidad/ies puertas del campo instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/maese.jpg' },
+      { img: '/images/services-carousel/pack-identidad/maese-2.jpg' },
+      { img: '/images/services-carousel/pack-identidad/presentación de power point.jpg' },
+      { img: '/images/services-carousel/pack-identidad/prounit carpeta.jpg' },
+      { img: '/images/services-carousel/pack-identidad/prounit notas.jpg' },
+      { img: '/images/services-carousel/pack-identidad/prounit paraguas.jpg' },
+      { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },
+      { img: '/images/services-carousel/pack-identidad/surtel.jpg' },
+      { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
+      { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
+      { img: '/images/services-carousel/pack-identidad/terra-agro-2.jpg' },
+      { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/vincit.jpg' },
+      { img: '/images/services-carousel/pack-identidad/vincit-2.jpg' }
     ]
   },
   packs: {

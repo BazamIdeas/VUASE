@@ -148,11 +148,23 @@ export const rVestimenta = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/34.-costaserveis_mock up.jpg' },
-      { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
-      { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
-      { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
-      { img: '/images/pages/services-carousel/38.-Sistema-Velites.png' }
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/aquafrost_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/bichitos kids - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/club nautico pontevedra - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/colchoneria el cairo-rotulo etiqueta 640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-etiqueta-lormanic.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-packaing-alimentos-congelados.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-rotulo-vestimenta-movil.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-vestimenta-super-foods-.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/el tirao - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ibinatural - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/instagram 640x640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/kafeslito - rotulo packaging.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maremma - rotulo packaging - tazas.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maxifood_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/natufree_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/puzzles - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/pym colorao - rotulo etiqueta.jpg' }
     ]
   },
   packs: {

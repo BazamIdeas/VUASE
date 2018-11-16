@@ -178,22 +178,13 @@ export const flyerDosCaras = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/50.-Asetys.jpg' },
-      { img: '/images/pages/services-carousel/57.-duarte.jpg' },
-      { img: '/images/pages/services-carousel/56.-compubot.jpg' },
-      { img: '/images/pages/services-carousel/54.-catálogo-compressor.jpg' },
-      { img: '/images/pages/services-carousel/52.-Formasystem-calidad-media.jpg' },
-      { img: '/images/pages/services-carousel/61.-darioFajardo-2.jpg' },
-      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/51.-Geotermia.png' },
-      { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
-      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
-      { img: '/images/pages/services-carousel/59.jpg' },
-      { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
-      { img: '/images/pages/services-carousel/63.-.jpg' }
+      { img: '/images/services-carousel/flyer/53.-slider-flyer-compressor -min.jpg' },
+      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' },
+      { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/grupo almansa - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/hnos duarte - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' }
     ]
   },
   packs: {

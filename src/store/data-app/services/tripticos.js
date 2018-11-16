@@ -178,22 +178,21 @@ export const tripticos = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/50.-Asetys.jpg' },
-      { img: '/images/pages/services-carousel/57.-duarte.jpg' },
-      { img: '/images/pages/services-carousel/56.-compubot.jpg' },
-      { img: '/images/pages/services-carousel/54.-catálogo-compressor.jpg' },
-      { img: '/images/pages/services-carousel/52.-Formasystem-calidad-media.jpg' },
-      { img: '/images/pages/services-carousel/61.-darioFajardo-2.jpg' },
-      { img: '/images/pages/services-carousel/62.-Mock up Stemmedic 2.jpg' }
-    ],
-    items2: [
-      { img: '/images/pages/services-carousel/51.-Geotermia.png' },
-      { img: '/images/pages/services-carousel/58.-Mock up 3.jpg' },
-      { img: '/images/pages/services-carousel/53.-Slider-Flyer-compressor.png' },
-      { img: '/images/pages/services-carousel/55.-Slider-diptico-compressor.png' },
-      { img: '/images/pages/services-carousel/59.jpg' },
-      { img: '/images/pages/services-carousel/60.-Mock up 1.jpg' },
-      { img: '/images/pages/services-carousel/63.-.jpg' }
+      { img: '/images/services-carousel/folletos/55.-slider-diptico-compressor.jpg' },
+      { img: '/images/services-carousel/folletos/american flipouts diner - diptico.jpg' },
+      { img: '/images/services-carousel/folletos/vintia - triptico.jpg' },
+      { img: '/images/services-carousel/folletos/corpeluva - triptico.jpg' },
+      { img: '/images/services-carousel/folletos/50.-asetys.jpg' },
+      { img: '/images/services-carousel/folletos/51.-geotermia.jpg' },
+      { img: '/images/services-carousel/folletos/52.-formasystem-calidad-media.jpg' },
+      { img: '/images/services-carousel/folletos/54.-catalogo-compressor.jpg' },
+      { img: '/images/services-carousel/folletos/61.-dariofajardo-2' },
+      { img: '/images/services-carousel/folletos/ahl - folleto.jpg' },
+      { img: '/images/services-carousel/folletos/castadon - folleto.jpg' },
+      { img: '/images/services-carousel/folletos/recfer - folleto.jpg' },
+      { img: '/images/services-carousel/folletos/sergio hedrera - folletos.jpg' },
+      { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' },
+      { img: '/images/services-carousel/folletos/talawin - catalogo.jpg' }
     ]
   },
   packs: {
