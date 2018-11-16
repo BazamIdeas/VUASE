@@ -8,14 +8,13 @@ async function getAllCountries ($axios) {
     countries = await $axios.get('countries')
   } catch (error) {
     console.log(error)
-    return
   }
 
   countries.data.forEach(c => {
     countriesObj[c.iso] = c
   })
 
-  // console.log(countriesObj)
+  console.log(countriesObj)
 }
 
 export default async function ({ $axios, req }) {

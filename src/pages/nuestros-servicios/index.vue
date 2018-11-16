@@ -32,11 +32,11 @@
           <v-layout xs12 md6 align-center justify-center row class="container-carousel mt-0">
               <v-flex xs12 style="height: 100%;" v-if="layout.carousel" >
                 <v-carousel 
-                  interval="8000" 
+                  :interval="'3000'" 
                   hide-controls hide-delimiters 
                   style="height: 100%; width:100%;">
-                  <v-carousel-item v-for="(item, i) in layout.carousel" :key="i" :transition="'slide-x-transition'">
-                    <img :src="item.src" style=" width:90%; height:100%; display: block; margin: auto;"/>
+                  <v-carousel-item v-for="(item, i) in layout.carousel" :key="i"   :transition="'slide-x-transition'">
+                    <svg class="img-cuadrada" viewBox="0 0 100 100 " :style="'background: url(' +item.src+')'"></svg>
                   </v-carousel-item>
                 </v-carousel>
               </v-flex>
@@ -99,5 +99,12 @@
 
   .container-carousel{
     height: 420px;
+  }
+
+  .img-cuadrada {
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    max-height: 100%;
   }
 </style>

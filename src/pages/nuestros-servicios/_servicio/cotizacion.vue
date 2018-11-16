@@ -116,25 +116,25 @@
             title: 'Exhibir un menú de platos / comidas',
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
             sections: 3,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo']
           },
           'mostrar-un-catalogo-de-productos': {
             title: 'Mostrar un catálogo de productos',
             description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo']
           },
           'vender-mis-productos-online': {
             title: 'Vender mis productos online',
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos(Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo', 'ecommerce', 'chat']
           },
           'compartir-informacion': {
             title: 'Compartir informacion y archivos con mis clientes',
             description: 'Es la opción ideal para vender en línea.',
             sections: 2,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo', 'ecommerce', 'chat']
           }
         },
         servicesQuote: [
@@ -151,13 +151,12 @@
           { slug: 'plataforma-inmobiliaria', selected: false, section: 'functionalities' },
           { slug: 'formulario-personalizado', selected: false, section: 'functionalities' },
           { slug: 'reservaciones-o-citas', selected: false, section: 'functionalities' },
-          { slug: 'area-para-la-gestion-de-archivos', selected: false, section: 'functionalities' },
+          { slug: 'area-para-la-gestión-de-archivos', selected: false, section: 'functionalities' },
           { slug: 'seccion-de-noticias-o-publicaciones', selected: false, section: 'functionalities' },
           { slug: 'integracion-con-herramientas-de-google', selected: false, section: 'functionalities' },
           { slug: 'ecommerce', selected: false, section: 'functionalities' },
-          { slug: 'catalogo-productos', selected: false, section: 'functionalities' },
-          { slug: 'galeria-de-proyectos', selected: false, section: 'functionalities' },
-          { slug: 'logo-solo-para-web', selected: false, section: 'details' }
+          { slug: 'catalogo', selected: false, section: 'functionalities' },
+          { slug: 'galeria-de-proyectos', selected: false, section: 'functionalities' }
         ]
       }
     },

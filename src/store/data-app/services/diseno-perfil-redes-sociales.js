@@ -1,7 +1,7 @@
 export const redesSociales = {
   list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
   title: 'PERFILES DE REDES SOCIALES',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
+  description: `Portadas y avatars para destacar tu marca en.`,
   shortDescription: `Portadas y avatars para destacar tu marca en.`,
   icon: '/icons/perfiles-redes-sociales.svg',
   whatWeOffer: [
@@ -108,9 +108,25 @@ export const redesSociales = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/mabisat.jpg',
+    company: 'Mabisat',
+    description: '“Nos ha gustado el trato personal cualificado, la rapidez de los diseños y la calidad de éstos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/el-arenon.jpg',
+    company: 'Granja El Arenón',
+    description: '“Muy buena experiencia. Seguro que realizo más trabajos con vosotros, entendéis lo que el cliente busca.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/lagrap.jpg',
+    company: 'Lagrap',
+    description: '“Magnifica experiencia, super recomendables y espero hacer muchos proyectos con ustedes.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/perfil-redes/nueva-europa.jpg',
+    company: 'Nueva Europa',
+    description: '“Trato muy cercano, fácil y rápido.”'
   }],
   topSlider: [
     {

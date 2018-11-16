@@ -1,118 +1,70 @@
 export const state = () => ({
   list: [],
   indexExamples: [
-    [
-      {
-        img: '/images/examples/1.png',
-        icon: '/icons/white/app.svg',
-        service: 'App Movil',
-        url: 'diseno-de-app',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/2.png',
-        icon: '/icons/white/pack-identidad.svg',
-        service: 'Imagen Corporativa',
-        url: 'imagen-corporativa',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/3.png',
-        icon: '/icons/white/app.svg',
-        service: 'App Movil',
-        url: 'diseno-de-app',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/4.png',
-        icon: '/icons/white/catalogo.svg',
-        service: 'Catálogo',
-        url: 'catalogo',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/1.png',
-        icon: '/icons/white/diptico.svg',
-        service: 'Diptico',
-        url: 'diptico',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/2.png',
-        icon: '/icons/white/flyer.svg',
-        service: 'Flyer',
-        url: 'Flyer',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/3.png',
-        icon: '/icons/white/logo-a-medida.svg',
-        service: 'Logo a medida',
-        url: 'logo-empresa',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/4.png',
-        icon: '/icons/white/logo-y-web.svg',
-        service: 'Logo y sitio web',
-        url: 'diseno-logo-y-pagina-web',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/1.png',
-        icon: '/icons/white/vectorizacion.svg',
-        service: 'Vectorización',
-        url: 'vectorizacion',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/2.png',
-        icon: '/icons/white/perfil-red.svg',
-        service: 'Perfil Red',
-        url: 'diseno-perfil-redes-sociales',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/3.png',
-        icon: '/icons/white/publicidad.svg',
-        service: 'Publicidad',
-        url: 'publicidad',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      },
-      {
-        img: '/images/examples/4.png',
-        icon: '/icons/white/app.svg',
-        service: 'App Movil',
-        url: 'diseno-de-app',
-        color: 'rgba(222, 58, 58, 0.80)',
-        textColor: 'white'
-      }
-    ],
-    [
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' },
-      { img: '/images/examples/5.png' },
-      { img: '/images/examples/6.png' },
-      { img: '/images/examples/7.png' },
-      { img: '/images/examples/8.png' }
-    ]
+    {
+      img: '/images/services-carousel/home/1-logo.jpg',
+      icon: '/icons/white/app.svg',
+      service: 'Logo',
+      url: 'diseno-de-logo',
+      color: 'rgba(252, 210, 12, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/2-imagen-corporativa.jpg',
+      icon: '/icons/white/pack-identidad.svg',
+      service: 'Imagen Corporativa',
+      url: 'imagen-corporativa',
+      color: 'rgba(196, 149, 31, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/3-logo-web.jpg',
+      icon: '/icons/white/logo-y-web.svg',
+      service: 'LOGO + WEB',
+      url: 'diseno-de-app',
+      color: 'rgba(241, 145, 42, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/4-rediseno-logo.jpg',
+      icon: '/icons/white/catalogo.svg',
+      service: 'Rediseño de logo',
+      url: 'rediseno-de-logo',
+      color: 'rgba(222, 58, 58, 0.80)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/5-web-app.jpg',
+      icon: '/icons/white/web-y-app.svg',
+      service: 'WEB + APP',
+      url: 'diptico',
+      color: 'rgba(7, 122, 53, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/6-rotulos.jpg',
+      icon: '/icons/white/rotulo.svg',
+      service: 'Rotulos',
+      url: 'rotulo-banner',
+      color: 'rgba(7, 122, 53, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/7-folletos.jpg',
+      icon: '/icons/white/logo-a-medida.svg',
+      service: 'Folletos',
+      url: 'flyer',
+      color: 'rgba(35, 30, 26, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/8-etiquetas-packaging.jpg',
+      icon: '/icons/white/logo-y-web.svg',
+      service: 'Etiqueta packaging',
+      url: 'packaging',
+      color: 'rgba(16, 23, 41, .8)',
+      textColor: 'white'
+    }
   ]
 })
 

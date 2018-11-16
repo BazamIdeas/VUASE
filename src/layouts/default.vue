@@ -44,6 +44,7 @@
     position: fixed;
     bottom: -15px;
     left: 90%;
+    z-index: 999;
   }
 
   .v-carousel.rating-user, .v-carousel.profesional-services-slider {

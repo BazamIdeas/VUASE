@@ -24,6 +24,7 @@ export { default as AppCreativeProccess } from './AppCreativeProccess.vue'
 // FORMS
 export { default as AppContactForm } from './Forms/AppContactForm.vue'
 export { default as AppFilterExamplesForm } from './Forms/AppFilterExamplesForm.vue'
+export { default as AppNewsletterForm } from './Forms/AppNewsletterForm.vue'
 
 // FORMS BRIEF STEPS
 

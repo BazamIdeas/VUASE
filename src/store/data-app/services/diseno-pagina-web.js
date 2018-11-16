@@ -1,9 +1,9 @@
 export const web = {
   startWith: true,
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: [`Diseño, maquetacion, programación y publicación de sitio web profesional autogestionable`, 'Registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
   title: 'SITIO WEB PROFESIONAL',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged`,
-  shortDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+  description: `Su empresa va a destacar por su imagen de calidad`,
+  shortDescription: `Su empresa va a destacar por su imagen de calidad`,
   icon: '/icons/sitio-web-profesional.svg',
   whatWeOffer: [
     {
@@ -109,9 +109,20 @@ export const web = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: '/icons/papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/web/arquitectura.jpg',
+    company: 'Arquitectura Sin Límites',
+    description: '“Nuestra experiencia fue excelente!”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/web/fauna.jpg',
+    company: 'Fauna Doméstica',
+    description: '“Profesionales 100%, como siempre.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/web/proyecta.jpg',
+    company: 'Proyecta Telecom',
+    description: '“La atención personalizada por parte del equipo ha sido muy buena, así como la implicación en el proyecto.”'
   }],
   topSlider: [
     {

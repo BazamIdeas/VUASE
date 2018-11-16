@@ -112,6 +112,7 @@ export const packRediseno = {
     logo: 'papeleria.svg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
   }],
+  topSliderHeight: '820px',
   topSlider: [
     {
       url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',

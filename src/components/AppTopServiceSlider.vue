@@ -9,6 +9,12 @@
               :key="i"
               :src="item.url"
             >
+              <style>
+                .top-service-slider .v-carousel {
+                    min-height: {{service.topSliderHeight || '650px'}};
+                    height: auto;
+                }
+              </style>
               <v-layout xs12 row wrap>
                 <v-flex xs5 offset-xs7>
                   <img width="80px" class="mb-2" :src="service.icon">
@@ -48,12 +54,12 @@
   export default {
     props: ['service', 'slug'],
     computed: {
+      /* TODO: PENDIENTE */
       comenzarUrl () {
         if (this.slug === 'diseno-logo-y-pagina-web' || this.slug === 'diseno-pagina-web') {
           return this.$router.currentRoute.path + '/cotizacion'
         } else {
-          if (this.slug.includes('logo')) return this.$router.currentRoute.path + 'brief/disenos'
-          return this.$router.currentRoute.path + 'brief/estilos'
+          return this.$router.currentRoute.path + '/brief/disenos'
         }
       }
     }
@@ -61,6 +67,10 @@
 </script>
 
 <style>
+.top-service-slider .v-carousel__controls {
+    display: none;
+}
+
 .top-service-slider .v-carousel{
   box-shadow: unset;
 }
@@ -105,11 +115,4 @@
 .service-box-list li {
   padding-left: 0px;
 }
-
-.top-service-slider .v-carousel {
-    min-height: 590px;
-    height: auto;
-}
-
-
 </style>

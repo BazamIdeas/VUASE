@@ -30,7 +30,8 @@ import {
   AppTopServiceSlider,
   AppAddons,
   AppHomeCreativeProccess,
-  AppServiceOptions
+  AppServiceOptions,
+  AppNewsletterForm
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
@@ -64,3 +65,4 @@ Vue.component('AppTopServiceSlider', AppTopServiceSlider)
 Vue.component('AppAddons', AppAddons)
 Vue.component('AppHomeCreativeProccess', AppHomeCreativeProccess)
 Vue.component('AppServiceOptions', AppServiceOptions)
+Vue.component('AppNewsletterForm', AppNewsletterForm)

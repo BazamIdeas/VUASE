@@ -22,7 +22,7 @@
     </v-container>
     <v-toolbar fixed style="top: inherit;bottom: 0;">
       <div class="hidden-sm-and-down">
-        <v-btn color="primary" v-if="showBack" @click="nextStep(stepData.prev)">Atras</v-btn>
+        <v-btn color="primary" v-if="stepData.prev" @click="nextStep(stepData.prev)">Atras</v-btn>
       </div>
       <span>Completa los datos</span>
       <v-spacer></v-spacer>
@@ -78,7 +78,8 @@
             }
           }
         }
-      }
+      },
+      stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) }
     },
     methods: {
       async nextStep (pass) {
@@ -114,6 +115,7 @@
 <style>
   .chat-cloud {
       bottom: 46px !important;
+      z-index: 999;
   }
 </style>
 

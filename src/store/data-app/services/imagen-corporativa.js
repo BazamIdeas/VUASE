@@ -127,10 +127,27 @@ export const imagenCorporativa = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/baliguors.jpg',
+    company: 'Baliquors',
+    description: '“Excelente trabajo el de Liderlogo. Comprendieron rápidamente lo que estábamos buscando. Proceso sencillo, expeditivo y eficiente. Muchas gracias!”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/cita-cafe.jpg',
+    company: 'Citta Café',
+    description: '“La imagen cumplió con las características que amerita nuestro negocio y superó nuestras expectativas.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/seteg.jpg',
+    company: 'Seteg',
+    description: '“He tenido muy buena experiencia con Liderlogo. La relación calidad-precio es excelente. Trato personalizado, profesionalidad total.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/pack-identidad/finanpay.jpg',
+    company: 'Finanpay',
+    description: '“Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
   }],
+  topSliderHeight: '770px',
   topSlider: [
     {
       url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-duarte.png',

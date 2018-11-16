@@ -59,12 +59,12 @@
     },
     computed: {
       services () { return this.$store.state.services.list },
+      /* TODO: */
       url () {
         if (this.find === 'diseno-logo-y-pagina-web' || this.find === 'diseno-pagina-web') {
           return this.$router.currentRoute.path + '/' + this.find + '/cotizacion'
         } else {
-          if (this.find.includes('logo') || this.find === 'imagen-corporativa') return this.$router.currentRoute.path + '/' + this.find + '/brief/disenos'
-          else return this.$router.currentRoute.path + '/' + this.find + '/brief/estilos'
+          return this.$router.currentRoute.path + '/' + this.find + '/brief/disenos'
         }
       }
     }

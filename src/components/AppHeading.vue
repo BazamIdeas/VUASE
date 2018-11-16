@@ -57,7 +57,7 @@
   }
   p {
     font-weight: 600;
-    color: #B9B9B9;
+    color: #7d7d7d;
   }
 
   .blue-deep{

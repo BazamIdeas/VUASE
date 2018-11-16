@@ -112,9 +112,25 @@ export const logoWeb = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: 'papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/logo-web/accion-preventiva.jpg',
+    company: 'Acción Preventiva',
+    description: '“Muy buen servicio y excelente atención”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo-web/andes.jpg',
+    company: 'Andes Facility',
+    description: '“Son una empresa responsable y seria que mantiene una relación muy estrecha con el cliente mostrando interés en los proyectos. Ya ha sido cliente en varias oportunidades y me gusta trabajar con su empresa.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo-web/olarte.jpg',
+    company: 'Olarte Logística',
+    description: '“Atención rápida y personalizada.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo-web/urano.jpg',
+    company: 'Urano Sistema Seguridad',
+    description: '“Nos gusta trabajar con Liderlogo por su rapidez, buenos diseños, buena disposición y seriedad, aparte del buen precio.”'
   }],
   topSlider: [
     {

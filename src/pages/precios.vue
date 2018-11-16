@@ -7,19 +7,19 @@
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
               <h1 class="font-weight-bold mb-2 text-uppercase text-xs-center" style="font-size: 30px;">SELECCIONA TU SERVICIO</h1>
-              <v-select :items="services" @change="getBySlug" label="Seleccionar" v-model="service" solo></v-select>
+              <v-select :items="services" @change="getBySlug" v-model="service" solo></v-select>
             </v-flex>
-            <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
+            <v-flex xs12 md6 v-if="serviceObject">
               <div style="text-align: center">
-                <img :src="serviceObject.dataService.icon" alt="" width="200">
-                <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
+                <img :src="serviceObject.icon" alt="" width="200">
+                <p class="service-name mb-0">{{ serviceObject.title }}</p>
                 <h1 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h1>
               </div>
             </v-flex>
-            <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
-              <p class="caption font-weight-medium">{{ serviceObject.dataService.description }}</p>
+            <v-flex xs12 md6 v-if="serviceObject" class="service-box-list">
+              <p class="caption font-weight-medium">{{ serviceObject.description }}</p>
               <ul>
-                <li v-for="(item, i) in serviceObject.dataService.list" :key="i" class="my-2 caption font-weight-medium">{{item}}</li>
+                <li v-for="(item, i) in serviceObject.list" :key="i" class="my-2 caption font-weight-medium">{{item}}</li>
               </ul>
               <div>
                 <v-btn flat :to="'/nuestros-servicios/'+serviceObject.slug" class="px-2" small style="color:#676767">
@@ -31,14 +31,15 @@
           </v-layout>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
-          <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿NECESITAS UN SERVICIO PROFESIONAL?</h1>
-          <v-btn flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">Comencemos</v-btn>
+          <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector.</h1>
+          <v-btn flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
-          <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <h1 class="font-weight-bold mb-3 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>
       </v-layout>
@@ -51,15 +52,19 @@
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
     },
+    mounted () {
+      let vue = this
+      setTimeout(() => {
+        vue.serviceObject = this.$store.getters['services/getBySlug'](this.service)
+      }, 3000)
+    },
     data () {
       return {
-        service: null
+        service: 'logo-a-medida',
+        serviceObject: null
       }
     },
     computed: {
-      serviceObject () {
-        return this.$store.getters['services/getBySlug'](this.service)
-      },
       services () {
         let servicesArray = []
         let services = this.$store.state.services.list
@@ -76,12 +81,11 @@
         const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
 
-        if (this.serviceObject.slug === 'diseno-logo-y-pagina-web' || this.serviceObject.slug === 'diseno-pagina-web') {
+        if (this.serviceObject.url === 'diseno-logo-y-pagina-web' || this.serviceObject.url === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          if (this.serviceObject.slug.includes('logo') || this.serviceObject.slug === 'imagen-corporativa') target = 'brief/disenos'
-          else target = 'brief/estilos'
+          target = 'brief/disenos'
         }
 
         this.$storage.set('brief', brief)

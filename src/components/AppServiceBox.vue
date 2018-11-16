@@ -99,8 +99,7 @@
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          if (this.url.includes('logo') || this.find === 'imagen-corporativa') target = 'brief/disenos'
-          else target = 'brief/estilos'
+          target = 'brief/disenos'
         }
 
         this.$storage.set('brief', brief)
@@ -145,6 +144,7 @@
     content: "";
     width: 2px;
     height: 100%;
+    min-height: 400px;
     background-color: #a5a5a5;
     position: absolute;
     right: 0;
