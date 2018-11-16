@@ -13,10 +13,10 @@
                   <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
                     <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                     <div class="service-option-container" :class="[selecteds[index] ? 'selected-option' : '']">
-                      <img @click="selectOptionItem(index, items[index].slug)" :src="items[index].icon"/>
-                      <h4 @click="selectOptionItem(index, items[index].slug)" class="px-2">{{items[index].title}}</h4>
-                      <v-btn @click="openOption(items[index])" flat class="ma-0 px-2 know-more" large>
-                        conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+                      <img @click="openOption(items[index])" :src="items[index].icon"/>
+                      <h4 @click="openOption(items[index])" class="px-2">{{items[index].title}}</h4>
+                      <v-btn @click="selectOptionItem(index, items[index].slug)" flat class="ma-0 px-2 know-more" large>
+                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
                       </v-btn>
                     </div>
                   </v-flex>
@@ -25,10 +25,10 @@
                   <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
                     <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                     <div class="service-option-container" :class="[selecteds[index+3] ? 'selected-option' : '']">
-                      <img @click="selectOptionItem(index+3, items[index+3].slug)" :src="items[index+3].icon"/>
-                      <h4 @click="selectOptionItem(index+3, items[index+3].slug)" class="px-2">{{items[index+3].title}}</h4>
-                      <v-btn @click="openOption(items[index+3])" flat class="ma-0 px-2 know-more" large>
-                        conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+                      <img  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
+                      <h4 @click="openOption(items[index+3])"  class="px-2">{{items[index+3].title}}</h4>
+                      <v-btn @click="selectOptionItem(index+3, items[index+3].slug)" flat class="ma-0 px-2 know-more" large>
+                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
                       </v-btn>
                     </div>
                   </v-flex>
@@ -37,10 +37,10 @@
                   <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
                    <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                     <div class="service-option-container" :class="[selecteds[index+6] ? 'selected-option' : '']">
-                      <img @click="selectOptionItem(index+6, items[index+6].slug)" :src="items[index+6].icon"/>
-                      <h4 @click="selectOptionItem(index+6, items[index+6].slug)" class="px-2">{{items[index+6].title}}</h4>
-                      <v-btn @click="openOption(items[index+6])" flat class="ma-0 px-2 know-more" large>
-                        conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+                      <img @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
+                      <h4 @click="openOption(items[index+6])" class="px-2" title="Conocer más">{{items[index+6].title}}</h4>
+                      <v-btn  @click="selectOptionItem(index+6, items[index+6].slug)"  flat class="ma-0 px-2 know-more" large>
+                        Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
                       </v-btn>
                     </div>
                   </v-flex>
@@ -71,17 +71,17 @@
         <v-layout row class="mt-5">
           <v-flex xs6 offset-xs3>
             <v-layout row wrap d-flex column class="ml-4">
-              <v-flex class="ml-2">
-                  <div v-if="existSelecteds()">
+              <v-flex class="ml-2 text-xs-center">
+                  <div>
                     <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
                       PRECIO CERRADO EN:
                     </h2>
                     <v-layout xs12 row d-flex class="mt-2">
-                      <v-flex xs4>
+                      <v-flex xs4 offset-xs1 >
                         <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
                       </v-flex>
                       <v-layout xs6 row d-flex>
-                        <v-flex xs4 style="border-right:1px solid silver;" class="mr-2">
+                        <v-flex xs4 style="border-right:1px solid silver;">
                           <h3 class="title">50%</h3>
                           <h5 class="body-2">al iniciar</h5>
                         </v-flex>
@@ -91,7 +91,7 @@
                         </v-flex>
                       </v-layout>
                     </v-layout>
-                    <v-btn :to="'./cotazidor'":style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
+                    <v-btn :to="toPath+'/cotazidor'":style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
                   </div>         
                   
               </v-flex>
@@ -465,10 +465,12 @@
         }
       ]
 
+      let toPath = this.logo ? 'diseno-logo-y-pagina-web' : 'diseno-pagina-web'
       return {
         items: items,
         pop: null,
-        selecteds: {}
+        selecteds: {},
+        toPath: toPath
       }
     },
     mounted () {
@@ -586,7 +588,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0.5;
-    transition: 0.3s ease opacity;
+    transition: 0.3s ease all;
   }
 
   .service-option-container:hover, .service-option-container.selected-option{
@@ -594,7 +596,11 @@
     cursor:pointer;
   }
 
-  .service-option-container:hover h5, .service-option-container.selected-option h5{
+  .service-option-container.selected-option{
+    background-color: #e3e3e3;
+  }
+
+  .service-option-container:hover h4, .service-option-container.selected-option h4{
     color: black;
   }
 

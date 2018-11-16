@@ -33,7 +33,8 @@ export const logoWeb = {
   ],
   serviceOptions: {
     img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
-    color: 'black'
+    color: 'black',
+    logo: true
   },
   whatYouGet: {
     img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
@@ -243,5 +244,6 @@ export const logoWeb = {
       title: 'CATÁLOGO',
       url: '/nuestros-servicios/catalogo'
     }
-  }
+  },
+  hideWhatGet: true
 }

@@ -22,7 +22,7 @@
         <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides=dataService.creativeProcess :steps=dataService.steps />
       
         <!-- QUE TE LLEVAS -->  
-        <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
+        <AppServiceWhatGet v-if="!dataService.hideWhatGet" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
         <AppServiceOptions v-if="dataService.serviceOptions" :addons="addons"  :img="dataService.serviceOptions.img" :color="dataService.serviceOptions.color" :logo="dataService.serviceOptions.logo" :price="service.price"/>
         <!-- PACKS -->
