@@ -78,8 +78,7 @@
             }
           }
         }
-      },
-      stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) }
+      }
     },
     methods: {
       async nextStep (pass) {
