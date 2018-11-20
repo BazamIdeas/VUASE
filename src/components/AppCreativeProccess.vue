@@ -29,6 +29,24 @@
             </v-layout>
           </v-flex>
         </v-layout>
+
+        <v-layout row class="pt-5 mt-5 process-steps" v-if="alters.length">
+          <v-flex xs4 v-for="(alter,i) in alters" :key="i" class="px-5">
+            <v-layout row>
+              <v-flex xs2 align-center d-flex>
+                <img class="img-process-step" :src="alter.icon" :alt="alter.alt"/>
+              </v-flex>
+              <v-flex xs10 align-center d-flex class="process-step">
+                <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
+              </v-flex>             
+            </v-layout>
+            <v-layout row>
+              <v-flex xs12>
+                <p class="text-xs-justify">{{alter.description}}</p>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+        </v-layout>
     </v-container>
   </v-flex>
 </template>
@@ -37,6 +55,10 @@
   export default {
     props: {
       steps: {
+        type: Array,
+        default: []
+      },
+      alters: {
         type: Array,
         default: []
       },
@@ -62,6 +84,10 @@
 .process-steps > div:nth-child(2){
   border-left: 3px solid #d8d8d8;
   border-right: 3px solid #d8d8d8;
+}
+
+.process-steps + .process-steps {
+  border-top: 3px solid #d8d8d8;
 }
 
 
