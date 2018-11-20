@@ -92,7 +92,7 @@
                     </v-layout>
                     <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
                   </v-layout>
-                </div>           
+                </div>         
               </v-flex>
             </v-layout>
           </v-flex>
