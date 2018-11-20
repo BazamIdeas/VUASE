@@ -43,7 +43,7 @@
                 Desactivación o eliminación de cookies
               </p>
               <p class="text-xs-justify" style="font-weight: 400;">
-                En cualquier momento podrá ejercer su derecho de desactivación o eliminación de cookies de este sitio web. Estas acciones se realizan de forma diferente en función del navegador que esté usando. <a @click="$router.push('/mas-informacion-de-las-cookies#navegadores')">Aquí le dejamos una guía rápida para los navegadores más populares.</a>
+                En cualquier momento podrá ejercer su derecho de desactivación o eliminación de cookies de este sitio web. Estas acciones se realizan de forma diferente en función del navegador que esté usando. <a style=" color:#1976d2;" @click="$router.push('/mas-informacion-de-las-cookies/#navegadores')">Aquí le dejamos una guía rápida para los navegadores más populares.</a>
               </p>
 
 
