@@ -3,7 +3,7 @@ export const state = () => ({
   indexExamples: [
     {
       img: '/images/services-carousel/home/1-logo.jpg',
-      icon: '/icons/white/app.svg',
+      icon: '/icons/white/logo-a-medida.svg',
       service: 'Logo',
       description: 'Diseños originales, exclusivos e ilimitados para tu logo',
       url: 'diseno-de-logo',
@@ -13,7 +13,7 @@ export const state = () => ({
     {
       img: '/images/services-carousel/home/2-imagen-corporativa.jpg',
       icon: '/icons/white/pack-identidad.svg',
-      service: 'Imagen Corporativa',
+      service: 'Logo, imagen corporativa y logo animado',
       description: 'El logo ideal para tu negocio + diseño de papeleria digital y papel + diseño de redes sociales + tu logo animado creados profesional, planificada y uniformemente',
       url: 'imagen-corporativa',
       color: 'rgba(196, 149, 31, .8)',
@@ -22,7 +22,7 @@ export const state = () => ({
     {
       img: '/images/services-carousel/home/3-logo-web.jpg',
       icon: '/icons/white/logo-y-web.svg',
-      service: 'LOGO + WEB',
+      service: 'Logo y Sitio Web',
       description: 'El logo ideal y un sitio web a tu medida para concetar con nuevos y mas clientes',
       url: 'diseno-de-app',
       color: 'rgba(241, 145, 42, .8)',
@@ -30,8 +30,8 @@ export const state = () => ({
     },
     {
       img: '/images/services-carousel/home/4-rediseno-logo.jpg',
-      icon: '/icons/white/catalogo.svg',
-      service: 'Rediseño de logo',
+      icon: '/icons/white/redisenio.svg',
+      service: 'Rediseño de Logo',
       description: 'Tu imagen renovada y profesional',
       url: 'rediseno-de-logo',
       color: 'rgba(222, 58, 58, 0.80)',
@@ -40,37 +40,37 @@ export const state = () => ({
     {
       img: '/images/services-carousel/home/5-web-app.jpg',
       icon: '/icons/white/web-y-app.svg',
-      service: 'WEB + APP',
+      service: 'Web y App',
       description: 'Sitios webs y Apps que conectan con mas clientes',
-      url: 'diptico',
-      color: 'rgba(7, 122, 53, .8)',
-      textColor: 'white'
-    },
-    {
-      img: '/images/services-carousel/home/6-rotulos.jpg',
-      icon: '/icons/white/rotulo.svg',
-      service: 'Rotulos',
-      description: 'Presenta y promociona tu marca, tus productos y servicios con diseños extraordinarios',
-      url: 'rotulo-banner',
+      url: 'diseno-de-web-y-app',
       color: 'rgba(7, 122, 53, .8)',
       textColor: 'white'
     },
     {
       img: '/images/services-carousel/home/7-folletos.jpg',
-      icon: '/icons/white/logo-a-medida.svg',
-      service: 'Folletos',
-      description: 'Un diseño que da vida a tus productos y los hacen irresistibles',
+      icon: '/icons/white/flyer.svg',
+      service: 'Folletos y Publicidades',
+      description: 'Presenta y promociona tu marca, tus productos y servicios con diseños extraordinarios',
       url: 'flyer',
       color: 'rgba(35, 30, 26, .8)',
       textColor: 'white'
     },
     {
       img: '/images/services-carousel/home/8-etiquetas-packaging.jpg',
-      icon: '/icons/white/logo-y-web.svg',
-      service: 'Etiqueta packaging',
-      description: 'Un diseño que promociona tu negocio donde vallas',
+      icon: '/icons/white/rotulo-etiqueta.svg',
+      service: 'Diseño de Etiquetas y Packaging',
+      description: 'Un diseño que da vida a tus productos y los hacen irresistibles',
       url: 'packaging',
       color: 'rgba(16, 23, 41, .8)',
+      textColor: 'white'
+    },
+    {
+      img: '/images/services-carousel/home/6-rotulos.jpg',
+      icon: '/icons/white/rotulo.svg',
+      service: 'Rótulos',
+      description: 'Un diseño que promociona tu negocio donde vallas',
+      url: 'rotulo-banner',
+      color: 'rgba(7, 122, 53, .8)',
       textColor: 'white'
     }
   ]
