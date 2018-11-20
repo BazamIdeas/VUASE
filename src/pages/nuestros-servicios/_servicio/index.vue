@@ -24,7 +24,7 @@
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
 
-        <AppServiceOptions v-if="dataService.serviceOptions" :addons="addons"  :img="dataService.serviceOptions.img" :color="dataService.serviceOptions.color" :logo="dataService.serviceOptions.logo" :price="service.price"/>
+        <AppServiceOptions v-if="dataService.serviceOptions" :service-slug="serviceSlug" :addons="addons"  :img="dataService.serviceOptions.img" :color="dataService.serviceOptions.color" :logo="dataService.serviceOptions.logo" :price="service.price"/>
         <!-- PACKS -->
         <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
@@ -71,37 +71,7 @@ export default {
       return this.$store.state.services.list.find(el => el.slug === this.serviceSlug)
     },
     addons () {
-      let addonsServices = []
-      let addonsSlugs = [
-        'diseno-y-desarrollo-de-seccion-web',
-        'hosting-por-un-ano',
-        'dominio-por-un-ano',
-        'casillas-de-correo',
-        'certificado-ssl',
-        'chat',
-        'pop-publicitario',
-        'cotizador',
-        'multidioma-automatico',
-        'area-privada-para-clientes',
-        'plataforma-inmobiliaria',
-        'formulario-personalizado',
-        'reservaciones-o-citas',
-        'area-para-la-gestion-de-archivos',
-        'seccion-de-noticias-o-publicaciones',
-        'integracion-con-herramientas-de-google',
-        'ecommerce',
-        'catalogo-productos',
-        'galeria-de-proyectos',
-        'logo-solo-para-web'
-      ]
-      let servicesList = this.$store.state.services.list
-      for (let serviceItem of servicesList) {
-        if (!addonsSlugs.find((addonSlug) => serviceItem.slug === addonSlug)) {
-          continue
-        }
-        addonsServices.push(serviceItem)
-      }
-      return addonsServices
+      return this.$store.getters['services/addons']
     }
   }
 }
