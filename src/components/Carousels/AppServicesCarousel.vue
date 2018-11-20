@@ -54,11 +54,44 @@
     },
     data () {
       return {
-        find: ''
+        find: '',
+        addons: [
+          'presencia-web',
+          'galeria-de-proyectos',
+          'catalogo-productos',
+          'integracion-con-herramientas-de-google',
+          'area-para-la-gestion-de-archivos',
+          'seccion-de-noticias-o-publicaciones',
+          'reservaciones-o-citas',
+          'formulario-personalizado',
+          'plataforma-inmobiliaria',
+          'area-privada-para-clientes',
+          'multidioma-automatico',
+          'cotizador',
+          'pop-publicitario',
+          'chat',
+          'certificado-ssl',
+          'dominio-por-un-ano',
+          'hosting-por-un-ano',
+          'logo-solo-para-web',
+          'diseno-y-desarrollo-de-seccion-web',
+          'ecommerce'
+        ]
       }
     },
     computed: {
-      services () { return this.$store.state.services.list },
+      services () {
+        let servicesArray = []
+        let services = this.$store.state.services.list
+
+        for (let service of services) {
+          if (!this.addons.includes(service.slug)) {
+            servicesArray.push(service)
+          }
+        }
+
+        return servicesArray
+      },
       /* TODO: */
       url () {
         if (this.find === 'diseno-logo-y-pagina-web' || this.find === 'diseno-pagina-web') {

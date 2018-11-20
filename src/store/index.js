@@ -5,9 +5,9 @@ export const state = () => ({
     links: {
       header: [
         { url: '/nuestros-servicios', title: 'Servicios' },
-        { url: '/ejemplos', title: 'Ejemplos' },
+        { url: '/ejemplos', title: '1001 Ejemplos' },
         { url: '/precios', title: 'Precios' },
-        { url: '/servicios-profesionales', title: 'Servicios Profesionales' }
+        { url: '/servicios-profesionales', title: 'Servicios a Profesionales' }
       ],
       footer: [
         { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },

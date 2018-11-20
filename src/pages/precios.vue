@@ -7,19 +7,19 @@
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
               <h1 class="font-weight-bold mb-2 text-uppercase text-xs-center" style="font-size: 30px;">SELECCIONA TU SERVICIO</h1>
-              <v-select :items="services" @change="getBySlug" v-model="service" solo></v-select>
+              <v-select :items="services" @change="getBySlug" label="Seleccionar" v-model="service" solo></v-select>
             </v-flex>
-            <v-flex xs12 md6 v-if="serviceObject">
+            <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
               <div style="text-align: center">
-                <img :src="serviceObject.icon" alt="" width="200">
-                <p class="service-name mb-0">{{ serviceObject.title }}</p>
+                <img :src="serviceObject.dataService.icon" alt="" width="200">
+                <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
                 <h1 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h1>
               </div>
             </v-flex>
-            <v-flex xs12 md6 v-if="serviceObject" class="service-box-list">
-              <p class="caption font-weight-medium">{{ serviceObject.description }}</p>
+            <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
+              <p class="caption font-weight-medium">{{ serviceObject.dataService.description }}</p>
               <ul>
-                <li v-for="(item, i) in serviceObject.list" :key="i" class="my-2 caption font-weight-medium">{{item}}</li>
+                <li v-for="(item, i) in serviceObject.dataService.list" :key="i" class="my-2 caption font-weight-medium">{{item}}</li>
               </ul>
               <div>
                 <v-btn flat :to="'/nuestros-servicios/'+serviceObject.slug" class="px-2" small style="color:#676767">
@@ -52,25 +52,45 @@
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
     },
-    mounted () {
-      let vue = this
-      setTimeout(() => {
-        vue.serviceObject = this.$store.getters['services/getBySlug'](this.service)
-      }, 3000)
-    },
     data () {
       return {
-        service: 'logo-a-medida',
-        serviceObject: null
+        service: null,
+        addons: [
+          'presencia-web',
+          'galeria-de-proyectos',
+          'catalogo-productos',
+          'integracion-con-herramientas-de-google',
+          'area-para-la-gestion-de-archivos',
+          'seccion-de-noticias-o-publicaciones',
+          'reservaciones-o-citas',
+          'formulario-personalizado',
+          'plataforma-inmobiliaria',
+          'area-privada-para-clientes',
+          'multidioma-automatico',
+          'cotizador',
+          'pop-publicitario',
+          'chat',
+          'certificado-ssl',
+          'dominio-por-un-ano',
+          'hosting-por-un-ano',
+          'logo-solo-para-web',
+          'diseno-y-desarrollo-de-seccion-web',
+          'ecommerce'
+        ]
       }
     },
     computed: {
+      serviceObject () {
+        return this.$store.getters['services/getBySlug'](this.service)
+      },
       services () {
         let servicesArray = []
         let services = this.$store.state.services.list
 
         for (let service of services) {
-          servicesArray.push({ text: service.name, field: service.slug, value: service.slug })
+          if (!this.addons.includes(service.slug)) {
+            servicesArray.push({ text: service.name, field: service.slug, value: service.slug })
+          }
         }
 
         return servicesArray

@@ -90,21 +90,21 @@
                         <h5 class="body-2">al finalizar</h5>
                       </v-flex>
                     </v-layout>
-                  </v-layout>
-                  <v-btn :to="toPath+'/cotazidor'":style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
-                </div>         
-                
-            </v-flex>
-          </v-layout>
-        </v-flex>
-      </v-layout>
-    </v-flex>
-  </v-layout>
+                    <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
+                  </div>         
+                  
+              </v-flex>
+            </v-layout>
+          </v-flex>
+        </v-layout>
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script lang="js">
   export default {
-    props: ['img', 'color', 'price', 'addons', 'logo'],
+    props: ['serviceSlug', 'img', 'color', 'price', 'addons', 'logo'],
     data () {
       let items = [
         {
@@ -477,12 +477,11 @@
         return
       }
 
-      let selectedsString = this.$storage.get('quotePacksOptions')
-      if (!selectedsString) { return }
+      let selectedsSlugs = this.$storage.get('quotePacksOptions')
+      if (!selectedsSlugs) { return }
 
       let preSelecteds = {}
 
-      let selectedsSlugs = JSON.parse(selectedsString)
       for (let selectedSlug of selectedsSlugs) {
         this.items.map((itemPack, index) => {
           if (itemPack.slug === selectedSlug) {
@@ -516,9 +515,8 @@
         for (let selectedKey of selectedKeys) {
           selectedSlugs.push(this.selecteds[selectedKey])
         }
-        let selectedsString = JSON.stringify(selectedSlugs)
 
-        this.$storage.set('quotePacksOptions', selectedsString)
+        this.$storage.set('quotePacksOptions', selectedSlugs)
       },
       existSelecteds () {
         let keys = Object.keys(this.selecteds)
