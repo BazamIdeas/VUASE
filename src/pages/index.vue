@@ -25,10 +25,26 @@
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
               <v-flex xs12 md4 class="ll-op">
+                <v-card flat class="px-4 my-4" color="transparent">
+                  <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">22</span></p>
+                  <p class="subheading font-weight-medium text-xs-center dark-blue--text">
+                    Paises reciben nuestra atención
+                  </p>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 md4 class="ll-op">
                 <v-card flat class="px-4 my-4 ll-op" color="transparent">
                   <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">24</span><span class="display-1 dark-blue--text font-weight-bold">Hrs</span></p>
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
                     Conceptos y perfeccionamientos
+                  </p>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 md4 class="ll-op">
+                <v-card flat class="px-4 my-4" color="transparent">
+                  <p class="text-xs-center  mb-0"><span class="display-1 dark-blue--text font-weight-bold">+</span><span class="text-uppercase display-3  dark-blue--text font-weight-bold">75.000</span></p>
+                  <p class="subheading font-weight-medium text-xs-center dark-blue--text">
+                    Creaciones realizadas
                   </p>
                 </v-card>
               </v-flex>
@@ -48,27 +64,12 @@
                   </p>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4" color="transparent">
-                  <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">22</span></p>
-                  <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Paises reciben nuestra atención
-                  </p>
-                </v-card>
-              </v-flex>
+              
               <v-flex xs12 md4 class="ll-op">
                 <v-card flat class="px-4 my-4" color="transparent">
                   <p class="text-xs-center mb-0"><span class="display-1 dark-blue--text font-weight-bold">+</span><span class="text-uppercase display-3  dark-blue--text font-weight-bold">15</span></p>
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
                     Años de Trayectoria internacional
-                  </p>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4" color="transparent">
-                  <p class="text-xs-center  mb-0"><span class="display-1 dark-blue--text font-weight-bold">+</span><span class="text-uppercase display-3  dark-blue--text font-weight-bold">75.000</span></p>
-                  <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Creaciones realizadas
                   </p>
                 </v-card>
               </v-flex>

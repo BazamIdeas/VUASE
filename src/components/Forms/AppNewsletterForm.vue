@@ -37,7 +37,7 @@
 
 <style>
 .newsletter-email .v-input__slot{
-  background: silver !important;
+  background: #c0c0c085 !important;
 }
 
 .newsletter-email input{

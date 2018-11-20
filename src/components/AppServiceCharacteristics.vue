@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container fluid grid-list-md text-xs-center class="mt-4 pb-0">
       <v-layout row wrap align-center justify-center>
-				<v-flex xs12 class="mb-5 pb-5">
+				<v-flex xs12 class="mb-5">
 					<AppHeading :number="'1'" :size="'display-2'" :title="title" />
 				</v-flex>
 				<v-layout class="characteristics mb-5" row wrap :class="{'ocho': list.length > 6 }">

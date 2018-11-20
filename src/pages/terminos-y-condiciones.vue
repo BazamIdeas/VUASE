@@ -78,12 +78,8 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md2 md8 class="text-xs-center">
-          <AppHeading number="2" title="NUESTROS SERVICIOS" size="display-1"/>
-        </v-flex>
       </v-layout>
     </v-container>
-    <AppServicesGrid color="#0088c6"/>
   </section>
 </template>
 
