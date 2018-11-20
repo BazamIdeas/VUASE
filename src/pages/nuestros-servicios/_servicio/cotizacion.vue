@@ -6,11 +6,11 @@
         <v-flex xs12>
           <AppHeading :number="'1'" size="headline" title="¿QUE QUIERE HACER CON SU WEB?" class="mb-3" />
         </v-flex>
-        <v-flex md7 offset-md1>
+        <v-flex md7 offset-md1 class="mb-5">
           <v-layout row wrap>
             <v-flex md3 v-for="pkg in slugsPackages" :key="pkg" class="px-2 mb-2">
               <v-card class="pa-3 package" :class="{ 'selected': selectedPkg(pkg) }">
-                <div class="package-img" style="width: 100%; position: relative; padding-top: 69%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
+                <div class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
                 </div>
                 <div class="package-title">
                   <p class="body-2 text-xs-center mb-0">{{ packages[pkg].title }}</p>
@@ -58,7 +58,7 @@
             <table width="100%">
               <tbody>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="addon.slug === 'diseno-y-desarrollo-de-seccion-web'">
-                  <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} </td>
+                  <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} ({{ sections }}) </td>
                   <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> {{ addon.price.currency.symbol }}  {{ addon.price.value * sections }}</td>
                 </tr>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="selectedAddon(addon.slug)">
@@ -71,6 +71,10 @@
                 </tr>
               </tbody>
             </table>
+            <v-divider light></v-divider>
+            <div class="subheading text-xs-center py-2 font-weight-bold section-title">
+              <v-btn color="primary">CONTINUAR</v-btn>
+            </div>
           </v-card>
         </v-flex>
       </v-layout>
@@ -281,7 +285,11 @@
   }
 
   .package.selected {
-    background-color: #004b7b;
+    background-color: #0081c1;
+  }
+
+  .package.selected > .package-img {
+    filter: brightness(3);
   }
 
   .package.selected .package-title p {
@@ -293,7 +301,7 @@
   }
 
   .service-package.selected {
-    border: 4px solid #004b7b;
+    border: 2px solid #0081c1;
   }
   
   .service-package-name, .service-package-img {
@@ -318,9 +326,9 @@
 
   .addon-name-table-price::after {
     content: "";
-    width: 95%;
+    width: 96%;
     height: 1px;
-    background-color: #004b7b;
+    background-color: #434343;
     position: absolute;
     left: 8px;
     bottom: 2px;
