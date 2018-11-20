@@ -8,7 +8,8 @@
         <v-flex xs12 md6 class="my-5" v-if="!formSent">
           <h1 class="font-weight-bold mb-1 text-uppercase text-xs-center" style="font-size: 29px;">¿Necesitas un consejo profesional?</h1>
 
-          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="    font-size: 12px;">Estamos para asesorarte gratis. Completa el formulario y un experto se pondrá en contacto contigo hoy.</h4>
+          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="font-size: 12px; line-height: 20px;  padding: 0 30px;
+">Estamos para asesorarte gratis. Completa el formulario y un experto se pondrá en contacto contigo hoy.</h4>
 
           <AppContactForm @sent="formHandler" contact-page="true" />
         </v-flex>
@@ -30,6 +31,9 @@
 
 <script>
   export default {
+    async fetch ({ store }) {
+      await store.dispatch('services/getAll')
+    },
     data () {
       return {
         formSent: false

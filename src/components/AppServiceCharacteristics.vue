@@ -2,11 +2,11 @@
 	<v-flex xs12>
     <v-container fluid grid-list-md text-xs-center class="mt-4 pb-0">
       <v-layout row wrap align-center justify-center>
-				<v-flex xs12 class="mb-5 pb-5">
+				<v-flex xs12 class="mb-5">
 					<AppHeading :number="'1'" :size="'display-2'" :title="title" />
 				</v-flex>
 				<v-layout class="characteristics mb-5" row wrap :class="{'ocho': list.length > 6 }">
-					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7, 'xs12 md3': list.length > 6}">
+					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7 ||  list.length > 8, 'xs12 md3': list.length > 6 && list.length < 9}">
 						<div class="characteristic">
 							<img height="70px" width="80px" :src="item.icon" class="mb-3 mt-3 ">
                             <div class="mb-2">

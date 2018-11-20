@@ -31,7 +31,7 @@
                 </h3>
                 <v-flex>
                   <a @click="$router.push('/testimonios')" class="text-xs-center font-weight-medium" style="margin:auto; display:block;     color: #ff9800 !important;">
-                    VER TODOS
+                    OPINIONES
                   </a>
                 </v-flex>
               </v-flex>

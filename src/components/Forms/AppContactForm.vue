@@ -60,6 +60,8 @@
             <v-select
             v-validate="'required'"
             :items="services"
+            item-value="name"
+            item-text="name"
             v-model="category"
             label="Seleccione:"
             :error-messages="errors.collect('select')"
@@ -68,7 +70,6 @@
           ></v-select>
           </v-flex>
         </v-layout>
-
         <!-- Promociones -->
         <v-flex xs12 md10 order-md2>
           <v-checkbox
@@ -82,7 +83,8 @@
       <v-flex xs12 md2 order-xs3 order-md1>
         <v-btn type="submit" class="elevation-0 white--text" style="background-color: #F7941D;">enviar</v-btn>
       </v-flex>
-      <v-flex order-md2 xs12 md10>
+      
+      <v-flex order-md2 xs12 md10 v-if="countryData">
         O puedes llamarnos al: 
         <a style="color:#1976d2" target="_new" :href="'tel:'+ countryData.phone"> +{{countryData.phone}}</a> 
         o escribirnos vía WhatsApp  
@@ -114,12 +116,14 @@
           '14hs a 20hs – Dia de semana',
           '9am a 14hs – Fin de semana'
         ],
-        for_phone: true,
-        services: ['Logo']
+        for_phone: true
       }
     },
     computed: {
-      countryData () { return this.$store.state.countries.data }
+      countryData () { return this.$store.state.countries.data },
+      services () {
+        return this.$store.state.services.list
+      }
     },
     methods: {
       submit () {

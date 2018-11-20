@@ -6,6 +6,21 @@
       <nuxt/>
       <AppFooter/>
       <img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">
+      <!-- COOKIES ACCEPT -->
+      <v-container class="cookies px-0" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
+        <v-layout row wrap align-center class="mx-0">
+          <v-flex xs12>
+            <h2 class="title font-weight-medium mb-2 text-uppercase">AVISO DE COOKIES</h2>
+          </v-flex>
+          <v-flex offset-xs1 xs10>
+            Utilizamos 
+
+            <a style="color: #1976d2;" @click='$router.push("/politica-de-cookies/")' target='_new'>cookies propias</a> 
+            y de terceros para obtener datos estadísticos de la navegación de nuestros usuarios y mejorar nuestros servicios. Si acepta o continúa navegando, consideramos que acepta su uso.
+            <v-btn @click="acceptUserCookie" class="elevation-0 white--text" style="background-color:#1976d2; line-height: 14px;" wrap>Aceptar</v-btn>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-content>
   </v-app>
 </template>
@@ -18,12 +33,63 @@
   export default {
     mounted () {
       this.hiddenOnResize()
+      this.cookies()
+    },
+    data () {
+      return {
+        cookieSetted: true
+      }
     },
     methods: {
+      cookies () {
+        if (process.browser) {
+          if (this.checkCookie('liderlogo-cookie')) {
+            if (this.getCookie('liderlogo-cookie') === 'ok') {
+              this.cookieSetted = true
+              return
+            }
+          }
+
+          this.setCookie('liderlogo-cookie', 'no', '30')
+          this.cookieSetted = false
+        }
+      },
       hiddenOnResize () {
         if (window.innerWidth > 960) {
           this.$store.dispatch('toggleDrawer', false)
         }
+      },
+      acceptUserCookie () {
+        this.setCookie('liderlogo-cookie', 'ok', '30')
+        this.cookieSetted = true
+      },
+      getCookie (cname) {
+        var name = cname + '='
+        var decodedCookie = decodeURIComponent(document.cookie)
+        var ca = decodedCookie.split(';')
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i]
+          while (c.charAt(0) === ' ') {
+            c = c.substring(1)
+          }
+          if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length)
+          }
+        }
+        return ''
+      },
+      setCookie (cname, cvalue, exdays) {
+        var d = new Date()
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000))
+        var expires = 'expires=' + d.toUTCString()
+        document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
+      },
+      checkCookie (cookieName) {
+        var cookie = this.getCookie(cookieName)
+        if (cookie !== '') {
+          return true
+        }
+        return false
       }
     },
     components: {
@@ -97,5 +163,13 @@
 
   .v-rating .v-icon {
     color: #FF9800 !important
+  }
+
+  .cookies{
+    background: white;
+    border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
   }
 </style>
