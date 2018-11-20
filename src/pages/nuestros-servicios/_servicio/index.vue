@@ -19,7 +19,7 @@
         <AppServiceCharacteristics id="que-te-ofrecemos" title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
 
         <!-- PROCESO CREATIVO -->  
-        <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides=dataService.creativeProcess :steps=dataService.steps />
+        <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
       
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet v-if="!dataService.hideWhatGet" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />

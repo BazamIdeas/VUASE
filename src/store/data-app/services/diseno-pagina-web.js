@@ -224,16 +224,24 @@ export const web = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'APROVECHA NUESTROS PACK',
     first: {
-      image: '/images/pages/packs/flyer-retro-cafe.png',
-      title: 'FLYER',
-      url: '/nuestros-servicios/flyer'
+      image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+      title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
+      subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
+      url: '/nuestros-servicios/imagen-corporativa'
     },
     last: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo'
+      image: '/images/pages/packs/addons-logo+web.png',
+      title: 'LOGO + WEB',
+      subtitle: '50% OFF EN DISEÑO DE LOGO',
+      url: '/nuestros-servicios/imagen-corporativa'
     }
-  }
+  },
+  serviceOptions: {
+    img: '/images/pages/logo-mas-web/web-divino-alchemy.png',
+    color: 'black',
+    logo: false
+  },
+  hideWhatGet: true
 }

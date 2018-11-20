@@ -1,106 +1,105 @@
 <template lang="html">
-  <v-layout row>
-      <v-flex xs12 class="mt-5"> 
-        <v-layout>
-          <v-flex xs12 class="mt-5" >
-            <AppHeading number="1" size="display-1" align="center" :title="'¿QUÉ FUNCIONES NECESITA TU SITIO WEB?'" />
-          </v-flex>
-        </v-layout>
-        <v-layout row>
-          <v-flex xs8 offset-xs2> 
-            <v-container grid-list-md fluid class="pa-0 service-options-space mt-4">
-                <v-layout row v-if="items" class="first-service-option-row">
-                  <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
-                    <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
-                    <div class="service-option-container" :class="[selecteds[index] ? 'selected-option' : '']">
-                      <img @click="openOption(items[index])" :src="items[index].icon"/>
-                      <h4 @click="openOption(items[index])" class="px-2">{{items[index].title}}</h4>
-                      <v-btn @click="selectOptionItem(index, items[index].slug)" flat class="ma-0 px-2 know-more" large>
-                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
-                      </v-btn>
-                    </div>
-                  </v-flex>
-                </v-layout>
-                <v-layout row v-if="items" class="second-service-option-row">
-                  <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
-                    <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
-                    <div class="service-option-container" :class="[selecteds[index+3] ? 'selected-option' : '']">
-                      <img  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
-                      <h4 @click="openOption(items[index+3])"  class="px-2">{{items[index+3].title}}</h4>
-                      <v-btn @click="selectOptionItem(index+3, items[index+3].slug)" flat class="ma-0 px-2 know-more" large>
-                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
-                      </v-btn>
-                    </div>
-                  </v-flex>
-                </v-layout>
-                <v-layout row v-if="items" class="third-service-option-row">
-                  <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
-                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
-                    <div class="service-option-container" :class="[selecteds[index+6] ? 'selected-option' : '']">
-                      <img @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
-                      <h4 @click="openOption(items[index+6])" class="px-2" title="Conocer más">{{items[index+6].title}}</h4>
-                      <v-btn  @click="selectOptionItem(index+6, items[index+6].slug)"  flat class="ma-0 px-2 know-more" large>
-                        Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
-                      </v-btn>
-                    </div>
-                  </v-flex>
-                </v-layout>
-
-                <div v-if="pop" class="shadow-pop-service-option">
-                  <div class="close-shadow-option-service" @click="pop = null">X</div>
-                  <h2>{{pop.title}}</h2>
-                  <div class="shadow-pop-service-description">
-                    {{pop.open.description}}
+  <v-layout row class="mb-5">
+    <v-flex xs12 class="mt-5 mb-4"> 
+      <v-layout>
+        <v-flex xs12 class="mt-5" >
+          <AppHeading number="1" size="display-1" align="center" :title="'¿QUÉ FUNCIONES NECESITA TU SITIO WEB?'" />
+        </v-flex>
+      </v-layout>
+      <v-layout row>
+        <v-flex xs8 offset-xs2> 
+          <v-container grid-list-md fluid class="pa-0 service-options-space mt-4">
+              <v-layout row v-if="items" class="first-service-option-row">
+                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
+                  <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
+                  <div class="service-option-container" :class="[selecteds[index] ? 'selected-option' : '']">
+                    <img @click="openOption(items[index])" :src="items[index].icon"/>
+                    <h4 @click="openOption(items[index])" class="px-2">{{items[index].title}}</h4>
+                    <v-btn @click="selectOptionItem(index, items[index].slug)" flat class="ma-0 px-2 know-more" large>
+                      Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+                    </v-btn>
                   </div>
-                  <v-layout row v-if="items" wrap>
-                    <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs6>
-                        <v-layout row>
-                          <v-flex xs2 offset-xs1>
-                            <img :src="popItem.icon"/>
-                          </v-flex>
-                          <v-flex xs9>
-                            {{popItem.text}}
-                          </v-flex>
-                        </v-layout>
-                    </v-flex>
-                  </v-layout>
+                </v-flex>
+              </v-layout>
+              <v-layout row v-if="items" class="second-service-option-row">
+                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
+                  <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
+                  <div class="service-option-container" :class="[selecteds[index+3] ? 'selected-option' : '']">
+                    <img  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
+                    <h4 @click="openOption(items[index+3])"  class="px-2">{{items[index+3].title}}</h4>
+                    <v-btn @click="selectOptionItem(index+3, items[index+3].slug)" flat class="ma-0 px-2 know-more" large>
+                      Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+                    </v-btn>
+                  </div>
+                </v-flex>
+              </v-layout>
+              <v-layout row v-if="items" class="third-service-option-row">
+                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
+                  <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
+                  <div class="service-option-container" :class="[selecteds[index+6] ? 'selected-option' : '']">
+                    <img @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
+                    <h4 @click="openOption(items[index+6])" class="px-2" title="Conocer más">{{items[index+6].title}}</h4>
+                    <v-btn  @click="selectOptionItem(index+6, items[index+6].slug)"  flat class="ma-0 px-2 know-more" large>
+                      Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
+                    </v-btn>
+                  </div>
+                </v-flex>
+              </v-layout>
+
+              <div v-if="pop" class="shadow-pop-service-option">
+                <div class="close-shadow-option-service" @click="pop = null">X</div>
+                <h2>{{pop.title}}</h2>
+                <div class="shadow-pop-service-description">
+                  {{pop.open.description}}
                 </div>
-            </v-container>
-          </v-flex>
-        </v-layout>
-        <v-layout row class="mt-5">
-          <v-flex xs6 offset-xs3>
-            <v-layout row wrap d-flex column class="ml-4">
-              <v-flex class="ml-2 text-xs-center">
-                  <div>
-                    <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
-                      PRECIO CERRADO EN:
-                    </h2>
-                    <v-layout xs12 row d-flex class="mt-2">
-                      <v-flex xs4 offset-xs1 >
-                        <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
-                      </v-flex>
-                      <v-layout xs6 row d-flex>
-                        <v-flex xs4 style="border-right:1px solid silver;">
-                          <h3 class="title">50%</h3>
-                          <h5 class="body-2">al iniciar</h5>
+                <v-layout row v-if="items" wrap>
+                  <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs6>
+                      <v-layout row>
+                        <v-flex xs2 offset-xs1>
+                          <img :src="popItem.icon"/>
                         </v-flex>
-                        <v-flex xs5>
-                          <h3 class="title">50%</h3> 
-                          <h5 class="body-2">al finalizar</h5>
+                        <v-flex xs9>
+                          {{popItem.text}}
                         </v-flex>
                       </v-layout>
+                  </v-flex>
+                </v-layout>
+              </div>
+          </v-container>
+        </v-flex>
+      </v-layout>
+      <v-layout row class="mt-5">
+        <v-flex xs6 offset-xs3>
+          <v-layout row wrap d-flex column class="ml-4">
+            <v-flex class="ml-2 text-xs-center">
+                <div>
+                  <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
+                    PRECIO CERRADO EN:
+                  </h2>
+                  <v-layout xs12 row d-flex class="mt-2">
+                    <v-flex xs4 offset-xs1 >
+                      <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
+                    </v-flex>
+                    <v-layout xs6 row d-flex>
+                      <v-flex xs4 style="border-right:1px solid silver;">
+                        <h3 class="title">50%</h3>
+                        <h5 class="body-2">al iniciar</h5>
+                      </v-flex>
+                      <v-flex xs5>
+                        <h3 class="title">50%</h3> 
+                        <h5 class="body-2">al finalizar</h5>
+                      </v-flex>
                     </v-layout>
-                    <v-btn :to="toPath+'/cotazidor'":style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
-                  </div>         
-                  
-              </v-flex>
-            </v-layout>
-          </v-flex>
-        </v-layout>
-      </v-flex>
-    </v-layout>
-  </div>
+                  </v-layout>
+                  <v-btn :to="toPath+'/cotazidor'":style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
+                </div>         
+                
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script lang="js">
@@ -109,7 +108,7 @@
     data () {
       let items = [
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/promocionar-un-servicio-o-producto.svg',
           title: 'PROMOCIONAR UN SERVICIO O PRODUCTO',
           slug: 'prueba',
           services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario'],
@@ -117,38 +116,38 @@
             description: 'Es una herramienta sumamente eficiente para obtener nuevos clientes por medio de acciones marketing online. Tiene como principal beneficio lograr nuevos clientes potenciales y/o obtener que se realice una acción determinada que incremente sus ventas e interacción con el mercado.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/pop-publicitario.svg',
                 text: 'Pop Publicitario'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
             ]
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/presentar-mi-empresa.svg',
           title: 'PRESENTAR MI EMPRESA',
           slug: 'prueba2',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano'],
@@ -156,38 +155,38 @@
             description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (2 secciones)'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
             ]
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/ofrecer-multiples-servicios.svg',
           title: 'OFRECER MULTIPLES SERVICIOS',
           slug: 'prueba3',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones'],
@@ -195,50 +194,50 @@
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser:  reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones)'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/chat.svg',
                 text: 'Chat'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/casillas-de-correos.svg',
                 text: 'Casillas de correo'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/noticias-y-publicaciones.svg',
                 text: 'Noticias o Publicaciones'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
             ]
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/dar-a-conocer-mis-proyectos.svg',
           title: 'DAR A CONOCER MIS PROYECTOS REALIZADOS',
           slug: 'prueba4',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'galeria-de-proyectos'],
@@ -246,42 +245,42 @@
             description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (3 secciones)'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/galeria-de-proyectos.svg',
                 text: 'Galería de proyectos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
             ]
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/publicar-inmuebles.svg',
           title: 'PUBLICAR INMUEBLES PARA ALQUILER O VENTA',
           slug: 'prueba5',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'plataforma-inmobiliaria'],
@@ -289,11 +288,11 @@
             description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones)'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               },
               {
@@ -301,30 +300,30 @@
                 text: 'Plataforma inmobiliaria'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
             ]
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/exhibir-un-menu.svg',
           title: 'EXHIBIR UN MENÚ DE PLATOS/COMIDAS',
           slug: 'prueba6',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos'],
@@ -332,35 +331,35 @@
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (3 secciones)'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/catalogo-ventana.svg',
                 text: 'Catálogo'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
             ]
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/mostrar-un-catalogo-de-productos.svg',
           title: 'MOSTRAR UN CATÁLOGO DE PRODUCTOS',
           slug: 'prueba7',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos'],
@@ -368,28 +367,28 @@
             description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones)'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/catalogo-ventana.svg',
                 text: 'Catálogo'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               }, {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
 
@@ -397,7 +396,7 @@
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/vender-mis-productos.svg',
           title: 'VENDER MIS PRODUCTOS ONLINE',
           slug: 'prueba8',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat'],
@@ -405,43 +404,43 @@
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones)'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/hosting-y-dominio.svg',
                 text: 'Hosting y dominio por un año'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/catalogo-ventana.svg',
                 text: 'Catálogo'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/carros-de-compra.svg',
                 text: 'Carro de compras'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/chat.svg',
                 text: 'Chat'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/herramientas-SEO.svg',
                 text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/integracion.svg',
                 text: 'Integración con más de 50.000 complementos'
               },
               {
-                icon: '/icons/garantia-de-conformidad.svg',
+                icon: '/icons/addons/manual-de-uso.svg',
                 text: 'Manual de usuario'
               }
 
@@ -449,7 +448,7 @@
           }
         },
         {
-          icon: '/icons/garantia-de-conformidad.svg',
+          icon: '/icons/packages/compartir-informacion.svg',
           title: 'COMPARTIR INFORMACIÓN Y ARCHIVOS CON MIS CLIENTES',
           slug: 'prueba9',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat'],

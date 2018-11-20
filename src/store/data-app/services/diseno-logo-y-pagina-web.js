@@ -6,26 +6,44 @@ export const logoWeb = {
   icon: '/icons/logo-y-web.svg',
   whatWeOffer: [
     {
-      title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
+      title: 'CREACIONES ORIGINALES',
       description: 'Diseño Gráfico, Estructura, Navegación y funcionalidades conformes a los resultados que desea lograr.',
       icon: '/icons/logo-unico-original.svg'
+    }, {
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/propuestas-ilimitadas.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
       icon: '/icons/garantia-de-conformidad.svg'
-    }, {
-      title: 'VERSATILIDAD',
-      description: 'Gracias a las múltiples integraciones su sitio web puede ser escalable a las necesidades de su negocio.',
-      icon: '/icons/versatilidad.svg'
-    }, {
+    },
+    {
+      title: '24 HS',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/un-dia-para-el-otro.svg'
+    },
+    {
+      title: 'ATENCION PERSONALIZADA',
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      icon: '/icons/atencion-personalizada.svg'
+    },
+    {
+      title: 'CERTIFICADOS DE DERECHOS Y MANUALES DE USO',
+      description: 'Documento que certifica que usted es el propietario absoluto de los derechos del producto creado, y que puedes de utlizarlo a tu conveniencia sin ningún tipo de restricciones.',
+      icon: '/icons/cesion-de-derechos.svg'
+    },
+    {
       title: 'DOMINIO WEB PROPIO, EMAIL Y ALOJAMIENTO',
       description: 'Servicios incluidos para el primer año.',
       icon: '/icons/integracion-con-web.svg'
-    }, {
-      title: 'EQUIPO MULTIDICIPLINARIO',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/equipo-interidisciplinario.svg'
-    }, {
+    },
+    {
+      title: 'RESPONSIVE Y VERSATILIDAD',
+      description: 'Gracias a las múltiples integraciones su sitio web puede ser escalable a las necesidades de su negocio.',
+      icon: '/icons/versatilidad.svg'
+    },
+    {
       title: 'SITIO WEB PUBLICADO Y FUNCIONANDO',
       description: 'Entregamos su proyecto llave en manosin costos adicionales ni sorpresas. Brindamos soporte post venta gratuito por 2 años.',
       icon: '/icons/sitio-web-publicado-y-funcionando.svg'
@@ -192,6 +210,29 @@ export const logoWeb = {
       alt: 'entrega-y-documentacion'
     }
   ],
+  alters: [
+    {
+      title: '1. BRIEF Y SELECTOR',
+      color: '#323c9e',
+      icon: '/icons/creative-process-1.svg',
+      description: 'Descripcion',
+      alt: 'brief-y-selector'
+    },
+    {
+      title: '2. CONCEPTOS',
+      color: '#1d8127',
+      icon: '/icons/creative-process-2.svg',
+      description: 'Descripcion',
+      alt: 'conceptos'
+    },
+    {
+      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      color: '#c3953f',
+      icon: '/icons/creative-process-3.svg',
+      description: 'Descripcion',
+      alt: 'entrega-y-documentacion'
+    }
+  ],
   carousel: {
     items1: [
       { img: '/images/services-carousel/logo-web/meraki - web 640.jpg' },
@@ -200,19 +241,6 @@ export const logoWeb = {
       { img: '/images/services-carousel/logo-web/toni llinas web escritorio.jpg' },
       { img: '/images/services-carousel/logo-web/vincit-web.jpg' }
     ]
-  },
-  packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
-    first: {
-      image: '/images/pages/packs/flyer-retro-cafe.png',
-      title: 'FLYER',
-      url: '/nuestros-servicios/flyer'
-    },
-    last: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo'
-    }
   },
   hideWhatGet: true
 }
