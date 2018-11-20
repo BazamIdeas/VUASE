@@ -129,6 +129,28 @@ export const state = () => ({
       noBorder: true
     }
   ],
+  addonsSlugs: [
+    'diseno-y-desarrollo-de-seccion-web',
+    'hosting-por-un-ano',
+    'dominio-por-un-ano',
+    'casillas-de-correo',
+    'certificado-ssl',
+    'chat',
+    'pop-publicitario',
+    'cotizador',
+    'multidioma-automatico',
+    'area-privada-para-clientes',
+    'plataforma-inmobiliaria',
+    'formulario-personalizado',
+    'reservaciones-o-citas',
+    'area-para-la-gestion-de-archivos',
+    'seccion-de-noticias-o-publicaciones',
+    'integracion-con-herramientas-de-google',
+    'ecommerce',
+    'catalogo-productos',
+    'galeria-de-proyectos',
+    'logo-solo-para-web'
+  ],
   list: []
 })
 
@@ -177,6 +199,16 @@ export const getters = {
   forSelectField (state) {
     let formattedServices = state.list.map(x => { return { text: x.name, field: x.slug } })
     return [{ text: 'Todos los servicios', field: 'servicios' }].concat(formattedServices)
+  },
+  addons (state) {
+    let addonsServices = []
+    for (let serviceItem of state.list) {
+      if (!state.addonsSlugs.find((addonSlug) => serviceItem.slug === addonSlug)) {
+        continue
+      }
+      addonsServices.push(serviceItem)
+    }
+    return addonsServices
   }
 }
 

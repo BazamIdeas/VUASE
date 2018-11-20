@@ -80,6 +80,16 @@
     color: #434343;
   }
 
+  .services-grid:hover > :nth-child(2).service-icon-box  .in {
+    display: none;
+  }
+   .services-grid:hover > :nth-child(2).service-icon-box  .out {
+    display: initial
+  }
+   .services-grid:hover > :nth-child(2).service-icon-box  h1 {
+    color: #cccccc;
+  }
+
   .service-icon-box {
     cursor: pointer;
     justify-content: center;
@@ -97,15 +107,15 @@
   }
 
   .service-icon-box:hover .in {
-    display: initial;
+    display: initial !important;
   }
 
   .service-icon-box:hover h1 {
-    color: #434343;
+    color: #434343 !important;
   }
 
   .service-icon-box:hover .out {
-    display: none;
+    display: none !important;
   }
 
   @media (max-width: 1024px) {
