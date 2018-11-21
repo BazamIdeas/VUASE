@@ -218,22 +218,22 @@ export const logoEmpresa = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/logo/1.-New-Cool.png' },
-      { img: '/images/services-carousel/logo/2.-Chikas.png' },
-      { img: '/images/services-carousel/logo/3.-Family-TV.png' },
-      { img: '/images/services-carousel/logo/4.-Fauna-Domestica.png' },
-      { img: '/images/services-carousel/logo/5.-Stemmedic.png' },
-      { img: '/images/services-carousel/logo/6.-Antartik.png' },
-      { img: '/images/services-carousel/logo/7.-Arlu.png' },
-      { img: '/images/services-carousel/logo/8.-Aixo-Hotel-Suites.png' },
-      { img: '/images/services-carousel/logo/9.-food-chef.png' },
-      { img: '/images/services-carousel/logo/10.-y-si-me-toca-a-mi.png' },
-      { img: '/images/services-carousel/logo/11.-Black-Bird.png' },
-      { img: '/images/services-carousel/logo/12.-Paralelo-0.png' },
-      { img: '/images/services-carousel/logo/13.-Hostal-La-Colegiata.png' },
-      { img: '/images/services-carousel/logo/14.-Ingenium.png' },
-      { img: '/images/services-carousel/logo/15.-Hobbie.png' },
-      { img: '/images/services-carousel/logo/16.-Bricoaching.png' }
+      { img: '/images/services-carousel/logo/1.-New-Cool.jpg' },
+      { img: '/images/services-carousel/logo/2.-Chikas.jpg' },
+      { img: '/images/services-carousel/logo/3.-Family-TV.jpg' },
+      { img: '/images/services-carousel/logo/4.-Fauna-Domestica.jpg' },
+      { img: '/images/services-carousel/logo/5.-Stemmedic.jpg' },
+      { img: '/images/services-carousel/logo/6.-Antartik.jpg' },
+      { img: '/images/services-carousel/logo/7.-Arlu.jpg' },
+      { img: '/images/services-carousel/logo/8.-Aixo-Hotel-Suites.jpg' },
+      { img: '/images/services-carousel/logo/9.-food-chef.jpg' },
+      { img: '/images/services-carousel/logo/10.-y-si-me-toca-a-mi.jpg' },
+      { img: '/images/services-carousel/logo/11.-Black-Bird.jpg' },
+      { img: '/images/services-carousel/logo/12.-Paralelo-0.jpg' },
+      { img: '/images/services-carousel/logo/13.-Hostal-La-Colegiata.jpg' },
+      { img: '/images/services-carousel/logo/14.-Ingenium.jpg' },
+      { img: '/images/services-carousel/logo/15.-Hobbie.jpg' },
+      { img: '/images/services-carousel/logo/16.-Bricoaching.jpg' }
     ]
   },
   packs: {
