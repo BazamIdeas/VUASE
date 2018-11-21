@@ -5,7 +5,12 @@
 				<v-flex xs12 class="mb-5">
 					<AppHeading :number="'1'" :size="'display-2'" :title="title" />
 				</v-flex>
-				<v-layout class="characteristics mb-5" row wrap :class="{'ocho': list.length > 6 }">
+				<v-layout class="characteristics mb-5" row wrap 
+                :class="{
+                    'seis': list.length == 6,
+                    'ocho': list.length > 6 && list.length < 9, 
+                    'nueve': list.length >= 9 
+                }">
 					<v-flex v-for="(item, i) in list" :key="i" :class="{'xs12 md4': list.length < 7 ||  list.length > 8, 'xs12 md3': list.length > 6 && list.length < 9}">
 						<div class="characteristic">
 							<img height="70px" width="80px" :src="item.icon" class="mb-3 mt-3 ">
@@ -43,6 +48,21 @@
 
 <style scoped lang="css">
 
+/* nueve */
+.characteristics.nueve > div:not(:first-child, :nth-child(4), :nth-child(7)){
+    border-left: 1px solid silver;
+}
+
+.characteristics.nueve > :nth-child(3) ~ div > div {
+    border-top: 1px solid silver;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.characteristics.nueve > :nth-child(4) ~ div .subheading {
+    margin-bottom: 0px !important;
+}
+
 /* ocho */
 .characteristics.ocho > div:not(:first-child, :nth-child(5)){
     border-left: 1px solid silver;
@@ -59,18 +79,18 @@
 }
 
 /* seis */
-.characteristics:not(.ocho) > :nth-child(2), .characteristics:not(.ocho) > :nth-child(5), .characteristics:not(.ocho) > :nth-child(8) {
+.characteristics.seis > :nth-child(2), .characteristics.seis > :nth-child(5), .characteristics.seis > :nth-child(8) {
     border-right: 1px solid silver;
 		border-left: 1px solid silver;
 }
 
-.characteristics:not(.ocho) > :nth-child(3) ~ div > div {
+.characteristics.seis > :nth-child(3) ~ div > div {
     border-top: 1px solid silver;
     margin-right: 10px !important;
     margin-left: 10px !important;
 }
 
-.characteristics:not(.ocho) > :nth-child(3) ~ div .subheading {
+.characteristics.seis > :nth-child(3) ~ div .subheading {
     margin-bottom: 0px !important;
 }
 
