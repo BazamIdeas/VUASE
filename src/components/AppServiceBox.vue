@@ -31,7 +31,7 @@
     </v-flex>
 
     <v-flex xs12>
-      <v-btn :to="'/nuestros-servicios/'+url" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
+      <v-btn @click="saveServiceLocalStorage(url)" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
         conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
       </v-btn>
     </v-flex>
@@ -91,10 +91,39 @@
           this.borders = false
         }
       },
-      async selectService () {
+      saveServiceLocalStorage (slug) {
+        let packages = []
+
+        switch (slug) {
+          case 'ecommerce':
+            packages.push('vender-mis-productos-online')
+            packages.push('ofrecer-multiples-servicios')
+            break
+          case 'presencia-web':
+            packages.push('presentar-mi-empresa')
+            break
+          case 'diseno-pagina-web':
+            packages.push('presentar-mi-empresa')
+            packages.push('ofrecer-multiples-servicios')
+            break
+          case 'diseno-logo-y-pagina-web':
+            packages.push('presentar-mi-empresa')
+            packages.push('ofrecer-multiples-servicios')
+            break
+        }
+
+        this.$storage.set(packages)
+
+        if (slug === 'ecommerce' || slug === 'presencia-web') {
+          slug = 'diseno-pagina-web'
+        }
+
+        this.$router.push('/nuestros-servicios/' + slug)
+      }
+      /*  async selectService () {
         const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
-        /* TODO: PENDIENTE */
+        // TODO: PENDIENTE
         if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
@@ -104,7 +133,7 @@
 
         this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.url + '/' + target)
-      }
+      } */
     },
     filters: {
       uppercase (value) {
