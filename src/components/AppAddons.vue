@@ -3,8 +3,8 @@
     <v-flex xs12 class="mb-5">
       <AppHeading :number="'1'" :size="'display-2'" align="center"  :title="title"/>
     </v-flex>
-    <v-layout row py-5>
-      <v-flex xs5 offset-xs1 px-3 class="addons-first">
+    <v-layout row wrap py-5>
+      <v-flex xs12 offset-xs0 sm5 offset-sm1 px-3 class="addons-first">
         <div class="addons-image-container">
           <img :src="first.image" class="addons-image"/>
         </div>
@@ -19,17 +19,17 @@
           </v-flex>
         </v-layout>
         <v-layout row wrap align-center justify-center>
-          <v-flex xs5 offset-xs1 d-flex justify-end>
+          <v-flex xs12 sm12 md5 offset-sm1 d-flex justify-end>
             <v-btn :to="first.url+ '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
-          <v-flex xs6 v-if="!first.notSecondButton">
+          <v-flex class="know-more-container" xs12 sm12 md6 v-if="!first.notSecondButton">
             <v-btn :to="first.url" flat class="ma-0 px-2 know-more" large >
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs5 px-3 class="addons-last">
+      <v-flex xs12 sm5 px-3 class="addons-last">
         <div class="addons-image-container">
           <img :src="last.image" class="addons-image"/>
         </div>
@@ -44,10 +44,10 @@
           </v-flex>
         </v-layout>
         <v-layout row wrap align-center justify-center>
-          <v-flex xs5 offset-xs1 d-flex justify-end>
+          <v-flex xs12 sm12 md5 offset-sm1 d-flex justify-end>
             <v-btn :to="last.url + '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
-          <v-flex xs6 v-if="!last.notSecondButton">
+          <v-flex class="know-more-container" xs12 sm12 md6 v-if="!last.notSecondButton">
             <v-btn :to="last.url" flat class="ma-0 px-2 know-more" large>
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
@@ -118,6 +118,51 @@
     align-items: center;
   }
 
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .addons-first,.addons-last{
+      border: none;
+    }
+    .addons-first{
+      margin-bottom: 50px;
+    }
+
+    .addons-image-container {
+      height: 250px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 639px) {
+    .addons-first,.addons-last{
+      border: none;
+    }  
+    .addons-first{
+      margin-bottom: 50px;
+    }
+
+    .addons-image-container {
+      height: 250px;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 960px) {
+
+    .addons-image-container {
+      height: 250px;
+    }
+   
+  }
+
+  @media (min-width: 960px) and (max-width: 1264px) {
+
+  }
+
+  @media (min-width: 1264px) and (max-width: 1904px) {
+
+  }
+
+  @media (min-width: 1904px) {}
+
 </style>
 
 <style>
@@ -138,5 +183,44 @@
   color: white;
   background-color: #0065ad;
 }
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .addons-first h2, .addons-last h2{
+      font-size: 18px
+    }
+
+    .addons-first .know-more, .addons-last .know-more{
+      text-align: center;
+    }
+       
+
+  }
+
+  @media (min-width: 481px) and (max-width: 640px) {
+    .addons-first h2, .addons-last h2{
+      font-size: 16px
+    }
+    .addons-first .know-more-container, .addons-last .know-more-container {
+      text-align: center;
+    }
+    
+  }
+
+  @media (min-width: 641px) and (max-width: 960px) {
+  
+  }
+
+  @media (min-width: 960px) and (max-width: 1264px) {
+
+  }
+
+  @media (min-width: 1264px) and (max-width: 1904px) {
+
+  }
+
+  @media (min-width: 1904px) {}
+
+
 
 </style>

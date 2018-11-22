@@ -1,6 +1,6 @@
 <template>
 
-  <v-carousel :interval="interval" hide-controls class="main-carousel theme2" v-else-if="theme == '2'">
+  <v-carousel :interval="interval" hide-controls class="main-carousel theme2">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="section">  
