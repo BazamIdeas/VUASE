@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md v-if="title" class="pa-0 mt-4">
     <v-layout row wrap>
-      <v-flex offset-xs1 xs10 offset-md0 md12 class="container-heading">
+      <v-flex xs12 md12 class="container-heading">
         <h1 v-if="number=='1'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h1>
         <h2 v-if="number=='2'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h2>
         <h3 v-if="number=='3'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h3>

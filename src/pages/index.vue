@@ -8,7 +8,7 @@
     </v-container>
     
     <!-- PORTFAFOLIO -->
-    <h2 class="mb-5 text-xs-center display-1 font-weight-bold" >
+    <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
       LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!
     </h2>
 
@@ -224,6 +224,7 @@
     .xs-mt-0{
       margin-top:0 !important;
     }
+
     .xs-height-auto{
       height: auto !important;
     }

@@ -4,8 +4,7 @@
     @mouseleave="outstanding = false"  
     v-resize="showBorders" 
     row wrap 
-    class="service-box-container px-3 pt-5 pb-2" 
-    :class="{ 'br': br && borders, 'bb': bb && borders, 'bt': bt && borders }">
+    class="service-box-container px-3 pt-5 pb-2 xs-pt-2">
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
       <img :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
@@ -35,7 +34,6 @@
         conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
       </v-btn>
     </v-flex>
-    <v-flex xs12 v-if="addonService" style="height:60px"></v-flex>
   </v-layout>
 </template>
 
@@ -145,41 +143,6 @@
 
 <style scoped>
 
-  .layout.service-box-container {
-    position: relative;
-  }
-
-  .service-box-container.bt:after {
-    content: "";
-    width: 80%;
-    height: 2px;
-    background-color: #a5a5a5;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .service-box-container.bb:before {
-    content: "";
-    width: 80%;
-    height: 2px;
-    background-color: #a5a5a5;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .service-box-container.br:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    min-height: 400px;
-    background-color: #a5a5a5;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
   *, button.v-btn{
     color: #5e5e5e;
     font-weight: 700;
@@ -213,6 +176,5 @@
   .flex.service-box-title {
     display: flex;
     align-items: flex-end;
-
-}
+  }
 </style>
