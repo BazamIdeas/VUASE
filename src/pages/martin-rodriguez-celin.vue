@@ -3,7 +3,7 @@
     <v-container fluid grid-list-md class="mt-5">
       <v-layout row wrap>
         <v-flex xs12>
-          <AppHeading number="1" title="¿QUIÉN ES EL CREADOR DE LIDERLOGO?" size="display-1" align="center" ccolor="mt-5"/>
+          <AppHeading number="1" title="¿QUIÉN ES EL CREADOR DE LIDERLOGO?" size="display-1 xs-headline" align="center" ccolor="mt-5"/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -15,9 +15,9 @@
         <v-flex xs12 class="mb-5">
           <v-layout row wrap>
             <v-flex xs12>
-              <AppHeading number="2" title="CONOZCA A NUESTRO MENTOR" size="display-1" align="center"/>
+              <AppHeading number="2" title="CONOZCA A NUESTRO MENTOR" size="display-1 xs-headline" align="center"/>
 
-              <h2 class="headline font-weight-bold text-xs-center mt-2 mb-5" style="color:#034c7f;">Fundador y CEO de Liderlogo</h2>
+              <h2 class="headline font-weight-bold text-xs-center mt-2 mb-5 " style="color:#034c7f;">Fundador y CEO de Liderlogo</h2>
 
 
 
@@ -80,7 +80,7 @@
         </v-flex>
 
         <v-flex>
-          <AppHeading number="2" title="EXPERIENCIA DE SERVICIO" size="display-1" align="center"/>
+          <AppHeading number="2" title="EXPERIENCIA DE SERVICIO" size="display-1 xs-headline" align="center"/>
 
           <h2 class="headline font-weight-bold text-xs-center mt-2 mb-5" style="color:#fbb03b !important;">Ejemplo de Pack de Logo + Sitio Web</h2>
         </v-flex>
@@ -109,7 +109,7 @@
     <v-container>
       <v-layout row wrap>
         <v-flex xs12 class="mb-5">
-          <AppHeading number="2" title="¿Interesado en asesoramiento especializado para impulsar el éxito de tu Empresa?" size="display-1" align="center"/>
+          <AppHeading number="2" title="¿Interesado en asesoramiento especializado para impulsar el éxito de tu Empresa?" size="display-1 xs-headline" align="center"/>
         </v-flex>
 
         <v-flex xs6>

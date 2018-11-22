@@ -5,7 +5,7 @@
         <v-flex xs12 offset-md1 md10 class="mb-5">
           <v-layout row wrap>
             <v-flex xs12>
-              <AppHeading number="2" title="TERMINOS Y CONDICIONES" size="display-1" align="center" ccolor="mt-5"/>
+              <AppHeading number="2" title="TERMINOS Y CONDICIONES" size="display-1 xs-headline" align="center" ccolor="mt-5"/>
               <p class="text-xs-justify title" style="font-weight: 600; margin-top: 40px">
                 1.- ACCESIBILIDAD
               </p>

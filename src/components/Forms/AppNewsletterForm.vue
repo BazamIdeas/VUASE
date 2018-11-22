@@ -1,7 +1,7 @@
 <template>
   <v-form id="newslletter-form" @submit.prevent="submit">
     <v-layout row wrap>
-      <v-flex xs12 md6>
+      <v-flex offset-xs1 xs10  md6>
         <v-text-field class="newsletter-email" v-model="email" v-validate="'required|email'" name="contact.email" label="Correo electrónico" placeholder="Correo electrónico" solo flat></v-text-field>
       </v-flex>
       <v-flex xs12 md4>
