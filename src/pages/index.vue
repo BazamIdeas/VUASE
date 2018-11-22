@@ -233,6 +233,7 @@
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
+    
     .xs-text-size-30{
       font-size: 30px !important;
     }
