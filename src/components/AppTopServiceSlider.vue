@@ -94,8 +94,8 @@
 }
 
 .top-service-slider .v-carousel__item > .v-image__image--cover {
-  background-size: 63%;
-  background-position: -20% top !important;
+  background-size: 50%;
+  background-position: left top !important;
 }
 
 .top-service-slider div.v-carousel__controls {
