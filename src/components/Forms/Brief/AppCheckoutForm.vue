@@ -13,13 +13,22 @@
       <v-card class="pa-3 elevation-1">
         <v-layout row wrap>
           <v-flex md1>
-            <img :src="service.icon" width="100%">
+            <img :src="service.dataService.icon" width="100%">
           </v-flex>
           <v-flex xs6>
             <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.dataService.title }} </h1>
-            <p class="caption" style="text-align: justify; color: #666666;" v-if="!brief.subServices">
+            <p class="caption" style="text-align: justify; color: #666666;" v-if="!subServices">
               {{ service.dataService.description }}
             </p>
+            <v-layout row wrap v-if="subServices">
+              <v-flex md11>
+                <v-layout row wrap v-for="sub in subServices" :key="sub.id">
+                  <v-flex md12>
+                    - {{ sub.name }}
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
           </v-flex>
           <v-flex md2>
             <h1 class="title font-weight-bold text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(total) }} </h1>
@@ -30,7 +39,7 @@
         </v-layout>
       </v-card>
     </v-flex>
-    <v-flex md12 class="my-2">
+    <v-flex md12 xs12 class="my-2">
       <div style="height: 2px; background: #004b7b"></div>
     </v-flex>
     <!--SUBTOTAL-->
@@ -55,7 +64,8 @@
       <!--<v-card class="pa-3">-->
         <v-layout row wrap>
           <v-flex md6>
-            <h1 class="title font-weight-medium"> Descuento ({{ coupon.percentage }}%) </h1>
+            <h1 class="title font-weight-medium hidden-xs-only"> Descuento ({{ coupon.percentage }}%) </h1>
+            <h1 class="title font-weight-medium hidden-sm-and-up"> De..({{ coupon.percentage }}%) </h1>
           </v-flex>
           <v-flex md3 v-if="coupon">
             <h1 class="title font-weight-medium text-xs-right"> - {{ service.price.currency.symbol }} {{ formatNumber(discount) }} </h1>
@@ -104,18 +114,18 @@
       <!--</v-card>-->
     </v-flex>
     <!--TOTAL + IVA-->
-    <v-flex md12 class="my-3">
+    <v-flex md12 xs12 class="my-3">
       <div style="height: 1px;"></div>
     </v-flex>
     <v-flex md7 offset-md5>
-      <v-layout row>
-        <v-flex xs5>
+      <v-layout row wrap>
+        <v-flex md5 xs12>
           <v-subheader class="subheading font-weight-bold">Cupón de descuento:</v-subheader>
         </v-flex>
-        <v-flex xs4>
+        <v-flex md4 xs7>
           <v-text-field v-model="couponCode" placeholder="Cupón" solo></v-text-field>
         </v-flex>
-        <v-flex xs3>
+        <v-flex md3 xs5>
           <v-btn @click="validateCoupon" color="ma-0" :class="{ 'primary': coupon === null, 'success': coupon, 'warning': coupon === false }"  large style="margin-top: 3px !important">Validar</v-btn>
         </v-flex>
       </v-layout>
@@ -183,11 +193,13 @@
       subServices () {
         const services = []
 
-        if (this.brief.subServices) return services
+        if (!this.brief.subServices) return services
 
-        for (let subService in this.brief.subServices) {
-          let service = this.$store.getters['services/getBySlug'](subService.slug)
-          if (service) services.push(service)
+        for (let subService of this.brief.subServices) {
+          let subServices = this.$store.getters['services/addons']
+          for (let sub of subServices) {
+            if (subService.slug === sub.slug) services.push(sub)
+          }
         }
 
         return services
@@ -195,10 +207,9 @@
       total () {
         let total = 0
 
-        if (this.brief.subServices) {
-          for (let subService in this.brief.subServices) {
-            let service = this.$store.getters['services/getBySlug'](subService.slug)
-            if (service) total += service.price.value
+        if (this.subServices) {
+          for (let subService of this.subServices) {
+            if (subService) total += subService.price.value
           }
         } else {
           total += this.service.price.value

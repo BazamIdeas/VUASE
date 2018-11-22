@@ -16,7 +16,7 @@
                 }
               </style>
               <v-layout xs12 row wrap>
-                <v-flex xs5 offset-xs7>
+                <v-flex xs12 offset-md7 md5>
                   <img width="80px" class="mb-2" :src="service.icon">
                   <v-flex xs12 class="mb-2">
                     <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+item.color">{{service.title}}</h2>
