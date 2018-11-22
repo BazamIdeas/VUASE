@@ -1,41 +1,45 @@
 <template>
-  <v-carousel :interval="interval" hide-controls class="main-carousel">
+  <v-carousel :interval="interval" hide-controls class="main-carousel c-services">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-1">
-          <h1>¿QUÉ NECESITAS?</h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-1" style="z-index: 99;">
-          <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
-
-          <v-layout row wrap align-center justify-center class="mt-5" style="z-index: 99;">
-            <v-flex xs9>
-              <v-autocomplete
-                v-model="find"
-                :items="services"
-                label="Logo, pagina web, rotulo..."
-                persistent-hint
-                browser-autocomplete
-                hide-no-data
-                hide-selected
-                item-text="name"
-                item-value="slug"
-                class="input-search"
-                light
-              >
-              </v-autocomplete>
-            </v-flex>
-            <v-flex>
-              <v-slide-x-reverse-transition slot="append-outer" mode="out-in" >
-                <v-btn :to="url" class="boton-buscar">
-                  <v-icon>search</v-icon>
-                </v-btn>
-              </v-slide-x-reverse-transition>
-            </v-flex>
-          </v-layout>
-        </div>
         <div class="layer" id="hc-layer-3-item-1">
           <v-img class="animate-img" src="images/carousels/services1.png"></v-img>
+        </div>
+
+        <div class="layer" id="hc-layer-0">   
+          <div id="hc-layer-1-item-1">
+            <h1>¿QUÉ NECESITAS?</h1>
+          </div>
+
+          <div id="hc-layer-2-item-1" style="z-index: 99;">
+            <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
+
+            <v-layout row wrap align-center justify-center class="mt-5" style="z-index: 99;">
+              <v-flex xs9>
+                <v-autocomplete
+                  v-model="find"
+                  :items="services"
+                  label="Logo, pagina web, rotulo..."
+                  persistent-hint
+                  browser-autocomplete
+                  hide-no-data
+                  hide-selected
+                  item-text="name"
+                  item-value="slug"
+                  class="input-search"
+                  light
+                >
+                </v-autocomplete>
+              </v-flex>
+              <v-flex xs3 md0 class="md-auto">
+                <v-slide-x-reverse-transition slot="append-outer" mode="out-in" >
+                  <v-btn :to="url" class="boton-buscar">
+                    <v-icon>search</v-icon>
+                  </v-btn>
+                </v-slide-x-reverse-transition>
+              </v-flex>
+            </v-layout>
+          </div>
         </div>
       </div>
     </v-carousel-item>
@@ -95,9 +99,9 @@
       /* TODO: */
       url () {
         if (this.find === 'diseno-logo-y-pagina-web' || this.find === 'diseno-pagina-web') {
-          return this.$router.currentRoute.path + '/' + this.find + '/cotizacion'
+          return this.$router.currentRoute.path + '/' + this.find + 'cotizacion'
         } else {
-          return this.$router.currentRoute.path + '/' + this.find + '/brief/disenos'
+          return this.$router.currentRoute.path + '/' + this.find + 'brief/disenos'
         }
       }
     }
@@ -227,108 +231,149 @@
     font-weight: 600;
   }
 
+ @media (max-width: 480px) {
+    .v-carousel.main-carousel {
+      min-height: auto;
+      height: 560px !important;
+    }
+ }
+  @media (max-width: 960px) {
 
-
-  @media (max-width: 600px) {
+    .v-carousel.main-carousel {
+        height: 600px;
+        min-height: auto;
+    }
 
     /*ITEM-1*/
-    div#hc-layer-1-item-1 {
-      font-size: 28px;
-      line-height: 39px;
-      top: 60%;
+    .layers-container .layer {
+      position: initial;
+    }
+
+    div#hc-layer-0{
       text-align: center;
+      width: 100%;
+    }
+
+    div#hc-layer-1-item-1 {
+      font-size: 18px;
+      line-height: 42px;
     }
 
     div#hc-layer-2-item-1 {
-      font-size: 17px;
-      top: 80%;
-      line-height: 28px;
-      text-align: center;
+      font-size: 11px;
+      padding: 0 5%;
+    }
+
+    div#hc-layer-2-item-1 > div {
+      margin-top: 20px !important;
     }
 
     div#hc-layer-3-item-1 {
-      width: 70%;
-      left: -2%;
-      top: 20%;
+      width: 80%;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    a.boton-buscar {
+      min-width: 72px;
     }
 
     /*ITEM-2*/
     div#hc-layer-1-item-2 {
       font-size: 28px;
       line-height: 39px;
-      top: 60%;
       text-align: center;
     }
 
     div#hc-layer-2-item-2 {
       font-size: 17px;
-      top: 80%;
       line-height: 28px;
       text-align: center;
     }
+  }
 
-    div#hc-layer-3-item-2 {
-      width: 100%;
-      left: -16%;
-      top: 17%;
+  @media (min-width: 600px) and (max-width: 860px) {
+    .v-carousel.main-carousel {
+        height: 680px;
+        min-height: auto;
     }
   }
 
-  @media (min-width: 600px) and (max-width: 960px) {}
+  
+  @media (min-width: 740px) and (max-width: 820px) {
+    .v-carousel.main-carousel {
+        height: 730px;
+        min-height: auto;
+    }
+  }
 
-  @media (min-width: 960px) and (max-width: 1264px) {}
+  @media (min-width: 820px) and (max-width: 960px) {
+    .v-carousel.main-carousel {
+        height: 780px;
+        min-height: auto;
+    }
+  }
 
-  @media (min-width: 1264px) and (max-width: 1904px) {
 
-    /*ITEM-1*/
-    div#hc-layer-1-item-1 {
-      font-size: 28px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 57%;
+  @media (min-width: 960px) {
+    .v-carousel.main-carousel {
+      height: 600px;
+      min-height: auto;
+    }
+
+    .md-auto{
+      width: auto;
+      flex: unset;
+    }
+
+    .layers-container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      max-width: 1260px;
+      margin: auto;
+      margin-top: 120px;
+    }
+
+    div#hc-layer-3-item-1 {
+      width: 73%;
+      left: -7%;
+      position: absolute;
     }
 
     div#hc-layer-2-item-1 {
       font-size: 10px;
-      width: 34%;
-      top: 39%;
-      left: 55.25%;
-      line-height: 19px;
-      text-align: center;
     }
 
-    div#hc-layer-3-item-1 {
-      width: 63%;
-      left: 0%;
-      top: 20%;
+    div#hc-layer-0 {
+      width: 38%;
+      margin-right: 5%;
+      padding-top: 100px;
+      z-index: 9999;
+      text-align:center;
     }
 
-    /*ITEM-2*/
-    div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 22%;
+    .layers-container .layer{
+      position: initial;
     }
 
-    div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 22.25%;
-      line-height: 28px;
-    }
-
-    div#hc-layer-3-item-2 {
-      width: 55%;
-      left: 30.5%;
-      top: 4%;
+    div#hc-layer-1-item-1{
+      font-size: 28px;
     }
   }
 
-  @media (min-width: 1904px) {}
+  @media (min-width: 1024px) {
+    .v-carousel.main-carousel {
+      height: 750px;
+      min-height: auto;
+    }
+  }
 
   .fade-enter-active,
   .fade-leave-active {

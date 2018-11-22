@@ -1,6 +1,6 @@
 <template>
 
-  <v-carousel :interval="interval" hide-controls class="main-carousel theme2" v-else-if="theme == '2'">
+  <v-carousel :interval="interval" hide-controls class="main-carousel theme2">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="section">  
@@ -202,7 +202,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 130vw;
+      min-height: 850px;
     }
 
     .theme2 .layers-container {
@@ -276,12 +276,7 @@
     }
   }
 
-  @media (min-width: 640px) and (max-width: 960px) {
-
-    .v-carousel.main-carousel {
-        height: 100vh;
-        min-height: 500px;
-    }
+  @media (min-width: 640px) and (max-width: 102px) {
 
     .theme2 .layers-container {
       display: -webkit-box;
@@ -347,7 +342,38 @@
     }
   }
 
-  @media (min-width: 960px) and (max-width: 1264px) {
+  @media (min-width: 600px) and (max-width: 740px) {
+    .v-carousel.main-carousel {
+      height: 550px;
+      min-height: auto;
+    }
+  }
+
+  @media (min-width: 740px) and (max-width: 820px) {
+    .v-carousel.main-carousel {
+        height: 500px;
+        min-height: auto;
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 960px) {
+    .v-carousel.main-carousel {
+        height: 600px;
+        min-height: auto;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1264px) {
+
+    .v-carousel.main-carousel {
+      height: 700px;
+      min-height: auto;
+    }
+
+    .layers-container{
+      max-width: 1260px;
+    }
+
     /* theme 2 */
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
@@ -411,10 +437,6 @@
     }
 
     /* theme 2 */
-    .theme2.v-carousel.main-carousel {
-        height: auto;
-        min-height: 53vw;
-    }
 
     .theme2 .layers-container {
       display: flex;

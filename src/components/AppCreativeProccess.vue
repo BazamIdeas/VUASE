@@ -6,19 +6,19 @@
         </v-flex>
         <v-layout row>
           <v-flex xs12 class="creative-process-carousel">
-            <v-carousel :hide-delimiters="true">
+            <v-carousel :hide-delimiters="true" :cycle="false">
               <v-carousel-item v-for="(slide,i) in slides" :key="i" :src="slide.src">
               </v-carousel-item>
             </v-carousel>
           </v-flex>
         </v-layout>
-        <v-layout row class="pt-5 process-steps">
-          <v-flex xs4 v-for="(step,i) in steps" :key="i" class="px-5">
+        <v-layout row wrap class="pt-5 process-steps">
+          <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(step,i) in steps" :key="i" class="px-5">
             <v-layout row>
-              <v-flex xs2 align-center d-flex>
+              <v-flex xs2 sm1 align-center d-flex>
                 <img class="img-process-step" :src="step.icon" :alt="step.alt"/>
               </v-flex>
-              <v-flex xs10 align-center d-flex class="process-step">
+              <v-flex xs10 sm11 align-center d-flex class="process-step">
                 <AppHeading :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
               </v-flex>             
             </v-layout>
@@ -31,7 +31,7 @@
         </v-layout>
 
         <v-layout row class="pt-5 mt-5 process-steps" v-if="alters.length">
-          <v-flex xs4 v-for="(alter,i) in alters" :key="i" class="px-5">
+          <v-flex xs12 sm4  v-for="(alter,i) in alters" :key="i" class="px-5">
             <v-layout row>
               <v-flex xs2 align-center d-flex>
                 <img class="img-process-step" :src="alter.icon" :alt="alter.alt"/>
@@ -56,15 +56,15 @@
     props: {
       steps: {
         type: Array,
-        default: []
+        default: () => { return [] }
       },
       alters: {
         type: Array,
-        default: []
+        default: () => { return [] }
       },
       slides: {
         type: Array,
-        default: []
+        default: () => { return [] }
       },
       title: String
     }
@@ -89,6 +89,56 @@
 .process-steps + .process-steps {
   border-top: 3px solid #d8d8d8;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .process-steps > div {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .process-steps > div:nth-child(2){
+    border-left: none;
+    border-right: none;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+  .process-steps > div {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .process-steps > div:nth-child(2){
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+  .process-steps > div {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .process-steps > div:nth-child(2){
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1264px) {
+
+}
+
+@media (min-width: 1264px) and (max-width: 1904px) {
+
+}
+
+@media (min-width: 1904px) {}
+
+
 
 
 </style>
@@ -120,5 +170,52 @@
 .creative-process .process-step > div, .creative-process .process-step > div h2 { 
   margin: 0px !important;
 }
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .creative-process .creative-process-carousel .v-carousel {
+    height: 300px !important;
+  }
+  .creative-process .creative-process-carousel .v-image__image--cover {
+    background-size: 100% auto !important;
+  }
+
+  .creative-process .creative-process-carousel .v-carousel__item { 
+  }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+  .creative-process .creative-process-carousel .v-carousel {
+    height: 300px !important;
+  }
+  .creative-process .creative-process-carousel .v-image__image--cover {
+    background-size: 100% auto !important;
+  }
+  .creative-process .creative-process-carousel .v-carousel__item {
+  }
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+  .creative-process .creative-process-carousel .v-carousel {
+    height: 500px !important;
+  }
+  .creative-process .creative-process-carousel .v-image__image {
+    background-size: 100% auto !important;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1264px) {
+
+}
+
+@media (min-width: 1264px) and (max-width: 1904px) {
+
+}
+
+@media (min-width: 1904px) {}
+
+
 
 </style>
