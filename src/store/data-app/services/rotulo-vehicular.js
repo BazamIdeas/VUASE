@@ -165,12 +165,14 @@ export const rVehicular = {
     first: {
       image: '/images/pages/packs/rotulo-local-vw-familia-walker.png',
       title: 'RÓTULO LOCAL',
-      url: '/nuestros-servicios/rotulo-local'
+      url: '/nuestros-servicios/rotulo-local',
+      brief: '/nuestros-servicios/rotulo-local/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/addons-rotulo-uniforme-65-ropa-laboral.png',
       title: 'RÓTULO VESTIMENTA',
-      url: '/nuestros-servicios/rotulo-vestimenta-uniforme'
+      url: '/nuestros-servicios/rotulo-vestimenta-uniforme',
+      brief: '/nuestros-servicios/rotulo-vestimenta-uniforme/brief/estilos'
     }
   }
 }

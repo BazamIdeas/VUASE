@@ -7,7 +7,6 @@ import { logoEmpresa } from './logo-empresa.js'
 import { redesSociales } from './diseno-perfil-redes-sociales.js'
 import { imagenCorporativa } from './imagen-corporativa.js'
 
-import { packRediseno } from './pack-rediseno-de-logo.js'
 import { redisenoLogo } from './rediseno-de-logo.js'
 import { vectorizacion } from './vectorizacion.js'
 
@@ -34,7 +33,6 @@ export const services = {
   'diseno-perfil-redes-sociales': redesSociales,
   'imagen-corporativa': imagenCorporativa,
   'logo-empresa': logoEmpresa,
-  'pack-rediseno-de-logo': packRediseno,
   'rediseno-de-logo': redisenoLogo,
   'rotulo-banner': rBanner,
   'packaging': rPackaging,

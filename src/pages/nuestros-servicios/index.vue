@@ -15,7 +15,7 @@
               'bb': layout.carousel && !container.noBorder && container.layouts.length > 2, 
               'br': !layout.carousel && (index !== layout.services.length - 1) && !container.noBorder
             }" 
-            v-for="(service, index) in layout.services" :key="service.slug">
+            v-for="(service, index) in layout.services" :key="service.slug" v-if="validateService(service)">
               <AppServiceBox
               :id="service.id" 
               :name="service.dataService.title"  
@@ -100,6 +100,18 @@
         if (this.groupContent < index) this.transitionGroupContent = 'slide-x-reverse-transition'
         else this.transitionGroupContent = 'slide-x-transition'
         this.groupContent = index
+      },
+      validateService (service) {
+        if (!service) {
+          console.log('el servicio no esta definido')
+          return false
+        }
+
+        if (!service.dataService) {
+          console.log('la data del servicio no esta definida')
+          return false
+        }
+        return true
       }
     }
   }

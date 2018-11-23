@@ -208,7 +208,9 @@
   }
 
   @media (min-width: 641px) and (max-width: 960px) {
-  
+    .addons-first h2, .addons-last h2{
+      font-size: 18px
+    }
   }
 
   @media (min-width: 960px) and (max-width: 1264px) {

@@ -23,7 +23,7 @@ export const state = () => ({
           'carousel'
         ],
         [
-          'pack-rediseno-de-logo',
+          'rediseno-de-logo',
           'vectorizacion'
         ]
       ]

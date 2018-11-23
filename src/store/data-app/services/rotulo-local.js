@@ -161,12 +161,14 @@ export const rLocal = {
     first: {
       image: '/images/pages/packs/pack-rotulo-vannamel.png',
       title: 'PACKAGING',
-      url: '/nuestros-servicios/packaging'
+      url: '/nuestros-servicios/packaging',
+      brief: '/nuestros-servicios/packaging/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/addons-rotulo-uniforme-65-ropa-laboral.png',
       title: 'RÓTULO VESTIMENTA',
-      url: '/nuestros-servicios/rotulo-vestimenta-uniforme'
+      url: '/nuestros-servicios/rotulo-vestimenta-uniforme',
+      brief: '/nuestros-servicios/rotulo-vestimenta-uniforme/brief/estilos'
     }
   }
 }

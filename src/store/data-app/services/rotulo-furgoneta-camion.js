@@ -161,12 +161,14 @@ export const rFurgoneta = {
     first: {
       image: '/images/pages/packs/pack-rotulo-vannamel.png',
       title: 'PACKAGING',
-      url: '/nuestros-servicios/packaging'
+      url: '/nuestros-servicios/packaging',
+      brief: '/nuestros-servicios/packaging/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-rotulo-banner-dual.png',
       title: 'ROTULO BANNER',
-      url: '/nuestros-servicios/rotulo-banner'
+      url: '/nuestros-servicios/rotulo-banner',
+      brief: '/nuestros-servicios/rotulo-banner/brief/estilos'
     }
   }
 }
