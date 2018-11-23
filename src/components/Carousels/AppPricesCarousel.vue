@@ -1,16 +1,21 @@
 <template>
   <v-carousel :interval="interval" hide-controls class="main-carousel">
-    <v-carousel-item transition="none" reverse-transition="none">
+        <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-1">
-          <h1>LOS MEJORES DISEÑOS </h1>
-        </div>
-        <div class="layer" id="hc-layer-2-item-1">
-          <h1>GARANTÍA DE CONFORMIDAD 100%</h1>
-        </div>
         <div class="layer" id="hc-layer-3-item-1">
           <v-img class="animate-img" src="images/carousels/prices1.png"></v-img>
         </div>
+
+        <div class="layer" id="hc-layer-0">   
+          <div id="hc-layer-1-item-1">
+            <h1>LOS MEJORES DISEÑOS</h1>
+          </div>
+
+          <div id="hc-layer-2-item-1" style="z-index: 99;">
+            <h2>GARANTÍA DE CONFORMIDAD 100%</h2>
+          </div>
+        </div>
+
       </div>
     </v-carousel-item>
   </v-carousel>
@@ -141,25 +146,137 @@
     }
   }
 
-  @media (min-width: 600px) and (max-width: 960px) {}
+@media (max-width: 480px) {
+    .v-carousel.main-carousel {
+      min-height: auto;
+      height: 560px !important;
+    }
+ }
+  @media (max-width: 960px) {
 
-  @media (min-width: 960px) and (max-width: 1264px) {}
+    .v-carousel.main-carousel {
+        height: 600px;
+        min-height: auto;
+    }
 
-  @media (min-width: 1264px) and (max-width: 1904px) {
+    /*ITEM-1*/
+    .layers-container .layer {
+      position: initial;
+    }
+
+    div#hc-layer-0{
+      text-align: center;
+      width: 100%;
+    }
+
+    div#hc-layer-1-item-1 {
+      font-size: 18px;
+      line-height: 42px;
+    }
+
+    div#hc-layer-2-item-1 {
+      font-size: 11px;
+      padding: 0 5%;
+    }
+
+    div#hc-layer-2-item-1 > div {
+      margin-top: 20px !important;
+    }
+
+    div#hc-layer-3-item-1 {
+      width: 80%;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    a.boton-buscar {
+      min-width: 72px;
+    }
+
+    /*ITEM-2*/
+    div#hc-layer-1-item-2 {
+      font-size: 28px;
+      line-height: 39px;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-2 {
+      font-size: 17px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 860px) {
+    .v-carousel.main-carousel {
+        height: 680px;
+        min-height: auto;
+    }
+  }
+
+  
+  @media (min-width: 740px) and (max-width: 820px) {
+    .v-carousel.main-carousel {
+        height: 730px;
+        min-height: auto;
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 960px) {
+    .v-carousel.main-carousel {
+        height: 780px;
+        min-height: auto;
+    }
+  }
+
+
+  @media (min-width: 960px) {
+    .v-carousel.main-carousel {
+      height: 600px;
+      min-height: auto;
+    }
+
+    .md-auto{
+      width: auto;
+      flex: unset;
+    }
+
+    .layers-container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      max-width: 1260px;
+      margin: auto;
+      margin-top: 120px;
+    }
+
+
+    div#hc-layer-0 {
+      width: 38%;
+      margin-right: 5%;
+      padding-top: 100px;
+      z-index: 9999;
+    }
 
     /*ITEM-1*/
     div#hc-layer-1-item-1 {
       font-size: 47px;
-      width: 41%;
-      line-height: 72px;
-      top: 36%;
+      width: 100%;
+      line-height: 52px;
+      top: 56%;
       left: 48%;
     }
 
     div#hc-layer-2-item-1 {
       font-size: 17px;
-      width: 41%;
-      top: 60%;
+      width: 100%;
+      top: 80%;
       left: 48.25%;
       line-height: 28px;
     }
@@ -175,7 +292,7 @@
       font-size: 64px;
       width: 39%;
       line-height: 90px;
-      top: 25%;
+      top: 35%;
       left: 22%;
     }
 
@@ -192,9 +309,22 @@
       left: 30.5%;
       top: 4%;
     }
+
+    .layers-container .layer{
+      position: initial;
+    }
+
+    div#hc-layer-1-item-1{
+      font-size: 28px;
+    }
   }
 
-  @media (min-width: 1904px) {}
+  @media (min-width: 1024px) {
+    .v-carousel.main-carousel {
+      height: 750px;
+      min-height: auto;
+    }
+  }
 
   .fade-enter-active,
   .fade-leave-active {

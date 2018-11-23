@@ -11,15 +11,15 @@
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
               <div style="text-align: center">
-                <img :src="serviceObject.dataService.icon" alt="" width="200">
+                <img :src="serviceObject.dataService.icon" alt="" width="200" style="max-height: 200px">
                 <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
                 <h1 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h1>
               </div>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
-              <p class="caption font-weight-medium">{{ serviceObject.dataService.description }}</p>
+              <p class="subheading font-weight-medium">{{ serviceObject.dataService.description }}</p>
               <ul>
-                <li v-for="(item, i) in serviceObject.dataService.list" :key="i" class="my-2 caption font-weight-medium">{{item}}</li>
+                <li v-for="(item, i) in serviceObject.dataService.list" :key="i" class="my-2 subheading font-weight-medium">{{item}}</li>
               </ul>
               <div>
                 <v-btn flat :to="'/nuestros-servicios/'+serviceObject.slug" class="px-2" small style="color:#676767">
