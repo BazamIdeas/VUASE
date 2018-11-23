@@ -76,7 +76,7 @@
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'+ serviceSlug">
               CONOCER MAS SOBRE EL SERVICIO
             </v-btn>
-            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/nuestros-servicios/'+ serviceSlug + '/' + briefUrl">
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" @click="selectService()">
               INICIAR MI PROYECTO AHORA
             </v-btn>
           </v-layout>
@@ -108,6 +108,22 @@
         name: 'EJEMPLO ' + params.slug.toUpperCase(),
         serviceSlug: params.servicio,
         portfolioSlug: params.slug
+      }
+    },
+    methods: {
+      async selectService () {
+        const brief = { service: { id: this.portfolio.service.id, name: this.portfolio.service.name, slug: this.portfolio.service.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
+        var target = null
+        // TODO: PENDIENTE
+        if (this.serviceSlug === 'diseno-logo-y-pagina-web' || this.serviceSlug === 'diseno-pagina-web') {
+          brief.subServices = []
+          target = 'cotizacion'
+        } else {
+          target = 'brief/disenos'
+        }
+
+        this.$storage.set('brief', brief)
+        this.$router.push('/nuestros-servicios/' + this.serviceSlug + '/' + target)
       }
     },
     data () {

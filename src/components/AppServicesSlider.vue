@@ -3,11 +3,11 @@
     <v-layout row>
       <v-flex xs12 class="service-slider-container" ref="serviceSliderContainer">
         <div class="service-slider-scrollable" ref="serviceSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
-          <v-layout row d-block>
+          <v-layout row>
             <v-flex v-for="(group, i) in groupsServices" :key="i" class="service-slider-item" align-content-center>
               <v-btn flat class="ma-0 service-slider-item-button" :class="{ 'selected': i === selected }" @click="selectGroup(i, $event)" large>
                 <img v-if="group.icon" :src="group.icon" height="40" width="50">
-                <span class=" ml-3 ">{{ group.name }}</span>
+                <span class=" ml-3 " >{{ group.name }}</span>
               </v-btn>
             </v-flex>
           </v-layout>
@@ -81,9 +81,10 @@
   }
 
   .service-slider-item {
-    margin: 15px 0px;
+    margin: 20px 0px;
     padding: 0px 0px !important;
-    display: inline-block;
+    display: inline-flex;
+    max-width: unset;
   }
 
   .service-slider-item:not(:first-child) {
@@ -106,5 +107,15 @@
   .v-btn:hover:before,
   .v-btn:focus:before {
     background-color: transparent;
+  }
+
+  @media (min-width: 320px) and (max-width: 960px) {
+    .service-slider-scrollable {
+      bottom: unset;
+    }
+
+    .service-slider-item {
+      margin: 40px 0px 20px 0px;
+    }
   }
 </style>

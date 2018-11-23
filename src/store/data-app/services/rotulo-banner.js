@@ -157,12 +157,14 @@ export const rBanner = {
     first: {
       image: '/images/pages/packs/pack-rotulo-vannamel.png',
       title: 'PACKAGING',
-      url: '/nuestros-servicios/packaging'
+      url: '/nuestros-servicios/packaging',
+      brief: '/nuestros-servicios/packaging/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-rotulo-local-sanidae.png',
       title: 'RÓTULO LOCAL',
-      url: '/nuestros-servicios/rotulo-local'
+      url: '/nuestros-servicios/rotulo-local',
+      brief: '/nuestros-servicios/rotulo-local/brief/estilos'
     }
   }
 }

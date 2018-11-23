@@ -7,10 +7,10 @@
         </v-flex>
       </v-layout>
       <v-layout row>
-        <v-flex xs8 offset-xs2> 
+        <v-flex xs12 offset-xs0 sm12 offset-sm0 md8 offset-md2> 
           <v-container grid-list-md fluid class="pa-0 service-options-space mt-4">
-              <v-layout row v-if="items" class="first-service-option-row">
-                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
+              <v-layout row wrap v-if="items" class="first-service-option-row">
+                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index] ? 'selected-option' : '']">
                     <img @click="openOption(items[index])" :src="items[index].icon"/>
@@ -21,8 +21,8 @@
                   </div>
                 </v-flex>
               </v-layout>
-              <v-layout row v-if="items" class="second-service-option-row">
-                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
+              <v-layout row wrap v-if="items" class="second-service-option-row">
+                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index+3] ? 'selected-option' : '']">
                     <img  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
@@ -33,8 +33,8 @@
                   </div>
                 </v-flex>
               </v-layout>
-              <v-layout row v-if="items" class="third-service-option-row">
-                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs4 align-center d-flex justify-center>  
+              <v-layout row wrap v-if="items" class="third-service-option-row">
+                <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index+6] ? 'selected-option' : '']">
                     <img @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
@@ -53,7 +53,7 @@
                   {{pop.open.description}}
                 </div>
                 <v-layout row v-if="items" wrap>
-                  <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs6>
+                  <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs12 sm6>
                       <v-layout row>
                         <v-flex xs2 offset-xs1>
                           <img :src="popItem.icon"/>
@@ -69,37 +69,37 @@
         </v-flex>
       </v-layout>
       <v-layout row class="mt-5">
-        <v-flex xs6 offset-xs3>
+        <v-flex offset-xs0 xs12 sm10 offset-sm1 md6 offset-md3>
           <v-layout row wrap d-flex column class="ml-4">
             <v-flex class="ml-2 text-xs-center">
-                <div>
-                  <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
-                    PRECIO CERRADO EN:
-                  </h2>
-                  <v-layout xs12 row d-flex class="mt-2">
-                    <v-flex xs4 offset-xs1 >
-                      <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
+              <div>
+                <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
+                  PRECIO CERRADO EN:
+                </h2>
+                <v-layout row wrap d-flex class="mt-2">
+                  <v-flex xs12 sm4 offset-sm1 >
+                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
+                  </v-flex>
+                  <v-layout xs6 row d-flex>
+                    <v-flex xs4 style="border-right:1px solid silver;">
+                      <h3 class="title">50%</h3>
+                      <h5 class="body-2">al iniciar</h5>
                     </v-flex>
-                    <v-layout xs6 row d-flex>
-                      <v-flex xs4 style="border-right:1px solid silver;">
-                        <h3 class="title">50%</h3>
-                        <h5 class="body-2">al iniciar</h5>
-                      </v-flex>
-                      <v-flex xs5>
-                        <h3 class="title">50%</h3> 
-                        <h5 class="body-2">al finalizar</h5>
-                      </v-flex>
-                    </v-layout>
-                    <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
+                    <v-flex xs5>
+                      <h3 class="title">50%</h3> 
+                      <h5 class="body-2">al finalizar</h5>
+                    </v-flex>
                   </v-layout>
-                </div>         
-              </v-flex>
-            </v-layout>
-          </v-flex>
-        </v-layout>
-      </v-flex>
-    </v-layout>
-  </div>
+                  <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
+                </v-layout>
+              </div>         
+                
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script lang="js">
@@ -670,7 +670,69 @@
     align-items: center; 
   }
 
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .second-service-option-row .service-option-container{
+      border-top: none;
+      border-bottom: none;
+    }
 
+    .service-option:nth-child(2){
+      border-left: none;
+      border-right: none;
+    }
+
+    .service-option {
+      border-bottom: 2px solid #bebebe;
+    }
+
+    .shadow-pop-service-option h2{
+      font-size: 16px;
+    }
+
+    .close-shadow-option-service {
+      top: 2%;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 639px) {
+    
+    .second-service-option-row .service-option-container{
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .service-option:nth-child(2){
+      border-left: none;
+      border-right: none;
+    }
+
+    .service-option-container h4{
+      font-size: 11px 
+    }
+
+    .service-option {
+      border-bottom: 2px solid #bebebe;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 960px) {
+    .service-option-container h4{
+      font-size: 11px 
+    }
+
+  }
+
+  @media (min-width: 960px) and (max-width: 1264px) {
+
+  }
+
+  @media (min-width: 1264px) and (max-width: 1904px) {
+
+  }
+
+  @media (min-width: 1904px) {}
 
 </style>
 
@@ -691,6 +753,36 @@
   .service-option-container .know-more:before{
     background-color: white;
   }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .service-option-container .know-more{
+      display: block;
+      font-size: 12px;
+    }
+
+  }
+
+  @media (min-width: 481px) and (max-width: 639px) {
+    .service-option-container .know-more{
+      display: block;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 960px) {
+    .service-option-container .know-more{
+      display: block;
+    }
+  }
+
+  @media (min-width: 960px) and (max-width: 1264px) {
+    
+  }
+
+  @media (min-width: 1264px) and (max-width: 1904px) {
+
+  }
+
+  @media (min-width: 1904px) {}
 
 
 </style>

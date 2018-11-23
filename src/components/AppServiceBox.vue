@@ -4,8 +4,7 @@
     @mouseleave="outstanding = false"  
     v-resize="showBorders" 
     row wrap 
-    class="service-box-container px-3 pt-5 pb-2" 
-    :class="{ 'br': br && borders, 'bb': bb && borders, 'bt': bt && borders }">
+    class="service-box-container px-3 pt-5 pb-2 xs-pt-2">
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
       <img :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
@@ -31,11 +30,10 @@
     </v-flex>
 
     <v-flex xs12>
-      <v-btn :to="'/nuestros-servicios/'+url" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
+      <v-btn @click="saveServiceLocalStorage(url)" flat class="ma-0 px-2" large :class="{ 'outstanding': outstanding }">
         conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
       </v-btn>
     </v-flex>
-    <v-flex xs12 v-if="addonService" style="height:60px"></v-flex>
   </v-layout>
 </template>
 
@@ -91,10 +89,39 @@
           this.borders = false
         }
       },
-      async selectService () {
+      saveServiceLocalStorage (slug) {
+        let packages = []
+
+        switch (slug) {
+          case 'ecommerce':
+            packages.push('vender-mis-productos-online')
+            packages.push('ofrecer-multiples-servicios')
+            break
+          case 'presencia-web':
+            packages.push('presentar-mi-empresa')
+            break
+          case 'diseno-pagina-web':
+            packages.push('presentar-mi-empresa')
+            packages.push('ofrecer-multiples-servicios')
+            break
+          case 'diseno-logo-y-pagina-web':
+            packages.push('presentar-mi-empresa')
+            packages.push('ofrecer-multiples-servicios')
+            break
+        }
+
+        this.$storage.set(packages)
+
+        if (slug === 'ecommerce' || slug === 'presencia-web') {
+          slug = 'diseno-pagina-web'
+        }
+
+        this.$router.push('/nuestros-servicios/' + slug)
+      }
+      /*  async selectService () {
         const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
-        /* TODO: PENDIENTE */
+        // TODO: PENDIENTE
         if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
@@ -104,7 +131,7 @@
 
         this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.url + '/' + target)
-      }
+      } */
     },
     filters: {
       uppercase (value) {
@@ -115,41 +142,6 @@
 </script>
 
 <style scoped>
-
-  .layout.service-box-container {
-    position: relative;
-  }
-
-  .service-box-container.bt:after {
-    content: "";
-    width: 80%;
-    height: 2px;
-    background-color: #a5a5a5;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .service-box-container.bb:before {
-    content: "";
-    width: 80%;
-    height: 2px;
-    background-color: #a5a5a5;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .service-box-container.br:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    min-height: 400px;
-    background-color: #a5a5a5;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 
   *, button.v-btn{
     color: #5e5e5e;
@@ -184,6 +176,5 @@
   .flex.service-box-title {
     display: flex;
     align-items: flex-end;
-
-}
+  }
 </style>

@@ -8,7 +8,7 @@
     </v-container>
     
     <!-- PORTFAFOLIO -->
-    <h2 class="mb-5 text-xs-center display-1 font-weight-bold" >
+    <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
       LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!
     </h2>
 
@@ -149,7 +149,7 @@
           company: 'Hotel Aixo Suites',
           description: '“La atención de Liderlogo ha sido excelente, lo recomiendo.”'
         }, {
-          stars: 5,
+          stars: 4,
           logo: '/images/testimonies/home/grupo-hivasa.jpg',
           company: 'Grupo Hivasa',
           description: '“Mi experiencia ha sido muy buena en general, tiempo, costos y respuesta.”'
@@ -170,7 +170,7 @@
           description: '“Profesionales al 100%, como siempre!”'
         },
         {
-          stars: 5,
+          stars: 4,
           logo: '/images/testimonies/home/finanpay.jpg',
           company: 'Finanpay',
           description: '“La atención recibida por parte de Liderlogo ha sido excelente. Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
@@ -224,6 +224,7 @@
     .xs-mt-0{
       margin-top:0 !important;
     }
+
     .xs-height-auto{
       height: auto !important;
     }
@@ -232,6 +233,7 @@
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
+    
     .xs-text-size-30{
       font-size: 30px !important;
     }

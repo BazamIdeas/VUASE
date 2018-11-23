@@ -8,7 +8,7 @@
         </v-flex>
         <v-flex md7 offset-md1 class="mb-5">
           <v-layout row wrap>
-            <v-flex md3 v-for="pkg in slugsPackages" :key="pkg" class="px-2 mb-2">
+            <v-flex md3 xs6 v-for="pkg in slugsPackages" :key="pkg" class="px-2 mb-2">
               <v-card class="pa-3 package" :class="{ 'selected': selectedPkg(pkg) }">
                 <div class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
                 </div>
@@ -35,10 +35,10 @@
                 </v-layout>
               </v-card>
             </v-flex>
-            <v-flex md12 class="mt-3">
+            <v-flex md12 xs12 class="mt-3">
               <p class="headline font-weight-medium section-title" style="border-bottom: 2px solid #004b7b;">Funcionalidades</p>
             </v-flex>
-            <v-flex md3 v-for="service in addons" v-if="addonsObject[service.slug].section === 'functionalities'" :key="service.slug" class="px-2 mb-2">
+            <v-flex md3 xs6 v-for="service in addons" v-if="addonsObject[service.slug].section === 'functionalities'" :key="service.slug" class="px-2 mb-2">
               <v-card class="service-package" :class="{ 'selected': selectedAddon(service.slug) }"  >
                 <div class="px-3 pt-2" @click="selectAddon(service.slug)">
                   <img :src="'/images/quote/services/' + service.slug + '.svg'">
@@ -73,7 +73,7 @@
             </table>
             <v-divider light></v-divider>
             <div class="subheading text-xs-center py-2 font-weight-bold section-title">
-              <v-btn color="primary">CONTINUAR</v-btn>
+              <v-btn color="primary" @click="toCheckout">CONTINUAR</v-btn>
             </div>
           </v-card>
         </v-flex>
@@ -86,6 +86,9 @@
   export default {
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
+    },
+    asyncData ({ params }) {
+      return { params: params }
     },
     mounted () {
       let packages = this.$storage.get('quotePacksOptions')
@@ -202,6 +205,9 @@
         }
 
         return total
+      },
+      dataService () {
+        return this.$store.getters['services/getBySlug'](this.params.servicio)
       }
     },
     methods: {
@@ -255,6 +261,25 @@
       },
       selectedAddon (slug) {
         return this.addonsSelected.includes(slug)
+      },
+      toCheckout () {
+        const brief = { service: { id: this.dataService.id, name: this.dataService.name, slug: this.dataService.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
+        var target = null
+
+        brief.subServices = []
+
+        for (let addon of this.addons) {
+          if (this.addonsSelected.includes(addon.slug)) {
+            brief.subServices.push({ id: addon.id, name: addon.name, slug: addon.slug })
+          } else if (addon.slug === 'diseno-y-desarrollo-de-seccion-web') {
+            brief.subServices.push({ id: addon.id, name: addon.name, slug: addon.slug, sections: this.sections })
+          }
+        }
+
+        target = 'brief/disenos'
+
+        this.$storage.set('brief', brief)
+        this.$router.push('/nuestros-servicios/' + this.dataService.slug + '/' + target)
       }
     }
   }
@@ -297,7 +322,7 @@
   }
 
   .service-package {
-    border: 2px solid grey;
+    /*border: 2px solid grey;*/
   }
 
   .service-package.selected {

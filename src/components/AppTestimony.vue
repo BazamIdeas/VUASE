@@ -30,7 +30,7 @@
                   {{item.company}}
                 </h3>
                 <v-flex>
-                  <a @click="$router.push('/testimonios')" class="text-xs-center font-weight-medium" style="margin:auto; display:block;     color: #ff9800 !important;">
+                  <a @click="$router.push('/opiniones')" class="text-xs-center font-weight-medium" style="margin:auto; display:block;     color: #ff9800 !important;">
                     OPINIONES
                   </a>
                 </v-flex>

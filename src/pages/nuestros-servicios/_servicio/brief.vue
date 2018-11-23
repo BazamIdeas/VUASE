@@ -21,12 +21,13 @@
       </v-layout>
     </v-container>
     <v-toolbar fixed style="top: inherit;bottom: 0;">
-      <div class="hidden-sm-and-down">
+      <div class="">
+        <v-btn color="primary" @click="$router.push('/nuestros-servicios')">Volver</v-btn>
         <v-btn color="primary" v-if="stepData.prev" @click="nextStep(stepData.prev)">Atras</v-btn>
       </div>
       <span>Completa los datos</span>
       <v-spacer></v-spacer>
-      <div class="hidden-sm-and-down">
+      <div class="">
         <v-btn v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Omitir</v-btn>
         <v-btn color="primary" v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Continuar</v-btn>
         <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true">Continuar</v-btn>

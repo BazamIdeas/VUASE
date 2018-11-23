@@ -147,7 +147,7 @@ export const imagenCorporativa = {
     company: 'Finanpay',
     description: '“Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
   }],
-  topSliderHeight: '770px',
+  topSliderHeight: '700px',
   topSlider: [
     {
       url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-duarte.png',
@@ -233,12 +233,14 @@ export const imagenCorporativa = {
     first: {
       image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
       title: 'DÍPTICO',
-      url: '/nuestros-servicios/diptico'
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
       title: 'LOGO + WEB',
-      url: '/nuestros-servicios/diseno-logo-y-pagina-web'
+      url: '/nuestros-servicios/diseno-logo-y-pagina-web',
+      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/diseno'
     }
   }
 }

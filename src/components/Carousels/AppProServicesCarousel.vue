@@ -112,6 +112,12 @@
       text-align: center;
     }
 
+    div#hc-layer-1-item-1 {
+      font-size: 23px;
+      line-height: 39px;
+      top: 49%;
+    }
+
     div#hc-layer-2-item-1 {
       font-size: 17px;
       top: 80%;
@@ -119,9 +125,15 @@
       text-align: center;
     }
 
+    div#hc-layer-2-item-1 {
+      font-size: 14px;
+      top: 64%;
+    }
+
     div#hc-layer-3-item-1 {
-      width: 100%;
-      top: 17%;
+      width: 75%;
+      top: 11%;
+      left: 14%;
     }
 
     /*ITEM-2*/
@@ -144,11 +156,135 @@
       left: -16%;
       top: 17%;
     }
+
+    .v-carousel.profesional-services-slider {
+      height: 560px;
+    }
   }
 
-  @media (min-width: 600px) and (max-width: 960px) {}
+  @media (min-width: 600px) and (max-width: 960px) {
+    /*ITEM-1*/
+    div#hc-layer-1-item-1 {
+      font-size: 28px;
+      line-height: 39px;
+      top: 60%;
+      text-align: center;
+    }
 
-  @media (min-width: 960px) and (max-width: 1264px) {}
+    div#hc-layer-1-item-1 {
+      font-size: 21px;
+      line-height: 39px;
+      top: 28%;
+      left: 39%;
+    }
+
+    div#hc-layer-2-item-1 {
+      font-size: 17px;
+      top: 80%;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-1 {
+      font-size: 13px;
+      top: 53%;
+    }
+
+    div#hc-layer-3-item-1 {
+        width: 40%;
+        top: 12%;
+        left: 6%;
+    }
+
+    /*ITEM-2*/
+    div#hc-layer-1-item-2 {
+      font-size: 28px;
+      line-height: 39px;
+      top: 60%;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-2 {
+      font-size: 17px;
+      top: 80%;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    div#hc-layer-3-item-2 {
+      width: 100%;
+      left: -16%;
+      top: 17%;
+    }
+
+    .v-carousel.main-carousel {
+      height: 100vh;
+      min-height: 545px;
+    }
+  }
+
+  @media (min-width: 960px) and (max-width: 1264px) {
+        /*ITEM-1*/
+    div#hc-layer-1-item-1 {
+      font-size: 28px;
+      line-height: 39px;
+      top: 60%;
+      text-align: center;
+    }
+
+    div#hc-layer-1-item-1 {
+      font-size: 26px;
+      line-height: 39px;
+      top: 77%;
+      left: 17%;
+    }
+
+    div#hc-layer-2-item-1 {
+      font-size: 17px;
+      top: 80%;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-1 {
+      font-size: 13px;
+      width: 95%;
+      top: 85%;
+      left: 2.5%;
+    }
+
+    div#hc-layer-3-item-1 {
+      width: 60%;
+      top: 15%;
+      left: 20%;
+    }
+
+    /*ITEM-2*/
+    div#hc-layer-1-item-2 {
+      font-size: 28px;
+      line-height: 39px;
+      top: 60%;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-2 {
+      font-size: 17px;
+      top: 80%;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    div#hc-layer-3-item-2 {
+      width: 100%;
+      left: -16%;
+      top: 17%;
+    }
+
+    .v-carousel.main-carousel {
+      height: 100vh;
+      min-height: 854px;
+    }
+  }
 
   @media (min-width: 1264px) and (max-width: 1904px) {
 
