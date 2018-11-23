@@ -23,7 +23,7 @@ export const state = () => ({
           'carousel'
         ],
         [
-          'pack-rediseno-de-logo',
+          'rediseno-de-logo',
           'vectorizacion'
         ]
       ]
@@ -157,6 +157,9 @@ export const state = () => ({
 export const mutations = {
   GET_ALL (state, services) {
     state.list = services
+    if (process.browser) {
+      localStorage.setItem('local-services', JSON.stringify(services))
+    }
 
     for (let group of state.groups) {
       if (!group.rows) { continue }
@@ -214,11 +217,20 @@ export const getters = {
 
 export const actions = {
   async getAll ({ rootState, commit }) {
-    try {
-      let services = await this.$axios.$get('services?limit=1000')
-      commit('GET_ALL', services)
-    } catch (error) {
-      console.log(error)
+    let localServices
+    if (process.browser) {
+      localServices = JSON.parse(localStorage.getItem('local-services'))
+    }
+
+    if (localServices) {
+      commit('GET_ALL', localServices)
+    } else {
+      try {
+        let services = await this.$axios.$get('services?limit=1000')
+        commit('GET_ALL', services)
+      } catch (error) {
+        console.log(error)
+      }
     }
   }
 }

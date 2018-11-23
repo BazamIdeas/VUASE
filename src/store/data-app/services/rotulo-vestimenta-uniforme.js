@@ -172,12 +172,14 @@ export const rVestimenta = {
     first: {
       image: '/images/pages/packs/pack-rotulo-banner-dual.png',
       title: 'ROTULO BANNER',
-      url: '/nuestros-servicios/packaging'
+      url: '/nuestros-servicios/packaging',
+      brief: '/nuestros-servicios/packaging/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/rotulo-local-vw-familia-walker.png',
       title: 'RÓTULO LOCAL',
-      url: '/nuestros-servicios/rotulo-banner'
+      url: '/nuestros-servicios/rotulo-banner',
+      brief: '/nuestros-servicios/rotulo-banner/brief/estilos'
     }
   }
 }

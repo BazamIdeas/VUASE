@@ -70,7 +70,7 @@ module.exports = {
     baseURL: axiosUrl,
     browserBaseURL: axiosUrl,
     retry: { retries: 3 },
-    debug: (process.env.NODE_ENV !== 'production')
+    debug: (process.env.NODE_ENV === 'production')
   },
   toast: {
     position: 'top-right',

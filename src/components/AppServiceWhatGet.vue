@@ -1,7 +1,7 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-4 pb-0">
-      <v-flex xs8 class="mb-5" v-if="!justOne">
+      <v-flex xs8 v-if="!justOne">
         <AppHeading number="1" size="display-2" align="center" :title="title" />
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get">

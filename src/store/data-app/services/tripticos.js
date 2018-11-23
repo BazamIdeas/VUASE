@@ -200,12 +200,14 @@ export const tripticos = {
     first: {
       image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
       title: 'PUBLICIDAD',
-      url: '/nuestros-servicios/publicidad'
+      url: '/nuestros-servicios/publicidad',
+      brief: '/nuestros-servicios/publicidad/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
       title: 'DÍPTICO',
-      url: '/nuestros-servicios/diptico'
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

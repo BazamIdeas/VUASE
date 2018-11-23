@@ -166,16 +166,18 @@ export const vectorizacion = {
   packs: {
     title: 'APROVECHA NUESTROS PACK',
     first: {
-      image: '/images/pages/packs/rediseño-de-logo-+-papeleria.png',
-      title: 'VECTORIZACIÓN DE LOGO + PAPELERÍA',
-      url: '/nuestros-servicios/vectorizacion-mas-papeleria',
-      notSecondButton: true
+      image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+      title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
+      subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
+      url: '/nuestros-servicios/imagen-corporativa',
+      brief: '/nuestros-servicios/imagen-corporativa/brief/diseno'
     },
     last: {
-      image: '/images/pages/packs/rediseno-de-logo+web.png',
-      title: 'VECTORIZACIÓN DE LOGO + WEB',
-      url: '/nuestros-servicios/vectorizacion-mas-web',
-      notSecondButton: true
+      image: '/images/pages/packs/addons-logo+web.png',
+      title: 'LOGO + WEB',
+      subtitle: '50% OFF EN DISEÑO DE LOGO',
+      url: '/nuestros-servicios/diseno-logo-y-pagina-web',
+      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/diseno'
     }
   }
 }

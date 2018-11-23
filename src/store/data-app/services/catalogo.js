@@ -200,12 +200,14 @@ export const catalogo = {
     first: {
       image: '/images/pages/tripticos/triptico-gloss.png',
       title: 'TRÍPTICO',
-      url: '/nuestros-servicios/triptico'
+      url: '/nuestros-servicios/triptico',
+      brief: '/nuestros-servicios/triptico/brief/estilos'
     },
     last: {
       image: '/images/pages/diptico/diptico-gesvetia.png',
       title: 'DÍPTICO',
-      url: '/nuestros-servicios/diptico'
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

@@ -1,5 +1,5 @@
 export const redisenoLogo = {
-  list: ['Diseños 100% profesionales de renovación', 'Opciones ilimitadas hasta tu aprobación', 'Diseños en 24 hrs', 'Tu logo listo para usar (editables e imágenes)'],
+  list: ['Restiling exclusivo realizado a tu medida listo para utilizar en todos los formatos que puedes necesitar con tu manual de marca y certificado de derechos'],
   title: 'REDISEÑO DE LOGO',
   description: `Renovación de tu Logo hasta su entera aprobación.`,
   shortDescription: `Renovación de tu Logo hasta su entera aprobación.`,
@@ -32,8 +32,8 @@ export const redisenoLogo = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rediseno-de-logo/mockup-ferreteria-flores.png',
-    color: '#211F20',
+    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
+    color: 'black',
     columns: [
       [{
         title: 'LOGO EN DIVERSOS FORMATOS',
@@ -107,29 +107,11 @@ export const redisenoLogo = {
       response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
     }
   ],
-  testimonies: [
-    {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Ha sido excelente trabajar con ustedes”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Profesionales, competentes, rápidos.!”'
-    }, {
-      stars: 5,
-      logo: 'papeleria.svg',
-      description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
-    }
-  ],
+  testimonies: [{
+    stars: 4,
+    logo: 'papeleria.svg',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+  }],
   topSlider: [
     {
       url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
@@ -191,31 +173,16 @@ export const redisenoLogo = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rediseno-logo/17.-osmaservice.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/18.-la-casa-de-kett.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/19.-avicola-pungurume.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/20.arquitectura-sin-limites.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/21.-ares.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/22.-geoit.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/23.-lextres-abogados.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/24. limpverd.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/24.-avedrone.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/25.-lormanic.jpg' }
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/41.-aquafrost mock up 3.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/42.-areté ingeniería 3.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/43.-arq. sin limites mock up 3.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/44.-comercial andres mock up 2.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/45.-dulce-detalles-2.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/46.-mock up 2px.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/47.-mock up 3 berenguel.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/48.-mock up 3 gloss.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/blackbird.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/bolgat.jpg' }
     ]
-  },
-  packs: {
-    title: 'APROVECHA NUESTROS PACK',
-    first: {
-      image: '/images/pages/packs/rediseno-de-logo+papeleria.png',
-      title: 'REDISEÑO DE LOGO + PAPELERÍA',
-      url: '/nuestros-servicios/rediseno-de-logo-papeleria',
-      notSecondButton: true
-    },
-    last: {
-      image: '/images/pages/packs/rediseno-de-logo+web.png',
-      title: 'REDISEÑO DE LOGO + WEB',
-      url: '/nuestros-servicios/rediseno-de-logo-web',
-      notSecondButton: true
-    }
   }
 }
