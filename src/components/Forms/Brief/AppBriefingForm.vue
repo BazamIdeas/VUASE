@@ -1,22 +1,22 @@
 <template>
   <form id="app">
     <v-layout row wrap class="px-2 mt-4 mb-5">
-      <v-flex md4>
-        <h1 class="heading"> Datos Basicos </h1>
+      <v-flex md4 xs12>
+        <h1 class="heading"> Datos Básicos </h1>
       </v-flex>
-      <v-flex md8>
-        <v-text-field name="email" v-model="formFields.email.value" label="Correo electronico" v-validate="'required|email'" :error-messages="errors.collect('email')" box></v-text-field>
+      <v-flex md8 xs12>
+        <v-text-field name="email" v-model="formFields.email.value" label="Correo electrónico" v-validate="'required|email'" :error-messages="errors.collect('email')" box></v-text-field>
         <v-text-field name="names" v-model="formFields.names.value" label="Nombres" v-validate="'required'" :error-messages="errors.collect('names')" box></v-text-field>
         <v-text-field name="phone" v-model="formFields.phone.value" label="Teléfono" v-validate="'required'" :error-messages="errors.collect('phone')" box></v-text-field>
         <v-text-field name="company" v-model="formFields.company.value" label="Nombre de la empresa" v-validate="'required'" :error-messages="errors.collect('company')" box></v-text-field>
       </v-flex>
-      <v-flex md12 class="my-3">
+      <v-flex md12 xs12 class="my-3">
         <div style="height: 1px; background: grey"></div>
       </v-flex>
-      <v-flex md4>
+      <v-flex md4 xs12>
         <h1 class="heading"> Información Necesaria </h1>
       </v-flex>
-      <v-flex md8>
+      <v-flex md8 xs12>
         <v-text-field v-for="field in form" :key="field.name" v-if="field.type === 'text'" :ref="field.name" v-model="formFields[field.name].value" :label="field.label" box></v-text-field>
         <v-textarea v-else-if="field.type === 'textarea'" :ref="field.name" v-model="formFields[field.name].value" :label="field.label" box></v-textarea>
         <div v-else-if="field.type === 'checkbox'" class="my-3">

@@ -7,7 +7,7 @@
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 py-5" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_1.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-2" align="left" margin="pl-5 mb-5"/>
+              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-2 xs-headline" align="left" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
                 Nuestro equipo elabora y te acompaña en cada paso de tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia tu negocio.
               </p>

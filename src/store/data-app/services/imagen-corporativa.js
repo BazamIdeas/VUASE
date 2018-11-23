@@ -147,7 +147,7 @@ export const imagenCorporativa = {
     company: 'Finanpay',
     description: '“Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
   }],
-  topSliderHeight: '770px',
+  topSliderHeight: '700px',
   topSlider: [
     {
       url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-duarte.png',
