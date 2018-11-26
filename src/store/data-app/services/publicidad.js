@@ -3,7 +3,7 @@ export const publicidad = {
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu publicidad listo para usar (editable e imágenes)'],
   description: `Comunica tu negocio donde necesites y que tu negocio crezca`,
   shortDescription: `Comunica tu negocio donde necesites y que tu negocio crezca`,
-  icon: '/icons/publicidad.svg',
+  icon: '/icons/publicidades.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
