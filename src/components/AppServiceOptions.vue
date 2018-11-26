@@ -70,8 +70,8 @@
       </v-layout>
       <v-layout row class="mt-5">
         <v-flex offset-xs0 xs12 sm10 offset-sm1 md6 offset-md3>
-          <v-layout row wrap d-flex column class="ml-4">
-            <v-flex class="ml-2 text-xs-center">
+          <v-layout row wrap d-flex column class="final-price-container">
+            <v-flex class="text-xs-center">
               <div>
                 <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
                   PRECIO CERRADO EN:
@@ -80,12 +80,12 @@
                   <v-flex xs12 sm4 offset-sm1 >
                     <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
                   </v-flex>
-                  <v-layout xs6 row d-flex>
-                    <v-flex xs4 style="border-right:1px solid silver;">
+                  <v-layout xs6 row d-flex class="mr-3">
+                    <v-flex xs6 style="border-right:1px solid silver;">
                       <h3 class="title">50%</h3>
                       <h5 class="body-2">al iniciar</h5>
                     </v-flex>
-                    <v-flex xs5>
+                    <v-flex xs6>
                       <h3 class="title">50%</h3> 
                       <h5 class="body-2">al finalizar</h5>
                     </v-flex>
