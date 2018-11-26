@@ -30,6 +30,8 @@
 </template>
 
 <script>
+  import { addContact } from '../plugins/agile_methods.js'
+
   export default {
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
@@ -41,7 +43,33 @@
     },
     methods: {
       formHandler () {
-        this.formSent = true
+        /* this.formSent = true */
+        var contact = {
+          'lead_score': '92',
+          'tags': [
+            'Lead',
+            'Likely Buyer'
+          ],
+          'properties': [
+            {
+              'type': 'SYSTEM',
+              'name': 'first_name',
+              'value': 'Los '
+            },
+            {
+              'type': 'SYSTEM',
+              'name': 'email',
+              'subtype': 'work',
+              'value': 'sila@tester.com'
+            },
+            {
+              'type': 'SYSTEM',
+              'name': 'address',
+              'value': '{\'address\':\'225 George Street\',\'city\':\'NSW\',\'state\':\'Sydney\',\'zip\':\'2000\',\'country\':\'Australia\'}'
+            }
+          ]
+        }
+        addContact(contact)
       }
     }
   }
