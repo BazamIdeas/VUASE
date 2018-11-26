@@ -7,14 +7,14 @@
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 py-5 hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_1.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-2 xs-headline" align="left" margin="pl-5 mb-5"/>
+              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-1 xs-headline" align="left" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
                 Nuestro equipo elabora y te acompaña en cada paso de tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia tu negocio.
               </p>
             </v-flex>
             <v-flex xs12 md6 class="hidden-md-and-up" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_1.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-2 xs-headline" align="left" margin="pl-5 mb-5"/>
+              <AppHeading number="2" title="GESTIONAMOS TUS PROYECTOS" size="display-1 xs-headline" align="left" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
                 Nuestro equipo elabora y te acompaña en cada paso de tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia tu negocio.
               </p>
@@ -28,7 +28,7 @@
           <v-layout row wrap>
             <v-flex xs12 md6 class="hidden-md-and-up" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_2.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="PRIVACIDAD GARANTIZADA" size="display-2 xs-headline" align="left" margin="pl-5 mb-5"/>
+              <AppHeading number="2" title="PRIVACIDAD GARANTIZADA" size="display-1 xs-headline" align="left" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
                 Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre
               </p>
@@ -38,7 +38,7 @@
             </v-flex>
             <v-flex xs12 md6 class="pl-5 py-5 text-xs-right  hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img src="/images/icons/pro_services_2.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="PRIVACIDAD GARANTIZADA" size="display-2 xs-headline" align="right" margin="pl-5 mb-5"/>
+              <AppHeading number="2" title="PRIVACIDAD GARANTIZADA" size="display-1 xs-headline" align="right" margin="pl-5 mb-5"/>
               <p class="pl-5 text-xs-justify" style="font-weight: 500;">
                 Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre
               </p>
@@ -50,11 +50,11 @@
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only" >
               <img src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-2 xs-headline" align="left" margin="pl-5"/>
+              <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
             <v-flex xs12 md6 class="hidden-md-and-up" >
               <img src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
-              <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-2 xs-headline" align="left" margin="pl-5"/>
+              <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
             <v-flex xs12 offset-md1 md10>
               <v-carousel hide-delimiters class="profesional-services-slider">
@@ -79,11 +79,11 @@
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center hidden-sm-only hidden-xs-only">
           <AppHeading number="2" title="¿Listo para hacer crecer tu negocio? " size="display-1" align="center" margin="pl-5 mb-2"/>
-          <v-btn to="/contacto" large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
+          <v-btn to="/contacto" :large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center  hidden-md-and-up">
           <AppHeading number="2" title="¿Listo para hacer crecer tu negocio? " size="display-1" align="center" margin=" mb-2"/>
-          <v-btn to="/contacto" large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
+          <v-btn to="/contacto" :large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
         </v-flex>
       </v-layout>
     </v-container>
