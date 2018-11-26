@@ -96,6 +96,14 @@
 
       if (packages) this.packagesSelected = packages
 
+      this.sections = 0
+
+      for (const pkg of this.packagesSelected) {
+        if (this.packages[pkg]) {
+          this.sections += this.packages[pkg].sections
+        }
+      }
+
       if (addons) this.addonsSelected = addons
     },
     data () {

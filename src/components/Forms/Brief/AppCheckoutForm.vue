@@ -198,7 +198,9 @@
         for (let subService of this.brief.subServices) {
           let subServices = this.$store.getters['services/addons']
           for (let sub of subServices) {
-            if (subService.slug === sub.slug) services.push(sub)
+            if (subService.slug === sub.slug) {
+              services.push(sub)
+            }
           }
         }
 
@@ -209,7 +211,15 @@
 
         if (this.subServices) {
           for (let subService of this.subServices) {
-            if (subService) total += subService.price.value
+            if (subService) {
+              if (subService.slug === 'diseno-y-desarrollo-de-seccion-web') {
+                for (let ss of this.brief.subServices) {
+                  if (ss.sections) total += subService.price.value * ss.sections
+                }
+              } else {
+                total += subService.price.value
+              }
+            }
           }
         } else {
           total += this.service.price.value
