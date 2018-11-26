@@ -110,7 +110,7 @@
             break
         }
 
-        this.$storage.set(packages)
+        this.$storage.set('quotePacksOptions', packages)
 
         if (slug === 'ecommerce' || slug === 'presencia-web') {
           slug = 'diseno-pagina-web'
