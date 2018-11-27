@@ -32,7 +32,7 @@
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
           <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector.</h1>
-          <v-btn flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
+          <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
@@ -101,11 +101,12 @@
         const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
 
-        if (this.serviceObject.url === 'diseno-logo-y-pagina-web' || this.serviceObject.url === 'diseno-pagina-web') {
+        if (this.serviceObject.slug === 'diseno-logo-y-pagina-web' || this.serviceObject.slug === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          target = 'brief/disenos'
+          if (this.serviceObject.slug.includes('logo') || this.serviceObject.slug === 'imagen-corporativa') target = 'brief/disenos'
+          else target = 'brief/estilos'
         }
 
         this.$storage.set('brief', brief)

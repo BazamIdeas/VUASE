@@ -52,7 +52,7 @@
           </v-layout>
         </v-flex>
         <v-flex md4 class="px-2">
-          <v-card style="position: sticky; top: 9px;">
+          <v-card style="position: sticky; top: 9px;" class="pb-3">
             <div class="subheading text-xs-center py-2 font-weight-bold section-title">SERVICIOS INCLUIDOS</div>
             <v-divider light></v-divider>
             <table width="100%">
@@ -65,20 +65,29 @@
                   <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} </td>
                   <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> {{ addon.price.currency.symbol }}  {{ addon.price.value }}</td>
                 </tr>
-                <tr>
+                <tr class="hidden-xs-only">
                   <td class="title font-weight-bold py-1 pl-2"> TOTAL </td>
                   <td class="title font-weight-bold text-xs-center py-1 pr-2">  {{ countryData.currency.symbol }} {{ total }}</td>
                 </tr>
               </tbody>
             </table>
             <v-divider light></v-divider>
-            <div class="subheading text-xs-center py-2 font-weight-bold section-title">
+            <div class="subheading text-xs-center py-2 font-weight-bold section-title hidden-xs-only">
               <v-btn color="primary" @click="toCheckout">CONTINUAR</v-btn>
             </div>
           </v-card>
         </v-flex>
       </v-layout>
     </v-container>
+    <v-toolbar class="hidden-sm-and-up" fixed style="top: inherit;bottom: 0;">
+      <div class="title font-weight-bold text-xs-center">
+        {{ countryData.currency.symbol }} {{ total }}
+      </div>
+      <v-spacer></v-spacer>
+      <div class="">
+        <v-btn color="primary" @click="toCheckout">CONTINUAR</v-btn>
+      </div>
+    </v-toolbar>
   </section>
 </template>
 

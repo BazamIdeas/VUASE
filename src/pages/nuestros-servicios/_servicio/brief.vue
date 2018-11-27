@@ -23,7 +23,7 @@
     <v-toolbar fixed style="top: inherit;bottom: 0;">
       <div class="">
         <v-btn color="primary" @click="$router.push('/nuestros-servicios')">Volver</v-btn>
-        <v-btn color="primary" v-if="stepData.prev" @click="nextStep(stepData.prev)">Atras</v-btn>
+        <v-btn color="primary" v-if="showBack" @click="nextStep(stepData.prev)">Atras</v-btn>
       </div>
       <span>Completa los datos</span>
       <v-spacer></v-spacer>
@@ -67,7 +67,7 @@
       stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) },
       showBack () {
         if (this.brief.service.slug) {
-          if (this.brief.service.slug.includes('logo')) {
+          if (this.brief.service.slug.includes('logo') || this.brief.service.slug === 'imagen-corporativa') {
             if (this.stepData.prev) return true
             else return false
           } else {

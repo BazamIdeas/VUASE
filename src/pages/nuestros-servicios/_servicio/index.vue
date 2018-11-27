@@ -3,7 +3,7 @@
     <!-- TOP SLIDER -->
     <v-container grid-list-md class="mt-5 mb-5 pt-5 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
-        <AppTopServiceSlider :service="dataService" :slug="service.slug" />
+        <AppTopServiceSlider :id="service.id" :service="dataService" :slug="service.slug" />
       </v-layout>
     </v-container>
 

@@ -34,6 +34,8 @@ module.exports = {
       { property: 'og:description', content: 'Lorem Ipsum' },
       { property: 'og:site_name', content: 'Liderlogo' },
       { property: 'fb:admins', content: '00000000000000000000' },
+      { property: 'fb:admins', content: '00000000000000000000' },
+      { content: 'noindex', name: 'robots' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
