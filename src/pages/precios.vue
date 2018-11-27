@@ -111,9 +111,6 @@
 
         this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.serviceObject.slug + '/' + target)
-      },
-      getBySlug () {
-        this.serviceObject = this.$store.getters['services/getBySlug'](this.service)
       }
     }
   }
