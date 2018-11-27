@@ -122,6 +122,7 @@
       height: auto;
       display: block;
       margin: auto;
+      width: 80%;
     }
 
     .responsive-video{

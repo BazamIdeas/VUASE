@@ -127,7 +127,6 @@
     },
     methods: {
       submit () {
-        console.log('enviado')
         this.$validator.validate().then(result => {
           console.log(result)
           if (result) {
