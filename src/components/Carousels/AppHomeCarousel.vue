@@ -127,7 +127,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 170vw;
+      min-height: 750px;
     }
 
     .theme2 .layers-container {
@@ -276,7 +276,7 @@
     }
   }
 
-  @media (min-width: 640px) and (max-width: 102px) {
+  @media (min-width: 640px) and (max-width: 1023px) {
 
     .theme2 .layers-container {
       display: -webkit-box;
@@ -351,7 +351,7 @@
 
   @media (min-width: 740px) and (max-width: 820px) {
     .v-carousel.main-carousel {
-        height: 500px;
+        height: 550px;
         min-height: auto;
     }
   }

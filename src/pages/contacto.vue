@@ -41,7 +41,34 @@
     },
     methods: {
       formHandler () {
-        this.formSent = true
+        /* this.formSent = true */
+        if (process.browser) {
+          var contact = {}
+          contact.email = 'contact@test.com'
+          contact.first_name = 'Test'
+          contact.last_name = 'Contact'
+          contact.company = 'abc corp'
+          contact.title = 'lead'
+          contact.phone = '+1-541-754-3010'
+          contact.website = 'http://www.example.com'
+          var address = { 'city': 'new delhi', 'state': 'delhi', 'country': 'india' }
+          contact.address = JSON.stringify(address)
+          contact.tags = 'tag1, tag2'
+
+          // Custom fields can be added to contact object as
+          contact.status = 'incomplete'
+          contact.custom_id = 'EN001C'
+
+          var _agile = _agile
+          _agile.create_contact(contact, {
+            success: function (data) {
+              console.log('success', data)
+            },
+            error: function (data) {
+              console.log('error', data)
+            }
+          })
+        }
       }
     }
   }
