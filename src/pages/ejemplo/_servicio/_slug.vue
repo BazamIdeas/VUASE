@@ -128,16 +128,7 @@
     },
     data () {
       return {
-        urlHosting: 'http://api.liderlogos.com/v1/images/slug/',
-        testimonies: [{
-          stars: 5,
-          logo: '/images/pages/services-carousel/11.-Black-Bird.png',
-          description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
-        }, {
-          stars: 5,
-          logo: '/images/testimonies/papeleria.svg',
-          description: '“Ha sido excelente trabajar con ustedes”'
-        }]
+        urlHosting: 'http://api.liderlogos.com/v1/images/slug/'
       }
     },
     computed: {

@@ -83,7 +83,7 @@ export const state = () => ({
     },
     {
       icon: '/icons/rotulo_hover.svg',
-      name: 'Rotulos',
+      name: 'Rótulos',
       rows: [
         [
           'rotulo-vehicular',
