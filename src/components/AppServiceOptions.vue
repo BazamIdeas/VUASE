@@ -70,8 +70,8 @@
       </v-layout>
       <v-layout row class="mt-5">
         <v-flex offset-xs0 xs12 sm10 offset-sm1 md6 offset-md3>
-          <v-layout row wrap d-flex column class="ml-4">
-            <v-flex class="ml-2 text-xs-center">
+          <v-layout row wrap d-flex column class="final-price-container">
+            <v-flex class="text-xs-center">
               <div>
                 <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
                   PRECIO CERRADO EN:
@@ -80,12 +80,12 @@
                   <v-flex xs12 sm4 offset-sm1 >
                     <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
                   </v-flex>
-                  <v-layout xs6 row d-flex>
-                    <v-flex xs4 style="border-right:1px solid silver;">
+                  <v-layout xs6 row d-flex class="mr-3">
+                    <v-flex xs6 style="border-right:1px solid silver;">
                       <h3 class="title">50%</h3>
                       <h5 class="body-2">al iniciar</h5>
                     </v-flex>
-                    <v-flex xs5>
+                    <v-flex xs6>
                       <h3 class="title">50%</h3> 
                       <h5 class="body-2">al finalizar</h5>
                     </v-flex>
@@ -110,7 +110,7 @@
         {
           icon: '/icons/packages/promocionar-un-servicio-o-producto.svg',
           title: 'PROMOCIONAR UN SERVICIO O PRODUCTO',
-          slug: 'prueba',
+          slug: 'promocionar-un-servicio-o-producto',
           services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario'],
           open: {
             description: 'Es una herramienta sumamente eficiente para obtener nuevos clientes por medio de acciones marketing online. Tiene como principal beneficio lograr nuevos clientes potenciales y/o obtener que se realice una acción determinada que incremente sus ventas e interacción con el mercado.',
@@ -149,7 +149,7 @@
         {
           icon: '/icons/packages/presentar-mi-empresa.svg',
           title: 'PRESENTAR MI EMPRESA',
-          slug: 'prueba2',
+          slug: 'presentar-mi-empresa',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano'],
           open: {
             description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
@@ -188,7 +188,7 @@
         {
           icon: '/icons/packages/ofrecer-multiples-servicios.svg',
           title: 'OFRECER MULTIPLES SERVICIOS',
-          slug: 'prueba3',
+          slug: 'ofrecer-multiples-servicios',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones'],
           open: {
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser:  reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
@@ -239,7 +239,7 @@
         {
           icon: '/icons/packages/dar-a-conocer-mis-proyectos.svg',
           title: 'DAR A CONOCER MIS PROYECTOS REALIZADOS',
-          slug: 'prueba4',
+          slug: 'dar-a-conocer-mis-proyectos-realizados',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'galeria-de-proyectos'],
           open: {
             description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
@@ -282,7 +282,7 @@
         {
           icon: '/icons/packages/publicar-inmuebles.svg',
           title: 'PUBLICAR INMUEBLES PARA ALQUILER O VENTA',
-          slug: 'prueba5',
+          slug: 'publicar-inmuebles-para-alquiler-o-venta',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'plataforma-inmobiliaria'],
           open: {
             description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
@@ -325,7 +325,7 @@
         {
           icon: '/icons/packages/exhibir-un-menu.svg',
           title: 'EXHIBIR UN MENÚ DE PLATOS/COMIDAS',
-          slug: 'prueba6',
+          slug: 'exhibir-un-menu-de-platos-o-comidas',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos'],
           open: {
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
@@ -361,7 +361,7 @@
         {
           icon: '/icons/packages/mostrar-un-catalogo-de-productos.svg',
           title: 'MOSTRAR UN CATÁLOGO DE PRODUCTOS',
-          slug: 'prueba7',
+          slug: 'mostrar-un-catalogo-de-productos',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos'],
           open: {
             description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
@@ -398,7 +398,7 @@
         {
           icon: '/icons/packages/vender-mis-productos.svg',
           title: 'VENDER MIS PRODUCTOS ONLINE',
-          slug: 'prueba8',
+          slug: 'vender-mis-productos-online',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat'],
           open: {
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
@@ -450,7 +450,7 @@
         {
           icon: '/icons/packages/compartir-informacion.svg',
           title: 'COMPARTIR INFORMACIÓN Y ARCHIVOS CON MIS CLIENTES',
-          slug: 'prueba9',
+          slug: 'compartir-informacion',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat'],
           open: {
             description: 'descripcion de pop',

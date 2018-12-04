@@ -11,7 +11,7 @@
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
               <div style="text-align: center">
-                <img :src="serviceObject.dataService.icon" alt="" width="200" style="max-height: 200px">
+                <img :src="serviceObject.dataService.icon" alt="" width="200" style="max-height: 150px">
                 <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
                 <h1 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h1>
               </div>
@@ -32,7 +32,7 @@
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
           <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector.</h1>
-          <v-btn flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
+          <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
@@ -101,18 +101,16 @@
         const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
 
-        if (this.serviceObject.url === 'diseno-logo-y-pagina-web' || this.serviceObject.url === 'diseno-pagina-web') {
+        if (this.serviceObject.slug === 'diseno-logo-y-pagina-web' || this.serviceObject.slug === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {
-          target = 'brief/disenos'
+          if (this.serviceObject.slug.includes('logo') || this.serviceObject.slug === 'imagen-corporativa') target = 'brief/disenos'
+          else target = 'brief/estilos'
         }
 
         this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.serviceObject.slug + '/' + target)
-      },
-      getBySlug () {
-        this.serviceObject = this.$store.getters['services/getBySlug'](this.service)
       }
     }
   }

@@ -2,7 +2,7 @@
   <v-carousel v-if="items && items.length" :interval="interval" hide-controls hide-delimiters>
     <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" :transition="item.transition ? item.transition : 'slide-x-transition'">
       <div v-if="item.principalText || item.principalText">
-        <h1 v-if="item.principalText">{{ item.principalText }}</h1>
+        <h2 v-if="item.principalText">{{ item.principalText }}</h2>
         <p v-if="item.secondaryText">{{ item.secondaryText }}</p>
       </div>
     </v-carousel-item>

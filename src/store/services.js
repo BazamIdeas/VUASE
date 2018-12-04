@@ -83,7 +83,7 @@ export const state = () => ({
     },
     {
       icon: '/icons/rotulo_hover.svg',
-      name: 'Rotulos',
+      name: 'Rótulos',
       rows: [
         [
           'rotulo-vehicular',
@@ -217,20 +217,20 @@ export const getters = {
 
 export const actions = {
   async getAll ({ rootState, commit }) {
-    let localServices
+    /* let localServices
     if (process.browser) {
       localServices = JSON.parse(localStorage.getItem('local-services'))
     }
 
     if (localServices) {
       commit('GET_ALL', localServices)
-    } else {
-      try {
-        let services = await this.$axios.$get('services?limit=1000')
-        commit('GET_ALL', services)
-      } catch (error) {
-        console.log(error)
-      }
+    } else { */
+    try {
+      let services = await this.$axios.$get('services?limit=1000')
+      commit('GET_ALL', services)
+    } catch (error) {
+      console.log(error)
     }
+    /* } */
   }
 }

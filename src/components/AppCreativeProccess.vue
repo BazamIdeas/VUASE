@@ -1,8 +1,8 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container grid-list-md fluid class="pa-0 creative-process mt-4">
-        <v-flex xs12 class="mb-5">
-          <AppHeading :number="'1'" :size="'display-1'" :title="title" class="mb-3" />
+        <v-flex xs12 class="mb-5 creative-process-title-container">
+          <AppHeading :number="'2'" :size="'display-1'" :title="title" class="mb-1" />
         </v-flex>
         <v-layout row>
           <v-flex xs12 class="creative-process-carousel">
@@ -30,13 +30,13 @@
           </v-flex>
         </v-layout>
 
-        <v-layout row class="pt-5 mt-5 process-steps" v-if="alters.length">
-          <v-flex xs12 sm4  v-for="(alter,i) in alters" :key="i" class="px-5">
+        <v-layout row wrap class="pt-5 mt-5 process-steps" v-if="alters.length">
+          <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(alter,i) in alters" :key="i" class="px-5">
             <v-layout row>
-              <v-flex xs2 align-center d-flex>
+              <v-flex xs2 sm1 align-center d-flex>
                 <img class="img-process-step" :src="alter.icon" :alt="alter.alt"/>
               </v-flex>
-              <v-flex xs10 align-center d-flex class="process-step">
+              <v-flex xs10 sm11 align-center d-flex class="process-step">
                 <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
               </v-flex>             
             </v-layout>
@@ -184,6 +184,10 @@
 
   .creative-process .creative-process-carousel .v-carousel__item { 
   }
+
+  .creative-process-title-container, .creative-process-title-container h2{ 
+    margin-bottom: 0px !important;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -195,6 +199,10 @@
   }
   .creative-process .creative-process-carousel .v-carousel__item {
   }
+
+  .creative-process-title-container, .creative-process-title-container h2{ 
+    margin-bottom: 0px !important;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 960px) {
@@ -203,6 +211,10 @@
   }
   .creative-process .creative-process-carousel .v-image__image {
     background-size: 100% auto !important;
+  }
+
+  .creative-process-title-container, .creative-process-title-container h2{ 
+    margin-bottom: 0px !important;
   }
 }
 

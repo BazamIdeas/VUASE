@@ -1,21 +1,21 @@
 <template>
   <v-layout row wrap class="px-2 mt-4 mb-5">
-    <v-flex md2 offset-md7>
+    <v-flex xs2 offset-xs6 md2 offset-md7 class="hidden-xs-only">
       <h1 class="subheading font-weight-bold text-xs-right"> PRECIO </h1>
     </v-flex>
-    <v-flex md3>
+    <v-flex xs4 md3 class="hidden-xs-only">
       <h1 class="subheading font-weight-bold text-xs-right"> PAGO INICIAL {{ service ? '(' + service.percentage + '%)' : '' }} </h1>
     </v-flex>
-    <v-flex md12 class="my-2">
+    <v-flex xs12 md12 class="my-2 hidden-xs-only">
       <div style="height: 2px; background: #004b7b"></div>
     </v-flex>
-    <v-flex md12 v-if="service">
+    <v-flex xs12 md12 v-if="service">
       <v-card class="pa-3 elevation-1">
         <v-layout row wrap>
-          <v-flex md1>
+          <v-flex xs2 md1>
             <img :src="service.dataService.icon" width="100%">
           </v-flex>
-          <v-flex xs6>
+          <v-flex xs10 md6>
             <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.dataService.title }} </h1>
             <p class="caption" style="text-align: justify; color: #666666;" v-if="!subServices">
               {{ service.dataService.description }}
@@ -30,10 +30,16 @@
               </v-flex>
             </v-layout>
           </v-flex>
-          <v-flex md2>
+          <v-flex xs8 class="hidden-sm-and-up">
+            <h1 class="subheading font-weight-bold text-xs-right"> PRECIO </h1>
+          </v-flex>
+          <v-flex xs4 class="hidden-sm-and-up">
+            <h1 class="subheading font-weight-bold text-xs-right"> PAGO INICIAL {{ service ? '(' + service.percentage + '%)' : '' }} </h1>
+          </v-flex>
+          <v-flex xs8 md2>
             <h1 class="title font-weight-bold text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(total) }} </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="title font-weight-bold text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(initial) }} </h1>
           </v-flex>
         </v-layout>
@@ -43,16 +49,16 @@
       <div style="height: 2px; background: #004b7b"></div>
     </v-flex>
     <!--SUBTOTAL-->
-    <v-flex md12 class="px-3" v-if="service">
+    <v-flex xs12 md12 class="px-3" v-if="service">
       <!--<v-card class="pa-3">-->
         <v-layout row wrap>
-          <v-flex md6>
+          <v-flex xs4 md6>
             <h1 class="title font-weight-medium"> Subtotal </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="title font-weight-medium text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(total) }} </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="title font-weight-medium t text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(initial) }} </h1>
           </v-flex>
         </v-layout>
@@ -60,17 +66,17 @@
     </v-flex>
     <!--SUBTOTAL-->
     <!--DESCUENTO-->
-    <v-flex md12 class="px-3" v-if="coupon && service">
+    <v-flex xs12 md12 class="px-3" v-if="coupon && service">
       <!--<v-card class="pa-3">-->
         <v-layout row wrap>
-          <v-flex md6>
+          <v-flex xs4 md6>
             <h1 class="title font-weight-medium hidden-xs-only"> Descuento ({{ coupon.percentage }}%) </h1>
             <h1 class="title font-weight-medium hidden-sm-and-up"> De..({{ coupon.percentage }}%) </h1>
           </v-flex>
-          <v-flex md3 v-if="coupon">
+          <v-flex xs4 md3 v-if="coupon">
             <h1 class="title font-weight-medium text-xs-right"> - {{ service.price.currency.symbol }} {{ formatNumber(discount) }} </h1>
           </v-flex>
-          <v-flex md3 v-if="coupon">
+          <v-flex xs4 md3 v-if="coupon">
             <h1 class="title font-weight-medium t text-xs-right"> - {{ service.price.currency.symbol }} {{ formatNumber(initialDiscount) }} </h1>
           </v-flex>
         </v-layout>
@@ -78,16 +84,16 @@
     </v-flex>
     <!--DESCUENTO-->
     <!--IVA-->
-    <v-flex md12 class="px-3" v-if="service">
+    <v-flex xs12 md12 class="px-3" v-if="service">
       <!--<v-card class="pa-3">-->
         <v-layout row wrap>
-          <v-flex md6>
+          <v-flex xs4 md6>
             <h1 class="title font-weight-medium"> I.V.A ({{ $store.state.countries.data.tax }}%) </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="title font-weight-medium text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(iva) }} </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="title font-weight-medium t text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(initialIva) }} </h1>
           </v-flex>
         </v-layout>
@@ -98,16 +104,16 @@
     <!--<v-flex md12 class="my-2">
       <div style="height: 2px; background: #004b7b"></div>
     </v-flex>-->
-    <v-flex md12 class="px-3 mt-2" v-if="service">
+    <v-flex xs12 md12 class="px-3 mt-2" v-if="service">
       <!--<v-card class="pa-3">-->
         <v-layout row wrap>
-          <v-flex md6>
+          <v-flex xs4 md6>
             <h1 class="headline font-weight-bold"> TOTAL </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="headline font-weight-mediums text-xs-right" v-if="service"> {{ service.price.currency.symbol }} {{ formatNumber(totalWithTaxs) }} </h1>
           </v-flex>
-          <v-flex md3>
+          <v-flex xs4 md3>
             <h1 class="headline font-weight-bold t text-xs-right" v-if="service"> {{ service.price.currency.symbol }} {{ formatNumber(initialWithTaxs) }}  </h1>
           </v-flex>
         </v-layout>
@@ -198,7 +204,9 @@
         for (let subService of this.brief.subServices) {
           let subServices = this.$store.getters['services/addons']
           for (let sub of subServices) {
-            if (subService.slug === sub.slug) services.push(sub)
+            if (subService.slug === sub.slug) {
+              services.push(sub)
+            }
           }
         }
 
@@ -209,7 +217,15 @@
 
         if (this.subServices) {
           for (let subService of this.subServices) {
-            if (subService) total += subService.price.value
+            if (subService) {
+              if (subService.slug === 'diseno-y-desarrollo-de-seccion-web') {
+                for (let ss of this.brief.subServices) {
+                  if (ss.sections) total += subService.price.value * ss.sections
+                }
+              } else {
+                total += subService.price.value
+              }
+            }
           }
         } else {
           total += this.service.price.value

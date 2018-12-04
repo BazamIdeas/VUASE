@@ -1,6 +1,6 @@
 export const rVehicular = {
   list: ['Diseño gráfico y publicitario', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Entrega en plantillas de corte digital'],
-  title: 'ROTULO VEHICULAR',
+  title: 'RÓTULO VEHICULAR',
   description: `Un diseño que promociona tu negocio donde vallas.`,
   shortDescription: `Un diseño que promociona tu negocio donde vallas.`,
   icon: '/icons/rotulo-vehicular.svg',

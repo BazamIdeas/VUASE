@@ -56,14 +56,19 @@
 
 <script lang="js">
   export default {
-    props: ['service', 'slug'],
+    props: ['id', 'service', 'slug'],
     computed: {
       /* TODO: PENDIENTE */
       comenzarUrl () {
+        const brief = { service: { id: this.id, name: this.service.title, slug: this.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
+
+        if (this.$storage) this.$storage.set('brief', brief)
+
         if (this.slug === 'diseno-logo-y-pagina-web' || this.slug === 'diseno-pagina-web') {
           return this.$router.currentRoute.path + '/cotizacion'
         } else {
-          return this.$router.currentRoute.path + '/brief/disenos'
+          if (this.slug.includes('logo') || this.slug === 'imagen-corporativa') return this.$router.currentRoute.path + '/brief/disenos'
+          return this.$router.currentRoute.path + '/brief/estilos'
         }
       }
     }
