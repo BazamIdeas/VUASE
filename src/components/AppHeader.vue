@@ -6,6 +6,12 @@
       <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
         <span class="nav-item-label">{{link.title}}</span>
       </v-btn>
+       <v-btn class="nav-item mx-0" v-if="isLoggedIn" nuxt to="/area-de-cliente" flat>
+        <span class="nav-item-label">Mi cuenta</span>
+      </v-btn>
+      <v-btn class="nav-item mx-0" v-if="!isLoggedIn" nuxt to="/area-de-cliente/entrar" flat>
+        <span class="nav-item-label">Login</span>
+      </v-btn>
     </div>
     <v-tooltip right color="white darken-3 light-blue--text text--darken-2" class="hidden-md-and-down">
       <v-btn :href="'tel:'+countryData.phone" slot="activator" fab light small class="elevation-1 ">
@@ -29,7 +35,8 @@
     name: 'app-header',
     computed: {
       links () { return this.$store.state.app.links.header },
-      countryData () { return this.$store.state.countries.data }
+      countryData () { return this.$store.state.countries.data },
+      isLoggedIn () { return this.$store.getters['isLoggedIn'] }
     }
   }
 </script>

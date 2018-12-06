@@ -10,7 +10,7 @@
           <v-flex v-if="portfolios && portfolios.length" v-for="portfolio in portfolios" :key="portfolio.id" xs12 sm6 md4 class="pr-2">
             <v-card :to="'/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug" height="auto">
               <div class="img-cuadrada-ejemplos-container" >
-                  <svg class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
+                  <svg role="img" :aria-labelledby="alt" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
                 <h2 class="mb-1 text-xs-center font-weight-medium">{{portfolio.name}}</h2>
@@ -36,7 +36,8 @@
     data () {
       return {
         urlHosting: 'http://api.liderlogos.com/v1/images/slug/',
-        offset: 0
+        offset: 0,
+        alt: 'Liderlogo'
       }
     },
     asyncData ({ params }) {

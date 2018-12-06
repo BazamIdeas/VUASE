@@ -3,7 +3,7 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img class="animate-img" src="images/carousels/services1.png"></v-img>
+          <v-img :alt="alt" class="animate-img" src="images/carousels/services1.png"></v-img>
         </div>
 
         <div class="layer" id="hc-layer-0">   
@@ -54,7 +54,8 @@
         type: Number
       },
       items: Array,
-      serviceSlug: ''
+      serviceSlug: '',
+      alt: String
     },
     data () {
       return {

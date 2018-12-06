@@ -15,14 +15,13 @@
           <AppDesignsForm v-if="stepData.number == 1"/>
           <AppStylesForm v-if="stepData.number == 2"/>
           <AppColorsForm v-if="stepData.number == 3"/>
-          <AppBriefingForm :submit="submit" :slug="brief.service.slug" @submitBrief="submitBrief" v-if="stepData.number == 4"/>
+          <AppBriefingForm :submit="submit" :slug="brief.service.slug" @submitBrief="submitBrief" v-if="stepData.number == 4 && brief.service.slug"/>
           <AppCheckoutForm :slug="brief.service.slug" v-if="stepData.number == 5"/>
         </v-flex>
       </v-layout>
     </v-container>
     <v-toolbar fixed style="top: inherit;bottom: 0;">
       <div class="">
-        <v-btn color="primary" @click="$router.push('/nuestros-servicios')">Volver</v-btn>
         <v-btn color="primary" v-if="showBack" @click="nextStep(stepData.prev)">Atras</v-btn>
       </div>
       <span>Completa los datos</span>
@@ -92,20 +91,25 @@
 
         if (!data) return
 
-        var loginOrRegister = await this.$store.dispatch('user/loginOrRegister')
+        /* var loginOrRegister = await this.$store.dispatch('user/loginOrRegister')
 
         if (!loginOrRegister) {
           this.$toast.error('Ha ocurrido un error, intente de nuevo!')
           return
-        }
+        } */
 
         var storeBrief = await this.$store.dispatch('brief/storeBrief')
 
         if (!storeBrief) {
           this.$toast.error('Ha ocurrido un error, intente de nuevo!')
+          return
         }
 
-        this.nextStep(this.stepData.next)
+        if (this.brief.service.slug === 'diseno-de-app' || window.location.hash === '#no-carrito') {
+          this.$router.push('/gracias')
+        } else {
+          this.nextStep(this.stepData.next)
+        }
       },
       setPay () { this.$store.dispatch('cart/setPay') }
     }

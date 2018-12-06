@@ -1,10 +1,10 @@
 <template>
   <section>
-    <AppServicesCarousel id="selector" />
+    <AppServicesCarousel :alt="alt" id="selector" />
     <AppServicesSlider id="servicios" @select-group="setGroup" class="mb-4"/>
     <transition-group appear :name="transitionGroupContent">
       <v-container d-block grid-list-md text-xs-left v-if="groupContent === i" :key="i" v-for="(container, i) in containers">
-        <v-layout wrap row v-for="(layout, i) in container.layouts" :key="i" class="mb-5 xs-mb-2">
+        <v-layout justify-center wrap row v-for="(layout, i) in container.layouts" :key="i" class="mb-5 xs-mb-2">
           <v-flex 
             class="xs12 border-container"
             :class="{
@@ -33,10 +33,10 @@
               <v-flex style="height: 420px;">
                 <v-carousel 
                   :interval="'3000'" 
-                  hide-controls  
+                  hide-controls
                   style="height: 100%;">
                   <v-carousel-item v-for="(item, i) in layout.carousel" :key="i"   :transition="'slide-x-transition'">
-                    <svg class="img-cuadrada" viewBox="0 0 100 100 " :style="'background: url(' +item.src+')'"></svg>
+                    <svg :alt="alt" class="img-cuadrada" viewBox="0 0 100 100 " :style="'background: url(' +item.src+')'"></svg>
                   </v-carousel-item>
                 </v-carousel>
               </v-flex>
@@ -83,7 +83,8 @@
     data () {
       return {
         transitionGroupContent: 'slide-x-transition',
-        groupContent: 0
+        groupContent: 0,
+        alt: 'Liderlogo'
       }
     },
     computed: {

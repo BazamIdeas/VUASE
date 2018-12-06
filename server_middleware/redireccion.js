@@ -2,7 +2,7 @@ const url = require('url')
 
 module.exports = function (req, res, next) {
   if (process.env.NODE_ENV !== 'production') {
-    console.log('Estas en: ' + req.iso + ' (server)')
+    // console.log('Estas en: ' + req.iso + ' (server)')
     next()
   } else {
     let iso = req.iso

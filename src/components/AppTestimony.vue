@@ -31,13 +31,13 @@
                 </h3>
                 <v-flex>
                   <a @click="$router.push('/opiniones')" class="text-xs-center font-weight-medium" style="margin:auto; display:block;     color: #ff9800 !important;">
-                    VER TODOS
+                    OPINIONES
                   </a>
                 </v-flex>
               </v-flex>
               <v-flex xs12 md6 class="logo-testimony">
-                <img class="--puntos" src="/icons/puntos_de_fondo.svg">
-                <img class="lt-img" :src="item.logo">
+                <img :alt="alt" class="--puntos" src="/icons/puntos_de_fondo.svg">
+                <img :alt="alt" class="lt-img" :src="item.logo">
               </v-flex>
             </v-layout>
           </v-carousel-item>
@@ -56,7 +56,8 @@
       },
       width: {
         default: 'xs12'
-      }
+      },
+      alt: String
     },
     mounted () {
     },

@@ -109,9 +109,9 @@ export const actions = {
       }
       if (
         params.actividad &&
-        rootGetters['sectors/activities/getBySlug'](params.actividad)
+        rootGetters['countries/getBySlug'](params.actividad)
       ) {
-        requestParams['activities'] = rootGetters['sectors/activities/getBySlug'](params.actividad).id
+        requestParams['countries'] = rootGetters['countries/getBySlug'](params.actividad).id
       }
       if (params.pais && rootGetters['countries/getBySlug'](params.pais)) {
         requestParams['countries'] = rootGetters['countries/getBySlug'](

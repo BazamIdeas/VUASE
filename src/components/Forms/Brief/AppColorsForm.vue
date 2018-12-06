@@ -40,7 +40,7 @@
       <v-img src="/images/brief/colors/oscuros-y-neutrales.png"></v-img>
       <p class="mb-3 mt-1">Oscuros y neutrales</p>
     </v-flex>
-    <v-flex md3 xs6 class="brief-color" @click="selectColor(11)" :class="{ 'selected': brief.colors && brief.colors.includes(11), 'disabled': brief.colors && brief.colors.length == limit }">
+    <v-flex md3 xs6 class="brief-color" @click="selectColor(11)" :class="{ 'selected': brief.colors && brief.colors.includes(12), 'disabled': brief.colors && brief.colors.length == limit }">
       <v-img src="/images/brief/colors/disenadores.png"></v-img>
       <p class="mb-3 mt-1">Disenadores</p>
     </v-flex>

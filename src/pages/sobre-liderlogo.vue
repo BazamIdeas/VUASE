@@ -22,7 +22,7 @@
               </p>
             </v-flex>
             <v-flex xs12 md6>
-              <img src="/images/pages/dino_about_us.png" alt="" width="100%">
+              <img src="/images/pages/dino_about_us.png" :alt="alt" width="100%">
             </v-flex>
           </v-layout>
         </v-flex>
@@ -46,7 +46,8 @@
         ],
         list: [
           'dasdasdadasdasdadadsasdad'
-        ]
+        ],
+        alt: 'Liderlogo'
       }
     }
   }

@@ -1,6 +1,6 @@
 export const rPackaging = {
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
-  title: 'RÓTULO ETIQUETA/PACKAING',
+  title: 'ROTULO ETIQUETA PACKAING',
   description: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
   shortDescription: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
   icon: '/icons/rotulo-etiqueta.svg',
