@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
-    <AppHomeCarousel :interval="interval" theme="2" />
+    <AppHomeCarousel :alt="alt" :interval="interval" theme="2" />
     <v-container grid-list-sm text-xs-center>
       <v-layout row wrap align-center>
       </v-layout>
@@ -12,7 +12,7 @@
       LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!
     </h2>
 
-    <AppExamplesSlider :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="350" item-height="350"  class="mb-5 pb-5" />
+    <AppExamplesSlider :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="350" item-height="350"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
     <AppHeading class="mb-3" number="2" size="display-1" title="¿QUE NECESITAS CREAR?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio" />
@@ -80,7 +80,7 @@
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md7>
-          <img src="/images/pages/profesional_services.png" alt="" width="100%">
+          <img :alt="alt" src="/images/pages/profesional_services.png" width="100%">
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 text-xs-center pluma-background" style="position: relative"> 
           <div>
@@ -93,7 +93,7 @@
         </v-flex>
 
         <!-- TESTIMONIOS -->  
-        <AppTestimony width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
+        <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
         <!-- <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
           <div>
@@ -116,7 +116,7 @@
         </v-flex> -->
 
         <v-flex xs12 md5 >
-          <img src="/images/pages/muchacho_contacto.png" :alt="alt" width="100%">
+          <img :alt="alt" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
@@ -140,9 +140,9 @@
     },
     data () {
       return {
+        alt: 'Liderlogo',
         name: 'INICIO',
         interval: 8000,
-        alt: 'Lorem ipsum',
         testimonies: [{
           stars: 5,
           logo: '/images/testimonies/home/hotel-aixo.jpg',

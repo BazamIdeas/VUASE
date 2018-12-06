@@ -17,9 +17,9 @@
         <h1 class="heading"> Información Necesaria </h1>
       </v-flex>
       <v-flex md8 xs12>
-        <v-text-field v-for="field in form" :key="field.name" v-if="field.type === 'text'" :ref="field.name" v-model="formFields[field.name].value" :label="field.label" box></v-text-field>
-        <v-textarea v-else-if="field.type === 'textarea'" :ref="field.name" v-model="formFields[field.name].value" :label="field.label" box></v-textarea>
-        <div v-else-if="field.type === 'checkbox'" class="my-3">
+        <v-text-field v-for="field in form" :key="field.name" v-if="field.type === 'text' && formFields[field.name]" :ref="field.name" v-model="formFields[field.name].value" :label="field.label" box></v-text-field>
+        <v-textarea v-else-if="field.type === 'textarea' && formFields[field.name]" :ref="field.name" v-model="formFields[field.name].value" :label="field.label" box></v-textarea>
+        <div v-else-if="field.type === 'checkbox' && formFields[field.name]" class="my-3">
           <v-layout row wrap>
             <v-flex md12>
               <label class="v-label theme--light" style="font-weight: 500">{{ field.label }}</label>
@@ -29,7 +29,17 @@
             </v-flex>
           </v-layout>
         </div>
-        <div v-else-if="field.type === 'file'">
+        <div v-else-if="field.type === 'select_tags' && formFields[field.name]" class="my-3">
+          <v-layout row wrap>
+            <v-flex md12>
+              <label class="v-label theme--light" style="font-weight: 500">{{ field.label }}</label>
+            </v-flex>   
+            <v-flex md12>
+              <v-select :items="field.options" v-model="formFields[field.name]" multiple chips hint="Seleccione" persistent-hint></v-select>
+            </v-flex>
+          </v-layout>
+        </div>
+        <div v-else-if="field.type === 'file' && formFields[field.name]">
           <v-layout row wrap>
             <v-flex md12>
               <label class="v-label theme--light" style="font-weight: 500">{{ field.label }}</label>
@@ -70,22 +80,32 @@
             label: 'Empresa',
             value: ''
           }
-        }
+        },
+        form: []
       }
     },
-    created () {
+    async created () {
+      await this.getForm()
+    },
+    async mounted () {
       var vue = this
+      await vue.getForm()
       if (vue.form) {
+        vue.formFields.email.value = vue.brief.information['email'] ? vue.brief.information['email'].value : ''
+        vue.formFields.names.value = vue.brief.information['names'] ? vue.brief.information['names'].value : ''
+        vue.formFields.company.value = vue.brief.information['company'] ? vue.brief.information['company'].value : ''
+        vue.formFields.phone.value = vue.brief.information['phone'] ? vue.brief.information['phone'].value : ''
+
         vue.form.forEach(field => {
-          if (field.type === 'text' || field.type === 'textarea') vue.$set(vue.formFields, field.name, { label: field.label, value: '' })
-          if (field.type === 'checkbox') vue.$set(vue.formFields, field.name, { label: field.label, value: [] })
+          if (field.type === 'text' || field.type === 'textarea') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : '' })
+          if (field.type === 'checkbox') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : [] })
+          if (field.type === 'select_tags') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : [] })
           if (field.type === 'file') vue.$set(vue.formFields, field.name, { label: field.label, value: null })
         })
       }
     },
     computed: {
-      brief () { return this.$store.state.brief.data },
-      form () { return this.$store.getters['brief/getFormBySlug'](this.slug) }
+      brief () { return this.$store.state.brief.data }
     },
     methods: {
       setFile (name, event) {
@@ -94,7 +114,8 @@
       },
       clearFile (name) {
         this.formFields[name].value = null
-      }
+      },
+      async getForm () { this.form = this.$store.getters['brief/getFormBySlug'](this.slug) }
     },
     watch: {
       submit: function (newVal, oldVal) {

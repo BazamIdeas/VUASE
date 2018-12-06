@@ -83,7 +83,7 @@ export const state = () => ({
     },
     {
       icon: '/icons/rotulo_hover.svg',
-      name: 'Rótulos',
+      name: 'Rotulos',
       rows: [
         [
           'rotulo-vehicular',
@@ -158,7 +158,7 @@ export const mutations = {
   GET_ALL (state, services) {
     state.list = services
     if (process.browser) {
-      localStorage.setItem('local-services', JSON.stringify(services))
+      this.$storage.set('local_services', services)
     }
 
     for (let group of state.groups) {
@@ -217,20 +217,20 @@ export const getters = {
 
 export const actions = {
   async getAll ({ rootState, commit }) {
-    /* let localServices
+    let localServices
     if (process.browser) {
-      localServices = JSON.parse(localStorage.getItem('local-services'))
+      localServices = this.$storage.get('local_services')
     }
 
     if (localServices) {
       commit('GET_ALL', localServices)
-    } else { */
-    try {
-      let services = await this.$axios.$get('services?limit=1000')
-      commit('GET_ALL', services)
-    } catch (error) {
-      console.log(error)
+    } else {
+      try {
+        let services = await this.$axios.$get('services?limit=1000')
+        commit('GET_ALL', services)
+      } catch (error) {
+        console.log(error)
+      }
     }
-    /* } */
   }
 }

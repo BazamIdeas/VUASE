@@ -7,7 +7,7 @@
           <v-btn flat outline class="px-2 mx-5 mt-4" style="background-color: #004b7b !important; border-color: #004b7b; color: white; line-height: initial;">COMPRUEBALO</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img class="animate-img" src="images/carousels/about_us1.png"></v-img>
+          <v-img :alt="alt" class="animate-img" src="images/carousels/about_us1.png"></v-img>
         </div>
       </div>
     </v-carousel-item>
@@ -21,7 +21,8 @@
         default: 8000,
         type: Number
       },
-      items: Array
+      items: Array,
+      alt: String
     }
   }
 </script>

@@ -1,6 +1,3 @@
-import Vue from 'vue'
-const vueInstance = new Vue()
-
 export const state = () => ({
 })
 
@@ -11,34 +8,18 @@ export const getters = {
 }
 
 export const actions = {
-  async loginOrRegister ({ rootState, commit }) {
-    let brief = vueInstance.$storage.get('brief')
-
-    let user = {
-      name: brief.information.names.value,
-      email: brief.information.email.value,
-      phone: brief.information.phone.value,
-      company: brief.information.company.value
-    }
-
+  async login ({ rootState, commit }, user) {
     let token = null
 
     try {
       let login = await this.$axios.$post('clients/login', user)
       token = login.token
     } catch (error) {
-      if (error) {
-        try {
-          let register = await this.$axios.$post('clients', user)
-          token = register.token
-        } catch (error) {
-          return false
-        }
-      }
+      if (error) console.log(error)
     }
 
     if (token) {
-      vueInstance.$storage.set('token_session', token)
+      this.$cookies.set('session_token', token)
       return true
     }
   }

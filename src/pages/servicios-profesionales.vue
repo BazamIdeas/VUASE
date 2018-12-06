@@ -49,11 +49,11 @@
         <v-flex xs12 offset-md1 md10 class="mb-5">
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only" >
-              <img src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
+              <img :alt="alt" src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
               <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
             <v-flex xs12 md6 class="hidden-md-and-up" >
-              <img src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
+              <img :alt="alt" src="/images/icons/pro_services_3.png" alt="" class="ml-5 mt-5">
               <AppHeading number="2" title="RECOMENDADA POR PERFECCIONISTAS" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
             <v-flex xs12 offset-md1 md10>
@@ -68,7 +68,7 @@
                         </p>
                       </v-flex>
                       <v-flex xs12 md6>
-                        <img width="100%" src="/images/pages/web_jet_computer_pro_services.png" alt="">
+                        <img width="100%" :alt="alt" src="/images/pages/web_jet_computer_pro_services.png" alt="">
                       </v-flex>
                     </v-layout>
                   </v-container>
@@ -100,7 +100,8 @@
         ],
         list: [
           'dasdasdadasdasdadadsasdad'
-        ]
+        ],
+        alt: 'Liderlogo'
       }
     }
   }

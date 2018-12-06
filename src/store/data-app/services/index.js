@@ -15,6 +15,7 @@ import { flyerDosCaras } from './flyer-dos-caras.js'
 import { diptico } from './diptico.js'
 import { tripticos } from './tripticos.js'
 import { catalogo } from './catalogo.js'
+import { publicidad } from './publicidad.js'
 import { ecommerce } from './ecommerce.js'
 import { presencia } from './presencia-web.js'
 
@@ -45,6 +46,7 @@ export const services = {
   'tripticos': tripticos,
   'flyer-dos-caras': flyerDosCaras,
   'catalogo': catalogo,
+  'publicidad': publicidad,
   'ecommerce': ecommerce,
   'presencia-web': presencia
 }

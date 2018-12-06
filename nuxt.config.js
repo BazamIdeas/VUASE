@@ -1,17 +1,55 @@
 const nodeExternals = require('webpack-node-externals')
 const bodyParser = require('body-parser')
+const Cookies = require('cookies')
+const axios = require('axios')
 const resolve = (dir) => require('path').join(__dirname, dir)
 
 let axiosUrl = 'http://api.liderlogos.com/v1/'
-if (process.env.NODE_ENV === 'production') axiosUrl = 'http://api.liderlogos.com/v1/'
 
 module.exports = {
   srcDir: 'src/',
   serverMiddleware: [
+    function (req, res, next) {
+      let cookies = new Cookies(req, res)
+      req.cookies = cookies
+      next()
+    },
     '~~/server_middleware/geoip',
     '~~/server_middleware/redireccion'
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'http://liderlogos.com',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    excludes: [
+      '/secret',
+      '/admin/**'
+    ],
+    routes: async function () {
+      let urls = []
+      
+      try {
+        const portfolios = await axios.get(axiosUrl + 'portfolios?limit=1000')
+        portfolios.data.forEach((port) => {
+          urls.push('/ejemplo/' + port.service.slug + '/' + port.slug)
+        })
+      } catch (error) {
+        console.log(error)
+      }
 
+      try {
+        const services = await axios.get(axiosUrl + 'services?limit=1000')
+        services.data.forEach((service) => {
+          urls.push('/nuestros-servicios/' + service.slug)
+        })
+      } catch (error) {
+        console.log(error)
+      }
+
+      return urls
+    }
+  },
   /*
   ** Headers of the page
   */
@@ -53,13 +91,15 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/toast'
+    '@nuxtjs/toast',
+    '@nuxtjs/sitemap',
+    ['cookie-universal-nuxt', { alias: 'cookies' }]
   ],
   plugins: [
     '~/plugins/vuetify.js',
     // { src: '~/plugins/watch-countries.js', ssr: true },
     { src: '~/plugins/vee-validate.js', ssr: true },
-    { src: '~/plugins/vue-cookies.js', ssr: false },
+    // { src: '~/plugins/vue-cookies.js', ssr: true },
     { src: '~/plugins/vue2-storage.js', ssr: false },
     { src: '~/plugins/axios.js', ssr: true },
     { src: '~/plugins/components.js', ssr: true },
@@ -105,7 +145,7 @@ module.exports = {
       '~/plugins/vuetify.js',
       '~/plugins/vee-validate.js',
       '~/plugins/vue2-storage.js',
-      '~/plugins/vue-cookies.js',
+      //'~/plugins/vue-cookies.js',
       '~/plugins/axios.js',
       '~/plugins/components.js',
       'paypal-checkout',

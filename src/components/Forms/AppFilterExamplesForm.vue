@@ -1,20 +1,20 @@
 <template>
   <v-layout row wrap>
-    <v-flex md6>
+    <v-flex md4>
       <v-select :items="services" item-text="text" item-value="field" :value="paramsData.servicio" label="Servicio" @change="redirect($event, 'sectors/getAll', 1)" solo></v-select>
     </v-flex>
-    <v-flex md6>
-      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector" :disabled="!(paramsData && paramsData.servicio)" @change="redirect($event, 'sectors/activities/getAll', 2)" solo></v-select>
-    </v-flex>
     <v-flex md4>
+      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector" :disabled="!(paramsData && paramsData.servicio)" @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
+    </v-flex>
+    <!--<v-flex md4>
       <v-select :items="activities" item-text="text" item-value="field" :value="paramsData.actividad" label="Actividad" :disabled="!(paramsData && paramsData.sector)" @change="redirect($event, 'countries/getAll', 3)" solo></v-select>
-    </v-flex>
+    </v-flex>-->
     <v-flex md4>
-      <v-select :items="countries" item-text="text" item-value="field" :value="paramsData.pais" label="Pais" :disabled="!(paramsData && paramsData.actividad)" @change="redirect($event, 'countries/locations/getAll', 4)" solo></v-select>
+      <v-select :items="countries" item-text="text" item-value="field" :value="paramsData.actividad" label="Pais" :disabled="!(paramsData && paramsData.sector)" @change="redirect($event, false, 3)" solo></v-select>
     </v-flex>
-    <v-flex md4>
+    <!--<v-flex md4>
       <v-select :items="locations" item-text="text" item-value="field" :value="paramsData.localidad" label="Localidad" :disabled="!(paramsData && paramsData.pais)" @change="redirect($event, false, 5)" solo></v-select>
-    </v-flex>
+    </v-flex>-->
   </v-layout>
 </template>
 
@@ -40,9 +40,9 @@
     computed: {
       services () { return this.$store.getters['services/forSelectField'] },
       sectors () { return this.$store.getters['sectors/forSelectField'] },
-      activities () { return this.$store.getters['sectors/activities/bySector'](this.paramsData.sector) },
-      countries () { return this.$store.getters['countries/forSelectField'] },
-      locations () { return this.$store.getters['countries/locations/byCountry'](this.paramsData.pais) }
+      // activities () { return this.$store.getters['sectors/activities/bySector'](this.paramsData.sector) },
+      countries () { return this.$store.getters['countries/forSelectField'] }
+      // locations () { return this.$store.getters['countries/locations/byCountry'](this.paramsData.pais) }
     },
     methods: {
       redirect (event, action, index) {

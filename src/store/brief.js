@@ -141,9 +141,9 @@ export const getters = {
       form.forEach(x => {
         forms = forms.concat(state.forms[x])
       })
+      console.log(forms)
       return forms
     }
-
     return form
   }
 }
@@ -160,6 +160,12 @@ export const actions = {
     let bodyFormData = new FormData()
 
     bodyFormData.append('data', JSON.stringify(brief))
+    bodyFormData.append('client', JSON.stringify({
+      email: brief.information.email.value,
+      name: brief.information.names.value,
+      company: brief.information.company.value,
+      phone: brief.information.phone.value
+    }))
 
     for (let key in brief.information) {
       if (key.includes('files')) {
@@ -199,17 +205,21 @@ export const actions = {
     }
     */
 
-    let saveBrief
+    let saveBrief, token
 
     try {
       saveBrief = await this.$axios.$post('briefs', bodyFormData, {
         headers: {
-          'Content-Type': 'multipart/form-data',
-          'Authorization': vueInstance.$storage.get('token_session')
+          'Content-Type': 'multipart/form-data'
         }
       })
+      token = saveBrief.client.token
     } catch (error) {
       return false
+    }
+
+    if (token) {
+      vueInstance.$storage.set('token_session', token)
     }
 
     vueInstance.$storage.set('brief', saveBrief.data)
