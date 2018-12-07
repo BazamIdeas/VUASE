@@ -84,9 +84,50 @@ export const vectorizacion = {
     }
   ],
   testimonies: [{
-    stars: 4,
-    logo: '/icons/papeleria.svg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mi pharetra massa porttitor sollicitudin.'
+    stars: 5,
+    logo: '/images/testimonies/logo/sanidae.jpg',
+    company: 'SANIDAE',
+    description: '“En nombre de nuestro equipo queremos agradeceros vuestro magnífico trabajo.Si seguís así seguro que se os augura un gran futuro profesional. Muy agradecido.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/hispanoamericana.jpg',
+    company: 'Hispanamericana',
+    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/malarrasa.jpg',
+    company: 'Malarrassa',
+    description: '“Hemos repetido con su empresa porque nos han presentados trabajos que realmente representan a las marcas y lo hacen de forma rápida, por lo que estamos muy contentos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/wellcan.jpg',
+    company: 'Wellcan',
+    description: '“Estoy muy contenta por la libertar y seguridad que da su trabajo por no tener límite en los bocetos ni en el tiempo para el desarrollo del diseño. Elegimos algo mejor de lo que buscábamos como idea previa.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/la-casa-de-ketty.jpg',
+    company: 'La Casa de Ketty',
+    description: '“Es el segundo diseño que realizo con ustedes, los volvería a elejir para nuevos proyectos.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/amo.jpg',
+    company: 'Amo',
+    description: '“El proceso a sido muy rápido y con resultado esperado.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/camaleon.jpg',
+    company: 'Camaleón',
+    description: '“Hicimos muchos proyectos con su empresa, estamos contentos con los resultados.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/oceanrov.jpg',
+    company: 'OceanRov',
+    description: '“He quedado muy conforme porque el proceso ha sido muy efectivo; mejor servicio en menor tiempo. Las personas que ven nuestro logo quedan encantadas con el mismo. Pensaría en su empresa para realizar nuevos diseños.”'
+  }, {
+    stars: 5,
+    logo: '/images/testimonies/logo/torneleria-madrilena.jpg',
+    company: 'Tonelería Madrileña',
+    description: '“Muy profesionales, competentes y rápidos.”'
   }],
   topSlider: [
     {
