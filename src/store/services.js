@@ -218,7 +218,8 @@ export const getters = {
 export const actions = {
   async getAll ({ rootState, commit }) {
     let localServices
-    if (process.browser) {
+    if (process.browser && this.$storage) {
+      console.log(this.$storage)
       localServices = this.$storage.get('local_services')
     }
 
