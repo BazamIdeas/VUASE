@@ -217,21 +217,11 @@ export const getters = {
 
 export const actions = {
   async getAll ({ rootState, commit }) {
-    let localServices
-    if (process.browser && this.$storage) {
-      console.log(this.$storage)
-      localServices = this.$storage.get('local_services')
-    }
-
-    if (localServices) {
-      commit('GET_ALL', localServices)
-    } else {
-      try {
-        let services = await this.$axios.$get('services?limit=1000')
-        commit('GET_ALL', services)
-      } catch (error) {
-        console.log(error)
-      }
+    try {
+      let services = await this.$axios.$get('services?limit=1000')
+      commit('GET_ALL', services)
+    } catch (error) {
+      console.log(error)
     }
   }
 }
