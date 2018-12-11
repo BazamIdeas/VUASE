@@ -8,14 +8,12 @@
         <v-flex xs12 md6 class="my-5" v-if="!formSent">
           <h1 class="font-weight-bold mb-1 text-uppercase text-xs-center" style="font-size: 29px;">¿Necesitas un consejo profesional?</h1>
 
-          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="font-size: 12px; line-height: 20px;  padding: 0 30px;
-">Estamos para asesorarte gratis. Completa el formulario y un experto se pondrá en contacto contigo hoy.</h4>
+          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="font-size: 12px; line-height: 20px;  padding: 0 30px;">Estamos para asesorarte gratis. Completa el formulario y un experto se pondrá en contacto contigo hoy.</h4>
 
           <AppContactForm @sent="formHandler" contact-page="true" />
         </v-flex>
 
-        <v-flex xs12 md6 class="my-5 justify-center align-center" v-else-if="formSent" style="display: flex;
-    flex-direction: column;">
+        <v-flex xs12 md6 class="my-5 justify-center align-center" v-else-if="formSent" style="display: flex;flex-direction: column;">
           <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 35px;">¡Gracias por tu consulta!</h1>
 
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="font-size: 15px;">Un experto de diseño se comunicará contigo a la brevedad para brindarte nuestro asesoramiento profesional.</h4>

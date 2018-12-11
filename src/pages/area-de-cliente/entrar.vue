@@ -14,7 +14,6 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn color="primary" @click="submit">ENTRAR</v-btn>
-              {{ isLoggedIn }} {{ $store.app.token }}
               <v-spacer></v-spacer>
             </v-card-actions>
           </v-card>
@@ -32,8 +31,8 @@
         password: ''
       }
     },
-    async mounted () {
-      await this.$store.dispatch('auth')
+    async created () {
+      console.log(this.isLoggedIn)
       if (this.isLoggedIn) {
         return this.$router.push('/area-de-cliente')
       }
@@ -48,7 +47,7 @@
           if (valid) {
             let login = await vue.$store.dispatch('user/login', { email: vue.email, password: vue.password })
 
-            if (login) return vue.$router.push('/area-de-cliente')
+            if (login) return vue.$router.push('/area-de-cliente/')
 
             vue.$toast.error('Sus datos son incorrectos!')
           }

@@ -22,6 +22,9 @@
                 <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
                   <span class="nav-item-label">{{link.title}}</span>
                 </v-btn>
+                <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
+                  <span class="nav-item-label">ENTRAR</span>
+                </v-btn>
               </div>
               <v-spacer></v-spacer>
             </v-toolbar>
@@ -29,6 +32,9 @@
           <v-flex xs12 v-for="(link, i) in links" :key="i" class="footer-link hidden-md-and-up">
             <v-btn class="nav-item mx-0" nuxt :to="link.url" flat>
               <span class="nav-item-label">{{link.title}}</span>
+            </v-btn>
+            <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
+              <span class="nav-item-label">ENTRAR</span>
             </v-btn>
           </v-flex>
           <v-layout row wrap align-center class="mx-0">

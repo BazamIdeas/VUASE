@@ -31,7 +31,8 @@ import {
   AppAddons,
   AppHomeCreativeProccess,
   AppServiceOptions,
-  AppNewsletterForm
+  AppNewsletterForm,
+  AppProjectsPanel
 } from '@/components'
 
 Vue.component('AppAboutUsCarousel', AppAboutUsCarousel)
@@ -66,3 +67,4 @@ Vue.component('AppAddons', AppAddons)
 Vue.component('AppHomeCreativeProccess', AppHomeCreativeProccess)
 Vue.component('AppServiceOptions', AppServiceOptions)
 Vue.component('AppNewsletterForm', AppNewsletterForm)
+Vue.component('AppProjectsPanel', AppProjectsPanel)

@@ -12,6 +12,7 @@ export { default as AppTopServiceSlider } from './AppTopServiceSlider.vue'
 export { default as AppAddons } from './AppAddons.vue'
 export { default as AppHomeCreativeProccess } from './AppHomeCreativeProccess.vue'
 export { default as AppServiceOptions } from './AppServiceOptions.vue'
+export { default as AppProjectsPanel } from './AppProjectsPanel.vue'
 
 // CAROUSELS
 export { default as AppAboutUsCarousel } from './Carousels/AppAboutUsCarousel.vue'
