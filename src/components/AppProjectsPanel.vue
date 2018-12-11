@@ -2,18 +2,22 @@
   <v-layout column>
     <v-flex>
       <v-layout row wrap v-if="projects.length">
-        <v-flex xs6 md3 v-for="project in projects" :key="project.id">
-          {{project.name}}
+        <v-flex xs6 md2 v-for="project in projects" :key="project.id">
+          <v-tooltip bottom>
+            <v-card slot="activator" class="pa-3" style="cursor: pointer">
+              <div style="padding-top: 100%; position: relative">
+                <img src="icons/conceptos.svg" height="100%" width="100%" style="position:absolute; top: 0">
+              </div>
+            </v-card>
+            <span class="body-2 white--text">{{ project.name }}</span>
+          </v-tooltip>
         </v-flex>
       </v-layout>
       <v-layout v-else>
-        <v-flex xs12 md6 offset-md3 class="py-4">
-          <h2 class="text-xs-center">NO HAY PROYECTOS ABIERTOS</h2>
+        <v-flex xs12 md6 offset-md3 class="py-5">
+          <h2 class="text-xs-center">NO HAY PROYECTOS</h2>
         </v-flex>
       </v-layout>
-    </v-flex>
-    <v-flex class="text-xs-right" v-if="projects.length">
-      <v-pagination v-model="page" :length="pages"></v-pagination>
     </v-flex>
   </v-layout>
 </template>
@@ -28,15 +32,12 @@
     },
     data: () => ({
       page: 1
-    }),
-    computed: {
-      pages () {
-        return this.projects.length / 6
-      }
-    }
+    })
   }
 </script>
 
-<style>
-  
+<style scoped>
+  .v-tooltip__content {
+    background: #1976d2;
+  }
 </style>

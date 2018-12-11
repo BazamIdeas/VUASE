@@ -157,9 +157,6 @@ export const state = () => ({
 export const mutations = {
   GET_ALL (state, services) {
     state.list = services
-    if (process.browser) {
-      this.$storage.set('local_services', services)
-    }
 
     for (let group of state.groups) {
       if (!group.rows) { continue }
