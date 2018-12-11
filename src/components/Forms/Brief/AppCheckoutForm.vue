@@ -137,25 +137,39 @@
       </v-layout>
     </v-flex>
     <v-dialog v-if="service" v-model="pay" persistent :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
-      <v-card>
+      <v-card @mouseleave="setGatewayInHover(null)">
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
           <p style="width: 100%;">PAGA CON</p>
         </v-card-title>
         <v-layout row wrap>
-          <v-flex v-for="gateway in gateways" :key="gateway.id" @mouseover="setGatewayInHover(gateway)" class="text-xs-center">
-            <no-ssr v-if="gateway.name ==='Paypal'">
+          <v-flex v-for="gateway in gateways" :key="gateway.id" @mouseover.enter="setGatewayInHover(gateway)"
+          class="text-xs-center">
+            <no-ssr v-if="gateway.code ==='01'">
               <AppPaypal :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
             </no-ssr>
-            <no-ssr v-else-if="gateway.name ==='Stripe'">
+            <no-ssr v-else-if="gateway.code ==='02'">
               <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
             </no-ssr>
-            <!--<AppBankTransfer v-else :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />-->
-            <div v-else>{{gateway}}</div>
+            <AppBankTransfer v-else-if="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+
+            <AppBankTransfer v-else-if="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+            
           </v-flex>
         </v-layout>
         <v-layout>
           <v-flex v-if="gateway">
-            <div class="text-xs-center font-weight-medium"><p v-html="gateway.instructions"></p></div>
+            <div class="font-weight-medium pa-4">
+              <p class="mb-0 font-weight-bold">Descripción:</p>
+              <p v-html="gateway.description"></p>
+              <p class="mb-0 font-weight-bold">Instrucciones:</p>
+              <p v-html="gateway.instructions"></p>
+            </div>
+          </v-flex>
+          <v-flex v-if="!gateway">
+            <div class="font-weight-medium pa-4">
+              <p class="text-xs-center font-weight-bold">Seleccione un metodo de pago</p>
+              {{ cartObject }}
+            </div>
           </v-flex>
         </v-layout>
       </v-card>    
@@ -270,9 +284,8 @@
         let cartObject = { services: [] }
 
         if (this.brief.subServices) {
-          for (let subService in this.brief.subServices) {
-            let service = this.$store.getters['services/getBySlug'](subService.slug)
-            if (service) cartObject.services.push({ id: service.id, quantity: 1 })
+          for (let subService of this.brief.subServices) {
+            cartObject.services.push({ id: subService.id, quantity: 1 })
           }
         } else {
           cartObject.services.push({ id: this.service.id, quantity: 1 })

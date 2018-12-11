@@ -5,7 +5,7 @@
         <v-flex xs12 offset-md1 md10 class="mt-5 mb-5">
           <v-layout row wrap>
             <v-flex xs12>
-
+              {{ id }}
             </v-flex>
           </v-layout>
         </v-flex>
@@ -28,6 +28,11 @@
 <script>
   export default {
     layout: 'account',
+    asyncData ({ params }) {
+      return {
+        id: params.id
+      }
+    },
     async created () {
       if (!this.isLoggedIn) {
         return this.$router.push('/area-de-cliente/entrar')

@@ -102,7 +102,8 @@ export const state = () => ({
     ],
     'vectorizacion': [
       { label: 'Adjunte el archivo que desea digitalizar:', type: 'file', name: 'vectorization_files' },
-      { label: '¿Dónde más usará su Logo?', type: 'checkbox', name: 'vectorization_aplications', options: ['Papeleria, Merchandising', 'Folletos', 'Rótulos, Locales, Vehículos, Uniformes', 'Sitio Web', 'Redes Sociales'] }
+      { label: '¿Dónde más usará su Logo?', type: 'checkbox', name: 'vectorization_aplications', options: ['Papeleria, Merchandising', 'Folletos', 'Rótulos, Locales, Vehículos, Uniformes', 'Sitio Web', 'Redes Sociales'] },
+      { type: 'any' }
     ],
     'papeleria': [
       {
