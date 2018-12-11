@@ -5,11 +5,7 @@
         <v-flex xs12 offset-md1 md10 class="mt-5 mb-5">
           <v-layout row wrap>
             <v-flex xs12>
-              <h2>PROYECTOS ABIERTOS</h2>
-              <div style="height: 2px; width: 100%; background-color: rgba(0, 0, 0, .87);"></div>
-              <v-container fluid class="pa-2">
-                <AppProjectsPanel :projects="projects(undefined)"/>
-              </v-container>
+
             </v-flex>
           </v-layout>
         </v-flex>
