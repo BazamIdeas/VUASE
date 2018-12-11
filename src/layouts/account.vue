@@ -1,8 +1,7 @@
 <template>
-  <v-app v-resize="hiddenOnResize">
-    <AppMobileNav/>
+  <v-app>
     <v-content>
-      <AppHeader/>
+      <AppHeaderAccount/>
       <nuxt/>
       <AppFooter/>
       <!--<img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">-->
@@ -26,15 +25,11 @@
 </template>
 
 <script>
-  import AppHeader from '@/components/AppHeader.vue'
+  import AppHeaderAccount from '@/components/AppHeaderAccount.vue'
   import AppFooter from '@/components/AppFooter.vue'
   import AppMobileNav from '@/components/AppMobileNav.vue'
 
   export default {
-    mounted () {
-      this.hiddenOnResize()
-      this.cookies()
-    },
     data () {
       return {
         cookieSetted: true
@@ -53,48 +48,10 @@
           this.setCookie('liderlogo-cookie', 'no', '30')
           this.cookieSetted = false
         }
-      },
-      hiddenOnResize () {
-        if (window.innerWidth > 960) {
-          this.$store.dispatch('toggleDrawer', false)
-        }
-      },
-      acceptUserCookie () {
-        this.setCookie('liderlogo-cookie', 'ok', '30')
-        this.cookieSetted = true
-      },
-      getCookie (cname) {
-        var name = cname + '='
-        var decodedCookie = decodeURIComponent(document.cookie)
-        var ca = decodedCookie.split(';')
-        var length = ca.length
-        for (var i = 0; i < length; i++) {
-          var c = ca[i]
-          while (c.charAt(0) === ' ') {
-            c = c.substring(1)
-          }
-          if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length)
-          }
-        }
-        return ''
-      },
-      setCookie (cname, cvalue, exdays) {
-        var d = new Date()
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000))
-        var expires = 'expires=' + d.toUTCString()
-        document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
-      },
-      checkCookie (cookieName) {
-        var cookie = this.getCookie(cookieName)
-        if (cookie !== '') {
-          return true
-        }
-        return false
       }
     },
     components: {
-      AppHeader,
+      AppHeaderAccount,
       AppFooter,
       AppMobileNav
     }
@@ -105,16 +62,9 @@
   div#app {
     background: #fbfbfb;
   }
-  
-  .chat-cloud {
-    width: 100px;
-    position: fixed;
-    bottom: -15px;
-    left: 90%;
-    z-index: 999;
-  }
 
-  .v-carousel.rating-user, .v-carousel.profesional-services-slider {
+  .v-carousel.rating-user,
+  .v-carousel.profesional-services-slider {
     height: 210px;
     box-shadow: none;
   }
@@ -123,7 +73,8 @@
     height: 400px;
   }
 
-  .v-carousel__prev, .v-carousel__next {
+  .v-carousel__prev,
+  .v-carousel__next {
     position: absolute;
     top: 90%;
     z-index: 1;
@@ -132,21 +83,25 @@
     border: 2px solid grey;
   }
 
-  .v-carousel.profesional-services-slider .v-carousel__prev, .v-carousel.profesional-services-slider  .v-carousel__next {
+  .v-carousel.profesional-services-slider .v-carousel__prev,
+  .v-carousel.profesional-services-slider .v-carousel__next {
     top: 48%;
   }
 
-  .v-carousel.rating-user .v-btn .v-btn__content .v-icon, .v-carousel.profesional-services-slider .v-btn .v-btn__content .v-icon{
+  .v-carousel.rating-user .v-btn .v-btn__content .v-icon,
+  .v-carousel.profesional-services-slider .v-btn .v-btn__content .v-icon {
     color: inherit;
     font-size: 25px !important;
     color: grey
   }
 
-  .v-carousel.rating-user .v-btn:before, .v-carousel.profesional-services-slider .v-btn:before {
+  .v-carousel.rating-user .v-btn:before,
+  .v-carousel.profesional-services-slider .v-btn:before {
     opacity: 0;
   }
 
-  .v-carousel.rating-user .v-btn--icon:before, .v-carousel.profesional-services-slider .v-btn--icon:before {
+  .v-carousel.rating-user .v-btn--icon:before,
+  .v-carousel.profesional-services-slider .v-btn--icon:before {
     border-radius: 0%;
   }
 
@@ -164,13 +119,5 @@
 
   .v-rating .v-icon {
     color: #FF9800 !important
-  }
-
-  .cookies{
-    background: white;
-    border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);
-    position: fixed;
-    z-index: 1000;
-    bottom: 0;
   }
 </style>

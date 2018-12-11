@@ -1,3 +1,5 @@
+var jwtDecode = require('jwt-decode')
+
 export const state = () => ({
 })
 
@@ -16,10 +18,24 @@ export const actions = {
       token = login.token
     } catch (error) {
       if (error) console.log(error)
+      return
     }
 
     if (token) {
       this.$cookies.set('session_token', token)
+      commit('SET_TOKEN', token, { root: true })
+
+      let jwt = jwtDecode(token)
+      let user
+
+      try {
+        user = await this.$axios.get('clients/' + jwt.id, {
+          headers: {
+            'Authorization': token
+          }
+        })
+      } catch (error) { console.log(error) }
+      commit('SET_AUTH_DATA', user.data, { root: true })
       return true
     }
   }

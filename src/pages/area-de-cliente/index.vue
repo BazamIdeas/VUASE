@@ -1,19 +1,54 @@
 <template>
-  <div>{{ $store.state.app.authData }}</div>
+  <section>
+    <v-container fluid grid-list-md class="mt-5 pt-5 pb-0">
+      <v-layout row wrap>
+        <v-flex xs12 offset-md1 md10 class="mt-5 mb-5">
+          <v-layout row wrap>
+            <v-flex xs12>
+              <h2>PROYECTOS ABIERTOS</h2>
+              <hr>
+              <v-container fluid grid-list-md>
+                <AppProjectsPanel :projects="projects(false)"/>
+              </v-container>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+        <v-flex xs12 offset-md1 md10 class="mt-5 mb-5">
+          <v-layout row wrap>
+            <v-flex xs12>
+              <h2>PROYECTOS CULMINADOS</h2>
+              <hr>
+              <v-container fluid grid-list-md>
+                <AppProjectsPanel :projects="projects(true)" empty-message=""/>
+              </v-container>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </section>
 </template>
 
 <script>
   export default {
-    async mounted () {
-      await this.$store.dispatch('auth')
+    layout: 'account',
+    async created () {
       if (!this.isLoggedIn) {
         return this.$router.push('/area-de-cliente/entrar')
       }
-
-      await this.$store.dispatch('setAuthData')
     },
     computed: {
-      isLoggedIn () { return this.$store.getters['isLoggedIn'] }
+      isLoggedIn () { return this.$store.getters['isLoggedIn'] },
+      authData () { return this.$store.state.app.authData }
+    },
+    methods: {
+      projects (closed) {
+        let openProjects = []
+        if (this.authData.projects) {
+          openProjects = this.authData.projects.filter(val => val.closed === closed)
+        }
+        return openProjects
+      }
     }
   }
 </script>

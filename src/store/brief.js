@@ -164,7 +164,8 @@ export const actions = {
       email: brief.information.email.value,
       name: brief.information.names.value,
       company: brief.information.company.value,
-      phone: brief.information.phone.value
+      phone: brief.information.phone.value,
+      password: brief.information.phone.value
     }))
 
     for (let key in brief.information) {
