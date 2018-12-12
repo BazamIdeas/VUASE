@@ -240,7 +240,7 @@ export const imagenCorporativa = {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
       title: 'LOGO + WEB',
       url: '/nuestros-servicios/diseno-logo-y-pagina-web',
-      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/diseno'
+      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/disenos'
     }
   }
 }
