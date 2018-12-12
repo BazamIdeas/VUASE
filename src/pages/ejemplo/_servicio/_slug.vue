@@ -128,7 +128,7 @@
     },
     data () {
       return {
-        urlHosting: 'http://api.liderlogos.com/v1/images/slug/',
+        urlHosting: 'http://api.liderlogos.com/v1/images/slug/'
       }
     },
     computed: {
