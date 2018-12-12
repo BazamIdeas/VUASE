@@ -52,6 +52,10 @@
         pay: false
       }
     },
+    async beforeCreate () {
+      console.log('asdasda')
+      this.$router.push('disenos')
+    },
     async mounted () {
       await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
       await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
