@@ -1,7 +1,7 @@
 export const rFurgoneta = {
-  list: ['Prueba 3', 'Prueba 4'],
-  title: 'ROTULO FURGONETA CAMION',
+  title: 'RÓTULO FURGONETA CAMION',
   description: `Aprovecha al maximo tu espacio y promociona con exito tu negocio.`,
+  list: ['Diseño gráfico y publicitario', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Entrega en plantillas de corte digital'],
   shortDescription: `Aprovecha al maximo tu espacio y promociona con exito tu negocio.`,
   icon: '/icons/rotulo-furgoneta.svg',
   whatWeOffer: [

@@ -1,6 +1,6 @@
 export const rBanner = {
   list: ['Diseño publicitario impactante', 'Creaciones Ilimitadas', 'Fotomontajes de tus diseños', 'Entrega lista para imprimir'],
-  title: 'ROTULO BANNER',
+  title: 'RÓTULO BANNER',
   description: `Un diseño publicitario que desctaca tu stand.`,
   shortDescription: `Un diseño publicitario que desctaca tu stand.`,
   icon: '/icons/rotulo-banner.svg',

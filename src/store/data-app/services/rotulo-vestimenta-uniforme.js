@@ -1,6 +1,6 @@
 export const rVestimenta = {
   list: ['Diseño corporativo de indumentaria', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Tu diseño listo para bordar imprimir'],
-  title: 'ROTULO VESTIMENTA/UNIFORME ',
+  title: 'RÓTULO VESTIMENTA/UNIFORME ',
   description: `La ropa de tu negocio que todos querran lucir.`,
   shortDescription: `La ropa de tu negocio que todos querran lucir.`,
   icon: '/icons/rotulo-vestimenta.svg',

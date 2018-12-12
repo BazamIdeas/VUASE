@@ -29,7 +29,7 @@ export const state = () => ({
         url: 'https://plus.google.com/114230428674579789847'
       }, {
         icon: 'fa-linkedin',
-        url: 'https://www.linkedin.com/company-beta/2369935'
+        url: 'https://www.linkedin.com/company/liderlogo/'
       }, {
         icon: 'fa-pinterest',
         url: 'https://es.pinterest.com/liderlogo/'

@@ -20,7 +20,7 @@
         </v-layout>
         <v-layout row wrap align-center justify-center>
           <v-flex xs12 sm12 md5 offset-sm1 d-flex justify-end>
-            <v-btn :to="first.url+ '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
+            <v-btn :to="first.brief" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
           <v-flex class="know-more-container" xs12 sm12 md6 v-if="!first.notSecondButton">
             <v-btn :to="first.url" flat class="ma-0 px-2 know-more" large >
@@ -45,7 +45,7 @@
         </v-layout>
         <v-layout row wrap align-center justify-center>
           <v-flex xs12 sm12 md5 offset-sm1 d-flex justify-end>
-            <v-btn :to="last.url + '/brief'" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
+            <v-btn :to="last.brief" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
           </v-flex>
           <v-flex class="know-more-container" xs12 sm12 md6 v-if="!last.notSecondButton">
             <v-btn :to="last.url" flat class="ma-0 px-2 know-more" large>
