@@ -211,14 +211,14 @@ export const vectorizacion = {
       title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
       subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
       url: '/nuestros-servicios/imagen-corporativa',
-      brief: '/nuestros-servicios/imagen-corporativa/brief/diseno'
+      brief: '/nuestros-servicios/imagen-corporativa/brief/disenos'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
       subtitle: '50% OFF EN DISEÑO DE LOGO',
       url: '/nuestros-servicios/diseno-logo-y-pagina-web',
-      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/diseno'
+      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/disenos'
     }
   }
 }

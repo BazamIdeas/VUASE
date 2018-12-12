@@ -218,22 +218,22 @@ export const logoEmpresa = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/logo/1.-New-Cool.jpg' },
-      { img: '/images/services-carousel/logo/2.-Chikas.jpg' },
-      { img: '/images/services-carousel/logo/3.-Family-TV.jpg' },
-      { img: '/images/services-carousel/logo/4.-Fauna-Domestica.jpg' },
-      { img: '/images/services-carousel/logo/5.-Stemmedic.jpg' },
-      { img: '/images/services-carousel/logo/6.-Antartik.jpg' },
-      { img: '/images/services-carousel/logo/7.-Arlu.jpg' },
-      { img: '/images/services-carousel/logo/8.-Aixo-Hotel-Suites.jpg' },
+      { img: '/images/services-carousel/logo/1.-new-cool.jpg' },
+      { img: '/images/services-carousel/logo/2.-chikas.jpg' },
+      { img: '/images/services-carousel/logo/3.-family-tv.jpg' },
+      { img: '/images/services-carousel/logo/4.-fauna-domestica.jpg' },
+      { img: '/images/services-carousel/logo/5.-stemmedic.jpg' },
+      { img: '/images/services-carousel/logo/6.-antartik.jpg' },
+      { img: '/images/services-carousel/logo/7.-arlu.jpg' },
+      { img: '/images/services-carousel/logo/8.-aixo-hotel-suites.jpg' },
       { img: '/images/services-carousel/logo/9.-food-chef.jpg' },
       { img: '/images/services-carousel/logo/10.-y-si-me-toca-a-mi.jpg' },
-      { img: '/images/services-carousel/logo/11.-Black-Bird.jpg' },
-      { img: '/images/services-carousel/logo/12.-Paralelo-0.jpg' },
-      { img: '/images/services-carousel/logo/13.-Hostal-La-Colegiata.jpg' },
-      { img: '/images/services-carousel/logo/14.-Ingenium.jpg' },
-      { img: '/images/services-carousel/logo/15.-Hobbie.jpg' },
-      { img: '/images/services-carousel/logo/16.-Bricoaching.jpg' }
+      { img: '/images/services-carousel/logo/11.-black-bird.jpg' },
+      { img: '/images/services-carousel/logo/12.-paralelo-0.jpg' },
+      { img: '/images/services-carousel/logo/13.-hostal-la-colegiata.jpg' },
+      { img: '/images/services-carousel/logo/14.-ingenium.jpg' },
+      { img: '/images/services-carousel/logo/15.-hobbie.jpg' },
+      { img: '/images/services-carousel/logo/16.-bricoaching.jpg' }
     ]
   },
   packs: {
@@ -243,14 +243,14 @@ export const logoEmpresa = {
       title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
       subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
       url: '/nuestros-servicios/imagen-corporativa',
-      brief: '/nuestros-servicios/imagen-corporativa/brief/diseno'
+      brief: '/nuestros-servicios/imagen-corporativa/brief/disenos'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
       subtitle: '50% OFF EN DISEÑO DE LOGO',
       url: '/nuestros-servicios/diseno-logo-y-pagina-web',
-      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/diseno'
+      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/disenos'
     }
   }
 }
