@@ -133,6 +133,7 @@
           console.log(result)
           if (result) {
             this.$emit('sent')
+            this.$router.push('/gracias?por=contacto')
           }
         })
       }

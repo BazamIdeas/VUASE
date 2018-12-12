@@ -52,9 +52,20 @@
         pay: false
       }
     },
-    async beforeCreate () {
-      console.log('asdasda')
-      this.$router.push('disenos')
+    async created () {
+      if (!this.params.paso) {
+        if (this.params.servicio.includes('logo') || this.params.servicio === 'imagen-corporativa') {
+          this.$router.push(this.$router.currentRoute.path + '/disenos')
+        } else {
+          this.$router.push(this.$router.currentRoute.path + '/estilos')
+        }
+      } else if (this.params.paso === 'disenos') {
+        if (this.params.servicio.includes('logo') || this.params.servicio === 'imagen-corporativa') {
+          this.$router.push('disenos')
+        } else {
+          this.$router.push('estilos')
+        }
+      }
     },
     async mounted () {
       await this.$store.dispatch('brief/setData', this.$storage.get('brief'))

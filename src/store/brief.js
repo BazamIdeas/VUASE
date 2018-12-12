@@ -138,7 +138,7 @@ export const mutations = {
 export const getters = {
   getStepByKey: (state) => (key) => {
     let steps = { disenos: 'designs', estilos: 'styles', colores: 'colors', customColors: '', informacion: 'information', pago: 'pay' }
-    return state.steps[steps[key]]
+    return state.steps[steps[key]] || {}
   },
   getFormBySlug: (state) => (slug) => {
     var form = state.forms[slug]

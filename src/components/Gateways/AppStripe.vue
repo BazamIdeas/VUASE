@@ -36,7 +36,7 @@
                   'Authorization': vueInstance.$storage.get('token_session')
                 }
               }).then(function (data) {
-                vueInstance.$router.push('/gracias')
+                vueInstance.$router.push('/gracias?por=compra')
               }).catch(function (error) {
                 if (error) {
                   alert('error')

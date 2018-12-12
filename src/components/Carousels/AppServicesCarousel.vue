@@ -100,9 +100,9 @@
       /* TODO: */
       url () {
         if (this.find === 'diseno-logo-y-pagina-web' || this.find === 'diseno-pagina-web') {
-          return this.$router.currentRoute.path + '/' + this.find + 'cotizacion'
+          return this.$router.currentRoute.path + '/' + this.find
         } else {
-          return this.$router.currentRoute.path + '/' + this.find + 'brief/disenos'
+          return this.$router.currentRoute.path + '/' + this.find
         }
       }
     }
