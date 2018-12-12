@@ -89,6 +89,12 @@ export const state = () => ({
       { label: '¿Qué información y elemento desea colocar en su rótulo?', type: 'text', name: 'rolls_content' },
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'rolls_files' }
     ],
+    'rotulo-vehicular': ['rotulo'],
+    'rotulo-local': ['rotulo'],
+    'rotulo-banner': ['rotulo'],
+    'packaging': ['rotulo'],
+    'rotulo-vestimenta-uniforme': ['rotulo'],
+    'rotulo-furgoneta-camion': ['rotulo'],
     'diseno-folletos-dipticos-tripticos': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
       { label: 'Describa los resultados que desea obtener de su folleto:', type: 'textarea', name: 'brochures_results' },
@@ -102,7 +108,8 @@ export const state = () => ({
     ],
     'vectorizacion': [
       { label: 'Adjunte el archivo que desea digitalizar:', type: 'file', name: 'vectorization_files' },
-      { label: '¿Dónde más usará su Logo?', type: 'checkbox', name: 'vectorization_aplications', options: ['Papeleria, Merchandising', 'Folletos', 'Rótulos, Locales, Vehículos, Uniformes', 'Sitio Web', 'Redes Sociales'] }
+      { label: '¿Dónde más usará su Logo?', type: 'checkbox', name: 'vectorization_aplications', options: ['Papeleria, Merchandising', 'Folletos', 'Rótulos, Locales, Vehículos, Uniformes', 'Sitio Web', 'Redes Sociales'] },
+      { type: 'any' }
     ],
     'papeleria': [
       {

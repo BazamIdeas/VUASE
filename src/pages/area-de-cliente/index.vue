@@ -36,6 +36,7 @@
       if (!this.isLoggedIn) {
         return this.$router.push('/area-de-cliente/entrar')
       }
+      console.table(this.authData.projects)
     },
     computed: {
       isLoggedIn () { return this.$store.getters['isLoggedIn'] },

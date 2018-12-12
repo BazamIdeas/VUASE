@@ -105,6 +105,8 @@
 
       if (packages) this.packagesSelected = packages
 
+      console.log(this.params.servicio)
+
       this.sections = 0
 
       for (const pkg of this.packagesSelected) {
@@ -114,6 +116,8 @@
       }
 
       if (addons) this.addonsSelected = addons
+
+      if (this.params.servicio === 'diseno-logo-y-pagina-web') this.addonsSelected.push('logo-solo-para-web')
     },
     data () {
       return {

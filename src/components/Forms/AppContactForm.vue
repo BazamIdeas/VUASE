@@ -20,11 +20,11 @@
         </v-radio-group>
       </v-flex>
       
-      <v-flex xs12 sm6 md6 v-show="for_phone">
+      <v-flex xs12 sm6 md6 v-if="for_phone">
         <v-text-field v-model="phone" v-validate="'required'" name="contact.phone" label="Telefono" placeholder="Telefono"
           :error-messages="errors.collect('contact.phone')" solo flat></v-text-field>
       </v-flex>
-      <v-flex xs12 sm6 md6 v-show="for_phone">
+      <v-flex xs12 sm6 md6 v-if="for_phone">
         <v-select :items="times" v-model="time" v-validate="'required'" name="contact.times" label="Horarios"
           placeholder="Horarios" :error-messages="errors.collect('contact.times')" solo flat></v-select>
       </v-flex>
@@ -98,9 +98,11 @@
 
 <script>
   export default {
-    props: {'contactPage': {
-      default: false
-    }},
+    props: {
+      contactPage: {
+        default: false
+      }
+    },
     data () {
       return {
         name: '',
@@ -131,7 +133,6 @@
           console.log(result)
           if (result) {
             this.$emit('sent')
-            alert('SUCCESS!! :-)')
           }
         })
       }

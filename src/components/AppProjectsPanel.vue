@@ -4,11 +4,15 @@
       <v-layout row wrap v-if="projects.length">
         <v-flex xs6 md2 v-for="project in projects" :key="project.id">
           <v-tooltip bottom>
+            
             <v-card slot="activator" class="pa-3" style="cursor: pointer">
-              <div style="padding-top: 100%; position: relative">
-                <img src="icons/conceptos.svg" height="100%" width="100%" style="position:absolute; top: 0">
-              </div>
+              <nuxt-link :to="'/area-de-cliente/proyectos/' + project.id">
+                <div style="padding-top: 100%; position: relative">
+                  <img src="icons/conceptos.svg" height="100%" width="100%" style="position:absolute; top: 0">
+                </div>
+              </nuxt-link>
             </v-card>
+            
             <span class="body-2 white--text">{{ project.name }}</span>
           </v-tooltip>
         </v-flex>
