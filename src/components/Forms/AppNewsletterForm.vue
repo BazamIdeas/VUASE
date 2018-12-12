@@ -27,7 +27,7 @@
         this.$validator.validate().then(result => {
           console.log(result)
           if (result) {
-            alert('SUCCESS!! :-)')
+            this.$router.push('/gracias?por=suscripcion')
           }
         })
       }
