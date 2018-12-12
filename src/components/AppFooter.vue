@@ -23,7 +23,7 @@
                   <span class="nav-item-label">{{link.title}}</span>
                 </v-btn>
                 <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
-                  <span class="nav-item-label">ENTRAR</span>
+                  <span class="nav-item-label">ÁREA DE CLIENTE</span>
                 </v-btn>
               </div>
               <v-spacer></v-spacer>
@@ -34,7 +34,7 @@
               <span class="nav-item-label">{{link.title}}</span>
             </v-btn>
             <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
-              <span class="nav-item-label">ENTRAR</span>
+              <span class="nav-item-label">ÁREA DE CLIENTE</span>
             </v-btn>
           </v-flex>
           <v-layout row wrap align-center class="mx-0">
