@@ -168,7 +168,6 @@
           <v-flex v-if="!gateway">
             <div class="font-weight-medium pa-4">
               <p class="text-xs-center font-weight-bold">Seleccione un metodo de pago</p>
-              {{ cartObject }}
             </div>
           </v-flex>
         </v-layout>
