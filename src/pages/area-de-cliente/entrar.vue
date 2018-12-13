@@ -5,7 +5,7 @@
         <v-flex xs12 sm8 md4 class="py-2">
           <v-card class="elevation-1">
             <v-card-text>
-              <p class="text-xs-center font-weight-bold title pb-3 pt-2">Inicio de Sesion</p>
+              <p class="text-xs-center font-weight-bold title pb-3 pt-2">ÁREA DE CLIENTE</p>
               <v-form>
                 <v-text-field id="email" v-validate="'required'" v-model="email" name="email" label="Correo" type="text" box></v-text-field>
                 <v-text-field id="password" v-validate="'required'" v-model="password" name="password" label="Contraseña" type="password" box></v-text-field>
