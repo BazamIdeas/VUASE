@@ -1,9 +1,13 @@
 var jwtDecode = require('jwt-decode')
 
 export const state = () => ({
+  orders: []
 })
 
 export const mutations = {
+  SET_ORDERS (state, orders) {
+    state.orders = orders
+  }
 }
 
 export const getters = {
@@ -38,5 +42,17 @@ export const actions = {
       commit('SET_AUTH_DATA', user.data, { root: true })
       return true
     }
+  },
+  async getOrders ({ rootState, commit }) {
+    let orders
+
+    try {
+      orders = await this.$axios.get('orders/self', {
+        headers: {
+          'Authorization': this.$cookies.get('session_token')
+        }
+      })
+    } catch (error) { console.log(error) }
+    commit('SET_ORDERS', orders.data)
   }
 }
