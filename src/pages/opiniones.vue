@@ -304,7 +304,7 @@
             logo: '/images/testimonies/rotulos/ejemplo-rotulo-local-liderplan.jpg',
             company: 'Liderplan',
             description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
-          },
+          }
         ]
       }
     }

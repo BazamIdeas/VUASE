@@ -33,7 +33,7 @@ export default {
   },
   data: () => ({
     por: null,
-    message: '',
+    message: ''
   })
 }
 </script>

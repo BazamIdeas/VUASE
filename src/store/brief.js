@@ -101,11 +101,11 @@ export const state = () => ({
       { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
     ],
-    'flyer': ['diseno-perfil-redes-sociales'],
-    'flyer-dos-caras': ['diseno-perfil-redes-sociales'],
-    'diptico': ['diseno-perfil-redes-sociales'],
-    'tripticos': ['diseno-perfil-redes-sociales'],
-    'catalogo': ['diseno-perfil-redes-sociales'],
+    'flyer': ['diseno-folletos-dipticos-tripticos'],
+    'flyer-dos-caras': ['diseno-folletos-dipticos-tripticos'],
+    'diptico': ['diseno-folletos-dipticos-tripticos'],
+    'tripticos': ['diseno-folletos-dipticos-tripticos'],
+    'catalogo': ['diseno-folletos-dipticos-tripticos'],
     'diseno-perfil-redes-sociales': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'social_profiles_about_us' },
       { label: '¿En qué red social desea aplicar el diseño de su perfil?', type: 'checkbox', name: 'social_profiles_accounts', options: ['Facebook ', 'Twitter', 'Instagram', 'Google+', 'Youtube', 'Linkedin', 'Flicker', 'Pinterest', 'Otras'] },
