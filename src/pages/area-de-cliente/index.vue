@@ -7,7 +7,7 @@
             <v-flex xs12>
               <h2>PEDIDOS</h2>
               <div style="height: 2px; width: 100%; background-color: rgba(0, 0, 0, .87);"></div>
-              <v-container fluid class="pa-2">
+              <v-container fluid class="pa-0 pt-2">
                 <v-data-table :headers="headers" :items="orders" item-key="id" class="elevation-1" files-per-page-text="Numero de filas" :pagination.sync="pagination">
                   <template slot="items" slot-scope="props">
                     <tr @click="props.expanded = !props.expanded">
@@ -17,6 +17,11 @@
                       <td class="text-xs-left">{{ props.item.status  }}</td>
                       <td class="text-xs-left">{{ props.item.gateway }}</td>
                     </tr>
+                  </template>
+                  <template slot="no-data">
+                    <h5 color="error" class="text-xs-center font-weight-regular">
+                      NO HAY RESULTADOS
+                    </h5>
                   </template>
                   <template slot="expand" slot-scope="props">
                     <v-card flat>
@@ -48,7 +53,7 @@
       if (!this.isLoggedIn) {
         return this.$router.push('/area-de-cliente/entrar')
       }
-      this.$store.dispatch('user/getOrders')
+      await this.$store.dispatch('user/getOrders')
     },
     data: () => ({
       headers: [

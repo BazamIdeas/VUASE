@@ -87,28 +87,31 @@ export const actions = {
     if (req.cookies && req.cookies.get('session_token')) {
       commit('SET_TOKEN', req.cookies.get('session_token'))
 
-      let jwt = jwtDecode(req.cookies.get('session_token'))
-      let user
+      let decodedToken = jwtDecode(req.cookies.get('session_token'))
 
-      try {
-        user = await $axios.get('clients/' + jwt.id, {
+      if (decodedToken) {
+        let user = await $axios.get('clients/' + decodedToken.id, {
           headers: {
             'Authorization': req.cookies.get('session_token')
           }
         })
-      } catch (error) { console.log(error) }
-      commit('SET_AUTH_DATA', user.data)
+
+        if (user) commit('SET_AUTH_DATA', user.data)
+      }
     }
 
-    let countries = []
     let countriesObj = {}
-    try { countries = await $axios.$get('countries') } catch (error) { console.log(error) }
+
+    let countries = await $axios.$get('countries')
+
     if (countries.length) {
       countries.forEach(country => {
         countriesObj[country.iso] = country
       })
     }
-    let country = countriesObj[req.iso] ? countriesObj[req.iso] : countriesObj['US'] ? countriesObj['US'] : null
+
+    let country = countriesObj[req.iso] ? countriesObj[req.iso] : countriesObj['US'] ? countriesObj['US'] : {}
+
     dispatch('countries/setData', country)
   }
 }

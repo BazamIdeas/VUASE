@@ -101,6 +101,11 @@ export const state = () => ({
       { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
     ],
+    'flyer': ['diseno-perfil-redes-sociales'],
+    'flyer-dos-caras': ['diseno-perfil-redes-sociales'],
+    'diptico': ['diseno-perfil-redes-sociales'],
+    'tripticos': ['diseno-perfil-redes-sociales'],
+    'catalogo': ['diseno-perfil-redes-sociales'],
     'diseno-perfil-redes-sociales': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'social_profiles_about_us' },
       { label: '¿En qué red social desea aplicar el diseño de su perfil?', type: 'checkbox', name: 'social_profiles_accounts', options: ['Facebook ', 'Twitter', 'Instagram', 'Google+', 'Youtube', 'Linkedin', 'Flicker', 'Pinterest', 'Otras'] },
@@ -145,12 +150,14 @@ export const getters = {
 
     if (form && form.length < 3) {
       var forms = []
+
       form.forEach(x => {
         forms = forms.concat(state.forms[x])
       })
-      console.log(forms)
+
       return forms
     }
+
     return form
   }
 }
@@ -183,36 +190,6 @@ export const actions = {
       }
     }
 
-    /*
-    for (let color of brief.colors) {
-      bodyFormData.append('data[colors][]', color)
-    }
-
-    bodyFormData.append('data[customColors]', brief.customColors)
-
-    for (let design of brief.designs) {
-      bodyFormData.append('data[designs][]', design)
-    }
-
-    for (let key in brief.service) {
-      bodyFormData.append('data[service][' + key + ']', brief.service[key])
-    }
-
-    for (let key in brief.styles) {
-      bodyFormData.append('data[styles][' + key + ']', brief.styles[key])
-    }
-
-    for (let key in brief.information) {
-      if (key.includes('files')) {
-        bodyFormData.append('data[information][file][label]', brief.information[key]['label'])
-        bodyFormData.append('data[information][file][value]', brief.information[key]['value'])
-      } else {
-        bodyFormData.append('data[information][' + key + '][label]', brief.information[key]['label'])
-        bodyFormData.append('data[information][' + key + '][value]', brief.information[key]['value'])
-      }
-    }
-    */
-
     let saveBrief, token
 
     try {
@@ -227,7 +204,7 @@ export const actions = {
     }
 
     if (token) {
-      vueInstance.$storage.set('token_session', token)
+      vueInstance.$cookies.set('token_session', token)
     }
 
     vueInstance.$storage.set('brief', saveBrief.data)

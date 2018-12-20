@@ -1,5 +1,5 @@
 <template>
-  <div style="    background: white;">
+  <div style="background: white;">
     <!-- NEWSLWTTER FORM -->
     <v-container grid-list-md text-xs-center class="px-0" style="background: white; border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);" >
       <v-layout row wrap align-center class="mx-0">
@@ -18,7 +18,7 @@
             <v-toolbar class="transparent" flat>
               <v-spacer></v-spacer>
               <nuxt-link to="/"><img src="~/assets/images/logo.png" alt="LiderLogo"></nuxt-link>
-              <div class="px-4 hidden-md-and-down">
+              <div class="px-4 hidden-sm-and-down">
                 <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
                   <span class="nav-item-label">{{link.title}}</span>
                 </v-btn>
@@ -33,6 +33,8 @@
             <v-btn class="nav-item mx-0" nuxt :to="link.url" flat>
               <span class="nav-item-label">{{link.title}}</span>
             </v-btn>
+          </v-flex>
+          <v-flex xs12 class="footer-link hidden-md-and-up">
             <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
               <span class="nav-item-label">ÁREA DE CLIENTE</span>
             </v-btn>

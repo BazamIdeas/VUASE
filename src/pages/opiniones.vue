@@ -304,12 +304,7 @@
             logo: '/images/testimonies/rotulos/ejemplo-rotulo-local-liderplan.jpg',
             company: 'Liderplan',
             description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/rotulos/ejemplo-etiqueta-lormanic.jpg',
-            company: 'Lormanic',
-            description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final.”'
-          }
+          },
         ]
       }
     }

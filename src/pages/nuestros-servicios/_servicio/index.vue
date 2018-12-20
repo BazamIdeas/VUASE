@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section >
     <!-- TOP SLIDER -->
     <v-container grid-list-md class="mt-5 mb-5 pt-5 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>

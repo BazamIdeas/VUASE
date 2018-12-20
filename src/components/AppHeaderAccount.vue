@@ -7,7 +7,7 @@
     <v-spacer></v-spacer>
     <v-spacer></v-spacer>
     <div class="px-4 hidden-md-and-down">
-      <v-btn class="nav-item m-0" nuxt to="/area-de-cliente" flat>
+      <v-btn class="nav-item m-0" nuxt exact to="/area-de-cliente" flat>
         <span class="nav-item-label">Pedidos</span>
       </v-btn>
       <v-btn class="nav-item m-0" nuxt to="/area-de-cliente/proyectos" flat>

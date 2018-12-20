@@ -12,12 +12,8 @@ export const getters = {
 }
 
 export const actions = {
-  async getAll ({ rootState, commit }) {
-    try {
-      let gateways = await this.$axios.$get('gateways')
-      commit('GET_ALL', gateways)
-    } catch (error) {
-      console.log(error)
-    }
+  async getAll ({ commit }) {
+    let gateways = await this.$axios.$get('gateways')
+    if (gateways) commit('GET_ALL', gateways)
   }
 }
