@@ -56,7 +56,6 @@
       return {
         service: null,
         addons: [
-          'presencia-web',
           'galeria-de-proyectos',
           'catalogo-productos',
           'integracion-con-herramientas-de-google',
@@ -75,7 +74,8 @@
           'hosting-por-un-ano',
           'logo-solo-para-web',
           'diseno-y-desarrollo-de-seccion-web',
-          'ecommerce'
+          'ecommerce',
+          'adicional-papeleria'
         ]
       }
     },

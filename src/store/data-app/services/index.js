@@ -45,6 +45,6 @@ export const services = {
   'tripticos': tripticos,
   'flyer-dos-caras': flyerDosCaras,
   'catalogo': catalogo,
-  'ecommerce': ecommerce,
+  'sitio-web-ecommerce': ecommerce,
   'presencia-web': presencia
 }
