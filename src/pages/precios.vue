@@ -13,7 +13,8 @@
               <div style="text-align: center">
                 <img :src="serviceObject.dataService.icon" alt="" width="200" style="max-height: 150px">
                 <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
-                <h1 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h1>
+                <h5 class="subheading my-1" style="font-weight: 600" v-if="serviceObject.startWith" >A PARTIR DE</h5> 
+                <h2 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h2>
               </div>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">

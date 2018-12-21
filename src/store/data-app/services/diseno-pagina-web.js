@@ -1,5 +1,4 @@
 export const web = {
-  startWith: true,
   list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoría especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable'],
   title: 'SITIO WEB PROFESIONAL',
   description: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,

@@ -10,7 +10,7 @@
       <v-flex>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
-          <!-- <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5>  -->
+           <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
           {{ price.currency.symbol }} 
           {{ price.value }}
         </span> 
