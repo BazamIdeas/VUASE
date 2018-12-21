@@ -13,10 +13,9 @@
                   <svg role="img" :aria-labelledby="alt" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
-                <h2 class="mb-1 text-xs-center font-weight-medium">{{portfolio.name}}</h2>
+                <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
-                  {{portfolio.service.name}} - 
-                  {{portfolio.activity.sector.name}} - 
+                  {{portfolio.service.name}} -
                   {{portfolio.location.country.name}}
                 </p>
               </v-flex>

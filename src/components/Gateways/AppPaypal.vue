@@ -62,13 +62,11 @@
               vueInstance.$router.push('/gracias?por=compra')
             }).catch(function (error) {
               if (error) {
-                alert('error')
                 vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 2')
               }
             })
           }).catch(function (error) {
             if (error) {
-              alert('error')
               vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 1')
             }
           })

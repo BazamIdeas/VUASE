@@ -23,13 +23,9 @@ export const getters = {
 }
 
 export const actions = {
-  async getAll ({ rootState, commit }) {
-    try {
-      let countries = await this.$axios.$get('countries')
-      commit('GET_ALL', countries)
-    } catch (error) {
-      console.log(error)
-    }
+  async getAll ({ commit }) {
+    let countries = await this.$axios.$get('countries?limit=1000')
+    if (countries) commit('GET_ALL', countries)
   },
   setData ({ commit }, country) {
     commit('SET_DATA', country)

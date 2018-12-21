@@ -20,29 +20,29 @@
         </v-flex>
         <v-flex xs12 md6 class="pl-5 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
           <div class="box-sticky">
-            <AppHeading number="2" size="headline" :title="name" align="center"/>
+            <AppHeading number="2" size="headline" :title="portfolio.name" align="center"/>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
               {{portfolio.description}}
             </p>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
               <span class="mr-1 chip-title">Servicio:</span>
-              <v-chip class="cursor-pointer" @click="$router.push('/nuestros-servicios/'+ portfolio.service.slug)">
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/' + portfolio.service.slug)">
                 {{portfolio.service.name}}
               </v-chip>
               <br>
-              <span class="mr-1 chip-title">Sector:</span>
-              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug)">
+              <span class="mr-1 chip-title">Actividad:</span>
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/' + portfolio.service.slug + '/' + portfolio.activity.sector.slug)">
               {{portfolio.activity.sector.name}}
               </v-chip>
               <br>
-              <span class="mr-1 chip-title">Actividad:</span>
+              <!--<span class="mr-1 chip-title">Actividad:</span>
               <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug)">
               {{portfolio.activity.name}}
               </v-chip>
-              <br>
-              <span class="mr-1 chip-title">Ubicación:</span>
-              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug + '/' + portfolio.location.country.name.toLowerCase() + '/' + portfolio.location.slug)">
-              {{portfolio.location.name}} - {{portfolio.location.country.name}}  
+              <br>-->
+              <span class="mr-1 chip-title">País:</span>
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.location.country.slug)">
+              {{portfolio.location.name}}
               </v-chip>        
             </p>
           </div>          
@@ -63,8 +63,7 @@
                 <h2 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
                   {{item.service.name}} - 
-                  {{item.activity.sector.name}} - 
-                  {{item.location.country.name}}
+                  {{item.activity.sector.name}}
                 </p>
               </v-flex>
             </v-card>

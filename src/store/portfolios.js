@@ -126,17 +126,20 @@ export const actions = {
       }
     }
 
+    let portfolios
+
     try {
       params.offset = params.offset || 0
       let url = 'portfolios/custom-search?offset=' + params.offset + '&limit=9'
 
-      let portfolios = await this.$axios.$get(url, {
+      portfolios = await this.$axios.$get(url, {
         params: requestParams
       })
 
       if (params.offset === 0) {
         return commit('GET_ALL', {portfolios: portfolios})
       }
+
       commit('GET_ALL', {portfolios: portfolios, push: true})
     } catch (error) {
       if (error.response.status === 404) commit('GET_ALL', {portfolios: [], push: true})

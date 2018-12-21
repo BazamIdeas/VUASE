@@ -1,12 +1,16 @@
 var jwtDecode = require('jwt-decode')
 
 export const state = () => ({
-  orders: []
+  orders: [],
+  sketchs: []
 })
 
 export const mutations = {
   SET_ORDERS (state, orders) {
     state.orders = orders
+  },
+  SET_SKETCHS (state, sketchs) {
+    state.sketchs = sketchs
   }
 }
 
@@ -44,15 +48,61 @@ export const actions = {
     }
   },
   async getOrders ({ rootState, commit }) {
-    let orders
+    let orders = await this.$axios.get('orders/self', {
+      headers: {
+        'Authorization': this.$cookies.get('session_token')
+      }
+    })
 
-    try {
-      orders = await this.$axios.get('orders/self', {
+    if (orders) commit('SET_ORDERS', orders.data)
+  },
+  async getProject ({ commit }, id) {
+    let project = await this.$axios.get('projects/' + id, {
+      headers: {
+        'Authorization': this.$cookies.get('session_token')
+      }
+    })
+
+    if (project) return project.data
+    return {}
+  },
+  async getProjectSketchs ({ commit }, sketchsIds) {
+    let sketchs = []
+
+    for (const id of sketchsIds) {
+      let sketch = await this.$axios.get('sketchs/' + id, {
         headers: {
           'Authorization': this.$cookies.get('session_token')
         }
       })
-    } catch (error) { console.log(error) }
-    commit('SET_ORDERS', orders.data)
+
+      if (sketch) {
+        let comments = sketch.data.comments.map(x => {
+          return {
+            id: x.id,
+            attachment_uuid: 'http://api.liderlogos.com/v1/comments/attachment/' + x.attachment_uuid || false,
+            description: x.description,
+            type: x.type
+            // date: x.date
+          }
+        })
+
+        let object = {
+          id: sketch.data.id,
+          version: sketch.data.version,
+          approved: sketch.data.approved,
+          selected: sketch.data.selected,
+          recommended: sketch.data.recommended,
+          inks: sketch.data.inks,
+          services: sketch.data.services,
+          files: sketch.data.files.map(x => 'http://api.liderlogos.com/v1/sketchs-files/attachment/' + x.uuid),
+          comments: comments
+        }
+
+        sketchs.push(object)
+      }
+    }
+
+    commit('SET_SKETCHS', sketchs)
   }
 }

@@ -7,7 +7,7 @@
             <v-flex xs12>
               <h2>PROYECTOS ABIERTOS</h2>
               <div style="height: 2px; width: 100%; background-color: rgba(0, 0, 0, .87);"></div>
-              <v-container fluid class="pa-2">
+              <v-container fluid class="pa-0 pt-2">
                 <AppProjectsPanel :projects="projects(undefined)"/>
               </v-container>
             </v-flex>
@@ -18,7 +18,7 @@
             <v-flex xs12>
               <h2>PROYECTOS CULMINADOS</h2>
               <div style="height: 2px; width: 100%; background-color: rgba(0, 0, 0, .87);"></div>
-              <v-container fluid class="pa-2">
+              <v-container fluid class="pa-0 pt-2">
                 <AppProjectsPanel :projects="projects(true)" />
               </v-container>
             </v-flex>
@@ -36,7 +36,6 @@
       if (!this.isLoggedIn) {
         return this.$router.push('/area-de-cliente/entrar')
       }
-      console.table(this.authData.projects)
     },
     computed: {
       isLoggedIn () { return this.$store.getters['isLoggedIn'] },
