@@ -89,10 +89,6 @@ export const rFurgoneta = {
       color: '#dc282b'
     },
     {
-      url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-sanidae.png',
-      color: '#20ab50'
-    },
-    {
       url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-el-bierzo.png',
       color: '#6ebd46'
     },
