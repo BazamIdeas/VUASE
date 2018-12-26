@@ -10,7 +10,7 @@
       <v-flex>
         <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
-          <!-- <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5>  -->
+           <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
           {{ price.currency.symbol }} 
           {{ price.value }}
         </span> 
@@ -93,7 +93,7 @@
         let packages = []
 
         switch (slug) {
-          case 'ecommerce':
+          case 'sitio-web-ecommerce':
             packages.push('vender-mis-productos-online')
             packages.push('ofrecer-multiples-servicios')
             break
@@ -112,7 +112,7 @@
 
         this.$storage.set('quotePacksOptions', packages)
 
-        if (slug === 'ecommerce' || slug === 'presencia-web') {
+        if (slug === 'sitio-web-ecommerce' || slug === 'presencia-web') {
           slug = 'diseno-pagina-web'
         }
 
