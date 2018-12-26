@@ -43,7 +43,7 @@ export const state = () => ({
         [
           'diseno-logo-y-pagina-web',
           'diseno-pagina-web',
-          'ecommerce'
+          'sitio-web-ecommerce'
         ],
         [
           'diseno-de-app',
@@ -149,8 +149,7 @@ export const state = () => ({
     'ecommerce',
     'catalogo-productos',
     'galeria-de-proyectos',
-    'logo-solo-para-web',
-    'adicional-papeleria'
+    'logo-solo-para-web'
   ],
   list: []
 })

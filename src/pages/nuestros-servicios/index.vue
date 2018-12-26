@@ -109,7 +109,7 @@
         }
 
         if (!service.dataService) {
-          console.log('la data del servicio no esta definida')
+          console.log(service)
           return false
         }
         return true

@@ -93,7 +93,7 @@
         let packages = []
 
         switch (slug) {
-          case 'ecommerce':
+          case 'sitio-web-ecommerce':
             packages.push('vender-mis-productos-online')
             packages.push('ofrecer-multiples-servicios')
             break
@@ -112,7 +112,7 @@
 
         this.$storage.set('quotePacksOptions', packages)
 
-        if (slug === 'ecommerce' || slug === 'presencia-web') {
+        if (slug === 'sitio-web-ecommerce' || slug === 'presencia-web') {
           slug = 'diseno-pagina-web'
         }
 

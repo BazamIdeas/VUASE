@@ -76,7 +76,9 @@
           'logo-solo-para-web',
           'diseno-y-desarrollo-de-seccion-web',
           'ecommerce',
-          'adicional-papeleria'
+          'adicional-papeleria',
+          'presencia-web',
+          'sitio-web-ecommerce'
         ]
       }
     },

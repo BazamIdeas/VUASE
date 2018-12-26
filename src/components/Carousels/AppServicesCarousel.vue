@@ -80,7 +80,9 @@
           'hosting-por-un-ano',
           'logo-solo-para-web',
           'diseno-y-desarrollo-de-seccion-web',
-          'ecommerce'
+          'ecommerce',
+          'adicional-papeleria',
+          'sitio-web-ecommerce'
         ]
       }
     },
