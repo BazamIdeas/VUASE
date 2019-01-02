@@ -24,7 +24,7 @@ export const flyerDosCaras = {
     }, {
       title: 'ATENCIÓN PERSONALIZADA',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/archivos_listos.svg'
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',

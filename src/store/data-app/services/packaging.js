@@ -38,9 +38,9 @@ export const rPackaging = {
       [
         {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
-          description: 'El rótulo de un vehículo es una pieza publicitaria aplicada al modelo de vehículo que solicites, que tiene como principal objetivo el presentar su empresa, servicio y productos de manera llamativa, donde quiera que vaya. <br><br> Los bocetos y perfeccionamientos se presentan en fotomontajes reales, sobre los 4 laterales y techo de cada vehículo. El diseño de entera aprobación es entregado listo para que el rotulista realice la impresión y aplicación de los vinilos. Los diseños se entregan con sus medidas y plantillas de corte en los siguientes formatos:',
+          description: 'Diseños publicitarios originales del 100% de la superficie del productos, creados por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios, especializados en packaging.Los conceptos son creados y perfeccionados de manera ilimitadas hasta entra aprobación, con la intención de crear una presentación exitosa de su producto, y se presentan en los siguientes formatos:',
           items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)'],
-          icon: '/icons/rotulo-vehicular.svg'
+          icon: '/icons/rotulo-etiqueta.svg'
         }
       ]
     ]
