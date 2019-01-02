@@ -26,7 +26,7 @@ export const state = () => ({
       prev: 'disenos',
       number: 2,
       next: 'colores',
-      title: 'El estilo de tu marca',
+      title: 'El estilo de tu ',
       subtitle: 'En base a los diseños que has elegido, estos son los estilos que explorarán los diseñadores. No te preocupes, puedes cambiar de estilos después de empezar a recibir diseños.',
       label: 'Su estilo de marca'
     },

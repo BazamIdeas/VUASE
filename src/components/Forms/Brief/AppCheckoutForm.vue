@@ -29,6 +29,15 @@
                 </v-layout>
               </v-flex>
             </v-layout>
+            <v-layout row wrap v-if="stationery">
+              <v-flex md11>
+                <v-layout row wrap v-for="sub in stationery" :key="sub.id">
+                  <v-flex md12>
+                    - {{ sub.name }} ({{ sub.quantity }})
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
           </v-flex>
           <v-flex xs8 class="hidden-sm-and-up">
             <h1 class="subheading font-weight-bold text-xs-right"> PRECIO </h1>
@@ -234,6 +243,23 @@
 
         return services
       },
+      stationery () {
+        const services = []
+
+        if (!this.brief.subServices) return services
+
+        for (let subService of this.brief.subServices) {
+          let subServices = this.$store.state.services.list
+          for (let sub of subServices) {
+            if (subService.slug === sub.slug) {
+              sub.quantity = subService.quantity
+              services.push(sub)
+            }
+          }
+        }
+
+        return services
+      },
       total () {
         let total = 0
 
@@ -251,6 +277,12 @@
           }
         } else {
           total += this.service.price.value
+
+          if (this.stationery) {
+            for (let sta of this.stationery) {
+              total += sta.price.value * sta.quantity
+            }
+          }
         }
 
         return total
@@ -284,10 +316,10 @@
 
         if (this.brief.subServices) {
           for (let subService of this.brief.subServices) {
-            cartObject.services.push({ id: subService.id, quantity: 1 })
+            cartObject.services.push({ id: subService.id, quantity: subService.quantity || 1 })
           }
         } else {
-          cartObject.services.push({ id: this.service.id, quantity: 1 })
+          cartObject.services.push({ id: this.service.id, quantity: this.service.quantity || 1 })
         }
 
         return cartObject

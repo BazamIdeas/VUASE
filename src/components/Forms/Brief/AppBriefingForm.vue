@@ -1,5 +1,5 @@
 <template>
-  <form id="app">
+  <form id="app" autocomplete="off">
     <v-layout row wrap class="px-2 mt-4 mb-5">
       <v-flex md4 xs12>
         <h1 class="heading"> Datos Básicos </h1>
@@ -35,7 +35,7 @@
               <label class="v-label theme--light" style="font-weight: 500">{{ field.label }}</label>
             </v-flex>   
             <v-flex md12>
-              <v-select :items="field.options" v-model="formFields[field.name]" multiple chips hint="Seleccione" persistent-hint></v-select>
+              <v-select :items="field.options" v-model="formFields[field.name].value" multiple chips hint="Seleccione" persistent-hint></v-select>
             </v-flex>
           </v-layout>
         </div>
@@ -124,6 +124,9 @@
           this.$validator.validate().then(async function (valid) {
             if (valid) {
               var brief = vue.$storage.get('brief')
+              if (vue.formFields['stationery_pieces'] && vue.formFields['stationery_pieces'].value.length > 6) {
+                brief.subServices.push({ id: 310, name: 'Pieza adicional de papelería', slug: 'adicional-papeleria', quantity: vue.formFields['stationery_pieces'].value.length - 6 })
+              }
               brief.information = vue.formFields
               await vue.$store.dispatch('brief/setData', brief)
 

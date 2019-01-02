@@ -60,7 +60,7 @@
     computed: {
       /* TODO: PENDIENTE */
       comenzarUrl () {
-        const brief = { service: { id: this.id, name: this.service.title, slug: this.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
+        const brief = { service: { id: this.id, name: this.service.title, slug: this.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
 
         if (this.$storage) this.$storage.set('brief', brief)
 
@@ -77,7 +77,7 @@
 
 <style>
 .top-service-slider .v-carousel__controls {
-    display: none;
+    /*display: none;*/
 }
 
 .top-service-slider .v-carousel{
@@ -105,8 +105,6 @@
 
 .top-service-slider div.v-carousel__controls {
   position: absolute;
-  width: 15%;
-  left: 58%;
 }
 
 .top-service-slider .v-carousel__controls button {
