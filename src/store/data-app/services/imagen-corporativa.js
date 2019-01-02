@@ -211,21 +211,17 @@ export const imagenCorporativa = {
     items1: [
       { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
       { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
-      { img: '/images/services-carousel/pack-identidad/ies puertas del campo instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/rocabike-tarjeta.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese-2.jpg' },
       { img: '/images/services-carousel/pack-identidad/presentación de power point.jpg' },
-      { img: '/images/services-carousel/pack-identidad/prounit carpeta.jpg' },
-      { img: '/images/services-carousel/pack-identidad/prounit notas.jpg' },
       { img: '/images/services-carousel/pack-identidad/prounit paraguas.jpg' },
       { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },
       { img: '/images/services-carousel/pack-identidad/surtel.jpg' },
       { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
       { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
-      { img: '/images/services-carousel/pack-identidad/terra-agro-2.jpg' },
       { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit-2.jpg' }
+      { img: '/images/services-carousel/pack-identidad/vincit.jpg' }
     ]
   },
   packs: {
