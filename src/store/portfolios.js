@@ -6,7 +6,7 @@ export const state = () => ({
       icon: '/icons/white/logo-a-medida.svg',
       service: 'Logo',
       description: 'Diseños originales, exclusivos e ilimitados para tu logo',
-      url: 'diseno-de-logo',
+      url: 'logo-empresa',
       color: 'rgba(68, 59, 20, 0.8)',
       textColor: 'white'
     },
@@ -24,7 +24,7 @@ export const state = () => ({
       icon: '/icons/white/logo-y-web.svg',
       service: 'Logo y Sitio Web',
       description: 'El logo ideal y un sitio web a tu medida para concetar con nuevos y mas clientes',
-      url: 'diseno-de-app',
+      url: 'diseno-de-logo-y-pagina-web',
       color: 'rgba(241, 145, 42, .8)',
       textColor: 'white'
     },
@@ -42,7 +42,7 @@ export const state = () => ({
       icon: '/icons/white/web-y-app.svg',
       service: 'Web y App',
       description: 'Sitios webs y Apps que conectan con mas clientes',
-      url: 'diseno-de-web-y-app',
+      url: 'diseno-de-app',
       color: 'rgba(7, 122, 53, .8)',
       textColor: 'white'
     },

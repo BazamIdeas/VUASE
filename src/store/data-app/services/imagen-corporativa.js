@@ -172,15 +172,15 @@ export const imagenCorporativa = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/imagen-corporativa.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/imagen-corporativa-2.png',
       alt: 'creative-process-2'
     },
     {
-      src: '/images/carousels/creative-process-3.png',
+      src: '/images/carousels/creative-process/imagen-corporativa-3.png',
       alt: 'creative-process-3'
     }
   ],

@@ -177,15 +177,15 @@ export const redisenoLogo = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/Rediseño_01.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/Rediseño_02.png',
       alt: 'creative-process-2'
     },
     {
-      src: '/images/carousels/creative-process-3.png',
+      src: '/images/carousels/creative-process/Rediseño_03.png',
       alt: 'creative-process-3'
     }
   ],

@@ -1,62 +1,48 @@
 export const rPackaging = {
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
-  title: 'RÓTULO ETIQUETA / PACKAING',
+  title: 'RÓTULO ETIQUETA / PACKAGING',
   description: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
   shortDescription: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
   icon: '/icons/rotulo-etiqueta.svg',
   whatWeOffer: [
     {
-      title: 'LOGO 100% ÚNICO Y ORIGINAL',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
+      description: 'Creaciones a medida, únicas y de calidad',
+      icon: '/icons/logo-unico-original.svg'
     }, {
       title: '+40 PROFESIONALES',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Tu proyecto en manos de expertos especializados',
+      icon: '/icons/equipo-interidisciplinario.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/un-dia-para-el-otro.svg'
     }, {
       title: 'ATENCION PERSONALIZADA',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
+      icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
-      description: 'Descripción',
-      icon: '/icons/logo_a_medida_hover.svg'
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
+      icon: '/icons/propuestas-ilimitadas.svg'
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
+    img: '/images/pages/rotulo-pack/empaque-puzzle.png',
     color: 'black',
     columns: [
-      [{
-        title: 'LOGO EN DIVERSOS FORMATOS',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
-      }, {
-        title: 'MANUAL DE USO DE LA MARCA',
-        items: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
-        icon: '/icons/logo_a_medida_hover.svg'
-      }],
-      [{
-        title: 'CESIÓN DE DERECHOS DE AUTORÍA Y FACTURA',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
-      }, {
-        title: 'TUTORIALES DE USO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
-      }, {
-        title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum laoreet luctus. Donec vestibulum tincidunt nisi, non faucibus est dapibus ac.',
-        icon: '/icons/logo_a_medida_hover.svg'
-      }]
+      [
+        {
+          title: 'DISEÑO EN DIVERSOS FORMATOS',
+          description: 'El rótulo de un vehículo es una pieza publicitaria aplicada al modelo de vehículo que solicites, que tiene como principal objetivo el presentar su empresa, servicio y productos de manera llamativa, donde quiera que vaya. <br><br> Los bocetos y perfeccionamientos se presentan en fotomontajes reales, sobre los 4 laterales y techo de cada vehículo. El diseño de entera aprobación es entregado listo para que el rotulista realice la impresión y aplicación de los vinilos. Los diseños se entregan con sus medidas y plantillas de corte en los siguientes formatos:',
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)'],
+          icon: '/icons/rotulo-vehicular.svg'
+        }
+      ]
     ]
   },
   frequentQuestions: [
@@ -123,28 +109,24 @@ export const rPackaging = {
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
-      color: '#75BA50'
+      url: '/images/pages/rotulo-pack/empaque-aquafrost.png',
+      color: '#045B85'
     },
     {
-      url: '/images/pages/logo-empresa/logo-la-parroquia-azcapo.png',
-      color: '#BA2700'
+      url: '/images/pages/rotulo-pack/empaque-arlu.png',
+      color: '#C3A171'
     },
     {
-      url: '/images/pages/logo-empresa/logo-maese-escriba.png',
-      color: 'black'
+      url: '/images/pages/rotulo-pack/empaque-blackbird.png',
+      color: '#C3C4C5'
     },
     {
-      url: '/images/pages/logo-empresa/logo-malarrassa.png',
-      color: '#7C7F81'
+      url: '/images/pages/rotulo-pack/empaque-ibinatural.png',
+      color: '#B59671'
     },
     {
-      url: '/images/pages/logo-empresa/logo-one-seagate.png',
-      color: '#0065AE'
-    },
-    {
-      url: '/images/pages/logo-empresa/logo-wellcan.png',
-      color: '#FBD20B'
+      url: '/images/pages/rotulo-pack/empaque-olivaria.png',
+      color: '#80846D'
     }
   ],
   creativeProcess: [
@@ -186,11 +168,24 @@ export const rPackaging = {
   ],
   carousel: {
     items1: [
-      { img: '/images/pages/services-carousel/34.-costaserveis_mock up.jpg' },
-      { img: '/images/pages/services-carousel/35.-mock up armel 1.jpg' },
-      { img: '/images/pages/services-carousel/36.-Mockup_LaMolineta3.jpg' },
-      { img: '/images/pages/services-carousel/37.-Rotulo-Araucaria.jpg' },
-      { img: '/images/pages/services-carousel/38.-Sistema-Velites.png' }
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/aquafrost_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/bichitos kids - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/club nautico pontevedra - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/colchoneria el cairo-rotulo etiqueta 640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-etiqueta-lormanic.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-packaing-alimentos-congelados.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-rotulo-vestimenta-movil.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-vestimenta-super-foods-.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/el tirao - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ibinatural - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/instagram 640x640px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/kafeslito - rotulo packaging.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maremma - rotulo packaging - tazas.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maxifood_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/natufree_450x450px.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/puzzles - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/puzzles - rotulo packaging.jpg' },
+      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/pym colorao - rotulo etiqueta.jpg' }
     ]
   }
 }

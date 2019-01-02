@@ -8,7 +8,7 @@
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
       <img :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
-        <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
+        <h2 class="title font-weight-bold" @click="saveServiceLocalStorage(url)" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
            <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
           {{ price.currency.symbol }} 

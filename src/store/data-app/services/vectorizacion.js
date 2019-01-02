@@ -157,16 +157,12 @@ export const vectorizacion = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/Vectorizacion_01.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/Vectorizacion_02.png',
       alt: 'creative-process-2'
-    },
-    {
-      src: '/images/carousels/creative-process-3.png',
-      alt: 'creative-process-3'
     }
   ],
   steps: [
