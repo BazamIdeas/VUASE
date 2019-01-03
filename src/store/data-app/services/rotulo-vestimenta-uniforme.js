@@ -12,19 +12,19 @@ export const rVestimenta = {
     }, {
       title: '+40 PROFESIONALES',
       description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/equipo-interidisciplinario.svg'
+      icon: '/icons/mas-de-40-profesionales.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/un-dia-para-el-otro.svg'
     }, {
-      title: 'ATENCION PERSONALIZADA',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/atencion-personalizada.svg'
+      title: 'FOTOMONTAJES DE SUS DISEÑOS',
+      description: 'Antes de rotular vísualize opcines de diseño maquetadas de sus propias superficies.',
+      icon: '/icons/fotomontajes.svg'
     }, {
-      title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
-      icon: '/icons/garantia-de-conformidad.svg'
+      title: 'SOPORTE POST VENTA GRATUITO',
+      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      icon: '/icons/soporte-post-venta.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
