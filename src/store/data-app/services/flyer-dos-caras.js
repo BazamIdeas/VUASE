@@ -141,16 +141,12 @@ export const flyerDosCaras = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/flyerDosCaras_1.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/flyerDosCaras_2.png',
       alt: 'creative-process-2'
-    },
-    {
-      src: '/images/carousels/creative-process-3.png',
-      alt: 'creative-process-3'
     }
   ],
   steps: [
