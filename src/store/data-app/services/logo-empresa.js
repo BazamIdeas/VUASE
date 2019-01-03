@@ -218,22 +218,25 @@ export const logoEmpresa = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/logo/6S Ropa Laboral.jpg' },
+      { img: '/images/services-carousel/logo/Andes Facility.jpg' },
+      { img: '/images/services-carousel/logo/Caromax.jpg' },
+      { img: '/images/services-carousel/logo/Colchonería El Cairo.jpg' },
+      { img: '/images/services-carousel/logo/Divino Alchemy.jpg' },
+      { img: '/images/services-carousel/logo/Enxenia.jpg' },
+      { img: '/images/services-carousel/logo/Finanpay.png' },
+      { img: '/images/services-carousel/logo/Gestinem.jpg' },
+      { img: '/images/services-carousel/logo/Gorriz-&-Líberos.png' },
+      { img: '/images/services-carousel/logo/Habitol.png' },
+      { img: '/images/services-carousel/logo/Ocean Rov.jpg' },
+      { img: '/images/services-carousel/logo/Probelleza.jpg' },
+      { img: '/images/services-carousel/logo/Reto 60 Dias by Ivan Perujo.jpg' },
+      { img: '/images/services-carousel/logo/Williams & Perkins.jpg' },
       { img: '/images/services-carousel/logo/1.-new-cool.jpg' },
       { img: '/images/services-carousel/logo/2.-chikas.jpg' },
       { img: '/images/services-carousel/logo/3.-family-tv.jpg' },
       { img: '/images/services-carousel/logo/4.-fauna-domestica.jpg' },
-      { img: '/images/services-carousel/logo/5.-stemmedic.jpg' },
-      { img: '/images/services-carousel/logo/6.-antartik.jpg' },
-      { img: '/images/services-carousel/logo/7.-arlu.jpg' },
-      { img: '/images/services-carousel/logo/8.-aixo-hotel-suites.jpg' },
-      { img: '/images/services-carousel/logo/9.-food-chef.jpg' },
-      { img: '/images/services-carousel/logo/10.-y-si-me-toca-a-mi.jpg' },
-      { img: '/images/services-carousel/logo/11.-black-bird.jpg' },
-      { img: '/images/services-carousel/logo/12.-paralelo-0.jpg' },
-      { img: '/images/services-carousel/logo/13.-hostal-la-colegiata.jpg' },
-      { img: '/images/services-carousel/logo/14.-ingenium.jpg' },
-      { img: '/images/services-carousel/logo/15.-hobbie.jpg' },
-      { img: '/images/services-carousel/logo/16.-bricoaching.jpg' }
+      { img: '/images/services-carousel/logo/5.-stemmedic.jpg' }
     ]
   },
   packs: {
