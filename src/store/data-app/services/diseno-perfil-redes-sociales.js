@@ -6,7 +6,7 @@ export const redesSociales = {
   icon: '/icons/perfiles-redes-sociales.svg',
   whatWeOffer: [
     {
-      title: 'LOGO 100% ÚNICO Y ORIGINAL',
+      title: 'PERFILES DE REDES 100% ÚNICAS',
       description: 'Creaciones a medida, únicas y de calidad',
       icon: '/icons/logo-unico-original.svg'
     }, {

@@ -97,6 +97,11 @@
     display: inline-block;
     position:relative;
     transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .example-slider-item * {
+    cursor: pointer;
   }
 
   .shadow .v-image{
