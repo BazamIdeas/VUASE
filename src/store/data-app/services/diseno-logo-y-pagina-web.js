@@ -153,24 +153,16 @@ export const logoWeb = {
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-mas-web/web-ahl-fenix.png',
+      url: '/images/pages/logo-mas-web/WEBBARNASTUDENTS.png',
       color: '#F6C312'
     },
     {
-      url: '/images/pages/logo-mas-web/web-fdrd.png',
+      url: '/images/pages/logo-mas-web/WEBFACILITY.png',
       color: '#C72228'
     },
     {
-      url: '/images/pages/logo-mas-web/web-meraki.png',
+      url: '/images/pages/logo-mas-web/WEBTODOKEY6.png',
       color: '#DAAE71'
-    },
-    {
-      url: '/images/pages/logo-mas-web/web-muddanzas-armel.png',
-      color: '#3DAE60'
-    },
-    {
-      url: '/images/pages/logo-mas-web/web-vincit.png',
-      color: '#F19025'
     }
   ],
   creativeProcess: [

@@ -24,6 +24,7 @@ import { rFurgoneta } from './rotulo-furgoneta-camion.js'
 import { rLocal } from './rotulo-local.js'
 import { rVehicular } from './rotulo-vehicular.js'
 import { rVestimenta } from './rotulo-vestimenta-uniforme.js'
+import { publicidad } from './publicidad.js'
 
 export const services = {
   'diseno-de-app': disenoApp,
@@ -46,5 +47,6 @@ export const services = {
   'flyer-dos-caras': flyerDosCaras,
   'catalogo': catalogo,
   'sitio-web-ecommerce': ecommerce,
-  'presencia-web': presencia
+  'presencia-web': presencia,
+  'publicidad': publicidad
 }

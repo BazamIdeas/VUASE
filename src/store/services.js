@@ -60,10 +60,10 @@ export const state = () => ({
       layouts: [],
       carousel: [
         { src: 'images/pages/nuestros-servicios/folletos/civefa-publicidad-servicio.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/diptico-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/folletos/diptico.png' },
         { src: 'images/pages/nuestros-servicios/folletos/flyer-duarte-servicio.png' },
         { src: 'images/pages/nuestros-servicios/folletos/hotel-montecarlo.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/triptico-(servicios).png' }
+        { src: 'images/pages/nuestros-servicios/folletos/triptico.png' }
       ],
       rows: [
         [

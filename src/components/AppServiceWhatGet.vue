@@ -40,7 +40,7 @@
             </v-layout>
           </v-flex>
           <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
-            <v-layout row wrap d-flex column class="ml-4">
+            <v-layout row wrap d-flex column class="ml-4" style="    max-width: 400px;">
               <v-flex class="ml-2">
                   <img :src="service.whatYouGet.img"  width="100%"></img>
                   <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">

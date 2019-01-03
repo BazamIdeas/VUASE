@@ -45,13 +45,13 @@ export const flyerDosCaras = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Descripción`,
+        description: `Pieza publicitaria de dos caras, de 10.5 x 15 cm, 15 x 21 cm o según solicitud de cliente.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo-en-diversos-formatos.svg'
+        icon: '/icons/flyer-dos-caras.svg'
       }]
     ]
   },

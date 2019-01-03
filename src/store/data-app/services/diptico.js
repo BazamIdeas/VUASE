@@ -45,13 +45,13 @@ export const diptico = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Descripción`,
+        description: `Usualmente utilizado para brindar una presentación de la empresa y sus productos o servicios, oportuno para ser entregado en reuniones comerciales o ferias. De 4 caras.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo-en-diversos-formatos.svg'
+        icon: '/icons/diptico.svg'
       }]
     ]
   },
