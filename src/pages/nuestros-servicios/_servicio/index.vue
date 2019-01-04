@@ -8,18 +8,18 @@
     </v-container>
 
     <!-- CAROUSEL -->
-    <AppHeading :number="'1'" v-if="dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-5" />
-    <AppExamplesSlider item-width="350" item-height="350" v-if="dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
+    <AppHeading :number="'1'" v-if="dataService.carousel && dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-5" />
+    <AppExamplesSlider item-width="350" item-height="350" v-if="dataService.carousel && dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
     <!-- <AppExamplesSlider class="mt-2" v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" /> -->
 
     <!-- SECCION 3 -->  
     <v-container grid-list-md class="mt-3 pb-0">
       <v-layout row wrap>
          <!-- CARACTERISTICAS -->  
-        <AppServiceCharacteristics id="que-te-ofrecemos" title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
+        <AppServiceCharacteristics v-if="dataService.whatWeOffer" id="que-te-ofrecemos" title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
 
         <!-- PROCESO CREATIVO -->  
-        <AppCreativeProccess id="como-funciona" title="¿CÓMO FUNCIONA?" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
+        <AppCreativeProccess v-if="dataService.creativeProcess" id="como-funciona" title="¿CÓMO FUNCIONA?" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
       
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet v-if="!dataService.hideWhatGet" title="¿QUE TE LLEVAS?" :service="dataService" :price="service.price" :percentage="service.percentage" />
@@ -29,10 +29,10 @@
         <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
-        <AppTestimony :list="dataService.testimonies" />
+        <AppTestimony v-if="dataService.testimonies" :list="dataService.testimonies" />
 
         <!-- PREGUNTAS FRECUENTES -->  
-        <AppExpansionPanels title="PREGUNTAS FRECUENTES" :list="dataService.frequentQuestions" />
+        <AppExpansionPanels title="PREGUNTAS FRECUENTES" v-if="dataService.frequentQuestions" :list="dataService.frequentQuestions" />
       </v-layout>
     </v-container>
 

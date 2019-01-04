@@ -53,8 +53,8 @@
       <v-layout row wrap>
         <!-- RELACIONADOS -->
         <AppHeading class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
-        <v-layout xs12 row wrap class="portfolios mb-5">
-          <v-flex v-if="portfolios && portfolios.length" v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
+        <v-layout xs12 row wrap class="portfolios mb-5" v-if="portfolios && portfolios.length">
+          <v-flex  v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
             <v-card :to="'/ejemplo/'+ item.service.slug +'/'+ item.slug">
               <div class="img-cuadrada-ejemplos-container" >
                   <svg class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>

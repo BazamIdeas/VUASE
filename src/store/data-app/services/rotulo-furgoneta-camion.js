@@ -55,6 +55,21 @@ export const rFurgoneta = {
     }, {
       question: '¿Quién y cómo se realiza la fabricación material de un rótulo?',
       response: 'La fabricación de un rótulo ya sea para un vehiculo, local, producto o uniforme lo realiza un rotulista en base al diseño publicitario diseñado por un publicista.'
+    }, {
+      question: '¿Qué elementos se pueden rotular?',
+      response: 'Toda superficie se puede rotular, ya sea un vehiculo, un local, un producto, un envase, un uniforme, un edificio, etc.'
+    }, {
+      question: '¿En qué formato debo tener mi logo para diseñar un rótulo?',
+      response: 'El logo debe presentarse en AI, (Adobe Illustrator) o EPS ( Post Script Encapsulado) Si no posee estos formatos podemos vectorizar su logo actual.'
+    }, {
+      question: '¿Cuándo y cómo recibo los bocetos de diseño de rótulos?',
+      response: 'En 24 hs recibirá en su email los diseños.'
+    }, {
+      question: '¿Cuántos diseños recibo?',
+      response: 'Todos los que necesite hasta estar 100% conforme con el diseño.'
+    }, {
+      question: '¿Cómo y en qué formatos recibo el diseño final?',
+      response: 'En su email en formatos AI (archivo editable con el programa Adobe Illustrator), EPS (archivo editable en imprentas) y PDF.'
     }
   ],
   testimonies: [{

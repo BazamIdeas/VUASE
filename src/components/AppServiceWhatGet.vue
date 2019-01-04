@@ -40,13 +40,13 @@
             </v-layout>
           </v-flex>
           <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
-            <v-layout row wrap d-flex column class="ml-4" style="    max-width: 400px;">
+            <v-layout row wrap d-flex column class="ml-4" :class="{'max': !service.whatYouGet.noMaxWidth}">
               <v-flex class="ml-2">
                   <img :src="service.whatYouGet.img"  width="100%"></img>
-                  <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
+                  <h2 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
                     PRECIO CERRADO EN:
                   </h2>
-                  <v-layout xs12 row d-flex class="mt-2">
+                  <v-layout xs12 row d-flex class="mt-2" v-if="!service.whatYouGet.notShowPrice">
                     <v-flex xs4>
                       <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h2>
                     </v-flex>
@@ -88,6 +88,9 @@
         return 100 - this.percentage
       },
       url () {
+        if (this.service.whatYouGet.noCarrito) {
+          return this.$router.currentRoute.path + '/brief/estilos#nocarrito'
+        }
         return this.$router.currentRoute.path + '/brief'
       },
       justOne () {
@@ -113,5 +116,8 @@
 
 .title-custom {
     font-size: 16px;
+}
+.max{
+  max-width: 400px;
 }
 </style>

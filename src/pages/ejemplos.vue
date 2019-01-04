@@ -6,8 +6,8 @@
         <v-flex xs12>
           <AppFilterExamplesForm :params="params"/>
         </v-flex>
-        <v-layout xs12 row wrap class="portfolios">
-          <v-flex v-if="portfolios && portfolios.length" v-for="portfolio in portfolios" :key="portfolio.id" xs12 sm6 md4 class="pr-2">
+        <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
+          <v-flex v-for="portfolio in portfolios" :key="portfolio.id" xs12 sm6 md4 class="pr-2">
             <v-card :to="'/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug" height="auto">
               <div class="img-cuadrada-ejemplos-container" >
                   <svg role="img" :aria-labelledby="alt" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
@@ -16,7 +16,7 @@
                 <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
                   {{portfolio.service.name}} -
-                  {{portfolio.location.country.name}}
+                  {{portfolio.location.name}}
                 </p>
               </v-flex>
             </v-card>
