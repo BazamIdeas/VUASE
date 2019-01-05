@@ -129,11 +129,65 @@
     },
     methods: {
       submit () {
-        this.$validator.validate().then(result => {
-          console.log(result)
-          if (result) {
-            this.$emit('sent')
+        this.$validator.validate().then(async (result) => {
+          if (!result) return
+
+          var contact = {
+            name: this.name,
+            email: this.email,
+            message: this.message
+          }
+
+          if (this.for_phone) {
+            contact.phone = this.phone
+            contact.schedule = this.time
+          }
+
+          /* Adwords Data */
+
+          let utmCampaign = this.$router.currentRoute.query.utm_campaign
+          if (utmCampaign) {
+            contact.campaign = utmCampaign
+          }
+
+          let utmMedium = this.$router.currentRoute.query.utm_medium
+          if (utmMedium) {
+            contact.medium = utmMedium
+          }
+
+          let utmSource = this.$router.currentRoute.query.utm_source
+          if (utmSource) {
+            contact.source = utmSource
+          }
+
+          let sentLead = await this.$store.dispatch('user/contactForm', contact)
+
+          if (sentLead) {
+            console.log(sentLead)
             this.$router.push('/gracias?por=contacto')
+
+            /* if (!process.browser) return
+
+            var agileContact = {}
+            agileContact.email = this.email
+            agileContact.first_name = this.name
+            agileContact.last_name = ''
+            agileContact.title = 'lead'
+            agileContact.phone = this.phone
+            agileContact.website = ''
+            var address = { 'city': 'new delhi', 'state': 'delhi', 'country': 'india' }
+            agileContact.address = JSON.stringify(address)
+            agileContact.tags = 'Contacto Liderlogo, Lead'
+
+            var _agile = _agile
+            _agile.create_contact(contact, {
+              success: function (data) {
+                console.log('success', data)
+              },
+              error: function (data) {
+                console.log('error', data)
+              }
+            }) */
           }
         })
       }

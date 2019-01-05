@@ -40,13 +40,6 @@
   export default {
     data () {
       return {
-        items: [
-          { text: 'Logo a medida', field: 'logo-a-medida' },
-          { text: 'Folletos', field: 'folleto-y-publicidades' }
-        ],
-        list: [
-          'dasdasdadasdasdadadsasdad'
-        ],
         alt: 'Liderlogo'
       }
     }
