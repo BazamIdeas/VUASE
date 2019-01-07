@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12 offset-md1 md10 style="position: relative">
           <h1 class="display-1 font-weight-bold mb-2">
-            {{ stepData.number == 2 && brief.service ? stepData.title + brief.service.name.toLowerCase() : stepData.title }} {{ stepData.number == 4 && brief.service ? ' - ' + brief.service.name : '' }}
+            {{ stepData.number == 2 && brief.service ? stepData.title + capitalize( brief.service.name) : stepData.title }} {{ stepData.number == 4 && brief.service ? ' - ' + brief.service.name : ''  }}
           </h1>
           <p> {{ stepData.subtitle }}</p>
         </v-flex>
@@ -126,7 +126,13 @@
           this.nextStep(this.stepData.next)
         }
       },
-      setPay () { this.$store.dispatch('cart/setPay') }
+      setPay () { this.$store.dispatch('cart/setPay') },
+
+      capitalize (value) {
+        if (!value) return ''
+        value = value.toString()
+        return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase()
+      }
     }
   }
 </script>
