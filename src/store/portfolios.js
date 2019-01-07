@@ -1,5 +1,6 @@
 export const state = () => ({
   list: [],
+  listing: false,
   indexExamples: [
     {
       img: '/images/services-carousel/home/1-logo.jpg',
@@ -91,7 +92,7 @@ export const mutations = {
 export const getters = {}
 
 export const actions = {
-  async getAll ({ rootGetters, commit }, params) {
+  async getAll ({ rootGetters, commit, state }, params) {
     let requestParams = {}
     if (params) {
       if (
@@ -129,7 +130,8 @@ export const actions = {
     let portfolios
 
     try {
-      params.offset = params.offset || 0
+      params.offset = state.list.length
+
       let url = 'portfolios/custom-search?offset=' + params.offset + '&limit=9'
 
       portfolios = await this.$axios.$get(url, {

@@ -30,16 +30,16 @@
                 {{portfolio.service.name}}
               </v-chip>
               <br>
-              <span class="mr-1 chip-title">Actividad:</span>
-              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/' + portfolio.service.slug + '/' + portfolio.activity.sector.slug)">
+              <!-- <span class="mr-1 chip-title">Actividad:</span>
+              <v-chip v-if="portfolio.activity.sector" class="cursor-pointer" @click="$router.push('/ejemplos/' + portfolio.service.slug + '/' + portfolio.activity.sector.slug)">
               {{portfolio.activity.sector.name}}
               </v-chip>
-              <br>
-              <!--<span class="mr-1 chip-title">Actividad:</span>
+              <br> -->
+              <span class="mr-1 chip-title">Actividad:</span>
               <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.activity.slug)">
               {{portfolio.activity.name}}
               </v-chip>
-              <br>-->
+              <br>
               <span class="mr-1 chip-title">País:</span>
               <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.location.country.slug)">
               {{portfolio.location.name}}
@@ -135,6 +135,7 @@
         return this.$store.state.services.list.find(el => el.slug === this.serviceSlug)
       },
       portfolio () {
+        console.log(this.$store.state.portfolios.list.find(el => el.slug === this.portfolioSlug))
         return this.$store.state.portfolios.list.find(el => el.slug === this.portfolioSlug)
       },
       portfolios () {

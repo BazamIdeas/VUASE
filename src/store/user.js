@@ -105,12 +105,10 @@ export const actions = {
 
     commit('SET_SKETCHS', sketchs)
   },
-  async contactForm ({ dispatch, commit }, params) {
-    await this.$axios.$post('leads', params).then((res) => {
-      console.log(res)
-    }).catch((err) => {
-      console.log(err)
-    })
-    /* dispatch('countries/setData', country) */
+  contactForm ({ dispatch, commit }, params) {
+    return this.$axios.$post('leads', params)
+  },
+  newsletter ({ dispatch, commit }, params) {
+    return this.$axios.$post('newsletter', params)
   }
 }

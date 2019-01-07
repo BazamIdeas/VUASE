@@ -341,11 +341,11 @@
   .package.selected .package-title p {
     color: #ffffff;
   }
-
+/*
   .service-package {
-    /*border: 2px solid grey;*/
+    border: 2px solid grey;
   }
-
+*/
   .service-package.selected {
     border: 2px solid #0081c1;
   }

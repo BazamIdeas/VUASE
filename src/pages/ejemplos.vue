@@ -15,8 +15,7 @@
               <v-flex class="my-0">
                 <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
-                  {{portfolio.service.name}} -
-                  {{portfolio.location.name}}
+                  {{portfolio.service.name}} - {{portfolio.location.name}}
                 </p>
               </v-flex>
             </v-card>
@@ -35,7 +34,6 @@
     data () {
       return {
         urlHosting: 'http://api.liderlogos.com/v1/images/slug/',
-        offset: 0,
         alt: 'Liderlogo'
       }
     },
@@ -54,7 +52,6 @@
       if (process.browser) {
         window.onscroll = () => {
           let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight
-          this.params.offset = this.portfolios.length
 
           if (bottomOfWindow && this.params.offset >= 8) {
             this.$store.dispatch('portfolios/getAll', this.params)

@@ -160,10 +160,9 @@
             contact.source = utmSource
           }
 
-          let sentLead = await this.$store.dispatch('user/contactForm', contact)
+          this.$store.dispatch('user/contactForm', contact).then((res) => {
+            console.log(res)
 
-          if (sentLead) {
-            console.log(sentLead)
             this.$router.push('/gracias?por=contacto')
 
             /* if (!process.browser) return
@@ -188,7 +187,9 @@
                 console.log('error', data)
               }
             }) */
-          }
+          }).catch((err) => {
+            console.log(err)
+          })
         })
       }
     }
