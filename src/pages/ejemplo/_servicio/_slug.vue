@@ -15,12 +15,12 @@
         </v-flex>
             
         <!-- DESKTOP -->
-        <v-flex hidden-sm-and-down class="mt-5" xs12 md6 v-if="portfolio.images && portfolio.images.length > 1">
+        <v-flex hidden-sm-and-down class="mt-5" xs12 md7 v-if="portfolio.images && portfolio.images.length > 1">
           <img class="mt-3" :src="urlHosting + image.slug" v-for="image in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
         </v-flex>
-        <v-flex xs12 md6 class="pl-5 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
+        <v-flex xs12 md5 class="pl-3 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
           <div class="box-sticky">
-            <AppHeading number="2" size="headline" :title="portfolio.name" align="center"/>
+            <AppHeading number="1" size="headline" :title="portfolio.name" align="center"/>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
               {{portfolio.description}}
             </p>

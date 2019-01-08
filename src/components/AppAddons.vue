@@ -1,9 +1,9 @@
 <template>
-  <v-container grid-list-md fluid class="pt-5 mb-3">
-    <v-flex xs12 class="mb-5">
-      <AppHeading :number="'1'" :size="'display-2'" align="center"  :title="title"/>
+  <v-container grid-list-md fluid class="mt-5 mb-3">
+    <v-flex xs12 class="mb-2">
+      <AppHeading :number="'2'" :size="'display-1'" align="center"  :title="title"/>
     </v-flex>
-    <v-layout row wrap py-5>
+    <v-layout row wrap py-4>
       <v-flex xs12 offset-xs0 sm5 offset-sm1 px-3 class="addons-first">
         <div class="addons-image-container">
           <img :src="first.image" class="addons-image"/>
@@ -98,7 +98,7 @@
 
   .adddons-title-container{
     margin-top: 20px;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;

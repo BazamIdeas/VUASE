@@ -22,7 +22,7 @@
                     <img :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'">
                   </v-flex>
                   <v-flex class="mr-3">
-                    <h1 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h1>
+                    <h2 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h2>
                   </v-flex>
                 </v-layout>
                 </v-flex>
@@ -40,24 +40,27 @@
             </v-layout>
           </v-flex>
           <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
-            <v-layout row wrap d-flex column class="ml-4" :class="{'max': !service.whatYouGet.noMaxWidth}">
+            <v-layout row wrap d-flex text-xs-center column class="ml-4" :class="{'max': !service.whatYouGet.noMaxWidth}">
               <v-flex class="ml-2">
                   <img :src="service.whatYouGet.img"  width="100%"></img>
-                  <h2 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
+                  <h3 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
                     PRECIO CERRADO EN:
-                  </h2>
-                  <v-layout xs12 row d-flex class="mt-2" v-if="!service.whatYouGet.notShowPrice">
-                    <v-flex xs4>
-                      <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h2>
+                  </h3>
+                  <v-layout xs12 row d-flex class="mt-2 box-price" v-if="!service.whatYouGet.notShowPrice">
+                    <v-flex xs6 text-xs-right v-if="finalPercertage > 0"> 
+                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
                     </v-flex>
-                    <v-layout xs6 row d-flex>
-                      <v-flex xs4 style="border-right:1px solid silver;" class="mr-2">
+                    <v-flex xs12 v-if="!finalPercertage > 0"> 
+                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
+                    </v-flex>
+                    <v-layout xs6 row d-flex v-if="finalPercertage > 0">
+                      <v-flex xs5 style="border-right:1px solid silver;" class="mr-2">
                         <h3 class="title">{{percentage}}%</h3>
                         <h5 class="body-2">al iniciar</h5>
                       </v-flex>
                       <v-flex xs5>
-                        <h3 class="title">{{finalPercertage}}%</h3> 
-                        <h5 class="body-2">al finalizar</h5>
+                        <h4 class="title">{{finalPercertage}}%</h4> 
+                        <h6 class="body-2">al finalizar</h6>
                       </v-flex>
                     </v-layout>
                   </v-layout>
@@ -118,6 +121,10 @@
     font-size: 16px;
 }
 .max{
-  max-width: 400px;
+  max-width: 500px;
+}
+
+.box-price{
+  max-width: 440px;
 }
 </style>
