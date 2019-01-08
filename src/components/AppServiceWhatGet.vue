@@ -118,6 +118,6 @@
     font-size: 16px;
 }
 .max{
-  max-width: 400px;
+  max-width: 600px;
 }
 </style>

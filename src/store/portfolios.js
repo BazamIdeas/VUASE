@@ -1,6 +1,7 @@
 export const state = () => ({
   list: [],
-  listing: false,
+  relateds: [],
+  pending: false,
   indexExamples: [
     {
       img: '/images/services-carousel/home/1-logo.jpg',
@@ -86,6 +87,9 @@ export const mutations = {
     } else {
       state.list = data.portfolios
     }
+  },
+  RELATEDS (state, data) {
+    state.relateds = data
   }
 }
 
@@ -93,6 +97,10 @@ export const getters = {}
 
 export const actions = {
   async getAll ({ rootGetters, commit, state }, params) {
+
+    if (state.pending) return
+    state.pending = true
+
     let requestParams = {}
     if (params) {
       if (
@@ -142,9 +150,22 @@ export const actions = {
         return commit('GET_ALL', {portfolios: portfolios})
       }
 
+      state.pending = false
       commit('GET_ALL', {portfolios: portfolios, push: true})
     } catch (error) {
+      state.pending = false
       if (error.response.status === 404) commit('GET_ALL', {portfolios: [], push: true})
+    }
+  },
+  async getRelateds ({ rootGetters, commit, state }, params) {
+    let url = 'portfolios/custom-search?limit=8&service=' + params.serviceSlug
+
+    try {
+      let portfolios = await this.$axios.$get(url)
+      commit('RELATEDS', portfolios)
+    } catch (error) {
+      console.log(error)
+      commit('RELATEDS', [])
     }
   }
 }
