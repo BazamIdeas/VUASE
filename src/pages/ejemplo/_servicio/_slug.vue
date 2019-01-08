@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <v-container grid-list-md>
-      <v-layout row wrap class="mt-5">
+      <v-layout row wrap class="mt-5" v-if="portfolio">
         <!-- CAROUSEL RESPONSIVE -->
         <v-flex style="height: 50vw;" class="mt-5" hidden-md-and-up xs12 v-if="portfolio.images && portfolio.images.length > 1">
           <v-carousel 
@@ -52,10 +52,10 @@
     <v-container grid-list-md class="mt-3">
       <v-layout row wrap>
         <!-- RELACIONADOS -->
-        <AppHeading class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
-        <v-layout xs12 row wrap class="portfolios mb-5" v-if="portfolios && portfolios.length">
-          <v-flex  v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
-            <v-card :to="'/ejemplo/'+ item.service.slug +'/'+ item.slug">
+        <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
+        <v-layout v-if="portfolios && portfolios.length" xs12 row wrap class="portfolios mb-5">
+          <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
+            <v-card>
               <div class="img-cuadrada-ejemplos-container" >
                   <svg class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
               </div>
@@ -99,8 +99,7 @@
 <script>
   export default {
     async fetch ({ store, params }) {
-      await store.dispatch('services/getAll')
-      await store.dispatch('portfolios/getAll', params)
+      await store.dispatch('portfolios/getRelateds', params)
     },
     asyncData ({ params }) {
       return {
@@ -123,6 +122,13 @@
 
         this.$storage.set('brief', brief)
         this.$router.push('/nuestros-servicios/' + this.serviceSlug + '/' + target)
+      },
+      goPortfolio (url, portfolio) {
+        if (process.browser) {
+          localStorage.setItem('liderlogo_selected_portfolio', JSON.stringify(portfolio))
+        }
+
+        this.$router.push(url)
       }
     },
     data () {
@@ -131,16 +137,20 @@
       }
     },
     computed: {
-      service () {
-        return this.$store.state.services.list.find(el => el.slug === this.serviceSlug)
-      },
       portfolio () {
-        console.log(this.$store.state.portfolios.list.find(el => el.slug === this.portfolioSlug))
+        let p
+
+        if (process.browser) {
+          p = localStorage.getItem('liderlogo_selected_portfolio')
+        }
+
+        if (p) return JSON.parse(p)
+
         return this.$store.state.portfolios.list.find(el => el.slug === this.portfolioSlug)
       },
       portfolios () {
         let portfolios = []
-        this.$store.state.portfolios.list.forEach((portfolio, i) => {
+        this.$store.state.portfolios.relateds.forEach((portfolio, i) => {
           if (portfolio.slug !== this.portfolioSlug) {
             portfolios.push(portfolio)
           }

@@ -25,10 +25,38 @@
       submit () {
         console.log('enviado')
         this.$validator.validate().then(result => {
-          console.log(result)
-          if (result) {
+          if (!result) return
+
+          this.$store.dispatch('user/newsletter', { email: this.email }).then((res) => {
+            console.log(res)
+
             this.$router.push('/gracias?por=suscripcion')
-          }
+
+            /* if (!process.browser) return
+
+            var agileContact = {}
+            agileContact.email = this.email
+            agileContact.first_name = this.name
+            agileContact.last_name = ''
+            agileContact.title = 'lead'
+            agileContact.phone = this.phone
+            agileContact.website = ''
+            var address = { 'city': 'new delhi', 'state': 'delhi', 'country': 'india' }
+            agileContact.address = JSON.stringify(address)
+            agileContact.tags = 'Contacto Liderlogo, Lead'
+
+            var _agile = _agile
+            _agile.create_contact(contact, {
+              success: function (data) {
+                console.log('success', data)
+              },
+              error: function (data) {
+                console.log('error', data)
+              }
+            }) */
+          }).catch((err) => {
+            console.log(err)
+          })
         })
       }
     }
