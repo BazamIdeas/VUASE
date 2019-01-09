@@ -63,8 +63,9 @@
           var offsetHeight = document.documentElement.offsetHeight
           var scrollPosition = document.documentElement.scrollTop + window.innerHeight
 
-          var bottomOfWindow = scrollPosition === offsetHeight
-          console.log(bottomOfWindow)
+          // console.log(scrollPosition + 600, offsetHeight)
+          var bottomOfWindow = scrollPosition + 600 >= offsetHeight
+          // console.log(bottomOfWindow)
           if (bottomOfWindow && this.portfolios.length >= 9) {
             console.log('listing')
             this.$store.dispatch('portfolios/getAll', this.params)

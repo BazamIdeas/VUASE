@@ -100,7 +100,7 @@ export const getters = {}
 
 export const actions = {
   async getAll ({ rootGetters, commit, state }, params) {
-    if (pending) return console.log('pending')
+    if (pending) return // console.log('pending')
     pending = true
 
     let requestParams = {}
@@ -137,11 +137,15 @@ export const actions = {
       }
     }
 
+    params.offset = state.list.length
+
+    if (requestParams !== {} && params.offset !== 0) {
+      params.offset = 0
+    }
+
     let portfolios
 
     try {
-      params.offset = state.list.length
-
       let url = 'portfolios/custom-search?offset=' + params.offset + '&limit=9'
 
       portfolios = await this.$axios.$get(url, {
