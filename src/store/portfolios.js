@@ -97,7 +97,6 @@ export const getters = {}
 
 export const actions = {
   async getAll ({ rootGetters, commit, state }, params) {
-
     if (state.pending) return
     state.pending = true
 
