@@ -41,11 +41,16 @@
       return { params: params }
     },
     async fetch ({ store, params }) {
-      await store.dispatch('services/getAll')
-      if (params.servicio) await store.dispatch('sectors/getAll')
+      /* if (params.servicio) await store.dispatch('sectors/getAll')
       if (params.sector) await store.dispatch('sectors/activities/getAll')
       if (params.actividad) await store.dispatch('countries/getAll')
-      if (params.pais) await store.dispatch('countries/locations/getAll')
+      if (params.pais) await store.dispatch('countries/locations/getAll') */
+
+      await store.dispatch('services/getAll')
+      await store.dispatch('sectors/getAll')
+      // await store.dispatch('sectors/activities/getAll')
+      await store.dispatch('countries/getAll')
+      // await store.dispatch('countries/locations/getAll')
       await store.dispatch('portfolios/getAll', params)
     },
     methods: {

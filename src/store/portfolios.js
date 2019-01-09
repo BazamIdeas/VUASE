@@ -88,7 +88,7 @@ export const mutations = {
     } else {
       state.list = data.portfolios
     }
-    console.log('finishing')
+    // console.log('finishing')
     pending = false
   },
   RELATEDS (state, data) {
