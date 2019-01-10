@@ -406,7 +406,7 @@
           icon: '/icons/packages/vender-mis-productos.svg',
           title: 'VENDER MIS PRODUCTOS ONLINE',
           slug: 'vender-mis-productos-online',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce', 'chat'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce'],
           qty: 5,
           open: {
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
@@ -426,10 +426,6 @@
               {
                 icon: '/icons/addons/carros-de-compra.svg',
                 text: 'Carro de compras'
-              },
-              {
-                icon: '/icons/addons/chat.svg',
-                text: 'Chat'
               },
               {
                 icon: '/icons/addons/wordpress.svg',

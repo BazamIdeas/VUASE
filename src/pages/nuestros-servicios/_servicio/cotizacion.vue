@@ -134,58 +134,58 @@
             title: 'Promocionar un servicio o producto',
             description: 'Es una herramienta sumamente eficiente para obtener nuevos clientes por medio de acciones marketing online. Tiene como principal beneficio lograr nuevos clientes potenciales y/o obtener que se realice una acción determinada que incremente sus ventas e interacción con el mercado.',
             sections: 1,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario', 'hosting-por-un-ano']
           },
           'presentar-mi-empresa': {
             title: 'Presentar mi empresa',
             description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
             sections: 2,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano']
           },
           'ofrecer-multiples-servicios': {
             title: 'Ofrecer múltiples servicios',
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser: reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones']
           },
           'dar-a-conocer-mis-proyectos-realizados': {
             title: 'Dar a conocer mis proyectos realizados',
             description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
             sections: 3,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'galeria-de-proyectos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'galeria-de-proyectos']
           },
           'publicar-inmuebles-para-alquiler-o-venta': {
             title: 'Publicar inmuebles para alquilar o venta',
             description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'plataforma-inmobiliaria']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'plataforma-inmobiliaria']
           },
           'exhibir-un-menu-de-platos-o-comidas': {
             title: 'Exhibir un menú de platos / comidas',
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
             sections: 3,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos']
           },
           'mostrar-un-catalogo-de-productos': {
             title: 'Mostrar un catálogo de productos',
             description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos']
           },
           'vender-mis-productos-online': {
             title: 'Vender mis productos online',
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos(Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce']
           },
           'compartir-informacion': {
             title: 'Compartir informacion y archivos con mis clientes',
-            description: 'Es la opción ideal para vender en línea.',
+            description: 'Tus clientes podrán acceder a una sección privada mediante un usuario y contraseña, desde allí desde podrá descargar archivos y documentos ordenados por categorías',
             sections: 2,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'area-privada-para-clientes', 'hosting-por-un-ano']
           },
-          'perzonalizado': {
-            title: 'Perzonalizado',
+          'personalizado': {
+            title: 'Personalizado',
             description: '',
             sections: 0,
             services: []
@@ -239,9 +239,9 @@
     },
     methods: {
       selectPack (slugPack) {
-        if (slugPack === 'perzonalizado') return
+        if (slugPack === 'personalizado') return
 
-        if (this.packagesSelected.includes('perzonalizado')) {
+        if (this.packagesSelected.includes('personalizado')) {
           this.packagesSelected = []
           this.addonsSelected = []
         }
@@ -279,7 +279,7 @@
           this.addonsSelected.push(slugAddon)
         }
 
-        this.packagesSelected = ['perzonalizado']
+        this.packagesSelected = ['personalizado']
         this.$storage.set('quotePacksOptions', this.packagesSelected)
         this.$storage.set('quoteAddonsOptions', this.addonsSelected)
       },
