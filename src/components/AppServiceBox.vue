@@ -111,6 +111,7 @@
         }
 
         this.$storage.set('quotePacksOptions', packages)
+        this.$storage.set('quoteAddonsOptions', [])
 
         if (slug === 'sitio-web-ecommerce' || slug === 'presencia-web') {
           slug = 'diseno-pagina-web'

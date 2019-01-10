@@ -104,20 +104,26 @@
       let addons = this.$storage.get('quoteAddonsOptions')
 
       if (packages) this.packagesSelected = packages
-
-      console.log(this.params.servicio)
+      if (addons) this.addonsSelected = addons
 
       this.sections = 0
 
       for (const pkg of this.packagesSelected) {
         if (this.packages[pkg]) {
-          this.sections += this.packages[pkg].sections
+          for (let addon of this.packages[pkg].services) {
+            if (addon === 'diseno-y-desarrollo-de-seccion-web') {
+              this.sections += this.packages[pkg].sections
+            } else if (!this.addonsSelected.includes(addon)) {
+              this.addonsSelected.push(addon)
+            }
+          }
         }
       }
 
-      if (addons) this.addonsSelected = addons
-
       if (this.params.servicio === 'diseno-logo-y-pagina-web') this.addonsSelected.push('logo-solo-para-web')
+
+      this.$storage.set('quotePacksOptions', this.packagesSelected)
+      this.$storage.set('quoteAddonsOptions', this.addonsSelected)
     },
     data () {
       return {
