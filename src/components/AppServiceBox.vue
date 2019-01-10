@@ -95,17 +95,14 @@
         switch (slug) {
           case 'sitio-web-ecommerce':
             packages.push('vender-mis-productos-online')
-            packages.push('ofrecer-multiples-servicios')
             break
           case 'presencia-web':
             packages.push('presentar-mi-empresa')
             break
           case 'diseno-pagina-web':
-            packages.push('presentar-mi-empresa')
             packages.push('ofrecer-multiples-servicios')
             break
           case 'diseno-logo-y-pagina-web':
-            packages.push('presentar-mi-empresa')
             packages.push('ofrecer-multiples-servicios')
             break
         }
