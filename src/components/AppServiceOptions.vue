@@ -1,6 +1,6 @@
 <template lang="html">
-  <v-layout row class="mb-5">
-    <v-flex xs12 class="mt-5 mb-4"> 
+  <v-layout row >
+    <v-flex xs12 class="mt-5 "> 
       <v-layout>
         <v-flex xs12 class="mt-5" >
           <AppHeading number="1" size="display-1" align="center" :title="'¿QUÉ FUNCIONES NECESITA TU SITIO WEB?'" />
@@ -71,14 +71,14 @@
       <v-layout row class="mt-5">
         <v-flex offset-xs0 xs12 sm10 offset-sm1 md6 offset-md3>
           <v-layout row wrap d-flex column class="final-price-container">
-            <v-flex class="text-xs-center">
+            <v-flex class="text-xs-center" v-if= finalPrice()>
               <div>
                 <h2 class="headline font-weight-bold text-uppercase" :style="'color:'">
                   PRECIO CERRADO EN:
                 </h2>
-                <v-layout row wrap d-flex class="mt-2">
+                <v-layout row wrap d-flex class="mt-2" >
                   <v-flex xs12 sm4 offset-sm1 >
-                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{price.value + finalPrice()}}</h2>
+                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{finalPrice()}}</h2>
                   </v-flex>
                   <v-layout xs6 row d-flex class="mr-3">
                     <v-flex xs6 style="border-right:1px solid silver;">
@@ -90,7 +90,7 @@
                       <h5 class="body-2">al finalizar</h5>
                     </v-flex>
                   </v-layout>
-                  <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0" >INICIAR MI PROYECTO</v-btn>
+                  <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0">INICIAR MI PROYECTO</v-btn>
                 </v-layout>
               </div>         
                 
@@ -111,7 +111,8 @@
           icon: '/icons/packages/promocionar-un-servicio-o-producto.svg',
           title: 'PROMOCIONAR UN SERVICIO O PRODUCTO',
           slug: 'promocionar-un-servicio-o-producto',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario', 'hosting-por-un-ano'],
+          qty: 1,
           open: {
             description: 'Es una herramienta sumamente eficiente para obtener nuevos clientes por medio de acciones marketing online. Tiene como principal beneficio lograr nuevos clientes potenciales y/o obtener que se realice una acción determinada que incremente sus ventas e interacción con el mercado.',
             items: [
@@ -150,7 +151,8 @@
           icon: '/icons/packages/presentar-mi-empresa.svg',
           title: 'PRESENTAR MI EMPRESA',
           slug: 'presentar-mi-empresa',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano'],
+          qty: 2,
           open: {
             description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
             items: [
@@ -189,7 +191,8 @@
           icon: '/icons/packages/ofrecer-multiples-servicios.svg',
           title: 'OFRECER MULTIPLES SERVICIOS',
           slug: 'ofrecer-multiples-servicios',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones'],
+          qty: 5,
           open: {
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser:  reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
             items: [
@@ -240,7 +243,8 @@
           icon: '/icons/packages/dar-a-conocer-mis-proyectos.svg',
           title: 'DAR A CONOCER MIS PROYECTOS REALIZADOS',
           slug: 'dar-a-conocer-mis-proyectos-realizados',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'galeria-de-proyectos'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'galeria-de-proyectos'],
+          qty: 3,
           open: {
             description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
             items: [
@@ -283,7 +287,8 @@
           icon: '/icons/packages/publicar-inmuebles.svg',
           title: 'PUBLICAR INMUEBLES PARA ALQUILER O VENTA',
           slug: 'publicar-inmuebles-para-alquiler-o-venta',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'plataforma-inmobiliaria'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'plataforma-inmobiliaria'],
+          qty: 5,
           open: {
             description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
             items: [
@@ -325,8 +330,9 @@
         {
           icon: '/icons/packages/exhibir-un-menu.svg',
           title: 'EXHIBIR UN MENÚ DE PLATOS/COMIDAS',
+          qty: 3,
           slug: 'exhibir-un-menu-de-platos-o-comidas',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos'],
           open: {
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
             items: [
@@ -362,7 +368,8 @@
           icon: '/icons/packages/mostrar-un-catalogo-de-productos.svg',
           title: 'MOSTRAR UN CATÁLOGO DE PRODUCTOS',
           slug: 'mostrar-un-catalogo-de-productos',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos'],
+          qty: 5,
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos'],
           open: {
             description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
             items: [
@@ -399,7 +406,8 @@
           icon: '/icons/packages/vender-mis-productos.svg',
           title: 'VENDER MIS PRODUCTOS ONLINE',
           slug: 'vender-mis-productos-online',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce', 'chat'],
+          qty: 5,
           open: {
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             items: [
@@ -451,13 +459,38 @@
           icon: '/icons/packages/compartir-informacion.svg',
           title: 'COMPARTIR INFORMACIÓN Y ARCHIVOS CON MIS CLIENTES',
           slug: 'compartir-informacion',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-y-dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'area-privada-para-clientes', 'hosting-por-un-ano'],
+          qty: 2,
           open: {
-            description: 'descripcion de pop',
+            description: 'Tus clientes podrán acceder a una sección privada mediante un usuario y contraseña, desde allí desde podrá descargar archivos y documentos ordenados por categorías',
             items: [
               {
-                icon: '/icons/garantia-de-conformidad.svg',
-                text: 'descripcion de item en pop'
+                icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
+                text: 'Diseño y desarrollo de sitio web exclusivo y original'
+              },
+              {
+                icon: '/icons/addons/area-privada-para-clientes.svg',
+                text: 'Área para la gestión de archivos'
+              },
+              {
+                icon: '/icons/addons/wordpress.svg',
+                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+              },
+              {
+                icon: '/icons/addons/herramientas-SEO.svg',
+                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
+              },
+              {
+                icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
+                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+              },
+              {
+                icon: '/icons/addons/integracion.svg',
+                text: 'Integración con más de 50.000 complementos'
+              },
+              {
+                icon: '/icons/addons/manual-de-uso.svg',
+                text: 'Manual de usuario'
               }
             ]
           }
@@ -541,6 +574,13 @@
             if (servicesSelected.indexOf(addonSlug) === -1) {
               continue
             }
+
+            if (addonSlug === 'diseno-y-desarrollo-de-seccion-web') {
+              let qty = this.items[selectedKey].qty
+              priceCount += addon.price.value * qty
+              continue
+            }
+            usedAddonsSlugs.push(addonSlug)
             priceCount += addon.price.value
           }
 
