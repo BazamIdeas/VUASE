@@ -120,7 +120,7 @@
         }
       }
 
-      if (this.params.servicio === 'diseno-logo-y-pagina-web') this.addonsSelected.push('logo-solo-para-web')
+      if (this.params.servicio === 'logo-y-pagina-web') this.addonsSelected.push('logo-solo-para-web')
 
       this.$storage.set('quotePacksOptions', this.packagesSelected)
       this.$storage.set('quoteAddonsOptions', this.addonsSelected)

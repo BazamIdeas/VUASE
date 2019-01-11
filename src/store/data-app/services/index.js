@@ -1,10 +1,10 @@
 /* SERVICIOS */
-import { disenoApp } from './diseno-de-app.js'
+import { disenoApp } from './desarrollo-de-app.js'
 
-import { logoWeb } from './diseno-logo-y-pagina-web.js'
-import { web } from './diseno-pagina-web.js'
+import { logoWeb } from './logo-y-pagina-web.js'
+import { web } from './pagina-web.js'
 import { logoEmpresa } from './logo-empresa.js'
-import { redesSociales } from './diseno-perfil-redes-sociales.js'
+import { redesSociales } from './perfil-redes-sociales.js'
 import { imagenCorporativa } from './imagen-corporativa.js'
 
 import { redisenoLogo } from './rediseno-de-logo.js'
@@ -27,10 +27,10 @@ import { rVestimenta } from './rotulo-vestimenta-uniforme.js'
 import { publicidad } from './publicidad.js'
 
 export const services = {
-  'diseno-de-app': disenoApp,
-  'diseno-logo-y-pagina-web': logoWeb,
-  'diseno-pagina-web': web,
-  'diseno-perfil-redes-sociales': redesSociales,
+  'desarrollo-de-app': disenoApp,
+  'logo-y-pagina-web': logoWeb,
+  'pagina-web': web,
+  'perfil-redes-sociales': redesSociales,
   'imagen-corporativa': imagenCorporativa,
   'logo-empresa': logoEmpresa,
   'rediseno-de-logo': redisenoLogo,

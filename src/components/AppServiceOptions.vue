@@ -493,7 +493,7 @@
         }
       ]
 
-      let toPath = this.logo ? 'diseno-logo-y-pagina-web' : 'diseno-pagina-web'
+      let toPath = this.logo ? 'logo-y-pagina-web' : 'diseno-pagina-web'
       return {
         items: items,
         pop: null,

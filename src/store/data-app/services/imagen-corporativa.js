@@ -254,8 +254,8 @@ export const imagenCorporativa = {
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
-      url: '/nuestros-servicios/diseno-logo-y-pagina-web',
-      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/disenos'
+      url: '/nuestros-servicios/logo-y-pagina-web',
+      brief: '/nuestros-servicios/logo-y-pagina-web/brief/disenos'
     }
   }
 }

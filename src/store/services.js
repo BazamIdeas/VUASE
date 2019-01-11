@@ -19,7 +19,7 @@ export const state = () => ({
           'logo-empresa'
         ],
         [
-          'diseno-logo-y-pagina-web',
+          'logo-y-pagina-web',
           'carousel'
         ],
         [
@@ -41,12 +41,12 @@ export const state = () => ({
       ],
       rows: [
         [
-          'diseno-logo-y-pagina-web',
-          'diseno-pagina-web',
+          'logo-y-pagina-web',
+          'pagina-web',
           'sitio-web-ecommerce'
         ],
         [
-          'diseno-de-app',
+          'desarrollo-de-app',
           'carousel'
         ],
         [
@@ -113,7 +113,7 @@ export const state = () => ({
       name: 'Perfiles de Redes Sociales',
       rows: [
         [
-          'diseno-perfil-redes-sociales',
+          'perfil-redes-sociales',
           'carousel'
         ]
       ],

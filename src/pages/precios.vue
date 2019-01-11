@@ -104,7 +104,7 @@
         const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
 
-        if (this.serviceObject.slug === 'diseno-logo-y-pagina-web' || this.serviceObject.slug === 'diseno-pagina-web') {
+        if (this.serviceObject.slug === 'logo-y-pagina-web' || this.serviceObject.slug === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {

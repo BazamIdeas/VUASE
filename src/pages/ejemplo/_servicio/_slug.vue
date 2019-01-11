@@ -113,7 +113,7 @@
         const brief = { service: { id: this.portfolio.service.id, name: this.portfolio.service.name, slug: this.portfolio.service.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
         // TODO: PENDIENTE
-        if (this.serviceSlug === 'diseno-logo-y-pagina-web' || this.serviceSlug === 'diseno-pagina-web') {
+        if (this.serviceSlug === 'logo-y-pagina-web' || this.serviceSlug === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {
@@ -159,7 +159,7 @@
       },
       briefUrl () {
         /* TODO: */
-        if (this.service === 'diseno-logo-y-pagina-web' || this.service === 'diseno-pagina-web') {
+        if (this.service === 'logo-y-pagina-web' || this.service === 'diseno-pagina-web') {
           return 'cotizacion'
         } else {
           return 'brief/disenos'

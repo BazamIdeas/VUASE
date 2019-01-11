@@ -102,7 +102,7 @@
           case 'diseno-pagina-web':
             packages.push('ofrecer-multiples-servicios')
             break
-          case 'diseno-logo-y-pagina-web':
+          case 'logo-y-pagina-web':
             packages.push('ofrecer-multiples-servicios')
             break
         }
@@ -120,7 +120,7 @@
         const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
         // TODO: PENDIENTE
-        if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
+        if (this.url === 'logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {

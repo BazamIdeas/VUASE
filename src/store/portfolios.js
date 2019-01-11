@@ -45,7 +45,7 @@ export const state = () => ({
       icon: '/icons/white/web-y-app.svg',
       service: 'Web y App',
       description: 'Sitios webs y Apps que conectan con mas clientes',
-      url: 'diseno-de-app',
+      url: 'desarrollo-de-app',
       color: 'rgba(7, 122, 53, .8)',
       textColor: 'white'
     },
