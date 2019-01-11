@@ -11,7 +11,7 @@
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
               <div style="text-align: center">
-                <img :src="serviceObject.dataService.icon" alt="" width="200" style="max-height: 150px">
+                <img :src="serviceObject.dataService.icon" :alt="serviceObject.slug + ' Liderlogo'" width="200" style="max-height: 150px">
                 <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
                 <h5 class="subheading my-1" style="font-weight: 600" v-if="serviceObject.startWith" >A PARTIR DE</h5> 
                 <h2 class="price">{{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }}</h2>
@@ -36,7 +36,7 @@
           <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" alt="" width="100%">
+          <img src="/images/pages/muchacho_contacto.png" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
           <h1 class="font-weight-bold mb-3 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>

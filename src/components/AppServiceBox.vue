@@ -6,7 +6,7 @@
     row wrap 
     class="service-box-container px-3 pt-5 pb-2 xs-pt-2">
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
-      <img :src="icon" height="70" width="70" class="mr-2">
+      <img alt="Servicio Liderlogo" :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
         <h2 class="title font-weight-bold" style="cursor:pointer;" @click="saveServiceLocalStorage(url)" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">

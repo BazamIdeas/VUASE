@@ -8,7 +8,7 @@
             <v-card slot="activator" class="pa-3" style="cursor: pointer">
               <nuxt-link :to="'/area-de-cliente/proyectos/' + project.id">
                 <div style="padding-top: 100%; position: relative">
-                  <img src="/icons/conceptos.svg" height="100%" width="100%" style="position:absolute; top: 0">
+                  <img alt="Conceptos" src="/icons/conceptos.svg" height="100%" width="100%" style="position:absolute; top: 0">
                 </div>
               </nuxt-link>
             </v-card>

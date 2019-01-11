@@ -6,7 +6,7 @@
     <v-layout row wrap py-4>
       <v-flex xs12 offset-xs0 sm5 offset-sm1 px-3 class="addons-first">
         <div class="addons-image-container">
-          <img :src="first.image" class="addons-image"/>
+          <img alt="Liderlogo addons" :src="first.image" class="addons-image"/>
         </div>
         <v-layout row>
           <v-flex xs12  class="text-xs-center adddons-title-container">
@@ -31,7 +31,7 @@
       </v-flex>
       <v-flex xs12 sm5 px-3 class="addons-last">
         <div class="addons-image-container">
-          <img :src="last.image" class="addons-image"/>
+          <img alt="Liderlogo addons" :src="last.image" class="addons-image"/>
         </div>
         <v-layout row>
           <v-flex xs12 class="text-xs-center adddons-title-container">

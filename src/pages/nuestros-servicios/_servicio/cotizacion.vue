@@ -10,7 +10,7 @@
           <v-layout row wrap>
             <v-flex md3 xs6 v-for="pkg in slugsPackages" :key="pkg" class="px-2 mb-2">
               <v-card class="pa-3 package" :class="{ 'selected': selectedPkg(pkg) }">
-                <div class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
+                <div role="img" aria-label="Liderlogo" class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
                 </div>
                 <div class="package-title">
                   <p class="body-2 text-xs-center mb-0">{{ packages[pkg].title }}</p>
@@ -24,7 +24,7 @@
               <v-card class="py-1 service-package" :class="{ 'selected': selectedAddon(service.slug) }">
                 <v-layout row wrap @click="selectAddon(service.slug)">
                   <v-flex xs3 class="service-package-img">
-                    <img :src="'/images/quote/services/' + service.slug + '.svg'" height="50">
+                    <img :alt="service.name + ' Liderlogo'" :src="'/images/quote/services/' + service.slug + '.svg'" height="50">
                   </v-flex>
                   <v-flex xs6 class="service-package-name">
                     <p class="body-2 mb-0" style="line-height: 15px;">{{ service.name }}</p>
@@ -41,7 +41,7 @@
             <v-flex md3 xs6 v-for="service in addons" v-if="addonsObject[service.slug].section === 'functionalities'" :key="service.slug" class="px-2 mb-2">
               <v-card class="service-package" :class="{ 'selected': selectedAddon(service.slug) }"  >
                 <div class="px-3 pt-2" @click="selectAddon(service.slug)">
-                  <img :src="'/images/quote/services/' + service.slug + '.svg'">
+                  <img :alt="service.name + ' Liderlogo'" :src="'/images/quote/services/' + service.slug + '.svg'">
                 </div>
                 <v-divider light></v-divider>
                 <div class="package-title px-1">

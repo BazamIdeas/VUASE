@@ -13,7 +13,7 @@
                 <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index] ? 'selected-option' : '']">
-                    <img @click="openOption(items[index])" :src="items[index].icon"/>
+                    <img  alt="Icono Servicio Liderlogo" @click="openOption(items[index])" :src="items[index].icon"/>
                     <h4 @click="openOption(items[index])" class="px-2">{{items[index].title}}</h4>
                     <v-btn @click="selectOptionItem(index, items[index].slug)" flat class="ma-0 px-2 know-more" large>
                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
@@ -25,7 +25,7 @@
                 <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index+3] ? 'selected-option' : '']">
-                    <img  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
+                    <img alt="Icono Servicio Liderlogo"  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
                     <h4 @click="openOption(items[index+3])"  class="px-2">{{items[index+3].title}}</h4>
                     <v-btn @click="selectOptionItem(index+3, items[index+3].slug)" flat class="ma-0 px-2 know-more" large>
                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
@@ -37,7 +37,7 @@
                 <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index+6] ? 'selected-option' : '']">
-                    <img @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
+                    <img  alt="Icono Servicio Liderlogo" @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
                     <h4 @click="openOption(items[index+6])" class="px-2" title="Conocer más">{{items[index+6].title}}</h4>
                     <v-btn  @click="selectOptionItem(index+6, items[index+6].slug)"  flat class="ma-0 px-2 know-more" large>
                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
@@ -56,7 +56,7 @@
                   <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs12 sm6>
                       <v-layout row>
                         <v-flex xs2 offset-xs1>
-                          <img :src="popItem.icon"/>
+                          <img alt="Icono Servicio Liderlogo" :src="popItem.icon"/>
                         </v-flex>
                         <v-flex xs9>
                           {{popItem.text}}

@@ -116,7 +116,7 @@
         </v-flex> -->
 
         <v-flex xs12 md5 >
-          <img :alt="alt" src="/images/pages/muchacho_contacto.png" width="100%">
+          <img alt="Contacto Liderlogo" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>

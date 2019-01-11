@@ -9,14 +9,14 @@
             hide-controls hide-delimiters 
             style="height: 100%; width:100%;">
             <v-carousel-item v-for="(item, i) in portfolio.images" :key="i"   :transition="'slide-x-transition'">
-              <svg class="img-cuadrada-ejemplos" viewBox="0 0 100 100 " :style="'background: url(' + urlHosting + item.slug +')'"></svg>
+              <svg class="img-cuadrada-ejemplos" viewBox="0 0 100 100 " role="img" :aria-label="portfolio.name + ' Imagen ' + i" :alt="portfolio.name + ' Imagen ' + i" :style="'background: url(' + urlHosting + item.slug +')'"></svg>
             </v-carousel-item>
           </v-carousel>
         </v-flex>
             
         <!-- DESKTOP -->
         <v-flex hidden-sm-and-down class="mt-5" xs12 md7 v-if="portfolio.images && portfolio.images.length > 1">
-          <img class="mt-3" :src="urlHosting + image.slug" v-for="image in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
+          <img class="mt-3" :alt="portfolio.name + ' Imagen ' + i" :src="urlHosting + image.slug" v-for="(image, i) in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
         </v-flex>
         <v-flex xs12 md5 class="pl-3 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
           <div class="box-sticky">

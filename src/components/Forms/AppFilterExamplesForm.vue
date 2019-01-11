@@ -56,7 +56,7 @@
             // console.log(bottomOfWindow)
             if (bottomOfWindow && this.count >= 9) {
               // console.log('listing')
-              console.log(this.paramsData)
+              // console.log(this.paramsData)
               this.$store.dispatch('portfolios/getAll', this.paramsData)
             }
           }
