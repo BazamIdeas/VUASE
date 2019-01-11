@@ -101,7 +101,7 @@
       },
       /* TODO: */
       url () {
-        if (this.find === 'logo-y-pagina-web' || this.find === 'diseno-pagina-web') {
+        if (this.find === 'logo-y-pagina-web' || this.find === 'pagina-web') {
           return this.$router.currentRoute.path + '/' + this.find
         } else {
           return this.$router.currentRoute.path + '/' + this.find

@@ -70,7 +70,7 @@ export const state = () => ({
       'logo-empresa',
       'papeleria'
     ],
-    'diseno-pagina-web': [
+    'pagina-web': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'website_about_us' },
       { label: 'Si ya cuenta con un sitio web, por favor indíquenos ¿Cuál es?', type: 'text', name: 'website_oldsite' },
       { label: 'Describa cada página o sector de su sitio web y lo que desee comunicar en cada una', type: 'textarea', name: 'website_description' },
@@ -80,7 +80,7 @@ export const state = () => ({
     ],
     'logo-y-pagina-web': [
       'logo-empresa',
-      'diseno-pagina-web'
+      'pagina-web'
     ],
     'rotulo': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'rolls_about_us' },

@@ -99,7 +99,7 @@
           case 'presencia-web':
             packages.push('presentar-mi-empresa')
             break
-          case 'diseno-pagina-web':
+          case 'pagina-web':
             packages.push('ofrecer-multiples-servicios')
             break
           case 'logo-y-pagina-web':
@@ -111,7 +111,7 @@
         this.$storage.set('quoteAddonsOptions', [])
 
         if (slug === 'sitio-web-ecommerce' || slug === 'presencia-web') {
-          slug = 'diseno-pagina-web'
+          slug = 'pagina-web'
         }
 
         this.$router.push('/nuestros-servicios/' + slug)
@@ -120,7 +120,7 @@
         const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
         // TODO: PENDIENTE
-        if (this.url === 'logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
+        if (this.url === 'logo-y-pagina-web' || this.url === 'pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {

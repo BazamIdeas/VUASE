@@ -64,7 +64,7 @@
 
         if (this.$storage) this.$storage.set('brief', brief)
 
-        if (this.slug === 'logo-y-pagina-web' || this.slug === 'diseno-pagina-web') {
+        if (this.slug === 'logo-y-pagina-web' || this.slug === 'pagina-web') {
           return this.$router.currentRoute.path + '/cotizacion'
         } else {
           if (this.slug.includes('logo') || this.slug === 'imagen-corporativa') return this.$router.currentRoute.path + '/brief/disenos'
