@@ -54,10 +54,10 @@
         <!-- RELACIONADOS -->
         <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
         <v-layout v-if="portfolios && portfolios.length" xs12 row wrap class="portfolios mb-5">
-          <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
+          <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="(item, key) in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
             <v-card>
               <div class="img-cuadrada-ejemplos-container" >
-                  <svg class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
+                  <svg role="img" :aria-label="item.name + ' Imagen ' + key" :alt="item.name + ' Imagen ' + key" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
                 <h2 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h2>
