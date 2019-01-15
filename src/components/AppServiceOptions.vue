@@ -78,7 +78,13 @@
                 </h2>
                 <v-layout row wrap d-flex class="mt-2" >
                   <v-flex xs12 sm4 offset-sm1 >
-                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{finalPrice()}}</h2>
+                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">
+                      {{ 
+                        $store.state.services.RightSymbol.indexOf(price.currency.iso) === -1 ? 
+                        price.currency.symbol + ' ' + finalPrice() : 
+                        finalPrice() + ' ' + price.currency.symbol
+                      }}
+                    </h2>
                   </v-flex>
                   <v-layout xs6 row d-flex class="mr-3">
                     <v-flex xs6 style="border-right:1px solid silver;">

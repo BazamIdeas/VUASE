@@ -11,8 +11,15 @@
         <h2 class="title font-weight-bold" style="cursor:pointer;" @click="saveServiceLocalStorage(url)" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
            <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
-          {{ price.currency.symbol }} 
-          {{ price.value }}
+          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) === -1">
+            {{price.currency.symbol}}
+            {{price.value}}
+          </span>
+
+          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) !== -1">
+            {{price.value}}
+            {{price.currency.symbol}}
+          </span>
         </span> 
         <!-- <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
           comenzar

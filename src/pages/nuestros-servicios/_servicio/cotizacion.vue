@@ -59,15 +59,48 @@
               <tbody>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="addon.slug === 'diseno-y-desarrollo-de-seccion-web'">
                   <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} ({{ sections }}) </td>
-                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> {{ addon.price.currency.symbol }}  {{ addon.price.value * sections }}</td>
+                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> 
+                    
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) === -1">
+                      {{addon.price.currency.symbol}}
+                      {{addon.price.value * sections}}
+                    </span>
+
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) !== -1">
+                      {{addon.price.value * sections}}
+                      {{addon.price.currency.symbol}}
+                    </span>
+                  </td>
                 </tr>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="selectedAddon(addon.slug)">
                   <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} </td>
-                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> {{ addon.price.currency.symbol }}  {{ addon.price.value }}</td>
+                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> 
+                    {{ addon.price.currency.symbol }}  {{ addon.price.value }}
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) === -1">
+                      {{addon.price.currency.symbol}}
+                      {{addon.price.value}}
+                    </span>
+
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) !== -1">
+                      {{addon.price.value}}
+                      {{addon.price.currency.symbol}}
+                    </span>
+                  </td>
                 </tr>
                 <tr class="hidden-xs-only">
                   <td class="title font-weight-bold py-1 pl-2"> TOTAL </td>
-                  <td class="title font-weight-bold text-xs-center py-1 pr-2">  {{ countryData.currency.symbol }} {{ total }}</td>
+                  <td class="title font-weight-bold text-xs-center py-1 pr-2">  
+                    <!-- {{ countryData.currency.symbol }} {{ total }} -->
+                    <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) === -1">
+                      {{countryData.currency.symbol}}
+                      {{total}}
+                    </span>
+
+                    <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) !== -1">
+                      {{total}}
+                      {{countryData.currency.symbol}}
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -81,7 +114,16 @@
     </v-container>
     <v-toolbar class="hidden-sm-and-up" fixed style="top: inherit;bottom: 0;">
       <div class="title font-weight-bold text-xs-center">
-        {{ countryData.currency.symbol }} {{ total }}
+        <!-- {{ countryData.currency.symbol }} {{ total }} -->
+        <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) === -1">
+          {{countryData.currency.symbol}}
+          {{total}}
+        </span>
+
+        <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) !== -1">
+          {{total}}
+          {{countryData.currency.symbol}}
+        </span>
       </div>
       <v-spacer></v-spacer>
       <div class="">

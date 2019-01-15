@@ -48,7 +48,17 @@
                   </h3>
                   <v-layout xs12 row d-flex class="mt-2 box-price" v-if="!service.whatYouGet.notShowPrice">
                     <v-flex xs6 text-xs-right v-if="finalPercertage > 0"> 
-                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
+                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">
+                        <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) === -1">
+                          {{price.currency.symbol}}
+                          {{price.value}}
+                        </span>
+
+                        <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) !== -1">
+                          {{price.value}}
+                          {{price.currency.symbol}}
+                        </span>
+                      </h3>
                     </v-flex>
                     <v-flex xs12 v-if="!finalPercertage > 0"> 
                       <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
