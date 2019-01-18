@@ -22,7 +22,7 @@
               </p>
             </v-flex>
             <v-flex xs12 md6>
-              <img src="/images/pages/dino_about_us.png" :alt="alt" width="100%">
+              <img  alt="Sobre Nosotros" src="/images/pages/dino_about_us.png" width="100%">
             </v-flex>
           </v-layout>
         </v-flex>
@@ -40,13 +40,6 @@
   export default {
     data () {
       return {
-        items: [
-          { text: 'Logo a medida', field: 'logo-a-medida' },
-          { text: 'Folletos', field: 'folleto-y-publicidades' }
-        ],
-        list: [
-          'dasdasdadasdasdadadsasdad'
-        ],
         alt: 'Liderlogo'
       }
     }

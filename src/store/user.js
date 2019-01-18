@@ -104,5 +104,11 @@ export const actions = {
     }
 
     commit('SET_SKETCHS', sketchs)
+  },
+  contactForm ({ dispatch, commit }, params) {
+    return this.$axios.$post('leads', params)
+  },
+  newsletter ({ dispatch, commit }, params) {
+    return this.$axios.$post('leads/newsletter', params)
   }
 }

@@ -6,13 +6,20 @@
     row wrap 
     class="service-box-container px-3 pt-5 pb-2 xs-pt-2">
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
-      <img :src="icon" height="70" width="70" class="mr-2">
+      <img alt="Servicio Liderlogo" :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
-        <h1 class="title font-weight-bold" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h1> 
+        <h2 class="title font-weight-bold" style="cursor:pointer;" @click="saveServiceLocalStorage(url)" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
            <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
-          {{ price.currency.symbol }} 
-          {{ price.value }}
+          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) === -1">
+            {{price.currency.symbol}}
+            {{price.value}}
+          </span>
+
+          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) !== -1">
+            {{price.value}}
+            {{price.currency.symbol}}
+          </span>
         </span> 
         <!-- <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
           comenzar
@@ -95,25 +102,23 @@
         switch (slug) {
           case 'sitio-web-ecommerce':
             packages.push('vender-mis-productos-online')
-            packages.push('ofrecer-multiples-servicios')
             break
           case 'presencia-web':
             packages.push('presentar-mi-empresa')
             break
-          case 'diseno-pagina-web':
-            packages.push('presentar-mi-empresa')
+          case 'pagina-web':
             packages.push('ofrecer-multiples-servicios')
             break
-          case 'diseno-logo-y-pagina-web':
-            packages.push('presentar-mi-empresa')
+          case 'logo-y-pagina-web':
             packages.push('ofrecer-multiples-servicios')
             break
         }
 
         this.$storage.set('quotePacksOptions', packages)
+        this.$storage.set('quoteAddonsOptions', [])
 
         if (slug === 'sitio-web-ecommerce' || slug === 'presencia-web') {
-          slug = 'diseno-pagina-web'
+          slug = 'pagina-web'
         }
 
         this.$router.push('/nuestros-servicios/' + slug)
@@ -122,7 +127,7 @@
         const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
         // TODO: PENDIENTE
-        if (this.url === 'diseno-logo-y-pagina-web' || this.url === 'diseno-pagina-web') {
+        if (this.url === 'logo-y-pagina-web' || this.url === 'pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {

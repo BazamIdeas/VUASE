@@ -8,7 +8,7 @@
       </v-layout>
     </v-container>
         
-    <img width="100%" src="/images/pages/sr.-Martín.jpg">
+    <img width="100%" alt="Martín Rodríguez Celin" src="/images/pages/sr.-Martín.jpg">
 
     <v-container grid-list-md class="mt-3">
       <v-layout row wrap>
@@ -87,7 +87,7 @@
       </v-layout>
     </v-container>
     
-    <img width="100%" src="/images/pages/pack-logo-sitio-web.jpg">
+    <img width="100%" alt="Diseño de logo y sitio web" src="/images/pages/pack-logo-sitio-web.jpg">
 
     <v-container>
       <v-layout row wrap>
@@ -104,7 +104,7 @@
       </v-layout>
     </v-container>
 
-    <img width="100%" src="/images/pages/Logo-Infriman-Climatizaciones.jpg">
+    <img alt="Logo Infriman Climatizaciones" width="100%" src="/images/pages/Logo-Infriman-Climatizaciones.jpg">
 
     <v-container>
       <v-layout row wrap>

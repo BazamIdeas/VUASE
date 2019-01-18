@@ -4,13 +4,15 @@
       <v-select :items="services" item-text="text" item-value="field" :value="paramsData.servicio" label="Servicio" @change="redirect($event, 'sectors/getAll', 1)" solo></v-select>
     </v-flex>
     <v-flex sm6 md4>
-      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector" :disabled="!(paramsData && paramsData.servicio)" @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
+      <!-- :disabled="!(paramsData && paramsData.servicio)" -->
+      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
     </v-flex>
     <!--<v-flex md4>
       <v-select :items="activities" item-text="text" item-value="field" :value="paramsData.actividad" label="Actividad" :disabled="!(paramsData && paramsData.sector)" @change="redirect($event, 'countries/getAll', 3)" solo></v-select>
     </v-flex>-->
     <v-flex sm6 md4>
-      <v-select :items="countries" item-text="text" item-value="field" :value="paramsData.actividad" label="Pais" :disabled="!(paramsData && paramsData.sector)" @change="redirect($event, false, 3)" solo></v-select>
+      <!-- :disabled="!(paramsData && paramsData.sector)" -->
+      <v-select :items="countries" item-text="text" item-value="field" :value="paramsData.actividad" label="Pais" @change="redirect($event, false, 3)" solo></v-select>
     </v-flex>
     <!--<v-flex md4>
       <v-select :items="locations" item-text="text" item-value="field" :value="paramsData.localidad" label="Localidad" :disabled="!(paramsData && paramsData.pais)" @change="redirect($event, false, 5)" solo></v-select>
@@ -24,6 +26,9 @@
       params: {
         default: null,
         type: Object
+      },
+      count: {
+        default: 0
       }
     },
     data () {
@@ -37,6 +42,28 @@
         this.$store.dispatch('portfolios/getAll', this.paramsData)
       }
     },
+    mounted: function () {
+      if (process.browser) {
+        var lastScrollTop = 0
+        window.onscroll = () => {
+          var st = window.pageYOffset || document.documentElement.scrollTop
+          if (st > lastScrollTop) {
+            var offsetHeight = document.documentElement.offsetHeight
+            var scrollPosition = document.documentElement.scrollTop + window.innerHeight
+
+            // console.log(scrollPosition + 600, offsetHeight)
+            var bottomOfWindow = scrollPosition + 600 >= offsetHeight
+            // console.log(bottomOfWindow)
+            if (bottomOfWindow && this.count >= 9) {
+              // console.log('listing')
+              // console.log(this.paramsData)
+              this.$store.dispatch('portfolios/getAll', this.paramsData)
+            }
+          }
+          lastScrollTop = st <= 0 ? 0 : st // For Mobile or negative scrolling
+        }
+      }
+    },
     computed: {
       services () { return this.$store.getters['services/forSelectField'] },
       sectors () { return this.$store.getters['sectors/forSelectField'] },
@@ -47,15 +74,32 @@
     methods: {
       redirect (event, action, index) {
         if (event === undefined || event === 'undefined') return
-        if (action) this.$store.dispatch(action)
+        /* if (action) this.$store.dispatch(action) */
         let route = this.$router.currentRoute.path.split('/').filter(el => el !== '')
+
         if (route[index]) {
           route.splice(index)
           route[index] = event
           route = '/' + route.join('/')
-        } else {
-          route.push(event)
-          route = '/' + route.join('/')
+          return this.$router.push(route)
+        }
+
+        if (index === 2 || index === 3) {
+          if (!route[1]) {
+            route.push('servicios')
+            if (this.$router.currentRoute.query.no_r) return
+          }
+        }
+
+        if (index === 3 && !route[2]) {
+          route.push('sectores')
+          if (this.$router.currentRoute.query.no_r) return
+        }
+
+        route.push(event)
+        route = '/' + route.join('/')
+        if (index === 2 || index === 3) {
+          route = route + '?no_r'
         }
         this.$router.push(route)
       }

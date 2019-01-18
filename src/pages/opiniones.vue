@@ -13,7 +13,7 @@
         <v-flex xs12 v-for="(testimony, i) in testimonies.slice(0, limit)" :key="i">
           <v-layout row wrap class="mb-xs-3">
             <v-flex xs12 sm4 md3 @click="testimony.active = !testimony.active">
-              <img :src="testimony.logo" class="p-testimony-logo">
+              <img :alt="'Testimonio ' + testimony.company"  :src="testimony.logo" class="p-testimony-logo">
             </v-flex>
 
             <v-flex xs12 sm6 md9>

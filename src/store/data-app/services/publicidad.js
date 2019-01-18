@@ -24,7 +24,7 @@ export const publicidad = {
     }, {
       title: 'ATENCIÓN PERSONALIZADA',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/archivos_listos.svg'
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
@@ -45,13 +45,13 @@ export const publicidad = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Descripción`,
+        description: `Las creaciones pueden ser para revistas, guías, periódicos, etc y las medidas se adaptan a los espacios contratados por el cliente.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo-en-diversos-formatos.svg'
+        icon: '/icons/publicidades.svg'
       }]
     ]
   },
@@ -93,24 +93,29 @@ export const publicidad = {
   ],
   testimonies: [{
     stars: 5,
-    logo: '/icons/papeleria.svg',
-    description: '“Excelente en términos generales... Lo recomiendo ampliamente. Gracias a todo el equipo”'
+    logo: '/images/testimonies/folletos/56.-compubot -min.jpg',
+    company: 'Compublot',
+    description: '“Los diseños han tenido mucho éxito, era lo que esperábamos.”'
   }, {
     stars: 5,
-    logo: '/icons/papeleria.svg',
-    description: '“Ha sido excelente trabajar con ustedes”'
+    logo: '/images/testimonies/folletos/costaserveis-testimonio.jpg',
+    company: 'Costaserveis',
+    description: '“Su trabajo ha sido muy bueno y las implentaciones aun mejores, estamos realmente conformes.”'
   }, {
     stars: 5,
-    logo: '/icons/papeleria.svg',
-    description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada”'
+    logo: '/images/testimonies/folletos/la gateada - flyer -testimonio.jpg',
+    company: 'La Gateada',
+    description: '“Mi experiencia fue muy positiva. Trabajan con mucha responsabilidad y rapidez.”'
   }, {
     stars: 5,
-    logo: '/icons/papeleria.svg',
-    description: '“Profesionales, competentes, rápidos.!”'
+    logo: '/images/testimonies/folletos/la-julia-testimonio.jpg',
+    company: 'La Julia',
+    description: '“Gracias al equipo por la realización del flyer, el resultado nos encanta! Gran trabajo.”'
   }, {
     stars: 5,
-    logo: '/icons/papeleria.svg',
-    description: '“Nuestra empresa está muy agradecida con Liderlogo por su compromiso y resultado final”'
+    logo: '/images/testimonies/folletos/talawin - catalogo.jpg',
+    company: 'Talawin',
+    description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
   topSlider: [
     {
@@ -136,16 +141,12 @@ export const publicidad = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
-      alt: 'creative-process-1'
-    },
-    {
-      src: '/images/carousels/creative-process-2.png',
-      alt: 'creative-process-2'
-    },
-    {
-      src: '/images/carousels/creative-process-3.png',
+      src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
+    },
+    {
+      src: '/images/carousels/creative-process/272.png',
+      alt: 'creative-process-4'
     }
   ],
   steps: [

@@ -1,8 +1,8 @@
 export const imagenCorporativa = {
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tasas, etiquetas y mucho mas (elija entre 65 piezas)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube', 'Elige 6 piezas entre 65 opciones', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
-  description: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel+diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
-  shortDescription: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel+diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
+  description: `Logo original de su entera conformidad + diseños de papelería en formato digital y papel + diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
+  shortDescription: `Logo original de su entera conformidad+diseños de papelería en formato digital y papel + diseño de productos de merchandising + diseño de redes sociales+logo animado.`,
   icon: '/icons/pack-identidad.svg',
   whatWeOffer: [
     {
@@ -92,38 +92,49 @@ export const imagenCorporativa = {
   },
   frequentQuestions: [
     {
-      question: '¿Cuántas series de opciones y perfeccionamientos crean para mi proyecto?',
-      response: 'Usualmente el cliente encuentra en la primer serie de bocetos un diseño de su entera conformidad dado que los mismos han sido creados en exclusiva atendiendo sus necesidades y preferencias, aunque hay casos en los cuales no se encuentra 100% identificado en el diseño y desea recibir más opciones las cuales se realizan hasta sin cargo adicional y hasta lograr su entera aprobación. En el caso que al recibir la primer decena de bocetos no quisiera seguir adelante se le reintegra su dinero sin hacerle pregunta alguna.'
+      question: '¿Cuáles son las piezas de papeleria, redes sociales y merchandising que puedo solicitar que diseñen para mi proyecto?',
+      response: `
+      Usted puede escoger 6 elementos dentro del siguiente listado <br> <br> 
+      <b>Piezas de papelería:</b> <br> <br>  
+      Block de notas 11 X 14,2 CM, Bono o Vale, Caratula CD (cuadrado) 12cm x 12cm, Carpeta A4 ,Credenciales 9x 5cm ,Diploma ,Etiqueta CD (circular) 12cm x 12cm ,Firma de email, Fondo de Email (Solo válido para Microsoft Outlook), Fondo de escritorio (Especificar resolución pixel), Hoja Albarán A4 (A4 – A5 – Carta), Hoja Carta (A4 – Carta), Hoja Factura (A4 – A5 – Carta), Hoja Presupuesto (A4 – Carta) , Hoja Fax (A4 – Carta), Hoja de Presentación Power Point, Recetario (A4 – A5 – Carta), Sello (logo ó logo y datos), Separadores (A4 – Carta), Sobre americano (con ventana ó sin ventana), Sobre A4 (Horizontal ó Vertical), Talonario, Talonarios (A4 – A5 – Carta), Tarjeta de crédito, Tarjeta de cita, Tarjeta de invitación, Tarjeta de regalo, Tarjeta de visita (Horizontal ó Vertical), Tarjetón A5, Tarjetón A5, Tickets. <br><br> 
+      
+      <b>Piezas de redes sociales:</b>
+      <br>  <br>  
+      Facebook
+      <br><br>  
+      Twitter
+      <br><br>  
+      Instagram
+      <br>  <br>  
+      <b>Piezas de merchandising:</b>
+      <br>  <br>  
+      Bolígrafo, Bolsa (Determinar medida), Etiqueta 9 X 5, Etiqueta cierre bolsa, Gorro, Imán 9 X 5, Libreta, Llavero, Manteles individuales, Pad mouse, Paraguas, Pegatina coche,, Pen Drive, Posa Vasos, Reloj, Señalador 7 X 29 CM, Taza
+      `
     }, {
-      question: '¿El logo que adquiero es exclusivo?',
-      response: 'Sí, todos los diseños son únicos y originales, realizados a la medida del cliente bajo su requerimiento. Una vez completado el proceso creativo, se le transfieren a usted los derechos intelectuales sobre el diseño. Complementariamente recomendamos el registro de su marca?'
+      question: '¿En qué formatos recibo mis diseños?',
+      response: `Se entregan en todos los formatos que soportan cada elementos, los formatos habituales son<br>
+      GIF: archivo en formato de imagen ideal para aplicaciones en web.<br>
+      JPG: archivo en formato de imagen para impresión y aplicación en web.<br>
+      AI: archivo vectorial editable del programa Adobe Illustrator, imprimible en cualquier tamaño y material.<br>
+      EPS: archivo vectorial editable habitualmente utilizado en imprentas y compatible con diferentes programas de diseño.<br>
+      Microsoft Word y PDF: archivos para el uso en la oficina y para enviar via email sin necesidad de imprimir ni de enviar físicamente.<br>
+      El logo animado es entregado en FLASH y GIF Animado.`
     }, {
-      question: 'Tengo una idea en mente para mi logo, ¿Ustedes podrían llevarla adelante de manera creativa y profesional?',
-      response: 'Sí, en estos casos dicho concepto es considerado y llevado adelante por el equipo de profesionales a cargo de su proyecto. De manera complementaria a esta idea aportada por el cliente, se confeccionan conceptos originales creados desde un punto de vista objetivo y distante que muchas veces sorprenden al cliente y decantan su proyecto.'
+      question: 'Aun no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
+      response: 'Sí, puede solicitar cualquier cambio antes de la entrega de su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante su proyecto.'
     }, {
-      question: 'No estoy seguro del nombre para mi logo, ¿pueden ayudarme?',
-      response: 'Si, de manera complementaria y gratuita nuestro equipo de profesionales le presentará 10 opciones ideales para su proyecto.'
+      question: '¿Por qué el pack es ecológico?',
+      response: 'Porque en todas los elementos posibles se entregan formatos para enviar via email, publicar en Internet o en redes sociales sin necesidad de imprimir o trasladar fisicamente evitando el uso de papel, tinta y combustibles.'
     }, {
-      question: 'Aun no tengo los datos definitivos de mi empresa, ¿puedo comenzar con el diseño del proyecto?',
-      response: 'Sí, la empresa le brinda un plazo de 2 meses para realizar cualquier cambio en su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto.'
+      question: '¿Por qué el pack me hace ahorrar dinero y tiempo?',
+      response: `Porque en cualquier otra agencia usted debería abonar 2 y 3 veces más por el mismo servicio de diseño papelería, merchandising y redes sociales. LiderLogo apoya a emprendedores que adquieren su logo a que puedan disfrutar del mismo en la presentación profesional de los elementos de su empresa dentro de un mismo sistema gráfico.<br>
+      Los diseños se entregan en formatos digitales listos para usar (ej: hojas de carta, factura, presupuesto, fondos de emails, presentaciones de PowerPoint) y no necesita imprimir ni enviar físicamente para lograr que su marca se presente de manara profesional y efectiva.`
     }, {
-      question: '¿En dónde puedo colocar mi logo?',
-      response: 'El logo se entrega listo para ser utilizado en: Imprenta profesional, documentos de Microsoft Word, Excel, Power Point, Outlook, Access, Open Office, sistemas de gestión empresarial, facturación y contabilidad. Rotulación vehicular, de locales, de envases, de uniformes, publicidades impresas y digitales. Sitios web, e-mails y TV. Pegatinas, sellos y bordados.'
+      question: '¿Por qué el logo animado distingue mi marca?',
+      response: 'El logo animado es lo más moderno que existe en identidad visual corporativa, brinda la dimensión de tiempo y espacio a un diseño que de lo contrario se presenta como “congelado”. Es ideal para las más actuales formas de presentar la marca de manera digital: sitio web, redes sociales, fondos de email, presentaciones multimedia, presentaciones PPT, etc.'
     }, {
-      question: '¿En qué formatos recibo mi logo?',
-      response: 'GIF: archivo en formato de imagen ideal para aplicaciones en web.<br> JPG: archivo en formato de imagen para impresión y aplicación en web.<br> AI: archivo vectorial editable del programa Adobe Illustrator, imprimible en cualquier tamaño y material.<br> EPS: archivo vectorial editable habitualmente utilizado en imprentas y compatible con diferentes programas de diseño. Cualquier otro formato requerido será facilitado, sin cargo adicional.'
-    }, {
-      question: '¿Cuánto tiempo lleva realizar mi logo?',
-      response: 'Los proyectos llevan normalmente entre 1 y 4 días dependiendo la cantidad de conceptos que debemos crear hasta lograr su entera conformidad. El cliente cuenta con un plazo de hasta 2 meses para realizar el proyecto.'
-    }, {
-      question: '¿Cómo recibo la entrega de mi proyecto?',
-      response: 'Es enviado vía email dentro de las primeras 24 hrs. hábiles de comunicada la entera conformidad en el diseño y abonado el saldo de su proyecto.'
-    }, {
-      question: '¿Existe un coste adicional a los informados?',
-      response: 'No, nuestros precios son cerrados y sin costes ocultos.'
-    }, {
-      question: '¿Cómo puedo abonar mi proyecto?',
-      response: 'Se abona 50% al comenzar y el saldo al concluir de la manera que usted prefiera: transferencia, deposito, tarjeta de crédito, PayPal, etc.'
+      question: '¿Dónde puedo utilizar el logo animado?',
+      response: 'El logo animado se puede utilizar en sitio web, redes sociales, fondos de email, presentaciones multimedia, presentaciones PPT, etc.'
     }
   ],
   testimonies: [{
@@ -172,16 +183,24 @@ export const imagenCorporativa = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/imagen-corporativa.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/imagen-corporativa-2.png',
       alt: 'creative-process-2'
     },
     {
-      src: '/images/carousels/creative-process-3.png',
+      src: '/images/carousels/creative-process/imagen-corporativa-3.png',
       alt: 'creative-process-3'
+    },
+    {
+      src: '/images/carousels/creative-process/271.png',
+      alt: 'creative-process-3'
+    },
+    {
+      src: '/images/carousels/creative-process/272.png',
+      alt: 'creative-process-4'
     }
   ],
   steps: [
@@ -211,36 +230,32 @@ export const imagenCorporativa = {
     items1: [
       { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
       { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
-      { img: '/images/services-carousel/pack-identidad/ies puertas del campo instagram.jpg' },
+      { img: '/images/services-carousel/pack-identidad/rocabike-tarjeta.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese-2.jpg' },
       { img: '/images/services-carousel/pack-identidad/presentación de power point.jpg' },
-      { img: '/images/services-carousel/pack-identidad/prounit carpeta.jpg' },
-      { img: '/images/services-carousel/pack-identidad/prounit notas.jpg' },
       { img: '/images/services-carousel/pack-identidad/prounit paraguas.jpg' },
       { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },
       { img: '/images/services-carousel/pack-identidad/surtel.jpg' },
       { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
       { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
-      { img: '/images/services-carousel/pack-identidad/terra-agro-2.jpg' },
       { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit-2.jpg' }
+      { img: '/images/services-carousel/pack-identidad/vincit.jpg' }
     ]
   },
   packs: {
     title: 'NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
       title: 'DÍPTICO',
       url: '/nuestros-servicios/diptico',
       brief: '/nuestros-servicios/diptico/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
-      url: '/nuestros-servicios/diseno-logo-y-pagina-web',
-      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/disenos'
+      url: '/nuestros-servicios/logo-y-pagina-web',
+      brief: '/nuestros-servicios/logo-y-pagina-web/brief/disenos'
     }
   }
 }

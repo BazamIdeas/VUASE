@@ -24,7 +24,7 @@ export const tripticos = {
     }, {
       title: 'ATENCIÓN PERSONALIZADA',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/archivos_listos.svg'
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
@@ -45,13 +45,13 @@ export const tripticos = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Descripción`,
+        description: `El tríptico es una pieza publicitaria creada para brindar información detallada de la empresa y presentación de sus servicios y productos. De 6 caras.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo-en-diversos-formatos.svg'
+        icon: '/icons/triptico.svg'
       }]
     ]
   },
@@ -141,16 +141,20 @@ export const tripticos = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/Triptico_1.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/Triptico_2.png',
       alt: 'creative-process-2'
     },
     {
-      src: '/images/carousels/creative-process-3.png',
+      src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
+    },
+    {
+      src: '/images/carousels/creative-process/272.png',
+      alt: 'creative-process-4'
     }
   ],
   steps: [

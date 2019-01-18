@@ -24,7 +24,7 @@ export const flyerDosCaras = {
     }, {
       title: 'ATENCIÓN PERSONALIZADA',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/archivos_listos.svg'
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
@@ -45,13 +45,13 @@ export const flyerDosCaras = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Descripción`,
+        description: `Pieza publicitaria de dos caras, de 10.5 x 15 cm, 15 x 21 cm o según solicitud de cliente.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
           '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
         ],
-        icon: '/icons/logo-en-diversos-formatos.svg'
+        icon: '/icons/flyer-dos-caras.svg'
       }]
     ]
   },
@@ -141,16 +141,12 @@ export const flyerDosCaras = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process-1.png',
+      src: '/images/carousels/creative-process/flyerDosCaras_1.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process-2.png',
+      src: '/images/carousels/creative-process/flyerDosCaras_2.png',
       alt: 'creative-process-2'
-    },
-    {
-      src: '/images/carousels/creative-process-3.png',
-      alt: 'creative-process-3'
     }
   ],
   steps: [

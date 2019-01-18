@@ -1,6 +1,7 @@
 import { services as servicesHardcoded } from './data-app/services'
 
 export const state = () => ({
+  RightSymbol: ['EUR'],
   groups: [
     {
       icon: '/icons/logo-a-medida.svg',
@@ -19,7 +20,7 @@ export const state = () => ({
           'logo-empresa'
         ],
         [
-          'diseno-logo-y-pagina-web',
+          'logo-y-pagina-web',
           'carousel'
         ],
         [
@@ -41,12 +42,12 @@ export const state = () => ({
       ],
       rows: [
         [
-          'diseno-logo-y-pagina-web',
-          'diseno-pagina-web',
+          'logo-y-pagina-web',
+          'pagina-web',
           'sitio-web-ecommerce'
         ],
         [
-          'diseno-de-app',
+          'desarrollo-de-app',
           'carousel'
         ],
         [
@@ -60,10 +61,10 @@ export const state = () => ({
       layouts: [],
       carousel: [
         { src: 'images/pages/nuestros-servicios/folletos/civefa-publicidad-servicio.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/diptico-(servicios).png' },
+        { src: 'images/pages/nuestros-servicios/folletos/diptico.png' },
         { src: 'images/pages/nuestros-servicios/folletos/flyer-duarte-servicio.png' },
         { src: 'images/pages/nuestros-servicios/folletos/hotel-montecarlo.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/triptico-(servicios).png' }
+        { src: 'images/pages/nuestros-servicios/folletos/triptico.png' }
       ],
       rows: [
         [
@@ -113,7 +114,7 @@ export const state = () => ({
       name: 'Perfiles de Redes Sociales',
       rows: [
         [
-          'diseno-perfil-redes-sociales',
+          'perfil-redes-sociales',
           'carousel'
         ]
       ],

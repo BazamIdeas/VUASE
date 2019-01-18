@@ -20,7 +20,7 @@
           <v-layout class="characteristics home mb-5" row>
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
-                <img height="70px" width="80px" src="/icons/te escuchamos.svg">
+                <img alt="Te escuchamos" height="70px" width="80px" src="/icons/te escuchamos.svg">
               </div>
               <div class="mb-2">
                   <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">BRIEFING</h2> 
@@ -30,7 +30,7 @@
 
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
-                <img height="70px" width="80px" src="/icons/logo-a-medida-pink.svg">
+                <img alt="Logo a medida" height="70px" width="80px" src="/icons/logo-a-medida-pink.svg">
               </div>
               <div class="mb-2">
                   <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">DISEÑOS IILIMITADOS</h2> 
@@ -39,7 +39,7 @@
             </div>
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
-                <img height="70px" width="80px" src="/icons/recomendados-por-grandes-pink.svg">
+                <img alt="Recomendados por grandes" height="70px" width="80px" src="/icons/recomendados-por-grandes-pink.svg">
               </div>
               <div class="mb-2">
                   <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">RECIBE TU PROYECTO</h2> 

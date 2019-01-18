@@ -4,8 +4,8 @@
       <v-flex xs12 class="examples-slider-container pa-0" ref="examplesSliderContainer" :class="{'shadow': shadow}" >
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
           <v-layout row>
-            <v-flex v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center>
-              <v-img :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
+            <v-flex @click="$router.push('/nuestros-servicios/'+example.url)" v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center>
+              <v-img :alt="alt" :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
               <span class="hidden-box" v-if="hovered" :style="'background-color:'+example.color+'; color:'+example.textColor">
                 <img :src="example.icon" :alt="alt" class="mb-2" width="100" height="80" />
                 <h2 class="text-uppercase font-weight-bold title mb-2 text-xs-center" style=" max-width:90%;    white-space: normal; ">{{example.service}}</h2>
@@ -97,6 +97,11 @@
     display: inline-block;
     position:relative;
     transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .example-slider-item * {
+    cursor: pointer;
   }
 
   .shadow .v-image{

@@ -29,6 +29,15 @@
                 </v-layout>
               </v-flex>
             </v-layout>
+            <v-layout row wrap v-if="stationery">
+              <v-flex md11>
+                <v-layout row wrap v-for="sub in stationery" :key="sub.id">
+                  <v-flex md12>
+                    - {{ sub.name }} ({{ sub.quantity }})
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
           </v-flex>
           <v-flex xs8 class="hidden-sm-and-up">
             <h1 class="subheading font-weight-bold text-xs-right"> PRECIO </h1>
@@ -37,10 +46,30 @@
             <h1 class="subheading font-weight-bold text-xs-right"> PAGO INICIAL {{ service ? '(' + service.percentage + '%)' : '' }} </h1>
           </v-flex>
           <v-flex xs8 md2>
-            <h1 class="title font-weight-bold text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(total) }} </h1>
+            <h1 class="title font-weight-bold text-xs-right"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(total) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(total)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(total)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="title font-weight-bold text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(initial) }} </h1>
+            <h1 class="title font-weight-bold text-xs-right"> 
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(initial)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(initial)}}
+                {{service.price.currency.symbol}}
+              </span>
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(initial) }}  -->
+            </h1>
           </v-flex>
         </v-layout>
       </v-card>
@@ -56,10 +85,30 @@
             <h1 class="title font-weight-medium"> Subtotal </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="title font-weight-medium text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(total) }} </h1>
+            <h1 class="title font-weight-medium text-xs-right"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(total) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(total)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(total)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="title font-weight-medium t text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(initial) }} </h1>
+            <h1 class="title font-weight-medium t text-xs-right"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(initial) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(initial)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(initial)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
         </v-layout>
       <!--</v-card>-->
@@ -74,10 +123,32 @@
             <h1 class="title font-weight-medium hidden-sm-and-up"> De..({{ coupon.percentage }}%) </h1>
           </v-flex>
           <v-flex xs4 md3 v-if="coupon">
-            <h1 class="title font-weight-medium text-xs-right"> - {{ service.price.currency.symbol }} {{ formatNumber(discount) }} </h1>
+            <h1 class="title font-weight-medium text-xs-right"> 
+              <!-- - {{ service.price.currency.symbol }} 
+              {{ formatNumber(discount) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                - {{service.price.currency.symbol}}
+                {{formatNumber(discount)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                - {{formatNumber(discount)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
           <v-flex xs4 md3 v-if="coupon">
-            <h1 class="title font-weight-medium t text-xs-right"> - {{ service.price.currency.symbol }} {{ formatNumber(initialDiscount) }} </h1>
+            <h1 class="title font-weight-medium t text-xs-right"> 
+              <!-- - {{ service.price.currency.symbol }} 
+              {{ formatNumber(initialDiscount) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                - {{service.price.currency.symbol}}
+                {{formatNumber(initialDiscount)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                - {{formatNumber(initialDiscount)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
         </v-layout>
       <!--</v-card>-->
@@ -91,10 +162,30 @@
             <h1 class="title font-weight-medium"> I.V.A ({{ $store.state.countries.data.tax }}%) </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="title font-weight-medium text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(iva) }} </h1>
+            <h1 class="title font-weight-medium text-xs-right"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(iva) }} -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(iva)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(iva)}}
+                {{service.price.currency.symbol}}
+              </span>
+             </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="title font-weight-medium t text-xs-right"> {{ service.price.currency.symbol }} {{ formatNumber(initialIva) }} </h1>
+            <h1 class="title font-weight-medium t text-xs-right"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(initialIva) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(initialIva)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(initialIva)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
         </v-layout>
       <!--</v-card>-->
@@ -111,10 +202,30 @@
             <h1 class="headline font-weight-bold"> TOTAL </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="headline font-weight-mediums text-xs-right" v-if="service"> {{ service.price.currency.symbol }} {{ formatNumber(totalWithTaxs) }} </h1>
+            <h1 class="headline font-weight-mediums text-xs-right" v-if="service"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(totalWithTaxs) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(totalWithTaxs)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(totalWithTaxs)}}
+                {{service.price.currency.symbol}}
+              </span>
+            </h1>
           </v-flex>
           <v-flex xs4 md3>
-            <h1 class="headline font-weight-bold t text-xs-right" v-if="service"> {{ service.price.currency.symbol }} {{ formatNumber(initialWithTaxs) }}  </h1>
+            <h1 class="headline font-weight-bold t text-xs-right" v-if="service"> 
+              <!-- {{ service.price.currency.symbol }} {{ formatNumber(initialWithTaxs) }}  -->
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+                {{service.price.currency.symbol}}
+                {{formatNumber(initialWithTaxs)}}
+              </span>
+              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+                {{formatNumber(initialWithTaxs)}}
+                {{service.price.currency.symbol}}
+              </span> 
+            </h1>
           </v-flex>
         </v-layout>
       <!--</v-card>-->
@@ -234,6 +345,23 @@
 
         return services
       },
+      stationery () {
+        const services = []
+
+        if (!this.brief.subServices) return services
+
+        for (let subService of this.brief.subServices) {
+          let subServices = this.$store.state.services.list
+          for (let sub of subServices) {
+            if (subService.slug === sub.slug) {
+              sub.quantity = subService.quantity
+              services.push(sub)
+            }
+          }
+        }
+
+        return services
+      },
       total () {
         let total = 0
 
@@ -251,6 +379,12 @@
           }
         } else {
           total += this.service.price.value
+
+          if (this.stationery) {
+            for (let sta of this.stationery) {
+              total += sta.price.value * sta.quantity
+            }
+          }
         }
 
         return total
@@ -284,10 +418,10 @@
 
         if (this.brief.subServices) {
           for (let subService of this.brief.subServices) {
-            cartObject.services.push({ id: subService.id, quantity: 1 })
+            cartObject.services.push({ id: subService.id, quantity: subService.quantity || 1 })
           }
         } else {
-          cartObject.services.push({ id: this.service.id, quantity: 1 })
+          cartObject.services.push({ id: this.service.id, quantity: this.service.quantity || 1 })
         }
 
         return cartObject

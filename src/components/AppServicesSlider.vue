@@ -6,7 +6,7 @@
           <v-layout row>
             <v-flex v-for="(group, i) in groupsServices" :key="i" class="service-slider-item" align-content-center>
               <v-btn flat class="ma-0 service-slider-item-button" :class="{ 'selected': i === selected }" @click="selectGroup(i, $event)" large>
-                <img v-if="group.icon" :src="group.icon" height="40" width="50">
+                <img alt="Icono Servicio Liderlogo" v-if="group.icon" :src="group.icon" height="40" width="50">
                 <span class=" ml-3 " >{{ group.name }}</span>
               </v-btn>
             </v-flex>

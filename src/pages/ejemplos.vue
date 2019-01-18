@@ -4,19 +4,18 @@
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
         <v-flex xs12>
-          <AppFilterExamplesForm :params="params"/>
+          <AppFilterExamplesForm :params="params" :count="portfolios.length" />
         </v-flex>
-        <v-layout xs12 row wrap class="portfolios">
-          <v-flex v-if="portfolios && portfolios.length" v-for="portfolio in portfolios" :key="portfolio.id" xs12 sm6 md4 class="pr-2">
-            <v-card :to="'/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug" height="auto">
+        <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
+          <v-flex @click="goPortfolio('/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug, portfolio)" v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2 pointer">
+            <v-card height="auto">
               <div class="img-cuadrada-ejemplos-container" >
-                  <svg role="img" :aria-labelledby="alt" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
+                  <svg role="img" :aria-label="portfolio.name + ' Imagen ' + key" :alt="portfolio.name + ' Imagen ' + key" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
                 <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
-                  {{portfolio.service.name}} -
-                  {{portfolio.location.country.name}}
+                  {{portfolio.service.name}} - {{portfolio.location.name}}
                 </p>
               </v-flex>
             </v-card>
@@ -35,7 +34,6 @@
     data () {
       return {
         urlHosting: 'http://api.liderlogos.com/v1/images/slug/',
-        offset: 0,
         alt: 'Liderlogo'
       }
     },
@@ -43,23 +41,25 @@
       return { params: params }
     },
     async fetch ({ store, params }) {
-      await store.dispatch('services/getAll')
-      if (params.servicio) await store.dispatch('sectors/getAll')
+      /* if (params.servicio) await store.dispatch('sectors/getAll')
       if (params.sector) await store.dispatch('sectors/activities/getAll')
       if (params.actividad) await store.dispatch('countries/getAll')
-      if (params.pais) await store.dispatch('countries/locations/getAll')
+      if (params.pais) await store.dispatch('countries/locations/getAll') */
+
+      await store.dispatch('services/getAll')
+      await store.dispatch('sectors/getAll')
+      // await store.dispatch('sectors/activities/getAll')
+      await store.dispatch('countries/getAll')
+      // await store.dispatch('countries/locations/getAll')
       await store.dispatch('portfolios/getAll', params)
     },
-    mounted: function () {
-      if (process.browser) {
-        window.onscroll = () => {
-          let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight
-          this.params.offset = this.portfolios.length
-
-          if (bottomOfWindow && this.params.offset >= 8) {
-            this.$store.dispatch('portfolios/getAll', this.params)
-          }
+    methods: {
+      goPortfolio (url, portfolio) {
+        if (process.browser) {
+          localStorage.setItem('liderlogo_selected_portfolio', JSON.stringify(portfolio))
         }
+
+        this.$router.push(url)
       }
     },
     head () {
@@ -79,5 +79,9 @@
 <style>
 .ejemplos  .v-text-field__details {
   display: none;
+}
+
+.pointer{
+  cursor: pointer;
 }
 </style>

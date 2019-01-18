@@ -10,7 +10,7 @@
           <v-layout row wrap>
             <v-flex md3 xs6 v-for="pkg in slugsPackages" :key="pkg" class="px-2 mb-2">
               <v-card class="pa-3 package" :class="{ 'selected': selectedPkg(pkg) }">
-                <div class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
+                <div role="img" aria-label="Liderlogo" class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
                 </div>
                 <div class="package-title">
                   <p class="body-2 text-xs-center mb-0">{{ packages[pkg].title }}</p>
@@ -24,7 +24,7 @@
               <v-card class="py-1 service-package" :class="{ 'selected': selectedAddon(service.slug) }">
                 <v-layout row wrap @click="selectAddon(service.slug)">
                   <v-flex xs3 class="service-package-img">
-                    <img :src="'/images/quote/services/' + service.slug + '.svg'" height="50">
+                    <img :alt="service.name + ' Liderlogo'" :src="'/images/quote/services/' + service.slug + '.svg'" height="50">
                   </v-flex>
                   <v-flex xs6 class="service-package-name">
                     <p class="body-2 mb-0" style="line-height: 15px;">{{ service.name }}</p>
@@ -41,7 +41,7 @@
             <v-flex md3 xs6 v-for="service in addons" v-if="addonsObject[service.slug].section === 'functionalities'" :key="service.slug" class="px-2 mb-2">
               <v-card class="service-package" :class="{ 'selected': selectedAddon(service.slug) }"  >
                 <div class="px-3 pt-2" @click="selectAddon(service.slug)">
-                  <img :src="'/images/quote/services/' + service.slug + '.svg'">
+                  <img :alt="service.name + ' Liderlogo'" :src="'/images/quote/services/' + service.slug + '.svg'">
                 </div>
                 <v-divider light></v-divider>
                 <div class="package-title px-1">
@@ -59,15 +59,48 @@
               <tbody>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="addon.slug === 'diseno-y-desarrollo-de-seccion-web'">
                   <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} ({{ sections }}) </td>
-                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> {{ addon.price.currency.symbol }}  {{ addon.price.value * sections }}</td>
+                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> 
+                    
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) === -1">
+                      {{addon.price.currency.symbol}}
+                      {{addon.price.value * sections}}
+                    </span>
+
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) !== -1">
+                      {{addon.price.value * sections}}
+                      {{addon.price.currency.symbol}}
+                    </span>
+                  </td>
                 </tr>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="selectedAddon(addon.slug)">
                   <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} </td>
-                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> {{ addon.price.currency.symbol }}  {{ addon.price.value }}</td>
+                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> 
+                    {{ addon.price.currency.symbol }}  {{ addon.price.value }}
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) === -1">
+                      {{addon.price.currency.symbol}}
+                      {{addon.price.value}}
+                    </span>
+
+                    <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) !== -1">
+                      {{addon.price.value}}
+                      {{addon.price.currency.symbol}}
+                    </span>
+                  </td>
                 </tr>
                 <tr class="hidden-xs-only">
                   <td class="title font-weight-bold py-1 pl-2"> TOTAL </td>
-                  <td class="title font-weight-bold text-xs-center py-1 pr-2">  {{ countryData.currency.symbol }} {{ total }}</td>
+                  <td class="title font-weight-bold text-xs-center py-1 pr-2">  
+                    <!-- {{ countryData.currency.symbol }} {{ total }} -->
+                    <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) === -1">
+                      {{countryData.currency.symbol}}
+                      {{total}}
+                    </span>
+
+                    <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) !== -1">
+                      {{total}}
+                      {{countryData.currency.symbol}}
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -81,7 +114,16 @@
     </v-container>
     <v-toolbar class="hidden-sm-and-up" fixed style="top: inherit;bottom: 0;">
       <div class="title font-weight-bold text-xs-center">
-        {{ countryData.currency.symbol }} {{ total }}
+        <!-- {{ countryData.currency.symbol }} {{ total }} -->
+        <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) === -1">
+          {{countryData.currency.symbol}}
+          {{total}}
+        </span>
+
+        <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) !== -1">
+          {{total}}
+          {{countryData.currency.symbol}}
+        </span>
       </div>
       <v-spacer></v-spacer>
       <div class="">
@@ -104,20 +146,26 @@
       let addons = this.$storage.get('quoteAddonsOptions')
 
       if (packages) this.packagesSelected = packages
-
-      console.log(this.params.servicio)
+      if (addons) this.addonsSelected = addons
 
       this.sections = 0
 
       for (const pkg of this.packagesSelected) {
         if (this.packages[pkg]) {
-          this.sections += this.packages[pkg].sections
+          for (let addon of this.packages[pkg].services) {
+            if (addon === 'diseno-y-desarrollo-de-seccion-web') {
+              this.sections += this.packages[pkg].sections
+            } else if (!this.addonsSelected.includes(addon)) {
+              this.addonsSelected.push(addon)
+            }
+          }
         }
       }
 
-      if (addons) this.addonsSelected = addons
+      if (this.params.servicio === 'logo-y-pagina-web') this.addonsSelected.push('logo-solo-para-web')
 
-      if (this.params.servicio === 'diseno-logo-y-pagina-web') this.addonsSelected.push('logo-solo-para-web')
+      this.$storage.set('quotePacksOptions', this.packagesSelected)
+      this.$storage.set('quoteAddonsOptions', this.addonsSelected)
     },
     data () {
       return {
@@ -128,58 +176,58 @@
             title: 'Promocionar un servicio o producto',
             description: 'Es una herramienta sumamente eficiente para obtener nuevos clientes por medio de acciones marketing online. Tiene como principal beneficio lograr nuevos clientes potenciales y/o obtener que se realice una acción determinada que incremente sus ventas e interacción con el mercado.',
             sections: 1,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario', 'hosting-por-un-ano']
           },
           'presentar-mi-empresa': {
             title: 'Presentar mi empresa',
             description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
             sections: 2,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano']
           },
           'ofrecer-multiples-servicios': {
             title: 'Ofrecer múltiples servicios',
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser: reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones']
           },
           'dar-a-conocer-mis-proyectos-realizados': {
             title: 'Dar a conocer mis proyectos realizados',
             description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
             sections: 3,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'galeria-de-proyectos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'galeria-de-proyectos']
           },
           'publicar-inmuebles-para-alquiler-o-venta': {
             title: 'Publicar inmuebles para alquilar o venta',
             description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'plataforma-inmobiliaria']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'plataforma-inmobiliaria']
           },
           'exhibir-un-menu-de-platos-o-comidas': {
             title: 'Exhibir un menú de platos / comidas',
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
             sections: 3,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos']
           },
           'mostrar-un-catalogo-de-productos': {
             title: 'Mostrar un catálogo de productos',
             description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos']
           },
           'vender-mis-productos-online': {
             title: 'Vender mis productos online',
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos(Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce']
           },
           'compartir-informacion': {
             title: 'Compartir informacion y archivos con mis clientes',
-            description: 'Es la opción ideal para vender en línea.',
+            description: 'Tus clientes podrán acceder a una sección privada mediante un usuario y contraseña, desde allí desde podrá descargar archivos y documentos ordenados por categorías',
             sections: 2,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'dominio-por-un-ano', 'catalogo-productos', 'ecommerce', 'chat']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'area-privada-para-clientes', 'hosting-por-un-ano']
           },
-          'perzonalizado': {
-            title: 'Perzonalizado',
+          'personalizado': {
+            title: 'Personalizado',
             description: '',
             sections: 0,
             services: []
@@ -233,9 +281,9 @@
     },
     methods: {
       selectPack (slugPack) {
-        if (slugPack === 'perzonalizado') return
+        if (slugPack === 'personalizado') return
 
-        if (this.packagesSelected.includes('perzonalizado')) {
+        if (this.packagesSelected.includes('personalizado')) {
           this.packagesSelected = []
           this.addonsSelected = []
         }
@@ -273,7 +321,7 @@
           this.addonsSelected.push(slugAddon)
         }
 
-        this.packagesSelected = ['perzonalizado']
+        this.packagesSelected = ['personalizado']
         this.$storage.set('quotePacksOptions', this.packagesSelected)
         this.$storage.set('quoteAddonsOptions', this.addonsSelected)
       },
@@ -341,11 +389,11 @@
   .package.selected .package-title p {
     color: #ffffff;
   }
-
+/*
   .service-package {
-    /*border: 2px solid grey;*/
+    border: 2px solid grey;
   }
-
+*/
   .service-package.selected {
     border: 2px solid #0081c1;
   }
