@@ -118,8 +118,8 @@ export const disenoApp = {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
       subtitle: '50% OFF EN DISEÑO DE LOGO',
-      url: '/nuestros-servicios/diseno-logo-y-pagina-web',
-      brief: '/nuestros-servicios/diseno-logo-y-pagina-web/brief/disenos'
+      url: '/nuestros-servicios/logo-y-pagina-web',
+      brief: '/nuestros-servicios/logo-y-pagina-web/brief/disenos'
     }
   }
 }

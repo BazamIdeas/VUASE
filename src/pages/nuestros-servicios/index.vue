@@ -26,7 +26,7 @@
               :url="service.slug" 
               :addon-service="service.dataService.addonService"
               :start-with="service.dataService.startWith"
-            />              
+            />
           </v-flex>
           <v-flex xs12 md6 v-if="layout.carousel" class="hidden-sm-and-down">
             <v-layout align-center justify-center row class="container-carousel">

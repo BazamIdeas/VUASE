@@ -3,7 +3,7 @@
     <v-container class="py-5 mt-5">
       <v-layout row class="py-5">
         <v-flex xs12 md4 offset-md1>
-          <v-img src="images/mujer-liderlogo.png"></v-img>
+          <v-img :alt="'Gracias' + this.por + 'Liderlogo'" src="images/mujer-liderlogo.png"></v-img>
         </v-flex>
         <v-flex xs12 md7>
           <v-layout>

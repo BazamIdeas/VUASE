@@ -70,7 +70,7 @@ export const state = () => ({
       'logo-empresa',
       'papeleria'
     ],
-    'diseno-pagina-web': [
+    'pagina-web': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'website_about_us' },
       { label: 'Si ya cuenta con un sitio web, por favor indíquenos ¿Cuál es?', type: 'text', name: 'website_oldsite' },
       { label: 'Describa cada página o sector de su sitio web y lo que desee comunicar en cada una', type: 'textarea', name: 'website_description' },
@@ -78,9 +78,9 @@ export const state = () => ({
       { label: '¿Tiene redes sociales para colocar en su sitio web? ¿Cuáles?', type: 'checkbox', name: 'website_social_accounts', options: ['Facebook ', 'Twitter', 'Instagram', 'Google+', 'Youtube', 'Linkedin', 'Flicker', 'Pinterest', 'Otras'] },
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto?', type: 'file', name: 'website_files' }
     ],
-    'diseno-logo-y-pagina-web': [
+    'logo-y-pagina-web': [
       'logo-empresa',
-      'diseno-pagina-web'
+      'pagina-web'
     ],
     'rotulo': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'rolls_about_us' },
@@ -107,7 +107,7 @@ export const state = () => ({
     'tripticos': ['diseno-folletos-dipticos-tripticos'],
     'catalogo': ['diseno-folletos-dipticos-tripticos'],
     'publicidad': ['diseno-folletos-dipticos-tripticos'],
-    'diseno-perfil-redes-sociales': [
+    'perfil-redes-sociales': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'social_profiles_about_us' },
       { label: '¿En qué red social desea aplicar el diseño de su perfil?', type: 'checkbox', name: 'social_profiles_accounts', options: ['Facebook ', 'Twitter', 'Instagram', 'Google+', 'Youtube', 'Linkedin', 'Flicker', 'Pinterest', 'Otras'] },
       { label: '¿Tiene su logotipo y alguna imagen que le agrada como fondo de portada? ¿O algún ejemplo que le agrade?', type: 'file', name: 'social_profiles_files' }
@@ -122,7 +122,7 @@ export const state = () => ({
         label: 'Indique cuáles son sus 6 piezas de papelería, merchandising y redes sociales ', type: 'select_tags', name: 'stationery_pieces', options: ['Block de notas 11 X 14, 2 CM', 'Bono o Vale', 'Caratula CD(cuadrado) 12cm x 12cm', 'Carpeta A4', 'Credenciales 9x 5cm', 'Diploma', 'Firma de email', 'Fondo de Email(Solo válido para Microsoft Outlook)', 'Fondo de escritorio(Especificar resolución pixel)', 'Hoja Albarán A4(A4 – A5 – Carta)', 'Hoja Carta(A4 – Carta)', 'Hoja Factura(A4 – A5 – Carta)', 'Hoja Presupuesto(A4 – Carta)', 'Hoja Fax(A4 – Carta)', 'Hoja de Presentación Power Point', 'Señalador 7 X 29 CM', 'Etiqueta CD(circular) 12cm x 12cm', 'Recetario(A4 – A5 – Carta)', 'Sello(logo ó logo y datos)', 'Separadores(A4 – Carta)', 'Sobre americano(con ventana ó sin ventana)', 'Sobre A4(Horizontal ó Vertical)', 'Talonario', 'Talonarios(A4 – A5 – Carta)', 'Tarjeta de crédito', 'Tarjeta de cita', 'Tarjeta de invitación', 'Tarjeta de regalo', 'Tarjeta de visita(Horizontal ó Vertical)', 'Tarjetón A5Tickets', 'Facebook', 'Taza', 'Twitter', 'Instagram', 'Bolígrafo', 'Bolsa(Determinar medida)', 'Etiqueta 9 X 5', 'Etiqueta cierre bolsa', 'GorroImán 9 X 5', 'Libreta', 'Manteles individuales', 'Pad mouse', 'Paraguas', 'Pegatina coche', 'Pen Drive', 'Posa Vasos', 'Reloj']
       }
     ],
-    'diseno-de-app': [
+    'desarrollo-de-app': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'app_about_us' },
       { label: '¿Qué tipo de app necesita?', type: 'checkbox', name: 'app_type', options: ['Android', 'Ios', 'Android + Ios'] },
       { label: '¿Qué diseño quieres que tenga su App?', type: 'checkbox', name: 'app_design', options: ['Interfaz sencilla', 'Interfaz personalizada ', 'Interfaz replicada de la web'] },

@@ -109,6 +109,6 @@ export const actions = {
     return this.$axios.$post('leads', params)
   },
   newsletter ({ dispatch, commit }, params) {
-    return this.$axios.$post('newsletter', params)
+    return this.$axios.$post('leads/newsletter', params)
   }
 }

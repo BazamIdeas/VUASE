@@ -26,6 +26,9 @@
       params: {
         default: null,
         type: Object
+      },
+      count: {
+        default: 0
       }
     },
     data () {
@@ -37,6 +40,28 @@
       '$route': function (to, from) {
         this.paramsData = to.params
         this.$store.dispatch('portfolios/getAll', this.paramsData)
+      }
+    },
+    mounted: function () {
+      if (process.browser) {
+        var lastScrollTop = 0
+        window.onscroll = () => {
+          var st = window.pageYOffset || document.documentElement.scrollTop
+          if (st > lastScrollTop) {
+            var offsetHeight = document.documentElement.offsetHeight
+            var scrollPosition = document.documentElement.scrollTop + window.innerHeight
+
+            // console.log(scrollPosition + 600, offsetHeight)
+            var bottomOfWindow = scrollPosition + 600 >= offsetHeight
+            // console.log(bottomOfWindow)
+            if (bottomOfWindow && this.count >= 9) {
+              // console.log('listing')
+              // console.log(this.paramsData)
+              this.$store.dispatch('portfolios/getAll', this.paramsData)
+            }
+          }
+          lastScrollTop = st <= 0 ? 0 : st // For Mobile or negative scrolling
+        }
       }
     },
     computed: {

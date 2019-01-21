@@ -9,14 +9,14 @@
             hide-controls hide-delimiters 
             style="height: 100%; width:100%;">
             <v-carousel-item v-for="(item, i) in portfolio.images" :key="i"   :transition="'slide-x-transition'">
-              <svg class="img-cuadrada-ejemplos" viewBox="0 0 100 100 " :style="'background: url(' + urlHosting + item.slug +')'"></svg>
+              <svg class="img-cuadrada-ejemplos" viewBox="0 0 100 100 " role="img" :aria-label="portfolio.name + ' Imagen ' + i" :alt="portfolio.name + ' Imagen ' + i" :style="'background: url(' + urlHosting + item.slug +')'"></svg>
             </v-carousel-item>
           </v-carousel>
         </v-flex>
             
         <!-- DESKTOP -->
         <v-flex hidden-sm-and-down class="mt-5" xs12 md7 v-if="portfolio.images && portfolio.images.length > 1">
-          <img class="mt-3" :src="urlHosting + image.slug" v-for="image in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
+          <img class="mt-3" :alt="portfolio.name + ' Imagen ' + i" :src="urlHosting + image.slug" v-for="(image, i) in portfolio.images.slice(1, portfolio.images.length)" :key="image.slug" style="max-width:100%; display:block; margin:auto;">
         </v-flex>
         <v-flex xs12 md5 class="pl-3 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
           <div class="box-sticky">
@@ -54,10 +54,10 @@
         <!-- RELACIONADOS -->
         <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
         <v-layout v-if="portfolios && portfolios.length" xs12 row wrap class="portfolios mb-5">
-          <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="item in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
+          <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="(item, key) in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
             <v-card>
               <div class="img-cuadrada-ejemplos-container" >
-                  <svg class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
+                  <svg role="img" :aria-label="item.name + ' Imagen ' + key" :alt="item.name + ' Imagen ' + key" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
                 <h2 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h2>
@@ -113,7 +113,7 @@
         const brief = { service: { id: this.portfolio.service.id, name: this.portfolio.service.name, slug: this.portfolio.service.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
         var target = null
         // TODO: PENDIENTE
-        if (this.serviceSlug === 'diseno-logo-y-pagina-web' || this.serviceSlug === 'diseno-pagina-web') {
+        if (this.serviceSlug === 'logo-y-pagina-web' || this.serviceSlug === 'pagina-web') {
           brief.subServices = []
           target = 'cotizacion'
         } else {
@@ -159,7 +159,7 @@
       },
       briefUrl () {
         /* TODO: */
-        if (this.service === 'diseno-logo-y-pagina-web' || this.service === 'diseno-pagina-web') {
+        if (this.service === 'logo-y-pagina-web' || this.service === 'pagina-web') {
           return 'cotizacion'
         } else {
           return 'brief/disenos'

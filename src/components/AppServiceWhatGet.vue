@@ -19,7 +19,7 @@
                 <v-flex>
                   <v-layout  xs12 align-center justify-start row fill-height class="mb-2">
                   <v-flex xs3 class="mr-2 ml-0">
-                    <img :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'">
+                    <img alt="Icono Servicio Liderlogo" :src="item.icon" :height="!justOne ? '70px' : '110px'" :width="!justOne ? '70px' : '110px'">
                   </v-flex>
                   <v-flex class="mr-3">
                     <h2 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h2>
@@ -42,13 +42,23 @@
           <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
             <v-layout row wrap d-flex text-xs-center column class="ml-4" :class="{'max': !service.whatYouGet.noMaxWidth}">
               <v-flex class="ml-2">
-                  <img :src="service.whatYouGet.img"  width="100%"></img>
+                  <img alt="Que te llevas Liderlogo" :src="service.whatYouGet.img"  width="100%"></img>
                   <h3 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
                     PRECIO CERRADO EN:
                   </h3>
                   <v-layout xs12 row d-flex class="mt-2 box-price" v-if="!service.whatYouGet.notShowPrice">
                     <v-flex xs6 text-xs-right v-if="finalPercertage > 0"> 
-                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
+                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">
+                        <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) === -1">
+                          {{price.currency.symbol}}
+                          {{price.value}}
+                        </span>
+
+                        <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) !== -1">
+                          {{price.value}}
+                          {{price.currency.symbol}}
+                        </span>
+                      </h3>
                     </v-flex>
                     <v-flex xs12 v-if="!finalPercertage > 0"> 
                       <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>

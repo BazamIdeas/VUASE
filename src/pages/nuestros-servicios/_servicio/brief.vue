@@ -120,7 +120,7 @@
           return
         }
 
-        if (this.brief.service.slug === 'diseno-de-app' || window.location.hash === '#no-carrito') {
+        if (this.brief.service.slug === 'desarrollo-de-app' || window.location.hash === '#no-carrito') {
           this.$router.push('/gracias')
         } else {
           this.nextStep(this.stepData.next)

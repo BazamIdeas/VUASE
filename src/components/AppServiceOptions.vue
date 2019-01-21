@@ -13,7 +13,7 @@
                 <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index] ? 'selected-option' : '']">
-                    <img @click="openOption(items[index])" :src="items[index].icon"/>
+                    <img  alt="Icono Servicio Liderlogo" @click="openOption(items[index])" :src="items[index].icon"/>
                     <h4 @click="openOption(items[index])" class="px-2">{{items[index].title}}</h4>
                     <v-btn @click="selectOptionItem(index, items[index].slug)" flat class="ma-0 px-2 know-more" large>
                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
@@ -25,7 +25,7 @@
                 <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index+3] ? 'selected-option' : '']">
-                    <img  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
+                    <img alt="Icono Servicio Liderlogo"  @click="openOption(items[index+3])" :src="items[index+3].icon"/>
                     <h4 @click="openOption(items[index+3])"  class="px-2">{{items[index+3].title}}</h4>
                     <v-btn @click="selectOptionItem(index+3, items[index+3].slug)" flat class="ma-0 px-2 know-more" large>
                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
@@ -37,7 +37,7 @@
                 <v-flex class="service-option" v-for="(n, index) in 3" :key="index" xs12 sm4 align-center d-flex justify-center>  
                   <svg class="service-option-background" viewBox="0 0 150 100"></svg> 
                   <div class="service-option-container" :class="[selecteds[index+6] ? 'selected-option' : '']">
-                    <img @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
+                    <img  alt="Icono Servicio Liderlogo" @click="openOption(items[index+6])" :src="items[index+6].icon" title="Conocer más"/>
                     <h4 @click="openOption(items[index+6])" class="px-2" title="Conocer más">{{items[index+6].title}}</h4>
                     <v-btn  @click="selectOptionItem(index+6, items[index+6].slug)"  flat class="ma-0 px-2 know-more" large>
                       Agregar&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
@@ -56,7 +56,7 @@
                   <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs12 sm6>
                       <v-layout row>
                         <v-flex xs2 offset-xs1>
-                          <img :src="popItem.icon"/>
+                          <img alt="Icono Servicio Liderlogo" :src="popItem.icon"/>
                         </v-flex>
                         <v-flex xs9>
                           {{popItem.text}}
@@ -78,7 +78,13 @@
                 </h2>
                 <v-layout row wrap d-flex class="mt-2" >
                   <v-flex xs12 sm4 offset-sm1 >
-                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">{{price.currency.symbol}} {{finalPrice()}}</h2>
+                    <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">
+                      {{ 
+                        $store.state.services.RightSymbol.indexOf(price.currency.iso) === -1 ? 
+                        price.currency.symbol + ' ' + finalPrice() : 
+                        finalPrice() + ' ' + price.currency.symbol
+                      }}
+                    </h2>
                   </v-flex>
                   <v-layout xs6 row d-flex class="mr-3">
                     <v-flex xs6 style="border-right:1px solid silver;">
@@ -406,7 +412,7 @@
           icon: '/icons/packages/vender-mis-productos.svg',
           title: 'VENDER MIS PRODUCTOS ONLINE',
           slug: 'vender-mis-productos-online',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce', 'chat'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce'],
           qty: 5,
           open: {
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
@@ -426,10 +432,6 @@
               {
                 icon: '/icons/addons/carros-de-compra.svg',
                 text: 'Carro de compras'
-              },
-              {
-                icon: '/icons/addons/chat.svg',
-                text: 'Chat'
               },
               {
                 icon: '/icons/addons/wordpress.svg',
@@ -497,7 +499,7 @@
         }
       ]
 
-      let toPath = this.logo ? 'diseno-logo-y-pagina-web' : 'diseno-pagina-web'
+      let toPath = this.logo ? 'logo-y-pagina-web' : 'pagina-web'
       return {
         items: items,
         pop: null,
