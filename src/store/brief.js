@@ -210,6 +210,8 @@ export const actions = {
       return false
     }
 
+    console.log(token)
+
     if (token) {
       vueInstance.$cookies.set('token_session', token)
     }

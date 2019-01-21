@@ -44,7 +44,7 @@
                 <h1 class="text-uppercase font-weight-bold">folletos y publicidades</h1>
               </v-flex>
               <v-flex @click="$router.push('/nuestros-servicios?tab=3#servicios')"  xs12 md12 class="pt-2 pb-3 service-icon-box" style="height: 200px">
-                <im  alt="Rotulo Servicio Liderlogo" src="/icons/rotulo_silver.svg" class="out" width="80" height="80"  />
+                <img  alt="Rotulo Servicio Liderlogo" src="/icons/rotulo_silver.svg" class="out" width="80" height="80"  />
                 <img alt="Rotulo Servicio Liderlogo" src="/icons/rotulo_hover.svg" class="in" width="80" height="80" />
                 <h1 class="text-uppercase font-weight-bold  mt-1">rótulos</h1>
               </v-flex>

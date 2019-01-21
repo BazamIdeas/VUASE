@@ -27,7 +27,7 @@
           vueInstance.$axios.$post('orders', orderObject, {
             headers: {
               'Cart-Id': cart.cookie,
-              'Authorization': vueInstance.$storage.get('token_session')
+              'Authorization': vueInstance.$cookies.get('token_session')
             }
           }).then(function (data) {
             vueInstance.$router.push('/gracias?por=compra')
