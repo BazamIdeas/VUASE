@@ -199,6 +199,11 @@ export const getters = {
   },
   forSelectField (state) {
     let formattedServices = state.list.map(x => { return { text: x.name, field: x.slug } })
+
+    formattedServices = formattedServices.filter((value, index) => {
+      return !state.addonsSlugs.includes(value.field)
+    })
+
     return [{ text: 'Todos los servicios', field: 'servicios' }].concat(formattedServices)
   },
   addons (state) {
