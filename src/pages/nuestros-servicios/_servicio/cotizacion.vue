@@ -58,8 +58,8 @@
             <table width="100%">
               <tbody>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="addon.slug === 'diseno-y-desarrollo-de-seccion-web'">
-                  <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} ({{ sections }}) </td>
-                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> 
+                  <td class="caption py-1 pl-2 addon-name-table-price" style="width: 70%;"> {{ addon.name }} ({{ sections }}) </td>
+                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2" style="font-size: 12px !important;"> 
                     
                     <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) === -1">
                       {{addon.price.currency.symbol}}
@@ -73,9 +73,8 @@
                   </td>
                 </tr>
                 <tr v-for="(addon, index) in addons" :key="index" v-if="selectedAddon(addon.slug)">
-                  <td class="body-2 py-1 pl-2 addon-name-table-price"> {{ addon.name }} </td>
-                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2"> 
-                    {{ addon.price.currency.symbol }}  {{ addon.price.value }}
+                  <td class="caption py-1 pl-2 addon-name-table-price" style="width: 70%;"> {{ addon.name }} </td>
+                  <td class="body-1 font-weight-bold text-xs-center py-1 pr-2" style="font-size: 12px !important;">
                     <span v-if="$store.state.services.RightSymbol.indexOf(addon.price.currency.iso) === -1">
                       {{addon.price.currency.symbol}}
                       {{addon.price.value}}
@@ -88,7 +87,7 @@
                   </td>
                 </tr>
                 <tr class="hidden-xs-only">
-                  <td class="title font-weight-bold py-1 pl-2"> TOTAL </td>
+                  <td class="title font-weight-bold py-1 pl-2" style="width: 70%;"> TOTAL </td>
                   <td class="title font-weight-bold text-xs-center py-1 pr-2">  
                     <!-- {{ countryData.currency.symbol }} {{ total }} -->
                     <span v-if="$store.state.services.RightSymbol.indexOf(countryData.currency.iso) === -1">
