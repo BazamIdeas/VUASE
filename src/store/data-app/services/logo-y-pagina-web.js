@@ -205,11 +205,10 @@ export const logoWeb = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/logo-web/meraki - web 640.jpg' },
-      { img: '/images/services-carousel/logo-web/mudanzas armel - web 640.jpg' },
-      { img: '/images/services-carousel/logo-web/oclls - web 640.jpg' },
-      { img: '/images/services-carousel/logo-web/toni llinas web escritorio.jpg' },
-      { img: '/images/services-carousel/logo-web/vincit-web.jpg' }
+      { img: '/images/services-carousel/logo-y-web/barna-students-logo-y-sitio-web.jpg' },
+      { img: '/images/services-carousel/logo-y-web/todo-ok-logo-y-sitio-web.jpg' },
+      { img: '/images/services-carousel/logo-y-web/vincit-logo-y-sitio-web.jpg' },
+      { img: '/images/services-carousel/logo-y-web/arquitectura-logo-y-sitio-web.jpg' }
     ]
   },
   hideWhatGet: true

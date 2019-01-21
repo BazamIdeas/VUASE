@@ -32,7 +32,7 @@ export const redisenoLogo = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
+    img: '/images/pages/rediseno-logo/que-te-llevas-rediseno-de-logo.png',
     color: 'black',
     columns: [
       [{
@@ -210,16 +210,15 @@ export const redisenoLogo = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/41.-aquafrost mock up 3.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/42.-areté ingeniería 3.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/43.-arq. sin limites mock up 3.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/44.-comercial andres mock up 2.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/45.-dulce-detalles-2.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/46.-mock up 2px.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/47.-mock up 3 berenguel.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/48.-mock up 3 gloss.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/blackbird.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/bolgat.jpg' }
+      { img: '/images/services-carousel/rediseno-logo/estructuras-rediseno.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/sistole-rediseno.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/arete-ingenieria-rediseno.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/21.-ares.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/17.-osmaservice.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/18.-la-casa-de-kett.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/19.-avicola-pungurume.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/22.-geoit.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/24. limpverd.jpg' }
     ]
   }
 }
