@@ -119,12 +119,16 @@ export const flyer = {
   }],
   topSlider: [
     {
-      url: '/images/pages/flyer/flyer-gemba.png',
-      color: '#194979'
+      url: '/images/pages/flyer/flyer-camaleon.png',
+      color: '#9AC43C'
     },
     {
       url: '/images/pages/flyer/flyer-hnos-duarte.png',
       color: '#A8B800'
+    },
+    {
+      url: '/images/pages/flyer/flyer-gemba.png',
+      color: '#194979'
     },
     {
       url: '/images/pages/flyer/flyer-hotel-montecarlo.png',
@@ -133,10 +137,6 @@ export const flyer = {
     {
       url: '/images/pages/flyer/flyer-retro-cafe.png',
       color: '#EB1C24'
-    },
-    {
-      url: '/images/pages/flyer/flyer-camaleon.png',
-      color: '#9AC43C'
     }
   ],
   creativeProcess: [

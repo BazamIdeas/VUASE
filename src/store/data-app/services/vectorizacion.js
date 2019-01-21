@@ -20,7 +20,7 @@ export const vectorizacion = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/vectorizacion/vectorizacion-aterel.png',
+    img: '/images/pages/vectorizacion/vectorizacion-que-te-llevas.png',
     color: 'black',
     columns: [
       [{

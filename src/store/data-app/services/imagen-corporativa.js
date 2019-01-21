@@ -161,24 +161,16 @@ export const imagenCorporativa = {
   topSliderHeight: '700px',
   topSlider: [
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-duarte.png',
-      color: '#A8B800'
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-ecoshine.png',
+      color: '#00A0C6'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-hotal-montecarlo.png',
-      color: '#F1AF1D'
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-gregasa.png',
+      color: '#7F4050'
     },
     {
       url: '/images/pages/imagen-corporativa/pack-de-identidad-ovisan.png',
       color: '#AE1D24'
-    },
-    {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-sirius.png',
-      color: '#141E51'
-    },
-    {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-vw-familia-walker.png',
-      color: '#3D3D3D'
     }
   ],
   creativeProcess: [
@@ -231,8 +223,9 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
       { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
       { img: '/images/services-carousel/pack-identidad/rocabike-tarjeta.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/blackbird.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese.jpg' },
-      { img: '/images/services-carousel/pack-identidad/maese-2.jpg' },
+      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/43.-arq. sin limites mock up 3.jpg' },
       { img: '/images/services-carousel/pack-identidad/presentación de power point.jpg' },
       { img: '/images/services-carousel/pack-identidad/prounit paraguas.jpg' },
       { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },

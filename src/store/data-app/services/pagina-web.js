@@ -159,12 +159,11 @@ export const web = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/web/andes facility - web 640.jpg' },
-      { img: '/images/services-carousel/web/arquitectura web 450.jpg' },
-      { img: '/images/services-carousel/web/bellek-web.jpg' },
+      { img: '/images/services-carousel/web/andes-sitio-web.jpg' },
+      { img: '/images/services-carousel/web/urano-sitio-web.jpg' },
+      { img: '/images/services-carousel/web/toni-sitio-web.jpg' },
       { img: '/images/services-carousel/web/macroservices - web.jpg' },
-      { img: '/images/services-carousel/web/majavilitas - web 640px.jpg' },
-      { img: '/images/services-carousel/web/toni llinas web laptop.jpg' }
+      { img: '/images/services-carousel/web/majavilitas - web 640px.jpg' }
     ]
   },
   packs: {
