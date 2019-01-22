@@ -74,9 +74,11 @@
     },
     head () {
       return {
-        titleTemplate: '%s | Servicios',
+        titleTemplate: this.title + ' | %s',
         meta: [
-          { name: 'og:title', content: 'bar' }
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
         ]
       }
     },
@@ -84,7 +86,9 @@
       return {
         transitionGroupContent: 'slide-x-transition',
         groupContent: 0,
-        alt: 'Liderlogo'
+        alt: 'agencia de diseño grafico',
+        description: 'Diseños exclusivos de Logos, Web, Folletos y Rótulos, tenemos más de 75000 diseños exitosos y te ofrecemos garantía de conformidad. ¡Comienza Ahora!',
+        title: 'Agencia de diseño gráfico para empresas'
       }
     },
     computed: {
