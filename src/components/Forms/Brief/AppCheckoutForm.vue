@@ -248,22 +248,21 @@
       </v-layout>
     </v-flex>
     <v-dialog v-if="service" v-model="pay" persistent min-width="600px" :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
-      <v-card @mouseleave="setGatewayInHover(null)">
+      <v-card @mouseleave="setGatewayInHover(this.gateways[0])">
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
-          <p style="width: 100%;">PAGA CON</p>
+          <p style="width: 100%; margin-bottom: 40px">PAGA SEGURO CON</p>
+          <br>
+          <br>
         </v-card-title>
         <v-layout row wrap>
-          <v-flex v-for="gateway in gateways" :key="gateway.id" @mouseover.enter="setGatewayInHover(gateway)"
+          <v-flex v-for="gatewayy in gateways" :key="gatewayy.id" @mouseover.enter="setGatewayInHover(gatewayy)"
           class="text-xs-center">
-            <no-ssr v-if="gateway.code ==='01'">
-              <AppPaypal :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
-            </no-ssr>
-            <no-ssr v-else-if="gateway.code ==='02'">
-              <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
-            </no-ssr>
-            <AppBankTransfer v-else-if="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
 
-            <AppBankTransfer v-else-if="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+            <v-img v-if="gatewayy.code ==='01'" src="/icons/paypal.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '01' }"/>
+
+            <v-img v-if="gatewayy.code ==='02'" src="/icons/tarjeta.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '02' }"/>
+
+            <v-img v-if="gatewayy.code ==='03' || gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '03' || gateway.code === '04' }"/>
             
           </v-flex>
         </v-layout>
@@ -274,6 +273,20 @@
               <p v-html="gateway.description"></p>
               <p class="mb-0 font-weight-bold">Instrucciones:</p>
               <p v-html="gateway.instructions"></p>
+
+              <v-flex class="text-xs-center">
+
+                <no-ssr v-show="gateway.code ==='01'">
+                  <AppPaypal  :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                </no-ssr>
+                <no-ssr v-show="gateway.code ==='02'">
+                  <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                </no-ssr>
+                <AppBankTransfer v-show="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+
+                <AppBankTransfer v-show="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+              
+              </v-flex>
             </div>
           </v-flex>
           <v-flex v-if="!gateway">
@@ -306,6 +319,9 @@
         coupon: null,
         gateway: null
       }
+    },
+    created () {
+      this.gateway = this.gateways[0]
     },
     watch: {
       chargePayMethods (val) {
@@ -481,5 +497,11 @@
 <style>
   .v-dialog.hidden {
     visibility: hidden;
+  }
+
+  .hoverinmethod {
+    background-color: #001e31;
+    filter: brightness(3);
+    border: 3px solid #001e31;
   }
 </style>
