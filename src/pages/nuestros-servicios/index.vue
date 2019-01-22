@@ -78,8 +78,7 @@
         meta: [
           { property: 'og:title', content: this.title },
           { property: 'og:description', content: this.description },
-          { hid: 'description', name: 'description', content: this.description  },
-          { property: 'og:url', content: this.url }
+          { hid: 'description', name: 'description', content: this.description }
         ]
       }
     },
@@ -89,8 +88,7 @@
         groupContent: 0,
         alt: 'agencia de diseño grafico',
         description: 'Diseños exclusivos de Logos, Web, Folletos y Rótulos, tenemos más de 75000 diseños exitosos y te ofrecemos garantía de conformidad. ¡Comienza Ahora!',
-        title: 'Agencia de diseño gráfico para empresas',
-        url: window.location.href
+        title: 'Agencia de diseño gráfico para empresas'
       }
     },
     computed: {
