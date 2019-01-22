@@ -35,10 +35,11 @@ export const state = () => ({
       layouts: [],
       carousel: [
         { src: 'images/pages/nuestros-servicios/web-y-app/app-pio-chicken-servicios.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/redes-finanpay.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/web-fdrd-servicios.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/web-macroservicios-servicios.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/web-vincit-2.png' }
+        { src: 'images/pages/nuestros-servicios/web-y-app/Logo-Web-Ecommerce.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/Landing.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/Presencia-Web.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/Web-Profesional.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/Ecommerce.png' }
       ],
       rows: [
         [
@@ -60,11 +61,10 @@ export const state = () => ({
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/folletos/civefa-publicidad-servicio.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/diptico.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/flyer-duarte-servicio.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/hotel-montecarlo.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/triptico.png' }
+        { src: 'images/pages/nuestros-servicios/folletos/Slider-catálogo-compressor.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/Slider-diptico-compressor.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/Slider-Flyer-compressor.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/Slider-tríptico-compressor.png' }
       ],
       rows: [
         [
@@ -105,6 +105,7 @@ export const state = () => ({
         { src: 'images/pages/nuestros-servicios/rotulos/banner-dual.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/empaque-vannamei.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/gps-serville-tour.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/Rotulo-vestimenta.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/rotulo-smart-escolar.png' }
       ]
@@ -120,12 +121,11 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-lacoladaencasa-servicio.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/andes-facility-(servicios).png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-marsanz-servicios.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-nueva-europa-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/Slider-VM-Look.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/Slider-La-Kikis.png' },
         { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-sinergia-servicios.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-tecnotransformacion-servicios.png' }
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-marsanz-servicios.png' }
+
       ],
       noBorder: true
     }

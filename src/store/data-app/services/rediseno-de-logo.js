@@ -32,7 +32,7 @@ export const redisenoLogo = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rediseno-logo/que-te-llevas-rediseno-de-logo.png',
+    img: '/images/pages/rediseno-de-logo/que-te-llevas-rediseno-de-logo.png',
     color: 'black',
     columns: [
       [{

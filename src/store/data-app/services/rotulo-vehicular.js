@@ -104,16 +104,12 @@ export const rVehicular = {
       color: 'black'
     },
     {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-arquero-romero.png',
+      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-arquero-romero-2.png',
       color: '#125072'
     },
     {
       url: '/images/pages/rotulo-vehicular/rotulo-vehicular-maese-escriba.png',
       color: '#c59d5f'
-    },
-    {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-picsmile.png',
-      color: '#f05924'
     },
     {
       url: '/images/pages/rotulo-vehicular/rotulo-vehicular-fomento-de-inversiones.png',

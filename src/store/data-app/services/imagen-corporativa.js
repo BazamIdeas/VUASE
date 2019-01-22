@@ -161,7 +161,7 @@ export const imagenCorporativa = {
   topSliderHeight: '700px',
   topSlider: [
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-hnos-ecoshine.png',
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-ecoshine.png',
       color: '#00A0C6'
     },
     {

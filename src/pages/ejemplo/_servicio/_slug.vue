@@ -25,8 +25,8 @@
               {{portfolio.description}}
             </p>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
-              <span class="mr-1 chip-title">Servicio:</span>
-              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/' + portfolio.service.slug)">
+              <span class="mr-1 chip-title" v-if= portfolio.service.name >Servicio:</span>
+              <v-chip class="cursor-pointer" @click="$router.push('/ejemplos/' + portfolio.service.slug)" v-if= portfolio.service.name >
                 {{portfolio.service.name}}
               </v-chip>
               <br>
