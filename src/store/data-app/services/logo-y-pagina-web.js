@@ -135,15 +135,15 @@ export const logoWeb = {
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-mas-web/WEBBARNASTUDENTS.png',
+      url: '/images/pages/logo-mas-web/web-meraki.png',
       color: '#F6C312'
     },
     {
-      url: '/images/pages/logo-mas-web/WEBFACILITY.png',
+      url: '/images/pages/logo-mas-web/web-ahl-fenix.png',
       color: '#C72228'
     },
     {
-      url: '/images/pages/logo-mas-web/WEBTODOKEY6.png',
+      url: '/images/pages/logo-mas-web/web-vincit.png',
       color: '#DAAE71'
     }
   ],
