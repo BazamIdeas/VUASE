@@ -28,7 +28,7 @@ module.exports = {
     ],
     routes: async function () {
       let urls = []
-      
+
       try {
         const portfolios = await axios.get(axiosUrl + 'portfolios?limit=1000')
         portfolios.data.forEach((port) => {
@@ -55,27 +55,24 @@ module.exports = {
   */
   head: {
     title: 'Liderlogo',
-    htmlAttrs: {
+    /*     htmlAttrs: {
       itemscope: undefined,
       itemtype: '<a href="http://schema.org/Article">http://schema.org/Article</a>'
-    },
+    }, */
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Lorem Ipsum' },
-      { name: 'twitter:title', content: '' },
-      { name: 'twitter:description', content: 'Lorem Ipsum' },
-      { property: 'og:title', content: '' },
-      { property: 'og:type', content: '' },
-      { property: 'og:url', content: '' },
-      { property: 'og:image', content: '' },
-      { property: 'og:description', content: 'Lorem Ipsum' },
+      { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Liderlogo' },
-      { property: 'fb:admins', content: '00000000000000000000' },
-      { content: 'noindex', name: 'robots' },
+      { property: 'og:image', content: '/liderlogo.png' },
+      /* { property: 'og:url', content: '' },
+      { property: 'og:title', content: '' },
+      { property: 'og:description', content: 'Lorem Ipsum' },
+      { hid: 'description', name: 'description', content: 'Lorem Ipsum' }, */
+      { content: 'noindex', name: 'robots' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/liderlogo.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' }
     ],
@@ -134,8 +131,8 @@ module.exports = {
       plugins: [
         ['transform-imports', {
           'vuetify': {
-            "transform": "vuetify/es5/components/${member}",
-            "preventFullImport": true
+            'transform': 'vuetify/es5/components/${member}',
+            'preventFullImport': true
           }
         }]
       ]
