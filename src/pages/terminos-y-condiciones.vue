@@ -85,6 +85,14 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: ' Terminos y condiciones | %s',
+        meta: [
+          { content: 'noindex', name: 'robots' }
+        ]
+      }
+    },
   }
 </script>
 

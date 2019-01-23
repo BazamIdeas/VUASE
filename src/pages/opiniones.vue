@@ -47,15 +47,19 @@
   export default {
     head () {
       return {
-        titleTemplate: '%s | Inicio',
+        titleTemplate: this.title + ' | %s',
         meta: [
-          { name: 'og:title', content: 'bar' }
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
         ]
       }
     },
     data () {
       return {
-        alt: 'Lorem ipsum',
+        alt: 'Opiniones de nuestros clientes',
+        description: 'Tenemos más de 15 años de experiencia y miles de proyectos culminados, las opiniones de nuestros clientes son nuestro principal aval',
+        title: 'Opiniones de nuestros clientes',
         limit: 5,
         testimonies: [
           {

@@ -57,11 +57,24 @@
 
 <script>
   export default {
+     head () {
+      return {
+        titleTemplate: this.title + ' | %s',
+        meta: [
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    },
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
     },
     data () {
       return {
+        alt: 'Precio de diseño grafico ',
+        description: 'Precios de diseño de logos o logotipos para empresas. Consulta las tarifas de diseño gráfico que tenemos para ti. Asesoramiento Profesional Gratuito.',
+        title: 'Precio de logo e identidad corporativa',
         service: null,
         addons: [
           'galeria-de-proyectos',

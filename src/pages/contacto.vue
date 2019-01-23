@@ -19,12 +19,24 @@
 
 <script>
   export default {
+     head () {
+      return {
+        titleTemplate: this.title + ' | %s',
+        meta: [
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    },
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
     },
     data () {
       return {
-        alt: 'Liderlogo'
+        alt: 'agencia de diseño grafico',
+        description: 'Solicite una consulta profesional de diseño. Es gratis y no hay obligación de compra. Tenemos más de 15 años de experiencia diseñando marcas',
+        title: 'Agencia de diseño gráfico',
       }
     }
   }

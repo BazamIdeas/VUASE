@@ -139,6 +139,23 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: this.title + ' | %s',
+        meta: [
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
+        ]
+      }
+    },
+    data () {
+      return {
+        alt: 'Martin Rodriguez Celin',
+        description: 'Martín Rodríguez Celin es el fundador y CEO de Liderlogo, la agencia internacional líder en diseño gráfico con presencia en 20 países del mundo desde hace más de 14 años.',
+        title: 'Martin Rodriguez Celin',
+      }
+    }
   }
 </script>
 

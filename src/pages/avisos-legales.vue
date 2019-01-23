@@ -220,6 +220,19 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: this.title + ' | %s',
+        meta: [
+          { property: 'og:title', content: this.title }
+        ]
+      }
+    },
+    data () {
+      return {
+        title: 'Aviso legal'
+      }
+    }
   }
 </script>
 

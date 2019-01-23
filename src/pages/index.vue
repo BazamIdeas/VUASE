@@ -132,17 +132,21 @@
   export default {
     head () {
       return {
-        titleTemplate: '%s | Inicio',
+        titleTemplate: this.title + ' | %s',
         meta: [
-          { name: 'og:title', content: 'bar' }
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
         ]
       }
     },
     data () {
       return {
-        alt: 'Liderlogo',
         name: 'INICIO',
         interval: 8000,
+        alt: 'agencia de diseño grafico',
+        description: 'Diseño de logos para empresas y profesionales, papelería, imagen corporativa y páginas web. Diseños ilimitados y Garantía 100%. ¡Haz crecer tu negocio!',
+        title: 'Agencia de diseño gráfico',
         testimonies: [{
           stars: 5,
           logo: '/images/testimonies/home/hotel-aixo.jpg',
