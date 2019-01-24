@@ -19,7 +19,7 @@
 
 <script>
   export default {
-     head () {
+    head () {
       return {
         titleTemplate: this.title + ' | %s',
         meta: [
@@ -36,7 +36,7 @@
       return {
         alt: 'agencia de diseño grafico',
         description: 'Solicite una consulta profesional de diseño. Es gratis y no hay obligación de compra. Tenemos más de 15 años de experiencia diseñando marcas',
-        title: 'Agencia de diseño gráfico',
+        title: 'Agencia de diseño gráfico'
       }
     }
   }

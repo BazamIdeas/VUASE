@@ -153,7 +153,7 @@
       return {
         alt: 'Martin Rodriguez Celin',
         description: 'Martín Rodríguez Celin es el fundador y CEO de Liderlogo, la agencia internacional líder en diseño gráfico con presencia en 20 países del mundo desde hace más de 14 años.',
-        title: 'Martin Rodriguez Celin',
+        title: 'Martin Rodriguez Celin'
       }
     }
   }

@@ -113,7 +113,7 @@
         ],
         alt: 'subcontratación de diseño gráfico',
         description: 'Servicio de subcontratación de diseño gráfico y web. Ahorre tiempo y gane dinero confiando enLiderlogo. Garantia de conformidad y confidencialidad.',
-        title: 'Servicio de subcontratación de diseño gráfico',
+        title: 'Servicio de subcontratación de diseño gráfico'
       }
     }
   }

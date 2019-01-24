@@ -57,7 +57,7 @@
 
 <script>
   export default {
-     head () {
+    head () {
       return {
         titleTemplate: this.title + ' | %s',
         meta: [

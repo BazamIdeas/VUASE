@@ -42,7 +42,7 @@
       return {
         alt: 'Liderlogo',
         description: 'Somos una agencia referente de diseño que trabaja incansablemente, apoyando a pequeñas y medianas empresas, creando su identidad.',
-        title: 'Agencia de diseño gráfico',
+        title: 'Agencia de diseño gráfico'
       }
     }
   }

@@ -86,7 +86,7 @@
           { content: 'noindex', name: 'robots' }
         ]
       }
-    },
+    }
   }
 </script>
 
