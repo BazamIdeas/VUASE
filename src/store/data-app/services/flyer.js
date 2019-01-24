@@ -186,15 +186,16 @@ export const flyer = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo/brief/estilos'
+      image: '/images/pages/flyer-dos-caras/flyer-dos-caras-compubot.png',
+      title: 'FLYER DOS CARAS',
+      url: '/nuestros-servicios/flyer-dos-caras',
+      brief: '/nuestros-servicios/flyer-dos-caras/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/oferta-triptico-gloss.png',
-      title: 'TRÍPTICO',
-      url: '/nuestros-servicios/tripticos',
-      brief: '/nuestros-servicios/tripticos/brief/estilos'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

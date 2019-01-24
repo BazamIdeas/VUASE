@@ -237,7 +237,7 @@ export const imagenCorporativa = {
     ]
   },
   packs: {
-    title: 'NUESTROS SERVICIOS EN',
+    title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
       title: 'DÍPTICO',

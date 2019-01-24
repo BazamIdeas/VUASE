@@ -202,10 +202,10 @@ export const tripticos = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
-      title: 'PUBLICIDAD',
-      url: '/nuestros-servicios/publicidad',
-      brief: '/nuestros-servicios/publicidad/brief/estilos'
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/catalogo',
+      brief: '/nuestros-servicios/catalogo/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
