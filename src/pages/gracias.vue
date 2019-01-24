@@ -24,6 +24,14 @@
 <script>
 
 export default {
+  head () {
+    return {
+      titleTemplate: ' Finalizar compra | %s',
+      meta: [
+        { content: 'noindex', name: 'robots' }
+      ]
+    }
+  },
   created () {
     this.por = this.$router.currentRoute.query.por
 
