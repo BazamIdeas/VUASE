@@ -192,10 +192,10 @@ export const publicidad = {
       brief: '/nuestros-servicios/flyer/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo',
-      brief: '/nuestros-servicios/catalogo/brief/estilos'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

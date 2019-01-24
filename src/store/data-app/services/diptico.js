@@ -202,15 +202,16 @@ export const diptico = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/flyer-retro-cafe.png',
-      title: 'FLYER',
-      url: '/nuestros-servicios/flyer',
-      brief: '/nuestros-servicios/flyer/brief/estilos'
+      image: '/images/pages/packs/oferta-triptico-gloss.png',
+      title: 'TRÍPTICOS',
+      url: '/nuestros-servicios/tripticos',
+      brief: '/nuestros-servicios/tripticos/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo/brief/estilos'
+      url: '/nuestros-servicios/catalogo',
+      brief: '/nuestros-servicios/catalogo/brief/estilos'
     }
   }
 }
