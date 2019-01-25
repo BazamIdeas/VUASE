@@ -1,4 +1,8 @@
 export const web = {
+  /* SEO */
+  titleSEO: 'Diseño y desarrollo de páginas web',
+  descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
+  /* ** */
   list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoría especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable'],
   title: 'SITIO WEB PROFESIONAL',
   description: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,

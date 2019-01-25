@@ -1,4 +1,8 @@
 export const logoWeb = {
+  /* SEO */
+  titleSEO: 'Diseño de logo y página web',
+  descriptionSEO: 'Consigue aquí el mejor diseño para tu logo original de tu entera conformidad y sitio web listo para lanzar su negocio. ¡Comienza ahora tu proyecto!',
+  /* ** */
   list: ['Diseños ilimitados', 'Logo exclusivo realizado a tu medida listo para utilizar donde necesites', 'Diseño, maquetacion, programación y publicación de sitio web profesional autogestionable, registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
   title: 'LOGO Y SITIO WEB',
   description: `Logo original de tu entera conformidad y sitio web listo para lanzar su negocio.`,

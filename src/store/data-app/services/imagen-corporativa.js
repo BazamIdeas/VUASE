@@ -1,4 +1,8 @@
 export const imagenCorporativa = {
+  /* SEO */
+  titleSEO: 'Imagen corporativa para empresas',
+  descriptionSEO: 'Logo original de su entera conformidad + papelería  + diseño de productos de merchandising + diseño de redes sociales+logo animado. ¡Comienza tu proyecto ahora!',
+  /* ** */
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tasas, etiquetas y mucho mas (elija entre 65 piezas)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube', 'Elige 6 piezas entre 65 opciones', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
   description: `Logo original de su entera conformidad + diseños de papelería en formato digital y papel + diseño de productos de merchandising + diseño de redes sociales+logo animado.`,

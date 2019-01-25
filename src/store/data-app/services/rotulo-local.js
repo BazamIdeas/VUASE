@@ -1,4 +1,8 @@
 export const rLocal = {
+  /* SEO */
+  titleSEO: 'Diseño de Rotulos para empresas',
+  descriptionSEO: 'Diseñamos el frente de negocio donde tus clientes deseen entrar 100% único y original asesoría gratuita y servicio post-venta. ¡Comienza ahora tu proyecto!',
+  /* ** */
   list: ['Diseño publicitario impactante', 'Cambios ilimitados', 'Fotomontajes de tus diseños', 'Fotomontajes de tus diseños'],
   title: 'RÓTULO LOCAL',
   description: `El frente de negocio donde los clientes desean entrar.`,

@@ -1,4 +1,8 @@
 export const diptico = {
+  /* SEO */
+  titleSEO: 'Diseño de Diptico original y llamativo',
+  descriptionSEO: 'Creación de Dipticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'DÍPTICO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `La presentacion profesional de tu negocio en 4 caras`,

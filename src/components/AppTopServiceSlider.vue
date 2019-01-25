@@ -19,7 +19,7 @@
                 <v-flex xs12 offset-xs0 md5 offset-md7>
                   <v-layout xs12 row wrap>
                     <v-flex xs12 sm4 md12 class="hidden-sm-and-down">
-                      <img width="80px" class="mb-2" :src="service.icon">
+                      <img width="80px" :alt="alt" class="mb-2" :src="service.icon">
                     </v-flex>
                     <v-flex xs12 sm8 md12 class="mb-2">
                       <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+item.color">{{service.title}}</h2>
@@ -56,7 +56,7 @@
 
 <script lang="js">
   export default {
-    props: ['id', 'service', 'slug'],
+    props: ['id', 'service', 'slug', 'alt'],
     computed: {
       /* TODO: PENDIENTE */
       comenzarUrl () {

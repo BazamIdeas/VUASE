@@ -1,4 +1,8 @@
 export const flyer = {
+  /* SEO */
+  titleSEO: 'Flyers y postales creativas para tu negocio',
+  descriptionSEO: 'Creación de Flyers Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'FLYER',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Flyers y postales creativas para tu negocio`,

@@ -1,4 +1,8 @@
 export const tripticos = {
+  /* SEO */
+  titleSEO: 'Diseño de Triptico original y llamativo',
+  descriptionSEO: 'Creación de Tripticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'TRÍPTICO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Tu negocio, servicios y productos desplegados en 6 caras`,

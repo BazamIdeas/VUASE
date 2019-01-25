@@ -1,4 +1,8 @@
 export const rFurgoneta = {
+  /* SEO */
+  titleSEO: 'Diseño de Rotulos para furgoneta o camión',
+  descriptionSEO: 'Promociona tu negocio donde vallas.Diseño profesional de rótulos  te ofrecemos asesoría gratuita y servicio post-venta. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'RÓTULO FURGONETA CAMION',
   description: `Aprovecha al maximo tu espacio y promociona con exito tu negocio.`,
   list: ['Diseño gráfico y publicitario', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Entrega en plantillas de corte digital'],
