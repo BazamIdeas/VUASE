@@ -1,4 +1,8 @@
 export const catalogo = {
+  /* SEO */
+  titleSEO: 'Diseño de Catalogo original y llamativo',
+  descriptionSEO: 'Consigue aquí el mejor diseño para tu catalogo, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'CATÁLOGO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Presenta tus productos y servicios con el detalle que necesites`,

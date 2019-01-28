@@ -1,4 +1,8 @@
 export const rPackaging = {
+  /* SEO */
+  titleSEO: 'Diseños de Etiquetas y Packaging',
+  descriptionSEO: 'Consigue aquí un diseño que de vida a tus productos y lo hagan irresistibles. Te ofrecemos garantía hasta entera conformidad   ¡Comienza tu proyecto ahora!',
+  /* ** */
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   title: 'RÓTULO ETIQUETA / PACKAGING',
   description: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,

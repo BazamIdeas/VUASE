@@ -1,4 +1,8 @@
 export const disenoApp = {
+  /* SEO */
+  titleSEO: 'Desarrollo de aplicaciones moviles',
+  descriptionSEO: 'Desarrollamos su aplicación móvil para ayudar a aumentar la presencia en línea de su empresa, tenemos cientos de clientes satisfechos ¡Comienza ahora!',
+  /* ** */
   startWith: true,
   list: ['Fidelice a sus clientes', 'Aumente la visibilidad de su empresa', 'Ofrezca otro canal de venta y contacto', 'Fortalezca su marca'],
   title: 'APLICACIÓN MOVIL',

@@ -1,4 +1,8 @@
 export const flyerDosCaras = {
+  /* SEO */
+  titleSEO: 'Flyer llamativos con para tu negocio en ambas caras',
+  descriptionSEO: 'Consigue aquí el mejor diseño para tu Flyer , te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'FLYER DOS CARAS',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Flyer llamativos con para tu negocio en ambas caras`,

@@ -1,4 +1,8 @@
 export const redesSociales = {
+  /* SEO */
+  titleSEO: 'Diseño de perfil de redes sociales',
+  descriptionSEO: 'Creación de perfiles para redes sociales, destaca tu imagen y haz la diferencia, ¡Comienza tu proyecto ahora!',
+  /* ** */
   list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
   title: 'PERFILES DE REDES SOCIALES',
   description: `Portadas y avatars para destacar tu marca en.`,
