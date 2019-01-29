@@ -104,10 +104,6 @@ export const rLocal = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rotulo-local/rotulo-local-ibinatural.png',
-      color: '#4cc159'
-    },
-    {
       url: '/images/pages/rotulo-local/rotulo-local-arquero-romero.png',
       color: '#116391'
     },
@@ -118,6 +114,10 @@ export const rLocal = {
     {
       url: '/images/pages/rotulo-local/rotulo-local-maese-escriba.png',
       color: '#b99353'
+    }
+    /*  {
+      url: '/images/pages/rotulo-local/rotulo-local-ibinatural.png',
+      color: '#4cc159'
     },
     {
       url: '/images/pages/rotulo-local/rotulo-local-malarrassa.png',
@@ -126,7 +126,7 @@ export const rLocal = {
     {
       url: '/images/pages/rotulo-local/rotulo-local-sanidae.png',
       color: '#d72f2c'
-    }
+    } */
   ],
   creativeProcess: [
     {

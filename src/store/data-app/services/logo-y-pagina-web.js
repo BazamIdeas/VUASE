@@ -139,16 +139,20 @@ export const logoWeb = {
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-mas-web/web-meraki.png',
-      color: '#F6C312'
+      url: '/images/pages/logo-mas-web/logo-y-web-devtech.png',
+      color: '#EE7203'
     },
     {
-      url: '/images/pages/logo-mas-web/web-ahl-fenix.png',
-      color: '#C72228'
+      url: '/images/pages/logo-mas-web/logo-y-web-white.png',
+      color: '#0092D1'
     },
     {
-      url: '/images/pages/logo-mas-web/web-vincit.png',
-      color: '#DAAE71'
+      url: '/images/pages/logo-mas-web/logo-y-web-andes.png',
+      color: '#66B026'
+    },
+    {
+      url: '/images/pages/logo-mas-web/logo-y-web-divino.png',
+      color: '#A30102'
     }
   ],
   creativeProcess: [
