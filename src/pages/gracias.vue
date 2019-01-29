@@ -26,7 +26,7 @@
 export default {
   head () {
     return {
-      titleTemplate: ' Finalizar compra | %s',
+      titleTemplate: ' Gracias | %s',
       meta: [
         { content: 'noindex', name: 'robots' }
       ]

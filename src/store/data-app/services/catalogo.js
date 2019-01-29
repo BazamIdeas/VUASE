@@ -123,10 +123,6 @@ export const catalogo = {
   }],
   topSlider: [
     {
-      url: '/images/pages/catalogo/catalogo-arete.png',
-      color: '#F7912C'
-    },
-    {
       url: '/images/pages/catalogo/catalogo-chargematik.png',
       color: '#99C32C'
     },

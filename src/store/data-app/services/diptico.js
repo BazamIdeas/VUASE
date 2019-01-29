@@ -123,15 +123,7 @@ export const diptico = {
   }],
   topSlider: [
     {
-      url: '/images/pages/diptico/diptico-la-parroquia-azcapo.png',
-      color: '#BC1F26'
-    },
-    {
-      url: '/images/pages/diptico/diptico-gesvetia.png',
-      color: '#EEB729'
-    },
-    {
-      url: '/images/pages/diptico/diptico-normopalet.png',
+      url: '/images/pages/diptico/diptico-geotermia.png',
       color: '#97C15F'
     },
     {
@@ -186,21 +178,18 @@ export const diptico = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/folletos/55.-slider-diptico-compressor.jpg' },
-      { img: '/images/services-carousel/folletos/american flipouts diner - diptico.jpg' },
-      { img: '/images/services-carousel/folletos/vintia - triptico.jpg' },
+      { img: '/images/services-carousel/dipticos/55.-slider-diptico-compressor.jpg' },
+      { img: '/images/services-carousel/dipticos/american flipouts diner - diptico.jpg' },
+      { img: '/images/services-carousel/dipticos/52.-formasystem-calidad-media.jpg' },
+      { img: '/images/services-carousel/folletos/solegar.jpg' },
       { img: '/images/services-carousel/folletos/corpeluva - triptico.jpg' },
       { img: '/images/services-carousel/folletos/50.-asetys.jpg' },
       { img: '/images/services-carousel/folletos/51.-geotermia.jpg' },
-      { img: '/images/services-carousel/folletos/52.-formasystem-calidad-media.jpg' },
-      { img: '/images/services-carousel/folletos/54.-catalogo-compressor.jpg' },
       { img: '/images/services-carousel/folletos/61.-dariofajardo-2' },
       { img: '/images/services-carousel/folletos/ahl - folleto.jpg' },
       { img: '/images/services-carousel/folletos/castadon - folleto.jpg' },
       { img: '/images/services-carousel/folletos/recfer - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/sergio hedrera - folletos.jpg' },
-      { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/talawin - catalogo.jpg' }
+      { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' }
     ]
   },
   packs: {
