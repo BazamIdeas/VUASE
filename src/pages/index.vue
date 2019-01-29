@@ -25,51 +25,51 @@
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
               <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4" color="transparent">
-                  <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">22</span></p>
+                <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
+                  <img src="/icons/logo-unico-original.svg" class="icon-home" alt="Diseños profesionales a la medida">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Paises reciben nuestra atención
+                    Diseños profesionales a la medida
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4 ll-op" color="transparent">
-                  <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">24</span><span class="display-1 dark-blue--text font-weight-bold">Hrs</span></p>
+                <v-card flat class="px-4 my-4 ll-op text-xs-center" color="transparent">
+                  <img src="/icons/atencion-personalizada-2.svg" class="icon-home" alt="Atención profesional personalizada">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Conceptos y perfeccionamientos
+                    Atención profesional personalizada
+                  </p>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 md4 class="ll-op"> 
+                <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
+                  <img src="/icons/un-dia-para-el-otro.svg" class="icon-home" alt="Diseños de un dia para otro">
+                  <p class="subheading font-weight-medium text-xs-center dark-blue--text">
+                    Diseños de un dia para otro
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4" color="transparent">
-                  <p class="text-xs-center  mb-0"><span class="display-1 dark-blue--text font-weight-bold">+</span><span class="text-uppercase display-3  dark-blue--text font-weight-bold">75.000</span></p>
+                <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
+                  <img src="/icons/propuestas-ilimitadas.svg" class="icon-home" alt="Propuestas ilimitadas">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Creaciones realizadas
+                    Propuestas ilimitadas
                   </p>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4 " color="transparent">
-                  <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">100</span><span class="display-1 dark-blue--text font-weight-bold">%</span></p>
+                <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
+                  <img src="/icons/garantia-de-conformidad.svg" class="icon-home" alt="Garantía de conformidad">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Garantia de conformidad y confidencialidad
-                  </p>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4" color="transparent">
-                  <p class="text-xs-center mb-0"><span class="text-uppercase display-3  dark-blue--text font-weight-bold">40</span></p>
-                  <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Lideres de Proyecto brindandote Atención profesional
+                    Garantía de conformidad
                   </p>
                 </v-card>
               </v-flex>
               
               <v-flex xs12 md4 class="ll-op">
-                <v-card flat class="px-4 my-4" color="transparent">
-                  <p class="text-xs-center mb-0"><span class="display-1 dark-blue--text font-weight-bold">+</span><span class="text-uppercase display-3  dark-blue--text font-weight-bold">15</span></p>
+                <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
+                  <img src="/icons/15-anios.svg" class="icon-home" alt="Trayectoria Internacional">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Años de Trayectoria internacional
+                    Trayectoria Internacional
                   </p>
                 </v-card>
               </v-flex>
@@ -144,9 +144,9 @@
       return {
         name: 'INICIO',
         interval: 8000,
-        alt: 'agencia de diseño grafico',
+        alt: 'Diseño de logos e imagen corporativa para empresas',
         description: 'Diseño de logos para empresas y profesionales, papelería, imagen corporativa y páginas web. Diseños ilimitados y Garantía 100%. ¡Haz crecer tu negocio!',
-        title: 'Agencia de diseño gráfico',
+        title: 'Diseño de logos e imagen corporativa para empresas',
         testimonies: [{
           stars: 5,
           logo: '/images/testimonies/home/hotel-aixo.jpg',
@@ -214,6 +214,7 @@
     transform: translate(-62%, 27px) !important;
   }
 
+
   @media (min-width: 320px) and (max-width: 980px) {
     .xs-no-border{
       border:none !important;
@@ -247,6 +248,10 @@
 <style scoped>
   .service-icon-box h2{
     line-height: 21px;
+  }
+
+  .icon-home{
+    max-width: 100px;
   }
 
   .red-btn > .v-btn__content {
