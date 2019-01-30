@@ -18,6 +18,66 @@ export const state = () => ({
         { url: '/contacto', title: 'Contacto' },
         { url: '#', title: 'BLOG' }
       ],
+      headerMovil: [
+        {
+          url: '/nuestros-servicios',
+          title: 'Servicios',
+          icon: 'list',
+          sublinks: [
+            {
+              name: 'LOGO E IDENTIDAD',
+              links: [
+                { url: '/imagen-corporativa', title: 'LOGO, IMAGEN CORPORATIVA Y LOGO ANIMADO' },
+                { url: '/logo-empresa', title: 'LOGO' },
+                { url: '/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
+                { url: '/rediseno-de-logo', title: 'REDISEÑO DE LOGO' },
+                { url: '/vectorizacion', title: 'VECTORIZACIÓN DE TU LOGO' }
+              ]
+            },
+            {
+              name: 'WEB Y APP',
+              links: [
+                { url: '/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
+                { url: '/pagina-web', title: 'SITIO WEB PROFESIONAL' },
+                { url: '/sitio-web-ecommerce', title: 'ECOMMERCE' },
+                { url: '/desarrollo-de-app', title: 'APLICACIÓN MOVIL' },
+                { url: '/presencia-web', title: 'PRESENCIA WEB' }
+              ]
+            },
+            {
+              name: 'FOLLETOS Y PUBLICIDADES',
+              links: [
+                { url: '/flyer', title: 'FLYER' },
+                { url: '/flyer-dos-caras', title: 'FLYER DOS CARAS' },
+                { url: '/diptico', title: 'DÍPTICO' },
+                { url: '/tripticos', title: 'TRÍPTICO' },
+                { url: '/publicidad', title: 'PUBLICIDAD' },
+                { url: '/catalogo', title: 'CATÁLOGO' }
+              ]
+            },
+            {
+              name: 'RÓTULOS',
+              links: [
+                { url: '/rotulo-vehicular', title: 'RÓTULO VEHICULAR' },
+                { url: '/rotulo-local', title: 'RÓTULO LOCAL' },
+                { url: '/rotulo-banner', title: 'RÓTULO BANNER' },
+                { url: '/packaging', title: 'RÓTULO ETIQUETA / PACKAGING' },
+                { url: '/rotulo-vestimenta-uniforme', title: 'RÓTULO VESTIMENTA/UNIFORME' },
+                { url: '/rotulo-furgoneta-camion', title: 'RÓTULO FURGONETA CAMION' }
+              ]
+            },
+            {
+              name: 'REDES SOCIALES',
+              links: [
+                { url: 'perfil-redes-sociales', title: 'PERFILES DE REDES SOCIALES' }
+              ]
+            }
+          ]
+        },
+        { url: '/ejemplos', title: '1001 Ejemplos', icon: 'important_devices' },
+        { url: '/precios', title: 'Precios', icon: 'store' },
+        { url: '/servicios-profesionales', title: 'Servicios a Profesionales', icon: 'work' }
+      ],
       redes: [{
         icon: 'fa-facebook',
         url: 'https://www.facebook.com/liderlogo'

@@ -85,9 +85,9 @@
       </v-flex>
       
       <v-flex order-md2 xs12 md10 v-if="countryData">
-        O puedes llamarnos al: 
+        <span>O puedes llamarnos al: </span>
         <a style="color:#1976d2" target="_new" :href="'tel:'+ countryData.phone"> +{{countryData.phone}}</a> 
-        o escribirnos vía WhatsApp  
+        <span>o escribirnos vía WhatsApp  </span>
         <a style="color:#1976d2" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta">
           +34933961704
         </a>

@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-sm text-xs-center>
     <v-layout row wrap>
-      <v-flex xs12 offset-md2 md8>
+      <v-flex xs12 offset-md1 md10 offset-lg2 lg8>
         <v-layout row wrap class="services-grid">
           <v-flex xs12 md3 class="px-2 xs-no-border" style="border-left: 2px solid #cccccc; border-right: 2px solid #cccccc">
             <v-layout row wrap>
@@ -51,7 +51,7 @@
             </v-layout>
           </v-flex>
           <v-flex>
-            <v-btn color="mt-5" to="/nuestros-servicios" class="elevation-0 white--text" :style="'background-color: ' + color" style="line-height: 14px;" wrap>
+            <v-btn color="mt-5" to="/nuestros-servicios" class="boton-res elevation-0 white--text" :style="'background-color: ' + color" style="line-height: 14px;" wrap>
               Descubre todas las <br>categorias de servicios
             </v-btn>
           </v-flex>
@@ -124,8 +124,16 @@
     }
   }
 
-
   @media (min-width: 320px) and (max-width: 960px) {
+    .service-icon-box img {
+      width: 115px;
+      height: 115px;
+    }
+    .boton-res{
+      font-size: 18px;
+      line-height: 21px !important;
+      height: 60px;
+    } 
     .service-icon-box {
       border: none !important;
       height:  auto !important;

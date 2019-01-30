@@ -1,7 +1,8 @@
 <template>
   <v-toolbar class="transparent" height="100" flat style="position:absolute; z-index: 4;">
     <v-spacer class="hidden-sm-and-down"></v-spacer>
-    <nuxt-link to="/" style="height: 60px"><img src="~/assets/images/logo.png" height="60" alt="LiderLogo"></nuxt-link>
+    <v-toolbar-side-icon @click.stop="$store.dispatch('toggleDrawer')" class="hidden-md-and-up menu-burger"></v-toolbar-side-icon>
+    <nuxt-link to="/" class="logo-header" style="height: 60px"><img src="~/assets/images/logo.png" height="60" alt="LiderLogo"></nuxt-link>
     <div class="px-4 hidden-sm-and-down">
       <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
         <span class="nav-item-label">{{link.title}}</span>
@@ -25,8 +26,7 @@
       </v-btn>
       <span>{{ countryData.phone }}</span>
     </v-tooltip>
-    <v-spacer></v-spacer>
-    <v-toolbar-side-icon @click.stop="$store.dispatch('toggleDrawer')" class="hidden-md-and-up"></v-toolbar-side-icon>
+    <v-spacer class="hidden-sm-and-down"></v-spacer>
   </v-toolbar>
 </template>
 
@@ -64,4 +64,26 @@
     color: #004b7b !important;
   }
 
+  @media (min-width: 320px) and (max-width: 960px) {
+    .logo-header{
+      height: 60px;
+      width: 50%;
+      display: block;
+      margin: auto;
+    }
+
+    .logo-header img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
+
+    .menu-burger{
+      position: absolute;
+      top: 25px;
+      left: 30px;
+    }
+  }
 </style>

@@ -13,7 +13,7 @@
             prev-icon="arrow_left"
           >
             <v-layout row wrap>
-              <v-flex xs12 md6>
+              <v-flex xs12 md6 order-xs2 order-md1>
                 <h2 class="display-1 xs-subheading font-weight-bold text-uppercase text-xs-center" style="color:#434343;">
                   ¿QUÉ OPINAN <br class="hidden-xs-and-down">
                   NUESTROS CLIENTES?
@@ -35,7 +35,7 @@
                   </a>
                 </v-flex>
               </v-flex>
-              <v-flex xs12 md6 class="logo-testimony">
+              <v-flex xs12 md6 class="logo-testimony" order-xs1 order-md2 hidden-sm-and-down>
                 <img :alt="alt" class="--puntos" src="/icons/puntos_de_fondo.svg">
                 <img class="lt-img" :src="item.logo" :alt="item.company + ' Testimonio'">
               </v-flex>
@@ -76,11 +76,18 @@
 
 <style>
 @media (min-width: 320px) and (max-width: 640px) {
+  .testimonies .v-carousel__prev {
+      left: 38% !important;
+  }
+  .testimonies .v-carousel__next {
+    left: 54% !important;
+    right: unset !important;
+  }
   .testimonies .v-carousel__prev, .testimonies .v-carousel__next {
     display: none;
   }
   .testimonies .v-carousel {
-    height: 650px !important;
+    height: 320px !important;
   }
    .testimonies .logo-testimony .lt-img {
       position: initial;
@@ -103,7 +110,6 @@
       display: block;
   }
 }
-
 
 .testimonies .v-responsive__sizer, .testimonies .v-carousel__item {
   transition: unset !important;

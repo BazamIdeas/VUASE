@@ -55,6 +55,18 @@
       // await store.dispatch('countries/locations/getAll')
       await store.dispatch('portfolios/getAll', params)
     },
+    mounted: function () {
+      if (process.browser) {
+        window.onscroll = () => {
+          let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight
+          this.params.offset = this.portfolios.length
+
+          if (bottomOfWindow && this.params.offset >= 8) {
+            this.$store.dispatch('portfolios/getAll', this.params)
+          }
+        }
+      }
+    },
     methods: {
       goPortfolio (url, portfolio) {
         if (process.browser) {
