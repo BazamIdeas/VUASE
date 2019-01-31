@@ -87,7 +87,7 @@
     display: none;
   }
   .testimonies .v-carousel {
-    height: 320px !important;
+    height: 400px !important;
   }
    .testimonies .logo-testimony .lt-img {
       position: initial;

@@ -179,6 +179,14 @@ a {
     margin-top: 0 !important;
   }
 
+  .mb-xs-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .ml-xs-0 {
+    margin-left: 0 !important;
+  }
+
   .pt-xs-0 {
     padding-top: 0 !important;
   }
@@ -193,7 +201,7 @@ a {
     display: block;
   }
 
-  h2.display-2, h2.display-1 {
+  h2.display-2, h2.display-1, .xs-p.headline {
     font-size: 24px !important;
     padding: 0 15px;
   }
@@ -203,6 +211,10 @@ a {
   h2.display-2, h2.display-1 {
     font-size: 24px !important;
     padding: 0 15px;
+  }
+
+  .display-2{
+    font-size: 29px !important;
   }
 }
 

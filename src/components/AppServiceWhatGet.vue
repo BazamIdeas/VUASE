@@ -1,7 +1,7 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-4 pb-0">
-      <v-flex xs8 v-if="!justOne">
+      <v-flex xs12 md8 v-if="!justOne">
         <AppHeading number="1" size="display-2" align="center" :title="title" />
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get">
@@ -40,7 +40,7 @@
             </v-layout>
           </v-flex>
           <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
-            <v-layout row wrap d-flex text-xs-center column class="ml-4" :class="{'max': !service.whatYouGet.noMaxWidth}">
+            <v-layout row wrap d-flex text-xs-center column class="ml-4 ml-xs-0" :class="{'max': !service.whatYouGet.noMaxWidth}">
               <v-flex class="ml-2">
                   <img alt="Que te llevas Liderlogo" :src="service.whatYouGet.img"  width="100%"></img>
                   <h3 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
@@ -152,5 +152,12 @@
 
 .box-price{
   max-width: 440px;
+}
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .what-you-get > div {
+      border: none !important;
+      margin-top: 10px !important;
+  }
 }
 </style>

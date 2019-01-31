@@ -3,7 +3,7 @@
     <v-flex xs12 class="mt-5 "> 
       <v-layout>
         <v-flex xs12 class="mt-5" >
-          <AppHeading number="1" size="display-1" align="center" :title="'¿QUÉ FUNCIONES NECESITA TU SITIO WEB?'" />
+          <AppHeading number="2" size="display-1" align="center" :title="'¿QUÉ FUNCIONES NECESITA TU SITIO WEB?'" />
         </v-flex>
       </v-layout>
       <v-layout row>

@@ -103,38 +103,26 @@
 
 
 
-  @media (max-width: 600px) {
-
-    /*ITEM-1*/
-    div#hc-layer-1-item-1 {
-      font-size: 28px;
-      line-height: 39px;
-      top: 60%;
-      text-align: center;
-    }
+  @media (min-width: 320px) and (max-width: 480px) {
 
     div#hc-layer-1-item-1 {
       font-size: 23px;
       line-height: 39px;
-      top: 49%;
-    }
-
-    div#hc-layer-2-item-1 {
-      font-size: 17px;
-      top: 80%;
-      line-height: 28px;
+      top: 64%;
       text-align: center;
     }
 
     div#hc-layer-2-item-1 {
-      font-size: 14px;
-      top: 64%;
+      font-size: 12px;
+      top: 77%;
+      line-height: 28px;
+      text-align: center;
     }
 
     div#hc-layer-3-item-1 {
-      width: 75%;
+      width: 90%;
       top: 11%;
-      left: 14%;
+      left: 5%;
     }
 
     /*ITEM-2*/
@@ -163,7 +151,82 @@
     }
   }
 
-  @media (min-width: 600px) and (max-width: 960px) {
+  @media (min-width: 481px) and (max-width: 600px){
+    .v-carousel.main-carousel {
+        height: 700px !important;
+        min-height: auto;
+    }
+
+    div#hc-layer-3-item-1 {
+      width: 85%;
+      top: 11%;
+      left: 5%;
+    }
+
+    div#hc-layer-1-item-1 {
+      font-size: 23px;
+      line-height: 39px;
+      top: 65%;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-1 {
+      font-size: 12px;
+      top: 78%;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    /*ITEM-2*/
+    div#hc-layer-1-item-2 {
+      font-size: 28px;
+      line-height: 39px;
+      top: 60%;
+      text-align: center;
+    }
+
+    div#hc-layer-2-item-2 {
+      font-size: 17px;
+      top: 80%;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    div#hc-layer-3-item-2 {
+      width: 100%;
+      left: -16%;
+      top: 17%;
+    }
+
+    .v-carousel.profesional-services-slider {
+      height: 560px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 960px) {
+    .v-carousel.main-carousel.--pro .layers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .v-carousel.main-carousel.--pro .layers-container > div {
+      position: initial;
+    }
+
+    .v-carousel.main-carousel.--pro .layers-container > :nth-child(1) {
+        order: 2;
+    }
+
+    .v-carousel.main-carousel.--pro .layers-container > :nth-child(2) {
+      order: 3;
+    }
+
+    .v-carousel.main-carousel.--pro .layers-container > :nth-child(3) {
+      order: 1;
+    }
+
     /*ITEM-1*/
     div#hc-layer-1-item-1 {
       font-size: 28px;
@@ -192,7 +255,7 @@
     }
 
     div#hc-layer-3-item-1 {
-        width: 40%;
+        width: 65%;
         top: 12%;
         left: 6%;
     }
@@ -337,8 +400,6 @@
     }
   }
 
-  @media (min-width: 1904px) {}
-
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .5s;
@@ -346,9 +407,29 @@
 
   .fade-enter,
   .fade-leave-to
-
-  /* .fade-leave-active below version 2.1.8 */
   {
     opacity: 0;
+  }
+
+  @media (min-width: 600px) and (max-width: 860px) {
+    .v-carousel.main-carousel {
+        height: 680px;
+        min-height: auto;
+    }
+  }
+
+  
+  @media (min-width: 740px) and (max-width: 820px) {
+    .v-carousel.main-carousel {
+        height: 780px;
+        min-height: auto;
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 960px) {
+    .v-carousel.main-carousel {
+        height: 850px;
+        min-height: auto;
+    }
   }
 </style>

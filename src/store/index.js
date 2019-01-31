@@ -27,49 +27,49 @@ export const state = () => ({
             {
               name: 'LOGO E IDENTIDAD',
               links: [
-                { url: '/imagen-corporativa', title: 'LOGO, IMAGEN CORPORATIVA Y LOGO ANIMADO' },
-                { url: '/logo-empresa', title: 'LOGO' },
-                { url: '/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
-                { url: '/rediseno-de-logo', title: 'REDISEÑO DE LOGO' },
-                { url: '/vectorizacion', title: 'VECTORIZACIÓN DE TU LOGO' }
+                { url: '/nuestros-servicios/imagen-corporativa', title: 'LOGO, IMAGEN CORPORATIVA Y LOGO ANIMADO' },
+                { url: '/nuestros-servicios/logo-empresa', title: 'LOGO' },
+                { url: '/nuestros-servicios/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
+                { url: '/nuestros-servicios/rediseno-de-logo', title: 'REDISEÑO DE LOGO' },
+                { url: '/nuestros-servicios/vectorizacion', title: 'VECTORIZACIÓN DE TU LOGO' }
               ]
             },
             {
               name: 'WEB Y APP',
               links: [
-                { url: '/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
-                { url: '/pagina-web', title: 'SITIO WEB PROFESIONAL' },
-                { url: '/sitio-web-ecommerce', title: 'ECOMMERCE' },
-                { url: '/desarrollo-de-app', title: 'APLICACIÓN MOVIL' },
-                { url: '/presencia-web', title: 'PRESENCIA WEB' }
+                { url: '/nuestros-servicios/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
+                { url: '/nuestros-servicios/pagina-web', title: 'SITIO WEB PROFESIONAL' },
+                { url: '/nuestros-servicios/sitio-web-ecommerce', title: 'ECOMMERCE' },
+                { url: '/nuestros-servicios/desarrollo-de-app', title: 'APLICACIÓN MOVIL' },
+                { url: '/nuestros-servicios/presencia-web', title: 'PRESENCIA WEB' }
               ]
             },
             {
               name: 'FOLLETOS Y PUBLICIDADES',
               links: [
-                { url: '/flyer', title: 'FLYER' },
-                { url: '/flyer-dos-caras', title: 'FLYER DOS CARAS' },
-                { url: '/diptico', title: 'DÍPTICO' },
-                { url: '/tripticos', title: 'TRÍPTICO' },
-                { url: '/publicidad', title: 'PUBLICIDAD' },
-                { url: '/catalogo', title: 'CATÁLOGO' }
+                { url: '/nuestros-servicios/flyer', title: 'FLYER' },
+                { url: '/nuestros-servicios/flyer-dos-caras', title: 'FLYER DOS CARAS' },
+                { url: '/nuestros-servicios/diptico', title: 'DÍPTICO' },
+                { url: '/nuestros-servicios/tripticos', title: 'TRÍPTICO' },
+                { url: '/nuestros-servicios/publicidad', title: 'PUBLICIDAD' },
+                { url: '/nuestros-servicios/catalogo', title: 'CATÁLOGO' }
               ]
             },
             {
               name: 'RÓTULOS',
               links: [
-                { url: '/rotulo-vehicular', title: 'RÓTULO VEHICULAR' },
-                { url: '/rotulo-local', title: 'RÓTULO LOCAL' },
-                { url: '/rotulo-banner', title: 'RÓTULO BANNER' },
-                { url: '/packaging', title: 'RÓTULO ETIQUETA / PACKAGING' },
-                { url: '/rotulo-vestimenta-uniforme', title: 'RÓTULO VESTIMENTA/UNIFORME' },
-                { url: '/rotulo-furgoneta-camion', title: 'RÓTULO FURGONETA CAMION' }
+                { url: '/nuestros-servicios/rotulo-vehicular', title: 'RÓTULO VEHICULAR' },
+                { url: '/nuestros-servicios/rotulo-local', title: 'RÓTULO LOCAL' },
+                { url: '/nuestros-servicios/rotulo-banner', title: 'RÓTULO BANNER' },
+                { url: '/nuestros-servicios/packaging', title: 'RÓTULO ETIQUETA / PACKAGING' },
+                { url: '/nuestros-servicios/rotulo-vestimenta-uniforme', title: 'RÓTULO VESTIMENTA/UNIFORME' },
+                { url: '/nuestros-servicios/rotulo-furgoneta-camion', title: 'RÓTULO FURGONETA CAMION' }
               ]
             },
             {
               name: 'REDES SOCIALES',
               links: [
-                { url: 'perfil-redes-sociales', title: 'PERFILES DE REDES SOCIALES' }
+                { url: '/nuestros-servicios/perfil-redes-sociales', title: 'PERFILES DE REDES SOCIALES' }
               ]
             }
           ]

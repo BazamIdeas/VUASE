@@ -30,7 +30,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-layout row d-flex justify-center v-show="list.lenght > 3">
-        <v-flex xs2>
+        <v-flex xs5 sm2>
           <v-btn flat class="btn-simple" @click="showLess = !showLess">
             VER  
             <span v-if="showLess" class="ml-1">MAS</span> 
