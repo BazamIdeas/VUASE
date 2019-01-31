@@ -1,8 +1,8 @@
 <template>
   <section>
     <v-container class="py-5 mt-5">
-      <v-layout row class="py-5">
-        <v-flex xs12 md4 offset-md1>
+      <v-layout wrap row class="py-5 pt-xs-0">
+        <v-flex offset-xs1 xs10 md4 offset-md1>
           <v-img :alt="'Gracias' + this.por + 'Liderlogo'" src="images/mujer-liderlogo.png"></v-img>
         </v-flex>
         <v-flex xs12 md7>
