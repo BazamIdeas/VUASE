@@ -82,9 +82,9 @@
         <v-flex xs12 md7>
           <img :alt="alt" src="/images/pages/profesional_services.png" width="100%">
         </v-flex>
-        <v-flex xs12 md4 class="mt-5 pt-5 text-xs-center pluma-background" style="position: relative"> 
+        <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A PROFESIONALES</h2>
+            <h2 class="font-weight-bold mb-4 mt-5  text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A PROFESIONALES</h2>
             <p class="text-xs-center mb-5 font-weight-medum">
               Amplia tu portfolio de servicios rapidamente. Ponemos a disposicion de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atencion especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo.
             </p>
@@ -116,7 +116,7 @@
         </v-flex> -->
 
         <v-flex xs12 md5 >
-          <img alt="Contacto Liderlogo" src="/images/pages/muchacho_contacto.png" width="100%">
+          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
@@ -222,8 +222,8 @@
   }
 
   @media (min-width: 320px) and (max-width: 640px) {
-    h2.display-2, h2.display-1 {
-        font-size: 33px !important;
+    .pt-xs-0 {
+      padding-top: 0 !important;
     }
 
     .xs-mt-0{
@@ -261,6 +261,11 @@
   .parallax-opacity {
     height: 775px !important;
   }
+
+  @media (min-width: 320px) and (max-width: 980px) {
+    .parallax-opacity { height: 1300px !important; }
+  }
+
 
 /*   .parallax-opacity:before {
     content: "";

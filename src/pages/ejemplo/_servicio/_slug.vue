@@ -66,7 +66,7 @@
                 <h2 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
                   {{item.service.name}} - 
-                  {{item.activity.sector.name}}
+                  {{item.activity.name}}
                 </p>
               </v-flex>
             </v-card>
@@ -142,11 +142,11 @@
     },
     head () {
       return {
-        titleTemplate: this.portfolio.name + ' | %s' || 'Ejemplo | %s',
+        titleTemplate: this.portfolio ? this.portfolio.name + ' | %s' : '' || 'Ejemplo | %s',
         meta: [
-          { property: 'og:title', content: this.portfolio.name || 'Ejemplo' },
-          { property: 'og:description', content: this.portfolio.description || 'Ejemplo' },
-          { hid: 'description', name: 'description', content: this.portfolio.description || 'Ejemplo' }
+          { property: 'og:title', content: this.portfolio ? this.portfolio.name : '' || 'Ejemplo' },
+          { property: 'og:description', content: this.portfolio ? this.portfolio.description : '' || 'Ejemplo' },
+          { hid: 'description', name: 'description', content: this.portfolio ? this.portfolio.description : '' || 'Ejemplo' }
         ]
       }
     },

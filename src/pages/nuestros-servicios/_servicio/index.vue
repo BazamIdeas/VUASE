@@ -1,5 +1,5 @@
 <template>
-  <section >
+  <section>
     <!-- TOP SLIDER -->
     <v-container grid-list-md class="mt-5 mb-5 pt-5 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
@@ -8,7 +8,7 @@
     </v-container>
 
     <!-- CAROUSEL -->
-    <AppHeading :number="'1'" v-if="dataService.carousel && dataService.carousel.items1" size="headline" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-5" />
+    <AppHeading :number="'1'" v-if="dataService.carousel && dataService.carousel.items1" size="headline xs-p" title="ESTILOS DIFERENTES PARA CADA NECESIDAD" class="mb-5" />
     <AppExamplesSlider :alt="alt" item-width="350" item-height="350" v-if="dataService.carousel && dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
     <!-- <AppExamplesSlider class="mt-2" v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" /> -->
 
@@ -19,7 +19,7 @@
         <AppServiceCharacteristics v-if="dataService.whatWeOffer" id="que-te-ofrecemos" title="¿QUÉ TE OFRECEMOS?" :list="dataService.whatWeOffer" />
 
         <!-- PROCESO CREATIVO -->  
-        <AppCreativeProccess v-if="dataService.creativeProcess" id="como-funciona" title="¿CÓMO FUNCIONA?" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
+        <AppCreativeProccess class="px-3 " v-if="dataService.creativeProcess" id="como-funciona" title="¿CÓMO FUNCIONA?" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
       
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet v-if="!dataService.hideWhatGet" title="¿QUE TE LLEVAS?" :service="dataService" :slug="service.slug" :price="service.price" :percentage="service.percentage" />
@@ -29,7 +29,7 @@
         <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
-        <AppTestimony :alt="alt" v-if="dataService.testimonies" :list="dataService.testimonies" />
+        <AppTestimony class="hidden-sm-and-down" :alt="alt" v-if="dataService.testimonies" :list="dataService.testimonies" />
 
         <!-- PREGUNTAS FRECUENTES -->  
         <AppExpansionPanels title="PREGUNTAS FRECUENTES" v-if="dataService.frequentQuestions" :list="dataService.frequentQuestions" />
@@ -40,10 +40,10 @@
     <v-container fluid class="mt-5 pt-5 pb-0">
       <v-layout xs12 row wrap> 
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" alt="Contacto Liderlogo" width="100%">
+          <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex xs12 md6>
-          <h1 class="font-weight-bold mb-4 text-uppercase text-xs-center" style="font-size: 40px; color: #434343;">¿TIENES ALGUNA DUDA?</h1>
+          <h2 class="font-weight-bold mb-4 display-1 text-uppercase text-xs-center" style=" color: #434343; ">¿TIENES ALGUNA DUDA?</h2>
           <AppContactForm />
         </v-flex>
       </v-layout>

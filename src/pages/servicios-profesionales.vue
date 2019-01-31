@@ -46,7 +46,7 @@
 
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md1 md10 class="mb-5">
+        <v-flex xs12 offset-md1 md10 class="mb-5 mb-xs-0">
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only" >
               <img alt="RECOMENDADA POR PERFECCIONISTAS" src="/images/icons/pro_services_3.png" class="ml-5 mt-5">
@@ -81,7 +81,7 @@
           <AppHeading number="2" title="¿Listo para hacer crecer tu negocio? " size="display-1" align="center" margin="pl-5 mb-2"/>
           <v-btn to="/contacto" :large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
         </v-flex>
-        <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center  hidden-md-and-up">
+        <v-flex xs12 offset-md2 md8 class="mb-5 text-xs-center  hidden-md-and-up">
           <AppHeading number="2" title="¿Listo para hacer crecer tu negocio? " size="display-1" align="center" margin=" mb-2"/>
           <v-btn to="/contacto" :large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">Solicita ahora una llamada</v-btn>
         </v-flex>

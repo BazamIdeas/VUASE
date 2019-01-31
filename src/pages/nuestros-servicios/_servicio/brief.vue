@@ -52,7 +52,10 @@
         pay: false
       }
     },
-    async created () {
+    async mounted () {
+      await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
+      await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
+
       if (!this.params.paso) {
         if (this.params.servicio.includes('logo') || this.params.servicio === 'imagen-corporativa') {
           this.$router.push(this.$router.currentRoute.path + '/disenos')
@@ -66,10 +69,6 @@
           this.$router.push('estilos')
         }
       }
-    },
-    async mounted () {
-      await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
-      await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
     },
     watch: {
       '$route': function (to, from) {

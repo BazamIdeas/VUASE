@@ -1,9 +1,9 @@
 <template>
   <section>
     <AppPricesCarousel/>
-    <v-container fluid grid-list-md class="mt-5">
+    <v-container fluid grid-list-md class="mt-5 mt-xs-0">
       <v-layout row wrap>
-        <v-flex xs12 offset-md2 md8 class="mb-5">
+        <v-flex xs12 offset-md2 md8 class="mb-5 ">
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
               <h1 class="font-weight-bold mb-2 text-uppercase text-xs-center" style="font-size: 30px;">SELECCIONA TU SERVICIO</h1>
@@ -38,15 +38,18 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center">
-          <h1 class="display-1 font-weight-bold text-xs-center mb-4" style="color: #303032;">¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector.</h1>
+        <v-flex xs12 offset-md2 md8 class="my-5 mt-xs-0 pt-xs-0 text-xs-center">
+          <AppHeading style="color: #303032;" class="hidden-sm-and-down font-weight-bold text-xs-center mb-4" number="2" size="display-1" title="¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector." />
+
+          <AppHeading style="color: #303032;" class="hidden-md-and-up font-weight-bold text-xs-center mb-4" number="2" size="display-1" title="¿Eres agencia o revendedor?" />
+
           <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" alt="Contacto Liderlogo" width="100%">
+          <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
-          <h1 class="font-weight-bold mb-3 text-uppercase text-xs-center" style="font-size: 40px;">¿TIENES ALGUNA DUDA?</h1>
+          <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-uppercase text-xs-center" number="2" size="display-1" title="¿TIENES ALGUNA DUDA?" />
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>
