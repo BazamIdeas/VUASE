@@ -62,7 +62,7 @@
       return {
         limit: 3,
         custom: false,
-        customColors: '#000000, #ffffff, black, rojo',
+        customColors: '',
         timer: null
       }
     },

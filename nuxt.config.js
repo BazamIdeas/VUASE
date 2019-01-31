@@ -6,6 +6,8 @@ const resolve = (dir) => require('path').join(__dirname, dir)
 
 let axiosUrl = 'http://api.liderlogos.com/v1/'
 
+var idGTM = 'GTM-K4QPVB'
+
 module.exports = {
   srcDir: 'src/',
   serverMiddleware: [
@@ -15,7 +17,10 @@ module.exports = {
       next()
     },
     '~~/server_middleware/geoip',
-    '~~/server_middleware/redireccion'
+    '~~/server_middleware/redireccion',
+    function (req, res, next) {
+      next()
+    },
   ],
   sitemap: {
     path: '/sitemap.xml',
@@ -90,7 +95,13 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/toast',
     '@nuxtjs/sitemap',
-    ['cookie-universal-nuxt', { alias: 'cookies' }]
+    ['cookie-universal-nuxt', { alias: 'cookies' }],
+    ['@nuxtjs/google-tag-manager', {
+      id: () => {
+        console.log(id)
+        return id
+      }
+    }]
   ],
   plugins: [
     '~/plugins/vuetify.js',

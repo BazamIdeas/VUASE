@@ -18,7 +18,7 @@
           <v-flex xs10 md6>
             <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.dataService.title }} </h1>
             <p class="caption" style="text-align: justify; color: #666666;" v-if="!subServices.length">
-              {{ service.dataService.description }}
+              {{ service.dataService.description }} {{ brief.service.slug == "perfil-redes-sociales" ? "(" + brief.service.quantity + ") redes sociales" : "" }}
             </p>
             <v-layout row wrap v-if="subServices">
               <v-flex md11>
@@ -33,7 +33,7 @@
               <v-flex md11>
                 <v-layout row wrap v-for="sub in stationery" :key="sub.id">
                   <v-flex md12>
-                    - {{ sub.name }} ({{ sub.quantity }})
+                    - {{ sub.name }} {{ '(' + sub.quantity + ')' }}
                   </v-flex>
                 </v-layout>
               </v-flex>
@@ -234,7 +234,7 @@
     <v-flex md12 xs12 class="my-3">
       <div style="height: 1px;"></div>
     </v-flex>
-    <v-flex md7 offset-md5>
+    <v-flex md7>
       <v-layout row wrap>
         <v-flex md5 xs12>
           <v-subheader class="subheading font-weight-bold">Cupón de descuento:</v-subheader>
@@ -248,14 +248,14 @@
       </v-layout>
     </v-flex>
     <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
-      <v-card @mouseleave="setGatewayInHover(this.gateways[0])">
+      <v-card>
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
           <p style="width: 100%; margin-bottom: 40px">PAGA SEGURO CON</p>
           <br>
           <br>
         </v-card-title>
         <v-layout row wrap>
-          <v-flex v-for="gatewayy in gateways" :key="gatewayy.id" @mouseover.enter="setGatewayInHover(gatewayy)"
+          <v-flex v-for="gatewayy in gateways" :key="gatewayy.id" @click="setGatewayInHover(gatewayy)"
           class="text-xs-center">
 
             <v-img v-if="gatewayy.code ==='01'" src="/icons/paypal.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '01' }"/>
@@ -394,7 +394,7 @@
             }
           }
         } else {
-          total += this.service.price.value
+          total += this.service.price.value * this.brief.service.quantity
 
           if (this.stationery) {
             for (let sta of this.stationery) {

@@ -5,13 +5,14 @@
   "author": "Daniel Torres (danieljtorres94@gmail.com)",
   "private": true,
   "scripts": {
-    "dev": "nodemon --watch server_middleware --exec \"cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 nuxt\"",
+    "dev": "nodemon --watch server_middleware --exec \"cross-env NODE_ENV=production HOST=0.0.0.0 PORT=3000 nuxt\"",
     "build": "nuxt build",
     "start": "NODE_ENV=production nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/google-tag-manager": "^2.1.2",
     "@nuxtjs/sitemap": "^0.1.1",
     "@nuxtjs/toast": "^3.0.1",
     "agile_crm": "^1.2.5",
