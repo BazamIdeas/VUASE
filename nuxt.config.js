@@ -98,8 +98,8 @@ module.exports = {
     ['cookie-universal-nuxt', { alias: 'cookies' }],
     ['@nuxtjs/google-tag-manager', {
       id: () => {
-        console.log(id)
-        return id
+        console.log(idGTM)
+        return idGTM
       }
     }]
   ],
