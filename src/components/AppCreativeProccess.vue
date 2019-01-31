@@ -12,11 +12,16 @@
             </v-carousel>
           </v-flex>
         </v-layout>
-        <v-layout row wrap class="pt-5 process-steps">
+
+        <v-flex xs12 class="mb-2 mt-2 creative-process-title-container" v-if="alters.length">
+          <AppHeading :number="'2'" size="title" title="LOGO" />
+        </v-flex>
+
+        <v-layout row wrap class="process-steps" :class="{ 'pt-5' : alters.length == 0}" >
           <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(step,i) in steps" :key="i" class="px-5">
             <v-layout row>
-              <v-flex xs2 sm1 align-center d-flex>
-                <img class="img-process-step" :src="step.icon" :alt="step.alt"/>
+              <v-flex align-center d-flex>
+                <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
               </v-flex>
               <v-flex xs10 sm11 align-center d-flex class="process-step">
                 <AppHeading :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
@@ -30,11 +35,16 @@
           </v-flex>
         </v-layout>
 
-        <v-layout row wrap class="pt-5 mt-5 process-steps" v-if="alters.length">
+
+        <v-flex v-if="alters.length" xs12 class="mb-2 creative-process-title-container">
+          <AppHeading :number="'2'" size="title" title="WEB" />
+        </v-flex>
+
+        <v-layout row wrap class="process-steps" v-if="alters.length">
           <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(alter,i) in alters" :key="i" class="px-5">
             <v-layout row>
-              <v-flex xs2 sm1 align-center d-flex>
-                <img class="img-process-step" :src="alter.icon" :alt="alter.alt"/>
+              <v-flex align-center d-flex>
+                <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
               </v-flex>
               <v-flex xs10 sm11 align-center d-flex class="process-step">
                 <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>

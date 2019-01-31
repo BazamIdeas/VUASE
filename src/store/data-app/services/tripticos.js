@@ -1,4 +1,8 @@
 export const tripticos = {
+  /* SEO */
+  titleSEO: 'Diseño de Triptico original y llamativo',
+  descriptionSEO: 'Creación de Tripticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'TRÍPTICO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Tu negocio, servicios y productos desplegados en 6 caras`,
@@ -202,10 +206,10 @@ export const tripticos = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
-      title: 'PUBLICIDAD',
-      url: '/nuestros-servicios/publicidad',
-      brief: '/nuestros-servicios/publicidad/brief/estilos'
+      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      title: 'CATÁLOGO',
+      url: '/nuestros-servicios/catalogo',
+      brief: '/nuestros-servicios/catalogo/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',

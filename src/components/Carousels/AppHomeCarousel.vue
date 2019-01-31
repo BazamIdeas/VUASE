@@ -5,7 +5,7 @@
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1">
-              <v-img :alt="alt" class="animate-img" src="images/carousels/slider-de-home.png"></v-img>
+              <v-img :alt="alt" class="animate-img" src="images/carousels/embajador-de-la-marca.png"></v-img>
           </div>
           <div  id="hc-layer-4-item-1">
             <h2>"El diseño es el embajador silencioso de una marca" </h2>

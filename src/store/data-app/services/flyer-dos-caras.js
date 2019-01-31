@@ -1,4 +1,8 @@
 export const flyerDosCaras = {
+  /* SEO */
+  titleSEO: 'Flyer llamativos con para tu negocio en ambas caras',
+  descriptionSEO: 'Consigue aquí el mejor diseño para tu Flyer , te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'FLYER DOS CARAS',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Flyer llamativos con para tu negocio en ambas caras`,
@@ -174,28 +178,30 @@ export const flyerDosCaras = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/flyer/53.-slider-flyer-compressor -min.jpg' },
-      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' },
+      { img: '/images/services-carousel/flyer/almazara.jpg' },
+      { img: '/images/services-carousel/flyer/ayl.jpg' },
       { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
       { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/carol.jpg' },
       { img: '/images/services-carousel/flyer/grupo almansa - flyer -min.jpg' },
       { img: '/images/services-carousel/flyer/hnos duarte - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' }
+      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' }
     ]
   },
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo',
-      brief: '/nuestros-servicios/catalogo/brief/estilos'
+      image: '/images/pages/packs/flyer-retro-cafe.png',
+      title: 'FLYER',
+      url: '/nuestros-servicios/flyer',
+      brief: '/nuestros-servicios/flyer/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/pack-publicidad-grupo-almansa.png',
-      title: 'PUBLICIDAD',
-      url: '/nuestros-servicios/publicidad',
-      brief: '/nuestros-servicios/publicidad/brief/estilos'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

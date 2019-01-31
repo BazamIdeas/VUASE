@@ -35,7 +35,9 @@
                   :interval="'3000'" 
                   hide-controls
                   style="height: 100%;">
-                  <v-carousel-item v-for="(item, i) in layout.carousel" :key="i"   :transition="'slide-x-transition'">
+                  <v-carousel-item v-for="(item, i) in layout.carousel" :key="i"   :transition="'slide-x-transition'"
+                  reverse="true"
+                  reverse-transition="slide-x-reverse-transition">
                     <svg :alt="alt" class="img-cuadrada" viewBox="0 0 100 100 " :style="'background: url(' +item.src+')'"></svg>
                   </v-carousel-item>
                 </v-carousel>

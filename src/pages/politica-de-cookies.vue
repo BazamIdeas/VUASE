@@ -79,6 +79,14 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: 'Politica de cookies | %s',
+        meta: [
+          { content: 'noindex', name: 'robots' }
+        ]
+      }
+    }
   }
 </script>
 

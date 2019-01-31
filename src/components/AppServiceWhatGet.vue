@@ -85,7 +85,7 @@
 
 <script lang="js">
   export default {
-    props: ['title', 'service', 'price', 'percentage'],
+    props: ['title', 'service', 'slug', 'price', 'percentage'],
     mounted () {
     },
     data () {
@@ -101,10 +101,26 @@
         return 100 - this.percentage
       },
       url () {
+        const brief = { service: { id: this.id, name: this.service.title, slug: this.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
+
         if (this.service.whatYouGet.noCarrito) {
           return this.$router.currentRoute.path + '/brief/estilos#nocarrito'
         }
-        return this.$router.currentRoute.path + '/brief'
+
+        if (this.$storage) this.$storage.set('brief', brief)
+
+        if (this.slug === 'logo-y-pagina-web' || this.slug === 'pagina-web') {
+          console.log(this.$router.currentRoute.path)
+          return this.$router.currentRoute.path + '/cotizacion'
+        }
+
+        if (this.slug !== 'catalogo') {
+          if (this.slug.includes('logo') || this.slug === 'imagen-corporativa') {
+            return this.$router.currentRoute.path + '/brief/disenos'
+          }
+        }
+
+        return this.$router.currentRoute.path + '/brief/estilos'
       },
       justOne () {
         return this.service.whatYouGet.columns.length === 1

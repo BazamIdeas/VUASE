@@ -1,4 +1,8 @@
 export const publicidad = {
+  /* SEO */
+  titleSEO: 'Diseño publicitario profesional',
+  descriptionSEO: 'Consigue aquí el mejor diseño para tu publicidad, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'PUBLICIDAD',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu publicidad listo para usar (editable e imágenes)'],
   description: `Comunica tu negocio donde necesites y que tu negocio crezca`,
@@ -192,10 +196,10 @@ export const publicidad = {
       brief: '/nuestros-servicios/flyer/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo',
-      brief: '/nuestros-servicios/catalogo/brief/estilos'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

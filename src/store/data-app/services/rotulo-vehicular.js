@@ -1,4 +1,8 @@
 export const rVehicular = {
+  /* SEO */
+  titleSEO: 'Diseño de Rotulo para vehiculos',
+  descriptionSEO: 'Creación de Rótulos para empresas. Un diseño que promociona tu negocio donde vallas, asesoría gratuita y servicio post-venta. ¡Comienza ahora tu proyecto!',
+  /* ** */
   list: ['Diseño gráfico y publicitario', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Entrega en plantillas de corte digital'],
   title: 'RÓTULO VEHICULAR',
   description: `Un diseño que promociona tu negocio donde vallas.`,

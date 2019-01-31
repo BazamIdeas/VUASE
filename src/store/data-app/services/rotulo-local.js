@@ -1,4 +1,8 @@
 export const rLocal = {
+  /* SEO */
+  titleSEO: 'Diseño de Rotulos para empresas',
+  descriptionSEO: 'Diseñamos el frente de negocio donde tus clientes deseen entrar 100% único y original asesoría gratuita y servicio post-venta. ¡Comienza ahora tu proyecto!',
+  /* ** */
   list: ['Diseño publicitario impactante', 'Cambios ilimitados', 'Fotomontajes de tus diseños', 'Fotomontajes de tus diseños'],
   title: 'RÓTULO LOCAL',
   description: `El frente de negocio donde los clientes desean entrar.`,
@@ -100,10 +104,6 @@ export const rLocal = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rotulo-local/rotulo-local-ibinatural.png',
-      color: '#4cc159'
-    },
-    {
       url: '/images/pages/rotulo-local/rotulo-local-arquero-romero.png',
       color: '#116391'
     },
@@ -114,6 +114,10 @@ export const rLocal = {
     {
       url: '/images/pages/rotulo-local/rotulo-local-maese-escriba.png',
       color: '#b99353'
+    }
+    /*  {
+      url: '/images/pages/rotulo-local/rotulo-local-ibinatural.png',
+      color: '#4cc159'
     },
     {
       url: '/images/pages/rotulo-local/rotulo-local-malarrassa.png',
@@ -122,7 +126,7 @@ export const rLocal = {
     {
       url: '/images/pages/rotulo-local/rotulo-local-sanidae.png',
       color: '#d72f2c'
-    }
+    } */
   ],
   creativeProcess: [
     {

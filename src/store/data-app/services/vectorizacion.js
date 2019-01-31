@@ -1,4 +1,8 @@
 export const vectorizacion = {
+  /* SEO */
+  titleSEO: 'Vectorización de logo',
+  descriptionSEO: 'Redibujamos tu logo de una imagen de baja resolución y la preparamos en archivos vectoriales para el uso que necesites. ¡Comienza tu proyecto ahora!',
+  /* ** */
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   title: 'VECTORIZACIÓN DE TU LOGO',
   description: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,

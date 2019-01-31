@@ -1,4 +1,8 @@
 export const rVestimenta = {
+  /* SEO */
+  titleSEO: 'Diseño de rótulos para indumentaria y uniformes',
+  descriptionSEO: 'Consigue aquí el mejor diseño para tu vestimenta. Te ofrecemos garantía de conformidad y servicio post-venta ¡Haz crecer tu negocio!',
+  /* ** */
   list: ['Diseño corporativo de indumentaria', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Tu diseño listo para bordar imprimir'],
   title: 'RÓTULO VESTIMENTA/UNIFORME ',
   description: `La ropa de tu negocio que todos querran lucir.`,
@@ -191,14 +195,14 @@ export const rVestimenta = {
     first: {
       image: '/images/pages/packs/pack-rotulo-banner-dual.png',
       title: 'ROTULO BANNER',
-      url: '/nuestros-servicios/packaging',
-      brief: '/nuestros-servicios/packaging/brief/estilos'
+      url: '/nuestros-servicios/rotulo-banner',
+      brief: '/nuestros-servicios/rotulo-banner/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/rotulo-local-vw-familia-walker.png',
       title: 'RÓTULO LOCAL',
-      url: '/nuestros-servicios/rotulo-banner',
-      brief: '/nuestros-servicios/rotulo-banner/brief/estilos'
+      url: '/nuestros-servicios/rotulo-local',
+      brief: '/nuestros-servicios/rotulo-local/brief/estilos'
     }
   }
 }

@@ -159,6 +159,14 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: ' Codigo | %s',
+        meta: [
+          { content: 'noindex', name: 'robots' }
+        ]
+      }
+    }
   }
 </script>
 

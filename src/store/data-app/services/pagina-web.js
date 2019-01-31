@@ -1,4 +1,8 @@
 export const web = {
+  /* SEO */
+  titleSEO: 'Diseño y desarrollo de páginas web',
+  descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
+  /* ** */
   list: ['Desarrollo de sitio web a su medida', 'Diseño gráfico profesional', 'Asesoría especializada', 'Adaptación a todos los dispositivos', 'Autoadministrable'],
   title: 'SITIO WEB PROFESIONAL',
   description: `Es el sitio web perfecto para PyMes que desean ganar clientes en Internet.`,
@@ -104,24 +108,20 @@ export const web = {
   }],
   topSlider: [
     {
-      url: '/images/pages/logo-mas-web/web-ahl-fenix.png',
+      url: '/images/pages/pagina-web/web-ahl.png',
       color: '#F6C312'
     },
     {
-      url: '/images/pages/logo-mas-web/web-fdrd.png',
+      url: '/images/pages/pagina-web/web-fdrd.png',
       color: '#C72228'
     },
     {
-      url: '/images/pages/logo-mas-web/web-meraki.png',
-      color: '#DAAE71'
+      url: '/images/pages/pagina-web/web-fauna.png',
+      color: '#00A9D4'
     },
     {
-      url: '/images/pages/logo-mas-web/web-muddanzas-armel.png',
+      url: '/images/pages/pagina-web/web-mudanzas.png',
       color: '#3DAE60'
-    },
-    {
-      url: '/images/pages/logo-mas-web/web-vincit.png',
-      color: '#F19025'
     }
   ],
   creativeProcess: [

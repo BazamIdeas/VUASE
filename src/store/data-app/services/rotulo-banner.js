@@ -1,4 +1,8 @@
 export const rBanner = {
+  /* SEO */
+  titleSEO: 'Diseño de Banners publicitarios',
+  descriptionSEO: 'Destaca tu stand con un banner llamativo y original, tenemos más de 75000 diseños exitosos y te ofrecemos garantía de conformidad. ¡Comienza Ahora!',
+  /* ** */
   list: ['Diseño publicitario impactante', 'Creaciones Ilimitadas', 'Fotomontajes de tus diseños', 'Entrega lista para imprimir'],
   title: 'RÓTULO BANNER',
   description: `Un diseño publicitario que desctaca tu stand.`,

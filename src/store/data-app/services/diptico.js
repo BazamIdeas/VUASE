@@ -1,4 +1,8 @@
 export const diptico = {
+  /* SEO */
+  titleSEO: 'Diseño de Diptico original y llamativo',
+  descriptionSEO: 'Creación de Dipticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'DÍPTICO',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `La presentacion profesional de tu negocio en 4 caras`,
@@ -119,15 +123,7 @@ export const diptico = {
   }],
   topSlider: [
     {
-      url: '/images/pages/diptico/diptico-la-parroquia-azcapo.png',
-      color: '#BC1F26'
-    },
-    {
-      url: '/images/pages/diptico/diptico-gesvetia.png',
-      color: '#EEB729'
-    },
-    {
-      url: '/images/pages/diptico/diptico-normopalet.png',
+      url: '/images/pages/diptico/diptico-geotermia.png',
       color: '#97C15F'
     },
     {
@@ -182,35 +178,33 @@ export const diptico = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/folletos/55.-slider-diptico-compressor.jpg' },
-      { img: '/images/services-carousel/folletos/american flipouts diner - diptico.jpg' },
-      { img: '/images/services-carousel/folletos/vintia - triptico.jpg' },
+      { img: '/images/services-carousel/dipticos/55.-slider-diptico-compressor.jpg' },
+      { img: '/images/services-carousel/dipticos/american flipouts diner - diptico.jpg' },
+      { img: '/images/services-carousel/dipticos/52.-formasystem-calidad-media.jpg' },
+      { img: '/images/services-carousel/folletos/solegar.jpg' },
       { img: '/images/services-carousel/folletos/corpeluva - triptico.jpg' },
       { img: '/images/services-carousel/folletos/50.-asetys.jpg' },
       { img: '/images/services-carousel/folletos/51.-geotermia.jpg' },
-      { img: '/images/services-carousel/folletos/52.-formasystem-calidad-media.jpg' },
-      { img: '/images/services-carousel/folletos/54.-catalogo-compressor.jpg' },
       { img: '/images/services-carousel/folletos/61.-dariofajardo-2' },
       { img: '/images/services-carousel/folletos/ahl - folleto.jpg' },
       { img: '/images/services-carousel/folletos/castadon - folleto.jpg' },
       { img: '/images/services-carousel/folletos/recfer - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/sergio hedrera - folletos.jpg' },
-      { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/talawin - catalogo.jpg' }
+      { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' }
     ]
   },
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/flyer-retro-cafe.png',
-      title: 'FLYER',
-      url: '/nuestros-servicios/flyer',
-      brief: '/nuestros-servicios/flyer/brief/estilos'
+      image: '/images/pages/packs/oferta-triptico-gloss.png',
+      title: 'TRÍPTICOS',
+      url: '/nuestros-servicios/tripticos',
+      brief: '/nuestros-servicios/tripticos/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/oferta-manual-tecnibi.png',
       title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo/brief/estilos'
+      url: '/nuestros-servicios/catalogo',
+      brief: '/nuestros-servicios/catalogo/brief/estilos'
     }
   }
 }

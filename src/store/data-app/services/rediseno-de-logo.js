@@ -1,4 +1,8 @@
 export const redisenoLogo = {
+  /* SEO */
+  titleSEO: 'Rediseño de logo',
+  descriptionSEO: 'Renovamos tu logo hasta su entera aprobación, diseños ilimitados y asesoría gratuita, tenemos más de 15 años de experiencia diseñando marcas ¡Comienza ahora!',
+  /* ** */
   list: ['Restiling exclusivo realizado a tu medida listo para utilizar en todos los formatos que puedes necesitar con tu manual de marca y certificado de derechos'],
   title: 'REDISEÑO DE LOGO',
   description: `Renovación de tu Logo hasta su entera aprobación.`,

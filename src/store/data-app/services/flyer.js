@@ -1,4 +1,8 @@
 export const flyer = {
+  /* SEO */
+  titleSEO: 'Flyers y postales creativas para tu negocio',
+  descriptionSEO: 'Creación de Flyers Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
+  /* ** */
   title: 'FLYER',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
   description: `Flyers y postales creativas para tu negocio`,
@@ -174,27 +178,30 @@ export const flyer = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/flyer/53.-slider-flyer-compressor -min.jpg' },
-      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' },
+      { img: '/images/services-carousel/flyer/almazara.jpg' },
+      { img: '/images/services-carousel/flyer/ayl.jpg' },
       { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
       { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/carol.jpg' },
       { img: '/images/services-carousel/flyer/grupo almansa - flyer -min.jpg' },
       { img: '/images/services-carousel/flyer/hnos duarte - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' }
+      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' },
+      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' }
     ]
   },
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
-      title: 'CATÁLOGO',
-      url: '/nuestros-servicios/catalogo/brief/estilos'
+      image: '/images/pages/flyer-dos-caras/flyer-dos-caras-compubot.png',
+      title: 'FLYER DOS CARAS',
+      url: '/nuestros-servicios/flyer-dos-caras',
+      brief: '/nuestros-servicios/flyer-dos-caras/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/oferta-triptico-gloss.png',
-      title: 'TRÍPTICO',
-      url: '/nuestros-servicios/tripticos',
-      brief: '/nuestros-servicios/tripticos/brief/estilos'
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
+      title: 'DÍPTICO',
+      url: '/nuestros-servicios/diptico',
+      brief: '/nuestros-servicios/diptico/brief/estilos'
     }
   }
 }

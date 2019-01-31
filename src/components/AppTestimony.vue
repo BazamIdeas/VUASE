@@ -37,7 +37,7 @@
               </v-flex>
               <v-flex xs12 md6 class="logo-testimony">
                 <img :alt="alt" class="--puntos" src="/icons/puntos_de_fondo.svg">
-                <img :alt="alt" class="lt-img" :src="item.logo">
+                <img class="lt-img" :src="item.logo" :alt="item.company + ' Testimonio'">
               </v-flex>
             </v-layout>
           </v-carousel-item>

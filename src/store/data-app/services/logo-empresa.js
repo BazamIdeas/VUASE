@@ -1,4 +1,8 @@
 export const logoEmpresa = {
+  /* SEO */
+  titleSEO: 'Diseño de logo original y llamativo',
+  descriptionSEO: 'Creamos tu logo hasta su entera aprobación, diseños ilimitados y asesoría gratuita, tenemos más de 15 años de experiencia diseñando marcas ¡Comienza ahora!',
+  /* ** */
   list: ['Logo exclusivo realizado a tu medida entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.'],
   title: 'LOGO',
   description: `Logo original de tu entera conformidad.`,
@@ -32,7 +36,7 @@ export const logoEmpresa = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rediseno-de-logo/mockup-ferreteria-flores.png',
+    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
     color: '#211F20',
     columns: [
       [{

@@ -3,14 +3,14 @@
     <v-container grid-list-md class="ejemplos">
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
-        <v-flex xs12>
+        <!-- <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length" />
-        </v-flex>
+        </v-flex> -->
         <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
           <v-flex @click="goPortfolio('/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug, portfolio)" v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2 pointer">
             <v-card height="auto">
               <div class="img-cuadrada-ejemplos-container" >
-                  <svg role="img" :aria-label="portfolio.name + ' Imagen ' + key" :alt="portfolio.name + ' Imagen ' + key" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
+                  <svg role="img" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + portfolio.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
                 <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
@@ -34,7 +34,9 @@
     data () {
       return {
         urlHosting: 'http://api.liderlogos.com/v1/images/slug/',
-        alt: 'Liderlogo'
+        alt: 'Ejemplos de nuestros trabajos profesionales',
+        description: 'Ejemplos de logos, imagen corporativa y páginas web, tenemos más de 15 años de experiencia diseñando marcas',
+        title: 'Ejemplos de nuestros trabajos profesionales'
       }
     },
     asyncData ({ params }) {
@@ -64,9 +66,11 @@
     },
     head () {
       return {
-        titleTemplate: '%s | Servicios',
+        titleTemplate: this.title + ' | %s',
         meta: [
-          { name: 'og:title', content: 'bar' }
+          { property: 'og:title', content: this.title },
+          { property: 'og:description', content: this.description },
+          { hid: 'description', name: 'description', content: this.description }
         ]
       }
     },

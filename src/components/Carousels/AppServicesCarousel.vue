@@ -28,15 +28,9 @@
                   item-value="slug"
                   class="input-search"
                   light
+                  @change="go()"
                 >
                 </v-autocomplete>
-              </v-flex>
-              <v-flex xs3 md0 class="md-auto">
-                <v-slide-x-reverse-transition slot="append-outer" mode="out-in" >
-                  <v-btn :to="url" class="boton-buscar">
-                    <v-icon>search</v-icon>
-                  </v-btn>
-                </v-slide-x-reverse-transition>
               </v-flex>
             </v-layout>
           </div>
@@ -84,6 +78,11 @@
           'adicional-papeleria',
           'sitio-web-ecommerce'
         ]
+      }
+    },
+    methods: {
+      go () {
+        this.$router.push(this.url)
       }
     },
     computed: {
