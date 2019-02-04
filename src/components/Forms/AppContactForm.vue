@@ -160,36 +160,29 @@
             contact.source = utmSource
           }
 
-          this.$store.dispatch('user/contactForm', contact).then((res) => {
-            console.log(res)
+          if (process.browser) {
+            window.grecaptcha.ready(() => {
+              let secret = '6Lf1944UAAAAAHmlC7K-rhNxkaSs1_qbLU7hIdaH'
+              window.grecaptcha.execute(secret, { action: 'SiteWiew' }).then((token) => {
+                let response = {
+                  secret: secret,
+                  response: token
+                }
 
-            this.$router.push('/gracias?por=contacto')
+                this.$axios.post('https://www.google.com/recaptcha/api/siteverify', response).then((res) => {
+                  console.log('grecaptcha', res)
 
-            /* if (!process.browser) return
+                  this.$store.dispatch('user/contactForm', contact).then((res) => {
+                    console.log(res)
 
-            var agileContact = {}
-            agileContact.email = this.email
-            agileContact.first_name = this.name
-            agileContact.last_name = ''
-            agileContact.title = 'lead'
-            agileContact.phone = this.phone
-            agileContact.website = ''
-            var address = { 'city': 'new delhi', 'state': 'delhi', 'country': 'india' }
-            agileContact.address = JSON.stringify(address)
-            agileContact.tags = 'Contacto Liderlogo, Lead'
-
-            var _agile = _agile
-            _agile.create_contact(contact, {
-              success: function (data) {
-                console.log('success', data)
-              },
-              error: function (data) {
-                console.log('error', data)
-              }
-            }) */
-          }).catch((err) => {
-            console.log(err)
-          })
+                    this.$router.push('/gracias?por=contacto')
+                  })
+                }).catch((err) => {
+                  console.log(err)
+                })
+              })
+            })
+          }
         })
       }
     }
