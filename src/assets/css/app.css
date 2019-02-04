@@ -221,3 +221,7 @@ a {
 .no-arrow .v-list__group__header__append-icon {
   display: none;
 }
+
+.grecaptcha-badge {
+  display: none;
+}
