@@ -108,20 +108,32 @@ export const web = {
   }],
   topSlider: [
     {
-      url: '/images/pages/pagina-web/web-ahl.png',
-      color: '#F6C312'
+      url: '/images/pages/pagina-web/Dual.png',
+      color: '#000000'
     },
     {
-      url: '/images/pages/pagina-web/web-fdrd.png',
-      color: '#C72228'
+      url: '/images/pages/pagina-web/Grupo_oliveros.png',
+      color: '#312A70'
     },
     {
-      url: '/images/pages/pagina-web/web-fauna.png',
-      color: '#00A9D4'
+      url: '/images/pages/pagina-web/HL_FENIX.png',
+      color: '#EB981B'
     },
     {
-      url: '/images/pages/pagina-web/web-mudanzas.png',
-      color: '#3DAE60'
+      url: '/images/pages/pagina-web/Toni_Llinas.png',
+      color: '#EB981B'
+    },
+    {
+      url: '/images/pages/pagina-web/Ulkira.png',
+      color: '#AF0216'
+    },
+    {
+      url: '/images/pages/pagina-web/Ultimoo.png',
+      color: '#1D191A'
+    },
+    {
+      url: '/images/pages/pagina-web/Vincit.png',
+      color: '#F19129'
     }
   ],
   creativeProcess: [

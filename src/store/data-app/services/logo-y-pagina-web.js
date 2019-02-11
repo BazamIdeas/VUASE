@@ -216,6 +216,7 @@ export const logoWeb = {
       { img: '/images/services-carousel/logo-y-web/barna-students-logo-y-sitio-web.jpg' },
       { img: '/images/services-carousel/logo-y-web/todo-ok-logo-y-sitio-web.jpg' },
       { img: '/images/services-carousel/logo-y-web/vincit-logo-y-sitio-web.jpg' },
+      { img: '/images/services-carousel/logo-y-web/Carroucel.jpg' },
       { img: '/images/services-carousel/logo-y-web/arquitectura-logo-y-sitio-web.jpg' }
     ]
   },

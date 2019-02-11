@@ -42,10 +42,10 @@
             </v-flex>
             <v-layout xs12 md4 row wrap justify-center class="mt-2 mb-0">
               <v-flex xs12 md6>
-                <v-radio key="type_user_false" label="Si" value="agencia" class="mt-0"></v-radio>
+                <v-radio key="type_user_false" label="Si" value="true" class="mt-0"></v-radio>
               </v-flex>
               <v-flex xs12 md6 >
-                <v-radio key="type_user_true" label="No" value="revendedor" class="mt-0"></v-radio>
+                <v-radio key="type_user_true" label="No" value="false" class="mt-0"></v-radio>
               </v-flex>
             </v-layout>
           </v-radio-group>
@@ -101,6 +101,9 @@
     props: {
       contactPage: {
         default: false
+      },
+      page: {
+        default: 'inicio'
       }
     },
     data () {
@@ -109,7 +112,7 @@
         email: '',
         message: '',
         phone: '',
-        type_user: 'revendedor',
+        type_user: false,
         category: '',
         offers: false,
         time: '9am a 14hs – Dia de semana',
@@ -135,7 +138,10 @@
           var contact = {
             name: this.name,
             email: this.email,
-            message: this.message
+            message: this.message,
+            page_view: this.category.name || this.page,
+            promo: this.offers,
+            reseller: this.type_user || false
           }
 
           if (this.for_phone) {
@@ -160,8 +166,13 @@
             contact.source = utmSource
           }
 
-          if (process.browser) {
-            window.grecaptcha.ready(() => {
+          this.$store.dispatch('user/contactForm', contact).then((res) => {
+            console.log(res)
+            this.$router.push('/gracias?por=contacto')
+          })
+
+          /* if (process.browser) {
+             window.grecaptcha.ready(() => {
               let secret = '6Lf1944UAAAAAHmlC7K-rhNxkaSs1_qbLU7hIdaH'
               window.grecaptcha.execute(secret, { action: 'SiteWiew' }).then((token) => {
                 let response = {
@@ -172,17 +183,12 @@
                 this.$axios.post('https://www.google.com/recaptcha/api/siteverify', response).then((res) => {
                   console.log('grecaptcha', res)
 
-                  this.$store.dispatch('user/contactForm', contact).then((res) => {
-                    console.log(res)
-
-                    this.$router.push('/gracias?por=contacto')
-                  })
                 }).catch((err) => {
                   console.log(err)
                 })
               })
             })
-          }
+          } */
         })
       }
     }

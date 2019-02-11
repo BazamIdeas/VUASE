@@ -36,7 +36,7 @@ export const rFurgoneta = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rotulo-vehicular/rotulo-vehicular-arquero-romero.png',
+    img: '/images/pages/rotulo-vehicular/rotulo-furgoneta-alpha-circus.png',
     color: '#084c86',
     columns: [
       [
@@ -112,7 +112,7 @@ export const rFurgoneta = {
       color: '#6ebd46'
     },
     {
-      url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-araucaria.png',
+      url: '/images/pages/rotulo-furgoneta/Olarte SL.png',
       color: '#2763a1'
     },
     {

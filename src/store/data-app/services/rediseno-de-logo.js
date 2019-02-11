@@ -159,24 +159,32 @@ export const redisenoLogo = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
-      color: '#15427D'
+      url: '/images/pages/rediseno-de-logo/1-rediseno-al.jpg',
+      color: '#50A9B6'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-arquitectura-sin-limites.png',
-      color: '#BA2700'
+      url: '/images/pages/rediseno-de-logo/2-rediseno-alpha.jpg',
+      color: '#871E17'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-ferreteria-flores.png',
-      color: '#F89422'
+      url: '/images/pages/rediseno-de-logo/3-rediseno-arq.jpg',
+      color: '#DF3021'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-infriman.png',
-      color: '#F2591D'
+      url: '/images/pages/rediseno-de-logo/4-rediseno-xjr.jpg',
+      color: '#D9330C'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
+      url: '/images/pages/rediseno-de-logo/5-rediseno-ga.jpg',
       color: '#3FB13F'
+    },
+    {
+      url: '/images/pages/rediseno-de-logo/6-rediseno-afm.jpg',
+      color: '#BC1F26'
+    },
+    {
+      url: '/images/pages/rediseno-de-logo/7-rediseno-sistole.jpg',
+      color: '#EB981B'
     }
   ],
   creativeProcess: [

@@ -178,7 +178,9 @@ export const publicidad = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/flyer/53.-slider-flyer-compressor -min.jpg' },
+      { img: '/images/services-carousel/publicidad/ALMAZARA_MOCK.jpg' },
+      { img: '/images/services-carousel/publicidad/CAROLMOCKUP.jpg' },
+      { img: '/images/services-carousel/publicidad/univiajesmockup.jpg' },
       { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' },
       { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
       { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
