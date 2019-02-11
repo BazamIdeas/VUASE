@@ -4,9 +4,9 @@ const Cookies = require('cookies')
 const axios = require('axios')
 const resolve = (dir) => require('path').join(__dirname, dir)
 
-let axiosUrl = 'http://api.liderlogos.com/v1/'
+// let axiosUrl = 'http://api.liderlogos.com/v1/'
 
-// let axiosUrl = 'http://127.0.0.1:9090/v1/'
+let axiosUrl = 'http://127.0.0.1:9090/v1/'
 
 var idGTM = 'GTM-K4QPVB'
 
