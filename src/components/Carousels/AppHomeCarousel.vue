@@ -441,7 +441,7 @@
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 8%;
+      margin-top: 10%;
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -513,7 +513,7 @@
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 8%;
+      margin-top: 10%;
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -543,7 +543,7 @@
     }
 
     .theme2 div#hc-layer-3-item-1 {
-      width: 90%;
+      width: 80%;
     }
 
     /*ITEM-2*/

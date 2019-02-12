@@ -74,6 +74,10 @@ export const disenoApp = {
     {
       url: '/images/pages/app/univiajes-express-app.jpg',
       color: '#7FC670'
+    },
+    {
+      url: '/images/pages/app/Omkel.png',
+      color: '#E59E8F'
     }
   ],
   creativeProcess: [

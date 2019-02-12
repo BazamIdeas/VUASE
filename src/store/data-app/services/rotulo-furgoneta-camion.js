@@ -36,8 +36,8 @@ export const rFurgoneta = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rotulo-vehicular/rotulo-furgoneta-alpha-circus.png',
-    color: '#084c86',
+    img: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-alpha-circus.png',
+    color: '#982629',
     columns: [
       [
         {
@@ -112,7 +112,7 @@ export const rFurgoneta = {
       color: '#6ebd46'
     },
     {
-      url: '/images/pages/rotulo-furgoneta/Olarte SL.png',
+      url: '/images/pages/rotulo-furgoneta/Olarte_SL.jpg',
       color: '#2763a1'
     },
     {

@@ -80,7 +80,9 @@
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md7>
-          <img :alt="alt" src="/images/pages/profesional_services.png" width="100%">
+          <img :alt="alt" src="/images/pages/profesional_services.png" style="width: 75%;
+    margin: auto;
+    display: block;">
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
