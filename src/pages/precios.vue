@@ -17,7 +17,7 @@
                 <h2 class="price">
                   <!-- {{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }} -->
                   {{ 
-                    $store.state.services.RightSymbol.indexOf(serviceObject.price.currency.iso) === -1 ? 
+                    serviceObject.price.currency.display == 'right' ? 
                     serviceObject.price.currency.symbol + ' ' + serviceObject.price.value : 
                     serviceObject.price.value + ' ' + serviceObject.price.currency.symbol
                   }}

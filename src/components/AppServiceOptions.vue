@@ -80,7 +80,7 @@
                   <v-flex xs12 sm4 offset-sm1 >
                     <h2 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'">
                       {{ 
-                        $store.state.services.RightSymbol.indexOf(price.currency.iso) === -1 ? 
+                        price.currency.display == 'left' ? 
                         price.currency.symbol + ' ' + finalPrice() : 
                         finalPrice() + ' ' + price.currency.symbol
                       }}

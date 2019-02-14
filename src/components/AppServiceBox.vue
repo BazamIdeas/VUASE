@@ -11,12 +11,12 @@
         <h2 class="title font-weight-bold" style="cursor:pointer;" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
            <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
-          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) === -1">
+          <span v-if="price.currency.display == 'left'">
             {{price.currency.symbol}}
             {{price.value}}
           </span>
 
-          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) !== -1">
+          <span v-if="price.currency.display == 'right'">
             {{price.value}}
             {{price.currency.symbol}}
           </span>
