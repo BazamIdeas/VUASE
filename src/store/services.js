@@ -1,7 +1,6 @@
 import { services as servicesHardcoded } from './data-app/services'
 
 export const state = () => ({
-  RightSymbol: ['EUR'],
   groups: [
     {
       icon: '/icons/logo-a-medida.svg',

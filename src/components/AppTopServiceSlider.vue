@@ -77,9 +77,9 @@
 </script>
 
 <style>
-.top-service-slider .v-carousel__controls {
-    /*display: none;*/
-}
+/*.top-service-slider .v-carousel__controls {
+    display: none;
+}*/
 
 .top-service-slider .v-carousel{
   box-shadow: unset;
