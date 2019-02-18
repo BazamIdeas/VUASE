@@ -197,7 +197,7 @@
           icon: '/icons/packages/ofrecer-multiples-servicios.svg',
           title: 'OFRECER MULTIPLES SERVICIOS',
           slug: 'ofrecer-multiples-servicios',
-          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones'],
+          services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'seccion-de-noticias-o-publicaciones'],
           qty: 5,
           open: {
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser:  reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',

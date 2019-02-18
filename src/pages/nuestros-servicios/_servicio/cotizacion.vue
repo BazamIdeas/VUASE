@@ -89,12 +89,12 @@
                   <td class="title font-weight-bold py-1 pl-2" style="width: 70%;"> TOTAL </td>
                   <td class="title font-weight-bold text-xs-center py-1 pr-2">  
                     <!-- {{ countryData.currency.symbol }} {{ total }} -->
-                    <span v-if="addon.price.currency.display == 'left'">
+                    <span v-if="countryData.currency.display == 'left'">
                       {{countryData.currency.symbol}}
                       {{total}}
                     </span>
 
-                    <span v-if="addon.price.currency.display == 'right'">
+                    <span v-if="countryData.currency.display == 'right'">
                       {{total}}
                       {{countryData.currency.symbol}}
                     </span>
@@ -113,12 +113,12 @@
     <v-toolbar class="hidden-sm-and-up" fixed style="top: inherit;bottom: 0;">
       <div class="title font-weight-bold text-xs-center">
         <!-- {{ countryData.currency.symbol }} {{ total }} -->
-        <span v-if="addon.price.currency.display == 'left'">
+        <span v-if="countryData.currency.display == 'left'">
           {{countryData.currency.symbol}}
           {{total}}
         </span>
 
-        <span v-if="addon.price.currency.display == 'right'">
+        <span v-if="countryData.currency.display == 'right'">
           {{total}}
           {{countryData.currency.symbol}}
         </span>
@@ -186,7 +186,7 @@
             title: 'Ofrecer múltiples servicios',
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser: reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
             sections: 5,
-            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'casillas-de-correo', 'seccion-de-noticias-o-publicaciones']
+            services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'seccion-de-noticias-o-publicaciones']
           },
           'dar-a-conocer-mis-proyectos-realizados': {
             title: 'Dar a conocer mis proyectos realizados',
@@ -234,8 +234,8 @@
         addonsObject: {
           'diseno-y-desarrollo-de-seccion-web': { section: 'details' },
           'hosting-por-un-ano': { section: 'details' },
-          'dominio-por-un-ano': { section: 'details' },
-          'casillas-de-correo': { section: 'details' },
+          // 'dominio-por-un-ano': { section: 'details' },
+          // 'casillas-de-correo': { section: 'details' },
           'certificado-ssl': { section: 'details' },
           'chat': { section: 'functionalities' },
           'pop-publicitario': { section: 'functionalities' },
