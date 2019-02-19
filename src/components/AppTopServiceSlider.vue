@@ -58,7 +58,6 @@
   export default {
     props: ['id', 'service', 'slug', 'alt'],
     computed: {
-      /* TODO: PENDIENTE */
       comenzarUrl () {
         const brief = { service: { id: this.id, name: this.service.title, slug: this.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
 
@@ -77,10 +76,6 @@
 </script>
 
 <style>
-/*.top-service-slider .v-carousel__controls {
-    display: none;
-}*/
-
 .top-service-slider .v-carousel{
   box-shadow: unset;
 }
