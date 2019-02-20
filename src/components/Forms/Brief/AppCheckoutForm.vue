@@ -262,7 +262,11 @@
 
             <v-img v-if="gatewayy.code ==='02'" src="/icons/tarjeta.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '02' }"/>
 
-            <v-img v-if="gatewayy.code ==='03' || gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '03' || gateway.code === '04' }"/>
+            <v-img v-if="gatewayy.code ==='03'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '03' }"/>
+            
+            <v-img v-if="gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '04' }"/>
+
+            <v-img v-if="gatewayy.code ==='05'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '05' }"/>
             
           </v-flex>
         </v-layout>
@@ -285,6 +289,16 @@
                 <AppBankTransfer v-show="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
 
                 <AppBankTransfer v-show="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                
+
+                <v-layout row wrap v-show="gateway.code ==='05'">
+                  <v-flex md6 class="text-xs-center">
+                    <AppSafetypay label="Transferencia Bancaria Online" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                  </v-flex>
+                  <v-flex md6 class="text-xs-center">
+                    <AppSafetypay label="Transferencia Bancaria Efectivo" :filter="'cash'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                  </v-flex>
+                </v-layout>
               
               </v-flex>
             </div>
@@ -331,7 +345,14 @@
     },
     computed: {
       brief () { return this.$store.state.brief.data },
-      pay () { return this.$store.state.cart.pay },
+      pay: {
+        get: function () {
+          return this.$store.state.cart.pay
+        },
+        set: function (newValue) {
+          this.setPay()
+        }
+      },
       chargePayMethods () { return this.$store.state.cart.chargePayMethods },
       gateways () {
         let gateways = []
@@ -432,7 +453,7 @@
       cartObject () {
         let cartObject = { services: [] }
 
-        if (this.brief.subServices) {
+        if (this.brief.subServices.length) {
           for (let subService of this.brief.subServices) {
             cartObject.services.push({ id: subService.id, quantity: subService.quantity || 1 })
           }
