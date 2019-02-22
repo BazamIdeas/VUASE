@@ -283,21 +283,19 @@
                 <no-ssr v-show="gateway.code ==='01'">
                   <AppPaypal  :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 </no-ssr>
+                
                 <no-ssr v-show="gateway.code ==='02'">
                   <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 </no-ssr>
+                
                 <AppBankTransfer v-show="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
 
                 <AppBankTransfer v-show="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 
-
-                <v-layout row wrap v-show="gateway.code ==='05'">
-                  <v-flex md6 class="text-xs-center">
-                    <AppSafetypay label="Transferencia Bancaria Online" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
-                  </v-flex>
-                  <v-flex md6 class="text-xs-center">
+                <AppSafetypay v-show="gateway.code ==='05'" label="Transferencia Bancaria Online" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                  <!--<v-flex md6 class="text-xs-center">
                     <AppSafetypay label="Transferencia Bancaria Efectivo" :filter="'cash'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
-                  </v-flex>
+                  </v-flex>-->
                 </v-layout>
               
               </v-flex>
