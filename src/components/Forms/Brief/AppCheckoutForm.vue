@@ -296,7 +296,6 @@
                   <!--<v-flex md6 class="text-xs-center">
                     <AppSafetypay label="Transferencia Bancaria Efectivo" :filter="'cash'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                   </v-flex>-->
-                </v-layout>
               
               </v-flex>
             </div>
