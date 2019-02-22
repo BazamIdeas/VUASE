@@ -1,43 +1,43 @@
 <template>
   <v-layout row wrap class="px-2 mb-5">
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Azules')" :class="{ 'selected': brief.colors && brief.colors.includes('Azules'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Azules.png"></v-img>
+      <v-img src="/images/brief/colors/Azules.jpg"></v-img>
       <p class="mb-3 mt-1">Azules</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Aquas')" :class="{ 'selected': brief.colors && brief.colors.includes('Aquas'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Aquas.png"></v-img>
+      <v-img src="/images/brief/colors/Aquas.jpg"></v-img>
       <p class="mb-3 mt-1">Aquas</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Verdes')" :class="{ 'selected': brief.colors && brief.colors.includes('Verdes'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Verdes.png"></v-img>
+      <v-img src="/images/brief/colors/Verdes.jpg"></v-img>
       <p class="mb-3 mt-1">Verdes</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Morados')" :class="{ 'selected': brief.colors && brief.colors.includes('Morados'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Morados.png"></v-img>
+      <v-img src="/images/brief/colors/Morados.jpg"></v-img>
       <p class="mb-3 mt-1">Morados</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Rosas')" :class="{ 'selected': brief.colors && brief.colors.includes('Rosas'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Rosas.png"></v-img>
+      <v-img src="/images/brief/colors/Rosas.jpg"></v-img>
       <p class="mb-3 mt-1">Rosas</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Rojos')" :class="{ 'selected': brief.colors && brief.colors.includes('Rojos'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Rojos.png"></v-img>
+      <v-img src="/images/brief/colors/Rojos.jpg"></v-img>
       <p class="mb-3 mt-1">Rojos</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Naranjas')" :class="{ 'selected': brief.colors && brief.colors.includes('Naranjas'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Naranjas.png"></v-img>
+      <v-img src="/images/brief/colors/Naranjas.jpg"></v-img>
       <p class="mb-3 mt-1">Naranjas</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Amarillos')" :class="{ 'selected': brief.colors && brief.colors.includes('Amarillos'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Amarillos.png"></v-img>
+      <v-img src="/images/brief/colors/Amarillos.jpg"></v-img>
       <p class="mb-3 mt-1">Amarillos</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('Neutros')" :class="{ 'selected': brief.colors && brief.colors.includes('Neutros'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/Neutros.png"></v-img>
+      <v-img src="/images/brief/colors/Neutros.jpg"></v-img>
       <p class="mb-3 mt-1">Escala de Grises</p>
     </v-flex>
     <v-flex md3 xs6 class="brief-color" @click="selectColor('CMYK')" :class="{ 'selected': brief.colors && brief.colors.includes('CMYK'), 'disabled': brief.colors && brief.colors.length == limit }">
-      <v-img src="/images/brief/colors/CMYK.png"></v-img>
+      <v-img src="/images/brief/colors/CMYK.jpg"></v-img>
       <p class="mb-3 mt-1">Quiero que decidan por mi!</p>
     </v-flex>
 
