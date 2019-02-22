@@ -32,7 +32,7 @@
             }
           }).then(function (data) {
             console.log(data)
-            window.open(data.redirect)
+            location.replace(data.redirect)
           }).catch(function (error) {
             if (error) {
               return vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 2')
