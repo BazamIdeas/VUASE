@@ -174,7 +174,6 @@ export const rLocal = {
       { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-dietetica.jpg' },
       { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-farmacia.jpg' },
       { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-liderplan.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/gesdupla - rotulo valla publicitaria.jpg' },
       { img: '/images/services-carousel/rotulo-local-banner/mabisat - rotulo local.jpg' },
       { img: '/images/services-carousel/rotulo-local-banner/punto smart - rotulo local 640px.jpg' }
     ]
