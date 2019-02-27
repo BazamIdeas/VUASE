@@ -171,11 +171,11 @@ export const rLocal = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-dietetica.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-farmacia.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/ejemplo-rotulo-local-liderplan.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/mabisat - rotulo local.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/punto smart - rotulo local 640px.jpg' }
+      { img: '/images/services-carousel/rotulo-local-banner/rotulo-ibinatural.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/rotulo-maese.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/rotulo-malarrassa.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/rotulo-olarte.jpg' },
+      { img: '/images/services-carousel/rotulo-local-banner/rotulo-sanidae.jpg' }
     ]
   },
   packs: {
