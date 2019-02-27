@@ -101,12 +101,37 @@ export const state = () => ({
       { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
     ],
-    'flyer': ['diseno-folletos-dipticos-tripticos'],
-    'flyer-dos-caras': ['diseno-folletos-dipticos-tripticos'],
+    'flyer': [
+      { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
+      { label: 'Describa los resultados que desea obtener de su flyer:', type: 'textarea', name: 'brochures_results' },
+      { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
+      { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
+    ],
+    'flyer-dos-caras': [
+      { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
+      { label: 'Describa los resultados que desea obtener de su flyer:', type: 'textarea', name: 'brochures_results' },
+      { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
+      { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
+    ],
     'diptico': ['diseno-folletos-dipticos-tripticos'],
-    'tripticos': ['diseno-folletos-dipticos-tripticos'],
-    'catalogo': ['diseno-folletos-dipticos-tripticos'],
-    'publicidad': ['diseno-folletos-dipticos-tripticos'],
+    'tripticos': [
+      { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
+      { label: 'Describa los resultados que desea obtener de su tripticos:', type: 'textarea', name: 'brochures_results' },
+      { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
+      { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
+    ],
+    'catalogo': [
+      { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
+      { label: 'Describa los resultados que desea obtener de su catalogo:', type: 'textarea', name: 'brochures_results' },
+      { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
+      { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
+    ],
+    'publicidad': [
+      { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
+      { label: 'Describa los resultados que desea obtener de su publicidad:', type: 'textarea', name: 'brochures_results' },
+      { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
+      { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
+    ],
     'perfil-redes-sociales': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'social_profiles_about_us' },
       { label: '¿En qué red social desea aplicar el diseño de su perfil?', type: 'checkbox', name: 'social_profiles_accounts', options: ['Facebook ', 'Twitter', 'Instagram', 'Google+', 'Youtube', 'Linkedin', 'Flicker', 'Pinterest', 'Otras'] },
@@ -133,6 +158,12 @@ export const state = () => ({
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'app_files' },
       { label: '¿Existen aplicaciones con funcionalidades similares a la de su proyecto?', type: 'textarea', name: 'app_similar' },
       { label: 'Describa brevemente las características de su aplicación', type: 'textarea', name: 'app_preferences' }
+    ],
+    'ecommerce': [
+      'pagina-web'
+    ],
+    'presencia-web': [
+      'pagina-web'
     ]
   }
 })
