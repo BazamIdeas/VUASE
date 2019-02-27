@@ -159,32 +159,24 @@ export const redisenoLogo = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rediseno-de-logo/1-rediseno-al.jpg',
-      color: '#50A9B6'
+      url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
+      color: '#15427D'
     },
     {
-      url: '/images/pages/rediseno-de-logo/2-rediseno-alpha.jpg',
-      color: '#871E17'
+      url: '/images/pages/rediseno-de-logo/rediseno-arquitectura-sin-limites.png',
+      color: '#BA2700'
     },
     {
-      url: '/images/pages/rediseno-de-logo/3-rediseno-arq.jpg',
-      color: '#DF3021'
+      url: '/images/pages/rediseno-de-logo/rediseno-ferreteria-flores.png',
+      color: '#F89422'
     },
     {
-      url: '/images/pages/rediseno-de-logo/4-rediseno-xjr.jpg',
-      color: '#D9330C'
+      url: '/images/pages/rediseno-de-logo/rediseno-infriman.png',
+      color: '#F2591D'
     },
     {
-      url: '/images/pages/rediseno-de-logo/5-rediseno-ga.jpg',
+      url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
       color: '#3FB13F'
-    },
-    {
-      url: '/images/pages/rediseno-de-logo/6-rediseno-afm.jpg',
-      color: '#BC1F26'
-    },
-    {
-      url: '/images/pages/rediseno-de-logo/7-rediseno-sistole.jpg',
-      color: '#EB981B'
     }
   ],
   creativeProcess: [
@@ -222,15 +214,13 @@ export const redisenoLogo = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rediseno-logo/estructuras-rediseno.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/sistole-rediseno.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/arete-ingenieria-rediseno.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/21.-ares.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/17.-osmaservice.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/18.-la-casa-de-kett.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/19.-avicola-pungurume.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/22.-geoit.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/24. limpverd.jpg' }
+      { img: '/images/services-carousel/rediseno-logo/1-rediseno-al.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/2-rediseno-alpha.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/3-rediseno-arq.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/4-rediseno-xjr.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/5-rediseno-ga.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/6-rediseno-afm.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/7-rediseno-sistole.jpg' }
     ]
   }
 }
