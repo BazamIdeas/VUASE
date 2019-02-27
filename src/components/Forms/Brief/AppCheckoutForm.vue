@@ -266,7 +266,7 @@
             
             <v-img v-if="gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '04' }"/>
 
-            <v-img v-if="gatewayy.code ==='05'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '05' }"/>
+            <v-img v-if="gatewayy.code ==='05'" src="/icons/safety_pay.jpg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '05' }"/>
             
           </v-flex>
         </v-layout>

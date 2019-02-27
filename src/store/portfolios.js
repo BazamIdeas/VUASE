@@ -59,7 +59,7 @@ export const state = () => ({
       textColor: 'white'
     },
     {
-      img: '/images/services-carousel/home/8-etiquetas-packaging.jpg',
+      img: '/images/services-carousel/home/almazara.jpg',
       icon: '/icons/white/rotulo-etiqueta.svg',
       service: 'Diseño de Etiquetas y Packaging',
       description: 'Un diseño que da vida a tus productos y los hacen irresistibles',
