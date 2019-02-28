@@ -182,7 +182,7 @@ export const publicidad = {
       { img: '/images/services-carousel/publicidad/publicidad-carol.jpg' },
       { img: '/images/services-carousel/publicidad/publicidad-rocabike.jpg' },
       { img: '/images/services-carousel/publicidad/publicidad-terragro.jpg' },
-      { img: '/images/services-carousel/publicidad/publicidad-univiajes.jpg' },
+      { img: '/images/services-carousel/publicidad/publicidad-univiajes.jpg' }
     ]
   },
   packs: {
