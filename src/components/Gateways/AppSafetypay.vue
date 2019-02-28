@@ -5,8 +5,15 @@
 <script>
   export default {
     props: ['gatewayId', 'currency', 'amount', 'filter', 'cart', 'coupon', 'label'],
+    data: () => ({
+      makingRequest: false
+    }),
     methods: {
       checkout () {
+        if (this.makingRequest) { return }
+
+        this.makingRequest = true
+
         var vueInstance = this
   
         vueInstance.cart.currency = { id: vueInstance.currency.id }
@@ -31,16 +38,16 @@
               'Authorization': vueInstance.$cookies.get('token_session')
             }
           }).then(function (data) {
-            console.log(data)
             location.replace(data.redirect)
           }).catch(function (error) {
+            vueInstance.makingRequest = false
             if (error) {
-              return vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 2')
+              return vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo!')
             }
           })
         }).catch(function (error) {
           if (error) {
-            return vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo! 1')
+            return vueInstance.$toast.error('Ha ocurrido un error, intente de nuevo!')
           }
         })
       }
