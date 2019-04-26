@@ -28,7 +28,7 @@
               :start-with="service.dataService.startWith"
             />
           </v-flex>
-          <v-flex offset-xs1 flex xs10 md6 v-if="layout.carousel">
+          <v-flex offset-xs1 flex xs10 offset-md0 md6 v-if="layout.carousel">
             <v-layout align-center justify-center row class="container-carousel">
               <v-flex style="height: 420px;">
                 <v-carousel 

@@ -6,6 +6,10 @@ const resolve = (dir) => require('path').join(__dirname, dir)
 
 let axiosUrl = 'http://api.liderlogos.com/v1/'
 
+// let axiosUrl = 'http://127.0.0.1:9090/v1/'
+
+var idGTM = 'GTM-K4QPVB'
+
 module.exports = {
   srcDir: 'src/',
   serverMiddleware: [
@@ -15,7 +19,10 @@ module.exports = {
       next()
     },
     '~~/server_middleware/geoip',
-    '~~/server_middleware/redireccion'
+    '~~/server_middleware/redireccion',
+    function (req, res, next) {
+      next()
+    },
   ],
   sitemap: {
     path: '/sitemap.xml',
@@ -77,20 +84,20 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' }
     ],
     script: [
-      { href: 'https://bazam.agilecrm.com/stats/min/agile-min.js', type: 'text/javascript' },
-      {
-        innerHTML: "var Agile_API = Agile_API || {};Agile_API.on_after_load = function(){_agile.set_account('vhnq8gsqt163q4h41eseqk1fij', 'bazam', false);_agile.track_page_view();_agile_execute_web_rules();};",
-        type: 'text/javascript',
-        vmid: 'description'
-      }
-    ],
-    __dangerouslyDisableSanitizers: ['script']
+      { src: 'https://www.google.com/recaptcha/api.js?render=6Lf1944UAAAAAHmlC7K-rhNxkaSs1_qbLU7hIdaH', type: 'text/javascript' }
+    ]
   },
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/toast',
     '@nuxtjs/sitemap',
-    ['cookie-universal-nuxt', { alias: 'cookies' }]
+    ['cookie-universal-nuxt', { alias: 'cookies' }],
+    ['@nuxtjs/google-tag-manager', {
+      id: () => {
+        console.log(idGTM)
+        return idGTM
+      }
+    }]
   ],
   plugins: [
     '~/plugins/vuetify.js',

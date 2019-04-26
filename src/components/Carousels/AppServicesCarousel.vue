@@ -271,7 +271,7 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 80%;
+      width: 50%;
       margin: auto;
       margin-top: 100px;
     }
@@ -344,8 +344,8 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 73%;
-      left: -7%;
+      width: 45%;
+      left: 5%;
       position: absolute;
     }
 

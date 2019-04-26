@@ -15,6 +15,7 @@ import {
   AppPaypal,
   AppPricesCarousel,
   AppProServicesCarousel,
+  AppSafetypay,
   AppServicesCarousel,
   AppServiceBox,
   AppServicesGrid,
@@ -51,6 +52,7 @@ Vue.component('AppStripe', AppStripe)
 Vue.component('AppBankTransfer', AppBankTransfer)
 Vue.component('AppPricesCarousel', AppPricesCarousel)
 Vue.component('AppProServicesCarousel', AppProServicesCarousel)
+Vue.component('AppSafetypay', AppSafetypay)
 Vue.component('AppServicesCarousel', AppServicesCarousel)
 Vue.component('AppServiceBox', AppServiceBox)
 Vue.component('AppServicesGrid', AppServicesGrid)

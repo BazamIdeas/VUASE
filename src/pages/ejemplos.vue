@@ -58,10 +58,14 @@
     mounted: function () {
       if (process.browser) {
         window.onscroll = () => {
-          let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight
-          this.params.offset = this.portfolios.length
+          var offsetHeight = document.documentElement.offsetHeight
+          var scrollPosition = document.documentElement.scrollTop + window.innerHeight
 
-          if (bottomOfWindow && this.params.offset >= 8) {
+          // console.log(scrollPosition + 600, offsetHeight)
+          var bottomOfWindow = scrollPosition + 600 >= offsetHeight
+          // console.log(bottomOfWindow)
+          if (bottomOfWindow && this.portfolios.length >= 9) {
+            console.log('listing')
             this.$store.dispatch('portfolios/getAll', this.params)
           }
         }

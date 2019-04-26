@@ -214,15 +214,13 @@ export const redisenoLogo = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rediseno-logo/estructuras-rediseno.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/sistole-rediseno.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/arete-ingenieria-rediseno.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/21.-ares.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/17.-osmaservice.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/18.-la-casa-de-kett.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/19.-avicola-pungurume.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/22.-geoit.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/24. limpverd.jpg' }
+      { img: '/images/services-carousel/rediseno-logo/1-rediseno-al.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/2-rediseno-alpha.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/3-rediseno-arq.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/4-rediseno-xjr.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/5-rediseno-ga.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/6-rediseno-afm.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/7-rediseno-sistole.jpg' }
     ]
   }
 }

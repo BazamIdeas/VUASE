@@ -18,7 +18,7 @@
           <v-flex xs10 md6>
             <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.dataService.title }} </h1>
             <p class="caption" style="text-align: justify; color: #666666;" v-if="!subServices.length">
-              {{ service.dataService.description }}
+              {{ service.dataService.description }} {{ brief.service.slug == "perfil-redes-sociales" ? "(" + brief.service.quantity + ") redes sociales" : "" }}
             </p>
             <v-layout row wrap v-if="subServices">
               <v-flex md11>
@@ -33,7 +33,7 @@
               <v-flex md11>
                 <v-layout row wrap v-for="sub in stationery" :key="sub.id">
                   <v-flex md12>
-                    - {{ sub.name }} ({{ sub.quantity }})
+                    - {{ sub.name }} {{ '(' + sub.quantity + ')' }}
                   </v-flex>
                 </v-layout>
               </v-flex>
@@ -48,11 +48,11 @@
           <v-flex xs8 md2>
             <h1 class="title font-weight-bold text-xs-right"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(total) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(total)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(total)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -60,11 +60,11 @@
           </v-flex>
           <v-flex xs4 md3>
             <h1 class="title font-weight-bold text-xs-right"> 
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(initial)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(initial)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -87,11 +87,11 @@
           <v-flex xs4 md3>
             <h1 class="title font-weight-medium text-xs-right"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(total) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(total)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(total)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -100,11 +100,11 @@
           <v-flex xs4 md3>
             <h1 class="title font-weight-medium t text-xs-right"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(initial) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(initial)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(initial)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -126,11 +126,11 @@
             <h1 class="title font-weight-medium text-xs-right"> 
               <!-- - {{ service.price.currency.symbol }} 
               {{ formatNumber(discount) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 - {{service.price.currency.symbol}}
                 {{formatNumber(discount)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 - {{formatNumber(discount)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -140,11 +140,11 @@
             <h1 class="title font-weight-medium t text-xs-right"> 
               <!-- - {{ service.price.currency.symbol }} 
               {{ formatNumber(initialDiscount) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 - {{service.price.currency.symbol}}
                 {{formatNumber(initialDiscount)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 - {{formatNumber(initialDiscount)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -164,11 +164,11 @@
           <v-flex xs4 md3>
             <h1 class="title font-weight-medium text-xs-right"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(iva) }} -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(iva)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(iva)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -177,11 +177,11 @@
           <v-flex xs4 md3>
             <h1 class="title font-weight-medium t text-xs-right"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(initialIva) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(initialIva)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(initialIva)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -204,11 +204,11 @@
           <v-flex xs4 md3>
             <h1 class="headline font-weight-mediums text-xs-right" v-if="service"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(totalWithTaxs) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(totalWithTaxs)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(totalWithTaxs)}}
                 {{service.price.currency.symbol}}
               </span>
@@ -217,11 +217,11 @@
           <v-flex xs4 md3>
             <h1 class="headline font-weight-bold t text-xs-right" v-if="service"> 
               <!-- {{ service.price.currency.symbol }} {{ formatNumber(initialWithTaxs) }}  -->
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) === -1">
+              <span v-if="service.price.currency.display == 'left'">
                 {{service.price.currency.symbol}}
                 {{formatNumber(initialWithTaxs)}}
               </span>
-              <span v-if="$store.state.services.RightSymbol.indexOf(service.price.currency.iso) !== -1">
+              <span v-if="service.price.currency.display == 'right'">
                 {{formatNumber(initialWithTaxs)}}
                 {{service.price.currency.symbol}}
               </span> 
@@ -234,7 +234,7 @@
     <v-flex md12 xs12 class="my-3">
       <div style="height: 1px;"></div>
     </v-flex>
-    <v-flex md7 offset-md5>
+    <v-flex md7>
       <v-layout row wrap>
         <v-flex md5 xs12>
           <v-subheader class="subheading font-weight-bold">Cupón de descuento:</v-subheader>
@@ -248,21 +248,25 @@
       </v-layout>
     </v-flex>
     <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
-      <v-card @mouseleave="setGatewayInHover(this.gateways[0])">
+      <v-card>
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
           <p style="width: 100%; margin-bottom: 40px">PAGA SEGURO CON</p>
           <br>
           <br>
         </v-card-title>
         <v-layout row wrap>
-          <v-flex v-for="gatewayy in gateways" :key="gatewayy.id" @mouseover.enter="setGatewayInHover(gatewayy)"
+          <v-flex v-for="gatewayy in gateways" :key="gatewayy.id" @click="setGatewayInHover(gatewayy)"
           class="text-xs-center">
 
             <v-img v-if="gatewayy.code ==='01'" src="/icons/paypal.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '01' }"/>
 
             <v-img v-if="gatewayy.code ==='02'" src="/icons/tarjeta.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '02' }"/>
 
-            <v-img v-if="gatewayy.code ==='03' || gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '03' || gateway.code === '04' }"/>
+            <v-img v-if="gatewayy.code ==='03'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '03' }"/>
+            
+            <v-img v-if="gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '04' }"/>
+
+            <v-img v-if="gatewayy.code ==='05'" src="/icons/safety_pay.jpg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '05' }"/>
             
           </v-flex>
         </v-layout>
@@ -279,12 +283,19 @@
                 <no-ssr v-show="gateway.code ==='01'">
                   <AppPaypal  :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 </no-ssr>
+                
                 <no-ssr v-show="gateway.code ==='02'">
                   <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 </no-ssr>
+                
                 <AppBankTransfer v-show="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
 
                 <AppBankTransfer v-show="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                
+                <AppSafetypay v-show="gateway.code ==='05'" label="Transferencia Bancaria Online" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                  <!--<v-flex md6 class="text-xs-center">
+                    <AppSafetypay label="Transferencia Bancaria Efectivo" :filter="'cash'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                  </v-flex>-->
               
               </v-flex>
             </div>
@@ -331,7 +342,14 @@
     },
     computed: {
       brief () { return this.$store.state.brief.data },
-      pay () { return this.$store.state.cart.pay },
+      pay: {
+        get: function () {
+          return this.$store.state.cart.pay
+        },
+        set: function (newValue) {
+          this.setPay()
+        }
+      },
       chargePayMethods () { return this.$store.state.cart.chargePayMethods },
       gateways () {
         let gateways = []
@@ -394,7 +412,7 @@
             }
           }
         } else {
-          total += this.service.price.value
+          total += this.service.price.value * this.brief.service.quantity
 
           if (this.stationery) {
             for (let sta of this.stationery) {
@@ -432,7 +450,7 @@
       cartObject () {
         let cartObject = { services: [] }
 
-        if (this.brief.subServices) {
+        if (this.brief.subServices.length) {
           for (let subService of this.brief.subServices) {
             cartObject.services.push({ id: subService.id, quantity: subService.quantity || 1 })
           }

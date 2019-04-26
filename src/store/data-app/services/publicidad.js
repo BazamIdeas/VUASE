@@ -178,13 +178,11 @@ export const publicidad = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/flyer/53.-slider-flyer-compressor -min.jpg' },
-      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' },
-      { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/grupo almansa - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/hnos duarte - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' }
+      { img: '/images/services-carousel/publicidad/publicidad-almazara.jpg' },
+      { img: '/images/services-carousel/publicidad/publicidad-carol.jpg' },
+      { img: '/images/services-carousel/publicidad/publicidad-rocabike.jpg' },
+      { img: '/images/services-carousel/publicidad/publicidad-terragro.jpg' },
+      { img: '/images/services-carousel/publicidad/publicidad-univiajes.jpg' }
     ]
   },
   packs: {

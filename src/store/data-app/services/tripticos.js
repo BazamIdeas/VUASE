@@ -194,7 +194,7 @@ export const tripticos = {
       { img: '/images/services-carousel/folletos/51.-geotermia.jpg' },
       { img: '/images/services-carousel/folletos/52.-formasystem-calidad-media.jpg' },
       { img: '/images/services-carousel/folletos/54.-catalogo-compressor.jpg' },
-      { img: '/images/services-carousel/folletos/61.-dariofajardo-2' },
+      { img: '/images/services-carousel/folletos/61.-dariofajardo-2.jpg' },
       { img: '/images/services-carousel/folletos/ahl - folleto.jpg' },
       { img: '/images/services-carousel/folletos/castadon - folleto.jpg' },
       { img: '/images/services-carousel/folletos/recfer - folleto.jpg' },

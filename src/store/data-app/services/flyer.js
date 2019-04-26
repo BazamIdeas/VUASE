@@ -123,6 +123,10 @@ export const flyer = {
   }],
   topSlider: [
     {
+      url: '/images/pages/flyer/Ragazza.png',
+      color: '#9AC43C'
+    },
+    {
       url: '/images/pages/flyer/flyer-camaleon.png',
       color: '#9AC43C'
     },

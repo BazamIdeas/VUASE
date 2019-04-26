@@ -36,8 +36,8 @@ export const rFurgoneta = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rotulo-vehicular/rotulo-vehicular-arquero-romero.png',
-    color: '#084c86',
+    img: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-alpha-circus.png',
+    color: '#982629',
     columns: [
       [
         {
@@ -112,7 +112,7 @@ export const rFurgoneta = {
       color: '#6ebd46'
     },
     {
-      url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-araucaria.png',
+      url: '/images/pages/rotulo-furgoneta/Olarte_SL.jpg',
       color: '#2763a1'
     },
     {
@@ -165,12 +165,6 @@ export const rFurgoneta = {
     items1: [
       { img: '/images/services-carousel/rotulo-vehicular/36.-mockup_lamolineta3.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/37.-rotulo-araucaria.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/38.-sistema-velites.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/costaserveise-rotulo vehiculo.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automovil-bebida.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles-mueblepass.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-vehiculo-consultoria.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/mudanzas armel - rotulo camion 640px.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/smart escolar - rotulo camioneta 640.jpg' }
     ]

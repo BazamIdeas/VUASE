@@ -175,8 +175,7 @@ export const rVehicular = {
       { img: '/images/services-carousel/rotulo-vehicular/costaserveise-rotulo vehiculo.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles-mueblepass.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-vehiculo-consultoria.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/mudanzas armel - rotulo camion 640px.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/smart escolar - rotulo camioneta 640.jpg' }
+      { img: '/images/services-carousel/rotulo-vehicular/mudanzas armel - rotulo camion 640px.jpg' }
     ]
   },
   packs: {

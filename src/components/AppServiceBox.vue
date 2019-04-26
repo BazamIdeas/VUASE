@@ -8,15 +8,15 @@
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
       <img alt="Servicio Liderlogo" :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
-        <h2 class="title font-weight-bold" style="cursor:pointer;" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
+        <h2 @click="saveServiceLocalStorage(url)" class="title font-weight-bold" style="cursor:pointer;" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
            <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
-          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) === -1">
+          <span v-if="price.currency.display == 'left'">
             {{price.currency.symbol}}
             {{price.value}}
           </span>
 
-          <span v-if="$store.state.services.RightSymbol.indexOf(price.currency.iso) !== -1">
+          <span v-if="price.currency.display == 'right'">
             {{price.value}}
             {{price.currency.symbol}}
           </span>
@@ -117,26 +117,8 @@
         this.$storage.set('quotePacksOptions', packages)
         this.$storage.set('quoteAddonsOptions', [])
 
-        if (slug === 'sitio-web-ecommerce' || slug === 'presencia-web') {
-          slug = 'pagina-web'
-        }
-
         this.$router.push('/nuestros-servicios/' + slug)
       }
-      /*  async selectService () {
-        const brief = { service: { id: this.id, name: this.name, slug: this.url }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
-        var target = null
-        // TODO: PENDIENTE
-        if (this.url === 'logo-y-pagina-web' || this.url === 'pagina-web') {
-          brief.subServices = []
-          target = 'cotizacion'
-        } else {
-          target = 'brief/disenos'
-        }
-
-        this.$storage.set('brief', brief)
-        this.$router.push('/nuestros-servicios/' + this.url + '/' + target)
-      } */
     },
     filters: {
       uppercase (value) {

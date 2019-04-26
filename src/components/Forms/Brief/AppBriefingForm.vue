@@ -127,6 +127,11 @@
               if (vue.formFields['stationery_pieces'] && vue.formFields['stationery_pieces'].value.length > 6) {
                 brief.subServices.push({ id: 310, name: 'Pieza adicional de papelería', slug: 'adicional-papeleria', quantity: vue.formFields['stationery_pieces'].value.length - 6 })
               }
+
+              if (vue.formFields['social_profiles_accounts']) {
+                brief.service.quantity = vue.formFields['social_profiles_accounts'].value.length || 1
+              }
+
               brief.information = vue.formFields
               await vue.$store.dispatch('brief/setData', brief)
 

@@ -56,24 +56,28 @@ export const disenoApp = {
   topSliderHeight: '590px',
   topSlider: [
     {
-      url: '/images/pages/app/pio-chicken-app.png',
+      url: '/images/pages/app/Rocabike.png',
+      color: '#c8171f'
+    },
+    {
+      url: '/images/pages/app/APP_EXTREMATURE.png',
       color: '#7FC670'
     },
     {
-      url: '/images/pages/app/divino-alchemy-app.png',
-      color: '#C8171F'
+      url: '/images/pages/app/HOTEL.png',
+      color: '#003995'
     },
     {
-      url: '/images/pages/app/d-licores-app.png',
-      color: '#362400'
+      url: '/images/pages/app/Movil_Markrt.png',
+      color: '#003995'
     },
     {
-      url: '/images/pages/app/la-julia-app.png',
-      color: '#362400'
+      url: '/images/pages/app/univiajes-express-app.jpg',
+      color: '#7FC670'
     },
     {
-      url: '/images/pages/app/univiajes-express-app.png',
-      color: '#0F283D'
+      url: '/images/pages/app/Omkel.png',
+      color: '#E59E8F'
     }
   ],
   creativeProcess: [

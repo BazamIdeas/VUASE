@@ -44,7 +44,7 @@
         </v-flex>
         <v-flex xs12 md6>
           <h2 class="font-weight-bold mb-4 display-1 text-uppercase text-xs-center" style=" color: #434343; ">¿TIENES ALGUNA DUDA?</h2>
-          <AppContactForm />
+          <AppContactForm :page="service.name" />
         </v-flex>
       </v-layout>
     </v-container>

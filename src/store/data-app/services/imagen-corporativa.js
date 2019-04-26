@@ -165,16 +165,48 @@ export const imagenCorporativa = {
   topSliderHeight: '700px',
   topSlider: [
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-ecoshine.png',
-      color: '#00A0C6'
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-omkel.png',
+      color: '#2B2A2A'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-gregasa.png',
-      color: '#7F4050'
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-armel.png',
+      color: '#248036'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-ovisan.png',
-      color: '#AE1D24'
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-bellek.png',
+      color: '#2D678F'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-islas-canarias.png',
+      color: '#248036'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-picsmile.png',
+      color: '#E95525'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-homer-chef.png',
+      color: '#8B2925'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-blackball.png',
+      color: '#5285B1'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-ecokly.png',
+      color: '#29432A'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-punto-smart.png',
+      color: '#0898C0'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-retro-cafe.png',
+      color: '#DF1A22'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-octopus.png',
+      color: '#142740'
     }
   ],
   creativeProcess: [

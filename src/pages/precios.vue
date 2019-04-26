@@ -17,7 +17,7 @@
                 <h2 class="price">
                   <!-- {{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }} -->
                   {{ 
-                    $store.state.services.RightSymbol.indexOf(serviceObject.price.currency.iso) === -1 ? 
+                    serviceObject.price.currency.display == 'right' ? 
                     serviceObject.price.currency.symbol + ' ' + serviceObject.price.value : 
                     serviceObject.price.value + ' ' + serviceObject.price.currency.symbol
                   }}
@@ -51,7 +51,7 @@
         <v-flex md6 class="my-5">
           <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-uppercase text-xs-center" number="2" size="display-1" title="¿TIENES ALGUNA DUDA?" />
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
-          <AppContactForm />
+          <AppContactForm page="precios" />
         </v-flex>
       </v-layout>
     </v-container>

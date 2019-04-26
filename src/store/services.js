@@ -1,7 +1,6 @@
 import { services as servicesHardcoded } from './data-app/services'
 
 export const state = () => ({
-  RightSymbol: ['EUR'],
   groups: [
     {
       icon: '/icons/logo-a-medida.svg',
@@ -34,12 +33,12 @@ export const state = () => ({
       name: 'Web y App',
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/web-y-app/app-pio-chicken-servicios.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/ULTIMOO.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/ULKIRA.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/TONI_LINAS.png' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/mockup.png' },
         { src: 'images/pages/nuestros-servicios/web-y-app/Logo-Web-Ecommerce.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/Landing.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/Presencia-Web.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/Web-Profesional.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/Ecommerce.png' }
+        { src: 'images/pages/nuestros-servicios/web-y-app/app.png' }
       ],
       rows: [
         [
@@ -61,10 +60,10 @@ export const state = () => ({
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/folletos/Slider-catálogo-compressor.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/Slider-diptico-compressor.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/Slider-Flyer-compressor.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/Slider-tríptico-compressor.png' }
+        { src: 'images/pages/nuestros-servicios/folletos/Bellek.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/OLIVEROS.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/ROCABIKE.png' },
+        { src: 'images/pages/nuestros-servicios/folletos/Terraagro.png' }
       ],
       rows: [
         [
@@ -105,9 +104,10 @@ export const state = () => ({
         { src: 'images/pages/nuestros-servicios/rotulos/banner-dual.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/empaque-vannamei.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/gps-serville-tour.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/Rotulo-vestimenta.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/Altacordillera.jpg' },
         { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-smart-escolar.png' }
+        { src: 'images/pages/nuestros-servicios/rotulos/Remera_Movil_Market.png' },
+        { src: 'images/pages/nuestros-servicios/rotulos/Ex_opc.png' }
       ]
     },
     {
@@ -121,11 +121,11 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/Slider-VM-Look.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/Slider-La-Kikis.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-sinergia-servicios.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/redes-marsanz-servicios.png' }
-
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/SANIDAERRSS.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/Alpha_mockup.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/MOCKUP.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/MockupArete.png' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/UrkiraRRSS.png' }
       ],
       noBorder: true
     }

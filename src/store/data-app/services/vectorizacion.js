@@ -116,11 +116,7 @@ export const vectorizacion = {
     },
     {
       url: '/images/pages/vectorizacion/vectorizacion-star-road.png',
-      color: '#E4E4E4'
-    },
-    {
-      url: '/images/pages/vectorizacion/logo-wellcan.png',
-      color: '#FBD20B'
+      color: '#496CAC'
     }
   ],
   creativeProcess: [

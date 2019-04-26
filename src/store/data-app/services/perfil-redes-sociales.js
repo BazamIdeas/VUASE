@@ -102,16 +102,24 @@ export const redesSociales = {
   }],
   topSlider: [
     {
-      url: '/images/pages/redes-sociales/REDESOCIALESECOSHINE1.png',
-      color: '#7AADF4'
+      url: '/images/pages/redes-sociales/Alpha_mockup.png',
+      color: '#5D0012'
     },
     {
-      url: '/images/pages/redes-sociales/REDESOCIALESGREGASA1.png',
+      url: '/images/pages/redes-sociales/MOCKUP.png',
+      color: '#DDA72B'
+    },
+    {
+      url: '/images/pages/redes-sociales/MockupArete.png',
+      color: '#118E44'
+    },
+    {
+      url: '/images/pages/redes-sociales/SANIDAERRSS.png',
       color: '#802A39'
     },
     {
-      url: '/images/pages/redes-sociales/REDESOCIALESLUCASER1.png',
-      color: '#118E44'
+      url: '/images/pages/redes-sociales/UrkiraRRSS.png',
+      color: '#802A39'
     }
   ],
   creativeProcess: [
