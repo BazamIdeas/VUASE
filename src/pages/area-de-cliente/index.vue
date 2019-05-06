@@ -49,11 +49,15 @@
 <script>
   export default {
     layout: 'account',
+    async fetch ({ store }) {
+      if (this.isLoggedIn) {
+        await store.dispatch('user/getOrders')
+      }
+    },
     async created () {
       if (!this.isLoggedIn) {
         return this.$router.push('/area-de-cliente/entrar')
       }
-      await this.$store.dispatch('user/getOrders')
     },
     data: () => ({
       headers: [
@@ -76,8 +80,8 @@
       orders () {
         let orders = []
 
-        for (let i = this.$store.state.user.orders.length - 1; i > 0; i--) {
-          let order = this.$store.state.user.orders[i]
+        for (let i = this.$store.state.user.orders.length; i > 0; i--) {
+          let order = this.$store.state.user.orders[i - 1]
           let tax = order.countries.tax > 0 ? (order.country.tax / 100) + 1 : 0
           let discount = order.final_discount || 0
           let initialDiscount = order.initial_discount || 0

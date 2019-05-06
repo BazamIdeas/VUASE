@@ -1,5 +1,5 @@
 <template>
-  <v-carousel :interval="interval" hide-controls class="main-carousel">
+  <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel">
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">

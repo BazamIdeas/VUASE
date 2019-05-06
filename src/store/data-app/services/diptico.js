@@ -178,18 +178,12 @@ export const diptico = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/dipticos/55.-slider-diptico-compressor.jpg' },
-      { img: '/images/services-carousel/dipticos/american flipouts diner - diptico.jpg' },
-      { img: '/images/services-carousel/dipticos/52.-formasystem-calidad-media.jpg' },
-      { img: '/images/services-carousel/dipticos/solegar.jpg' },
-      { img: '/images/services-carousel/folletos/corpeluva - triptico.jpg' },
-      { img: '/images/services-carousel/folletos/50.-asetys.jpg' },
-      { img: '/images/services-carousel/folletos/51.-geotermia.jpg' },
-      { img: '/images/services-carousel/folletos/61.-dariofajardo-2.jpg' },
-      { img: '/images/services-carousel/folletos/ahl - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/castadon - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/recfer - folleto.jpg' },
-      { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' }
+      { img: '/images/services-carousel/dipticos/Antartik_c.jpg' },
+      { img: '/images/services-carousel/dipticos/Axon_c.jpg' },
+      { img: '/images/services-carousel/dipticos/Blackbird_c.jpg' },
+      { img: '/images/services-carousel/dipticos/Feliubadalo_c.jpg' },
+      { img: '/images/services-carousel/dipticos/Grupo Almansa_c.jpg' },
+      { img: '/images/services-carousel/dipticos/Iberred_c.jpg' }
     ]
   },
   packs: {

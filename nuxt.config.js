@@ -22,7 +22,7 @@ module.exports = {
     '~~/server_middleware/redireccion',
     function (req, res, next) {
       next()
-    },
+    }
   ],
   sitemap: {
     path: '/sitemap.xml',
@@ -124,7 +124,7 @@ module.exports = {
     baseURL: axiosUrl,
     browserBaseURL: axiosUrl,
     retry: { retries: 3 },
-    debug: (process.env.NODE_ENV === 'production')
+    debug: false
   },
   toast: {
     position: 'top-right',

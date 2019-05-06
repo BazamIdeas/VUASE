@@ -3,7 +3,7 @@
     <AppServicesCarousel :alt="alt" id="selector" />
     <AppServicesSlider id="servicios" @select-group="setGroup" class="mb-4"/>
     <transition-group appear :name="transitionGroupContent">
-      <v-container d-block grid-list-md text-xs-left v-if="groupContent === i" :key="i" v-for="(container, i) in containers">
+      <v-container d-block grid-list-md text-xs-left v-if="groupContent === i" v-for="(container, i) in containers" :key="i">
         <v-layout wrap row v-for="(layout, i) in container.layouts" :key="i" class="mb-5 xs-mb-2">
           <v-flex 
             class="xs12 border-container"

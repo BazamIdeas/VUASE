@@ -33,7 +33,7 @@
               <v-flex md11>
                 <v-layout row wrap v-for="sub in stationery" :key="sub.id">
                   <v-flex md12>
-                    - {{ sub.name }} {{ '(' + sub.quantity + ')' }}
+                    - {{ sub.name }} {{ sub.quantity ? '(' + sub.quantity + ')' : "" }}
                   </v-flex>
                 </v-layout>
               </v-flex>

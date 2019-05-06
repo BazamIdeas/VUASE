@@ -135,10 +135,6 @@ export const tripticos = {
       color: '#245482'
     },
     {
-      url: '/images/pages/tripticos/triptico-majavillas.png',
-      color: '#78CEE2'
-    },
-    {
       url: '/images/pages/tripticos/triptico-orgui.png',
       color: '#211F20'
     }

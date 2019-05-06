@@ -177,10 +177,6 @@ export const imagenCorporativa = {
       color: '#2D678F'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-islas-canarias.png',
-      color: '#248036'
-    },
-    {
       url: '/images/pages/imagen-corporativa/pack-de-identidad-picsmile.png',
       color: '#E95525'
     },
@@ -269,7 +265,15 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
       { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
       { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit.jpg' }
+      { img: '/images/services-carousel/pack-identidad/vincit.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup Alvaro Hohr.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup fisiocomas.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup islas canarias.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup tajinaste HD.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup umami.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup Uroz.jpg' }
     ]
   },
   packs: {

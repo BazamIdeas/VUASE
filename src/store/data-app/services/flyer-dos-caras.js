@@ -178,15 +178,16 @@ export const flyerDosCaras = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/flyer/almazara.jpg' },
-      { img: '/images/services-carousel/flyer/ayl.jpg' },
-      { img: '/images/services-carousel/flyer/asetys - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/business credit - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/carol.jpg' },
-      { img: '/images/services-carousel/flyer/grupo almansa - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/hnos duarte - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/la gateada - flyer -min.jpg' },
-      { img: '/images/services-carousel/flyer/56.-compubot -min.jpg' }
+      { img: '/images/services-carousel/flyer/1_c.jpg' },
+      { img: '/images/services-carousel/flyer/2_c.jpg' },
+      { img: '/images/services-carousel/flyer/3_c.jpg' },
+      { img: '/images/services-carousel/flyer/4_c.jpg' },
+      { img: '/images/services-carousel/flyer/Beterman mk_c.jpg' },
+      { img: '/images/services-carousel/flyer/Go_c.jpg' },
+      { img: '/images/services-carousel/flyer/Goyo_c.jpg' },
+      { img: '/images/services-carousel/flyer/Gregasa mk_c.jpg' },
+      { img: '/images/services-carousel/flyer/Hiller_c.jpg' },
+      { img: '/images/services-carousel/flyer/Hyggep_c.jpg' }
     ]
   },
   packs: {
