@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12 offset-md1 md10 style="position: relative">
           <h1 class="display-1 font-weight-bold mb-2">
-            {{ stepData.number == 2 && brief.service ? stepData.title + capitalize( brief.service.name) : stepData.title }} {{ stepData.number == 4 && brief.service ? ' - ' + brief.service.name : ''  }}
+            {{ stepData.number == 2 && brief.service ? stepData.title + capitalize( brief.service.name) : stepData.title }} {{ stepData.number == 4 && brief.service ? ' - ' + capitalize( brief.service.name) : ''  }}
           </h1>
           <p> {{ stepData.subtitle }}</p>
         </v-flex>

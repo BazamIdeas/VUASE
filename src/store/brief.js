@@ -159,7 +159,7 @@ export const state = () => ({
       { label: '¿Existen aplicaciones con funcionalidades similares a la de su proyecto?', type: 'textarea', name: 'app_similar' },
       { label: 'Describa brevemente las características de su aplicación', type: 'textarea', name: 'app_preferences' }
     ],
-    'ecommerce': [
+    'sitio-web-ecommerce': [
       'pagina-web'
     ],
     'presencia-web': [

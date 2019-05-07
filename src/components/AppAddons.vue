@@ -19,14 +19,14 @@
           </v-flex>
         </v-layout>
         <v-layout row wrap align-center justify-center>
-          <v-flex xs12 sm12 md5 offset-sm1 d-flex justify-end>
-            <v-btn :to="first.brief" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
+          <v-flex xs12 sm12 md10 offset-sm1 d-flex justify-end>
+            <v-btn :to="first.url" flat class="ma-0 px-2 addons-start">conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon></v-btn>
           </v-flex>
-          <v-flex class="know-more-container" xs12 sm12 md6 v-if="!first.notSecondButton">
+          <!--<v-flex class="know-more-container" xs12 sm12 md6 v-if="!first.notSecondButton">
             <v-btn :to="first.url" flat class="ma-0 px-2 know-more" large >
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
-          </v-flex>
+          </v-flex>-->
         </v-layout>
       </v-flex>
       <v-flex xs12 sm5 px-3 class="addons-last">
@@ -44,14 +44,14 @@
           </v-flex>
         </v-layout>
         <v-layout row wrap align-center justify-center>
-          <v-flex xs12 sm12 md5 offset-sm1 d-flex justify-end>
-            <v-btn :to="last.brief" flat class="ma-0 px-2 addons-start">COMENZAR</v-btn>
+          <v-flex xs12 sm12 md10 offset-sm1 d-flex justify-end>
+            <v-btn :to="last.url" flat class="ma-0 px-2 addons-start">conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon></v-btn>
           </v-flex>
-          <v-flex class="know-more-container" xs12 sm12 md6 v-if="!last.notSecondButton">
+          <!--<v-flex class="know-more-container" xs12 sm12 md6 v-if="!last.notSecondButton">
             <v-btn :to="last.url" flat class="ma-0 px-2 know-more" large>
               conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
             </v-btn>
-          </v-flex>
+          </v-flex>-->
         </v-layout>
       </v-flex>
     </v-layout>
@@ -76,6 +76,21 @@
       first: defaultService,
       last: defaultService,
       title: String
+    },
+    computed: {
+      comenzarUrl () {
+        const brief = { service: { id: this.id, name: this.service.title, slug: this.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
+
+        if (this.$storage) this.$storage.set('brief', brief)
+
+        if (this.slug === 'logo-y-pagina-web' || this.slug === 'pagina-web') {
+          console.log(this.$router.currentRoute.path)
+          return this.$router.currentRoute.path + '/cotizacion'
+        } else {
+          if (this.slug.includes('logo') || this.slug === 'imagen-corporativa') return this.$router.currentRoute.path + '/brief/disenos'
+          return this.$router.currentRoute.path + '/brief/estilos'
+        }
+      }
     }
   }
 </script>
