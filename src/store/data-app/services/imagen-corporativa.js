@@ -252,6 +252,16 @@ export const imagenCorporativa = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/pack-identidad/Mockup Alvaro Hohr.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup fisiocomas.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup islas canarias.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup tajinaste HD.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup umami.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup Uroz.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup dulpy.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup hygge.jpg' },
       { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
       { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
       { img: '/images/services-carousel/pack-identidad/rocabike-tarjeta.jpg' },
@@ -265,17 +275,7 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
       { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
       { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit.jpg' },
-      { img: '/images/services-carousel/pack-identidad/Mockup Alvaro Hohr.jpg' },
-      { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
-      { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup fisiocomas.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup islas canarias.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup tajinaste HD.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup umami.jpg' },
-      { img: '/images/services-carousel/pack-identidad/Mockup Uroz.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup dulpy.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup hygge.jpg' }
+      { img: '/images/services-carousel/pack-identidad/vincit.jpg' }
     ]
   },
   packs: {
