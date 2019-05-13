@@ -252,6 +252,9 @@ export const imagenCorporativa = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/pack-identidad/Mockup MasterChess_c.jpg' },
+      { img: '/images/services-carousel/pack-identidad/Mockup IKAM_c.jpg' },
+      { img: '/images/services-carousel/pack-identidad/mockup gloss_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
       { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
       { img: '/images/services-carousel/pack-identidad/rocabike-tarjeta.jpg' },

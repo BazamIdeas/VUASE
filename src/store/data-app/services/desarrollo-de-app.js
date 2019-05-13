@@ -113,6 +113,17 @@ export const disenoApp = {
       alt: 'entrega-y-documentacion'
     }
   ],
+  carousel: {
+    items1: [
+      { img: '/images/services-carousel/app/app-comer_c.jpg' },
+      { img: '/images/services-carousel/app/app-flyvel_c.jpg' },
+      { img: '/images/services-carousel/app/app-logitrans_c.jpg' },
+      { img: '/images/services-carousel/app/app-pio-chikens_c.jpg' },
+      { img: '/images/services-carousel/app/app-rentum_c.jpg' },
+      { img: '/images/services-carousel/app/app-stem-medic_c.jpg' },
+      { img: '/images/services-carousel/app/divino-alchemy_c.jpg' }
+    ]
+  },
   packs: {
     title: 'APROVECHA NUESTROS PACK',
     first: {

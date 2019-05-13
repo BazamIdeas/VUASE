@@ -171,6 +171,8 @@ export const web = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/web/Mockup ceshsyma_c.jpg' },
+      { img: '/images/services-carousel/web/Mockup Cheking restaurant_c.jpg' },
       { img: '/images/services-carousel/web/andes-sitio-web.jpg' },
       { img: '/images/services-carousel/web/urano-sitio-web.jpg' },
       { img: '/images/services-carousel/web/toni-sitio-web.jpg' },
