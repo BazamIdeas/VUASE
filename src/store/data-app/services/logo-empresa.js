@@ -230,6 +230,7 @@ export const logoEmpresa = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/logo/mockup pulpy.jpg' },
       { img: '/images/services-carousel/logo/Ategory.jpg' },
       { img: '/images/services-carousel/logo/Bellek.jpg' },
       { img: '/images/services-carousel/logo/Gorriz y Liberos.jpg' },
@@ -242,7 +243,6 @@ export const logoEmpresa = {
       { img: '/images/services-carousel/logo/Caromax.jpg' },
       { img: '/images/services-carousel/logo/Colchonería El Cairo.jpg' },
       { img: '/images/services-carousel/logo/Divino Alchemy.jpg' },
-      { img: '/images/services-carousel/logo/mockup pulpy.jpg' },
       /*    { img: '/images/services-carousel/logo/Enxenia.jpg' },
       { img: '/images/services-carousel/logo/Finanpay.png' },
       { img: '/images/services-carousel/logo/Gestinem.jpg' },

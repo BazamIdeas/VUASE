@@ -177,6 +177,10 @@ export const redisenoLogo = {
     {
       url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
       color: '#3FB13F'
+    },
+    {
+      url: '/images/pages/rediseno-de-logo/rediseno-masthinks.jpg',
+      color: '#BA2700'
     }
   ],
   creativeProcess: [
@@ -216,7 +220,6 @@ export const redisenoLogo = {
     items1: [
       { img: '/images/services-carousel/rediseno-logo/1-rediseno-al.jpg' },
       { img: '/images/services-carousel/rediseno-logo/2-rediseno-alpha.jpg' },
-      { img: '/images/services-carousel/rediseno-logo/mockup masthinks.jpg' },
       { img: '/images/services-carousel/rediseno-logo/3-rediseno-arq.jpg' },
       { img: '/images/services-carousel/rediseno-logo/4-rediseno-xjr.jpg' },
       { img: '/images/services-carousel/rediseno-logo/5-rediseno-ga.jpg' },
