@@ -256,7 +256,17 @@ export const logoEmpresa = {
       { img: '/images/services-carousel/logo/2.-chikas.jpg' },
       { img: '/images/services-carousel/logo/3.-family-tv.jpg' },
       { img: '/images/services-carousel/logo/4.-fauna-domestica.jpg' },
-      { img: '/images/services-carousel/logo/5.-stemmedic.jpg' }
+      { img: '/images/services-carousel/logo/5.-stemmedic.jpg' },
+      { img: '/images/services-carousel/logo/21.jpg' },
+      { img: '/images/services-carousel/logo/25.jpg' },
+      { img: '/images/services-carousel/logo/24.jpg' },
+      { img: '/images/services-carousel/logo/30.jpg' },
+      { img: '/images/services-carousel/logo/ejemplo-logo-construccion-rehabilitacion-edificios.jpg' },
+      { img: '/images/services-carousel/logo/ejemplo-logo-alimentos.jpg' },
+      { img: '/images/services-carousel/logo/5.-stemmedic.jpg' },
+      { img: '/images/services-carousel/logo/6.-antartik.jpg' },
+      { img: '/images/services-carousel/logo/12.-paralelo-0.jpg' },
+      { img: '/images/services-carousel/logo/13.-hostal-la-colegiata.jpg' }
     ]
   },
   packs: {

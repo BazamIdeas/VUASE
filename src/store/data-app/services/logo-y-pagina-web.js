@@ -213,15 +213,17 @@ export const logoWeb = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/logo-y-web/ejemplo-web-apolo_c.jpg' },
+      { img: '/images/services-carousel/logo-y-web/ejemplo-web-tarrio_c.jpg' },
+      { img: '/images/services-carousel/logo-y-web/ejemplo-web-lawcean (2)_c.jpg' },
+      { img: '/images/services-carousel/logo-y-web/ejemplo-web-teldic_c.jpg' },
       { img: '/images/services-carousel/logo-y-web/Mockup Oliveros_c.jpg' },
       { img: '/images/services-carousel/logo-y-web/Mockup Ultimoo_c.jpg' },
       { img: '/images/services-carousel/logo-y-web/Mockup Krealandia_c.jpg' },
       { img: '/images/services-carousel/logo-y-web/Mockup Arquitectura sin limites_c.jpg' },
       { img: '/images/services-carousel/logo-y-web/barna-students-logo-y-sitio-web.jpg' },
       { img: '/images/services-carousel/logo-y-web/todo-ok-logo-y-sitio-web.jpg' },
-      { img: '/images/services-carousel/logo-y-web/vincit-logo-y-sitio-web.jpg' },
-      { img: '/images/services-carousel/logo-y-web/Carroucel.jpg' },
-      { img: '/images/services-carousel/logo-y-web/arquitectura-logo-y-sitio-web.jpg' }
+      { img: '/images/services-carousel/logo-y-web/vincit-logo-y-sitio-web.jpg' }
     ]
   },
   hideWhatGet: true

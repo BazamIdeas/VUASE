@@ -171,10 +171,11 @@ export const rVestimenta = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/bichitos kids - rotulo vestimenta.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/club nautico pontevedra - rotulo vestimenta.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-rotulo-vestimenta-movil.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-vestimenta-super-foods-.jpg' }
+      { img: '/images/services-carousel/vestimenta/bichitos kids - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/vestimenta/club nautico pontevedra - rotulo vestimenta.jpg' },
+      { img: '/images/services-carousel/vestimenta/ejemplo-rotulo-vestimenta-movil.jpg' },
+      { img: '/images/services-carousel/vestimenta/ejemplo-vestimenta-super-foods-.jpg' },
+      { img: '/images/services-carousel/vestimenta/ejemplo-vestimenta-goyo.jpg' }
     ]
   },
   packs: {

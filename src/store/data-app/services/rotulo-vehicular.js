@@ -167,6 +167,7 @@ export const rVehicular = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/rotulo-vehicular/papiro.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/36.-mockup_lamolineta3.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automovil-bebida.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles.jpg' },

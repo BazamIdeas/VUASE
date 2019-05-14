@@ -168,17 +168,20 @@ export const rPackaging = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/aquafrost_450x450px.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ejemplo-etiqueta-lormanic.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/el tirao - rotulo etiqueta.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/ibinatural - rotulo etiqueta.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/instagram 640x640px.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/kafeslito - rotulo packaging.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maremma - rotulo packaging - tazas.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/maxifood_450x450px.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/natufree_450x450px.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/puzzles - rotulo packaging.jpg' },
-      { img: '/images/services-carousel/rotulo-vestimenta-etiqueta-packaing/pym colorao - rotulo etiqueta.jpg' }
+      { img: '/images/services-carousel/packaging/aquafrost_450x450px.jpg' },
+      { img: '/images/services-carousel/packaging/ejemplo-etiqueta-lormanic.jpg' },
+      { img: '/images/services-carousel/packaging/colchoneria el cairo-rotulo etiqueta 640px.jpg' },
+      { img: '/images/services-carousel/packaging/ejemplo-packaing-alimentos-congelados.jpg' },
+      { img: '/images/services-carousel/packaging/el tirao - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/packaging/ibinatural - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/packaging/instagram 640x640px.jpg' },
+      { img: '/images/services-carousel/packaging/kafeslito - rotulo packaging.jpg' },
+      { img: '/images/services-carousel/packaging/maxifood_450x450px.jpg' },
+      { img: '/images/services-carousel/packaging/natufree_450x450px.jpg' },
+      { img: '/images/services-carousel/packaging/puzzles - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/packaging/puzzles - rotulo packaging.jpg' },
+      { img: '/images/services-carousel/packaging/pym colorao - rotulo etiqueta.jpg' },
+      { img: '/images/services-carousel/packaging/Rotulo-Maremma-helados.jpg' }
     ]
   }
 }

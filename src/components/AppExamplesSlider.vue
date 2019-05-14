@@ -56,6 +56,7 @@
     },
     methods: {
       scroll (event) {
+        this.clearScroll()
         let scrollRight = window.innerWidth * 0.80
         let scrollLeft = window.innerWidth * 0.20
 
