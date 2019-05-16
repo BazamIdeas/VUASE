@@ -171,17 +171,11 @@ export const web = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/web/Mockup poolzone_c.jpg' },
       { img: '/images/services-carousel/web/ejemplo-web-hitech.jpg' },
       { img: '/images/services-carousel/web/ejemplo-web-kelediciones.jpg' },
       { img: '/images/services-carousel/web/ejemplo-web-neumarapids.jpg' },
-      { img: '/images/services-carousel/web/ejemplo-web-relanza tu restaurant.jpg' },
-      { img: '/images/services-carousel/web/Mockup ceshsyma_c.jpg' },
-      { img: '/images/services-carousel/web/Mockup Cheking restaurant_c.jpg' },
-      { img: '/images/services-carousel/web/andes-sitio-web.jpg' },
-      { img: '/images/services-carousel/web/urano-sitio-web.jpg' },
-      { img: '/images/services-carousel/web/toni-sitio-web.jpg' },
-      { img: '/images/services-carousel/web/macroservices - web.jpg' },
-      { img: '/images/services-carousel/web/majavilitas - web 640px.jpg' }
+      { img: '/images/services-carousel/web/andes-sitio-web.jpg' }
     ]
   },
   packs: {

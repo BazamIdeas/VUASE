@@ -114,10 +114,6 @@ export const rFurgoneta = {
     {
       url: '/images/pages/rotulo-furgoneta/Olarte_SL.jpg',
       color: '#2763a1'
-    },
-    {
-      url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-alpha-circus.png',
-      color: '#962127'
     }
   ],
   creativeProcess: [
@@ -163,10 +159,15 @@ export const rFurgoneta = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-vehicular/36.-mockup_lamolineta3.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/37.-rotulo-araucaria.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/mudanzas armel - rotulo camion 640px.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/smart escolar - rotulo camioneta 640.jpg' }
+      { img: '/images/services-carousel/rotulo-furgoneta/el-capricho_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/Mockup AIV_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/mockup delugio_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/Mockup Icegurt_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/Mockup repaxpress_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/mockup swissnautic_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/Mockup the coffee place_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/37.-rotulo-araucaria.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/smart escolar - rotulo camioneta 640.jpg' }
     ]
   },
   packs: {

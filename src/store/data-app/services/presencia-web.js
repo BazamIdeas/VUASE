@@ -172,13 +172,12 @@ export const presencia = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/web/Mockup ceshsyma_c.jpg' },
-      { img: '/images/services-carousel/web/Mockup Cheking restaurant_c.jpg' },
-      { img: '/images/services-carousel/web/andes-sitio-web.jpg' },
-      { img: '/images/services-carousel/web/urano-sitio-web.jpg' },
-      { img: '/images/services-carousel/web/toni-sitio-web.jpg' },
-      { img: '/images/services-carousel/web/macroservices - web.jpg' },
-      { img: '/images/services-carousel/web/majavilitas - web 640px.jpg' }
+      { img: '/images/services-carousel/presencia-web/Mockup kalto_c.jpg' },
+      { img: '/images/services-carousel/presencia-web/Mockup steakstico_c.jpg' },
+      { img: '/images/services-carousel/presencia-web/Mockup sunrises_c.jpg' },
+      { img: '/images/services-carousel/presencia-web/Mockup trarly_c.jpg' },
+      { img: '/images/services-carousel/presencia-web/Mockup yogaup_c.jpg' },
+      { img: '/images/services-carousel/presencia-web/urano-sitio-web.jpg' }
     ]
   },
   packs: {

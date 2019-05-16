@@ -52,8 +52,10 @@
         clearInterval(this.intervalScroll)
       },
       selectGroup (index, event) {
+        console.log(event)
         this.selected = index
         this.$emit('select-group', index)
+        this.$router.push('/nuestros-servicios?tab=' + index + '#servicios')
       }
     },
     filters: {

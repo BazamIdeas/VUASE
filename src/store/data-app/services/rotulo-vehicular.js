@@ -104,23 +104,23 @@ export const rVehicular = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-wellcan.png',
+      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-wellcan.jpg',
       color: 'black'
     },
     {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-arquero-romero-2.png',
+      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-arquero-romero-2.jpg',
       color: '#125072'
     },
     {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-maese-escriba.png',
+      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-maese-escriba.jpg',
       color: '#c59d5f'
     },
     {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-fomento-de-inversiones.png',
+      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-fomento-de-inversiones.jpg',
       color: '#1d4c94'
     },
     {
-      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-sirius.png',
+      url: '/images/pages/rotulo-vehicular/rotulo-vehicular-sirius.jpg',
       color: '#30afd8'
     }
   ],
@@ -168,15 +168,10 @@ export const rVehicular = {
   carousel: {
     items1: [
       { img: '/images/services-carousel/rotulo-vehicular/papiro.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/36.-mockup_lamolineta3.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automovil-bebida.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/37.-rotulo-araucaria.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/38.-sistema-velites.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/costaserveise-rotulo vehiculo.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles-mueblepass.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-vehiculo-consultoria.jpg' },
-      { img: '/images/services-carousel/rotulo-vehicular/mudanzas armel - rotulo camion 640px.jpg' }
+      { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-vehiculo-consultoria.jpg' }
     ]
   },
   packs: {

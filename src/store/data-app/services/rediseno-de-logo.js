@@ -218,6 +218,9 @@ export const redisenoLogo = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/rediseno-logo/escola_c.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/oceansnell_c.jpg' },
+      { img: '/images/services-carousel/rediseno-logo/reclivent_c.jpg' },
       { img: '/images/services-carousel/rediseno-logo/1-rediseno-al.jpg' },
       { img: '/images/services-carousel/rediseno-logo/2-rediseno-alpha.jpg' },
       { img: '/images/services-carousel/rediseno-logo/3-rediseno-arq.jpg' },

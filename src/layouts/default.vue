@@ -31,6 +31,7 @@
   import AppMobileNav from '@/components/AppMobileNav.vue'
 
   export default {
+    scrollToTop: true,
     mounted () {
       this.hiddenOnResize()
       this.cookies()
