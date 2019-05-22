@@ -168,6 +168,7 @@ export const rPackaging = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/packaging/etiqueta-proairless_c.jpg' },
       { img: '/images/services-carousel/packaging/aquafrost.jpg' },
       { img: '/images/services-carousel/packaging/ejemplo-etiqueta-lormanic.jpg' },
       { img: '/images/services-carousel/packaging/colchoneria el cairo-rotulo etiqueta 640px.jpg' },

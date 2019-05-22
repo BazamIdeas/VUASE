@@ -178,6 +178,7 @@ export const diptico = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/dipticos/diptico-el-mexicano.jpg' },
       { img: '/images/services-carousel/dipticos/Antartik_c.jpg' },
       { img: '/images/services-carousel/dipticos/Axon_c.jpg' },
       { img: '/images/services-carousel/dipticos/Blackbird_c.jpg' },

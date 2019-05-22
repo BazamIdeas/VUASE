@@ -332,6 +332,7 @@
       }
     },
     created () {
+      document.documentElement.scrollTop = 0
       this.gateway = this.gateways[0]
     },
     watch: {

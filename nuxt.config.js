@@ -155,7 +155,7 @@ module.exports = {
       'paypal-checkout',
       '~/plugins/vue-stripe-checkout.js'
     ],
-    extractCSS: true,
+    extractCSS: false,
     /*
     ** Run ESLint on save
     */

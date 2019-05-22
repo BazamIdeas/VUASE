@@ -51,21 +51,22 @@
       alt: String
     },
     mounted () {
-      let el = this.$refs.examplesSliderScrollable
-      el.scrollLeft += this.initScroll
+      // let el = this.$refs.examplesSliderScrollable
+      // el.scrollLeft += this.initScroll
     },
     methods: {
       scroll (event) {
-        this.clearScroll()
-        let scrollRight = window.innerWidth * 0.80
-        let scrollLeft = window.innerWidth * 0.20
+        if ((typeof window.orientation === 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
+          let scrollRight = window.innerWidth * 0.80
+          let scrollLeft = window.innerWidth * 0.20
 
-        let el = this.$refs.examplesSliderScrollable
+          let el = this.$refs.examplesSliderScrollable
 
-        if (event.pageX > scrollRight) {
-          this.intervalScroll = setInterval(() => { el.scrollLeft += 2.2 }, 1)
-        } else if (scrollLeft > event.pageX) {
-          this.intervalScroll = setInterval(() => { el.scrollLeft -= 1.9 }, 1)
+          if (event.pageX > scrollRight) {
+            this.intervalScroll = setInterval(() => { el.scrollLeft += 2.2 }, 1)
+          } else if (scrollLeft > event.pageX) {
+            this.intervalScroll = setInterval(() => { el.scrollLeft -= 1.9 }, 1)
+          }
         }
       },
       clearScroll (event) {

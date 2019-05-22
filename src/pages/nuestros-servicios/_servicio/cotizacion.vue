@@ -102,7 +102,7 @@
                 </tr>
               </tbody>
             </table>
-            <v-divider light></v-divider>
+            <v-divider light class="hidden-xs-only"></v-divider>
             <div class="subheading text-xs-center py-2 font-weight-bold section-title hidden-xs-only">
               <v-btn color="primary" @click="toCheckout">CONTINUAR</v-btn>
             </div>

@@ -172,6 +172,8 @@ export const presencia = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/presencia-web/web-profesional-fenix.jpg' },
+      { img: '/images/services-carousel/presencia-web/web-profesional-truekeling.jpg' },
       { img: '/images/services-carousel/presencia-web/Mockup kalto_c.jpg' },
       { img: '/images/services-carousel/presencia-web/Mockup steakstico_c.jpg' },
       { img: '/images/services-carousel/presencia-web/Mockup sunrises_c.jpg' },

@@ -167,6 +167,7 @@ export const rVehicular = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/rotulo-vehicular/rotulo-vehicular-carol_c.png' },
       { img: '/images/services-carousel/rotulo-vehicular/papiro.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/38.-sistema-velites.jpg' },

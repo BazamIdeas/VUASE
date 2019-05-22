@@ -231,6 +231,7 @@ export const logoEmpresa = {
   carousel: {
     items1: [
       { img: '/images/services-carousel/logo/mockup pulpy.jpg' },
+      { img: '/images/services-carousel/logo/logo-redsys.jpg' },
       { img: '/images/services-carousel/logo/Ategory.jpg' },
       { img: '/images/services-carousel/logo/Bellek.jpg' },
       { img: '/images/services-carousel/logo/Gorriz y Liberos.jpg' },

@@ -62,6 +62,9 @@
         timer: null
       }
     },
+    created () {
+      document.documentElement.scrollTop = 0
+    },
     computed: {
       brief () { return this.$store.state.brief.data }
     },

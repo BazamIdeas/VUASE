@@ -252,6 +252,9 @@ export const imagenCorporativa = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/pack-identidad/imagen-corporativa-eficienciaenmarketing_c.jpg' },
+      { img: '/images/services-carousel/pack-identidad/imagen-corporativa-proairless_c.jpg' },
+      { img: '/images/services-carousel/pack-identidad/imagen-corporativa-truekeling.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup MasterChess_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup IKAM_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup gloss_c.jpg' },

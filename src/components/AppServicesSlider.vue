@@ -4,7 +4,7 @@
       <v-flex xs12 class="service-slider-container" ref="serviceSliderContainer">
         <div class="service-slider-scrollable" ref="serviceSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
           <v-layout row>
-            <v-flex v-for="(group, i) in groupsServices" :key="i" class="service-slider-item" align-content-center>
+            <v-flex v-for="(group, i) in groupsServices" :key="i" :id="i.toString()" class="service-slider-item" align-content-center>
               <v-btn flat class="ma-0 service-slider-item-button" :class="{ 'selected': i === selected }" @click="selectGroup(i, $event)" large>
                 <img alt="servicios de diseño grafico" v-if="group.icon" :src="group.icon" height="40" width="50">
                 <span class=" ml-3 " >{{ group.name }}</span>
@@ -30,6 +30,14 @@
         this.selectGroup(index)
       }
     },
+    mounted () {
+      let index = parseInt(this.$router.app._route.query.tab)
+      if (index) {
+        let el = this.$refs.serviceSliderScrollable
+        console.log(el.scrollLeft, document.getElementById(index).getBoundingClientRect().x)
+        el.scrollLeft += document.getElementById(index).getBoundingClientRect().x
+      }
+    },
     computed: {
       groupsServices () {
         return this.$store.state.services.groups
@@ -37,15 +45,17 @@
     },
     methods: {
       scroll (event) {
-        let scrollRight = window.innerWidth * 0.80
-        let scrollLeft = window.innerWidth * 0.20
+        if ((typeof window.orientation === 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
+          let scrollRight = window.innerWidth * 0.80
+          let scrollLeft = window.innerWidth * 0.20
 
-        let el = this.$refs.serviceSliderScrollable
+          let el = this.$refs.serviceSliderScrollable
 
-        if (event.pageX > scrollRight) {
-          this.intervalScroll = setInterval(() => { el.scrollLeft += 2.2 }, 1)
-        } else if (scrollLeft > event.pageX) {
-          this.intervalScroll = setInterval(() => { el.scrollLeft -= 1.9 }, 1)
+          if (event.pageX > scrollRight) {
+            this.intervalScroll = setInterval(() => { el.scrollLeft += 2.2 }, 1)
+          } else if (scrollLeft > event.pageX) {
+            this.intervalScroll = setInterval(() => { el.scrollLeft -= 1.9 }, 1)
+          }
         }
       },
       clearScroll (event) {

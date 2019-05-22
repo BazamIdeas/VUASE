@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon --watch server_middleware --exec \"cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 nuxt\"",
     "build": "nuxt build",
-    "start": "NODE_ENV=production nuxt start",
+    "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {

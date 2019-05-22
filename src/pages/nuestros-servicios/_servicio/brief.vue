@@ -24,7 +24,6 @@
       <div class="">
         <v-btn color="primary" v-if="showBack" @click="nextStep(stepData.prev)">Atras</v-btn>
       </div>
-      <span>Completa los datos</span>
       <v-spacer></v-spacer>
       <div class="">
         <v-btn v-if="stepData.next && stepData.number < 4" @click="nextStep(stepData.next)">Omitir</v-btn>
@@ -98,7 +97,7 @@
       async nextStep (pass) {
         await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](pass).number)
         this.$router.push('/nuestros-servicios/' + this.$store.state.brief.data.service.slug + '/brief/' + pass)
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 100)
       },
       async submitBrief (data) {
         this.submit = false

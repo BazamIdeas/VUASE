@@ -32,6 +32,9 @@
         values: [-3, -2, -1, 0, 1, 2, 3]
       }
     },
+    created () {
+      document.documentElement.scrollTop = 0
+    },
     computed: {
       brief () { return this.$store.state.brief.data }
     },
