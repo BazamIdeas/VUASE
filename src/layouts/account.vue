@@ -58,7 +58,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   div#app {
     background: #fbfbfb;
   }

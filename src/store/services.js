@@ -33,12 +33,12 @@ export const state = () => ({
       name: 'Web y App',
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/web-y-app/ULTIMOO.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/ULKIRA.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/TONI_LINAS.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/mockup.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/Logo-Web-Ecommerce.png' },
-        { src: 'images/pages/nuestros-servicios/web-y-app/app.png' }
+        { src: 'images/pages/nuestros-servicios/web-y-app/dual-web.jpg' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/oliveros-web.jpg' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/sanidae-web.jpg' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/toni-linas-web.jpg' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/ultimoo-web.jpg' },
+        { src: 'images/pages/nuestros-servicios/web-y-app/Urkira-web.jpg' }
       ],
       rows: [
         [
@@ -60,10 +60,10 @@ export const state = () => ({
       name: 'Folletos y Publicidades',
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/folletos/Bellek.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/OLIVEROS.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/ROCABIKE.png' },
-        { src: 'images/pages/nuestros-servicios/folletos/Terraagro.png' }
+        { src: 'images/pages/nuestros-servicios/folletos/bellek.jpg' },
+        { src: 'images/pages/nuestros-servicios/folletos/oliveros.jpg' },
+        { src: 'images/pages/nuestros-servicios/folletos/rocabike.jpg' },
+        { src: 'images/pages/nuestros-servicios/folletos/terra-agro.jpg' }
       ],
       rows: [
         [
@@ -121,11 +121,11 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/SANIDAERRSS.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/Alpha_mockup.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/MOCKUP.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/MockupArete.png' },
-        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/UrkiraRRSS.png' }
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/alpha.jpg' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/arete.jpg' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/rentum.jpg' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/sanidae.jpg' },
+        { src: 'images/pages/nuestros-servicios/perfiles-de-redes-sociales/urkira.jpg' }
       ],
       noBorder: true
     }

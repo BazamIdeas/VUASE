@@ -74,6 +74,19 @@
         this.setGroup(index)
       }
     },
+    mounted () {
+      var scroll = document.getElementById('servicios')
+      if (scroll !== null) {
+        if ('scrollingElement' in document) {
+          document.scrollingElement.scrollTop = scroll.getBoundingClientRect().y
+        }
+        // Fallback for legacy browsers
+        if (navigator.userAgent.indexOf('WebKit') !== -1) {
+          document.body.scrollTop = scroll.getBoundingClientRect().y
+        }
+        document.documentElement.scrollTop = scroll.getBoundingClientRect().y
+      }
+    },
     head () {
       return {
         titleTemplate: this.title + ' | %s',
@@ -104,8 +117,8 @@
     },
     methods: {
       setGroup: function (index) {
-        if (this.groupContent < index) this.transitionGroupContent = 'slide-x-reverse-transition'
-        else this.transitionGroupContent = 'slide-x-transition'
+        if (this.groupContent < index) this.transitionGroupContent = 'slide-x-transition'
+        else this.transitionGroupContent = 'slide-x-reverse-transition'
         this.groupContent = index
       },
       validateService (service) {

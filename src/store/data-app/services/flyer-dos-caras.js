@@ -44,7 +44,7 @@ export const flyerDosCaras = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/flyer-dos-caras/flyer-dos-caras-hacienda-santiago-tepayuca.png',
+    img: '/images/pages/flyer-dos-caras/flyer-dos-caras-hacienda-santiago-tepayuca.jpg',
     color: '#404040',
     columns: [
       [{

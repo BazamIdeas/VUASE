@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md fluid class="pa-0">
+  <v-container fluid class="pa-0">
     <v-layout row>
       <v-flex xs12 class="service-slider-container" ref="serviceSliderContainer">
         <div class="service-slider-scrollable" ref="serviceSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
@@ -34,7 +34,6 @@
       let index = parseInt(this.$router.app._route.query.tab)
       if (index) {
         let el = this.$refs.serviceSliderScrollable
-        console.log(el.scrollLeft, document.getElementById(index).getBoundingClientRect().x)
         el.scrollLeft += document.getElementById(index).getBoundingClientRect().x
       }
     },
@@ -62,7 +61,6 @@
         clearInterval(this.intervalScroll)
       },
       selectGroup (index, event) {
-        console.log(event)
         this.selected = index
         this.$emit('select-group', index)
         this.$router.push('/nuestros-servicios?tab=' + index + '#servicios')

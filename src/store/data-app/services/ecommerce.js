@@ -176,10 +176,10 @@ export const ecommerce = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/ecommerce/ecommerce-el-mexicano.jpg' },
+      { img: '/images/services-carousel/ecommerce/el-mexicano.png' },
       { img: '/images/services-carousel/ecommerce/ejemplo-web-relanza tu restaurant.jpg' },
       { img: '/images/services-carousel/ecommerce/Mockup ceshsyma_c.jpg' },
-      { img: '/images/services-carousel/ecommerce/toni-sitio-web.jpg' }
+      { img: '/images/services-carousel/ecommerce/toni.png' }
     ]
   },
   packs: {

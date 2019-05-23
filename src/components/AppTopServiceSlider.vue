@@ -1,9 +1,9 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid grid-list-md>
+    <v-container fluid>
       <v-layout xs12 row wrap class="top-service-slider">
         <v-flex xs12>
-          <v-carousel>
+          <v-carousel hide-delimiters>
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i"
@@ -91,11 +91,20 @@
 }
 
 .top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next{
-  display: none;
+  /* display: none; */
+}
+
+.top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-42%);
+  border: 0px solid transparent;
 }
 
 .top-service-slider .v-carousel__item > .v-image__image--cover {
-  background-size: 50%;
+  background-size: 60%;
   background-position: left top !important;
 }
 
@@ -107,8 +116,8 @@
   margin: 0 !important;
 }
 
-.top-service-slider div.v-carousel__controls button{
-  color: #4b4b4b;
+.top-service-slider div.v-carousel__controls button, .v-carousel__prev button, .v-carousel__next button{
+  color: #004777 !important;
 }
 .service-box-list ul, .service-box-list ol {
   list-style-type: none;
@@ -123,7 +132,12 @@
 @media (min-width: 320px) and (max-width: 960px) {
   .top-service-slider .v-carousel__item > .v-image__image--cover {
     background-position: center top !important;
-    background-size: 80% auto !important;
+    background-size: 100% auto !important;
+  }
+
+  .v-carousel__prev, .v-carousel__next {
+    position: absolute;
+    top: 30%;
   }
 }
 
@@ -133,7 +147,7 @@
   }
 
   .top-service-slider .v-carousel {
-    min-height: 550px !important;
+    min-height: 440px !important;
     height: auto;
   }
 }

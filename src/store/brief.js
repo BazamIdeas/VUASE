@@ -123,6 +123,7 @@ export const state = () => ({
     'catalogo': [
       { label: 'Háblenos de su negocio, ¿A qué se dedica su Empresa? ¿Quiénes son sus clientes? ¿Cuáles son sus productos y/o servicios?', type: 'textarea', name: 'brochures_about_us' },
       { label: 'Describa los resultados que desea obtener de su catalogo:', type: 'textarea', name: 'brochures_results' },
+      { label: 'Cuantas hojas adicionales requiere:', hint: 'El servicio cuenta con 4 paginas, cada paginal adicional es un monto separado.', type: 'number', name: 'catalogue_pages' },
       { label: '¿Qué información desea incluir?', type: 'textarea', name: 'brochures_content' },
       { label: '¿Tiene bocetos, ideas previas u otros documentos que puedan ayudar a su proyecto? ', type: 'file', name: 'brochures_files' }
     ],

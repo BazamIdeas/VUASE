@@ -46,13 +46,13 @@
                 </v-flex>
               </v-layout>
 
-              <div v-if="pop" class="shadow-pop-service-option">
+              <div v-show="pop" id="popupoptions" class="shadow-pop-service-option">
                 <div class="close-shadow-option-service" @click="pop = null">X</div>
-                <h2>{{pop.title}}</h2>
-                <div class="shadow-pop-service-description">
+                <h2 v-if="pop">{{pop.title}}</h2>
+                <div v-if="pop" class="shadow-pop-service-description">
                   {{pop.open.description}}
                 </div>
-                <v-layout row v-if="items" wrap>
+                <v-layout row v-if="items && pop" wrap>
                   <v-flex class="item-shadow" v-for="(popItem, index) in pop.open.items" :key="index" xs12 sm6>
                       <v-layout row>
                         <v-flex xs2 offset-xs1>
@@ -530,6 +530,20 @@
     methods: {
       openOption (itemData) {
         this.pop = itemData
+
+        var scroll = document.getElementById('popupoptions')
+        setTimeout(() => {
+          if (scroll !== null) {
+            if ('scrollingElement' in document) {
+              document.scrollingElement.scrollTop = scroll.getBoundingClientRect().y
+            }
+            // Fallback for legacy browsers
+            if (navigator.userAgent.indexOf('WebKit') !== -1) {
+              document.body.scrollTop = scroll.getBoundingClientRect().y
+            }
+            document.documentElement.scrollTop = scroll.getBoundingClientRect().y
+          }
+        }, 200)
       },
       isEven (items) {
         return ((items.length % 2) === 0)
@@ -670,7 +684,7 @@
       top: 0px;
       left: 0px; 
       width: 100%;
-      min-height: 100%;
+      /* min-height: 100%; */
       background: #fefefe;
       box-shadow: 0 14px 28px rgba(157, 157, 157, 0.25), 0 10px 10px rgba(39, 36, 36, 0.22);
       padding: 40px;

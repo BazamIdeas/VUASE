@@ -1,6 +1,6 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container grid-list-md fluid class="pa-0 creative-process mt-4">
+    <v-container fluid class="pa-0 creative-process mt-4">
         <v-flex xs12 class="mb-5 creative-process-title-container">
           <AppHeading :number="'2'" :size="'display-1'" :title="title" class="mb-1" />
         </v-flex>

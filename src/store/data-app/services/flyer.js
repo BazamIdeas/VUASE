@@ -44,7 +44,7 @@ export const flyer = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/flyer/flyer-willian-&-perkins.png',
+    img: '/images/pages/flyer/flyer-willian-&-perkins.jpg',
     color: '#3566B2',
     columns: [
       [{
@@ -123,27 +123,27 @@ export const flyer = {
   }],
   topSlider: [
     {
-      url: '/images/pages/flyer/Ragazza.png',
+      url: '/images/pages/flyer/Ragazza.jpg',
       color: '#9AC43C'
     },
     {
-      url: '/images/pages/flyer/flyer-camaleon.png',
+      url: '/images/pages/flyer/flyer-camaleon.jpg',
       color: '#9AC43C'
     },
     {
-      url: '/images/pages/flyer/flyer-hnos-duarte.png',
+      url: '/images/pages/flyer/flyer-hnos-duarte.jpg',
       color: '#A8B800'
     },
     {
-      url: '/images/pages/flyer/flyer-gemba.png',
+      url: '/images/pages/flyer/flyer-gemba.jpg',
       color: '#194979'
     },
     {
-      url: '/images/pages/flyer/flyer-hotel-montecarlo.png',
+      url: '/images/pages/flyer/flyer-hotel-montecarlo.jpg',
       color: '#3B9BD5'
     },
     {
-      url: '/images/pages/flyer/flyer-retro-cafe.png',
+      url: '/images/pages/flyer/flyer-retro-cafe.jpg',
       color: '#EB1C24'
     }
   ],

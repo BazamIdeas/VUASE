@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-sm fluid class="pa-0">
+  <v-container fluid class="pa-0">
     <v-layout row class="ma-0" style="position:relative">
       <v-flex xs12 class="examples-slider-container pa-0" ref="examplesSliderContainer" :class="{'shadow': shadow}" >
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">

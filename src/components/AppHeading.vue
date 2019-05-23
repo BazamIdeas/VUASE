@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md v-if="title" class="pa-0 mt-4">
+  <v-container v-if="title" class="pa-0 mt-4">
     <v-layout row wrap>
       <v-flex xs12 md12 class="container-heading">
         <h1 v-if="number=='1'" :class="'font-weight-bold mb-2 text-uppercase text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h1>

@@ -166,7 +166,7 @@ export const rFurgoneta = {
       { img: '/images/services-carousel/rotulo-furgoneta/Mockup repaxpress_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/mockup swissnautic_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/Mockup the coffee place_c.jpg' },
-      { img: '/images/services-carousel/rotulo-furgoneta/37.-rotulo-araucaria.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/araucaria-rot-furgoneta-carrusel.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/smart escolar - rotulo camioneta 640.jpg' }
     ]
   },

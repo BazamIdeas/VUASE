@@ -123,15 +123,15 @@ export const diptico = {
   }],
   topSlider: [
     {
-      url: '/images/pages/diptico/diptico-geotermia.png',
+      url: '/images/pages/diptico/geotermia-vertical-diptico.jpg',
       color: '#97C15F'
     },
     {
-      url: '/images/pages/diptico/diptico-orlan-inversiones.png',
+      url: '/images/pages/diptico/cirlan-diptico.jpg',
       color: 'black'
     },
     {
-      url: '/images/pages/diptico/diptico-vincit.png',
+      url: '/images/pages/diptico/vincit-diptico.jpg',
       color: '#F0AA5E'
     }
   ],
@@ -190,13 +190,13 @@ export const diptico = {
   packs: {
     title: 'APROVECHA NUESTROS SERVICIOS EN',
     first: {
-      image: '/images/pages/packs/oferta-triptico-gloss.png',
+      image: '/images/pages/packs/oferta-triptico-gloss.jpg',
       title: 'TRÍPTICOS',
       url: '/nuestros-servicios/tripticos',
       brief: '/nuestros-servicios/tripticos/brief/estilos'
     },
     last: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      image: '/images/pages/packs/oferta-manual-tecnibi.jpg',
       title: 'CATÁLOGO',
       url: '/nuestros-servicios/catalogo',
       brief: '/nuestros-servicios/catalogo/brief/estilos'

@@ -104,23 +104,27 @@ export const rBanner = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rotulo-banner/rotulo-banner-bohonitas.png',
+      url: '/images/pages/rotulo-banner/bohonitas.jpg',
       color: '#f030a7'
     },
     {
-      url: '/images/pages/rotulo-banner/rotulo-banner+carbon.png',
+      url: '/images/pages/rotulo-banner/+carbon.jpg',
       color: '#231f20'
     },
     {
-      url: '/images/pages/rotulo-banner/rotulo-banner-condal-&-capital.png',
+      url: '/images/pages/rotulo-banner/Condalycapital.jpg',
       color: '#823f9e'
     },
     {
-      url: '/images/pages/rotulo-banner/rotulo-banner-julia.png',
+      url: '/images/pages/rotulo-banner/dual.jpg',
       color: '#5f321b'
     },
     {
-      url: '/images/pages/rotulo-banner/rotulo-banner-olivaria.png',
+      url: '/images/pages/rotulo-banner/la-julia.jpg',
+      color: '#777b64'
+    },
+    {
+      url: '/images/pages/rotulo-banner/olivaria.jpg',
       color: '#777b64'
     }
   ],

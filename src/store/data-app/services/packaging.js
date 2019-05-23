@@ -105,7 +105,7 @@ export const rPackaging = {
   }],
   topSlider: [
     {
-      url: '/images/pages/rotulo-pack/empaque-aquafrost.png',
+      url: '/images/pages/rotulo-pack/empaque-aquafrost.jpg',
       color: '#045B85'
     },
     {

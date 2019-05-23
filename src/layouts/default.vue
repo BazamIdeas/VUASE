@@ -32,6 +32,20 @@
 
   export default {
     scrollToTop: true,
+    watch: {
+      $route (to, from) {
+        if (to.path !== '/nuestros-servicios') {
+          if ('scrollingElement' in document) {
+            document.scrollingElement.scrollTop = 0
+          }
+          // Fallback for legacy browsers
+          if (navigator.userAgent.indexOf('WebKit') !== -1) {
+            document.body.scrollTop = 0
+          }
+          document.documentElement.scrollTop = 0
+        }
+      }
+    },
     mounted () {
       this.hiddenOnResize()
       this.cookies()

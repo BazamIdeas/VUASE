@@ -32,6 +32,13 @@
               </v-flex>
             </v-layout>
           </div>
+          <div v-else-if="field.type === 'number' && formFields[field.name]" class="my-3">
+            <v-layout row wrap>  
+              <v-flex md12>
+                <v-text-field box v-model="formFields[field.name].value" :ref="field.name" :id="field.name" type="number"  min="0" :hint="formFields[field.name].hint"></v-text-field>
+              </v-flex>
+            </v-layout>
+          </div>
           <div v-else-if="field.type === 'select_tags' && formFields[field.name]" class="my-3">
             <v-layout row wrap>  
               <v-flex md12>
@@ -85,6 +92,7 @@
       }
     },
     async created () {
+      document.documentElement.scrollTop = 0
       await this.getForm()
     },
     async mounted () {
@@ -98,6 +106,7 @@
 
         vue.form.forEach(field => {
           if (field.type === 'text' || field.type === 'textarea') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : '' })
+          if (field.type === 'number') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : 0 })
           if (field.type === 'checkbox') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : [] })
           if (field.type === 'select_tags') vue.$set(vue.formFields, field.name, { label: field.label, value: vue.brief.information[field.name] ? vue.brief.information[field.name].value : [] })
           if (field.type === 'file') vue.$set(vue.formFields, field.name, { label: field.label, value: null })
@@ -126,6 +135,10 @@
               var brief = vue.$storage.get('brief')
               if (vue.formFields['stationery_pieces'] && vue.formFields['stationery_pieces'].value.length > 6) {
                 brief.subServices.push({ id: 310, name: 'Pieza adicional de papelería', slug: 'adicional-papeleria', quantity: vue.formFields['stationery_pieces'].value.length - 6 })
+              }
+
+              if (vue.formFields['catalogue_pages'] && parseInt(vue.formFields['catalogue_pages'].value) > 0) {
+                brief.subServices.push({ id: 310, name: 'Pagina adicional de catalogo', slug: 'adicional-catalogo', quantity: parseInt(vue.formFields['catalogue_pages'].value) })
               }
 
               if (vue.formFields['social_profiles_accounts']) {

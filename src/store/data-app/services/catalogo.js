@@ -123,19 +123,19 @@ export const catalogo = {
   }],
   topSlider: [
     {
-      url: '/images/pages/catalogo/catalogo-chargematik.png',
+      url: '/images/pages/catalogo/charge-matik-catalogo.jpg',
       color: '#99C32C'
     },
     {
-      url: '/images/pages/catalogo/catalogo-ferreteria-lopez.png',
+      url: '/images/pages/catalogo/ferreteria-lopez-catalogo.jpg',
       color: '#0B9444'
     },
     {
-      url: '/images/pages/catalogo/catalogo-talawin.png',
+      url: '/images/pages/catalogo/talawin-catalogo.jpg',
       color: '#231F20'
     },
     {
-      url: '/images/pages/catalogo/catalogo-tecnibi.png',
+      url: '/images/pages/catalogo/tecnibi-catalogo.jpg',
       color: '#31619F'
     }
   ],

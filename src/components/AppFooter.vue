@@ -17,7 +17,7 @@
           <v-flex xs12>
             <v-toolbar class="transparent" flat>
               <v-spacer></v-spacer>
-              <nuxt-link to="/"><img src="~/assets/images/logo.png" alt="LiderLogo"></nuxt-link>
+              <nuxt-link to="/"><img height="60" src="~/assets/images/logo.png" alt="LiderLogo"></nuxt-link>
               <div class="px-4 hidden-sm-and-down">
                 <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
                   <span class="nav-item-label">{{link.title}}</span>
