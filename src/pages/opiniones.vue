@@ -163,12 +163,7 @@
             logo: '/images/testimonies/web/arquitectura.jpg',
             company: 'Arquitectura Sin Límites',
             description: '“Nuestra experiencia fue excelente!”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/web/fauna.jpg',
-            company: 'Fauna Doméstica',
-            description: '“Profesionales 100%, como siempre.”'
-          }, {
+          },  {
             stars: 5,
             logo: '/images/testimonies/web/proyecta.jpg',
             company: 'Proyecta Telecom',
@@ -195,31 +190,6 @@
             description: '“Trato muy cercano, fácil y rápido.”'
           }, {
             stars: 5,
-            logo: '/images/testimonies/folletos/56.-compubot -min.jpg',
-            company: 'Compublot',
-            description: '“Los diseños han tenido mucho éxito, era lo que esperábamos.”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/folletos/costaserveis-testimonio.jpg',
-            company: 'Costaserveis',
-            description: '“Su trabajo ha sido muy bueno y las implentaciones aun mejores, estamos realmente conformes.”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/folletos/la gateada - flyer -testimonio.jpg',
-            company: 'La Gateada',
-            description: '“Mi experiencia fue muy positiva. Trabajan con mucha responsabilidad y rapidez.”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/folletos/la-julia-testimonio.jpg',
-            company: 'La Julia',
-            description: '“Gracias al equipo por la realización del flyer, el resultado nos encanta! Gran trabajo.”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/folletos/talawin - catalogo.jpg',
-            company: 'Talawin',
-            description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
-          }, {
-            stars: 5,
             logo: '/images/testimonies/pack-identidad/baliguors.jpg',
             company: 'Baliquors',
             description: '“Excelente trabajo el de Liderlogo. Comprendieron rápidamente lo que estábamos buscando. Proceso sencillo, expeditivo y eficiente. Muchas gracias!”'
@@ -233,12 +203,7 @@
             logo: '/images/testimonies/pack-identidad/seteg.jpg',
             company: 'Seteg',
             description: '“He tenido muy buena experiencia con Liderlogo. La relación calidad-precio es excelente. Trato personalizado, profesionalidad total.”'
-          }, {
-            stars: 5,
-            logo: '/images/testimonies/pack-identidad/finanpay.jpg',
-            company: 'Finanpay',
-            description: '“Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
-          }, {
+          },  {
             stars: 5,
             logo: '/images/testimonies/logo/sanidae.jpg',
             company: 'SANIDAE',
