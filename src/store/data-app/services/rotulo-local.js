@@ -148,24 +148,24 @@ export const rLocal = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU DISEÑO EXTERIOR DE LOCAL',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo publicitario a conocer como es tu local, sus medidas y tus objetivos para el diseño.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa diferentes opciones de diseño publicitario del frente de tu local hasta tu completa aprobacion.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA EL DISEÑO GRAFICO LISTO PARA ROTULAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño grafico y publicitario del exterior de tu local en formato digital listo para que tu rotulista fabrique e instale el rotulo publicitario exterior de tu negocio.',
       alt: 'entrega-y-documentacion'
     }
   ],

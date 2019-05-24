@@ -67,9 +67,9 @@
               
               <v-flex xs12 md4 class="ll-op">
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
-                  <img src="/icons/15-anios.svg" class="icon-home" alt="Trayectoria Internacional">
+                  <img src="/icons/16-anios.svg" class="icon-home" alt="Experiencia & Especialización">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Trayectoria Internacional
+                    Experiencia & Especialización
                   </p>
                 </v-card>
               </v-flex>
@@ -86,7 +86,7 @@
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h2 class="font-weight-bold mb-4 mt-5  text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A PROFESIONALES</h2>
+            <h2 class="font-weight-bold mb-4 mt-5  text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A AGENCIAS</h2>
             <p class="text-xs-center mb-5 font-weight-medum">
               Amplia tu portfolio de servicios rapidamente. Ponemos a disposicion de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atencion especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo.
             </p>

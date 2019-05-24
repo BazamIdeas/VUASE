@@ -148,24 +148,24 @@ export const rBanner = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU DISEÑO DE BANNER PROMOCIONAL',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo creativo a conocer donde utilizaras tu banner, de que medidas lo deseas y que deseas promocionar de tu negocio.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa diferentes opciones de diseño publicitario de tu banner  hasta tu completa aprobacion.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE EL DISEÑO DE TU BANNER LISTO ARA IMPRIMIR O USAR EN INTERNET',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño de tu banner en variedad de formatos digitales editables listo para su impresión o uso en Internet.',
       alt: 'entrega-y-documentacion'
     }
   ],

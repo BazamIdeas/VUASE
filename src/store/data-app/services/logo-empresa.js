@@ -207,24 +207,24 @@ export const logoEmpresa = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ESCOJE LAS FUNCIONALIDADES DE TU SITIO WEB Y COMPLETA UN SIMPLE BRIEF PARA EL DISEÑO DE TU LOGO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Selecciona las funciones y completa unas simples preguntas para ayudar a los diseñadores a entender cuáles son tus necesidades y objetivos para el proyecto.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECBE OPCIONES DE DISEÑO DE TU LOGO Y DE TU SITIO WEB',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos y perfeccionamos opciones de diseño hasta tu entera aprobación.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU LOGO Y SITIO WEB PUBLICADO',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Descarga tu logo en variedad de formatos listo para utilizar donde necesites y disfruta de tu sitio web publicado y funcionando con su manual de autogestion.',
       alt: 'entrega-y-documentacion'
     }
   ],

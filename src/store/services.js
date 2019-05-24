@@ -7,11 +7,11 @@ export const state = () => ({
       name: 'LOGO E IDENTIDAD',
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/logo-identidades/pan-&-miri.png' },
-        { src: 'images/pages/nuestros-servicios/logo-identidades/hnos-duarte.png' },
-        { src: 'images/pages/nuestros-servicios/logo-identidades/meraki.png' },
-        { src: 'images/pages/nuestros-servicios/logo-identidades/mudanzas-armel.png' },
-        { src: 'images/pages/nuestros-servicios/logo-identidades/probelleza.png' }
+        { src: 'images/pages/nuestros-servicios/logo-identidades/pan-&-miri.jpg' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/duarte.jpg' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/meraki.jpg' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/armel.jpg' },
+        { src: 'images/pages/nuestros-servicios/logo-identidades/pro-belleza.jpg' }
       ],
       rows: [
         [
@@ -101,13 +101,13 @@ export const state = () => ({
       ],
       layouts: [],
       carousel: [
-        { src: 'images/pages/nuestros-servicios/rotulos/banner-dual.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/empaque-vannamei.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/gps-serville-tour.png' },
         { src: 'images/pages/nuestros-servicios/rotulos/Altacordillera.jpg' },
-        { src: 'images/pages/nuestros-servicios/rotulos/rotulo-ibinatural.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/Remera_Movil_Market.png' },
-        { src: 'images/pages/nuestros-servicios/rotulos/Ex_opc.png' }
+        { src: 'images/pages/nuestros-servicios/rotulos/dual.jpg' },
+        { src: 'images/pages/nuestros-servicios/rotulos/extremadura-vending.jpg' },
+        { src: 'images/pages/nuestros-servicios/rotulos/gps-seville-tour-auto.jpg' },
+        { src: 'images/pages/nuestros-servicios/rotulos/ibinatural-local.jpg' },
+        { src: 'images/pages/nuestros-servicios/rotulos/movilmarket-ropa.jpg' },
+        { src: 'images/pages/nuestros-servicios/rotulos/nature-seafood.jpg' }
       ]
     },
     {

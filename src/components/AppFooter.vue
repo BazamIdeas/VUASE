@@ -34,11 +34,11 @@
               <span class="nav-item-label">{{link.title}}</span>
             </v-btn>
           </v-flex>
-          <v-flex xs12 class="footer-link hidden-md-and-up">
+          <!--<v-flex xs12 class="footer-link hidden-md-and-up">
             <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
               <span class="nav-item-label">ÁREA DE CLIENTE</span>
             </v-btn>
-          </v-flex>
+          </v-flex>-->
           <v-layout row wrap align-center class="mx-0">
             <v-flex xs12 offset-md1 md5 class="xs-order-2">
               <h5 class="font-weight-regular">Copyright © 2018 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU</h5>

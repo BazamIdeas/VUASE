@@ -139,24 +139,24 @@ export const vectorizacion = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN MUY SIMPLE BRIEF',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Brindanos una imagen del logo que necesitas llevar a alta resolución e vectores.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Redibujamos y convertimos la imagen de tu logo que están formadas por píxeles en imágenes formadas por vectores.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Descarga logo en gran variedad de formatos listos para realizar todo tipo de aplicaciones digitales e impresas con su manual de marca.',
       alt: 'entrega-y-documentacion'
     }
   ],

@@ -144,24 +144,24 @@ export const rVehicular = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU DISEÑO VEHICULAR',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer cual es tu vehículo, cuales son tus objetivos para el diseño y que deseas presentar en el mismo.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa diferentes opciones de diseño publicitario presentando fotomontajes reales sobre tu vehiculo hasta lograr el diseño ideal.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA TU PROYECTO LISTO PARA IMPRIMIR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño grafico y publicitario en formato digital listo para que tu rotulista imprima y realice la aplicación material de tu rotulo publicitario.',
       alt: 'entrega-y-documentacion'
     }
   ],

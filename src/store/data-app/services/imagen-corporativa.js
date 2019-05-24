@@ -139,6 +139,15 @@ export const imagenCorporativa = {
     }, {
       question: '¿Dónde puedo utilizar el logo animado?',
       response: 'El logo animado se puede utilizar en sitio web, redes sociales, fondos de email, presentaciones multimedia, presentaciones PPT, etc.'
+    }, {
+      question: '¿Cuantos conceptos de diseño recibo?',
+      response: 'Creamos y perfeccionamos los bocetos que sean necesarios hasta que estes 100% conforme con tu proyecto de identidad corporativa. Trabajamos a precio cerrado, puedes solicitar tantas opciones como sean necesarios hasta lograr diseño ideal.'
+    }, {
+      question: '¿Que sucede si no me satisfacen los diseños?',
+      response: 'No hay problema, puede suceder, volvemos a crear nuevos conceptos iniciales o te reintegramos el dinero abonado, como tu prefieras.'
+    }, {
+      question: '¿Recibo los derechos de autor del diseño?',
+      response: 'Si, con la entrega de su proyecto recibe un certificado de completa transferencia de derechos sobre la autoria intelectual de los diseños. El copyright pasa a ser 100% tuyo por tiempo ilimitado.'
     }
   ],
   testimonies: [{
@@ -165,7 +174,7 @@ export const imagenCorporativa = {
   topSliderHeight: '700px',
   topSlider: [
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-omkel.png',
+      url: '/images/pages/imagen-corporativa/pack-de-identidad-omkel.jpg',
       color: '#2B2A2A'
     },
     {
@@ -229,24 +238,24 @@ export const imagenCorporativa = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a los diseñadores a conocer sobre tu actividad, clientes, competidores, preferencias de diseño y en que elementos deseas aplicar tu logo.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos y perfeccionamos diseños hasta que estes 100% conforme con el diseño de tu logo y aplicaciones de marca en papeleria, redes sociales y productos de merchandising.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Disfruta tus diseños en gran variedad de formatos editables listos para utilizar imprimir y utilizar digitalmente.',
       alt: 'entrega-y-documentacion'
     }
   ],

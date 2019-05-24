@@ -136,24 +136,24 @@ export const rFurgoneta = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU DISEÑO DE TU FURGONETA O CAMIÓN',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo publicitario a conocer como es tu local, sus medidas y tus objetivos para el diseño.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo de creativos a conocer sobre negocio, cual es tu vehículo, y la información que deseas presentar en el.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA EL DISEÑO PUBLICITARIO DE TU VEHICULO LISTO PARA IMPRIMIR E INSTALAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Recibe el diseño de tu vehiculo en ficheros de alta resolución listos para que tu rotulista lo aplique sobre el mismo.',
       alt: 'entrega-y-documentacion'
     }
   ],

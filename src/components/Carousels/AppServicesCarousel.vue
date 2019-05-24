@@ -8,7 +8,7 @@
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
-            <h1>¿QUÉ NECESITAS?</h1>
+            <h1>¿QUÉ NECESITAS DISEÑAR?</h1>
           </div>
 
           <div id="hc-layer-2-item-1" style="z-index: 99;">

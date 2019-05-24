@@ -138,7 +138,7 @@
               }
 
               if (vue.formFields['catalogue_pages'] && parseInt(vue.formFields['catalogue_pages'].value) > 0) {
-                brief.subServices.push({ id: 310, name: 'Pagina adicional de catalogo', slug: 'adicional-catalogo', quantity: parseInt(vue.formFields['catalogue_pages'].value) })
+                brief.subServices.push({ id: 314, name: 'Pagina adicional de catalogo', slug: 'adicional-catalogo', quantity: parseInt(vue.formFields['catalogue_pages'].value) })
               }
 
               if (vue.formFields['social_profiles_accounts']) {

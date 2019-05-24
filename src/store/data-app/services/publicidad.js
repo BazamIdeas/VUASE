@@ -155,24 +155,24 @@ export const publicidad = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA EL DISEÑO DE TU PUBLICIDAD',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer tus objetivos publicitarios, los contenidos que deseas presentar y resultados que deseas obtener.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa la publicidad para tu empresa desde cero y hasta tu entera aprobación.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño de tu publicidad lista para utilizar en variedad de formatos editables.',
       alt: 'entrega-y-documentacion'
     }
   ],

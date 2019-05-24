@@ -4,7 +4,7 @@ export const catalogo = {
   descriptionSEO: 'Consigue aquí el mejor diseño para tu catalogo, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'CATÁLOGO',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu catálogo listo para usar (editable e imágenes)'],
   description: `Presenta tus productos y servicios con el detalle que necesites`,
   shortDescription: `Presenta tus productos y servicios con el detalle que necesites`,
   icon: '/icons/catalogo.svg',
@@ -159,24 +159,24 @@ export const catalogo = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA EL DISEÑO DE TU CATALOGO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Comentanos que necesitas diseñar, cuales son tus preferencias y especificaciones.',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer cuáles son tus objetivos, necesidades y contenidos a exponer.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Creamos conceptos unicos, exclusivos y originales desde cero, ilimitados y hasta tu entera conformidad.',
+      description: 'Creamos de manera original y llamativa el catalogo de tu empresa desde cero y hasta que tu entera aprobación.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA TUS PROYECTOS LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Tus diseños listos para usar en formato digital o papel, listos para aplicar donde necesites, acompañados de tu certificado de derechos, manuales de uso y soporte post venta gratuito por 2 años.',
+      description: 'Te entregamos el diseño de tu catalogo listo para imprimir y utilizar en Internet publicándolo en tu sitio web, redes sociales o enviarlo via email.',
       alt: 'entrega-y-documentacion'
     }
   ],

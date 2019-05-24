@@ -163,7 +163,7 @@
             logo: '/images/testimonies/web/arquitectura.jpg',
             company: 'Arquitectura Sin Límites',
             description: '“Nuestra experiencia fue excelente!”'
-          },  {
+          }, {
             stars: 5,
             logo: '/images/testimonies/web/proyecta.jpg',
             company: 'Proyecta Telecom',
@@ -203,7 +203,7 @@
             logo: '/images/testimonies/pack-identidad/seteg.jpg',
             company: 'Seteg',
             description: '“He tenido muy buena experiencia con Liderlogo. La relación calidad-precio es excelente. Trato personalizado, profesionalidad total.”'
-          },  {
+          }, {
             stars: 5,
             logo: '/images/testimonies/logo/sanidae.jpg',
             company: 'SANIDAE',

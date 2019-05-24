@@ -4,7 +4,7 @@ export const flyerDosCaras = {
   descriptionSEO: 'Consigue aquí el mejor diseño para tu Flyer , te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'FLYER DOS CARAS',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu flyer listo para usar (editable e imágenes)'],
   description: `Flyer llamativos con para tu negocio en ambas caras`,
   shortDescription: `Flyer llamativos con para tu negocio en ambas caras`,
   icon: '/icons/flyer-dos-caras.svg',
@@ -155,24 +155,24 @@ export const flyerDosCaras = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU FLYER FRENTE Y DORSO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comentanos sobre el objetivo, resultados y contenidos que deseas obtener de tu flyer  frente y dorso',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos y perfeccionamos diseños gráficos y publicitarios de calidad,  originales y exclusivos para tu flyer frente y dorso hasta que estes 100% conforme.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño de tu flyer frente y dorso para la presentación de tu actividad en variedad de formatos editables listo para que lo imprimas y utilices en Internet.',
       alt: 'entrega-y-documentacion'
     }
   ],

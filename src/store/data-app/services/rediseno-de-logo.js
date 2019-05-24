@@ -195,24 +195,24 @@ export const redisenoLogo = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA EL REDISEÑO DE TU LOGO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a los diseñadores a entender cuáles por que deseas rediseñar tu logo, cual es tu actividad, quienes son tus clientes, tus competidores y que deseas que transmita tu nueva marca.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos opciones de rediseño y perfeccionamos diseños para la renovación de tu logo hasta tu entera conformidad.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU NUEVO LOGO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Descarga tu nueva imagen de marca en gran variedad de formatos listos para realizar todo tipo de aplicaciones digitales e impresas.',
       alt: 'entrega-y-documentacion'
     }
   ],

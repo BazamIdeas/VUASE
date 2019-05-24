@@ -148,24 +148,24 @@ export const rVestimenta = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA EL DISEÑO DE LA VESTIMENTA DE TU NEGOCIO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo de creativos a conocer sobre negocio, las prendas que deseas diseñar, el mensaje que mensaje que deseas presentar.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa la vestimenta de tu empresa presentandote varias lineas de diseño y perfeccionamientos realizados sobre fotomontajes sobre tus prendas especificas hasta que lograr el diseño de ideal.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. DESCARGA EL DISEÑO DE TUS UNIFORMES LISTOS PARA BORDAR O CERIGRAFIAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Descarga el diseño de tu uniforme en ficheros de alta resolucion listos para que tu rotulista lo aplique sobre las prendas de tu empresa.',
       alt: 'entrega-y-documentacion'
     }
   ],

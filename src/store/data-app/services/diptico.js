@@ -4,7 +4,7 @@ export const diptico = {
   descriptionSEO: 'Creación de Dipticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'DÍPTICO',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diptico listo para usar (editable e imágenes)'],
   description: `La presentacion profesional de tu negocio en 4 caras`,
   icon: '/icons/diptico.svg',
   shortDescription: `La presentacion profesional de tu negocio en 4 caras`,
@@ -155,24 +155,24 @@ export const diptico = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU PROYECTO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo creativo a conocer cuáles son tus necesidades, objetivos, contenidos y preferencias para el diseño de tu diptico.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos y perfeccionamos diseños gráficos y publicitarios de calidad, originales y exclusivos para tu diptico hasta que estes 100% conforme.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Descarga el diseño de tu diptico en gran variedad de formatos editables listo para que lo imprimas y utilices en Internet.',
       alt: 'entrega-y-documentacion'
     }
   ],

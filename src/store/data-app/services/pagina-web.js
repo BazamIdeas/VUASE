@@ -148,24 +148,24 @@ export const web = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ESCOJE LAS FUNCIONALIDADES Y CONTENIDOS PARA TU SITIO WEB',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Selecciona las funciones y completa unas simples preguntas para ayudar a nuestros diseñadores y programadores a entender cuáles son tus necesidades y obejtivo.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES DE DISEÑO PARA TU SITIO WEB',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Te presentaremos opciones y perfeccionamientos de diseño hasta tu entera conformidad.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU SITIO WEB FUNCIONANDO',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Publicamos tu sitio web funcionando y te brindamos un manual a tu medida para la atogestion de contenidos y funcionalidades de tu sitio web.',
       alt: 'entrega-y-documentacion'
     }
   ],

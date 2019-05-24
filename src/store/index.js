@@ -16,7 +16,8 @@ export const state = () => ({
         { url: '/avisos-legales', title: 'AVISO LEGAL' },
         { url: '/terminos-y-condiciones', title: 'TÉRMINOS Y CONDICIONES' },
         { url: '/contacto', title: 'Contacto' },
-        { url: '#', title: 'BLOG' }
+        { url: '/opiniones', title: 'Opiniones' },
+        { url: '/blog', title: 'BLOG' }
       ],
       headerMovil: [
         {
@@ -79,29 +80,14 @@ export const state = () => ({
         { url: '/servicios-profesionales', title: 'Servicios a Profesionales', icon: 'work' }
       ],
       redes: [{
-        icon: 'fa-facebook',
-        url: 'https://www.facebook.com/liderlogo'
-      }, {
-        icon: 'fa-twitter',
-        url: 'https://twitter.com/lider_logo'
-      }, {
-        icon: 'fa-google',
-        url: 'https://plus.google.com/114230428674579789847'
-      }, {
-        icon: 'fa-linkedin',
-        url: 'https://www.linkedin.com/company/liderlogo/'
-      }, {
-        icon: 'fa-pinterest',
-        url: 'https://es.pinterest.com/liderlogo/'
-      }, {
         icon: 'fa-instagram',
         url: 'https://instagram.com/liderlogo/'
       }, {
-        icon: 'fa-flickr',
-        url: 'https://www.flickr.com/people/lider-logo/'
+        icon: 'fa-facebook',
+        url: 'https://www.facebook.com/liderlogo'
       }, {
-        icon: 'fa-tumblr',
-        url: 'http://liderlogo.tumblr.com/'
+        icon: 'fa-pinterest',
+        url: 'https://es.pinterest.com/liderlogo/'
       }],
       whatsapp: '#'
     },

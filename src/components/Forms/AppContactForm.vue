@@ -5,7 +5,7 @@
         <v-text-field v-model="name" v-validate="'required'" name="contact.name" label="Nombre" placeholder="Nombre" :error-messages="errors.collect('contact.name')" solo flat></v-text-field>
       </v-flex>
       <v-flex xs12 sm6 md6>
-        <v-text-field v-model="email" v-validate="'required|email'" name="contact.email" label="Correo electrónico" placeholder="Correo electrónico" :error-messages="errors.collect('contact.email')" solo flat></v-text-field>
+        <v-text-field v-model="email" v-validate="'required|email'" name="contact.email" label="Correo electrónico laboral" placeholder="Correo electrónico laboral" :error-messages="errors.collect('contact.email')" solo flat></v-text-field>
       </v-flex>
       <v-flex xs12>
         <v-radio-group v-model="for_phone" class="ma-0">
@@ -29,7 +29,7 @@
           placeholder="Horarios" :error-messages="errors.collect('contact.times')" solo flat></v-select>
       </v-flex>
       <v-flex xs12 :class="{'order-md1': contactPage}">
-        <v-textarea v-model="message" v-validate="'required'" name="contact.message" :label="contactPage ? 'Comentanos algo más sobre el servicio que necesitas' : 'Mensaje'" :error-messages="errors.collect('contact.message')" solo flat></v-textarea>
+        <v-textarea v-model="message" v-validate="'required'" name="contact.message" :label="contactPage ? 'Comentanos algo más sobre el servicio que necesitas' : 'Escribe tu consulta o solicitud'" :error-messages="errors.collect('contact.message')" solo flat></v-textarea>
       </v-flex>
 
       <!-- if contact page -->

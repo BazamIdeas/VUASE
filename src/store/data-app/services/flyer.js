@@ -4,7 +4,7 @@ export const flyer = {
   descriptionSEO: 'Creación de Flyers Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'FLYER',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu flyer listo para usar (editable e imágenes)'],
   description: `Flyers y postales creativas para tu negocio`,
   shortDescription: `Flyers y postales creativas para tu negocio`,
   icon: '/icons/flyer.svg',
@@ -159,24 +159,24 @@ export const flyer = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU FLYER',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a los diseñadores a entender cuáles son tus necesidades, contenidos y preferencias para el diseño de tu flyer.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos y perfeccionamos diseños gráficos y publicitarios para tu flyer hasta que estes 100% conforme.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Descarga el diseño de tu flyer en gran variedad de formatos editables listo para que lo imprimas y utilices en Internet.',
       alt: 'entrega-y-documentacion'
     }
   ],

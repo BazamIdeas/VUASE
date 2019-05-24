@@ -3,7 +3,7 @@ export const rPackaging = {
   titleSEO: 'Diseños de Etiquetas y Packaging',
   descriptionSEO: 'Consigue aquí un diseño que de vida a tus productos y lo hagan irresistibles. Te ofrecemos garantía hasta entera conformidad   ¡Comienza tu proyecto ahora!',
   /* ** */
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diseño de packaging listo para usar (editable e imágenes)'],
   title: 'RÓTULO ETIQUETA / PACKAGING',
   description: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
   shortDescription: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
@@ -145,24 +145,24 @@ export const rPackaging = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORA UN BRIEF PARA TU DISEÑO DE PACKAGING',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo de profesionales a conocer sobre tu producto, tus clientes, las formas y medidas del envase que deseas y la información que requieres presentar.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa la presentación de tu producto haciendote llegar diversas lineas de diseño y perfeccionamientos realizados sobre fotomontajes reales hasta que te encuentres 100% conforme con tu diseño.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE EL DISEÑO DE TU PACKAGING LISTO ARA IMPRIMIR O USAR EN INTERNET',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño de tu envase en variedad de formatos digitales editables listo para su impresión, con todos los detalles y plantillas de corte para su optima fabricación.',
       alt: 'entrega-y-documentacion'
     }
   ],

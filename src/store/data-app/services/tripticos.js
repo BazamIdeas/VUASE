@@ -4,7 +4,7 @@ export const tripticos = {
   descriptionSEO: 'Creación de Tripticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'TRÍPTICO',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
+  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu triptico listo para usar (editable e imágenes)'],
   description: `Tu negocio, servicios y productos desplegados en 6 caras`,
   shortDescription: `Tu negocio, servicios y productos desplegados en 6 caras`,
   icon: '/icons/triptico.svg',
@@ -159,24 +159,24 @@ export const tripticos = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1. ELABORAUN BRIEF PARA EL TRIPTICO DE TU NEGOCIO',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo creativo a conocer cuáles son tus necesidades, objetivos  y preferencias para el diseño de tu triptico.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos y perfeccionamos diseños gráficos y publicitarios de calidad, originales y exclusivos para tu triplico de tu empresa hasta lograr tu entera conformidad.',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Te entregamos el diseño de tu triptico listo en variedad de formatos editables listo para que lo imprimas y utilices en Internet.',
       alt: 'entrega-y-documentacion'
     }
   ],
