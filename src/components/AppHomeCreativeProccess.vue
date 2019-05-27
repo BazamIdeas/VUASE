@@ -33,7 +33,7 @@
                 <img alt="Logo a medida" height="70px" width="80px" src="/icons/logo-a-medida-pink.svg">
               </div>
               <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">DISEÑOS IILIMITADOS</h2> 
+                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">DISEÑOS ILIMITADOS</h2> 
               </div>
               <span class="body-2 mb-2 px-3 text-xs-center">Creamos conceptos unicos, exclusivos y originales desde cero, ilimitados y hasta tu entera conformidad.</span>
             </div>

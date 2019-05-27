@@ -107,6 +107,16 @@ export const presencia = {
     company: 'Proyecta Telecom',
     description: '“La atención personalizada por parte del equipo ha sido muy buena, así como la implicación en el proyecto.”'
   }],
+  topSliderStylesXS: {
+    mt: '',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
       url: '/images/pages/pagina-web/Dual.png',

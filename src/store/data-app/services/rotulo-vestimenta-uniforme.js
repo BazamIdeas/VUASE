@@ -102,6 +102,16 @@ export const rVestimenta = {
     company: 'Liderplan',
     description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
       url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-maremma.png',
@@ -112,19 +122,19 @@ export const rVestimenta = {
       color: '#289648'
     },
     {
-      url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-65-ropa-laboral-Header.png',
+      url: '/images/pages/rotulo-vestimenta/6s-ropa-laboral.jpg',
       color: '#5c6077'
     },
     {
-      url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-meraki.png',
+      url: '/images/pages/rotulo-vestimenta/meraki.jpg',
       color: '#eab976'
     },
     {
-      url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-puzzle.png',
+      url: '/images/pages/rotulo-vestimenta/puzzles.jpg',
       color: '#c9ac74'
     },
     {
-      url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-wellcan.png',
+      url: '/images/pages/rotulo-vestimenta/wellcan.jpg',
       color: '#ffe11d'
     }
   ],

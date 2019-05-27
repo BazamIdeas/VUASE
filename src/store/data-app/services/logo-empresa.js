@@ -36,7 +36,7 @@ export const logoEmpresa = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
+    img: '/images/pages/logo-empresa/que-te-llevas-eoane.jpg',
     color: '#211F20',
     columns: [
       [{
@@ -157,29 +157,39 @@ export const logoEmpresa = {
     company: 'Tonelería Madrileña',
     description: '“Muy profesionales, competentes y rápidos.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: '500px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/logo-empresa/logo-extremadura-vending.png',
+      url: '/images/pages/logo-empresa/extremadura-vending.jpg',
       color: '#75BA50'
     },
     {
-      url: '/images/pages/logo-empresa/logo-la-parroquia-azcapo.png',
+      url: '/images/pages/logo-empresa/azcapo.jpg',
       color: '#BA2700'
     },
     {
-      url: '/images/pages/logo-empresa/logo-maese-escriba.png',
+      url: '/images/pages/logo-empresa/maese-escriba.jpg',
       color: 'black'
     },
     {
-      url: '/images/pages/logo-empresa/logo-malarrassa.png',
+      url: '/images/pages/logo-empresa/malarrassa.jpg',
       color: '#7C7F81'
     },
     {
-      url: '/images/pages/logo-empresa/logo-one-seagate.png',
+      url: '/images/pages/logo-empresa/one-seagate.jpg',
       color: '#0065AE'
     },
     {
-      url: '/images/pages/logo-empresa/logo-wellcan.png',
+      url: '/images/pages/logo-empresa/wellcan.jpg',
       color: '#FBD20B'
     }
   ],

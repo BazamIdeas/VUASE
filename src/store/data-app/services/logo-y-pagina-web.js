@@ -137,21 +137,31 @@ export const logoWeb = {
     company: 'Urano Sistema Seguridad',
     description: '“Nos gusta trabajar con Liderlogo por su rapidez, buenos diseños, buena disposición y seriedad, aparte del buen precio.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: '470px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/logo-mas-web/logo-y-web-devtech.png',
+      url: '/images/pages/logo-mas-web/devtech.jpg',
       color: '#EE7203'
     },
     {
-      url: '/images/pages/logo-mas-web/logo-y-web-white.png',
+      url: '/images/pages/logo-mas-web/white-salamander.jpg',
       color: '#0092D1'
     },
     {
-      url: '/images/pages/logo-mas-web/logo-y-web-andes.png',
+      url: '/images/pages/logo-mas-web/andes-facility.jpg',
       color: '#66B026'
     },
     {
-      url: '/images/pages/logo-mas-web/logo-y-web-divino.png',
+      url: '/images/pages/logo-mas-web/web-divino-alchemy.png',
       color: '#A30102'
     }
   ],

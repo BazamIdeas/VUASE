@@ -106,33 +106,51 @@ export const web = {
     company: 'Proyecta Telecom',
     description: '“La atención personalizada por parte del equipo ha sido muy buena, así como la implicación en el proyecto.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: '440px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/pagina-web/Dual.png',
+      url: '/images/pages/pagina-web/truekeling.jpg',
       color: '#000000'
     },
     {
-      url: '/images/pages/pagina-web/Grupo_oliveros.png',
+      url: '/images/pages/pagina-web/keycode.jpg',
+      color: '#000000'
+    },
+    {
+      url: '/images/pages/pagina-web/dual.jpg',
+      color: '#000000'
+    },
+    {
+      url: '/images/pages/pagina-web/oliveros.jpg',
       color: '#312A70'
     },
     {
-      url: '/images/pages/pagina-web/HL_FENIX.png',
+      url: '/images/pages/pagina-web/AHL-Fenix.jpg',
       color: '#EB981B'
     },
     {
-      url: '/images/pages/pagina-web/Toni_Llinas.png',
+      url: '/images/pages/pagina-web/toni-llinas.jpg',
       color: '#EB981B'
     },
     {
-      url: '/images/pages/pagina-web/Ulkira.png',
+      url: '/images/pages/pagina-web/Urkira.jpg',
       color: '#AF0216'
     },
     {
-      url: '/images/pages/pagina-web/Ultimoo.png',
+      url: '/images/pages/pagina-web/ultimoo.jpg',
       color: '#1D191A'
     },
     {
-      url: '/images/pages/pagina-web/Vincit.png',
+      url: '/images/pages/pagina-web/vincit.jpg',
       color: '#F19129'
     }
   ],

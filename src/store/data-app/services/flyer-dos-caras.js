@@ -121,25 +121,35 @@ export const flyerDosCaras = {
     company: 'Talawin',
     description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-compubot.png',
+      url: '/images/pages/flyer-dos-caras/complubot.jpg',
       color: '#19A1D5'
     },
     {
-      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-granja-el-arenon.png',
+      url: '/images/pages/flyer-dos-caras/el-arenon.jpg',
       color: '#9C5529'
     },
     {
-      url: '/images/pages/flyer-dos-caras/flyer-hotel-montecarlo.png',
+      url: '/images/pages/flyer-dos-caras/hotel-montecarlo.jpg',
       color: '#3B9BD7'
     },
     {
-      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-knot.png',
+      url: '/images/pages/flyer-dos-caras/knot.jpg',
       color: '#F35A3A'
     },
     {
-      url: '/images/pages/flyer-dos-caras/flyer-dos-caras-vital-herbolarios.png',
+      url: '/images/pages/flyer-dos-caras/vital-herbolarios.jpg',
       color: '#92D305'
     }
   ],

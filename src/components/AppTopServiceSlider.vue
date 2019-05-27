@@ -1,23 +1,51 @@
 <template lang="html">
 	<v-flex xs12>
-    <v-container fluid>
+    <v-container fluid class="pa-0">
       <v-layout xs12 row wrap class="top-service-slider">
         <v-flex xs12>
+
+          <style>
+            .top-service-slider .v-carousel {
+                min-height: {{ heightSlider + 'px'}};
+                height: auto;
+            }
+
+            @media (min-width: 320px) and (max-width: 960px) {
+              .content-text-service-slider{
+                padding: 16px;
+              }
+              .top-service-slider .v-carousel__item > .v-image__image--cover {
+                background-position: center top !important;
+                background-size: {{service.topSliderBgSize || '90%'}} auto !important;
+              }
+
+              .top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next {
+                position: absolute;
+                top: {{service.arrowsTop || '30%'}};
+              }
+            }
+
+            @media (min-width: 960px) {
+              .sliderbody-img {
+                padding: 0 60px 0 60px;
+              }
+              .content-text-service-slider{
+                padding-top: 40px;
+              }
+            }
+
+          </style>
           <v-carousel hide-delimiters>
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i"
-              :src="item.url"
             >
-              <style>
-                .top-service-slider .v-carousel {
-                    min-height: {{service.topSliderHeight || '530px'}};
-                    height: auto;
-                }
-              </style>
-              <v-layout xs12 row wrap class="content-text-service-slider">
-                <v-flex xs12 offset-xs0 md5 offset-md7>
-                  <v-layout xs12 row wrap>
+              <v-layout row wrap class="content-text-service-slider" ref="sliderbody">
+                <v-flex xs12 offset-xs0 md5 offset-md1 class="sliderbody-img">
+                  <img width="100%" :alt="alt" class="mb-2" :src="item.url">
+                </v-flex>
+                <v-flex xs12 offset-xs0 md5>
+                  <v-layout row wrap>
                     <v-flex xs12 sm4 md12 class="hidden-sm-and-down">
                       <img width="80px" :alt="alt" class="mb-2" :src="service.icon">
                     </v-flex>
@@ -36,7 +64,7 @@
                     </v-flex>
                     <v-layout xs12 row wrap>
                       <v-flex xs12 sm4>
-                        <v-btn flat class="btn-simple" style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
+                        <v-btn flat class="btn-simple ml-0" style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
                       </v-flex>
                       <v-flex xs12 sm6 class="hidden-sm-and-down">
                         <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#que-te-ofrecemos')">¿QUÉ TE OFRECEMOS?</v-btn>
@@ -56,7 +84,13 @@
 
 <script lang="js">
   export default {
+    data: () => ({
+      heightSlider: 0
+    }),
     props: ['id', 'service', 'slug', 'alt'],
+    mounted () {
+      this.resizeSlider()
+    },
     computed: {
       comenzarUrl () {
         const brief = { service: { id: this.id, name: this.service.title, slug: this.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
@@ -70,6 +104,14 @@
           if (this.slug.includes('logo') || this.slug === 'imagen-corporativa') return this.$router.currentRoute.path + '/brief/disenos'
           return this.$router.currentRoute.path + '/brief/estilos'
         }
+      }
+    },
+    methods: {
+      resizeSlider () {
+        var thisV = this
+        setTimeout(() => {
+          thisV.heightSlider = thisV.$refs.sliderbody[0].clientHeight
+        }, 100)
       }
     }
   }
@@ -90,10 +132,6 @@
   -webkit-transition: unset !important; 
 }
 
-.top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next{
-  /* display: none; */
-}
-
 .top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next {
   position: absolute;
   top: 40%;
@@ -104,8 +142,8 @@
 }
 
 .top-service-slider .v-carousel__item > .v-image__image--cover {
-  background-size: 60%;
-  background-position: left top !important;
+  background-size: 40%;
+  background-position: 15% top !important;
 }
 
 .top-service-slider div.v-carousel__controls {
@@ -128,67 +166,9 @@
   padding-left: 0px;
 }
 
-
-@media (min-width: 320px) and (max-width: 960px) {
-  .top-service-slider .v-carousel__item > .v-image__image--cover {
-    background-position: center top !important;
-    background-size: 100% auto !important;
-  }
-
-  .v-carousel__prev, .v-carousel__next {
-    position: absolute;
-    top: 30%;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 600px) {
-  .content-text-service-slider{
-    margin-top: 60vw !important;
-  }
-
-  .top-service-slider .v-carousel {
-    min-height: 440px !important;
-    height: auto;
-  }
-}
-
 @media (min-width: 600px) and (max-width: 860px) {
   .content-text-service-slider{
-    margin-top: 60vw !important;
-  }
-
-  .top-service-slider .v-carousel {
-    min-height: 600px !important;
-    height: auto;
-  }
-}
-  
-@media (min-width: 740px) and (max-width: 820px) {
-  .content-text-service-slider{
-    margin-top: 61vw !important;
-  }
-
-  .top-service-slider .v-carousel {
-    min-height: 680px !important;
-    height: auto;
-  }
-}
-
-@media (min-width: 820px) and (max-width: 960px) {
-  .content-text-service-slider{
-    margin-top: 61vw !important;
-  }
-
-  .top-service-slider .v-carousel {
-    min-height: 780px !important;
-    height: auto;
-  }
-}
-
-@media (min-width: 960px) and (max-width: 1260px) {
-  .top-service-slider .v-carousel {
-    min-height: 900px !important;
-    height: auto;
+    padding: 16px;
   }
 }
 

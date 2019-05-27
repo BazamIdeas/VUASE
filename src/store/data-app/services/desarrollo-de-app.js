@@ -54,29 +54,39 @@ export const disenoApp = {
     ]
   },
   topSliderHeight: '590px',
+  topSliderStylesXS: {
+    mt: '',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/app/Rocabike.png',
+      url: '/images/pages/app/rocabike.jpg',
       color: '#c8171f'
     },
     {
-      url: '/images/pages/app/APP_EXTREMATURE.png',
+      url: '/images/pages/app/extremadura.jpg',
       color: '#7FC670'
     },
     {
-      url: '/images/pages/app/HOTEL.png',
+      url: '/images/pages/app/aixo-hotel.jpg',
       color: '#003995'
     },
     {
-      url: '/images/pages/app/Movil_Markrt.png',
+      url: '/images/pages/app/movil-market.jpg',
       color: '#003995'
     },
     {
-      url: '/images/pages/app/univiajes-express-app.jpg',
+      url: '/images/pages/app/univiajes-express.jpg',
       color: '#7FC670'
     },
     {
-      url: '/images/pages/app/Omkel.png',
+      url: '/images/pages/app/omkel.jpg',
       color: '#E59E8F'
     }
   ],

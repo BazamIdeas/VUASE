@@ -100,25 +100,35 @@ export const redesSociales = {
     company: 'Nueva Europa',
     description: '“Trato muy cercano, fácil y rápido.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: '480px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/redes-sociales/Alpha_mockup.png',
+      url: '/images/pages/redes-sociales/alpha.jpg',
       color: '#5D0012'
     },
     {
-      url: '/images/pages/redes-sociales/MOCKUP.png',
+      url: '/images/pages/redes-sociales/rentum.jpg',
       color: '#DDA72B'
     },
     {
-      url: '/images/pages/redes-sociales/MockupArete.png',
+      url: '/images/pages/redes-sociales/arete.jpg',
       color: '#118E44'
     },
     {
-      url: '/images/pages/redes-sociales/SANIDAERRSS.png',
+      url: '/images/pages/redes-sociales/sanidae.jpg',
       color: '#802A39'
     },
     {
-      url: '/images/pages/redes-sociales/UrkiraRRSS.png',
+      url: '/images/pages/redes-sociales/urkira.jpg',
       color: '#802A39'
     }
   ],

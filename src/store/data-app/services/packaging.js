@@ -103,25 +103,39 @@ export const rPackaging = {
     company: 'Liderplan',
     description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: '480px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/rotulo-pack/empaque-aquafrost.jpg',
+      url: '/images/pages/rotulo-pack/puzzles.jpg',
       color: '#045B85'
     },
     {
-      url: '/images/pages/rotulo-pack/empaque-arlu.png',
+      url: '/images/pages/rotulo-pack/aquafrost.jpg',
+      color: '#045B85'
+    },
+    {
+      url: '/images/pages/rotulo-pack/arli.jpg',
       color: '#C3A171'
     },
     {
-      url: '/images/pages/rotulo-pack/empaque-blackbird.png',
+      url: '/images/pages/rotulo-pack/blackbird.jpg',
       color: '#C3C4C5'
     },
     {
-      url: '/images/pages/rotulo-pack/empaque-ibinatural.png',
+      url: '/images/pages/rotulo-pack/ibinatural.jpg',
       color: '#B59671'
     },
     {
-      url: '/images/pages/rotulo-pack/empaque-olivaria.png',
+      url: '/images/pages/rotulo-pack/olivaria.jpg',
       color: '#80846D'
     }
   ],

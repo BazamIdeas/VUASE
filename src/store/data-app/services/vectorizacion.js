@@ -97,25 +97,43 @@ export const vectorizacion = {
     company: 'Tonelería Madrileña',
     description: '“Muy profesionales, competentes y rápidos.”'
   }],
+  topSliderStylesXS: {
+    mt: '70vw',
+    mh: '480px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '70%',
   topSlider: [
     {
-      url: '/images/pages/vectorizacion/vectorizacion-hostal-la-colegiata.png',
+      url: '/images/pages/vectorizacion/games.jpg',
       color: 'black'
     },
     {
-      url: '/images/pages/vectorizacion/vectorizacion-almazara-la-esperanza.png',
+      url: '/images/pages/vectorizacion/aterel.jpg',
       color: 'black'
     },
     {
-      url: '/images/pages/vectorizacion/vectorizacion-comercial-andres.png',
+      url: '/images/pages/vectorizacion/hostal-la-colegiata.jpg',
+      color: 'black'
+    },
+    {
+      url: '/images/pages/vectorizacion/la-esperanza.jpg',
+      color: 'black'
+    },
+    {
+      url: '/images/pages/vectorizacion/comercial-andres.jpg',
       color: '#4BEDE4'
     },
     {
-      url: '/images/pages/vectorizacion/vectorizacion-hobbie.png',
+      url: '/images/pages/vectorizacion/hobbie.jpg',
       color: '#183C69'
     },
     {
-      url: '/images/pages/vectorizacion/vectorizacion-star-road.png',
+      url: '/images/pages/vectorizacion/star.jpg',
       color: '#496CAC'
     }
   ],

@@ -102,6 +102,16 @@ export const rVehicular = {
     company: 'Liderplan',
     description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
+  topSliderStylesXS: {
+    mt: '50vw',
+    mh: '340px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '25%',
+  topSliderBgSize: '75%',
   topSlider: [
     {
       url: '/images/pages/rotulo-vehicular/rotulo-vehicular-wellcan.jpg',
@@ -167,7 +177,7 @@ export const rVehicular = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-vehicular/rotulo-vehicular-carol_c.png' },
+      { img: '/images/services-carousel/rotulo-vehicular/rotulo-vehicular-carol_c.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/papiro.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/ejemplo-rotulo-automoviles.jpg' },
       { img: '/images/services-carousel/rotulo-vehicular/38.-sistema-velites.jpg' },

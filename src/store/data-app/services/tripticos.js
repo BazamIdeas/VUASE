@@ -121,21 +121,31 @@ export const tripticos = {
     company: 'Talawin',
     description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
+  topSliderStylesXS: {
+    mt: '',
+    mh: '370px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '70%',
   topSlider: [
     {
-      url: '/images/pages/tripticos/triptico-surtel.png',
+      url: '/images/pages/tripticos/surtel.jpg',
       color: '#15427D'
     },
     {
-      url: '/images/pages/tripticos/triptico-gloss.png',
+      url: '/images/pages/tripticos/gloss.jpg',
       color: '#E044A0'
     },
     {
-      url: '/images/pages/tripticos/triptico-majavilitas.png',
+      url: '/images/pages/tripticos/majavilitas.jpg',
       color: '#245482'
     },
     {
-      url: '/images/pages/tripticos/triptico-orgui.png',
+      url: '/images/pages/tripticos/orgui.jpg',
       color: '#211F20'
     }
   ],

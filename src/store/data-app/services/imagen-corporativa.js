@@ -36,7 +36,7 @@ export const imagenCorporativa = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/imagen-corporativa/pack-de-identidad-alpha-circus.png',
+    img: '/images/pages/imagen-corporativa/que-te-llevas-alpha.jpg',
     color: '#972427',
     columns: [
       [{
@@ -172,45 +172,58 @@ export const imagenCorporativa = {
     description: '“Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
   }],
   topSliderHeight: '700px',
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: '580px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '25%',
   topSlider: [
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-omkel.jpg',
+      url: '/images/pages/imagen-corporativa/ovisan.jpg',
       color: '#2B2A2A'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-armel.png',
+      url: '/images/pages/imagen-corporativa/omkel.jpg',
+      color: '#2B2A2A'
+    },
+    {
+      url: '/images/pages/imagen-corporativa/armel.jpg',
       color: '#248036'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-bellek.png',
+      url: '/images/pages/imagen-corporativa/bellek.jpg',
       color: '#2D678F'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-picsmile.png',
+      url: '/images/pages/imagen-corporativa/pic-smiles.jpg',
       color: '#E95525'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-homer-chef.png',
+      url: '/images/pages/imagen-corporativa/homer-chef.jpg',
       color: '#8B2925'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-blackball.png',
+      url: '/images/pages/imagen-corporativa/blackball.jpg',
       color: '#5285B1'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-ecokly.png',
+      url: '/images/pages/imagen-corporativa/ecockly.jpg',
       color: '#29432A'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-punto-smart.png',
+      url: '/images/pages/imagen-corporativa/punto-smart.jpg',
       color: '#0898C0'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-retro-cafe.png',
+      url: '/images/pages/imagen-corporativa/retro-cafe.jpg',
       color: '#DF1A22'
     },
     {
-      url: '/images/pages/imagen-corporativa/pack-de-identidad-octopus.png',
+      url: '/images/pages/imagen-corporativa/octopus.jpg',
       color: '#142740'
     }
   ],

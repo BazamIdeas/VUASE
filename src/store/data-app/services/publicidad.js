@@ -121,6 +121,16 @@ export const publicidad = {
     company: 'Talawin',
     description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
+  topSliderStylesXS: {
+    mt: '',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
       url: '/images/pages/publicidad/publicidad-civefa.png',

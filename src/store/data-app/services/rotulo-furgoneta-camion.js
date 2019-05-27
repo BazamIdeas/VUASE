@@ -102,18 +102,32 @@ export const rFurgoneta = {
     company: 'Liderplan',
     description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
+  topSliderStylesXS: {
+    mt: '',
+    mh: '400px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-sanidae.png',
-      color: '#dc282b'
-    },
-    {
-      url: '/images/pages/rotulo-furgoneta/rotulo-furgoneta-el-bierzo.png',
+      url: '/images/pages/rotulo-furgoneta/smart-escolar.jpg',
       color: '#6ebd46'
     },
     {
-      url: '/images/pages/rotulo-furgoneta/Olarte_SL.jpg',
-      color: '#2763a1'
+      url: '/images/pages/rotulo-furgoneta/alpha.jpg',
+      color: '#dc282b'
+    },
+    {
+      url: '/images/pages/rotulo-furgoneta/sanidae.jpg',
+      color: '#dc282b'
+    },
+    {
+      url: '/images/pages/rotulo-furgoneta/el-bierzo.jpg',
+      color: '#6ebd46'
     }
   ],
   creativeProcess: [

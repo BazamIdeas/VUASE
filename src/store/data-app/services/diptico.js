@@ -121,6 +121,16 @@ export const diptico = {
     company: 'Talawin',
     description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
+  topSliderStylesXS: {
+    mt: '',
+    mh: '370px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '70%',
   topSlider: [
     {
       url: '/images/pages/diptico/geotermia-vertical-diptico.jpg',

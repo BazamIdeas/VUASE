@@ -36,7 +36,7 @@ export const redisenoLogo = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rediseno-de-logo/que-te-llevas-rediseno-de-logo.png',
+    img: '/images/pages/rediseno-de-logo/que-te-llevas-flores.png',
     color: 'black',
     columns: [
       [{
@@ -157,29 +157,39 @@ export const redisenoLogo = {
     company: 'Tonelería Madrileña',
     description: '“Muy profesionales, competentes y rápidos.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-acc-group.png',
+      url: '/images/pages/rediseno-de-logo/ACC-group.jpg',
       color: '#15427D'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-arquitectura-sin-limites.png',
+      url: '/images/pages/rediseno-de-logo/arquitectura-sin-limites.jpg',
       color: '#BA2700'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-ferreteria-flores.png',
+      url: '/images/pages/rediseno-de-logo/flores.jpg',
       color: '#F89422'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-infriman.png',
+      url: '/images/pages/rediseno-de-logo/infriman.jpg',
       color: '#F2591D'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-salgado.png',
+      url: '/images/pages/rediseno-de-logo/salgado.jpg',
       color: '#3FB13F'
     },
     {
-      url: '/images/pages/rediseno-de-logo/rediseno-masthinks.jpg',
+      url: '/images/pages/rediseno-de-logo/masthinks.jpg',
       color: '#BA2700'
     }
   ],

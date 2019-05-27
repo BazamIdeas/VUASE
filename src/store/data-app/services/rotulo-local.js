@@ -102,31 +102,41 @@ export const rLocal = {
     company: 'Liderplan',
     description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/rotulo-local/rotulo-local-arquero-romero.png',
+      url: '/images/pages/rotulo-local/arquero-romero.jpg',
       color: '#116391'
     },
     {
-      url: '/images/pages/rotulo-local/rotulo-local-kafeslito.png',
+      url: '/images/pages/rotulo-local/kafeslito.jpg',
       color: '#6e4b3c'
     },
     {
-      url: '/images/pages/rotulo-local/rotulo-local-maese-escriba.png',
+      url: '/images/pages/rotulo-local/Maese.jpg',
       color: '#b99353'
-    }
-    /*  {
-      url: '/images/pages/rotulo-local/rotulo-local-ibinatural.png',
+    },
+    {
+      url: '/images/pages/rotulo-local/Ibinatural.jpg',
       color: '#4cc159'
     },
     {
-      url: '/images/pages/rotulo-local/rotulo-local-malarrassa.png',
+      url: '/images/pages/rotulo-local/Malarrasa.jpg',
       color: '#898989'
     },
     {
-      url: '/images/pages/rotulo-local/rotulo-local-sanidae.png',
+      url: '/images/pages/rotulo-local/sanidae.jpg',
       color: '#d72f2c'
-    } */
+    }
   ],
   creativeProcess: [
     {

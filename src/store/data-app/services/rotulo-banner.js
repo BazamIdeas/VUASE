@@ -36,7 +36,7 @@ export const rBanner = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rotulo-banner/rotulo-banner-dual.png',
+    img: '/images/pages/rotulo-banner/que-te-llevas-olivaria.png',
     color: '#70371b',
     columns: [
       [
@@ -102,6 +102,16 @@ export const rBanner = {
     company: 'Liderplan',
     description: '“Los rótulos para mi empresa resultaron muy llamativos y le añadió atractivo a mi local. Felicidades por su trabajo.”'
   }],
+  topSliderStylesXS: {
+    mt: '70vw',
+    mh: '400px'
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '70%',
   topSlider: [
     {
       url: '/images/pages/rotulo-banner/bohonitas.jpg',
@@ -121,10 +131,6 @@ export const rBanner = {
     },
     {
       url: '/images/pages/rotulo-banner/la-julia.jpg',
-      color: '#777b64'
-    },
-    {
-      url: '/images/pages/rotulo-banner/olivaria.jpg',
       color: '#777b64'
     }
   ],

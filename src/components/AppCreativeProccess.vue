@@ -18,7 +18,7 @@
         </v-flex>
 
         <v-layout row wrap class="process-steps" :class="{ 'pt-5' : alters.length == 0}" >
-          <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(step,i) in steps" :key="i" class="px-5">
+          <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(step,i) in steps" :key="i" class="px-4">
             <v-layout row>
               <v-flex align-center d-flex>
                 <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>

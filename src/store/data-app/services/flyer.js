@@ -121,29 +121,35 @@ export const flyer = {
     company: 'Talawin',
     description: '“Estoy muy contento porque han sido rápidos, eficientes y sobre todo profesionales. Dieron el la tecla con todos mis requerimientos para todos los servicios que he contratado.”'
   }],
+  topSliderStylesXS: {
+    mt: '80vw',
+    mh: ''
+  },
+  topSliderStylesSM: {
+    mt: '',
+    mh: ''
+  },
+  arrowsTop: '',
+  topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/flyer/Ragazza.jpg',
+      url: '/images/pages/flyer/ragazza-carina.jpg',
       color: '#9AC43C'
     },
     {
-      url: '/images/pages/flyer/flyer-camaleon.jpg',
+      url: '/images/pages/flyer/camaleon.jpg',
       color: '#9AC43C'
     },
     {
-      url: '/images/pages/flyer/flyer-hnos-duarte.jpg',
+      url: '/images/pages/flyer/duarte.jpg',
       color: '#A8B800'
     },
     {
-      url: '/images/pages/flyer/flyer-gemba.jpg',
-      color: '#194979'
-    },
-    {
-      url: '/images/pages/flyer/flyer-hotel-montecarlo.jpg',
+      url: '/images/pages/flyer/hotel-montecarlo.jpg',
       color: '#3B9BD5'
     },
     {
-      url: '/images/pages/flyer/flyer-retro-cafe.jpg',
+      url: '/images/pages/flyer/retro-cafe.jpg',
       color: '#EB1C24'
     }
   ],

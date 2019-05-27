@@ -22,9 +22,9 @@
                 <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
                   <span class="nav-item-label">{{link.title}}</span>
                 </v-btn>
-                <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
+                <!--<v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
                   <span class="nav-item-label">ÁREA DE CLIENTE</span>
-                </v-btn>
+                </v-btn>-->
               </div>
               <v-spacer></v-spacer>
             </v-toolbar>
@@ -43,6 +43,7 @@
             <v-flex xs12 offset-md1 md5 class="xs-order-2">
               <h5 class="font-weight-regular">Copyright © 2018 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU</h5>
             </v-flex>
+            <v-spacer></v-spacer>
             <v-flex xs12 md5 >
               <v-btn target="_new" :href="red.url" slot="activator"  color="white" fab small class="elevation-1 ws-float-btn" v-for="(red, i) in redes" :key="i">
                 <v-icon>fab {{red.icon}}</v-icon>
