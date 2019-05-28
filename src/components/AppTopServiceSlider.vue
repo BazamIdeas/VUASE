@@ -41,10 +41,10 @@
               :key="i"
             >
               <v-layout row wrap class="content-text-service-slider" ref="sliderbody">
-                <v-flex xs12 offset-xs0 md5 offset-md1 class="sliderbody-img">
+                <v-flex xs12 offset-xs0 md7 class="sliderbody-img">
                   <img width="100%" :alt="alt" class="mb-2" :src="item.url">
                 </v-flex>
-                <v-flex xs12 offset-xs0 md5>
+                <v-flex xs12 offset-xs0 md4>
                   <v-layout row wrap>
                     <v-flex xs12 sm4 md12 class="hidden-sm-and-down">
                       <img width="80px" :alt="alt" class="mb-2" :src="service.icon">
@@ -111,7 +111,7 @@
         var thisV = this
         setTimeout(() => {
           thisV.heightSlider = thisV.$refs.sliderbody[0].clientHeight
-        }, 100)
+        }, 1000)
       }
     }
   }
@@ -170,6 +170,10 @@
   .content-text-service-slider{
     padding: 16px;
   }
+}
+
+.flex.px-3.xs12.sm12.md12.hidden-sm-and-down:not(.actual-step), .flex.px-3.xs12.sm12.md12.hidden-sm-and-down:not(.actual-step) h2 {
+    color: rgb(158, 158, 158) !important;
 }
 
 </style>

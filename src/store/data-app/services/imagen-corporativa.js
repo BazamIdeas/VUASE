@@ -36,7 +36,7 @@ export const imagenCorporativa = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/imagen-corporativa/que-te-llevas-alpha.jpg',
+    img: '/images/pages/imagen-corporativa/pack-de-identidad-alpha-circus.png',
     color: '#972427',
     columns: [
       [{

@@ -1,68 +1,119 @@
 <template lang="html">
 	<v-flex xs12>
     <v-container fluid class="pa-0 creative-process mt-4">
+      <v-layout row wrap>
         <v-flex xs12 class="mb-5 creative-process-title-container">
           <AppHeading :number="'2'" :size="'display-1'" :title="title" class="mb-1" />
         </v-flex>
-        <v-layout row>
-          <v-flex xs12 class="creative-process-carousel">
-            <v-carousel :hide-delimiters="true" :cycle="false">
-              <v-carousel-item v-for="(slide,i) in slides" :key="i" :src="slide.src">
-              </v-carousel-item>
-            </v-carousel>
-          </v-flex>
-        </v-layout>
-
-        <v-flex xs12 class="mb-2 mt-2 creative-process-title-container" v-if="alters.length">
-          <AppHeading :number="'2'" size="title" title="LOGO" />
+        <style>
+          .creative-process-carousel .v-carousel {
+            height: {{ sliderHeight }}px;
+          }
+        </style>
+        <v-flex xs12 md8 class="creative-process-carousel mt-5">
+          <v-carousel :hide-delimiters="true" :cycle="false" :height="sliderHeight" @input="inputSlider">
+            <v-carousel-item v-for="(slide,i) in slides" :key="i">
+              <div ref="creativeProcessBody">
+                <img width="100%" :src="slide.src">
+              </div>
+            </v-carousel-item>
+          </v-carousel>
         </v-flex>
 
-        <v-layout row wrap class="process-steps" :class="{ 'pt-5' : alters.length == 0}" >
-          <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(step,i) in steps" :key="i" class="px-4">
-            <v-layout row>
-              <v-flex align-center d-flex>
-                <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
-              </v-flex>
-              <v-flex xs10 sm11 align-center d-flex class="process-step">
-                <AppHeading :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
-              </v-flex>             
-            </v-layout>
-            <v-layout row>
-              <v-flex xs12>
-                <p class="text-xs-justify">{{step.description}}</p>
-              </v-flex>
-            </v-layout>
-          </v-flex>
-        </v-layout>
+        <v-flex xs12 md4>
+          <v-layout row wrap class="process-steps"  v-if="actualStep <= 2">
+            <v-flex xs12 md4 class="mb-2 mt-2 creative-process-title-container" v-if="alters.length">
+              <AppHeading :number="'2'" size="title" title="LOGO" />
+            </v-flex>
+            <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(step, i) in steps" :key="i" class="px-3" :class="{ 'actual-step': i === actualStep }">
+              <v-layout row>
+                <v-flex align-center d-flex>
+                  <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
+                </v-flex>
+                <v-flex xs10 sm11 align-center d-flex class="process-step">
+                  <AppHeading style="line-height:22px" :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
+                </v-flex>             
+              </v-layout>
+              <v-layout row>
+                <v-flex xs12>
+                  <p class="text-xs-justify">{{step.description}}</p>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+
+            <v-flex xs12 sm12 md12 hidden-md-and-up v-for="(step,i) in steps" :key="i" class="px-3" v-show="i == actualStep">
+              <v-layout row>
+                <v-flex align-center d-flex>
+                  <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
+                </v-flex>
+                <v-flex xs10 sm11 align-center d-flex class="process-step">
+                  <AppHeading style="line-height:22px" :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
+                </v-flex>             
+              </v-layout>
+              <v-layout row>
+                <v-flex xs12>
+                  <p class="text-xs-justify">{{step.description}}</p>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+          </v-layout>
 
 
-        <v-flex v-if="alters.length" xs12 class="mb-2 creative-process-title-container">
-          <AppHeading :number="'2'" size="title" title="WEB" />
+          
+          <v-layout row wrap class="process-steps" v-if="alters.length && actualStep >= 3">
+            <v-flex v-if="alters.length && actualStep >= 3" xs12 class="mb-2 creative-process-title-container">
+              <AppHeading :number="'2'" size="title" title="WEB" />
+            </v-flex>
+            <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(alter,i) in alters" :key="i" class="px-5" :class="{ 'actual-step': i === actualStep }">
+              <v-layout row>
+                <v-flex align-center d-flex>
+                  <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
+                </v-flex>
+                <v-flex xs10 sm11 align-center d-flex class="process-step">
+                  <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
+                </v-flex>             
+              </v-layout>
+              <v-layout row>
+                <v-flex xs12>
+                  <p class="text-xs-justify">{{alter.description}}</p>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+
+            <v-flex xs12 sm12 md12 hidden-md-and-up v-for="(alter,i) in alters" :key="i" class="px-5" v-show="i == actualStep">
+              <v-layout row>
+                <v-flex align-center d-flex>
+                  <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
+                </v-flex>
+                <v-flex xs10 sm11 align-center d-flex class="process-step">
+                  <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
+                </v-flex>             
+              </v-layout>
+              <v-layout row>
+                <v-flex xs12>
+                  <p class="text-xs-justify">{{alter.description}}</p>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+          </v-layout>
         </v-flex>
-
-        <v-layout row wrap class="process-steps" v-if="alters.length">
-          <v-flex xs12 sm10 offset-sm1 md4 offset-md0  v-for="(alter,i) in alters" :key="i" class="px-5">
-            <v-layout row>
-              <v-flex align-center d-flex>
-                <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
-              </v-flex>
-              <v-flex xs10 sm11 align-center d-flex class="process-step">
-                <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
-              </v-flex>             
-            </v-layout>
-            <v-layout row>
-              <v-flex xs12>
-                <p class="text-xs-justify">{{alter.description}}</p>
-              </v-flex>
-            </v-layout>
-          </v-flex>
-        </v-layout>
+      </v-layout>
     </v-container>
   </v-flex>
 </template>
 
 <script lang="js">
   export default {
+    data: () => ({
+      sliderHeight: 0,
+      actualStep: 0
+    }),
+    mounted () {
+      var thisV = this
+      setTimeout(() => {
+        thisV.sliderHeight = thisV.$refs.creativeProcessBody[0].clientHeight + 20
+      }, 1000)
+    },
     props: {
       steps: {
         type: Array,
@@ -77,6 +128,11 @@
         default: () => { return [] }
       },
       title: String
+    },
+    methods: {
+      inputSlider (e) {
+        this.actualStep = e
+      }
     }
   }
 </script>
@@ -89,11 +145,6 @@
 
 .img-process-step{
   max-width: 100%;
-}
-
-.process-steps > div:nth-child(2){
-  border-left: 3px solid #d8d8d8;
-  border-right: 3px solid #d8d8d8;
 }
 
 .process-steps + .process-steps {
@@ -185,11 +236,8 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  .creative-process .creative-process-carousel .v-carousel {
-    height: 300px !important;
-  }
   .creative-process .creative-process-carousel .v-image__image--cover {
-    background-size: 100% auto !important;
+    background-size: 80% auto !important;
   }
 
   .creative-process .creative-process-carousel .v-carousel__item { 
@@ -201,9 +249,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
-  .creative-process .creative-process-carousel .v-carousel {
-    height: 300px !important;
-  }
   .creative-process .creative-process-carousel .v-image__image--cover {
     background-size: 100% auto !important;
   }
@@ -216,9 +261,6 @@
 }
 
 @media (min-width: 640px) and (max-width: 960px) {
-  .creative-process .creative-process-carousel .v-carousel {
-    height: 500px !important;
-  }
   .creative-process .creative-process-carousel .v-image__image {
     background-size: 100% auto !important;
   }

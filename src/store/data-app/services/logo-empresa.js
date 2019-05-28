@@ -36,7 +36,7 @@ export const logoEmpresa = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/que-te-llevas-eoane.jpg',
+    img: '/images/pages/logo-empresa/logo-empresa-ejemplo-logo.png',
     color: '#211F20',
     columns: [
       [{
