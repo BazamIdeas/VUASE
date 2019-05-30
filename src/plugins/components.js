@@ -12,6 +12,7 @@ import {
   AppFilterExamplesForm,
   AppHeading,
   AppHomeCarousel,
+  AppHowWorksCarousel,
   AppPaypal,
   AppPricesCarousel,
   AppProServicesCarousel,
@@ -47,6 +48,7 @@ Vue.component('AppExamplesSlider', AppExamplesSlider)
 Vue.component('AppFilterExamplesForm', AppFilterExamplesForm)
 Vue.component('AppHeading', AppHeading)
 Vue.component('AppHomeCarousel', AppHomeCarousel)
+Vue.component('AppHowWorksCarousel', AppHowWorksCarousel)
 Vue.component('AppPaypal', AppPaypal)
 Vue.component('AppStripe', AppStripe)
 Vue.component('AppBankTransfer', AppBankTransfer)
