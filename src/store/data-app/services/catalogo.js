@@ -192,6 +192,10 @@ export const catalogo = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/catalogo/catalogo-ferreelectric_c.jpg' },
+      { img: '/images/services-carousel/catalogo/catalogo-secutech_c.jpg' },
+      { img: '/images/services-carousel/catalogo/catalogo-skin_c.jpg' },
+      { img: '/images/services-carousel/catalogo/catalogo-voez_c.jpg' },
       { img: '/images/services-carousel/folletos/stemmedic - folleto.jpg' },
       { img: '/images/services-carousel/folletos/talawin - catalogo.jpg' },
       { img: '/images/services-carousel/folletos/54.-catalogo-compressor.jpg' },

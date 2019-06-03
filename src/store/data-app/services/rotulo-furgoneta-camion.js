@@ -173,6 +173,9 @@ export const rFurgoneta = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/rotulo-furgoneta/rotulo-camion-patatas_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/rotulo-furgoneta-pro-airlens_c.jpg' },
+      { img: '/images/services-carousel/rotulo-furgoneta/rotulo-furgoneta-pro-erh_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/el-capricho_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/Mockup AIV_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/mockup delugio_c.jpg' },

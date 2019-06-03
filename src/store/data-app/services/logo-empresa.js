@@ -240,6 +240,8 @@ export const logoEmpresa = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/logo/logo-arca-de-noa_c.jpg' },
+      { img: '/images/services-carousel/logo/logo-doo-goo_c.jpg' },
       { img: '/images/services-carousel/logo/mockup pulpy.jpg' },
       { img: '/images/services-carousel/logo/logo-redsys.jpg' },
       { img: '/images/services-carousel/logo/Ategory.jpg' },
