@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container fluid class="pa-0 creative-process mt-4">
       <v-layout row wrap>
-        <v-flex xs12 class="mb-5 creative-process-title-container">
+        <v-flex xs12 class="mb-3 creative-process-title-container">
           <AppHeading :number="'2'" :size="'display-1'" :title="title" class="mb-1" />
         </v-flex>
         <style>
@@ -10,7 +10,7 @@
             height: {{ sliderHeight }}px;
           }
         </style>
-        <v-flex xs12 md8 class="creative-process-carousel mt-5">
+        <v-flex xs12 md8 class="creative-process-carousel mt-2">
           <v-carousel :hide-delimiters="true" :cycle="false" :height="sliderHeight" @input="inputSlider">
             <v-carousel-item v-for="(slide,i) in slides" :key="i">
               <div ref="creativeProcessBody">

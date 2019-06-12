@@ -280,6 +280,7 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/Mockup MasterChess_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup IKAM_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup gloss_c.jpg' },
+      { img: '/images/services-carousel/pack-identidad/pistachos-pack.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Alvaro Hohr.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },

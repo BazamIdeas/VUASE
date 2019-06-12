@@ -190,6 +190,7 @@ export const publicidad = {
     items1: [
       { img: '/images/services-carousel/publicidad/publicidad-almazara.jpg' },
       { img: '/images/services-carousel/publicidad/publicidad-carol.jpg' },
+      { img: '/images/services-carousel/publicidad/pistachos-publicidad.jpg' },
       { img: '/images/services-carousel/publicidad/publicidad-rocabike.jpg' },
       { img: '/images/services-carousel/publicidad/publicidad-terragro.jpg' },
       { img: '/images/services-carousel/publicidad/publicidad-univiajes.jpg' }

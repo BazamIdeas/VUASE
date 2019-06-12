@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- TOP SLIDER -->
-    <v-container fluid class="mt-5 mb-5 pt-5 px-0 pb-0" v-if="dataService.topSlider">
+    <v-container fluid class="mt-5 mb-5 pt-3 px-0 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
         <AppTopServiceSlider :alt="alt" :id="service.id" :service="dataService" :slug="service.slug" />
       </v-layout>

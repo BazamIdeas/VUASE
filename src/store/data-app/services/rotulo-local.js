@@ -181,11 +181,12 @@ export const rLocal = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-ibinatural.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-maese.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-malarrassa.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-olarte.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-sanidae.jpg' }
+      { img: '/images/services-carousel/rotulo-local/bego-rotulo-local.jpg' },
+      { img: '/images/services-carousel/rotulo-local/rotulo-ibinatural.jpg' },
+      { img: '/images/services-carousel/rotulo-local/rotulo-maese.jpg' },
+      { img: '/images/services-carousel/rotulo-local/rotulo-malarrassa.jpg' },
+      { img: '/images/services-carousel/rotulo-local/rotulo-olarte.jpg' },
+      { img: '/images/services-carousel/rotulo-local/rotulo-sanidae.jpg' }
     ]
   },
   packs: {

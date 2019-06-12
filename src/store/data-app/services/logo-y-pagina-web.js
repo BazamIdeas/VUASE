@@ -149,6 +149,10 @@ export const logoWeb = {
   topSliderBgSize: '80%',
   topSlider: [
     {
+      url: '/images/pages/logo-mas-web/garcia-y-choza.jpg',
+      color: '#A30102'
+    },
+    {
       url: '/images/pages/logo-mas-web/devtech.jpg',
       color: '#EE7203'
     },
@@ -161,7 +165,7 @@ export const logoWeb = {
       color: '#66B026'
     },
     {
-      url: '/images/pages/logo-mas-web/web-divino-alchemy.png',
+      url: '/images/pages/logo-mas-web/divino-alchemy.jpg',
       color: '#A30102'
     }
   ],

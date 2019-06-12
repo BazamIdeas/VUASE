@@ -36,7 +36,7 @@ export const rBanner = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/rotulo-banner/que-te-llevas-olivaria.png',
+    img: '/images/pages/rotulo-banner/que-te-llevas-olivaria.jpg',
     color: '#70371b',
     columns: [
       [
@@ -177,11 +177,13 @@ export const rBanner = {
   ],
   carousel: {
     items1: [
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-ibinatural.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-maese.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-malarrassa.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-olarte.jpg' },
-      { img: '/images/services-carousel/rotulo-local-banner/rotulo-sanidae.jpg' }
+      { img: '/images/services-carousel/rotulo-banner/amedee.jpg' },
+      { img: '/images/services-carousel/rotulo-banner/islas-canarias-air.jpg' },
+      { img: '/images/services-carousel/rotulo-banner/ivan-perujo.jpg' },
+      { img: '/images/services-carousel/rotulo-banner/mrplatano.jpg' },
+      { img: '/images/services-carousel/rotulo-banner/pistachos.jpg' },
+      { img: '/images/services-carousel/rotulo-banner/umami.jpg' },
+      { img: '/images/services-carousel/rotulo-banner/uroz.jpg' }
     ]
   },
   packs: {
