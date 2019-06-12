@@ -123,7 +123,7 @@ export const ecommerce = {
       color: '#000000'
     },
     {
-      url: '/images/pages/pagina-web/Dual.png',
+      url: '/images/pages/pagina-web/dual.jpg',
       color: '#000000'
     },
     {

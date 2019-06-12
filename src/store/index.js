@@ -76,6 +76,7 @@ export const state = () => ({
             }
           ]
         },
+        { url: '/como-funciona', title: 'Como Funciona', icon: 'timeline' },
         { url: '/ejemplos', title: '1001 Ejemplos', icon: 'important_devices' },
         { url: '/precios', title: 'Precios', icon: 'store' },
         { url: '/servicios-profesionales', title: 'Servicios a Profesionales', icon: 'work' }

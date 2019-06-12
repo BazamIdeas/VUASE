@@ -156,31 +156,31 @@
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 class="px-4 mb-">
+        <v-flex xs12 class="px-4 mb-5">
             <h2 class="why-liderlogo" style="font-size: 50px; line-height: 51px; font-weight: 600;">Entonces, <br class="hidden-sm-and-down"> ¿Por qué LiderLogo <br class="hidden-sm-and-down">debe ser mi proveedor?</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="images/pages/conceptos-logo.svg" alt="">
+            <img width="100px" src="/icons/logo-unico-original.svg" alt="">
             <h2 style="color: #4c55aa;">Conceptos Originales</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="images/pages/profesionales-logo.svg" alt="">
+            <img width="100px" src="/icons/equipo-interidisciplinario.svg" alt="">
             <h2 style="color: #1d8127">Profesionales Expertos</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="images/pages/experiencia-logo.svg" alt="">
+            <img width="100px" src="/icons/16-anios.svg" alt="">
             <h2 style="color: #c3953f;">16 años de experiencia</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="images/pages/asesoria-logo.svg" alt="">
+            <img width="100px" src="/icons/atencion-personalizada.svg" alt="">
             <h2 style="color: #4c55aa;">Atención Personalizada</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="images/pages/garantia-logo.svg" alt="">
+            <img width="100px" src="/icons/garantia-de-conformidad.svg" alt="">
             <h2 style="color: #1d8127">Garantia 100%</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="images/pages/conceptos-ilimitados-logo.svg" alt="">
+            <img width="100px" src="/icons/propuestas-ilimitadas.svg" alt="">
             <h2 style="color: #c3953f;">Conceptos Ilimitados</h2>
         </v-flex>
       </v-layout>

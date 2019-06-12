@@ -6,7 +6,7 @@
           <h1>SERVICIOS A PROFESIONALES</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h1>¿Eres agencia de diseño gráfico, web, Apps o simplemente deseas ampliar tus servicios y ganar mas?</h1>
+          <h2>¿Eres agencia de diseño gráfico, web, Apps o simplemente deseas ampliar tus servicios y ganar mas?</h2>
           <v-btn to="/contacto" flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">Solicita una llamada</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
@@ -87,7 +87,7 @@
 
   div#hc-layer-2-item-1>* {
     color: #676767;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   /*ITEM-2*/
@@ -98,7 +98,7 @@
 
   div#hc-layer-2-item-2>* {
     color: #676767;
-    font-weight: 600;
+    font-weight: 400;
   }
 
 

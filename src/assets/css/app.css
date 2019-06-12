@@ -1,35 +1,3 @@
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/Montserrat-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 500;
-  src: url(/fonts/Montserrat-Medium.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url(/fonts/Montserrat-SemiBold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url(/fonts/Montserrat-ExtraBold.ttf) format("truetype");
-}
-
-* {
-  font-family: "montserrat";
-}
-
 .display-4,
 .display-3,
 .display-2,
@@ -40,13 +8,21 @@
 .body-2,
 .body-1,
 .caption,
-h1,
+p,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "montserrat" !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #434343;
+  cursor: default;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-family: 'Merriweather', sans-serif !important;
   color: #434343;
   cursor: default;
 }

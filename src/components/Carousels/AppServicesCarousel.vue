@@ -219,7 +219,7 @@
 
   div#hc-layer-2-item-1>* {
     color: #bbbbbb;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   /*ITEM-2*/

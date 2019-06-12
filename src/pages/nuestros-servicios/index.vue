@@ -77,6 +77,7 @@
     mounted () {
       var scroll = document.getElementById('servicios')
       if (scroll !== null) {
+        console.log(scroll)
         if ('scrollingElement' in document) {
           document.scrollingElement.scrollTop = scroll.getBoundingClientRect().y
         }

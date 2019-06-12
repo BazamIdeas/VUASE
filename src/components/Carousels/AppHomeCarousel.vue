@@ -15,12 +15,12 @@
 
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>CREATIVIDAD Y TALENTO PARA PRESENTAR TU NEGOCIO</h1>
+            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <h1>Obten un diseño que amaras por ser capaz de todo. Diseños
+            <h2>Obten un diseño que amaras por ser capaz de todo. Diseños
             profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</h1>
+            completa conformidad.</h2>
             <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
           </div>
         </div>
@@ -98,28 +98,7 @@
 
   div#hc-layer-2-item-1 > * {
     color: #676767;
-    font-weight: 600;
-  }
-
-  /*ITEM-2*/
-  div#hc-layer-1-item-2 > * {
-    color: #004B7B;
-    font-weight: 700;
-  }
-
-  div#hc-layer-2-item-2 > * {
-    color: #676767;
-    font-weight: 600;
-  }
-
-  /*ITEM-4 cita*/
-  div#hc-layer-4-item-1 > * {
-    color: #fff;
-    font-weight: 500;
-  }
-
-  div#hc-layer-4-item-1 h5 {
-      margin-top: 12px;
+    font-weight: 400;
   }
 
 
@@ -174,28 +153,6 @@
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
     }
-
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      display: none;
-    }
   }
 
   @media (min-width: 481px) and (max-width: 639px) {
@@ -249,32 +206,6 @@
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
     }
-
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      display: none;
-    }
-
-    div.v-carousel__controls {
-        display: none;
-    }
   }
 
   @media (min-width: 640px) and (max-width: 1023px) {
@@ -319,28 +250,6 @@
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
     }
-
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      display: none;
-    }
   }
 
   @media (min-width: 600px) and (max-width: 740px) {
@@ -375,7 +284,6 @@
       max-width: 1260px;
     }
 
-    /* theme 2 */
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
       font-size: 28px;
@@ -401,42 +309,6 @@
       top: 13%;
     }
 
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-      top: 25%;
-      left: 20%;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      top: 66%;
-      left: 16%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-      left: 30.5%;
-      top: 4%;
-    }
-
-    .theme2 div#hc-layer-2-item-1 a{
-      margin-top: 23px !important;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      display: none;
-    }
-
-    div.v-carousel__controls {
-        display: none;
-    }
-
     /* theme 2 */
 
     .theme2 .layers-container {
@@ -473,35 +345,6 @@
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
     }
-
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      font-size: 10px;
-      width: 33%;
-      text-align: center;
-      line-height: 16px;
-      z-index: 99;
-      position: absolute;
-      margin-top: -20%;
-      left: 8%;
-    }
   }
 
   @media (min-width: 1264px) and (max-width: 1904px) {
@@ -520,59 +363,31 @@
     }
 
     .theme2 .layers-container > :nth-child(1) {
-      width: 60%;
+      width: 50%;
       position: relative;
     }
     .theme2 .layers-container > :nth-child(2) {
-      width: 45%;
+      width: 50%;
     }
 
     /*ITEM-1*/
     .theme2 div#hc-layer-1-item-1 {
-      font-size: 35px;
+      font-size: 28px;
       width: 100%;
-      margin-top: 50px;
-      line-height: 56px;
+      margin-top: 60px;
+      line-height: 48px;
     }
 
     .theme2 div#hc-layer-2-item-1 {
-      font-size: 14px;
-      width: 100%;
-      line-height: 28px;
-      margin-top: 10px;
+      font-size: 10px;
+      width: 80%;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
     }
 
     .theme2 div#hc-layer-3-item-1 {
       width: 80%;
-    }
-
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      font-size: 10px;
-      width: 33%;
-      text-align: center;
-      line-height: 16px;
-      z-index: 99;
-      position: absolute;
-      margin-top: -20%;
-      left: 8%;
     }
   }
 
@@ -593,11 +408,11 @@
     }
 
     .theme2 .layers-container > :nth-child(1) {
-      width: 60%;
+      width: 50%;
       position: relative;
     }
     .theme2 .layers-container > :nth-child(2) {
-      width: 45%;
+      width: 50%;
     }
 
     /*ITEM-1*/
@@ -617,35 +432,6 @@
 
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
-    }
-
-    /*ITEM-2*/
-    .theme2 div#hc-layer-1-item-2 {
-      font-size: 64px;
-      width: 39%;
-      line-height: 90px;
-    }
-
-    .theme2 div#hc-layer-2-item-2 {
-      font-size: 17px;
-      width: 28%;
-      line-height: 28px;
-    }
-
-    .theme2 div#hc-layer-3-item-2 {
-      width: 55%;
-    }
-
-    /* ITEM 4 */
-    .theme2 div#hc-layer-4-item-1 {
-      font-size: 10px;
-      width: 33%;
-      text-align: center;
-      line-height: 16px;
-      z-index: 99;
-      position: absolute;
-      margin-top: -20%;
-      left: 8%;
     }
   }
 
