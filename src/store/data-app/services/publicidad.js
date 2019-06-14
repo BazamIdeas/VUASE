@@ -3,44 +3,36 @@ export const publicidad = {
   titleSEO: 'Diseño publicitario profesional',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu publicidad, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'PUBLICIDAD',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu publicidad listo para usar (editable e imágenes)'],
+  title: 'Publicidad',
+  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu publicidad en formato digital listo para usarse digitalmente o impreso.'],
   description: `Comunica tu negocio donde necesites y que tu negocio crezca`,
   shortDescription: `Comunica tu negocio donde necesites y que tu negocio crezca`,
   icon: '/icons/publicidades.svg',
   whatWeOffer: [
     {
-      title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad.',
+      title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
+      description: 'Creaciones a medida, originales, únicas y de calidad.',
       icon: '/icons/logo-unico-original.svg'
     }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/mas-de-40-profesionales.svg'
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+      icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
-      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
       icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
       icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
-      title: 'ATENCIÓN PERSONALIZADA',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/atencion-personalizada.svg'
-    }, {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/propuestas-ilimitadas.svg'
-    }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      description: 'Descarga tus archivos en formatos editables listos para utilizar en variedad de formatos.',
       icon: '/icons/archivos_listos.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
@@ -49,11 +41,12 @@ export const publicidad = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Las creaciones pueden ser para revistas, guías, periódicos, etc y las medidas se adaptan a los espacios contratados por el cliente.`,
+        description: `El diseño gráfico y publicitario de tu publicidad lista para ser utilizada en revistas, periódicos, guías, redes sociales, sitios webs y WhatsApp. Las medidas son adaptan a las necesidades del cliente en cada proyecto.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>PDF<b> editable'
         ],
         icon: '/icons/publicidades.svg'
       }]
@@ -155,31 +148,35 @@ export const publicidad = {
   ],
   creativeProcess: [
     {
+      src: '/images/carousels/creative-process/web.png',
+      alt: 'Diseño de pulicidades'
+    },
+    {
       src: '/images/carousels/creative-process/271.png',
-      alt: 'creative-process-3'
+      alt: 'Diseño de pulicidades'
     },
     {
       src: '/images/carousels/creative-process/272.png',
-      alt: 'creative-process-4'
+      alt: 'Diseño de pulicidades'
     }
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA EL DISEÑO DE TU PUBLICIDAD',
+      title: '1. Elabora un brief tu el diseño de tu publicidad',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer tus objetivos publicitarios, los contenidos que deseas presentar y resultados que deseas obtener.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos de manera original y llamativa la publicidad para tu empresa desde cero y hasta tu entera aprobación.',
       alt: 'conceptos'
     },
     {
-      title: '3. DESCARGA TU PROYECTO LISTO PARA UTILIZAR',
+      title: '3. Descarga tu proyecto listo para utilizar',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Te entregamos el diseño de tu publicidad lista para utilizar en variedad de formatos editables.',
@@ -197,7 +194,7 @@ export const publicidad = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
       image: '/images/pages/packs/flyer-retro-cafe.png',
       title: 'FLYER',

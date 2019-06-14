@@ -50,7 +50,7 @@
                       <img width="80px" :alt="alt" class="mb-2" :src="service.icon">
                     </v-flex>
                     <v-flex xs12 sm8 md12 class="mb-2">
-                      <h2 class="headline font-weight-bold text-uppercase" :style="'color:'+item.color">{{service.title}}</h2>
+                      <h1 class="font-weight-bold display-1" :style="'color:'+item.color">{{service.title}}</h1>
                     </v-flex>
                     <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
                       <span class="body-2" v-html="service.description"></span>
@@ -172,8 +172,6 @@
   }
 }
 
-.flex.px-3.xs12.sm12.md12.hidden-sm-and-down:not(.actual-step), .flex.px-3.xs12.sm12.md12.hidden-sm-and-down:not(.actual-step) h2 {
-    color: rgb(158, 158, 158) !important;
-}
+
 
 </style>

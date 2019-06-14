@@ -18,9 +18,9 @@
             <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <h2>Obten un diseño que amaras por ser capaz de todo. Diseños
+            <p class="body-2 ">Obtén un diseño que amaras por ser capaz de todo. Diseños
             profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</h2>
+            completa conformidad.</p>
             <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
           </div>
         </div>

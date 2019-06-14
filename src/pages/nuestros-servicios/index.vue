@@ -26,6 +26,7 @@
               :url="service.slug" 
               :addon-service="service.dataService.addonService"
               :start-with="service.dataService.startWith"
+              :oferta="service.dataService.oferta"
             />
           </v-flex>
           <v-flex offset-xs1 flex xs10 offset-md0 md6 v-if="layout.carousel">
@@ -49,7 +50,7 @@
     </transition-group>
     <!-- QUE NECESITAS -->
     <v-flex>
-      <h2 class="mb-3 display-1 xs-title font-weight-bold text-xs-center">¿AÚN NO ENCUENTRAS LO QUE BUSCAS?</h2>
+      <h2 class="mb-3 display-1 xs-title font-weight-bold text-xs-center">¿Aún no encuentras lo que buscas?</h2>
     </v-flex>
     <v-flex xs12 class="text-xs-center title mb-5 font-weight-medium">
     Vuelve a nuestro

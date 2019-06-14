@@ -23,9 +23,9 @@
                 <img alt="Te escuchamos" height="70px" width="80px" src="/icons/te escuchamos.svg">
               </div>
               <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">BRIEFING</h2> 
+                  <h3 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">Briefing</h3> 
               </div>
-              <span class="body-2 mb-2  px-3 text-xs-center">Comentanos que necesitas diseñar, cuales son tus preferencias y especificaciones.</span>
+              <span class="body-2 mb-2  px-3 text-xs-center">Coméntanos que necesitas diseñar, cuáles son tus preferencias y especificaciones.</span>
             </div>
 
             <div class="characteristic">
@@ -33,19 +33,19 @@
                 <img alt="Logo a medida" height="70px" width="80px" src="/icons/logo-a-medida-pink.svg">
               </div>
               <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">DISEÑOS ILIMITADOS</h2> 
+                  <h3 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">Diseños Ilimitados</h3> 
               </div>
-              <span class="body-2 mb-2 px-3 text-xs-center">Creamos conceptos unicos, exclusivos y originales desde cero, ilimitados y hasta tu entera conformidad.</span>
+              <span class="body-2 mb-2 px-3 text-xs-center">Creamos conceptos únicos, exclusivos y originales desde cero, ilimitados y hasta tu entera conformidad.</span>
             </div>
             <div class="characteristic">
               <div class="circle-img mb-4 mt-2 ">
                 <img alt="Recomendados por grandes" height="70px" width="80px" src="/icons/recomendados-por-grandes-pink.svg">
               </div>
-              <div class="mb-2">
-                  <h2 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">RECIBE TU PROYECTO</h2> 
+              <div class="mb-1">
+                  <h3 style="font-size:18px;" class="font-weight-bold px-5  text-xs-center">Recibe tu Proyecto</h3> 
               </div>
               <span class="body-2 mb-2  px-3 text-xs-center">Tus diseños listos para usar en formato digital o papel, listos para aplicar donde necesites, acompañados
-de tu certificado de derechos, manuales de uso y soporte post venta gratuito por 2 años.</span>
+de tu certificado de derechos, manuales de uso y soporte post venta gratuito.</span>
             </div>    
         </v-layout>
         <v-layout align-center justify-center row> 
@@ -102,13 +102,13 @@ de tu certificado de derechos, manuales de uso y soporte post venta gratuito por
     flex-wrap: wrap;
   }
 
-  .characteristics.home > :nth-child(1) h2 {
+  .characteristics.home > :nth-child(1) h3 {
     color: #662D92 !important;
   }
-  .characteristics.home > :nth-child(2) h2 {
+  .characteristics.home > :nth-child(2) h3 {
     color: #EE205E !important;
   }
-  .characteristics.home > :nth-child(3) h2 {
+  .characteristics.home > :nth-child(3) h3 {
     color: #8AC63D !important;
   }
 
@@ -121,7 +121,7 @@ de tu certificado de derechos, manuales de uso y soporte post venta gratuito por
       flex: 1;
   }
 
-   .characteristics.home .characteristic h2{
+   .characteristics.home .characteristic h3{
       font-size: 18px;
       line-height: 20px;
   }

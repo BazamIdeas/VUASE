@@ -10,17 +10,17 @@
     <v-container grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md4>
-            <div :class="{ 'active': active === 1 }" class="step-1 title-step text-xs-center font-weight-bold">
+            <div :class="{ 'active': active === 1 }" class="step-1 title-step body-2  font-weight-bold">
                 <span @click="active = 1">1. Elabora un brief</span>
             </div>
         </v-flex>
         <v-flex xs12 md4>
-            <div :class="{ 'active': active === 2 }" class="step-2 title-step text-xs-center font-weight-bold">
+            <div :class="{ 'active': active === 2 }" class="step-2 title-step body-2  font-weight-bold">
                 <span @click="active = 2">2. Recibe diseños ilimitados</span>
             </div>
         </v-flex>
         <v-flex xs12 md4>
-            <div :class="{ 'active': active === 3 }" class="step-3 title-step text-xs-center font-weight-bold">
+            <div :class="{ 'active': active === 3 }" class="step-3 title-step body-2  font-weight-bold">
                 <span @click="active = 3">3. Recibe tu proyecto</span>
             </div>
         </v-flex>
@@ -50,11 +50,11 @@
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <br>
-                    <div class="boton">
+                    <!-- <div class="boton">
                         <v-btn color="#4c55aa" class="ma-0 px-2">
                             <span style="color: #ffffff">Leer más preguntas frecuentes</span>
                         </v-btn>
-                    </div>
+                    </div> -->
                 </v-flex>
             </v-layout>
         </v-flex>
@@ -112,11 +112,11 @@
                     </v-expansion-panel>
                 </v-flex>
                 <v-flex xs12 class="text-xs-center">
-                    <div class="boton">
-                        <v-btn color="#c3953f" class="ma-0 px-2">
+                    <!-- <div class="boton">
+                         <v-btn color="#c3953f" class="ma-0 px-2">
                             <span style="color: #ffffff">Leer más preguntas frecuentes</span>
-                        </v-btn>
-                    </div>
+                        </v-btn> 
+                    </div> -->
                 </v-flex>
             </v-layout>
         </v-flex>
@@ -148,40 +148,40 @@
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                     <br>
-                    <div class="boton">
+                   <!--  <div class="boton">
                         <v-btn color="#c3953f" class="ma-0 px-2">
                             <span style="color: #ffffff">Leer más preguntas frecuentes</span>
                         </v-btn>
-                    </div>
+                    </div> -->
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 class="px-4 mb-5">
-            <h2 class="why-liderlogo" style="font-size: 50px; line-height: 51px; font-weight: 600;">Entonces, <br class="hidden-sm-and-down"> ¿Por qué LiderLogo <br class="hidden-sm-and-down">debe ser mi proveedor?</h2>
+        <v-flex xs12 class="px-4 mb-3">
+            <h2 class="why-liderlogo" style="font-size: 40px; line-height: 45px; font-weight: 600;">Entonces, <br class="hidden-sm-and-down"> ¿Por qué LiderLogo <br class="hidden-sm-and-down">debe ser mi proveedor?</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="/icons/logo-unico-original.svg" alt="">
-            <h2 style="color: #4c55aa;">Conceptos Originales</h2>
+            <img width="80px" src="/icons/logo-unico-original.svg" alt="">
+            <h3 style="color: #4c55aa;">Conceptos Originales</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="/icons/equipo-interidisciplinario.svg" alt="">
-            <h2 style="color: #1d8127">Profesionales Expertos</h2>
+            <img width="80px" src="/icons/equipo-interidisciplinario.svg" alt="">
+            <h3 style="color: #1d8127">Profesionales Expertos</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="/icons/16-anios.svg" alt="">
-            <h2 style="color: #c3953f;">16 años de experiencia</h2>
+            <img width="80px" src="/icons/16-anios.svg" alt="">
+            <h3 style="color: #c3953f;">16 años de experiencia</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="/icons/atencion-personalizada.svg" alt="">
-            <h2 style="color: #4c55aa;">Atención Personalizada</h2>
+            <img width="80px" src="/icons/atencion-personalizada.svg" alt="">
+            <h3 style="color: #4c55aa;">Atención Personalizada</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="/icons/garantia-de-conformidad.svg" alt="">
-            <h2 style="color: #1d8127">Garantia 100%</h2>
+            <img width="80px" src="/icons/garantia-de-conformidad.svg" alt="">
+            <h3 style="color: #1d8127">Garantia 100%</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
-            <img width="100px" src="/icons/propuestas-ilimitadas.svg" alt="">
-            <h2 style="color: #c3953f;">Conceptos Ilimitados</h2>
+            <img width="80px" src="/icons/propuestas-ilimitadas.svg" alt="">
+            <h3 style="color: #c3953f;">Conceptos Ilimitados</h3>
         </v-flex>
       </v-layout>
     </v-container>
@@ -195,7 +195,7 @@
           <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
+          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>

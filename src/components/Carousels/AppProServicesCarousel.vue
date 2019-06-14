@@ -3,10 +3,10 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>SERVICIOS A PROFESIONALES</h1>
+          <h1>Servicios a Agencias</h1>
         </div>
         <div class="layer" id="hc-layer-2-item-1">
-          <h2>¿Eres agencia de diseño gráfico, web, Apps o simplemente deseas ampliar tus servicios y ganar mas?</h2>
+          <p class="body-2 mt-2">¿Eres agencia de diseño gráfico, web, Apps o simplemente deseas ampliar tus servicios y ganar más sin engrosar tu plantilla?</p>
           <v-btn to="/contacto" flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">Solicita una llamada</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">

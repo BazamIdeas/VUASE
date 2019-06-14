@@ -1,10 +1,10 @@
 export const vectorizacion = {
   /* SEO */
   titleSEO: 'Vectorización de logo',
-  descriptionSEO: 'Redibujamos tu logo de una imagen de baja resolución y la preparamos en archivos vectoriales para el uso que necesites. ¡Comienza tu proyecto ahora!',
+  descriptionSEO: 'Re-dibujamos tu logo de una imagen de baja resolución y la preparamos en archivos vectoriales para el uso que necesites.',
   /* ** */
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu logo listo para usar (editable e imágenes)'],
-  title: 'VECTORIZACIÓN DE TU LOGO',
+  list: ['Llevamos tu logo a alta resolución', 'Diseños en 24 hrs', 'Tu logo listo para usar en gran cantidad de formatos (editable e imágenes)', 'Manual corporativo de marca'],
+  title: 'Vectorización de tu Logo',
   description: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,
   shortDescription: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,
   icon: '/icons/vectorizacion.svg',
@@ -15,7 +15,7 @@ export const vectorizacion = {
       icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
+      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas al respecto.',
       icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'DISEÑOS DE UN DÍA PARA OTRO',
@@ -24,33 +24,82 @@ export const vectorizacion = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/vectorizacion/vectorizacion-que-te-llevas.png',
+    img: '/images/pages/vectorizacion/games.jpg',
     color: 'black',
     columns: [
       [{
-        title: 'LOGO EN DIVERSOS FORMATOS',
+        title: 'LOGO EN VARIEDAD DE FORMATOS ',
+        descriptión: 'Listo para ser utilizado en tu sitio web, papelería, rótulos, uniformes, merchandising, publicidades impresas y digitales, whatsapp, redes sociales y muchos más!',
         items: [
           '<b>PDF</b> archivo vectorial editable, imprimible en cualquier tamaño y material.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.', '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones web.',
-          '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
-          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.'
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones en redes sociales, mensajería instantánea, publicidad digital y sitios webs.',
+          '<b>PNG</b> formato gráfico comprimido que permite almacenar imágenes con una mayor profundidad de contraste y otros importantes datos.',
+          '<b>JPG</b> archivo en formato de imagen para impresión (300 dpi) y aplicación web (72 dpi).',
+          '<b>SVG</b> formato gráficos vectoriales bidimensionales ideales para su uso en Internet.',
+          '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.',
+          '<b>Cualquier otro formato requerido será facilitado, sin cargo adicional.</b>'
         ],
         icon: '/icons/logo-en-diversos-formatos.svg'
+      }, {
+        title: 'TUTORIALES DE USO',
+        description: 'Completa documentación de cómo utilizar adecuadamente cada uno de los formatos.',
+        icon: '/icons/tutorial-de-uso.svg'
       }],
       [{
+        title: 'FACTURA',
+        description: 'Factura fiscal del servicio contratado.',
+        icon: '/icons/cesion-de-derechos.svg'
+      }, {
+        title: 'SERVICIO DE POST-VENTA GRATUITO DURANTE 5 AÑOS',
+        description: 'Guardamos una copia de seguridad de tu proyecto y brindamos atención para cualquier consulta tuya o de tus proveedores, de aplicación de diseños, sin cargo alguno durante los próximos 5 años de terminado tu proyecto.',
+        icon: '/icons/servicio-postventa.svg'
+      }, {
         title: 'MANUAL DE USO DE LA MARCA',
+        description: 'Documentación detallada donde se presenta la información necesaria para la utilización del logo.',
         items: [
-          'Documentos donde se presenta la información importante para la utilizacion del logo como:',
-          'Códigos de colores.',
-          'Tipos de letra utilizada en tu logo.',
-          'Proporciones.',
-          'Uso debido e indebido de los componentes del diseño.'
+          'Explicación técnica y conceptual de su marca.',
+          'Construcción geométrica y elementos.',
+          'Códigos de colores corporativos.',
+          'Tipografías corporativas.',
+          'Usos correctos e incorrectos del logo y sus componentes del diseño.'
         ],
         icon: '/icons/catalogo.svg'
       }]
     ]
   },
+  frequentQuestions: [
+    {
+      question: '¿Cuántas presentaciones de mi logo recibo?',
+      response: `Vectorizamos al detalle tu logo y te lo presentamos para tu visualización y posterior entrega. Normalmente con un boceto para la confirmación del diseño, colores y tipografías es suficiente dado que el concepto de tu logo ya se encuentra creado, de todos modos si necesitaras más presentaciones no tienen coste adicional.`
+    }, {
+      question: '¿Cuánto tiempo lleva realizar mi proyecto?',
+      response: 'Los proyectos llevan normalmente entre uno y dos días, dado que son proyectos simples y rápidos.'
+    }, {
+      question: '¿Cómo recibo los bocetos, perfeccionamientos y entrega de mi proyecto?',
+      response: 'Los bocetos y perfeccionamientos los recibís vía email y WhatsApp, las entregas finales vía email y las podes descargar también desde nuestro apartado privado de clientes.'
+    }, {
+      question: '¿En dónde podré utilizar mi logo?',
+      response: 'El logo se entrega en gran variedad de formatos listos para ser utilizado adecuadamente en imprenta profesional, documentos de Microsoft Word, Excel, Powerpoint, Outlook, Access, Open Office, sistemas de gestión empresarial, rotulación vehicular, de locales, de envases, de uniformes, publicidades impresas y digitales, sitios web, redes sociales, sistemas de mensajería instantánea,  emails , TV, pegatinas, sellos, bordados serigrafiados, es decir,  en todo sitio que necesites aplicarlo.'
+    }, {
+      question: '¿Es necesario que nos reunamos para contratar el servicio?',
+      response: `Nuestra experiencia de 16 años y decenas de miles de proyectos realizados exitosamente nos indica que no es necesario, nuestra metodología de trabajo es simple y efectiva. Presentamos tres etapas que se llevan a cabo de la siguiente manera, en la primera fase estudiamos todas tus necesidades y preferencias, en la segunda fase es donde creamos y perfeccionamos conceptos hasta que estés 100% conforme y en la tercera etapa es donde descargas tu proyecto en todos los formatos que necesitas para poder utilizarlos con total autonomía e independencia. Conocemos que los proyectos avanzan sólo sobre lo concreto, al recibir el cliente conceptos y perfeccionamientos, soluciones eficientes y pragmáticas de calidad para satisfacer sus necesidades sin tener que esperar a reuniones y ni realizar traslados.       
+      `
+    }, {
+      question: '¿Como me contacto con quien lleva adelante la gestión de mi proyecto?',
+      response: `Lo podes hacer de manera telefónica, vía email, vía chat, vía WhastApp, videoconferencia de Skype, y desde nuestro apartado privado de clientes,  como lo decidas, estamos a tu disposición de lunes a viernes todo el día (no hacemos puente ni cerramos por vacaciones).       
+      `
+    }, {
+      question: '¿Existe un coste adicional a los informados?',
+      response: `No, nuestros precios son cerrados y sin costes adicionales ni ocultos.       
+      `
+    }, {
+      question: '¿Cómo puedo abonar mi proyecto?',
+      response: `Se abona al comenzar el proyecto de la manera que prefieras transferencia, deposito, tarjeta de crédito o debito, PayPal, Strypeetc.       
+      `
+    }
+  ],
   testimonies: [{
     stars: 5,
     logo: '/images/testimonies/logo/sanidae.jpg',
@@ -109,14 +158,6 @@ export const vectorizacion = {
   topSliderBgSize: '70%',
   topSlider: [
     {
-      url: '/images/pages/vectorizacion/games.jpg',
-      color: 'black'
-    },
-    {
-      url: '/images/pages/vectorizacion/aterel.jpg',
-      color: 'black'
-    },
-    {
       url: '/images/pages/vectorizacion/hostal-la-colegiata.jpg',
       color: 'black'
     },
@@ -143,10 +184,6 @@ export const vectorizacion = {
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/Vectorizacion_02.png',
-      alt: 'creative-process-2'
-    },
-    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -157,21 +194,21 @@ export const vectorizacion = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN MUY SIMPLE BRIEF',
+      title: '1. Elabora un muy simple brief',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Brindanos una imagen del logo que necesitas llevar a alta resolución e vectores.',
+      description: 'Brindamos una imagen del logo que necesitas llevar a alta resolución y vectores.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
+      title: '2. Conceptos y perfeccionamientos ilimitados.',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Redibujamos y convertimos la imagen de tu logo que están formadas por píxeles en imágenes formadas por vectores.',
+      description: 'Re-dibujamos y convertimos la imagen de tu logo que están formadas por píxeles en imágenes formadas por vectores. ',
       alt: 'conceptos'
     },
     {
-      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
+      title: '3. Recibe tu proyecto listo para utilizar',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Descarga logo en gran variedad de formatos listos para realizar todo tipo de aplicaciones digitales e impresas con su manual de marca.',

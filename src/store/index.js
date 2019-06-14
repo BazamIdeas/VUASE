@@ -17,8 +17,7 @@ export const state = () => ({
         { url: '/avisos-legales', title: 'AVISO LEGAL' },
         { url: '/terminos-y-condiciones', title: 'TÉRMINOS Y CONDICIONES' },
         { url: '/contacto', title: 'Contacto' },
-        { url: '/opiniones', title: 'Opiniones' },
-        { url: '/blog', title: 'BLOG' }
+        { url: '/opiniones', title: 'Opiniones' }
       ],
       headerMovil: [
         {

@@ -4,7 +4,7 @@ export const redesSociales = {
   descriptionSEO: 'Creación de perfiles para redes sociales, destaca tu imagen y haz la diferencia, ¡Comienza tu proyecto ahora!',
   /* ** */
   list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
-  title: 'PERFILES DE REDES SOCIALES',
+  title: 'Perfiles de redes sociales',
   description: `Portadas y avatars para destacar tu marca en.`,
   shortDescription: `Portadas y avatars para destacar tu marca en.`,
   icon: '/icons/perfiles-redes-sociales.svg',
@@ -18,7 +18,7 @@ export const redesSociales = {
       description: 'Encontramos las imágenes necesarias para su diseño.',
       icon: '/images/pages/redes-sociales/busqueda-y-edicion-de-imagenes.svg'
     }, {
-      title: 'DISEÑO DE AVATAR Y PORTADA',
+      title: 'DISEÑO DE AVATAR, PORTADA Y CONTENIDOS',
       description: 'Diseñamos todos los elementos que requiere su perfil de red social.',
       icon: '/images/pages/redes-sociales/icono-de-avatar-y-portada.svg'
     }, {
@@ -134,6 +134,10 @@ export const redesSociales = {
   ],
   creativeProcess: [
     {
+      src: '/images/carousels/creative-process/web.png',
+      alt: 'creative-process-3'
+    },
+    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -144,24 +148,24 @@ export const redesSociales = {
   ],
   steps: [
     {
-      title: '1. BRIEF Y SELECTOR',
+      title: '1.  Elabora un brief para el diseño de tu perfil',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Descripcion',
+      description: 'Completa unas simples preguntas para ayudar a nuestro equipo publicitario a conocer tus preferencias.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. CONCEPTOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados.',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Descripcion',
+      description: 'Creamos de manera original y llamativa el diseño para red social diseñando diversas líneas de diseño y perfeccionamientos',
       alt: 'conceptos'
     },
     {
-      title: '3. ENTREGA Y DOCUMENTACIÓN',
+      title: '3. Descarga el diseño publicitario de tu perfil',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Descripcion',
+      description: 'Recibe el diseño  en ficheros de alta resolución listos para ser utilizados en las redes.',
       alt: 'entrega-y-documentacion'
     }
   ],

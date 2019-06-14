@@ -3,47 +3,49 @@ export const rBanner = {
   titleSEO: 'Diseño de Banners publicitarios',
   descriptionSEO: 'Destaca tu stand con un banner llamativo y original, tenemos más de 75000 diseños exitosos y te ofrecemos garantía de conformidad. ¡Comienza Ahora!',
   /* ** */
-  list: ['Diseño publicitario impactante', 'Creaciones Ilimitadas', 'Fotomontajes de tus diseños', 'Entrega lista para imprimir'],
-  title: 'RÓTULO BANNER',
-  description: `Un diseño publicitario que desctaca tu stand.`,
-  shortDescription: `Un diseño publicitario que desctaca tu stand.`,
+  list: ['Diseño publicitario profesional e impactante.', 'Creaciones publicitarias y perfeccionamientos hasta entera conformidad.', 'Entrega de artes editables listas para imprimir.'],
+  title: 'Diseño de Banner',
+  description: `Un diseño publicitario ideal para destacar tu stand y llamar a los clientes visualmente. `,
+  shortDescription: `Un diseño publicitario ideal para destacar tu stand y llamar a los clientes visualmente. `,
   icon: '/icons/rotulo-banner.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad',
+      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
       icon: '/icons/logo-unico-original.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/mas-de-40-profesionales.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/un-dia-para-el-otro.svg'
-    }, {
-      title: 'FOTOMONTAJES DE SUS DISEÑOS',
-      description: 'Antes de rotular vísualize opcines de diseño maquetadas de sus propias superficies.',
-      icon: '/icons/fotomontajes.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
+    }, {
+      title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
+    }, {
+      title: 'PERFECCIONAMIENTO DE TEXTOS',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
+    }, {
+      title: 'ARCHIVOS LISTOS PARA TU ROTULISTA',
+      description: 'Descarga tus archivos en formatos editables listos para impresión, corte e instalación de vinilos.',
+      icon: '/icons/archivos_listos.svg'
     }
   ],
   whatYouGet: {
     img: '/images/pages/rotulo-banner/que-te-llevas-olivaria.jpg',
-    color: '#70371b',
+    color: '#777b64',
     columns: [
       [
         {
           title: 'MANUAL DE USO DE LA MARCA',
-          description: 'Diseño llamativo y eficiente de un banner publicitario para la presentación de su empresa, productos y servicios. <br> La creación es llevada a cabo por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios desde cero y hasta entera aprobación, y su entrega se realiza en los siguientes formatos:',
-          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)'],
+          description: `Diseño llamativo y eficiente de un banner publicitario para la presentación de tu empresa, productos o servicios. <br>
+          La creación es llevada a cabo por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios, desde cero y hasta lograr una entera aprobación, y su entrega se realiza en los siguientes formatos:
+          `,
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)', 'PDF de alta resolución.', 'Plantillas digitales de impresión, corte y aplicación.'],
           icon: '/icons/rotulo-banner.svg'
         }
       ]
@@ -131,17 +133,13 @@ export const rBanner = {
     },
     {
       url: '/images/pages/rotulo-banner/la-julia.jpg',
-      color: '#777b64'
+      color: '#70371b'
     }
   ],
   creativeProcess: [
     {
       src: '/images/carousels/creative-process/banner_1.png',
       alt: 'creative-process-1'
-    },
-    {
-      src: '/images/carousels/creative-process/banner_2.png',
-      alt: 'creative-process-2'
     },
     {
       src: '/images/carousels/creative-process/271.png',
@@ -154,21 +152,21 @@ export const rBanner = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA TU DISEÑO DE BANNER PROMOCIONAL',
+      title: '1.Elabora un brief para el diseño de tu banner promocional',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Completa unas simples preguntas para ayudar a nuestro equipo creativo a conocer donde utilizaras tu banner, de que medidas lo deseas y que deseas promocionar de tu negocio.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos de manera original y llamativa diferentes opciones de diseño publicitario de tu banner  hasta tu completa aprobacion.',
       alt: 'conceptos'
     },
     {
-      title: '3. RECIBE EL DISEÑO DE TU BANNER LISTO ARA IMPRIMIR O USAR EN INTERNET',
+      title: '3. Recibe el diseño de tu banner listo para imprimir o usar en Internet',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Te entregamos el diseño de tu banner en variedad de formatos digitales editables listo para su impresión o uso en Internet.',
@@ -187,7 +185,7 @@ export const rBanner = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros pack en',
     first: {
       image: '/images/pages/packs/pack-rotulo-vannamel.png',
       title: 'PACKAGING',

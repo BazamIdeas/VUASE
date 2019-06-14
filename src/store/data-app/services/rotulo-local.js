@@ -3,36 +3,36 @@ export const rLocal = {
   titleSEO: 'Diseño de Rotulos para empresas',
   descriptionSEO: 'Diseñamos el frente de negocio donde tus clientes deseen entrar 100% único y original asesoría gratuita y servicio post-venta. ¡Comienza ahora tu proyecto!',
   /* ** */
-  list: ['Diseño publicitario impactante', 'Cambios ilimitados', 'Fotomontajes de tus diseños', 'Fotomontajes de tus diseños'],
-  title: 'RÓTULO LOCAL',
-  description: `El frente de negocio donde los clientes desean entrar.`,
-  shortDescription: `El frente de negocio donde los clientes desean entrar.`,
+  list: ['Diseño publicitario impactante', 'Conceptos y perfeccionamientos ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo del frente completo de tu local.', 'Entrega del diseño final en plantillas de corte digital para tu rotulista.'],
+  title: 'Rótulo Local',
+  description: `El frente del negocio en fundamental para que los clientes deseen entrar y comprar.`,
+  shortDescription: `El frente del negocio en fundamental para que los clientes deseen entrar y comprar.`,
   icon: '/icons/rotulo-local.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad',
+      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
       icon: '/icons/logo-unico-original.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/mas-de-40-profesionales.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/un-dia-para-el-otro.svg'
-    }, {
-      title: 'FOTOMONTAJES DE SUS DISEÑOS',
-      description: 'Antes de rotular vísualize opcines de diseño maquetadas de sus propias superficies.',
-      icon: '/icons/fotomontajes.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
+    }, {
+      title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
+    }, {
+      title: 'PERFECCIONAMIENTO DE TEXTOS',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
+    }, {
+      title: 'ARCHIVOS LISTOS PARA TU ROTULISTA',
+      description: 'Descarga tus archivos en formatos editables listos para impresión, corte e instalación de vinilos.',
+      icon: '/icons/archivos_listos.svg'
     }
   ],
   whatYouGet: {
@@ -42,8 +42,8 @@ export const rLocal = {
       [
         {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
-          description: 'El rótulo para local es el diseño gráfico y publicitario aplicado a la superficie externa del local. El proyecto es llevado adelante por nuestro equipo interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios que aportan conceptos originales y perfeccionamientos ilimitados. <br><br> La presentación se realiza a partir de fotomontajes reales, y la entrega de artes digitales listas para que el rotulista realice la fabricación y colocación del diseño creado, se presenta con sus medidas y plantillas de corte en los siguientes formatos:',
-          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)'],
+          description: 'El diseño gráfico y publicitario del frente del local de tu entera conformidad en formatos digitales listos para su fabricacion, impresion y colocacion.',
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)', 'PDF de alta resolución.', 'Plantillas digitales de impresión, corte y aplicación.'],
           icon: '/icons/rotulo-local.svg'
         }
       ]
@@ -144,10 +144,6 @@ export const rLocal = {
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/Rotulo-Local_2.png',
-      alt: 'creative-process-2'
-    },
-    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -158,21 +154,21 @@ export const rLocal = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA TU DISEÑO EXTERIOR DE LOCAL',
+      title: '1. Elabora un brief para tu diseño exterior de local',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Completa unas simples preguntas para ayudar a nuestro equipo publicitario a conocer como es tu local, sus medidas y tus objetivos para el diseño.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos de manera original y llamativa diferentes opciones de diseño publicitario del frente de tu local hasta tu completa aprobacion.',
       alt: 'conceptos'
     },
     {
-      title: '3. DESCARGA EL DISEÑO GRAFICO LISTO PARA ROTULAR',
+      title: '3. Descarga el diseño gráfico listo para rotular',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Te entregamos el diseño grafico y publicitario del exterior de tu local en formato digital listo para que tu rotulista fabrique e instale el rotulo publicitario exterior de tu negocio.',
@@ -190,7 +186,7 @@ export const rLocal = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios',
     first: {
       image: '/images/pages/packs/pack-rotulo-vannamel.png',
       title: 'PACKAGING',

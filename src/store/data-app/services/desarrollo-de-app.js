@@ -3,10 +3,10 @@ export const disenoApp = {
   titleSEO: 'Desarrollo de aplicaciones moviles',
   descriptionSEO: 'Desarrollamos su aplicación móvil para ayudar a aumentar la presencia en línea de su empresa, tenemos cientos de clientes satisfechos ¡Comienza ahora!',
   /* ** */
-  startWith: true,
-  list: ['Fidelice a sus clientes', 'Aumente la visibilidad de su empresa', 'Ofrezca otro canal de venta y contacto', 'Fortalezca su marca'],
-  title: 'APLICACIÓN MOVIL',
-  description: `Desarrolle una aplicación móvil para ayudar a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital`,
+  startWith: 'A PARTIR DE:',
+  list: ['Fidelice a sus clientes', 'Aumente la visibilidad de su empresa', 'Ofrezca otro canal de venta y contacto', 'Fortalezca su marca', 'Adáptese a posibles nuevos clientes. '],
+  title: 'Aplicación para Moviles',
+  description: `Desarrollar una aplicación móvil ayuda a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital.`,
   shortDescription: `Desarrolle una aplicación móvil para ayudar a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital`,
   icon: '/icons/app.svg',
   whatWeOffer: [
@@ -24,7 +24,7 @@ export const disenoApp = {
       icon: '/images/pages/app/versatilidad.svg'
     }, {
       title: 'INTEGRACIÓN',
-      description: 'Vinculamos la app con su web desarrollada con algún gestor de contenido o api desarrollada.',
+      description: 'Vinculamos la app con su web, con algún gestor de contenido o api.',
       icon: '/images/pages/app/integracion.svg'
     }, {
       title: 'EQUIPO INTERDISCIPLINARIO',
@@ -40,7 +40,7 @@ export const disenoApp = {
     noCarrito: true,
     noMaxWidth: true,
     notShowPrice: true,
-    img: '/images/pages/app/bonorum-36-app.png',
+    img: '/images/pages/app/bonorum.jpg',
     color: 'black',
     columns: [
       [
@@ -92,12 +92,16 @@ export const disenoApp = {
   ],
   creativeProcess: [
     {
+      src: '/images/carousels/creative-process/web.png',
+      alt: 'desarrollo de aplicacion'
+    },
+    {
       src: '/images/carousels/creative-process/271.png',
-      alt: 'creative-process-3'
+      alt: 'desarrollo de app'
     },
     {
       src: '/images/carousels/creative-process/272.png',
-      alt: 'creative-process-4'
+      alt: 'desarrollo de app'
     }
   ],
   steps: [
@@ -105,21 +109,21 @@ export const disenoApp = {
       title: '1. Brief e investigación',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Todas las aplicaciones comienzan con una idea. En esta etapa se refina esa idea en una base sólida para su app. Se asegura de que su análisis inicial incluya preferencias de diseño, funcionalidades básicas, objetivos, y datos demográficos reales de su potencial cliente o usuario.',
+      description: 'Todas las aplicaciones comienzan con una idea. En esta etapa se refina esa idea en una base sólida para su app. Se asegura de que su análisis inicial incluya preferencias de diseño, funcionalidades básicas y objetivos.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. Diseño conceptos',
+      title: '2. Diseño de conceptos',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'En este paso se diseñan en detalle y se organizan todos los componentes, se crea una hoja de ruta o un guion gráfico para describir la relación entre las interfaces y se define la navegabilidad a través de la aplicación, asimismo se establecen la forma de interacción entre los elementos.',
+      description: 'En este paso se diseñan en detalle y se organizan todos los componentes, se crea una hoja de ruta o un guion gráfico para describir la relación entre las interfaces y se define la navegabilidad a través de la aplicación.',
       alt: 'conceptos'
     },
     {
       title: '3. Desarrollo y despliegue',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'La fase de desarrollo generalmente comienza bastante temprano. De hecho, una vez que una idea adquiere cierta madurez en la etapa de diseño, se desarrolla un prototipo que valida la funcionalidad y suposiciones ayudando a comprender el alcance del proyecto. En esta fase, la aplicación se lanza a un determinado grupo de usuarios externos para realizar más pruebas. Una vez que se corrijan los errores en la segunda etapa, la aplicación pasará a la fase de implementación, donde está lista para su lanzamiento.',
+      description: 'La fase de desarrollo generalmente comienza bastante temprano. De hecho, una vez que una idea adquiere cierta madurez en la etapa de diseño, se desarrolla un prototipo que valida la funcionalidad y suposiciones ayudando a comprender el alcance del proyecto. Al terminar las pruebas la aplicación estará lista para su lanzamiento.',
       alt: 'entrega-y-documentacion'
     }
   ],
@@ -135,7 +139,7 @@ export const disenoApp = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS PACK',
+    title: 'Aprovecha nuestros pack',
     first: {
       image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
       title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
