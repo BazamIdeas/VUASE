@@ -10,16 +10,6 @@ module.exports = function (req, res, next) {
       let dominio = req.headers.host
       let path = url.parse(req.url).pathname
   
-      /*let paises = {
-        'ES': 'liderlogo.es'
-      }
-  
-      if (paises[iso]) {
-        if (paises[iso] !== dominio) {
-          res.writeHead(301, {Location: 'https://' + paises[iso] + '/' + path})
-          return res.end()
-        }
-      }*/
       if (iso === 'ES') {
         if (dominio !== 'liderlogo.es') {
           res.writeHead(301, {Location: 'https://liderlogo.es/' + path})

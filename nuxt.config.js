@@ -1,14 +1,8 @@
 const nodeExternals = require('webpack-node-externals')
-const bodyParser = require('body-parser')
 const Cookies = require('cookies')
 const axios = require('axios')
-const resolve = (dir) => require('path').join(__dirname, dir)
 
-let axiosUrl = 'http://api.liderlogos.com/v1/'
-
-// let axiosUrl = 'http://127.0.0.1:9090/v1/'
-
-var idGTM = 'GTM-K4QPVB'
+let axiosUrl = 'https://api.liderlogo.com/v1/'
 
 module.exports = {
   srcDir: 'src/',
@@ -26,7 +20,7 @@ module.exports = {
   ],
   sitemap: {
     path: '/sitemap.xml',
-    hostname: 'http://liderlogos.com',
+    hostname: 'https://liderlogo.com',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
     excludes: [
@@ -92,13 +86,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/toast',
     '@nuxtjs/sitemap',
-    ['cookie-universal-nuxt', { alias: 'cookies' }],
-    ['@nuxtjs/google-tag-manager', {
-      id: () => {
-        console.log(idGTM)
-        return idGTM
-      }
-    }]
+    ['cookie-universal-nuxt', { alias: 'cookies' }]
   ],
   plugins: [
     '~/plugins/vuetify.js',
