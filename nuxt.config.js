@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 const Cookies = require('cookies')
 const axios = require('axios')
 
-let axiosUrl = 'https://api.liderlogo.com/v1/'
+let axiosUrl = 'http://api.liderlogo.com/v1/'
 
 module.exports = {
   srcDir: 'src/',
@@ -20,7 +20,7 @@ module.exports = {
   ],
   sitemap: {
     path: '/sitemap.xml',
-    hostname: 'https://liderlogo.com',
+    hostname: 'http://liderlogo.com',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
     excludes: [
