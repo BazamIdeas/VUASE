@@ -20,9 +20,11 @@
         // Customize button (optional)
         locale: 'es_ES',
         style: {
-          size: 'small',
+          size: 'medium',
           color: 'gold',
-          shape: 'pill'
+          shape: 'rect',
+          tagline: false,
+          label: 'paypal'
         },
         // Set up a payment
         payment: function (data, actions) {

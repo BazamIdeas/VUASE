@@ -1,5 +1,9 @@
 <template>
-  <div id="bank-button" @click="checkout"> {{ label }} </div>
+  <div> 
+    <v-btn slot="activator" @click="checkout" color="#ffc439" id="bank-button" class="elevation-0">
+      <span style="color: #001e31; font-weight: 600 !important;">{{ label }}</span>
+    </v-btn>
+  </div>
 </template>
 
 <script>
@@ -48,17 +52,9 @@
 
 <style>
   #bank-button {
-    background-image: url(/images/bank.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 25px;
-    border-radius: 20px;
-    color: white;
-    font-size: 8px;
+    color: #001e31;
     line-height: 26px;
-    font-weight: 600;
+    font-weight: 600 !important;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin: 0px auto 10px;

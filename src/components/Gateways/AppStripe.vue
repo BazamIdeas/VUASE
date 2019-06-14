@@ -13,7 +13,9 @@
       @closed="closed"
       @canceled="canceled"
     ></vue-stripe-checkout>
-    <button id="stripe-button" @click="checkout"></button>
+    <v-btn id="stripe-button" @click="checkout" color="#ffc439" class="elevation-0"> 
+      <span style="color: #001e31; font-weight: 600 !important;">Pagar Ahora</span>  
+    </v-btn>
   </div>
 </template>
 
@@ -78,13 +80,7 @@
 
 <style>
   #stripe-button {
-    background-image: url(/images/stripe-logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 25px;
-    border-radius: 20px;
     margin-bottom: 13px;
+    color: #001e31;
   }
 </style>

@@ -288,11 +288,11 @@
                   <AppStripe :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 </no-ssr>
                 
-                <AppBankTransfer v-show="gateway.code ==='03'" label="Banco Santander" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                <AppBankTransfer v-show="gateway.code ==='03'" label="Completar Pedido" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
 
-                <AppBankTransfer v-show="gateway.code ==='04'" label="Transferencia Bancaria" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                <AppBankTransfer v-show="gateway.code ==='04'" label="Completar Pedido" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 
-                <AppSafetypay v-show="gateway.code ==='05'" label="Transferencia Bancaria Online" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+                <AppSafetypay v-show="gateway.code ==='05'" label="Pagar Ahora" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                   <!--<v-flex md6 class="text-xs-center">
                     <AppSafetypay label="Transferencia Bancaria Efectivo" :filter="'cash'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                   </v-flex>-->
@@ -332,8 +332,11 @@
       }
     },
     created () {
-      document.documentElement.scrollTop = 0
       this.gateway = this.gateways[0]
+    },
+    mounted () {
+      if (!window.document) return
+      document.documentElement.scrollTop = 0
     },
     watch: {
       chargePayMethods (val) {

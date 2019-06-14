@@ -34,7 +34,7 @@
       let index = parseInt(this.$router.app._route.query.tab)
       if (index) {
         let el = this.$refs.serviceSliderScrollable
-        if (document.getElementById(index).getBoundingClientRect()) {
+        if (document.getElementById(index) && document.getElementById(index).getBoundingClientRect()) {
           el.scrollLeft += document.getElementById(index).getBoundingClientRect().x
         }
       }
