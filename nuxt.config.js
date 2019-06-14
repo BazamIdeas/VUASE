@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 const Cookies = require('cookies')
 const axios = require('axios')
 
-let axiosUrl = 'https://api.liderlogo.com/v1/'
+let axiosUrl = process.NODE_ENV === 'production' ? 'https://api.liderlogo.com/v1/' : 'http://api.liderlogos.com/v1/'
 
 module.exports = {
   srcDir: 'src/',
