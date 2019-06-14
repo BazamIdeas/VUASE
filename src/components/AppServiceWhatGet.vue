@@ -2,7 +2,7 @@
 	<v-flex xs12>
     <v-container fluid grid-list-md class="mt-4 pb-0">
       <v-flex xs12 md8 v-if="!justOne">
-        <AppHeading number="1" size="display-2" align="center" :title="title" />
+        <AppHeading number="2" size="display-1" align="center" :title="title" />
       </v-flex>
       <v-layout xs12 row wrap class="what-you-get">
           <v-flex xs12 md4  v-for="(column, i) in service.whatYouGet.columns" :key="i" class="pa-3 column" :class="{'no-border md6': justOne, 'mt-5 ': !justOne}">
@@ -10,9 +10,9 @@
               <v-flex xs12 v-for="(item, key) in column" :key="key" class="mb-4 pb-2 pt-2">
                 <!-- if just one -->
                 <v-flex xs12 class="mb-5" v-if="justOne">
-                  <h2 class="display-2 font-weight-bold  text-xs-center text-uppercase">{{title}}</h2>
+                  <h3 class="display-1 font-weight-bold  text-xs-center ">{{title}}</h3>
                 </v-flex>
-                <v-flex xs12 v-if="item.description && justOne" class="text-xs-justify mb-4 ml-3">
+                <v-flex xs12 v-if="item.description && justOne" class="body-2 mb-4 ml-3">
                   <span class="subheading font-weight-medium text-xs-justify" v-html="item.description"></span>
                 </v-flex>
                 
@@ -22,7 +22,7 @@
                     <img alt="Icono Servicio Liderlogo" :src="item.icon" :height="!justOne ? '70px' : '80px'" :width="!justOne ? '70px' : '80px'">
                   </v-flex>
                   <v-flex class="mr-3">
-                    <h2 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h2>
+                    <h3 class="font-weight-bold" color="dark" :class="{'headline mb-3': justOne, 'title-custom mb-0': !justOne}">{{ item.title }}</h3>
                   </v-flex>
                 </v-layout>
                 </v-flex>
@@ -42,7 +42,7 @@
           <v-flex xs12 :class="{'md6': justOne, 'md4': !justOne}">
             <v-layout row wrap d-flex text-xs-center column class="ml-4 ml-xs-0" :class="{'max': !service.whatYouGet.noMaxWidth}">
               <v-flex class="ml-2">
-                  <img alt="Que te llevas Liderlogo" :src="service.whatYouGet.img"  width="100%"></img>
+                  <img alt="Diseño de logo e imagen corporativa" :src="service.whatYouGet.img"  width="100%"></img>
                   <h3 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
                     PRECIO CERRADO EN:
                   </h3>

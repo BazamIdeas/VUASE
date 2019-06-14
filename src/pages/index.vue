@@ -9,16 +9,16 @@
     
     <!-- PORTFAFOLIO -->
     <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
-      LOGOS, PAPELERIA, WEBS, APPS y ¡MUCHO MAS!
+      ¡Logos, Papelería, Webs, Apps y Mucho más!
     </h2>
 
     <AppExamplesSlider :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="350" item-height="350"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
-    <AppHeading class="mb-3" number="2" size="display-1" title="¿QUE NECESITAS CREAR?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio" />
+    <AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
     <AppServicesGrid color="#F29F01" class="mb-5"/>
     
-    <AppHomeCreativeProccess title="¿CÓMO FUNCIONA?"/>
+    <AppHomeCreativeProccess title="¿Cómo Funciona?"/>
 
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
@@ -44,7 +44,7 @@
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/un-dia-para-el-otro.svg" class="icon-home" alt="Diseños de un dia para otro">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Diseños de un dia para otro
+                    Diseños de un día para otro
                   </p>
                 </v-card>
               </v-flex>
@@ -86,11 +86,10 @@
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h2 class="font-weight-bold mb-4 mt-5  text-uppercase text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">SERVICIOS A AGENCIAS</h2>
+            <h2 class="font-weight-bold mb-4 mt-5 text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">Servicios a agencias</h2>
             <p class="text-xs-center mb-5 font-weight-medum">
-              Amplia tu portfolio de servicios rapidamente. Ponemos a disposicion de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atencion especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo.
-            </p>
-            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white;">Quiero conocer mas</v-btn>
+              Amplia tu portfolio de servicios rápidamente. Ponemos a disposición de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atención especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo. </p>
+            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white;">Quiero conocer más</v-btn>
           </div>
         </v-flex>
 
@@ -121,8 +120,8 @@
           <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
-          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
+          <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
+          <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
         </v-flex>
       </v-layout>

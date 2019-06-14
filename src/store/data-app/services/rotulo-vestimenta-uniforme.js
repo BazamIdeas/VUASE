@@ -3,36 +3,36 @@ export const rVestimenta = {
   titleSEO: 'Diseño de rótulos para indumentaria y uniformes',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu vestimenta. Te ofrecemos garantía de conformidad y servicio post-venta ¡Haz crecer tu negocio!',
   /* ** */
-  list: ['Diseño corporativo de indumentaria', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Tu diseño listo para bordar imprimir'],
-  title: 'RÓTULO VESTIMENTA/UNIFORME ',
-  description: `La ropa de tu negocio que todos querran lucir.`,
-  shortDescription: `La ropa de tu negocio que todos querran lucir.`,
+  list: ['Diseño corporativo de uniformes laborales.', 'Creaciones profesionales, de máxima calidad y ajustes ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo.', 'Tu diseño listo para bordar y/o serigrafiar en tus uniformes.'],
+  title: 'Diseño de uniformes',
+  description: `La indumentaria es parte esencial de la identidad corporativa de tu negocio y todos la querrán lucir.`,
+  shortDescription: `La indumentaria es parte esencial de la identidad corporativa de tu negocio y todos la querrán lucir.`,
   icon: '/icons/rotulo-vestimenta.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad',
+      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
       icon: '/icons/logo-unico-original.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/mas-de-40-profesionales.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/un-dia-para-el-otro.svg'
-    }, {
-      title: 'FOTOMONTAJES DE SUS DISEÑOS',
-      description: 'Antes de rotular vísualize opcines de diseño maquetadas de sus propias superficies.',
-      icon: '/icons/fotomontajes.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
+    }, {
+      title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
+    }, {
+      title: 'PERFECCIONAMIENTO DE TEXTOS',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
+    }, {
+      title: 'ARCHIVOS LISTOS PARA TU ROTULISTA',
+      description: 'Descarga tus archivos en formatos editables listos para impresión, corte e instalación de vinilos.',
+      icon: '/icons/archivos_listos.svg'
     }
   ],
   whatYouGet: {
@@ -42,8 +42,8 @@ export const rVestimenta = {
       [
         {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
-          description: 'Diseño corporativo de indumentaria para la presentación formal de uniformes, presentados dentro de un sistema gráfico y publicitario. <br><br> Nuestro equipo de creativos expertos en el área de diseño gráfico y publicitario crea conceptos y perfeccionamientos ilimitados hasta entera aprobación. La entrega del arte final se envía por correo electrónico, lista para bordar o imprimir en serigrafía, en los siguientes formatos:',
-          items: ['BMP (archivo de imagen de gráfico, con pixeles almacenados)', 'EPS (archivo vectorial editable utilizado por las imprentas)', 'JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)'],
+          description: 'El diseño gráfico y publicitario de tus uniformes en formato digital listo para imprimir o bordar sobre la vestimenta de tu empresa.',
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)', 'PDF de alta resolución.'],
           icon: '/icons/rotulo-vestimenta.svg'
         }
       ]
@@ -144,10 +144,6 @@ export const rVestimenta = {
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/Rotulo-vestimenta_2.png',
-      alt: 'creative-process-2'
-    },
-    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -158,21 +154,21 @@ export const rVestimenta = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA EL DISEÑO DE LA VESTIMENTA DE TU NEGOCIO',
+      title: '1. Elabora un brief para el diseño de la vestimenta de tu negocio',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Completa unas simples preguntas para ayudar a nuestro equipo de creativos a conocer sobre negocio, las prendas que deseas diseñar, el mensaje que mensaje que deseas presentar.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE OPCIONES Y PERFECCIONAMIENTOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos de manera original y llamativa la vestimenta de tu empresa presentandote varias lineas de diseño y perfeccionamientos realizados sobre fotomontajes sobre tus prendas especificas hasta que lograr el diseño de ideal.',
       alt: 'conceptos'
     },
     {
-      title: '3. DESCARGA EL DISEÑO DE TUS UNIFORMES LISTOS PARA BORDAR O CERIGRAFIAR',
+      title: '3. Descarga el diseño de tus uniformes listos para bordar o serigrafiar.',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Descarga el diseño de tu uniforme en ficheros de alta resolucion listos para que tu rotulista lo aplique sobre las prendas de tu empresa.',
@@ -189,7 +185,7 @@ export const rVestimenta = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
       image: '/images/pages/packs/pack-rotulo-banner-dual.png',
       title: 'ROTULO BANNER',

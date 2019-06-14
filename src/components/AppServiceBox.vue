@@ -10,7 +10,7 @@
       <v-flex>
         <h2 @click="saveServiceLocalStorage(url)" class="title font-weight-bold" style="cursor:pointer;" :class="{ 'outstanding': outstanding }">{{ name | uppercase }}</h2> 
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
-           <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">A PARTIR DE</h5> 
+           <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">{{startWith}}</h5> 
           <span v-if="price.currency.display == 'left'">
             {{price.currency.symbol}}
             {{price.value}}
@@ -20,6 +20,7 @@
             {{price.value}}
             {{price.currency.symbol}}
           </span>
+          <span v-if="oferta" style="font-weight: 400; font-size: 14px;">{{oferta}} </span>
         </span> 
         <!-- <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
           comenzar
@@ -50,9 +51,10 @@
       id: Number,
       icon: String,
       name: String,
+      oferta: String,
       price: Object,
       addonService: Boolean,
-      startWith: Boolean,
+      startWith: String,
       currency: {
         default: '$',
         type: String

@@ -8,8 +8,8 @@
               <v-img :alt="example.service ? example.service : alt" :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
               <span class="hidden-box" v-if="hovered" :style="'background-color:'+example.color+'; color:'+example.textColor">
                 <img :src="example.icon" :alt="alt" class="mb-2" width="100" height="80" />
-                <h2 class="text-uppercase font-weight-bold title mb-2 text-xs-center" style=" max-width:90%;    white-space: normal; ">{{example.service}}</h2>
-                <h2 v-if="example.description" class="font-weight-medium text-xs-justify body-2 mb-2" style=" max-width:90%;    white-space: normal; ">{{example.description}}</h2>
+                <h3 class="font-weight-bold title mb-2 text-xs-center" style=" max-width:90%;    white-space: normal; ">{{example.service}}</h3>
+                <p v-if="example.description" class="font-weight-medium text-xs-justify body-2 mb-2" style=" max-width:90%;    white-space: normal; ">{{example.description}}</p>
                 <v-btn :to="'/nuestros-servicios/'+example.url" flat class="ma-0 px-2 more-button font-weight-light" dark large>
                   conocer más&nbsp;&nbsp;<v-icon>add_circle_outline</v-icon>
                 </v-btn>

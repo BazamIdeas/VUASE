@@ -3,44 +3,36 @@ export const flyer = {
   titleSEO: 'Flyers y postales creativas para tu negocio',
   descriptionSEO: 'Creación de Flyers Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'FLYER',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu flyer listo para usar (editable e imágenes)'],
+  title: 'Flyer',
+  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
   description: `Flyers y postales creativas para tu negocio`,
   shortDescription: `Flyers y postales creativas para tu negocio`,
   icon: '/icons/flyer.svg',
   whatWeOffer: [
     {
-      title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad.',
+      title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
+      description: 'Creaciones a medida, originales, únicas y de calidad.',
       icon: '/icons/logo-unico-original.svg'
     }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/mas-de-40-profesionales.svg'
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+      icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
-      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
       icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
       icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
-      title: 'ATENCIÓN PERSONALIZADA',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/atencion-personalizada.svg'
-    }, {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/propuestas-ilimitadas.svg'
-    }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      description: 'Descarga tus archivos en formatos editables listos para utilizar en variedad de formatos.',
       icon: '/icons/archivos_listos.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
@@ -49,11 +41,13 @@ export const flyer = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Pieza publicitaria que normalmente se entrega en mano o es utilizada para buzoneo. De una cara y tamaño de 10.5 x 15 cm, 15 x 21 cm o medida a solicitud de cliente.`,
+        description: `El diseño gráfico y publicitario de tu flyer promocional listo para imprimir y utilizar en medios digitales (redes sociales, WhatsApp, email y sitio web)<br>
+        Las medidas habituales para el formato impreso son de una de 10.5 x 15 cm, 15 x 21 cm, también se pueden diseñar a la medida que necesites.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>PDF</b> Editable'
         ],
         icon: '/icons/flyer.svg'
       }]
@@ -156,11 +150,15 @@ export const flyer = {
   creativeProcess: [
     {
       src: '/images/carousels/creative-process/flyer_1.png',
-      alt: 'creative-process-1'
+      alt: 'Diseño de flyer'
     },
     {
-      src: '/images/carousels/creative-process/flyer_2.png',
-      alt: 'creative-process-2'
+      src: '/images/carousels/creative-process/271.png',
+      alt: 'Diseño de flyer'
+    },
+    {
+      src: '/images/carousels/creative-process/272.png',
+      alt: 'Diseño de flyer'
     }
   ],
   steps: [
@@ -201,9 +199,9 @@ export const flyer = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
-      image: '/images/pages/flyer-dos-caras/flyer-dos-caras-compubot.png',
+      image: '/images/pages/flyer-dos-caras/complubot.jpg',
       title: 'FLYER DOS CARAS',
       url: '/nuestros-servicios/flyer-dos-caras',
       brief: '/nuestros-servicios/flyer-dos-caras/brief/estilos'

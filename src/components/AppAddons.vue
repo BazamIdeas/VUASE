@@ -6,11 +6,11 @@
     <v-layout row wrap py-4>
       <v-flex xs12 offset-xs0 sm5 offset-sm1 px-3 class="addons-first">
         <div class="addons-image-container">
-          <img alt="Liderlogo addons" :src="first.image" class="addons-image"/>
+          <img alt="Empresa de diseño gráfico" :src="first.image" class="addons-image"/>
         </div>
         <v-layout row>
           <v-flex xs12  class="text-xs-center adddons-title-container">
-            <AppHeading :title="first.title" :size="''" :number="'2'" :margin="'ma-0'"></AppHeading>
+            <AppHeading :title="first.title" :size="''" :number="'3'" :margin="'ma-0'"></AppHeading>
           </v-flex>
         </v-layout>
         <v-layout row v-if="first.subtitle">
@@ -35,7 +35,7 @@
         </div>
         <v-layout row>
           <v-flex xs12 class="text-xs-center adddons-title-container">
-            <AppHeading :title="last.title" :size="''" :number="'2'"></AppHeading>
+            <AppHeading :title="last.title" :size="''" :number="'3'"></AppHeading>
           </v-flex>
         </v-layout>
         <v-layout row class="text-xs-center" v-if="last.subtitle">

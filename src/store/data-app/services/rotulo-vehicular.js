@@ -3,36 +3,36 @@ export const rVehicular = {
   titleSEO: 'Diseño de Rotulo para vehiculos',
   descriptionSEO: 'Creación de Rótulos para empresas. Un diseño que promociona tu negocio donde vallas, asesoría gratuita y servicio post-venta. ¡Comienza ahora tu proyecto!',
   /* ** */
-  list: ['Diseño gráfico y publicitario', 'Creaciones ilimitadas', 'Fotomontajes de tus diseños', 'Entrega en plantillas de corte digital'],
-  title: 'RÓTULO VEHICULAR',
+  list: ['Diseño gráfico y publicitario completo de tu vehículo.', 'Creaciones y ajustes ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo.', 'Entrega del diseño final en plantillas de corte digital para tu rotulista.'],
+  title: 'Diseño de Rótulo Vehicular',
   description: `Un diseño que promociona tu negocio donde vallas.`,
   shortDescription: `Un diseño que promociona tu negocio donde vallas.`,
   icon: '/icons/rotulo-vehicular.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad',
+      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
       icon: '/icons/logo-unico-original.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/mas-de-40-profesionales.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/un-dia-para-el-otro.svg'
-    }, {
-      title: 'FOTOMONTAJES DE SUS DISEÑOS',
-      description: 'Antes de rotular vísualize opcines de diseño maquetadas de sus propias superficies.',
-      icon: '/icons/fotomontajes.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
+    }, {
+      title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
+    }, {
+      title: 'PERFECCIONAMIENTO DE TEXTOS',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
+    }, {
+      title: 'ARCHIVOS LISTOS PARA TU ROTULISTA',
+      description: 'Descarga tus archivos en formatos editables listos para impresión, corte e instalación de vinilos.',
+      icon: '/icons/archivos_listos.svg'
     }
   ],
   whatYouGet: {
@@ -42,8 +42,8 @@ export const rVehicular = {
       [
         {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
-          description: 'El rótulo de un vehículo es una pieza publicitaria aplicada al modelo de vehículo que solicites, que tiene como principal objetivo el presentar su empresa, servicio y productos de manera llamativa, donde quiera que vaya. <br><br> Los bocetos y perfeccionamientos se presentan en fotomontajes reales, sobre los 4 laterales y techo de cada vehículo. El diseño de entera aprobación es entregado listo para que el rotulista realice la impresión y aplicación de los vinilos. Los diseños se entregan con sus medidas y plantillas de corte en los siguientes formatos:',
-          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)'],
+          description: 'El diseño gráfico y publicitario integral del rótulo de tu vehículo en formato digital con todas las instrucciones de impresión, corte e instalación de vinilos.',
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)', 'PDF de alta resolución.', 'Plantillas digitales de impresión, corte y aplicación.'],
           icon: '/icons/rotulo-vehicular.svg'
         }
       ]
@@ -140,10 +140,6 @@ export const rVehicular = {
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/Rotulo-Vehicular_2.png',
-      alt: 'creative-process-2'
-    },
-    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -154,21 +150,21 @@ export const rVehicular = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA TU DISEÑO VEHICULAR',
+      title: '1. Elabora un brief para tu diseño vehicular',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer cual es tu vehículo, cuales son tus objetivos para el diseño y que deseas presentar en el mismo.',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer cuál es tu vehículo, cuáles son tus objetivos para el diseño y que deseas presentar en el mismo.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos de manera original y llamativa diferentes opciones de diseño publicitario presentando fotomontajes reales sobre tu vehiculo hasta lograr el diseño ideal.',
       alt: 'conceptos'
     },
     {
-      title: '3. DESCARGA TU PROYECTO LISTO PARA IMPRIMIR',
+      title: '3. Descarga tu proyecto listo para imprimir',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Te entregamos el diseño grafico y publicitario en formato digital listo para que tu rotulista imprima y realice la aplicación material de tu rotulo publicitario.',
@@ -186,7 +182,7 @@ export const rVehicular = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
       image: '/images/pages/packs/rotulo-local-vw-familia-walker.png',
       title: 'RÓTULO LOCAL',

@@ -3,48 +3,48 @@ export const rPackaging = {
   titleSEO: 'Diseños de Etiquetas y Packaging',
   descriptionSEO: 'Consigue aquí un diseño que de vida a tus productos y lo hagan irresistibles. Te ofrecemos garantía hasta entera conformidad   ¡Comienza tu proyecto ahora!',
   /* ** */
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diseño de packaging listo para usar (editable e imágenes)'],
-  title: 'RÓTULO ETIQUETA / PACKAGING',
-  description: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
-  shortDescription: `Un diseño que da vida a tus productos y lo hacen irresistibles.`,
+  list: ['Diseños 100% llamativos y de alta calidad.', 'Creaciones y ajustes ilimitados.', 'Diseños en 24 hrs', 'Tu diseño de packaging listo para imprimir en formatos editables.'],
+  title: 'Diseño de packaging',
+  description: `Un diseño que da vida a tus productos y los hace irresistibles.`,
+  shortDescription: `Un diseño que da vida a tus productos y los hace irresistibles.`,
   icon: '/icons/rotulo-etiqueta.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad',
+      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
       icon: '/icons/logo-unico-original.svg'
-    }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
-      icon: '/icons/mas-de-40-profesionales.svg'
-    }, {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
-      icon: '/icons/un-dia-para-el-otro.svg'
-    }, {
-      title: 'FOTOMONTAJES DE SUS DISEÑOS',
-      description: 'Antes de rotular vísualize opcines de diseño maquetadas de sus propias superficies.',
-      icon: '/icons/fotomontajes.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
       description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado',
       icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
+    }, {
+      title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
+      icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
+    }, {
+      title: 'PERFECCIONAMIENTO DE TEXTOS',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
+      icon: '/icons/perfeccionamien-o-de-textos.svg'
+    }, {
+      title: 'ARCHIVOS LISTOS PARA TU ROTULISTA',
+      description: 'Descarga tus archivos en formatos editables listos para impresión, corte e instalación de vinilos.',
+      icon: '/icons/archivos_listos.svg'
     }
   ],
   whatYouGet: {
     noMaxWidth: true,
-    img: '/images/pages/rotulo-pack/empaque-puzzle.png',
+    img: '/images/pages/rotulo-pack/puzzles.jpg',
     color: 'black',
     columns: [
       [
         {
           title: 'DISEÑO EN DIVERSOS FORMATOS',
-          description: 'Diseños publicitarios originales del 100% de la superficie del productos, creados por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios, especializados en packaging.Los conceptos son creados y perfeccionados de manera ilimitadas hasta entra aprobación, con la intención de crear una presentación exitosa de su producto, y se presentan en los siguientes formatos:',
-          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)'],
+          description: 'Diseños publicitarios originales del 100% de la superficie del productos, creados por nuestro equipo de profesionales interdisciplinario de diseñadores gráficos, ilustradores y creativos publicitarios, especializados en packaging. Los conceptos son creados y perfeccionados de manera ilimitadas hasta lograr una entera aprobación, con la intención de crear una presentación exitosa de su producto, y se presentan en los siguientes formatos:',
+          items: ['JPG (archivo en formato de imagen para impresión y aplicaciones en web)', 'AI (archivo vectorial editable del programa Adobe Ilustrator, imprimible en cualquier tamaño y material)', 'EPS (archivo vectorial editable utilizado por los rotulistas)', 'PDF de alta resolución.', 'Plantillas digitales de impresión, corte y aplicación.'],
           icon: '/icons/rotulo-etiqueta.svg'
         }
       ]
@@ -115,10 +115,6 @@ export const rPackaging = {
   topSliderBgSize: '80%',
   topSlider: [
     {
-      url: '/images/pages/rotulo-pack/puzzles.jpg',
-      color: '#045B85'
-    },
-    {
       url: '/images/pages/rotulo-pack/aquafrost.jpg',
       color: '#045B85'
     },
@@ -145,10 +141,6 @@ export const rPackaging = {
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/etiqueta_2.png',
-      alt: 'creative-process-2'
-    },
-    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -159,24 +151,24 @@ export const rPackaging = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA TU DISEÑO DE PACKAGING',
+      title: '1. Elabora un brief para el diseño de packaging',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Completa unas simples preguntas para ayudar a nuestro equipo de profesionales a conocer sobre tu producto, tus clientes, las formas y medidas del envase que deseas y la información que requieres presentar.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE OPCIONES Y PERFECCIONAMINETOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
-      description: 'Creamos de manera original y llamativa la presentación de tu producto haciendote llegar diversas lineas de diseño y perfeccionamientos realizados sobre fotomontajes reales hasta que te encuentres 100% conforme con tu diseño.',
+      description: 'Creamos de manera original y llamativa la presentación de tu producto haciéndote llegar diversas líneas de diseño y perfeccionamientos realizados sobre fotomontajes reales hasta que te encuentres 100% conforme con tu diseño.',
       alt: 'conceptos'
     },
     {
-      title: '3. RECIBE EL DISEÑO DE TU PACKAGING LISTO ARA IMPRIMIR O USAR EN INTERNET',
+      title: '3. Descarga el diseño de tu packaging listo para imprimir o usar en Internet',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
-      description: 'Te entregamos el diseño de tu envase en variedad de formatos digitales editables listo para su impresión, con todos los detalles y plantillas de corte para su optima fabricación.',
+      description: 'Te entregamos el diseño de tu envase en variedad de formatos digitales editables listo para su impresión, con todos los detalles y plantillas de corte para su óptima fabricación.',
       alt: 'entrega-y-documentacion'
     }
   ],

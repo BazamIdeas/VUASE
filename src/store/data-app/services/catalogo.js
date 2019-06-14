@@ -3,57 +3,50 @@ export const catalogo = {
   titleSEO: 'Diseño de Catalogo original y llamativo',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu catalogo, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'CATÁLOGO',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu catálogo listo para usar (editable e imágenes)'],
+  title: 'Catálogo',
+  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu catálogo en formato digital listo para usarse digitalmente o impreso. '],
   description: `Presenta tus productos y servicios con el detalle que necesites`,
   shortDescription: `Presenta tus productos y servicios con el detalle que necesites`,
   icon: '/icons/catalogo.svg',
   whatWeOffer: [
     {
-      title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad.',
+      title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
+      description: 'Creaciones a medida, originales, únicas y de calidad.',
       icon: '/icons/logo-unico-original.svg'
     }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/mas-de-40-profesionales.svg'
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+      icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
-      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
       icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
       icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
-      title: 'ATENCIÓN PERSONALIZADA',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/atencion-personalizada.svg'
-    }, {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/propuestas-ilimitadas.svg'
-    }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      description: 'Descarga tus archivos en formatos editables listos para utilizar en variedad de formatos.',
       icon: '/icons/archivos_listos.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
-    img: '/images/pages/catalogo/catalogo-dual.png',
-    color: '#F7912C',
+    img: '/images/pages/catalogo/que-te-llevas-catalogo.jpg',
+    color: '#81472a',
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `El catálogo es una pieza que se utiliza para presentar un muestrario de servicios o productos de la empresa.`,
+        description: `El diseño gráfico y publicitario de tu catálogo listo para ser impreso y publicado en redes sociales, sitios webs y enviar vía email y WhatsApp. Las medidas se adaptan a las necesidades del cliente en cada proyecto.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>PDF<b> editable'
         ],
         icon: '/icons/catalogo.svg'
       }]
@@ -155,10 +148,6 @@ export const catalogo = {
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/catalogo_2.png',
-      alt: 'creative-process-2'
-    },
-    {
       src: '/images/carousels/creative-process/271.png',
       alt: 'creative-process-3'
     },
@@ -169,21 +158,21 @@ export const catalogo = {
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA EL DISEÑO DE TU CATALOGO',
+      title: '1. Elabora un brief para el diseño de tu catálogo',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo publicitario a conocer cuáles son tus objetivos, necesidades y contenidos a exponer.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE OPCIONES Y PERFECCIONAMIENTOS ILIMITADOS',
+      title: '2. Recibe opciones y perfeccionamientos ilimitados',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos de manera original y llamativa el catalogo de tu empresa desde cero y hasta que tu entera aprobación.',
       alt: 'conceptos'
     },
     {
-      title: '3. DESCARGA TUS PROYECTOS LISTO PARA UTILIZAR',
+      title: '3. Descarga tu proyecto listo para utilizar',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Te entregamos el diseño de tu catalogo listo para imprimir y utilizar en Internet publicándolo en tu sitio web, redes sociales o enviarlo via email.',
@@ -206,15 +195,15 @@ export const catalogo = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
-      image: '/images/pages/tripticos/triptico-gloss.png',
+      image: '/images/pages/packs/oferta-triptico-gloss.jpg',
       title: 'TRÍPTICO',
       url: '/nuestros-servicios/triptico',
       brief: '/nuestros-servicios/triptico/brief/estilos'
     },
     last: {
-      image: '/images/pages/diptico/diptico-gesvetia.png',
+      image: '/images/pages/packs/pack-diptico-gesvetia.png',
       title: 'DÍPTICO',
       url: '/nuestros-servicios/diptico',
       brief: '/nuestros-servicios/diptico/brief/estilos'

@@ -8,11 +8,11 @@
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
-            <h1>LOS MEJORES DISEÑOS</h1>
+            <h1>Los mejores diseños</h1>
           </div>
 
           <div id="hc-layer-2-item-1" style="z-index: 99;">
-            <h2>GARANTÍA DE CONFORMIDAD 100%</h2>
+            <h3>GARANTÍA DE CONFORMIDAD 100%</h3>
           </div>
         </div>
 

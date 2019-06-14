@@ -4,7 +4,7 @@
     <v-container grid-list-md text-xs-center class="px-0" style="background: white; border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);" >
       <v-layout row wrap align-center class="mx-0">
         <v-flex xs12 md7>
-           <h2 class="title font-weight-medium mb-2 text-uppercase">SUSCRÍBETE A NUESTRO NEWSLETTER!</h2>
+           <h2 class="title font-weight-medium mb-2">Suscríbete a nuestro newsletter</h2>
         </v-flex>
         <v-flex xs12 md5>
           <appNewsletterForm />
@@ -22,6 +22,9 @@
                 <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
                   <span class="nav-item-label">{{link.title}}</span>
                 </v-btn>
+                <v-btn class="nav-item mx-0" nuxt href="https://www.liderlogo.es/blog" flat>
+                  <span class="nav-item-label">BLOG</span>
+                </v-btn>
                 <!--<v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
                   <span class="nav-item-label">ÁREA DE CLIENTE</span>
                 </v-btn>-->
@@ -34,6 +37,11 @@
               <span class="nav-item-label">{{link.title}}</span>
             </v-btn>
           </v-flex>
+          <v-flex xs12 class="footer-link hidden-md-and-up">
+            <v-btn class="nav-item mx-0" nuxt href='https://www.liderlogo.es/blog' flat>
+              <span class="nav-item-label">BLOG</span>
+            </v-btn>
+          </v-flex>
           <!--<v-flex xs12 class="footer-link hidden-md-and-up">
             <v-btn class="nav-item mx-0" nuxt to="/area-de-cliente" flat>
               <span class="nav-item-label">ÁREA DE CLIENTE</span>
@@ -41,7 +49,7 @@
           </v-flex>-->
           <v-layout row wrap align-center class="mx-0">
             <v-flex xs12 offset-md1 md5 class="xs-order-2">
-              <h5 class="font-weight-regular">Copyright © 2018 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU</h5>
+              <h5 class="font-weight-regular">Copyright © 2019 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU</h5>
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs12 md5 >

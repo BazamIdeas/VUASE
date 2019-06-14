@@ -23,7 +23,7 @@
         <v-flex xs12 md4>
           <v-layout row wrap class="process-steps"  v-if="actualStep <= 2">
             <v-flex xs12 md4 class="mb-2 mt-2 creative-process-title-container" v-if="alters.length">
-              <AppHeading :number="'2'" size="title" title="LOGO" />
+              <AppHeading :number="'3'" size="title" title="LOGO" />
             </v-flex>
             <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(step, i) in steps" :key="i" class="px-3" :class="{ 'actual-step': i === actualStep }">
               <v-layout row>
@@ -31,12 +31,12 @@
                   <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
                 </v-flex>
                 <v-flex xs10 sm11 align-center d-flex class="process-step">
-                  <AppHeading style="line-height:22px" :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
+                  <AppHeading style="line-height:22px" :title="step.title" :size="''" :number="'3'" :align="'left'" :color="step.color"></AppHeading>
                 </v-flex>             
               </v-layout>
               <v-layout row>
                 <v-flex xs12>
-                  <p class="text-xs-justify">{{step.description}}</p>
+                  <p class="body-2">{{step.description}}</p>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -47,12 +47,12 @@
                   <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
                 </v-flex>
                 <v-flex xs10 sm11 align-center d-flex class="process-step">
-                  <AppHeading style="line-height:22px" :title="step.title" :size="''" :number="'2'" :align="'left'" :color="step.color"></AppHeading>
+                  <AppHeading style="line-height:22px" :title="step.title" :size="''" :number="'3'" :align="'left'" :color="step.color"></AppHeading>
                 </v-flex>             
               </v-layout>
               <v-layout row>
                 <v-flex xs12>
-                  <p class="text-xs-justify">{{step.description}}</p>
+                  <p class="body-2">{{step.description}}</p>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -62,7 +62,7 @@
           
           <v-layout row wrap class="process-steps" v-if="alters.length && actualStep >= 3">
             <v-flex v-if="alters.length && actualStep >= 3" xs12 class="mb-2 creative-process-title-container">
-              <AppHeading :number="'2'" size="title" title="WEB" />
+              <AppHeading :number="'3'" size="title" title="WEB" />
             </v-flex>
             <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(alter,i) in alters" :key="i" class="px-5" :class="{ 'actual-step': i === actualStep }">
               <v-layout row>
@@ -70,12 +70,12 @@
                   <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
                 </v-flex>
                 <v-flex xs10 sm11 align-center d-flex class="process-step">
-                  <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
+                  <AppHeading :title="alter.title" :size="''" :number="'3'" :align="'left'" :color="alter.color"></AppHeading>
                 </v-flex>             
               </v-layout>
               <v-layout row>
                 <v-flex xs12>
-                  <p class="text-xs-justify">{{alter.description}}</p>
+                  <p class="body-2">{{alter.description}}</p>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -86,12 +86,12 @@
                   <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
                 </v-flex>
                 <v-flex xs10 sm11 align-center d-flex class="process-step">
-                  <AppHeading :title="alter.title" :size="''" :number="'2'" :align="'left'" :color="alter.color"></AppHeading>
+                  <AppHeading :title="alter.title" :size="''" :number="'3'" :align="'left'" :color="alter.color"></AppHeading>
                 </v-flex>             
               </v-layout>
               <v-layout row>
                 <v-flex xs12>
-                  <p class="text-xs-justify">{{alter.description}}</p>
+                  <p class="body-2">{{alter.description}}</p>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -140,7 +140,7 @@
 <style scoped lang="css">
 
 .process-step{
-  height: 100px;
+  height: 70px;
 }
 
 .img-process-step{
@@ -228,8 +228,12 @@
   box-shadow: none;  
 }
 
-.creative-process .process-step > div, .creative-process .process-step > div h2 { 
+.creative-process .process-step > div, .creative-process .process-step > div h3 { 
   margin: 0px !important;
+}
+
+.flex.px-3.xs12.sm12.md12.hidden-sm-and-down:not(.actual-step), .flex.px-3.xs12.sm12.md12.hidden-sm-and-down:not(.actual-step) h3 {
+    color: rgb(158, 158, 158) !important;
 }
 
 

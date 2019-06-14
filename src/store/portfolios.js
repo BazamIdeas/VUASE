@@ -17,7 +17,7 @@ export const state = () => ({
       img: '/images/services-carousel/home/2-imagen-corporativa.jpg',
       icon: '/icons/white/pack-identidad.svg',
       service: 'Logo, imagen corporativa y logo animado',
-      description: 'El logo ideal para tu negocio + diseño de papeleria digital y papel + diseño de redes sociales + tu logo animado creados profesional, planificada y uniformemente',
+      description: 'El logo ideal para tu negocio + diseño de papelería digital y papel + diseño de redes sociales + tu logo animado creados profesional, planificada y uniformemente',
       url: 'imagen-corporativa',
       color: 'rgba(196, 149, 31, .8)',
       textColor: 'white'
@@ -26,7 +26,7 @@ export const state = () => ({
       img: '/images/services-carousel/home/3-logo-web.jpg',
       icon: '/icons/white/logo-y-web.svg',
       service: 'Logo y Sitio Web',
-      description: 'El logo ideal y un sitio web a tu medida para concetar con nuevos y mas clientes',
+      description: 'El logo ideal y un sitio web a tu medida para concetar con nuevos y más clientes',
       url: 'diseno-de-logo-y-pagina-web',
       color: 'rgba(241, 145, 42, .8)',
       textColor: 'white'
@@ -44,7 +44,7 @@ export const state = () => ({
       img: '/images/services-carousel/home/5-web-app.jpg',
       icon: '/icons/white/web-y-app.svg',
       service: 'Web y App',
-      description: 'Sitios webs y Apps que conectan con mas clientes',
+      description: 'Sitios webs y Apps que conectan con más clientes',
       url: 'desarrollo-de-app',
       color: 'rgba(7, 122, 53, .8)',
       textColor: 'white'

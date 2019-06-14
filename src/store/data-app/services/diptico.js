@@ -3,44 +3,36 @@ export const diptico = {
   titleSEO: 'Diseño de Diptico original y llamativo',
   descriptionSEO: 'Creación de Dipticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'DÍPTICO',
+  title: 'Díptico',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diptico listo para usar (editable e imágenes)'],
   description: `La presentacion profesional de tu negocio en 4 caras`,
   icon: '/icons/diptico.svg',
   shortDescription: `La presentacion profesional de tu negocio en 4 caras`,
   whatWeOffer: [
     {
-      title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad.',
+      title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
+      description: 'Creaciones a medida, originales, únicas y de calidad.',
       icon: '/icons/logo-unico-original.svg'
     }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/mas-de-40-profesionales.svg'
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+      icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
-      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
       icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
       icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
-      title: 'ATENCIÓN PERSONALIZADA',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/atencion-personalizada.svg'
-    }, {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/propuestas-ilimitadas.svg'
-    }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      description: 'Descarga tus archivos en formatos editables listos para utilizar en variedad de formatos.',
       icon: '/icons/archivos_listos.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
@@ -49,11 +41,12 @@ export const diptico = {
     columns: [
       [{
         title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `Usualmente utilizado para brindar una presentación de la empresa y sus productos o servicios, oportuno para ser entregado en reuniones comerciales o ferias. De 4 caras.`,
+        description: `El diseño gráfico y publicitario de tu folleto de 4 caras promocional listo para imprimir y utilizar en medios digitales (redes sociales, WhatsApp, email y sitio web). Usualmente es utilizado para brindar una presentación de la empresa y sus productos y servicios, es oportuno para ser entregado en reuniones comerciales y ferias.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>PDF<b> editable'
         ],
         icon: '/icons/diptico.svg'
       }]
@@ -148,38 +141,34 @@ export const diptico = {
   creativeProcess: [
     {
       src: '/images/carousels/creative-process/Diptico_1.png',
-      alt: 'creative-process-1'
-    },
-    {
-      src: '/images/carousels/creative-process/Diptico_2.png',
-      alt: 'creative-process-2'
+      alt: 'Diseño de diptico'
     },
     {
       src: '/images/carousels/creative-process/271.png',
-      alt: 'creative-process-3'
+      alt: 'Diseño de diptico'
     },
     {
       src: '/images/carousels/creative-process/272.png',
-      alt: 'creative-process-4'
+      alt: 'Diseño de diptico'
     }
   ],
   steps: [
     {
-      title: '1. ELABORA UN BRIEF PARA TU PROYECTO',
+      title: '1. Elabora un brief para tu díptico ',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
-      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo creativo a conocer cuáles son tus necesidades, objetivos, contenidos y preferencias para el diseño de tu diptico.',
+      description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo creativo a conocer cuáles son tus necesidades, objetivos, contenidos y preferencias para el diseño de tu díptico.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
+      title: '2. Recibe conceptos y perfeccionamientos ilimitados.',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos y perfeccionamos diseños gráficos y publicitarios de calidad, originales y exclusivos para tu diptico hasta que estes 100% conforme.',
       alt: 'conceptos'
     },
     {
-      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
+      title: '3. Recibe tu proyecto listo para utilizar',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Descarga el diseño de tu diptico en gran variedad de formatos editables listo para que lo imprimas y utilices en Internet.',
@@ -198,7 +187,7 @@ export const diptico = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
       image: '/images/pages/packs/oferta-triptico-gloss.jpg',
       title: 'TRÍPTICOS',

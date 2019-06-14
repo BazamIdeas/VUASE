@@ -6,7 +6,7 @@
         <v-flex xs12 offset-md2 md8 class="mb-5 ">
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
-              <h1 class="font-weight-bold mb-2 text-uppercase text-xs-center" style="font-size: 30px;">SELECCIONA TU SERVICIO</h1>
+              <h2 class="font-weight-bold mb-2 text-xs-center" >Selecciona tu servicio</h2>
               <v-select :items="services" @change="getBySlug" label="Seleccionar" v-model="service" solo></v-select>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
@@ -43,13 +43,13 @@
 
           <AppHeading style="color: #303032;" class="hidden-md-and-up font-weight-bold text-xs-center mb-4" number="2" size="display-1" title="¿Eres agencia o revendedor?" />
 
-          <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MAS</v-btn>
+          <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MÁS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
-          <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-uppercase text-xs-center" number="2" size="display-1" title="¿TIENES ALGUNA DUDA?" />
+          <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-xs-center" number="2" size="display-1" title="¿Tienes alguna duda?" />
           <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm page="precios" />
         </v-flex>

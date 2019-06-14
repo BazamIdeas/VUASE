@@ -3,7 +3,7 @@
     <v-flex xs12 class="mt-5 "> 
       <v-layout>
         <v-flex xs12 class="mt-5" >
-          <AppHeading number="2" size="display-1" align="center" :title="'¿QUÉ FUNCIONES NECESITA TU SITIO WEB?'" />
+          <AppHeading number="2" size="display-1" align="center" :title="'¿Qué funciones necesita tu sitio web?'" />
         </v-flex>
       </v-layout>
       <v-layout row>
@@ -115,7 +115,7 @@
       let items = [
         {
           icon: '/icons/packages/promocionar-un-servicio-o-producto.svg',
-          title: 'PROMOCIONAR UN SERVICIO O PRODUCTO',
+          title: 'Promocionar un servicio o producto',
           slug: 'promocionar-un-servicio-o-producto',
           services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario', 'hosting-por-un-ano'],
           qty: 1,
@@ -128,11 +128,11 @@
               },
               {
                 icon: '/icons/addons/pop-publicitario.svg',
-                text: 'Pop Publicitario'
+                text: 'Formulario modal. Pop up'
               },
               {
                 icon: '/icons/addons/wordpress.svg',
-                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido y funcionalidades'
               },
               {
                 icon: '/icons/addons/herramientas-SEO.svg',
@@ -140,27 +140,27 @@
               },
               {
                 icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
-                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos de tu sitio web.'
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Posibilidad de integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de tu proyecto.'
               }
             ]
           }
         },
         {
           icon: '/icons/packages/presentar-mi-empresa.svg',
-          title: 'PRESENTAR MI EMPRESA',
+          title: 'Presentar mi empresa',
           slug: 'presentar-mi-empresa',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano'],
           qty: 2,
           open: {
-            description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
+            description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrusel de 6 imágenes, información introductoria de la actividad (hasta 400 palabras), sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
@@ -168,39 +168,39 @@
               },
               {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio, casillas de email y alojamiento de sitio web por un año.'
               },
               {
                 icon: '/icons/addons/wordpress.svg',
-                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+                text: 'Programación de sitio web sobre plataforma WordPress; herramienta ágil para la gestión de contenido y funcionalidades de su sitio web.'
               },
               {
                 icon: '/icons/addons/herramientas-SEO.svg',
-                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
+                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores.'
               },
               {
                 icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
-                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos.'
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Posibilidad de integración con hasta 52.000 complementos que permiten múltiples funcionalidades.'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de su proyecto.'
               }
             ]
           }
         },
         {
           icon: '/icons/packages/ofrecer-multiples-servicios.svg',
-          title: 'OFRECER MULTIPLES SERVICIOS',
+          title: 'Ofrecer múltiples servicios',
           slug: 'ofrecer-multiples-servicios',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'seccion-de-noticias-o-publicaciones'],
           qty: 5,
           open: {
-            description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser:  reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
+            description: 'Es el sitio web perfecto para PyMes que desean ganar, crecer y presentar su actividad y clientes en Internet. <br> Incluye el diseño profesional realizado a la medida de hasta 5 secciones, como podrían ser:  Sobre la empresa (misión, visión, equipo de trabajo, compromiso, certificaciones), catálogo de prestación de servicios y productos, galerías de imágenes y videos, presupuestos, clientes, noticias, integración con redes sociales,  sector de contacto con mapa interactivo Google Maps, información de contacto, formulario de contacto, avisos legales, política de cookies.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
@@ -208,11 +208,11 @@
               },
               {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio web y alojamiento de sitio web por un año.'
               },
               {
                 icon: '/icons/addons/chat.svg',
-                text: 'Chat'
+                text: 'Chat en línea.'
               },
               {
                 icon: '/icons/addons/casillas-de-correos.svg',
@@ -220,137 +220,137 @@
               },
               {
                 icon: '/icons/addons/noticias-y-publicaciones.svg',
-                text: 'Noticias o Publicaciones'
+                text: 'Noticias o publicaciones de novedades de la empresa.'
               },
               {
                 icon: '/icons/addons/wordpress.svg',
-                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+                text: 'Programación de sitio web sobre plataforma WordPress; herramienta ágil para la gestión de contenido e integración de nuevas funcionalidades que acompañen al crecimiento de su empresa.'
               },
               {
                 icon: '/icons/addons/herramientas-SEO.svg',
-                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
+                text: 'Herramienta SEO para su posicionamiento orgánico de sus contenidos en buscadores.'
               },
               {
                 icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
-                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+                text: 'Administración, múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos y ampliación de funcionalidades de sistema al sitio web.'
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de tu proyecto.'
               }
             ]
           }
         },
         {
           icon: '/icons/packages/dar-a-conocer-mis-proyectos.svg',
-          title: 'DAR A CONOCER MIS PROYECTOS REALIZADOS',
+          title: 'Dar a conocer mis proyectos realizados',
           slug: 'dar-a-conocer-mis-proyectos-realizados',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'galeria-de-proyectos'],
           qty: 3,
           open: {
-            description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
+            description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde vas a poder publicar proyectos junto a sus características, atributos y anexarle imágenes y/o videos. Los mismos pueden ser filtrados según las variables que desees.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
-                text: 'Diseño y desarrollo de sitio web exclusivo y original (3 secciones)'
+                text: 'Diseño y desarrollo de sitio web exclusivo y original (hasta 3 secciones).'
               },
               {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio de Internet y alojamiento de sitio web por un año.'
               },
               {
                 icon: '/icons/addons/galeria-de-proyectos.svg',
-                text: 'Galería de proyectos'
+                text: 'Galería de proyectos en imágenes y videos.'
               },
               {
                 icon: '/icons/addons/wordpress.svg',
-                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+                text: 'Programación sobre plataforma de autogestión de contenidos llamada  WordPress; herramienta ágil para la gestión de contenido.'
               },
               {
                 icon: '/icons/addons/herramientas-SEO.svg',
-                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
+                text: 'Herramienta SEO para su posicionamiento orgánico de sus contenidos en buscadores.'
               },
               {
                 icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
-                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos.'
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de tu proyecto.'
               }
             ]
           }
         },
         {
           icon: '/icons/packages/publicar-inmuebles.svg',
-          title: 'PUBLICAR INMUEBLES PARA ALQUILER O VENTA',
+          title: 'Publicar inmuebles para alquiler o venta',
           slug: 'publicar-inmuebles-para-alquiler-o-venta',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'plataforma-inmobiliaria'],
           qty: 5,
           open: {
-            description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
+            description: 'Plataforma imprescindible si estás en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
-                text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones)'
+                text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones).'
               },
               {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio y alojamiento de sitio web por un año.'
               },
               {
                 icon: '/icons/garantia-de-conformidad.svg',
-                text: 'Plataforma inmobiliaria'
+                text: 'Plataforma inmobiliaria completa para Venta y Alquiler (Administracion de propiedades, código, descripción, características, precios, fotos, videos, etc).'
               },
               {
                 icon: '/icons/addons/wordpress.svg',
-                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+                text: 'Programación sobre plataforma de autogestión de contenidos llamada WordPress.'
               },
               {
                 icon: '/icons/addons/herramientas-SEO.svg',
-                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
+                text: 'Herramienta SEO para su posicionamiento orgánico de sus contenidos en buscadores.'
               },
               {
                 icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
-                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos.'
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de su proyecto.'
               }
             ]
           }
         },
         {
           icon: '/icons/packages/exhibir-un-menu.svg',
-          title: 'EXHIBIR UN MENÚ DE PLATOS/COMIDAS',
+          title: 'Exhibir un menú de platos / comidas',
           qty: 3,
           slug: 'exhibir-un-menu-de-platos-o-comidas',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos'],
           open: {
-            description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
+            description: 'Da a conocer tu restaurante o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desees.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
-                text: 'Diseño y desarrollo de sitio web exclusivo y original (3 secciones)'
+                text: 'Diseño y desarrollo de sitio web exclusivo y original (3 secciones).'
               }, {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio de Internet y alojamiento de sitio web por un año.'
               }, {
                 icon: '/icons/addons/catalogo-ventana.svg',
-                text: 'Catálogo'
+                text: 'Catálogo. (menú)'
               }, {
                 icon: '/icons/addons/wordpress.svg',
                 text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
@@ -362,47 +362,47 @@
                 text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
               }, {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               }, {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de su proyecto.'
               }
             ]
           }
         },
         {
           icon: '/icons/packages/mostrar-un-catalogo-de-productos.svg',
-          title: 'MOSTRAR UN CATÁLOGO DE PRODUCTOS',
+          title: 'Mostrar un catálogo de productos',
           slug: 'mostrar-un-catalogo-de-productos',
           qty: 5,
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos'],
           open: {
-            description: 'Herramienta indispensable para exhibir sus productos en la web, podrá cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
+            description: 'Herramienta indispensable para exhibir tus productos en la web, podrás cargar, modificar y agregar categorías, además incluye las secciones básicas como: contacto, reseña de la empresa, slider de imágenes, mapa de ubicación, etc.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original (5 secciones)'
               }, {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio de Internet y alojamiento de sitio web por un año.'
               }, {
                 icon: '/icons/addons/catalogo-ventana.svg',
-                text: 'Catálogo'
+                text: 'Catálogo productos (menú). '
               }, {
                 icon: '/icons/addons/wordpress.svg',
-                text: 'Programación sobre wordpress; herramienta ágil para la gestión de contenido'
+                text: 'Programación de sitio web sobre plataforma WordPress, herramienta ágil para la gestión de contenido.'
               }, {
                 icon: '/icons/addons/herramientas-SEO.svg',
-                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores'
+                text: 'Herramienta SEO para su posicionamiento orgánico en buscadores.'
               }, {
                 icon: '/icons/addons/multiples-usuarios-y-perfiles.svg',
-                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenidos'
+                text: 'Múltiples usuarios y perfiles con diferentes permisos de actualización de contenido.'
               }, {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               }, {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de su proyecto.'
               }
 
             ]
@@ -410,12 +410,12 @@
         },
         {
           icon: '/icons/packages/vender-mis-productos.svg',
-          title: 'VENDER MIS PRODUCTOS ONLINE',
+          title: 'Vender mis productos online',
           slug: 'vender-mis-productos-online',
           services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce'],
           qty: 5,
           open: {
-            description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
+            description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer tu negocio con una web Profesional + Diseño y programación de Catálogo de productos, incluye alta inicial de  100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos (TPV, Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Stripe, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
@@ -423,11 +423,11 @@
               },
               {
                 icon: '/icons/addons/hosting-y-dominio.svg',
-                text: 'Hosting y dominio por un año'
+                text: 'Registro de dominio de Internet y alojamiento por un año.'
               },
               {
                 icon: '/icons/addons/catalogo-ventana.svg',
-                text: 'Catálogo'
+                text: 'Desarrollo y publicación de catálogo de productos.'
               },
               {
                 icon: '/icons/addons/carros-de-compra.svg',
@@ -447,11 +447,11 @@
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de su proyecto.'
               }
 
             ]
@@ -459,16 +459,20 @@
         },
         {
           icon: '/icons/packages/compartir-informacion.svg',
-          title: 'COMPARTIR INFORMACIÓN Y ARCHIVOS CON MIS CLIENTES',
+          title: 'Compartir información y archivos con mis clientes',
           slug: 'compartir-informacion',
           services: ['diseno-y-desarrollo-de-seccion-web', 'area-privada-para-clientes', 'hosting-por-un-ano'],
           qty: 2,
           open: {
-            description: 'Tus clientes podrán acceder a una sección privada mediante un usuario y contraseña, desde allí desde podrá descargar archivos y documentos ordenados por categorías',
+            description: 'Tus clientes podrán acceder a una sección privada mediante un usuario y contraseña, desde allí podrá descargar archivos y documentos ordenados por categorías.',
             items: [
               {
                 icon: '/icons/addons/diseno-y-desarrollo-de-sitio-web.svg',
                 text: 'Diseño y desarrollo de sitio web exclusivo y original'
+              },
+              {
+                icon: '/icons/addons/hosting-y-dominio.svg',
+                text: 'Registro de dominio de Internet y alojamiento por un año.'
               },
               {
                 icon: '/icons/addons/area-privada-para-clientes.svg',
@@ -488,11 +492,11 @@
               },
               {
                 icon: '/icons/addons/integracion.svg',
-                text: 'Integración con más de 50.000 complementos'
+                text: 'Integración con más de 52.000 complementos que permiten múltiples funcionalidades.'
               },
               {
                 icon: '/icons/addons/manual-de-uso.svg',
-                text: 'Manual de usuario'
+                text: 'Manual de usuario realizado a la medida de su proyecto.'
               }
             ]
           }

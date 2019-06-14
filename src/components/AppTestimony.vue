@@ -14,16 +14,16 @@
           >
             <v-layout row wrap>
               <v-flex xs12 md6 order-xs2 order-md1>
-                <h2 class="display-1 xs-subheading font-weight-bold text-uppercase text-xs-center" style="color:#434343;">
-                  ¿QUÉ OPINAN <br class="hidden-xs-and-down">
-                  NUESTROS CLIENTES?
+                <h2 class="display-1 xs-subheading font-weight-bold text-xs-center" style="color:#434343;">
+                  ¿Qué opinan<br class="hidden-xs-and-down">
+                  nuestros clientes?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
                   <div class="text-xs-center">
                     <v-rating class="testimony-rating" :value="item.stars" readonly></v-rating>
                   </div>
                 </v-layout>
-                <h3 class="subheading font-weight-medium text-xs-center mt-3 pb-2" style="color:rgb(151, 147, 147);">
+                <h3 class="subheading font-weight-medium text-xs-center mt-3 pb-2">
                   {{item.description}}
                 </h3>
                 <h3 class="subheading font-weight-medium text-xs-center mt-0 pb-2" style="color:rgb(67, 67, 67);">

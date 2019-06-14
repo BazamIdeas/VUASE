@@ -3,44 +3,36 @@ export const tripticos = {
   titleSEO: 'Diseño de Triptico original y llamativo',
   descriptionSEO: 'Creación de Tripticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'TRÍPTICO',
-  list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu triptico listo para usar (editable e imágenes)'],
+  title: 'Tríptico',
+  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu folleto en formato digital listo para usarse digitalmente o impreso.'],
   description: `Tu negocio, servicios y productos desplegados en 6 caras`,
   shortDescription: `Tu negocio, servicios y productos desplegados en 6 caras`,
   icon: '/icons/triptico.svg',
   whatWeOffer: [
     {
-      title: 'DISEÑO PUBLICITARIA ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad.',
+      title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
+      description: 'Creaciones a medida, originales, únicas y de calidad.',
       icon: '/icons/logo-unico-original.svg'
     }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especialistas.',
-      icon: '/icons/mas-de-40-profesionales.svg'
+      title: 'PROPUESTAS ILIMITADAS',
+      description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+      icon: '/icons/propuestas-ilimitadas.svg'
+    }, {
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Un líder de proyecto para gestionar tu diseño siempre a disposición.',
+      icon: '/icons/atencion-personalizada.svg'
     }, {
       title: 'BÚSQUEDA Y EDICIÓN DE IMAGENES',
-      description: 'Diseños y perfeccionamientos en 24 hrs hábiles.',
+      description: 'Buscamos y perfeccionamos las imágenes adecuadas para tu pieza.',
       icon: '/icons/busqueda-y-edicion-de-imagenes.svg'
     }, {
       title: 'PERFECCIONAMIENTO DE TEXTOS',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      description: 'Ajustamos tus textos para tu mejor presentación.',
       icon: '/icons/perfeccionamien-o-de-textos.svg'
     }, {
-      title: 'ATENCIÓN PERSONALIZADA',
-      description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas.',
-      icon: '/icons/atencion-personalizada.svg'
-    }, {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/propuestas-ilimitadas.svg'
-    }, {
       title: 'ARCHIVOS LISTOS PARA IMPRENTA E INTERNET',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
+      description: 'Descarga tus archivos en formatos editables listos para utilizar en variedad de formatos.',
       icon: '/icons/archivos_listos.svg'
-    }, {
-      title: 'SOPORTE POST VENTA GRATUITO',
-      description: 'Conceptos y perfeccionamientos hasta entera conformidad, a precio cerrado.',
-      icon: '/icons/soporte-post-venta.svg'
     }
   ],
   whatYouGet: {
@@ -53,7 +45,8 @@ export const tripticos = {
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
           '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.'
+          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>PDF<b> editable'
         ],
         icon: '/icons/triptico.svg'
       }]
@@ -134,7 +127,7 @@ export const tripticos = {
   topSlider: [
     {
       url: '/images/pages/tripticos/surtel.jpg',
-      color: '#15427D'
+      color: '#aa3f16'
     },
     {
       url: '/images/pages/tripticos/gloss.jpg',
@@ -152,38 +145,34 @@ export const tripticos = {
   creativeProcess: [
     {
       src: '/images/carousels/creative-process/Triptico_1.png',
-      alt: 'creative-process-1'
-    },
-    {
-      src: '/images/carousels/creative-process/Triptico_2.png',
-      alt: 'creative-process-2'
+      alt: 'Diseño de triptico'
     },
     {
       src: '/images/carousels/creative-process/271.png',
-      alt: 'creative-process-3'
+      alt: 'Diseño de triptico'
     },
     {
       src: '/images/carousels/creative-process/272.png',
-      alt: 'creative-process-4'
+      alt: 'Diseño de triptico'
     }
   ],
   steps: [
     {
-      title: '1. ELABORAUN BRIEF PARA EL TRIPTICO DE TU NEGOCIO',
+      title: '1. Elabora un brief para el tríptico de tu negocio',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Comienza completando unas simples preguntas para ayudar a nuestro equipo creativo a conocer cuáles son tus necesidades, objetivos  y preferencias para el diseño de tu triptico.',
       alt: 'brief-y-selector'
     },
     {
-      title: '2. RECIBE CONCEPTOS Y PERFECCIONAMIENTOS ILIMITADOS',
+      title: '2. Recibe conceptos y perfeccionamientos ilimitados.',
       color: '#1d8127',
       icon: '/icons/creative-process-2.svg',
       description: 'Creamos y perfeccionamos diseños gráficos y publicitarios de calidad, originales y exclusivos para tu triplico de tu empresa hasta lograr tu entera conformidad.',
       alt: 'conceptos'
     },
     {
-      title: '3. RECIBE TU PROYECTO LISTO PARA UTILIZAR',
+      title: '3. Descarga tu proyecto listo para utilizar',
       color: '#c3953f',
       icon: '/icons/creative-process-3.svg',
       description: 'Te entregamos el diseño de tu triptico listo en variedad de formatos editables listo para que lo imprimas y utilices en Internet.',
@@ -201,9 +190,9 @@ export const tripticos = {
     ]
   },
   packs: {
-    title: 'APROVECHA NUESTROS SERVICIOS EN',
+    title: 'Aprovecha nuestros servicios en',
     first: {
-      image: '/images/pages/packs/oferta-manual-tecnibi.png',
+      image: '/images/pages/packs/oferta-manual-tecnibi.jpg',
       title: 'CATÁLOGO',
       url: '/nuestros-servicios/catalogo',
       brief: '/nuestros-servicios/catalogo/brief/estilos'

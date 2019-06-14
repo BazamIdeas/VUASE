@@ -8,11 +8,11 @@
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
-            <h1>¿QUÉ NECESITAS DISEÑAR?</h1>
+            <h1>¿Qué necesitas diseñar?</h1>
           </div>
 
           <div id="hc-layer-2-item-1" style="z-index: 99;">
-            <h2>Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</h2>
+            <p class="body-2">Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</p>
 
             <v-layout row wrap align-center justify-center class="mt-5" style="z-index: 99;">
               <v-flex xs9>
@@ -218,7 +218,6 @@
   }
 
   div#hc-layer-2-item-1>* {
-    color: #bbbbbb;
     font-weight: 400;
   }
 
