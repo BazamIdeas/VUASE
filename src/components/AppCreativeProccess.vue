@@ -105,7 +105,7 @@
 <script lang="js">
   export default {
     data: () => ({
-      sliderHeight: 0,
+      sliderHeight: 500,
       actualStep: 0
     }),
     mounted () {

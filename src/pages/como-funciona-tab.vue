@@ -7,32 +7,25 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid grid-list-md style="position:relative;" class="px-0">
-      <v-layout row wrap id="will-be-stick" class="mx-0">
-        <v-flex xs12 md3>
-            <div :class="{ 'active': active === 1 }" class="pt-3 step-1 title-step body-2 text-xs-center font-weight-bold">
-                <span @click="activateStep(1)">1. Elabora un brief</span>
-            </div>
-        </v-flex>
-        <v-flex xs12 md3>
-            <div :class="{ 'active': active === 2 }" class="pt-3 step-2 title-step body-2 text-xs-center font-weight-bold">
-                <span @click="activateStep(2)">2. Recibe diseños ilimitados</span>
-            </div>
-        </v-flex>
-        <v-flex xs12 md3>
-            <div :class="{ 'active': active === 3 }" class="pt-3 mb-2 step-3 title-step body-2 text-xs-center font-weight-bold">
-                <span @click="activateStep(3)">3. Recibe tu proyecto</span>
-            </div>
-        </v-flex>
-        <v-flex xs12 md2>
-            <div :class="{ 'step-1': active === 1, 'step-2': active === 2, 'step-3': active === 3 }" class=" title-step body-2 text-xs-center font-weight-bold">
-                <v-btn class="mb-0" color="" flat large> <span style="font-size: 18px; color: white;">COMENZAR</span> </v-btn>
-            </div>
-        </v-flex>
-      </v-layout>
+    <v-container grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 md10 offset-md1 id="paso-1">
-            <v-layout row wrap class="paso paso-1 mt-5" style="background-image: url(images/pages/paso-1.svg)">
+        <v-flex xs12 md4>
+            <div :class="{ 'active': active === 1 }" class="step-1 title-step body-2  font-weight-bold">
+                <span @click="active = 1">1. Elabora un brief</span>
+            </div>
+        </v-flex>
+        <v-flex xs12 md4>
+            <div :class="{ 'active': active === 2 }" class="step-2 title-step body-2  font-weight-bold">
+                <span @click="active = 2">2. Recibe diseños ilimitados</span>
+            </div>
+        </v-flex>
+        <v-flex xs12 md4>
+            <div :class="{ 'active': active === 3 }" class="step-3 title-step body-2  font-weight-bold">
+                <span @click="active = 3">3. Recibe tu proyecto</span>
+            </div>
+        </v-flex>
+        <v-flex xs12 v-show="active === 1">
+            <v-layout row wrap class="paso paso-1 py-5">
                 <v-flex xs12 md6 class="text-xs-center">
                     <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.png" alt="">
                 </v-flex>
@@ -65,8 +58,8 @@
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 md10 offset-md1 id="paso-2">
-            <v-layout row wrap class="paso paso-2 py-5" style="background-image: url(images/pages/paso-2.svg)">
+        <v-flex xs12 v-show="active === 2">
+            <v-layout row wrap class="paso paso-2 py-5">
                 <v-flex xs12 class="text-xs-center mb-5">
                     <h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe diseños <br  class="hidden-sm-and-down">ilimitados</h2>
                 </v-flex>
@@ -97,7 +90,7 @@
                 <v-flex xs12 md6>
                     <h2>Perfeccionamientos</h2>
                     <ul class="service-box-list">
-                        <li class="my-3 body-2 font-weight-medium">Recibe líneas de diseño y perfeccionamientos ilimitados.</li>
+                        <li class="my-3 body-2 font-weight-medium">Te presentamos líneas de diseño y perfeccionamientos</li>
                         <li class="my-3 body-2 font-weight-medium">Hasta que estés 100% conforme con tu proyecto.</li>
                         <li class="my-3 body-2 font-weight-medium">Devolución de dinero 100% garantizada.</li>
                     </ul>
@@ -127,8 +120,8 @@
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 md10 offset-md1 id="paso-3">
-            <v-layout row wrap class="paso paso-3 py-5" style="background-image: url(images/pages/paso-3.svg)">
+        <v-flex xs12 v-show="active === 3">
+            <v-layout row wrap class="paso paso-3 py-5">
                 <v-flex xs12 md6 class="text-xs-center">
                     <img class="my-5" width="80%" src="images/pages/archivos-de-entrega-logo.png" alt="">
                 </v-flex>
@@ -164,31 +157,31 @@
             </v-layout>
         </v-flex>
         <v-flex xs12 class="px-4 mb-3">
-            <h2 class="why-liderlogo" style="font-size: 40px; line-height: 45px; font-weight: 600;text-align: center">Entonces, ¿Por qué LiderLogo debe ser mi proveedor?</h2>
+            <h2 class="why-liderlogo" style="font-size: 40px; line-height: 45px; font-weight: 600;">Entonces, <br class="hidden-sm-and-down"> ¿Por qué LiderLogo <br class="hidden-sm-and-down">debe ser mi proveedor?</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/logo-unico-original.svg" alt="">
-            <p style="color: #014E7B;">Conceptos Originales</p>
+            <h3 style="color: #4c55aa;">Conceptos Originales</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/equipo-interidisciplinario.svg" alt="">
-            <p style="color: #014E7B">Profesionales Expertos</p>
+            <h3 style="color: #1d8127">Profesionales Expertos</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/16-anios.svg" alt="">
-            <p style="color: #014E7B;">16 años de experiencia</p>
+            <h3 style="color: #c3953f;">16 años de experiencia</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/atencion-personalizada.svg" alt="">
-            <p style="color: #014E7B;">Atención Personalizada</p>
+            <h3 style="color: #4c55aa;">Atención Personalizada</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/garantia-de-conformidad.svg" alt="">
-            <p style="color: #014E7B">Garantia 100%</p>
+            <h3 style="color: #1d8127">Garantia 100%</h3>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/propuestas-ilimitadas.svg" alt="">
-            <p style="color: #014E7B;">Conceptos Ilimitados</p>
+            <h3 style="color: #c3953f;">Conceptos Ilimitados</h3>
         </v-flex>
       </v-layout>
     </v-container>
@@ -298,7 +291,7 @@
           response: 'Te los haremos llegar a tu email, via WhatsApp y también puedes acceder a ellos desde nuestro gestor privado de clientes.'
         }, {
           question: '¿Cuanto tiempo demoran en la realización de conceptos y perfeccionamientos?',
-          response: 'Lo normal es 24 hs hábiles, requerimientos muy complejos nos pueden llevar sólo un poco más.'
+          response: 'Lo normal es 24 hs hábiles, requerimientos muy complejos nos pueden llevar solo un poco más.'
         }, {
           question: '¿Quienes desarrollan mi proyecto?',
           response: 'Nuestro equipo de creativos que está conformado por profesionales con experiencia que trabajan con compromiso en cada proyecto.'
@@ -308,13 +301,13 @@
         }],
         step3list: [{
           question: '¿Cómo recibo mi proyecto?',
-          response: 'Lo recibes en tu email y también lo puedes descargar desde nuestro apartado privado de cliente. Los desarrollos de sitio web se entregan publicados, funcionando con su manual de autogestión.'
+          response: 'Lo recibes en tu email y tambien lo puedes descargar desde nuestro apartado privado de cliente. Los desarrollos de sitio web se entregan publicados, funcionando con su manual de autogestión.'
         }, {
-          question: '¿Qué archivos necesito?',
+          question: '¿Que archivos necesito?',
           response: 'En proyectos necesitas archivos para uso digital, utilizarás archivos JPG, GIF o PNG en colores RGB. Si quieres imprimir tu diseño, los que debes usar son los archivos en PDF, Illustrator o EPS en formato de colores CMYK. En proyectos de sitios webs necesitarás acceso al sector de administración y manuales de autogestión.'
         }, {
-          question: '¿Dónde se guardan mi proyecto?',
-          response: 'En proyectos de uso digital necesitarás utilizar archivos JPG, GIF o PNG en colores RGB. Si quieres imprimir tu diseño, los que debes usar son los archivos en PDF, Illustrator o EPS en formato de colores CMYK. En proyectos de sitios webs necesitarás acceso al sector de administración y manuales de autogestión.  '
+          question: '¿Donde se guardan mi proyecto?',
+          response: 'Además de entregarlo con sus manuales de uso guardamos en nuestro sector privado de clientes una copia de tu trabajo para que puedas acceder a él cuando necesites.'
         }, {
           question: '¿Puedo solicitarles nuevos proyectos de diseño gráfico, publicitario y web?',
           response: 'Si, el mismo equipo de trabajo atenderá todos las necesidades de diseño que se te presenten en un futuro, independientemente de ello todas nuestras entregas de proyectos te brindan total autonomía e independencia para editar o crear los diseños que necesites.'
@@ -324,33 +317,7 @@
     computed: {
       sliderExamples () { return this.$store.state.portfolios.indexExamples }
     },
-    methods: {
-      activateStep (id) {
-        this.active = id
-        let element = document.querySelector('#paso-' + id)
-        let pos = element.style.position
-        let top = element.style.top
-        element.style.position = 'relative'
-        element.style.top = '-90px'
-        element.scrollIntoView({
-          behavior: 'smooth'
-        })
-        element.style.position = pos
-        element.style.top = top
-      }
-    },
     mounted () {
-      document.addEventListener('scroll', function (e) {
-        if (document.body.scrollTop >= document.querySelector('#will-be-stick').getBoundingClientRect().top) {
-          if (!document.querySelector('#will-be-stick').classList.contains('sticky')) {
-            document.querySelector('#will-be-stick').classList.add('sticky')
-          }
-        } else {
-          if (document.querySelector('#will-be-stick').classList.contains('sticky')) {
-            document.querySelector('#will-be-stick').classList.remove('sticky')
-          }
-        }
-      })
     }
   }
 </script>
@@ -381,17 +348,6 @@
 .active.title-step.step-3 {
     color: #c3953f;
 }
-
-.title-step.step-1 button {
-    background-color: #4c55aa;
-}
-.title-step.step-2 button {
-    background-color: #1d8127;
-}
-.title-step.step-3 button {
-    background-color: #c3953f;
-}
-
 
 ul.service-box-list {
     padding-left: 17px;
@@ -429,39 +385,9 @@ ul.service-box-list {
 </style>
 
 <style scoped>
-
-div#paso-1 > div {
-    background-position: 24% 36%;
-    background-repeat: no-repeat;
-    background-size: 44% 80%;
-}
-
-div#paso-2 > div {
-    background-size: 29%;
-    background-repeat: no-repeat;
-    background-position: 26% 0%;
-}
-
-div#paso-3 > div {
-    background-size: 29%;
-    background-repeat: no-repeat;
-    background-position: 26% 10%;
-}
-
-.sticky {
-  position: sticky;
-  z-index: 999;
-  padding-top: 10px; 
-  padding-bottom: 15px;
-  top: 0px;
-  width: 100%;
-  box-shadow: 0 7px 21px 0 rgba(0,0,0,.1);
-  background-color: white;
-}
-
-.expansion-panel {
-    box-shadow: unset;
-}
+  .expansion-panel {
+      box-shadow: unset;
+  }
 
 .step-1.expansion-panel .v-expansion-panel__container, .step-1.v-expansion-panel__container:first-child {
     border-top: 2px solid rgba(76, 85, 170, .72) !important;

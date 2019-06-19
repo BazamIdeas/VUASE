@@ -31,13 +31,13 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12>
+        <!--<v-flex xs12>
           <v-layout align-center justify-center row> 
-              <v-btn @click="limit = limit + 5" class="white--text title font-weight-regular" style="background-color:#004777;">
+              <v-btn class="white--text title font-weight-regular" style="background-color:#004777;">
                 VER MÁS
               </v-btn>
           </v-layout>
-        </v-flex>
+        </v-flex>-->
       </v-layout>
     </v-container>
   </section>
@@ -45,6 +45,21 @@
 
 <script>
   export default {
+    mounted: function () {
+      if (process.browser) {
+        window.onscroll = () => {
+          var offsetHeight = document.documentElement.offsetHeight
+          var scrollPosition = document.documentElement.scrollTop + window.innerHeight
+
+          // console.log(scrollPosition + 600, offsetHeight)
+          var bottomOfWindow = scrollPosition + 600 >= offsetHeight
+          // console.log(bottomOfWindow)
+          if (bottomOfWindow) {
+            this.limit = this.limit + 5
+          }
+        }
+      }
+    },
     head () {
       return {
         titleTemplate: this.title + ' | %s',

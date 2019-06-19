@@ -14,9 +14,8 @@
           >
             <v-layout row wrap>
               <v-flex xs12 md6 order-xs2 order-md1>
-                <h2 class="display-1 xs-subheading font-weight-bold text-xs-center" style="color:#434343;">
-                  ¿Qué opinan<br class="hidden-xs-and-down">
-                  nuestros clientes?
+                <h2 class="display-1 xs-subheading font-weight-bold text-xs-center" style="color:#434343; font-size: 33px;">
+                  ¿Qué opinan nuestros clientes?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
                   <div class="text-xs-center">
@@ -35,7 +34,7 @@
                   </a>
                 </v-flex>
               </v-flex>
-              <v-flex xs12 md6 class="logo-testimony" order-xs1 order-md2 hidden-sm-and-down>
+              <v-flex xs12 md6 class="logo-testimony" order-xs1 order-md2>
                 <img :alt="alt" class="--puntos" src="/icons/puntos_de_fondo.svg">
                 <img class="lt-img" :src="item.logo" :alt="item.company + ' Testimonio'">
               </v-flex>
@@ -87,7 +86,7 @@
     display: none;
   }
   .testimonies .v-carousel {
-    height: 400px !important;
+    height: 750px !important;
   }
    .testimonies .logo-testimony .lt-img {
       position: initial;
