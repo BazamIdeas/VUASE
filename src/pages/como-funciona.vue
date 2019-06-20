@@ -25,7 +25,7 @@
             </div>
         </v-flex>
         <v-flex xs12 md2>
-            <div :class="{ 'step-1': active === 1, 'step-2': active === 2, 'step-3': active === 3 }" class=" title-step body-2 text-xs-center font-weight-bold">
+            <div :class="{ 'step-1': active === 1, 'step-2': active === 2, 'step-3': active === 3 }" class=" title-step start-button body-2 text-xs-center font-weight-bold">
                 <v-btn class="mb-0" color="" flat large> <span style="font-size: 18px; color: white;">COMENZAR</span> </v-btn>
             </div>
         </v-flex>
@@ -326,7 +326,7 @@
     },
     methods: {
       activateStep (id) {
-        this.active = id
+        // this.active = id
         let element = document.querySelector('#paso-' + id)
         let pos = element.style.position
         let top = element.style.top
@@ -340,17 +340,61 @@
       }
     },
     mounted () {
+      var timer
       document.addEventListener('scroll', function (e) {
-        if (document.body.scrollTop >= document.querySelector('#will-be-stick').getBoundingClientRect().top) {
-          if (!document.querySelector('#will-be-stick').classList.contains('sticky')) {
-            document.querySelector('#will-be-stick').classList.add('sticky')
+        clearTimeout(timer)
+
+        const bodyI = document.body
+
+        let willBeStick = document.querySelector('#will-be-stick')
+        if (bodyI.scrollTop >= willBeStick.getBoundingClientRect().top) {
+          if (!willBeStick.classList.contains('sticky')) {
+            willBeStick.classList.add('sticky')
           }
         } else {
-          if (document.querySelector('#will-be-stick').classList.contains('sticky')) {
-            document.querySelector('#will-be-stick').classList.remove('sticky')
+          if (willBeStick.classList.contains('sticky')) {
+            willBeStick.classList.remove('sticky')
           }
         }
-      })
+
+        timer = setTimeout(function () {
+          let tStep1 = document.querySelector('.title-step.step-1')
+          let tStep2 = document.querySelector('.title-step.step-2')
+          let tStep3 = document.querySelector('.title-step.step-3')
+          let step1 = document.querySelector('#paso-1')
+          let step2 = document.querySelector('#paso-2')
+          let step3 = document.querySelector('#paso-3')
+          let button = document.querySelector('.start-button')
+          if (bodyI.scrollTop >= step1.getBoundingClientRect().top - 90 && bodyI.scrollTop < step1.getBoundingClientRect().bottom - 150) {
+            console.log('paso 1')
+            if (!tStep1.classList.contains('active')) {
+              tStep1.classList.add('active')
+              tStep2.classList.remove('active')
+              tStep3.classList.remove('active')
+              button.classList.remove('step-2', 'step-3')
+              button.classList.add('step-1')
+            }
+          } else if (bodyI.scrollTop >= step2.getBoundingClientRect().top - 150 && bodyI.scrollTop < step2.getBoundingClientRect().bottom - 150) {
+            console.log('paso 2')
+            if (!tStep2.classList.contains('active')) {
+              tStep1.classList.remove('active')
+              tStep3.classList.remove('active')
+              tStep2.classList.add('active')
+              button.classList.remove('step-1', 'step-3')
+              button.classList.add('step-2')
+            }
+          } else if (bodyI.scrollTop > step3.getBoundingClientRect().top - 150 && bodyI.scrollTop < step3.getBoundingClientRect().bottom) {
+            console.log('paso 3')
+            if (!tStep3.classList.contains('active')) {
+              tStep1.classList.remove('active')
+              tStep2.classList.remove('active')
+              tStep3.classList.add('active')
+              button.classList.remove('step-1', 'step-2')
+              button.classList.add('step-3')
+            }
+          }
+        }, 100)
+      }, false)
     }
   }
 </script>
