@@ -37,7 +37,7 @@
                     <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.png" alt="">
                 </v-flex>
                 <v-flex xs12 md6>
-                    <h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>
+                    <!--<h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>-->
                     <ul class="service-box-list">
                         <li class="my-3 body-2 font-weight-medium">Simple, ágil e intuitivo.</li>
                         <li class="my-3 body-2 font-weight-medium">Te llevará unos pocos minutos.</li>
@@ -67,9 +67,9 @@
         </v-flex>
         <v-flex xs12 md10 offset-md1 id="paso-2">
             <v-layout row wrap class="paso paso-2 py-5" style="background-image: url(images/pages/paso-2.svg)">
-                <v-flex xs12 class="text-xs-center mb-5">
+                <!--<v-flex xs12 class="text-xs-center mb-5">
                     <h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe diseños <br  class="hidden-sm-and-down">ilimitados</h2>
-                </v-flex>
+                </v-flex>-->
                 <v-flex xs12 md6>
                     <h2>Conceptos</h2>
                     <ul class="service-box-list">
@@ -97,7 +97,7 @@
                 <v-flex xs12 md6>
                     <h2>Perfeccionamientos</h2>
                     <ul class="service-box-list">
-                        <li class="my-3 body-2 font-weight-medium">Recibe líneas de diseño y perfeccionamientos ilimitados.</li>
+                        <li class="my-3 body-2 font-weight-medium">Diseños y perfeccionamientos ilimitados.</li>
                         <li class="my-3 body-2 font-weight-medium">Hasta que estés 100% conforme con tu proyecto.</li>
                         <li class="my-3 body-2 font-weight-medium">Devolución de dinero 100% garantizada.</li>
                     </ul>
@@ -133,7 +133,7 @@
                     <img class="my-5" width="80%" src="images/pages/archivos-de-entrega-logo.png" alt="">
                 </v-flex>
                 <v-flex xs12 md6>
-                    <h2 class="mb-4" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>
+                    <!--<h2 class="mb-4" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>-->
                     <p>Descarga tu proyecto listo para ser utilizado en gran variedad de formatos.</p>
                     <ul class="service-box-list">
                         <li class="my-3 body-2 font-weight-medium">Entrega completa editable para imprenta y uso digital.</li>
@@ -284,14 +284,14 @@
           description: '“Es la segunda vez que me hacen un logo y estoy super contenta.”'
         }],
         step1list: [{
-          question: '¿Que pueden diseñar?',
+          question: '¿Qué pueden diseñar?',
           response: 'Prácticamente todo lo que necesites, logos, papelería, rótulos, folletos, redes sociales, sitios webs, apps y mucho más!, visita nuestras categorías de servicios.'
         }, {
           question: '¿Cómo completo el brief?',
-          response: 'Selecciona el servicio (link a categoría de servicios) que deseas contratar y sigue unos simples pasos.'
+          response: 'Selecciona el <a href="/servicios" style="color:#4c55aa">servicio</a> que deseas contratar y sigue unos simples pasos.'
         }, {
           question: '¿Puedo completar mi brief por teléfono o email?',
-          response: 'Si, ponte en contacto con nuestros asesores en diseño.'
+          response: 'Si, <a href="/contacto" style="color:#4c55aa">ponte en contacto</a> con nuestros asesores en diseño.'
         }],
         step2list: [{
           question: '¿Cómo recibo los conceptos de diseño y perfeccionamientos?',
@@ -300,7 +300,7 @@
           question: '¿Cuanto tiempo demoran en la realización de conceptos y perfeccionamientos?',
           response: 'Lo normal es 24 hs hábiles, requerimientos muy complejos nos pueden llevar sólo un poco más.'
         }, {
-          question: '¿Quienes desarrollan mi proyecto?',
+          question: '¿Quiénes desarrollan mi proyecto?',
           response: 'Nuestro equipo de creativos que está conformado por profesionales con experiencia que trabajan con compromiso en cada proyecto.'
         }, {
           question: '¿Qué sucede si no me agradan los conceptos?',

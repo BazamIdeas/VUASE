@@ -103,7 +103,7 @@
   export default {
     async fetch ({ store, params }) {
       await store.dispatch('portfolios/getAll', params)
-      await store.dispatch('portfolios/getRelateds', params)
+      await store.dispatch('sectors/activities/getAll')
     },
     asyncData ({ params }) {
       return {
@@ -111,6 +111,9 @@
         serviceSlug: params.servicio,
         portfolioSlug: params.slug
       }
+    },
+    async mounted () {
+      await this.$store.dispatch('portfolios/getRelateds', this.portfolio.activity.slug)
     },
     methods: {
       async selectService () {

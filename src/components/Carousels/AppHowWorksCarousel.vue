@@ -10,7 +10,7 @@
                     </div>
                     <div id="hc-layer-2-item-1">
                         <h3>Hacemos un gran trabajo creativo gracias a nuestra metodología de tres etapas y
-            equipo de expertos. Si quieres recibir un consejo <nuxt-link to="/contacto"><span style="color: #1976d2;">ponte en contacto</span></nuxt-link> con uno de nuestros asesores.</h3>
+            nuestro equipo de expertos. Si quieres recibir un consejo <nuxt-link to="/contacto"><span style="color: #1976d2;">ponte en contacto</span></nuxt-link> con uno de nuestros asesores.</h3>
                     </div>
                 </div>
                 <div class="section">  

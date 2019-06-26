@@ -167,8 +167,10 @@ export const actions = {
       if (error.response.status === 404) commit('GET_ALL', {portfolios: [], push: true})
     }
   },
-  async getRelateds ({ rootGetters, commit, state }, params) {
-    let url = 'portfolios/custom-search?limit=8&service=' + params.serviceSlug
+  async getRelateds ({ rootGetters, commit, state }, activity) {
+    let el = rootGetters['sectors/activities/getBySlug'](activity)
+
+    let url = 'portfolios/custom-search?limit=8&activities=' + el.id
 
     try {
       let portfolios = await this.$axios.$get(url)
