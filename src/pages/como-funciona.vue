@@ -294,10 +294,10 @@
           response: 'Prácticamente todo lo que necesites, logos, papelería, rótulos, folletos, redes sociales, sitios webs, apps y mucho más!, visita nuestras categorías de servicios.'
         }, {
           question: '¿Cómo completo el brief?',
-          response: 'Selecciona el <a href="/servicios" style="color:#4c55aa">servicio</a> que deseas contratar y sigue unos simples pasos.'
+          response: 'Selecciona el <a href="/servicios" style="color:#4c55aa; font-weight: bold">servicio</a> que deseas contratar y sigue unos simples pasos.'
         }, {
           question: '¿Puedo completar mi brief por teléfono o email?',
-          response: 'Si, <a href="/contacto" style="color:#4c55aa">ponte en contacto</a> con nuestros asesores en diseño.'
+          response: 'Si, <a href="/contacto" style="color:#4c55aa; font-weight: bold">ponte en contacto</a> con nuestros asesores en diseño.'
         }],
         step2list: [{
           question: '¿Cómo recibo los conceptos de diseño y perfeccionamientos?',
