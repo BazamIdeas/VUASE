@@ -163,7 +163,7 @@
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 class="px-4 mb-3">
+        <!--<v-flex xs12 class="px-4 mb-3">
             <h2 class="why-liderlogo" style="font-size: 40px; line-height: 45px; font-weight: 600;text-align: center">Entonces, ¿Por qué LiderLogo debe ser mi proveedor?</h2>
         </v-flex>
         <v-flex xs12 md4 class="text-xs-center py-5">
@@ -189,7 +189,13 @@
         <v-flex xs12 md4 class="text-xs-center py-5">
             <img width="80px" src="/icons/propuestas-ilimitadas.svg" alt="">
             <p style="color: #014E7B;">Conceptos Ilimitados</p>
-        </v-flex>
+        </v-flex>-->
+      </v-layout>
+    </v-container>
+    <v-container grid-list-md class="pb-0">
+      <v-layout row wrap>
+         <!-- CARACTERISTICAS -->  
+        <AppServiceCharacteristics v-if="whatWeOffer" id="que-te-ofrecemos" title="Entonces, ¿Por qué LiderLogo debe ser mi proveedor?" :list="whatWeOffer" />
       </v-layout>
     </v-container>
 
@@ -318,6 +324,31 @@
         }, {
           question: '¿Puedo solicitarles nuevos proyectos de diseño gráfico, publicitario y web?',
           response: 'Si, el mismo equipo de trabajo atenderá todos las necesidades de diseño que se te presenten en un futuro, independientemente de ello todas nuestras entregas de proyectos te brindan total autonomía e independencia para editar o crear los diseños que necesites.'
+        }],
+        whatWeOffer: [{
+          title: 'LOGO, PAPELERÍA Y MERCHANDISING, 100% ORIGINAL',
+          description: 'Creaciones a medida, originales, únicas y llamativas.',
+          icon: '/icons/logo-unico-original.svg'
+        }, {
+          title: 'PROPUESTAS ILIMITADAS',
+          description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+          icon: '/icons/propuestas-ilimitadas.svg'
+        }, {
+          title: 'DISEÑOS DE UN DÍA PARA OTRO',
+          description: 'Creamos conceptos y perfeccionamientos en 24 hs. ',
+          icon: '/icons/un-dia-para-el-otro.svg'
+        }, {
+          title: 'ATENCION PERSONALIZADA',
+          description: 'Un profesional liderando tu proyecto a disposición siempre.',
+          icon: '/icons/atencion-personalizada.svg'
+        }, {
+          title: 'GARANTÍA DE CONFORMIDAD 100%',
+          description: 'En caso de disconformidad, se reintegra el dinero sin hacer preguntas.',
+          icon: '/icons/garantia-de-conformidad.svg'
+        }, {
+          title: '+40 PROFESIONALES',
+          description: 'Tu proyecto en manos de expertos especializados',
+          icon: '/icons/equipo-interidisciplinario.svg'
         }]
       }
     },
