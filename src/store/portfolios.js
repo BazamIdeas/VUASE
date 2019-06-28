@@ -17,7 +17,7 @@ export const state = () => ({
     {
       img: '/images/services-carousel/home/2 - Octopus_c.jpg',
       icon: '/icons/white/pack-identidad.svg',
-      service: 'Creación de tu logo a la medida, imagen corporativa y logo animado',
+      service: 'Diseño de logo, identidad corporativa y logo animado',
       description: 'El logo ideal para tu negocio + diseño de papelería digital y papel + diseño de redes sociales + tu logo animado creados profesional, planificada y uniformemente',
       url: '/imagen-corporativa',
       color: '#2F4962e1',
@@ -25,7 +25,7 @@ export const state = () => ({
       tag: 'Logotipo, pack de identidad y animación'
     },
     {
-      img: '/images/services-carousel/home/3 -logo-web.jpg',
+      img: '/images/services-carousel/home/3 -logo-web_c.jpg',
       icon: '/icons/white/logo-y-web.svg',
       service: 'Logo y Sitio Web',
       description: 'Diseño de logo y sitio web a la medida para lanzar con éxito tu marca',
@@ -58,7 +58,7 @@ export const state = () => ({
       img: '/images/services-carousel/home/6 - ibinatural_c.jpg',
       icon: '/icons/white/rotulo-etiqueta.svg',
       service: 'Packaging',
-      description: 'Packagings irresistibles para destacar tus productos',
+      description: 'Diseños irresistibles para destacar tus productos',
       url: '/packaging',
       color: '#DD9B62e1',
       textColor: 'white',
@@ -78,7 +78,7 @@ export const state = () => ({
       img: '/images/services-carousel/home/8 - La-julia_c.jpg',
       icon: '/icons/white/folleto-y-publicidades.svg',
       service: 'Folletos y Publicidades',
-      description: 'Folletos Presenta y promociona tu marca, tus productos y servicios con diseños extraordinarios',
+      description: 'Presenta y promociona tu marca, tus productos y servicios con diseños extraordinarios',
       url: '?tab=2#servicios',
       color: '#E89166e1',
       textColor: 'white',

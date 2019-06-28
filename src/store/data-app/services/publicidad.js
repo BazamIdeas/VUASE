@@ -126,24 +126,20 @@ export const publicidad = {
   topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/publicidad/publicidad-civefa.png',
+      url: '/images/pages/publicidad/publicidad relanza_c.jpg',
       color: '#114479'
     },
     {
-      url: '/images/pages/publicidad/publicidad-aquafrost.png',
+      url: '/images/pages/publicidad/publicidad_amerite.jpg',
       color: '#1E3C7B'
     },
     {
-      url: '/images/pages/publicidad/publicidad-el-puente-cafeteria.png',
+      url: '/images/pages/publicidad/publicidad_carol_c.jpg',
       color: '#E36512'
     },
     {
-      url: '/images/pages/publicidad/publicidad-extremadura-vending.png',
+      url: '/images/pages/publicidad/puclicidad tajinaste_c.jpg',
       color: '#7BC151'
-    },
-    {
-      url: '/images/pages/publicidad/publicidad-pan-&-miri.png',
-      color: '#FFCD78'
     }
   ],
   creativeProcess: [

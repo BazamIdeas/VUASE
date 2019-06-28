@@ -8,7 +8,7 @@
       ¡Logos, Papelería, Webs, Apps y mucho más!
     </h2>
 
-    <AppExamplesSlider :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="300" item-height="300"  class="mb-5 pb-5" />
+    <AppExamplesSlider :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="320" item-height="320"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
     <AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />

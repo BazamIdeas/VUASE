@@ -3,10 +3,10 @@ export const logoWeb = {
   titleSEO: 'Diseño de logo y página web',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu logo original de tu entera conformidad y sitio web listo para lanzar su negocio. ¡Comienza ahora tu proyecto!',
   /* ** */
-  list: ['Creaciones ilimitadas', 'Logo exclusivo realizado a tu medida listo para utilizar donde necesites', 'Diseño, maquetacion, programación y publicación de sitio web profesional autogestionable, registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
+  list: ['Creaciones ilimitadas', 'Logo exclusivo realizado a tu medida listo para utilizar donde necesites', 'Diseño, maquetación, programación y publicación de sitio web profesional autogestionable, registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
   title: 'Diseño de logo y sitio web',
-  description: `Creacion de logo original de tu entera conformidad y sitio web listo para lanzar tu negocio.`,
-  shortDescription: `Creacion de logo original de tu entera conformidad y sitio web listo para lanzar tu negocio.`,
+  description: `Creación de logo original de tu entera conformidad y sitio web listo para lanzar tu negocio.`,
+  shortDescription: `Creación de logo original de tu entera conformidad y sitio web listo para lanzar tu negocio.`,
   icon: '/icons/logo-y-web.svg',
   oferta: 'AHORRA 50% SOBRE EL DISEÑO DE TU LOGO',
   whatWeOffer: [
@@ -31,7 +31,7 @@ export const logoWeb = {
     {
       title: 'ATENCION PERSONALIZADA',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/atencion-personalizada.svg'
+      icon: '/icons/atencion-personalizada-2.svg'
     },
     {
       title: 'CERTIFICADOS DE DERECHOS Y MANUALES DE USO',
@@ -101,7 +101,7 @@ export const logoWeb = {
   },
   frequentQuestions: [
     {
-      question: '¿Aun no tengo definido el nombre de mi marca, me pueden ayudar?',
+      question: '¿Aún no tengo definido el nombre de mi marca, me pueden ayudar?',
       response: `Si, de manera complementaria y gratuita proponemos nombres oportunos, efectivos y disponibles para tu marca comercial.`
     }, {
       question: '¿Podrían crear mi slogan comercial, que precio tiene?',
@@ -110,10 +110,10 @@ export const logoWeb = {
       question: 'Tengo una idea previa para el diseño de mi logo, ¿podrían diseñar mi marca en base a ello? ¿como les envio mi idea o boceto?',
       response: `Si, podemos diseñar tu marca en base a tu idea previa, creamos conceptos profesionales del mismo en su conjunto, tanto en relación a su concepto gráfico, tipografía, colores y proporciones adecuados. También te presentamos, sin coste adicional diseños creados desde un punto de vista objetivo y distante que pudieran sorprenderlo con una solución de diseño que no hayas pensado y resuelvan eficientemente tu necesidad de identidad gráfica. Al momento de realizar tu pedido puedes adjuntar tu idea previa o nos la puedes enviar por WhatsApp o Email indicando el nombre de tu marca.`
     }, {
-      question: 'Aun no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
+      question: 'Aún no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
       response: 'Sí, puede solicitar cualquier cambio antes de la entrega de su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante su proyecto.'
     }, {
-      question: 'Aun no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
+      question: 'Aún no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
       response: 'Si, sin problema mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de tu datos fiscales para tu contabilización.'
     }, {
       question: '¿Cuantos conceptos de diseño recibo?',
@@ -147,7 +147,7 @@ export const logoWeb = {
       question: '¿El sitio Web se puede navegar desde dispositivos móviles?',
       response: `Si, el sitio web es compatible con todo tipo de navegadores.`
     }, {
-      question: 'Aun no tengo todos los contenidos para mi sitio web, ¿puedo iniciar el proyecto?',
+      question: 'Aún no tengo todos los contenidos para mi sitio web, ¿puedo iniciar el proyecto?',
       response: `Al finalizar el proyecto recibes un manual realizado a la medida de tu sitio web con las instrucciones necesarias para que puedas con total autonomía e independencia subir, bajar y modificar contenidos como también agregar funcionalidades y secciones.<br> Para gestionar tu sitio web solo necesitas leer un simple manual y acceder desde el sector privado de administración.`
     }, {
       question: '¿Cómo gestiono los contenidos y funcionalidades de mi sitio web?',

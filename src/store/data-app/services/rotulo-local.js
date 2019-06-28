@@ -11,7 +11,7 @@ export const rLocal = {
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
+      description: 'Creaciones a medida, únicas y de calidad',
       icon: '/icons/logo-unico-original.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',

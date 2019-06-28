@@ -3,7 +3,7 @@ export const redisenoLogo = {
   titleSEO: 'Rediseño de logo',
   descriptionSEO: 'Renovamos tu logo hasta su entera aprobación, diseños ilimitados y asesoría gratuita, tenemos más de 15 años de experiencia diseñando marcas ¡Comienza ahora!',
   /* ** */
-  list: ['Restyling exclusivo realizado las veces necesarias, a tu medida hasta lograr una entera conformidad.  Listo para utilizar en todos los formatos que necesites, con tu manual de marca y certificado de derechos.'],
+  list: ['Restyling de tu logo a la medida y hasta tu una entera conformidad.', 'Entrega de tu logo listo para utilizar donde necesites (+20 formatos)', 'Entrega de manual corporativa para la correcta aplicación de tu logo', 'Entrega de certificado de transferencia de derechos intelectuales de tu marca'],
   title: 'Rediseño de logo',
   description: `Renovación de tu Logo hasta su entera aprobación.`,
   shortDescription: `Renovación de tu Logo hasta su entera aprobación.`,

@@ -114,10 +114,6 @@ export const rVestimenta = {
   topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-maremma.png',
-      color: 'black'
-    },
-    {
       url: '/images/pages/rotulo-vestimenta/rotulo-uniforme-armel.png',
       color: '#289648'
     },

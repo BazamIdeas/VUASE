@@ -4,9 +4,9 @@
       <v-flex xs12 class="examples-slider-container pa-0" ref="examplesSliderContainer" :class="{'shadow': shadow}" >
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
           <v-layout row>
-            <v-flex @click="go(example.url)" v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center>
+            <v-flex @click="go(example.url)" v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center @mouseover="hover = true" @mouseleave="hover = false">
               <v-img :alt="example.service ? example.service : alt" :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
-              <v-chip v-if="example.tag" :color="example.color" text-color="white" style="bottom: 20px; position: absolute; font-size: 15px;">{{example.tag}}</v-chip>
+              <v-chip v-if="example.tag && !hover" :color="example.color" text-color="white" style="bottom: 20px; position: absolute; font-size: 15px;">{{example.tag}}</v-chip>
               <span class="hidden-box" v-if="hovered" :style="'background-color:'+example.color+'; color:'+example.textColor">
                 <img :src="example.icon" :alt="alt" class="mb-2" width="100" height="80" />
                 <h3 class="font-weight-bold title mb-2 text-xs-center" style=" max-width:90%;    white-space: normal; ">{{example.service}}</h3>
@@ -49,7 +49,8 @@
       hovered: {
         default: false
       },
-      alt: String
+      alt: String,
+      hover: false
     },
     mounted () {
       // let el = this.$refs.examplesSliderScrollable

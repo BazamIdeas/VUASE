@@ -35,7 +35,7 @@
                 <v-select
                 :items="servicios"
                 v-model="find"
-                label="Logo, pagina web, rótulo..."
+                label="Logo, página web, rótulo..."
                 item-text="name"
                 item-value="slug"
                 light

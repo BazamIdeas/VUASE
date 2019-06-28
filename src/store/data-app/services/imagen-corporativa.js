@@ -6,8 +6,8 @@ export const imagenCorporativa = {
   list: ['Logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elija 6 piezas en nuestro menú de 65 opciones)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
   oferta: 'AHORRA 37%',
-  description: `Diseño del logo original adaptado a su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.`,
-  shortDescription: `Diseño del logo original adaptado a su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.`,
+  description: `Diseño del logo creado desde cero y hasta su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.`,
+  shortDescription: `Diseño del logo creado desde cero y hasta su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.`,
   icon: '/icons/pack-identidad.svg',
   whatWeOffer: [
     {
@@ -111,7 +111,7 @@ export const imagenCorporativa = {
   },
   frequentQuestions: [
     {
-      question: '¿Aun no tengo definido el nombre de mi marca, me pueden ayudar?',
+      question: '¿Aún no tengo definido el nombre de mi marca, me pueden ayudar?',
       response: `Si, de manera complementaria y gratuita proponemos nombres oportunos, efectivos y disponibles para tu marca comercial.`
     }, {
       question: '¿Podrían crear mi slogan comercial, que precio tiene?',
@@ -120,11 +120,11 @@ export const imagenCorporativa = {
       question: 'Tengo una idea previa para el diseño de mi logo, ¿podrían diseñar mi marca en base a ello? ¿como les envio mi idea o boceto?',
       response: `Si, podemos diseñar tu marca en base a tu idea previa, creamos conceptos profesionales del mismo en su conjunto, tanto en relación a su concepto gráfico, tipografía, colores y proporciones adecuados. También te presentamos, sin coste adicional diseños creados desde un punto de vista objetivo y distante que pudieran sorprenderlo con una solución de diseño que no hayas pensado y resuelvan eficientemente tu necesidad de identidad gráfica. Al momento de realizar tu pedido puedes adjuntar tu idea previa o nos la puedes enviar por WhatsApp o Email indicando el nombre de tu marca.`
     }, {
-      question: 'Aun no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
-      response: 'Sí, puede solicitar cualquier cambio antes de la entrega de su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante su proyecto.'
+      question: 'Aún no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
+      response: 'Sí, puedes solicitar cualquier cambio antes de la entrega de su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante su proyecto.'
     }, {
-      question: 'Aun no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
-      response: 'Si, sin problema mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de tu datos fiscales para tu contabilización.'
+      question: 'Aún no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
+      response: 'Sí, sin problema mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de tu datos fiscales para tu contabilización.'
     }, {
       question: '¿Cuantos conceptos de diseño recibo?',
       response: `Creamos y perfeccionamos todos los bocetos que sean necesarios hasta que te encuentres 100% conforme con tu proyecto de identidad corporativa. Trabajamos a precio cerrado, puedes solicitar tantas opciones como sean necesarios hasta lograr tu diseño ideal.`
@@ -368,7 +368,6 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/Mockup IKAM_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup gloss_c.jpg' },
       { img: '/images/services-carousel/pack-identidad/pistachos-pack.jpg' },
-      { img: '/images/services-carousel/pack-identidad/Mockup Alvaro Hohr.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup fisiocomas.jpg' },
@@ -378,20 +377,13 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/Mockup Uroz.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup dulpy.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup hygge.jpg' },
-      { img: '/images/services-carousel/pack-identidad/bolsa divino alchemy instagram.jpg' },
       { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
-      { img: '/images/services-carousel/pack-identidad/rocabike-tarjeta.jpg' },
       { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/blackbird.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese.jpg' },
-      { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/43.-arq. sin limites mock up 3.jpg' },
-      { img: '/images/services-carousel/pack-identidad/presentación de power point.jpg' },
-      { img: '/images/services-carousel/pack-identidad/prounit paraguas.jpg' },
       { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },
       { img: '/images/services-carousel/pack-identidad/surtel.jpg' },
-      { img: '/images/services-carousel/pack-identidad/tarjeta de visita arete.jpg' },
       { img: '/images/services-carousel/pack-identidad/terra-agro.jpg' },
-      { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' },
-      { img: '/images/services-carousel/pack-identidad/vincit.jpg' }
+      { img: '/images/services-carousel/pack-identidad/ticket_instagram.jpg' }
     ]
   },
   packs: {

@@ -74,7 +74,7 @@ export const flyerDosCaras = {
       question: '¿Qué elementos debo brindar para el diseño de un folleto?',
       response: 'Logo, textos e imágenes que desee presentar sobre los cuales trabajará nuestro equipo.'
     }, {
-      question: '¿No poseo imágenes para mi folleto?',
+      question: 'No poseo imágenes para mi folleto, ¿me pueden ayudar?',
       response: 'No es un problema, le buscaremos fotos en bancos de imágenes libres de derecho y/o económicas.'
     }, {
       question: '¿Qué incluye el diseño de un folleto?',

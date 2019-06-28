@@ -3,7 +3,7 @@ export const logoEmpresa = {
   titleSEO: 'Diseño de logo original y llamativo',
   descriptionSEO: 'Creamos tu logo hasta su entera aprobación, diseños ilimitados y asesoría gratuita, tenemos más de 15 años de experiencia diseñando marcas ¡Comienza ahora!',
   /* ** */
-  list: ['Creación de logo exclusivo, único y original realizado a tu medida. Entregado listo para utilizar donde necesites con su manual de marca y certificado de derechos.'],
+  list: ['Creación de logo exclusivo, único y original realizado a tu medida', 'Entrega listo para utilizar donde necesites con su manual de marca ', 'Entrega de certificado de transferencia de derechos de autoría'],
   title: 'Diseño de Logo',
   description: `Logo original de tu entera conformidad.`,
   shortDescription: `Logo original de tu entera conformidad.`,
@@ -24,14 +24,14 @@ export const logoEmpresa = {
     }, {
       title: 'ATENCION PERSONALIZADA',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/atencion-personalizada.svg'
+      icon: '/icons/atencion-personalizada-2'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
       icon: '/icons/garantia-de-conformidad.svg'
     }, {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
+      title: 'EXPERIENCIA & EXPECIALIZACIÓN',
+      description: '',
       icon: '/icons/equipo-interidisciplinario.svg'
     }
   ],
@@ -83,7 +83,7 @@ export const logoEmpresa = {
   },
   frequentQuestions: [
     {
-      question: '¿Aun no tengo definido el nombre de mi marca, me pueden ayudar?',
+      question: '¿Aún no tengo definido el nombre de mi marca, me pueden ayudar?',
       response: `Si, de manera complementaria y gratuita proponemos nombres oportunos, efectivos y disponibles para tu marca comercial.`
     }, {
       question: '¿Podrían crear mi slogan comercial, que precio tiene?',
@@ -92,10 +92,10 @@ export const logoEmpresa = {
       question: 'Tengo una idea previa para el diseño de mi logo, ¿podrían diseñar mi marca en base a ello? ¿como les envio mi idea o boceto?',
       response: `Si, podemos diseñar tu marca en base a tu idea previa, creamos conceptos profesionales del mismo en su conjunto, tanto en relación a su concepto gráfico, tipografía, colores y proporciones adecuados. También te presentamos, sin coste adicional diseños creados desde un punto de vista objetivo y distante que pudieran sorprenderlo con una solución de diseño que no hayas pensado y resuelvan eficientemente tu necesidad de identidad gráfica. Al momento de realizar tu pedido puedes adjuntar tu idea previa o nos la puedes enviar por WhatsApp o Email indicando el nombre de tu marca.`
     }, {
-      question: 'Aun no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
+      question: 'Aún no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
       response: 'Sí, puede solicitar cualquier cambio antes de la entrega de su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante su proyecto.'
     }, {
-      question: 'Aun no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
+      question: 'Aún no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
       response: 'Si, sin problema mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de tu datos fiscales para tu contabilización.'
     }, {
       question: '¿Cuantos conceptos de diseño recibo?',

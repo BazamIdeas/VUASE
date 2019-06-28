@@ -6,12 +6,12 @@ export const rFurgoneta = {
   title: 'Diseño Gráfico de furgoneta o camión',
   description: `Aprovecha al máximo tu espacio y promociona con éxito tu negocio.`,
   list: ['Diseño gráfico y publicitario completo de tu vehículo.', 'Creaciones y perfeccionamientos ilimitados.', 'Fotomontajes reales de tus diseños durante el proceso creativo.', 'Entrega del diseño final en variedad de formatos digitales editables.'],
-  shortDescription: `Aprovecha al maximo tu espacio y promociona con exito tu negocio.`,
+  shortDescription: `Aprovecha al máximo tu espacio y promociona con exito tu negocio.`,
   icon: '/icons/rotulo-furgoneta.svg',
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',
-      description: 'Creaciones a medida, únicas y de calidad para tus vehículos',
+      description: 'Creaciones a medida, únicas y de calidad',
       icon: '/icons/logo-unico-original.svg'
     }, {
       title: 'PROPUESTAS ILIMITADAS',
@@ -179,8 +179,6 @@ export const rFurgoneta = {
       { img: '/images/services-carousel/rotulo-furgoneta/el-capricho_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/Mockup AIV_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/mockup delugio_c.jpg' },
-      { img: '/images/services-carousel/rotulo-furgoneta/Mockup Icegurt_c.jpg' },
-      { img: '/images/services-carousel/rotulo-furgoneta/Mockup repaxpress_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/mockup swissnautic_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/Mockup the coffee place_c.jpg' },
       { img: '/images/services-carousel/rotulo-furgoneta/araucaria-rot-furgoneta-carrusel.jpg' },

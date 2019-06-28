@@ -70,7 +70,7 @@ export const flyer = {
       question: '¿Qué es el diseño de un tríptico?',
       response: 'Es el diseño de una pieza publicitaria con una tapa, contratapa, y cuatro carillas internas. Las dimensiones más comunes (desplegado) son: A3 (29.7 x 42 cm), A4 (21 x 29.7 cm) y 21 x 45 cm.'
     }, {
-      question: '¿Qué es un Flyer y octavilla?',
+      question: '¿Qué es un flyer y octavilla?',
       response: 'Es un diseño publicitario de buzoneo o entrega en mano, generalmente de tamaño A6 (10.5 x 15 cm).'
     }, {
       question: '¿Qué elementos debo brindar para el diseño de un folleto?',

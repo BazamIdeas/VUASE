@@ -3,7 +3,7 @@ export const presencia = {
   titleSEO: 'Diseño y desarrollo de páginas web',
   descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
   /* ** */
-  list: ['Diseño, maquetacion, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
+  list: ['Diseño, maquetación, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
   title: 'Presencia Web',
   description: `Su página web ideal para brindar la introducción de su empresa en internet`,
   shortDescription: `Su página web ideal para brindar la introducción de su empresa en internet.`,
