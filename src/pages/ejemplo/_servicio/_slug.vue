@@ -55,7 +55,7 @@
     <v-container grid-list-md class="mt-3">
       <v-layout row wrap>
         <!-- RELACIONADOS -->
-        <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="2" title="EJEMPLOS RELACIONADOS" />
+        <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="3" title="Ejemplos relacionados" />
         <v-layout v-if="portfolios && portfolios.length" xs12 row wrap class="portfolios mb-5">
           <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="(item) in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
             <v-card>
@@ -63,7 +63,7 @@
                   <svg role="img" :aria-label="item.name + ' Imagen'" :alt="item.name + ' Imagen'" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " :style="'background: url('+ urlHosting + item.images[0].slug+')'"></svg>
               </div>
               <v-flex class="my-0">
-                <h2 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h2>
+                <h3 class="mt-2 mb-1 text-xs-center font-weight-medium">{{item.name}}</h3>
                 <p class="text-xs-center caption" style="font-weight: 400;">
                   {{item.service.name}} - 
                   {{item.activity.name}}
@@ -91,7 +91,7 @@
           <img src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-4 text-uppercase text-xs-center" style=" color: #434343;">¿TIENES ALGUNA DUDA?</h2>
+          <h2 class="display-1 font-weight-bold mb-4  text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
           <AppContactForm :page="'ejemplo portfolio ' + portfolio.name" />
         </v-flex>
       </v-layout>
