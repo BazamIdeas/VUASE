@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.6 302.8"><title>app</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M179,295.8H22.6A15.62,15.62,0,0,1,7,280.2V22.6A15.62,15.62,0,0,1,22.6,7H179a15.62,15.62,0,0,1,15.6,15.6V280.2A15.62,15.62,0,0,1,179,295.8Z" style="fill:none;stroke:#5e5e5e;stroke-miterlimit:10;stroke-width:14px"/><line x1="77.4" y1="33.7" x2="123.6" y2="33.7" style="fill:none;stroke:#5e5e5e;stroke-linecap:round;stroke-linejoin:round;stroke-width:14px"/><line x1="7" y1="62.3" x2="194.6" y2="62.3" style="fill:none;stroke:#5e5e5e;stroke-miterlimit:10;stroke-width:14px"/><line x1="7" y1="262.3" x2="194.6" y2="262.3" style="fill:none;stroke:#5e5e5e;stroke-miterlimit:10;stroke-width:14px"/><rect x="39.6" y="99.5" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="85.3" y="99.5" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="129.5" y="99.5" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="39.6" y="149.4" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="85.3" y="149.4" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="129.5" y="149.4" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="39.6" y="199.2" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="85.3" y="199.2" width="31.9" height="31.9" style="fill:#5e5e5e"/><rect x="129.5" y="199.2" width="31.9" height="31.9" style="fill:#5e5e5e"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#5E5E5E;stroke-width:14;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#5E5E5E;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#5E5E5E;}
+</style>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2_1_">
+		<path class="st0" d="M328.2,394.4H171.8c-8.6,0-15.6-7-15.6-15.6V121.2c0-8.6,7-15.6,15.6-15.6h156.4c8.6,0,15.6,7,15.6,15.6
+			v257.6C343.8,387.4,336.8,394.4,328.2,394.4z"/>
+		<line class="st1" x1="226.6" y1="132.3" x2="272.8" y2="132.3"/>
+		<line class="st0" x1="156.2" y1="160.9" x2="343.8" y2="160.9"/>
+		<line class="st0" x1="156.2" y1="360.9" x2="343.8" y2="360.9"/>
+		<rect x="188.8" y="198.1" class="st2" width="31.9" height="31.9"/>
+		<rect x="234.5" y="198.1" class="st2" width="31.9" height="31.9"/>
+		<rect x="278.7" y="198.1" class="st2" width="31.9" height="31.9"/>
+		<rect x="188.8" y="248" class="st2" width="31.9" height="31.9"/>
+		<rect x="234.5" y="248" class="st2" width="31.9" height="31.9"/>
+		<rect x="278.7" y="248" class="st2" width="31.9" height="31.9"/>
+		<rect x="188.8" y="297.8" class="st2" width="31.9" height="31.9"/>
+		<rect x="234.5" y="297.8" class="st2" width="31.9" height="31.9"/>
+		<rect x="278.7" y="297.8" class="st2" width="31.9" height="31.9"/>
+	</g>
+</g>
+</svg>

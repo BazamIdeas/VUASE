@@ -107,7 +107,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 750px;
+      min-height: 700px;
     }
 
     .theme2 .layers-container {
@@ -160,7 +160,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 850px;
+      min-height: 700px;
     }
 
     .theme2 .layers-container {
@@ -254,22 +254,22 @@
 
   @media (min-width: 600px) and (max-width: 740px) {
     .v-carousel.main-carousel {
-      height: 550px;
-      min-height: auto;
+      height: auto;
+      min-height: 700px;
     }
   }
 
   @media (min-width: 740px) and (max-width: 820px) {
     .v-carousel.main-carousel {
-        height: 550px;
-        min-height: auto;
+        height: auto;
+        min-height: 700px;
     }
   }
 
   @media (min-width: 820px) and (max-width: 960px) {
     .v-carousel.main-carousel {
-        height: 600px;
-        min-height: auto;
+        height: auto;
+        min-height: 700px;
     }
   }
 

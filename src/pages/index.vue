@@ -2,26 +2,22 @@
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
     <AppHomeCarousel :alt="alt" :interval="interval" theme="2" />
-    <v-container grid-list-sm text-xs-center>
-      <v-layout row wrap align-center>
-      </v-layout>
-    </v-container>
-    
+   
     <!-- PORTFAFOLIO -->
     <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
-      ¡Logos, Papelería, Webs, Apps y Mucho más!
+      ¡Logos, Papelería, Webs, Apps y mucho más!
     </h2>
 
-    <AppExamplesSlider :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="350" item-height="350"  class="mb-5 pb-5" />
+    <AppExamplesSlider :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="300" item-height="300"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
     <AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
-    <AppServicesGrid color="#F29F01" class="mb-5"/>
+    <AppServicesGrid color="#F29F01" class="mb-4 pt-0"/>
     
-    <AppHomeCreativeProccess title="¿Cómo Funciona?"/>
-
+    <!-- <AppHomeCreativeProccess title="¿Cómo Funciona?"/> -->
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
+          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué te ofrecemos?"  />
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
               <v-flex xs12 md4 class="ll-op">
@@ -79,22 +75,19 @@
     </v-parallax>
     <v-container fluid grid-list-md>
       <v-layout row wrap>
+        <!-- TESTIMONIOS -->  
+        <AppTestimony :alt="alt" width="mt-5 mb-5 xs12 offset-md1 md10" :list="testimonies" />
         <v-flex xs12 md7>
-          <img :alt="alt" src="/images/pages/profesional_services.jpg" style="width: 75%;
-    margin: auto;
-    display: block;">
+          <img :alt="alt" src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
             <h2 class="font-weight-bold mb-4 mt-5 text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">Servicios a agencias</h2>
             <p class="text-xs-center mb-5 font-weight-medum">
               Amplia tu portfolio de servicios rápidamente. Ponemos a disposición de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atención especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo. </p>
-            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white;">Quiero conocer más</v-btn>
+            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
           </div>
         </v-flex>
-
-        <!-- TESTIMONIOS -->  
-        <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
         <!-- <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
           <div>
@@ -116,7 +109,7 @@
           <img src="/images/pages/profesional_services.png" :alt="alt" width="100%">
         </v-flex> -->
 
-        <v-flex xs12 md5 >
+        <v-flex xs12 md5 mt-5>
           <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
@@ -154,51 +147,55 @@
           company: 'Hotel Aixo Suites',
           description: '“La atención de Liderlogo ha sido excelente, lo recomiendo.”'
         }, {
-          stars: 4,
-          logo: '/images/testimonies/home/grupo-hivasa.jpg',
-          company: 'Grupo Hivasa',
-          description: '“Mi experiencia ha sido muy buena en general, tiempo, costos y respuesta.”'
-        }, {
-          stars: 5,
-          logo: '/images/testimonies/home/arlu.jpg',
-          company: 'Arlu',
-          description: '"Excelente en términos generales...Lo recomiendo ampliamente. Gracias a todo el equipo.”'
-        }, {
-          stars: 5,
-          logo: '/images/testimonies/home/policia-local-dalior.jpg',
-          company: 'Policía Dalaior',
-          description: '“Nuestra experiencia con Liderlogo ha sido muy satisfactoria y profesional.”'
-        }, {
           stars: 5,
           logo: '/images/testimonies/home/fauna-domestica.jpg',
           company: 'Fauna Doméstica',
           description: '“Profesionales al 100%, como siempre!”'
-        },
-        {
+        }, {
           stars: 4,
           logo: '/images/testimonies/home/finanpay.jpg',
           company: 'Finanpay',
           description: '“La atención recibida por parte de Liderlogo ha sido excelente. Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
         }, {
           stars: 5,
-          logo: '/images/testimonies/home/rocabike.jpg',
-          company: 'Rocabike',
-          description: '“Para ser la primera vez que trabajo con Liderlogo y la experiencia ha resultado excelente.”'
+          logo: '/images/testimonies/folletos/la-julia-testimonio.jpg',
+          company: 'La Julia',
+          description: '“Gracias al equipo por la realización del flyer, el resultado nos encanta! Gran trabajo.”'
         }, {
           stars: 5,
-          logo: '/images/testimonies/home/terra-agro.jpg',
-          company: 'Terra Agro',
-          description: '“Trabajar con Liderlogo ha sido una experiencia muy buena.”'
+          logo: '/images/testimonies/perfil-redes/nueva-europa.jpg',
+          company: 'Nueva Europa',
+          description: '“Trato muy cercano, fácil y rápido.”'
         }, {
           stars: 5,
-          logo: '/images/testimonies/home/rodriago.jpg',
-          company: 'Rodriago SRL Transporte Internacional',
-          description: '“Son muy dedicados y preocupados en cumplir su trabajo solicitado hasta el final.” '
+          logo: '/images/testimonies/logo/sanidae.jpg',
+          company: 'SANIDAE',
+          description: '“En nombre de nuestro equipo queremos agradeceros vuestro magnífico trabajo.Si seguís así seguro que se os augura un gran futuro profesional. Muy agradecido.”'
         }, {
           stars: 5,
-          logo: '/images/testimonies/home/bichitos.jpg',
-          company: 'Bichitos Kids',
-          description: '“Es la segunda vez que me hacen un logo y estoy super contenta.”'
+          logo: '/images/testimonies/logo/hispanoamericana.jpg',
+          company: 'Hispanamericana',
+          description: '“Nuestra experiencia fue muy buena, un excelente trato y atención personalizada.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/logo/malarrasa.jpg',
+          company: 'Malarrassa',
+          description: '“Hemos repetido con su empresa porque nos han presentados trabajos que realmente representan a las marcas y lo hacen de forma rápida, por lo que estamos muy contentos.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/logo/wellcan.jpg',
+          company: 'Wellcan',
+          description: '“Estoy muy contenta por la libertar y seguridad que da su trabajo por no tener límite en los bocetos ni en el tiempo para el desarrollo del diseño. Elegimos algo mejor de lo que buscábamos como idea previa.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/generales/geoit-1.jpg',
+          company: 'Geoit',
+          description: '“He quedado muy satisfecho con su trabajo, realmente diseñaron mi rótulo tal cual lo pedí y en los tiempos acordados; gracias por su profesionalismo y paciencia.”'
+        }, {
+          stars: 5,
+          logo: '/images/testimonies/rotulos/selpak - rotulo etiqueta.jpg',
+          company: 'Selpak',
+          description: 'Tengo el agrado de decir que es una empresa seria y responsable. Me gustó mucho el trabajo (diseño) y la amabilidad de todos sus departamentos que me tocó dialogar. Estoy muy convencido de que la empresa se interesa para poder entregar un buen servicio. Aprovecho de felicitar a sus trabajadores por la dedicación a la empresa.”'
         }]
       }
     },
@@ -212,7 +209,7 @@
 
 <style>
   .parallax-opacity .v-parallax__image-container img {
-    transform: translate(-62%, 27px) !important;
+    transform: translate(-62%, 130px) !important;
   }
 
 
@@ -259,9 +256,6 @@
     font-weight: 700;
   }
 
-  .parallax-opacity {
-    height: 775px !important;
-  }
 
   @media (min-width: 320px) and (max-width: 980px) {
     .parallax-opacity { height: 1300px !important; }

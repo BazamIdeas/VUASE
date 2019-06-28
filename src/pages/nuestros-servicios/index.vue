@@ -29,7 +29,7 @@
               :oferta="service.dataService.oferta"
             />
           </v-flex>
-          <v-flex offset-xs1 flex xs10 offset-md0 md6 v-if="layout.carousel">
+          <v-flex flex xs12 offset-md0 md6 v-if="layout.carousel">
             <v-layout align-center justify-center row class="container-carousel">
               <v-flex style="height: 420px;">
                 <v-carousel 
@@ -78,7 +78,7 @@
     mounted () {
       var scroll = document.getElementById('servicios')
       if (scroll !== null) {
-        console.log(scroll)
+        // console.log(scroll)
         if ('scrollingElement' in document) {
           document.scrollingElement.scrollTop = scroll.getBoundingClientRect().y
         }

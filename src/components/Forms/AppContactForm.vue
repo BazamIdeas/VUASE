@@ -7,7 +7,7 @@
       <v-flex xs12 sm6 md6>
         <v-text-field v-model="email" v-validate="'required|email'" name="contact.email" label="Correo electrónico laboral" placeholder="Correo electrónico laboral" :error-messages="errors.collect('contact.email')" solo flat></v-text-field>
       </v-flex>
-      <v-flex xs12>
+      <!-- <v-flex xs12>
         <v-radio-group v-model="for_phone" class="ma-0">
           <v-layout row wrap>
             <v-flex xs12 md6>
@@ -18,7 +18,7 @@
             </v-flex>
           </v-layout>
         </v-radio-group>
-      </v-flex>
+      </v-flex> -->
       
       <v-flex xs12 sm6 md6 v-if="for_phone">
         <v-text-field v-model="phone" v-validate="'required'" name="contact.phone" label="Telefono" placeholder="Telefono"
@@ -80,17 +80,14 @@
         </v-flex>
       </v-layout>
 
-      <v-flex xs12 md2 order-xs3 order-md1>
+      <v-flex xs12 md12 order-md1>
         <v-btn type="submit" class="elevation-0 white--text" style="background-color: #F7941D;">enviar</v-btn>
       </v-flex>
       
-      <v-flex order-md2 xs12 md10 v-if="countryData">
+      <v-flex order-md2 xs12 md12 v-if="countryData">
         <span>O puedes llamarnos al: </span>
         <a style="color:#1976d2" target="_new" :href="'tel:'+ countryData.phone"> +{{countryData.phone}}</a> 
-        <span>o escribirnos vía WhatsApp  </span>
-        <a style="color:#1976d2" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta">
-          +34933961704
-        </a>
+        <span> o escribirnos vía <a style="color:#1976d2" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta">WhatsApp</a> </span>
       </v-flex> 
     </v-layout>
   </v-form>
@@ -118,8 +115,7 @@
         time: '9am a 14hs – Dia de semana',
         times: [
           '9am a 14hs – Dia de semana',
-          '14hs a 20hs – Dia de semana',
-          '9am a 14hs – Fin de semana'
+          '14hs a 20hs – Dia de semana'
         ],
         for_phone: true
       }

@@ -7,17 +7,19 @@ export const state = () => ({
     links: {
       header: [
         { url: '/nuestros-servicios', title: 'Servicios' },
-        { url: '/como-funciona', title: 'Como Funciona' },
+        { url: '/como-funciona', title: 'Cómo Funciona' },
         { url: '/ejemplos', title: '1001 Ejemplos' },
-        { url: '/precios', title: 'Precios' },
-        { url: '/servicios-profesionales', title: 'Servicios a Profesionales' }
+        { url: '/opiniones', title: 'Opiniones' },
+        { url: '/precios', title: 'Precios' }
       ],
       footer: [
         { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },
-        { url: '/avisos-legales', title: 'AVISO LEGAL' },
-        { url: '/terminos-y-condiciones', title: 'TÉRMINOS Y CONDICIONES' },
-        { url: '/contacto', title: 'Contacto' },
-        { url: '/opiniones', title: 'Opiniones' }
+        { url: '/nuestros-servicios', title: 'SERVICIOS' },
+        { url: '/como-funciona', title: 'CÓMO FUNCIONA' },
+        { url: '/opiniones', title: 'OPINIONES' },
+        { url: '/contacto', title: 'CONTACTO' },
+        { url: '/avisos-legales', title: 'AVISO LEGAL' }
+
       ],
       headerMovil: [
         {
@@ -44,8 +46,7 @@ export const state = () => ({
                 { url: '/nuestros-servicios/desarrollo-de-app', title: 'APLICACIÓN MOVIL' },
                 { url: '/nuestros-servicios/presencia-web', title: 'PRESENCIA WEB' }
               ]
-            },
-            {
+            }, {
               name: 'FOLLETOS Y PUBLICIDADES',
               links: [
                 { url: '/nuestros-servicios/flyer', title: 'FLYER' },
@@ -77,8 +78,8 @@ export const state = () => ({
         },
         { url: '/como-funciona', title: 'Como Funciona', icon: 'timeline' },
         { url: '/ejemplos', title: '1001 Ejemplos', icon: 'important_devices' },
-        { url: '/precios', title: 'Precios', icon: 'store' },
-        { url: '/servicios-profesionales', title: 'Servicios a Profesionales', icon: 'work' }
+        { url: '/opiniones', title: 'Opiniones', icon: 'work' },
+        { url: '/precios', title: 'Precios', icon: 'store' }
       ],
       redes: [{
         icon: 'fa-instagram',

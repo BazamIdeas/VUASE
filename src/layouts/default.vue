@@ -7,17 +7,14 @@
       <AppFooter/>
       <!--<img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">-->
       <!-- COOKIES ACCEPT -->
-      <v-container class="cookies px-0" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
-        <v-layout row wrap align-center class="mx-0">
-          <v-flex xs12>
-            <h2 class="title font-weight-medium mb-2 text-uppercase">AVISO DE COOKIES</h2>
-          </v-flex>
-          <v-flex offset-xs1 xs10>
+      <v-container class="cookies px-0 py-1" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
+        <v-layout row align-center class="mx-1">
+          <v-flex>
             Utilizamos 
 
             <a style="color: #1976d2;" @click='$router.push("/politica-de-cookies/")' target='_new'>cookies propias</a> 
-            y de terceros para obtener datos estadísticos de la navegación de nuestros usuarios y mejorar nuestros servicios. Si acepta o continúa navegando, consideramos que acepta su uso.
-            <v-btn @click="acceptUserCookie" class="elevation-0 white--text" style="background-color:#1976d2; line-height: 14px;" wrap>Aceptar</v-btn>
+            y de terceros para obtener datos estadísticos de la navegación de nuestros usuarios y mejorar nuestros servicios.
+            <v-btn @click="acceptUserCookie" small class="elevation-0 white--text" style="background-color:#1976d2; line-height: 14px;" wrap>Aceptar</v-btn>
           </v-flex>
         </v-layout>
       </v-container>

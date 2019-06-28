@@ -5,76 +5,174 @@ export const state = () => ({
   relateds: [],
   indexExamples: [
     {
-      img: '/images/services-carousel/home/1-logo.jpg',
+      img: '/images/services-carousel/home/1 - Islas Canarias Air.jpg',
       icon: '/icons/white/logo-a-medida.svg',
-      service: 'Logo',
-      description: 'Diseños originales, exclusivos e ilimitados para tu logo',
-      url: 'logo-empresa',
-      color: 'rgba(68, 59, 20, 0.8)',
-      textColor: 'white'
+      service: 'Logotipo',
+      description: 'Diseños a la medida, llamativos y originales, exclusivos e ilimitados para tu logo',
+      url: '/logo-empresa',
+      color: '#006B64e1',
+      textColor: 'white',
+      tag: 'Logotipo'
     },
     {
-      img: '/images/services-carousel/home/2-imagen-corporativa.jpg',
+      img: '/images/services-carousel/home/2 - Octopus_c.jpg',
       icon: '/icons/white/pack-identidad.svg',
-      service: 'Logo, imagen corporativa y logo animado',
+      service: 'Creación de tu logo a la medida, imagen corporativa y logo animado',
       description: 'El logo ideal para tu negocio + diseño de papelería digital y papel + diseño de redes sociales + tu logo animado creados profesional, planificada y uniformemente',
-      url: 'imagen-corporativa',
-      color: 'rgba(196, 149, 31, .8)',
-      textColor: 'white'
+      url: '/imagen-corporativa',
+      color: '#2F4962e1',
+      textColor: 'white',
+      tag: 'Logotipo, pack de identidad y animación'
     },
     {
-      img: '/images/services-carousel/home/3-logo-web.jpg',
+      img: '/images/services-carousel/home/3 -logo-web.jpg',
       icon: '/icons/white/logo-y-web.svg',
       service: 'Logo y Sitio Web',
-      description: 'El logo ideal y un sitio web a tu medida para concetar con nuevos y más clientes',
-      url: 'diseno-de-logo-y-pagina-web',
-      color: 'rgba(241, 145, 42, .8)',
-      textColor: 'white'
+      description: 'Diseño de logo y sitio web a la medida para lanzar con éxito tu marca',
+      url: '/logo-y-pagina-web',
+      color: '#F09329e1',
+      textColor: 'white',
+      tag: 'Diseño de logotipo y sitio web'
     },
     {
       img: '/images/services-carousel/home/4-rediseno-logo.jpg',
       icon: '/icons/white/redisenio.svg',
       service: 'Rediseño de Logo',
-      description: 'Tu imagen renovada y profesional',
-      url: 'rediseno-de-logo',
-      color: 'rgba(222, 58, 58, 0.80)',
-      textColor: 'white'
+      description: 'Renovación de logotipo',
+      url: '/rediseno-de-logo',
+      color: '#E92528e1',
+      textColor: 'white',
+      tag: 'Rediseño de logo'
     },
     {
-      img: '/images/services-carousel/home/5-web-app.jpg',
-      icon: '/icons/white/web-y-app.svg',
-      service: 'Web y App',
-      description: 'Sitios webs y Apps que conectan con más clientes',
-      url: 'desarrollo-de-app',
-      color: 'rgba(7, 122, 53, .8)',
-      textColor: 'white'
+      img: '/images/services-carousel/home/5 - truekeling_c.jpg',
+      icon: '/icons/white/sitio-web-profesional.svg',
+      service: 'Sitio web',
+      description: 'Diseño gráfico original, maquetación, programación y publicación de sitio web actual y autogestionable',
+      url: '/pagina-web',
+      color: '#D6686Fe1',
+      textColor: 'white',
+      tag: 'Diseño y programación de Sitio web'
     },
     {
-      img: '/images/services-carousel/home/7-folletos.jpg',
-      icon: '/icons/white/flyer.svg',
-      service: 'Folletos y Publicidades',
-      description: 'Presenta y promociona tu marca, tus productos y servicios con diseños extraordinarios',
-      url: 'flyer',
-      color: 'rgba(35, 30, 26, .8)',
-      textColor: 'white'
-    },
-    {
-      img: '/images/services-carousel/home/almazara.jpg',
+      img: '/images/services-carousel/home/6 - ibinatural_c.jpg',
       icon: '/icons/white/rotulo-etiqueta.svg',
-      service: 'Diseño de Etiquetas y Packaging',
-      description: 'Un diseño que da vida a tus productos y los hacen irresistibles',
-      url: 'packaging',
-      color: 'rgba(16, 23, 41, .8)',
-      textColor: 'white'
+      service: 'Packaging',
+      description: 'Packagings irresistibles para destacar tus productos',
+      url: '/packaging',
+      color: '#DD9B62e1',
+      textColor: 'white',
+      tag: 'Packaging'
     },
     {
-      img: '/images/services-carousel/home/6-rotulos.jpg',
-      icon: '/icons/white/rotulo.svg',
-      service: 'Rótulos',
+      img: '/images/services-carousel/home/7 - keycode_c.jpg',
+      icon: '/icons/white/ecommerce.svg',
+      service: 'Comercio Electrónico',
+      description: 'Sitios de comercio electrónicos que generan muchísimas ventas',
+      url: '/sitio-web-ecommerce',
+      color: '#008653e1',
+      textColor: 'white',
+      tag: 'Tienda de ecommerce'
+    },
+    {
+      img: '/images/services-carousel/home/8 - La-julia_c.jpg',
+      icon: '/icons/white/folleto-y-publicidades.svg',
+      service: 'Folletos y Publicidades',
+      description: 'Folletos Presenta y promociona tu marca, tus productos y servicios con diseños extraordinarios',
+      url: '?tab=2#servicios',
+      color: '#E89166e1',
+      textColor: 'white',
+      tag: 'Folletos y publicidades'
+    },
+    {
+      img: '/images/services-carousel/home/9 - papiro_c.jpg',
+      icon: '/icons/white/rotulo-vehicular.svg',
+      service: 'Rótulo de Vehículos',
       description: 'Un diseño que promociona tu negocio donde vallas',
-      url: 'rotulo-banner',
-      color: 'rgba(7, 122, 53, .8)',
-      textColor: 'white'
+      url: '/rotulo-vehicular',
+      color: '#FF007Fe1',
+      textColor: 'white',
+      tag: 'Rótulo Vehicular'
+    },
+    {
+      img: '/images/services-carousel/home/10 -app.jpg',
+      icon: '/icons/white/app.svg',
+      service: 'App',
+      description: 'Apps Diseño y programación de Apps que conectan con más clientes',
+      url: '/desarrollo-de-app',
+      color: '#96BC67e1',
+      textColor: 'white',
+      tag: 'Diseño y programación de App'
+    },
+    {
+      img: '/images/services-carousel/home/11 - Olarte_c.jpg',
+      icon: '/icons/white/rotulo-local.svg',
+      service: 'Rótulo de local',
+      description: 'Diseño gráfico y publicitario de locales que llaman al atención',
+      url: '/rotulo-local',
+      color: '#00A8D8e1',
+      textColor: 'white',
+      tag: 'Diseño de rótulo de local'
+    },
+    {
+      img: '/images/services-carousel/home/12 - goyo_c.jpg',
+      icon: '/icons/white/rotulo-vestimenta.svg',
+      service: 'Ropa laboral',
+      description: 'Diseño de ropa laboral que tu personal deseara lucir',
+      url: '/rotulo-vestimenta-uniforme',
+      color: '#342C5De1',
+      textColor: 'white',
+      tag: 'Diseño de ropa laboral'
+    },
+    {
+      img: '/images/services-carousel/home/13 -logo.jpg',
+      icon: '/icons/white/logo-a-medida.svg',
+      service: 'Logotipos',
+      description: 'Diseños a la medida, originales, exclusivos e ilimitados para tu logo',
+      url: '/logo-empresa',
+      color: '#7B5431e1',
+      textColor: 'white',
+      tag: 'Logotipo'
+    },
+    {
+      img: '/images/services-carousel/home/14 - ERH_c.jpg',
+      icon: '/icons/white/rotulo-furgoneta.svg',
+      service: 'Diseño de furgoneta',
+      description: 'Diseños gráficos y publicitarios de alto impacto',
+      url: '/rotulo-furgoneta-camion',
+      color: '#015474e1',
+      textColor: 'white',
+      tag: 'Diseño de furgoneta'
+    },
+    {
+      img: '/images/services-carousel/home/15 -imagen-corporativa.jpg',
+      icon: '/icons/white/pack-identidad.svg',
+      service: 'Logo, pack de imagen corporativa y logo animado',
+      description: 'Creación de tu logo a la medida, imagen corporativa y logo animado',
+      url: '/imagen-corporativa',
+      color: '#D34C50e1',
+      textColor: 'white',
+      tag: 'Logotipo, pack de identidad y animación'
+    },
+    {
+      img: '/images/services-carousel/home/16 - amedee_c.jpg',
+      icon: '/icons/white/rotulo-banner.svg',
+      service: 'Diseño rótulo de banner',
+      description: 'Un diseño publicitario ideal para destacar tu stand y llamar a los clientes visualmente',
+      url: '/rotulo-banner',
+      color: '#F1A9C1e1',
+      textColor: 'white',
+      tag: 'Diseño de banner'
+    },
+    {
+      img: '/images/services-carousel/home/17 - antartik_c.jpg',
+      icon: '/icons/white/diptico.svg',
+      service: 'Dípticos',
+      description: 'La presentación profesional de tus productos y servicios en impresos de 4 caras',
+      url: '/diptico',
+      color: '#0795B3e1',
+      textColor: 'white',
+      tag: 'Diseño de dípticos'
     }
   ]
 })

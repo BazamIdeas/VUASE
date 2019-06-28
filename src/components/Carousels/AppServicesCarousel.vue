@@ -12,11 +12,11 @@
           </div>
 
           <div id="hc-layer-2-item-1" style="z-index: 99;">
-            <p class="body-2">Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la mas amplia gama de opciones</p>
+            <p class="body-2">Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la más amplia gama de opciones</p>
 
             <v-layout row wrap align-center justify-center class="mt-5" style="z-index: 99;">
-              <v-flex xs9>
-                <v-autocomplete
+              <v-flex xs10>
+                <!-- <v-autocomplete
                   v-model="find"
                   :items="services"
                   label="Logo, pagina web, rotulo..."
@@ -30,7 +30,17 @@
                   light
                   @change="go()"
                 >
-                </v-autocomplete>
+                </v-autocomplete> -->
+
+                <v-select
+                :items="servicios"
+                v-model="find"
+                label="Logo, pagina web, rótulo..."
+                item-text="name"
+                item-value="slug"
+                light
+                @change="go(item-value)"
+                ></v-select>
               </v-flex>
             </v-layout>
           </div>
@@ -53,6 +63,27 @@
     },
     data () {
       return {
+        servicios: [{name: 'Logotipo', slug: 'logo-empresa'},
+          {name: 'Logotipo, pack de identidad y animación', slug: 'imagen-corporativa'},
+          {name: 'Logotipo y sitio web', slug: 'logo-y-pagina-web'},
+          {name: 'Rediseño de logo', slug: 'rediseno-de-logo'},
+          {name: 'Sitio web profesional', slug: 'pagina-web'},
+          {name: 'Packaging', slug: 'packaging'},
+          {name: 'Ecommerce', slug: 'sitio-web-ecommerce'},
+          {name: 'App', slug: 'desarrollo-de-app'},
+          {name: 'Rótulo de local', slug: 'rotulo-local'},
+          {name: 'Diseño de uniformes', slug: 'rotulo-vestimenta-uniforme'},
+          {name: 'Vectorización de logotipo', slug: 'vectorizacion'},
+          {name: 'Diseño de furgoneta', slug: 'rotulo-furgoneta-camion'},
+          {name: 'Diseño de rótulo de coche', slug: 'rotulo-vehicular'},
+          {name: 'Diseño de banner', slug: 'rotulo-banner'},
+          {name: 'Diseño de dípticos', slug: 'diptico'},
+          {name: 'Diseño de flyer', slug: 'flyer'},
+          {name: 'Diseño de flyer frente y dorso', slug: 'flyer-dos-caras'},
+          {name: 'Diseño de tríptico', slug: 'triptico'},
+          {name: 'Diseño de catálogo', slug: 'catálogo'},
+          {name: 'Diseño de publicidad', slug: 'publicidad'},
+          {name: 'Diseño de redes sociales', slug: 'perfil-redes-sociales'}],
         find: '',
         addons: [
           'presencia-web',
@@ -100,11 +131,7 @@
       },
       /* TODO: */
       url () {
-        if (this.find === 'logo-y-pagina-web' || this.find === 'pagina-web') {
-          return this.$router.currentRoute.path + '/' + this.find
-        } else {
-          return this.$router.currentRoute.path + '/' + this.find
-        }
+        return this.$router.currentRoute.path + '/' + this.find
       }
     }
   }
@@ -235,13 +262,13 @@
  @media (max-width: 480px) {
     .v-carousel.main-carousel {
       min-height: auto;
-      height: 560px !important;
+      height: 670px !important;
     }
  }
   @media (max-width: 960px) {
 
     .v-carousel.main-carousel {
-        height: 600px;
+        height: 670px;
         min-height: auto;
     }
 
@@ -270,7 +297,7 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 50%;
+      width: 90%;
       margin: auto;
       margin-top: 100px;
     }
@@ -318,7 +345,7 @@
 
   @media (min-width: 960px) {
     .v-carousel.main-carousel {
-      height: 600px;
+      height: 670px;
       min-height: auto;
     }
 

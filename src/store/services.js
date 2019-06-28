@@ -29,7 +29,7 @@ export const state = () => ({
       ]
     },
     {
-      icon: '/icons/app_hover.svg',
+      icon: '/icons/app.svg',
       name: 'Web y App',
       layouts: [],
       carousel: [
@@ -82,7 +82,7 @@ export const state = () => ({
       ]
     },
     {
-      icon: '/icons/rotulo_hover.svg',
+      icon: '/icons/rotulo.svg',
       name: 'Rótulos',
       rows: [
         [
