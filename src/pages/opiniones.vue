@@ -529,7 +529,7 @@
           },
           {
             stars: 5,
-            logo: '/images/testimonies/generales/gesdupla-1',
+            logo: '/images/testimonies/generales/gesdupla-1.jpg',
             company: 'Gesdupla',
             description: '“Me gustó la agilidad, flexibilidad, servicio personalizado y gran capacidad de captar las ideas para el desarrollo del diseño. La relación atención/ servicio/ calidad/ precio es buena y razonable  ”'
           },
@@ -631,7 +631,7 @@
           },
           {
             stars: 5,
-            logo: '/images/testimonies/generales/m&p-1',
+            logo: '/images/testimonies/generales/m&p-1.jpg',
             company: 'M&P Inversiones de Capital',
             description: '“Desde el minuto 1 cumplieron con lo establecido y tanto mi socio como yo estamos muy contentos con el resultado. Por supuesto los tendremos en cuenta a la hora de ampliar la marca.  ”'
           },
@@ -782,7 +782,7 @@
             description: '“Ha sido una experiencia muy satisfactoria y efectiva llevada a cabo de forma muy rápida. ”'
           }, {
             stars: 5,
-            logo: '/images/testimonies/generales/Valkia-1',
+            logo: '/images/testimonies/generales/Valkia-1.jpg',
             company: 'Valkia',
             description: '“Estimado Sr. Rodríguez, ante todo permítame expresarle mi felicitación por el excelente trabajo realizado por su empresa en el diseño del trabajo del logo de ‘Valkia Comunicaciones’. Asimismo, le ruego que haga extensiva esta felicitación a las personas que han participado en el Proyecto. ”'
           }, {
@@ -797,7 +797,7 @@
             description: '“En relación a su solicitud, comentarle que no tengo ninguna queja por el trato recibido, todo lo contrario. En general estoy contento y satisfecho con todo. ”'
           }, {
             stars: 5,
-            logo: '/images/testimonies/generales/Villora-1',
+            logo: '/images/testimonies/generales/Villora-1.jpg',
             company: 'Villora Sound',
             description: '“Los diseños han estado muy bien y bastante rápidos. Atendieron a todas mis modificaciones y siempre la mejor atención. ”'
           }, {
