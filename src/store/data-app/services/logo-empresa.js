@@ -24,7 +24,7 @@ export const logoEmpresa = {
     }, {
       title: 'ATENCION PERSONALIZADA',
       description: 'Un profesional liderando tu proyecto a disposición siempre.',
-      icon: '/icons/atencion-personalizada-2'
+      icon: '/icons/atencion-personalizada-2.svg'
     }, {
       title: 'GARANTÍA DE CONFORMIDAD 100%',
       description: 'En caso de disconformidad, reintegramos tu dinero sin hacer preguntas',
@@ -224,15 +224,15 @@ export const logoEmpresa = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/Logo_01.png',
+      src: '/images/carousels/creative-process/1.png',
       alt: 'diseño de logo'
     },
     {
-      src: '/images/carousels/creative-process/271.png',
+      src: '/images/carousels/creative-process/2.png',
       alt: 'logo empresa'
     },
     {
-      src: '/images/carousels/creative-process/272.png',
+      src: '/images/carousels/creative-process/3.png',
       alt: 'diseño de logotipos'
     }
   ],

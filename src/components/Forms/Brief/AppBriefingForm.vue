@@ -5,14 +5,14 @@
         <h1 class="heading"> Datos Básicos </h1>
       </v-flex>
       <v-flex md8 xs12>
-        <label for="email">Correo electronico</label>
+        <label for="email">Correo electrónico laboral</label>
         <v-text-field name="email" id="email" v-model="formFields.email.value" v-validate="'required|email'" :error-messages="errors.collect('email')" box></v-text-field>
         <label for="names">Nombres</label>
         <v-text-field name="names" v-model="formFields.names.value" v-validate="'required'" :error-messages="errors.collect('names')" box></v-text-field>
         <label for="phone">Teléfono</label>
         <v-text-field name="phone" id="phone" v-model="formFields.phone.value" v-validate="'required'" :error-messages="errors.collect('phone')" box></v-text-field>
-        <label for="company">Nombre de la empresa</label>
-        <v-text-field name="company" v-model="formFields.company.value" v-validate="'required'" :error-messages="errors.collect('company')" box></v-text-field>
+        <label for="company">Nombre de tu empresa</label>
+        <v-text-field name="company" v-model="formFields.company.value" :error-messages="errors.collect('company')" box></v-text-field>
       </v-flex>
       <v-flex md12 xs12 class="my-3">
         <div style="height: 1px; background: grey"></div>

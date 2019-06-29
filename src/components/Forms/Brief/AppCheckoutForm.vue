@@ -250,27 +250,31 @@
     <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
       <v-card>
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
-          <p style="width: 100%; margin-bottom: 40px">PAGA SEGURO CON</p>
+          <p style="width: 100%; margin-bottom: 40px">ESCOGE TU MEDIO DE PAGO 100% SEGURO</p>
           <br>
           <br>
         </v-card-title>
         <v-layout row wrap>
-          <v-flex v-for="gatewayy in gateways" :key="gatewayy.id" @click="setGatewayInHover(gatewayy)"
+          <v-flex xs12 v-for="gatewayy in gateways" :key="gatewayy.id" @click="setGatewayInHover(gatewayy)"
           class="text-xs-center">
 
-            <v-img v-if="gatewayy.code ==='01'" src="/icons/paypal.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '01' }"/>
-
-            <v-img v-if="gatewayy.code ==='02'" src="/icons/tarjeta.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '02' }"/>
-
-            <v-img v-if="gatewayy.code ==='03'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '03' }"/>
+            <no-ssr v-if="gatewayy.code ==='01'">
+              <AppPaypal :gateway-id="gatewayy.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+            </no-ssr>
             
-            <v-img v-if="gatewayy.code ==='04'" src="/icons/transferencia.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '04' }"/>
+            <no-ssr v-if="gatewayy.code ==='02'">
+              <AppStripe v-if="gatewayy.code ==='02'" :gateway-id="gatewayy.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+            </no-ssr>
+            
+            <AppBankTransfer v-show="gatewayy.code ==='03'" label="Completar Pedido" :gateway-id="gatewayy.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
 
-            <v-img v-if="gatewayy.code ==='05'" src="/icons/safety.svg" style="margin: auto; width: 120px; cursor: pointer;" :class="{ 'hoverinmethod' : gateway.code === '05' }"/>
+            <AppBankTransfer v-show="gatewayy.code ==='04'" label="Completar Pedido" :gateway-id="gatewayy.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
+            
+            <AppSafetypay v-show="gatewayy.code ==='05'" label="Pagar Ahora" :filter="'online'" :gateway-id="gatewayy.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
             
           </v-flex>
         </v-layout>
-        <v-layout>
+        <!--<v-layout>
           <v-flex v-if="gateway">
             <div class="font-weight-medium pa-4">
               <p class="mb-0 font-weight-bold">Descripción:</p>
@@ -293,9 +297,9 @@
                 <AppBankTransfer v-show="gateway.code ==='04'" label="Completar Pedido" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
                 
                 <AppSafetypay v-show="gateway.code ==='05'" label="Pagar Ahora" :filter="'online'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
-                  <!--<v-flex md6 class="text-xs-center">
+                  <v-flex md6 class="text-xs-center">
                     <AppSafetypay label="Transferencia Bancaria Efectivo" :filter="'cash'" :gateway-id="gateway.id" :currency="{ iso: $store.state.countries.data.currency.iso, id: $store.state.countries.data.currency.id }" :amount="initialWithTaxs" :cart="cartObject" :coupon="coupon" />
-                  </v-flex>-->
+                  </v-flex>
               
               </v-flex>
             </div>
@@ -305,7 +309,7 @@
               <p class="text-xs-center font-weight-bold">Seleccione un metodo de pago</p>
             </div>
           </v-flex>
-        </v-layout>
+        </v-layout>-->
       </v-card>    
     </v-dialog>
     <!--<v-dialog v-model="chargePayMethods" persistent width="210">

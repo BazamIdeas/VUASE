@@ -3,10 +3,10 @@ export const presencia = {
   titleSEO: 'Diseño y desarrollo de páginas web',
   descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
   /* ** */
-  list: ['Diseño, maquetación, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
+  list: ['Diseño, maquetación, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electrónico, alojamiento de sitio web'],
   title: 'Presencia Web',
-  description: `Su página web ideal para brindar la introducción de su empresa en internet`,
-  shortDescription: `Su página web ideal para brindar la introducción de su empresa en internet.`,
+  description: `Tu página web ideal para brindar la introducción de su empresa en internet`,
+  shortDescription: `Tu página web ideal para brindar la introducción de su empresa en Internet.`,
   icon: '/icons/ecommerce.svg',
   addonService: true,
   whatWeOffer: [
@@ -166,15 +166,15 @@ export const presencia = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/web.png',
+      src: '/images/carousels/creative-process/1.png',
       alt: 'Diseño de sitios web'
     },
     {
-      src: '/images/carousels/creative-process/271.png',
+      src: '/images/carousels/creative-process/2.png',
       alt: 'creative-process-3'
     },
     {
-      src: '/images/carousels/creative-process/272.png',
+      src: '/images/carousels/creative-process/3.png',
       alt: 'creative-process-4'
     }
   ],

@@ -40,6 +40,9 @@
         </v-flex>-->
       </v-layout>
     </v-container>
+
+    <AppHeading v-show="limit === testimonies.length" class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
+    <AppServicesGrid v-show="limit === testimonies.length" color="#F29F01" class="mb-4 pt-0"/>
   </section>
 </template>
 
@@ -55,7 +58,11 @@
           var bottomOfWindow = scrollPosition + 600 >= offsetHeight
           // console.log(bottomOfWindow)
           if (bottomOfWindow) {
-            this.limit = this.limit + 5
+            if (this.limit !== this.testimonies.length && this.limit + 5 <= this.testimonies.length) {
+              this.limit = this.limit + 5
+            } else {
+              this.limit = this.testimonies.length
+            }
           }
         }
       }
@@ -83,7 +90,7 @@
             company: 'Hotel Aixo Suites',
             description: '“La atención de Liderlogo ha sido excelente, lo recomiendo.”'
           }, {
-            stars: 4.5,
+            stars: 4,
             logo: '/images/testimonies/home/grupo-hivasa.jpg',
             company: 'Grupo Hivasa',
             description: '“Mi experiencia ha sido muy buena en general, tiempo, costos y respuesta.”'
@@ -98,13 +105,13 @@
             company: 'Policía Dalaior',
             description: '“Nuestra experiencia con Liderlogo ha sido muy satisfactoria y profesional.”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/home/fauna-domestica.jpg',
             company: 'Fauna Doméstica',
             description: '“Profesionales al 100%, como siempre!”'
           },
           {
-            stars: 4.5,
+            stars: 4,
             logo: '/images/testimonies/home/finanpay.jpg',
             company: 'Finanpay',
             description: '“La atención recibida por parte de Liderlogo ha sido excelente. Hicieron lo suyo, nuestro proyecto, y están muy encima de ello.”'
@@ -114,7 +121,7 @@
             company: 'Rocabike',
             description: '“Para ser la primera vez que trabajo con Liderlogo y la experiencia ha resultado excelente.”'
           }, {
-            stars: 5,
+            stars: 3,
             logo: '/images/testimonies/home/terra-agro.jpg',
             company: 'Terra Agro',
             description: '“Trabajar con Liderlogo ha sido una experiencia muy buena.”'
@@ -134,7 +141,7 @@
             company: 'Compublot',
             description: '“Los diseños han tenido mucho éxito, era lo que esperábamos.”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/costaserveis-1.jpg',
             company: 'Costaserveis',
             description: '“Su trabajo ha sido muy bueno y las implentaciones aun mejores, estamos realmente conformes.”'
@@ -189,12 +196,12 @@
             company: 'Arquitectura Sin Límites',
             description: '“Nuestra experiencia fue excelente!”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/web/proyecta.jpg',
             company: 'Proyecta Telecom',
             description: '“La atención personalizada por parte del equipo ha sido muy buena, así como la implicación en el proyecto.”'
           }, {
-            stars: 5,
+            stars: 3,
             logo: '/images/testimonies/perfil-redes/mabisat.jpg',
             company: 'Mabisat',
             description: '“Nos ha gustado el trato personal cualificado, la rapidez de los diseños y la calidad de éstos.”'
@@ -229,7 +236,7 @@
             company: 'La Casa de Ketty',
             description: '“Es el segundo diseño que realizo con ustedes, los volvería a elejir para nuevos proyectos.”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/logo/amo.jpg',
             company: 'Amo',
             description: '“El proceso a sido muy rápido y con resultado esperado.”'
@@ -259,7 +266,7 @@
             company: 'Biokima',
             description: '“Perfecta experiencia, cumpliendo todas las expectativas.”'
           }, {
-            stars: 5,
+            stars: 3,
             logo: '/images/testimonies/rotulos/selpak - rotulo etiqueta.jpg',
             company: 'Selpak',
             description: 'Tengo el agrado de decir que es una empresa seria y responsable. Me gustó mucho el trabajo (diseño) y la amabilidad de todos sus departamentos que me tocó dialogar. Estoy muy convencido de que la empresa se interesa para poder entregar un buen servicio. Aprovecho de felicitar a sus trabajadores por la dedicación a la empresa.”'
@@ -282,7 +289,7 @@
             description: '“Todo el proceso ha sido realemente muy bueno, así como el diseño final. ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/23-Feb-1.jpg',
             company: 'Transportes 23 de febrero',
             description: '“El diseño está muy bien. Tendría en cuenta a la empresa para hacer un nuevo trabajo.  ”'
@@ -342,7 +349,7 @@
             description: '“El proceso a sido muy rápido y con resultado esperado.  ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/Andes-facility-1.jpg',
             company: 'Andes Facility',
             description: '“Son una empresa responsable y seria que mantiene una relación muy estrecha con el cliente demostrando interés en los proyectos. Ya ha sido cliente en varias oportunidades y me gusta trabajar con su empresa. ”'
@@ -408,7 +415,7 @@
             description: '“Todo ha quedado a nuestra satisfacción, y nos hemos sentido muy bien atendidos.    ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/chollo-play-1.jpg',
             company: 'Chollo Play',
             description: '“Estimados señores, estamos muy satisfechos por el proyecto, la profesionalidad tanto en el diseño como en el proceso ha sido muy correcta. No duden que para próximos. Gracias, de nuevo nos encanta nuestro logotipo.proyectos contaremos con ustedes.  ”'
@@ -450,7 +457,7 @@
             description: '“La atención fue muy buena y el resultado del diseño es el que esperaba.  ”'
           },
           {
-            stars: 5,
+            stars: 3,
             logo: '/images/testimonies/generales/divina-tu-1.jpg',
             company: 'DIVINA TU',
             description: '“De manera muy sencilla han logrado un muy lindo logo, muchas gracias.   ”'
@@ -468,7 +475,7 @@
             description: '“Tanto la atención, como el proceso como el diseño han sido de ensueño. Recomiendo totalmente el servicio.  ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/ecokly-1.jpg',
             company: 'Ecokly',
             description: '“A nivel servicio han sido muy amables, comprometidos, correctos, rápidos y preocupados. En cuanto al proceso han sido muy profesionales y el resultado ha sido el esperado.  ”'
@@ -522,13 +529,13 @@
             description: '“Estoy contenta con la atención recibida, he quedado conforme pero a razón precio lo veo un poco caro teniendo en cuenta la situación de crisis por la que atravesamos  ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/Garcia-y-choza-1.jpg',
             company: 'Garcia y Choza',
             description: '“Ha sido todo un acierto encontrar a Liderlogo, todo facilidades y una profesionalidad 100% recomendable, volveremos a trabajar juntos.  ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/gesdupla-1.jpg',
             company: 'Gesdupla',
             description: '“Me gustó la agilidad, flexibilidad, servicio personalizado y gran capacidad de captar las ideas para el desarrollo del diseño. La relación atención/ servicio/ calidad/ precio es buena y razonable  ”'
@@ -558,7 +565,7 @@
             description: '“Se cumplido el cometido. ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/hygge-1.jpg',
             company: 'Hygge Cocktail Club',
             description: '“Se cumplido el cometido. ”'
@@ -624,7 +631,7 @@
             description: '“Todo a salido muy bien. ”'
           },
           {
-            stars: 5,
+            stars: 3,
             logo: '/images/testimonies/generales/lucaser-1.jpg',
             company: 'LUCASER SOLUTIONS SL',
             description: '“Nos ha gustado mucho el diseño y además ha sido un proceso muy rápido por lo que estamos muy satisfechos.  ”'
@@ -660,7 +667,7 @@
             description: '“El resultado final fue lo esperado. ”'
           },
           {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/milcom-1.jpg',
             company: 'Milcom Informatics SL',
             description: '“Estamos muy contentos con la atención recibida, la capacidad de entendimiento y resolución de requerimientos específicos, la cantidad y variedad de opciones de diseño, la velocidad de respuesta, la calidad de nuestro trabajo y el coste del proyecto. Gracias. ”'
@@ -706,7 +713,7 @@
             company: 'One Seagate',
             description: '“Estuvo bien el proceso, trabajo satisfactorio. ”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/orgui-1.jpg',
             company: 'Orgui',
             description: '“Estoy muy conforme con el servicio, todo el proceso a sido realmente muy bueno. ”'
@@ -756,7 +763,7 @@
             company: 'Royal Homes',
             description: '“Ha sido muy buena experiencia, cumpliendo mis expectativas. ”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/Sanvort-1.jpg',
             company: 'SANVORT',
             description: '“Muy buena atencion, rapida y a pesar de que fuimos muy exigentes con las modificaciones solicitadas, siempre la atención fue excelente!!! Muchas gracias. ”'
@@ -766,7 +773,7 @@
             company: 'TCI',
             description: '“Altamente eficaces, respondieron a nuestras necesidades ”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/sistole-1.jpg',
             company: 'Sístole',
             description: '“Rescato mucho el feedback que tienen con el cliente, así como también la paciencia y tolerancia a la hora de atender a las especificaciones de diseño. El resultado ha sido óptimo, cumpliendo con lo solicitado. ”'
@@ -806,7 +813,7 @@
             company: 'Vital Herbolarios',
             description: '“Ha sido excelente trabajar con ustedes! ”'
           }, {
-            stars: 5,
+            stars: 4,
             logo: '/images/testimonies/generales/vivercitrus-1.jpg',
             company: 'VIVERCITRUS',
             description: '“Estoy muy conforme con el trabajo, la atención y el seguimiento. Ya es el segundo proyecto que hago y siempre pienso en su empresa cuando me surge uno nuevo. ”'

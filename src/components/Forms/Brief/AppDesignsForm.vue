@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap class="px-2 mb-5">
-    <v-flex md4 xs6 v-for="index in 20" :key="index" class="brief-design" @click="selectDesign(index)" :class="{ 'selected': brief.designs && brief.designs.includes(index), 'disabled': brief.designs && brief.designs.length == limit }">
+    <v-flex md4 xs6 v-for="index in 24" :key="index" class="brief-design" @click="selectDesign(index)" :class="{ 'selected': brief.designs && brief.designs.includes(index), 'disabled': brief.designs && brief.designs.length == limit }">
       <v-img :src="'/images/brief/designs/'+index+'.jpg'"></v-img>
     </v-flex>
   </v-layout>
@@ -14,6 +14,7 @@
       }
     },
     created () {
+      if (!document) return false
       document.documentElement.scrollTop = 0
     },
     computed: {

@@ -1,5 +1,7 @@
 <template>
-  <div id="paypal-button"></div>
+  <div style="margin: 10px 0">
+    <div id="paypal-button"></div>
+  </div>
 </template>
 
 <script>

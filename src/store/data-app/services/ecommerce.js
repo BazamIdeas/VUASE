@@ -143,15 +143,15 @@ export const ecommerce = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/web.png',
+      src: '/images/carousels/creative-process/1.png',
       alt: 'Diseño de sitios web'
     },
     {
-      src: '/images/carousels/creative-process/271.png',
+      src: '/images/carousels/creative-process/2.png',
       alt: 'Desarrollo de ecommerce'
     },
     {
-      src: '/images/carousels/creative-process/272.png',
+      src: '/images/carousels/creative-process/3.png',
       alt: 'Tienda online'
     }
   ],

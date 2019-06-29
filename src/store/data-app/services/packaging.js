@@ -137,15 +137,15 @@ export const rPackaging = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/etiqueta_1.png',
+      src: '/images/carousels/creative-process/1.png',
       alt: 'creative-process-1'
     },
     {
-      src: '/images/carousels/creative-process/271.png',
+      src: '/images/carousels/creative-process/2.png',
       alt: 'creative-process-3'
     },
     {
-      src: '/images/carousels/creative-process/272.png',
+      src: '/images/carousels/creative-process/3.png',
       alt: 'creative-process-4'
     }
   ],

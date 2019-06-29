@@ -326,8 +326,8 @@
           response: 'Si, el mismo equipo de trabajo atenderá todos las necesidades de diseño que se te presenten en un futuro, independientemente de ello todas nuestras entregas de proyectos te brindan total autonomía e independencia para editar o crear los diseños que necesites.'
         }],
         whatWeOffer: [{
-          title: 'LOGO, PAPELERÍA Y MERCHANDISING, 100% ORIGINAL',
-          description: 'Creaciones a medida, originales, únicas y llamativas.',
+          title: 'CREACIONES LLAMATIVAS',
+          description: 'Diseños a medida, originales y únicos.',
           icon: '/icons/logo-unico-original.svg'
         }, {
           title: 'PROPUESTAS ILIMITADAS',
@@ -340,15 +340,15 @@
         }, {
           title: 'ATENCION PERSONALIZADA',
           description: 'Un profesional liderando tu proyecto a disposición siempre.',
-          icon: '/icons/atencion-personalizada.svg'
+          icon: '/icons/atencion-personalizada-2.svg'
         }, {
           title: 'GARANTÍA DE CONFORMIDAD 100%',
           description: 'En caso de disconformidad, se reintegra el dinero sin hacer preguntas.',
           icon: '/icons/garantia-de-conformidad.svg'
         }, {
-          title: '+40 PROFESIONALES',
-          description: 'Tu proyecto en manos de expertos especializados',
-          icon: '/icons/equipo-interidisciplinario.svg'
+          title: 'EXPERIENCIA & ESPECIALIZACIÓN',
+          description: 'Tu proyecto en manos de profesionales expertos',
+          icon: '/icons/16-anios.svg'
         }]
       }
     },

@@ -1,13 +1,13 @@
 export const disenoApp = {
   /* SEO */
-  titleSEO: 'Desarrollo de aplicaciones moviles',
+  titleSEO: 'Desarrollo de aplicaciones móviles',
   descriptionSEO: 'Desarrollamos su aplicación móvil para ayudar a aumentar la presencia en línea de su empresa, tenemos cientos de clientes satisfechos ¡Comienza ahora!',
   /* ** */
   startWith: 'A PARTIR DE:',
-  list: ['Fidelice a sus clientes', 'Aumente la visibilidad de su empresa', 'Ofrezca otro canal de venta y contacto', 'Fortalezca su marca', 'Adáptese a posibles nuevos clientes. '],
-  title: 'Aplicación para Moviles',
-  description: `Desarrollar una aplicación móvil ayuda a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital.`,
-  shortDescription: `Desarrolle una aplicación móvil para ayudar a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital`,
+  list: ['Fideliza a tus clientes', 'Aumenta la visibilidad de tu empresa', 'Ofrece otro canal de venta y contacto', 'Fortalece tu marca', 'Adáptate a posibles nuevos clientes. '],
+  title: 'Aplicación para Móviles',
+  description: `Desarrollar una aplicación móvil ayuda a aumentar la presencia en línea de tu empresa y conectarse con los usuarios a través de una nueva plataforma digital.`,
+  shortDescription: `Desarrolla una aplicación móvil para ayudar a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital`,
   icon: '/icons/app.svg',
   whatWeOffer: [
     {
@@ -92,15 +92,15 @@ export const disenoApp = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/web.png',
+      src: '/images/carousels/creative-process/1.png',
       alt: 'desarrollo de aplicacion'
     },
     {
-      src: '/images/carousels/creative-process/271.png',
+      src: '/images/carousels/creative-process/2.png',
       alt: 'desarrollo de app'
     },
     {
-      src: '/images/carousels/creative-process/272.png',
+      src: '/images/carousels/creative-process/3.png',
       alt: 'desarrollo de app'
     }
   ],

@@ -13,9 +13,7 @@
       @closed="closed"
       @canceled="canceled"
     ></vue-stripe-checkout>
-    <v-btn id="stripe-button" @click="checkout" color="#ffc439" class="elevation-0"> 
-      <span style="color: #001e31; font-weight: 600 !important;">Pagar Ahora</span>  
-    </v-btn>
+    <img @click="checkout" :src="'/icons/stripe.jpg'" width="200px" style="margin: 20px 0; cursor: pointer">
   </div>
 </template>
 

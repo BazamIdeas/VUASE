@@ -1,8 +1,6 @@
 <template>
   <div>
-    <v-btn @click="checkout" color="#ffc439" id="safetypay-button" class="elevation-0">
-      <span style="color: #001e31; font-weight: 600 !important;">{{label}}</span>  
-    </v-btn>
+    <img @click="checkout" :src="'/icons/bank.png'" width="200px" style="margin: 0px 0; cursor: pointer">
   </div>
 </template>
 

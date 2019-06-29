@@ -26,6 +26,9 @@
         </v-flex>
       </v-layout>
     </v-container>
+
+    <!--<AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
+    <AppServicesGrid color="#F29F01" class="mb-4 pt-0"/>-->
   </section>
 </template>
 

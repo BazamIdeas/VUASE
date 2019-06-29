@@ -324,15 +324,15 @@ export const imagenCorporativa = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/imagen-corporativa.png',
+      src: '/images/carousels/creative-process/1.png',
       alt: 'Brief de diseño de imagen corporativa'
     },
     {
-      src: '/images/carousels/creative-process/271.png',
+      src: '/images/carousels/creative-process/2.png',
       alt: 'Diseños de imagen corporativa'
     },
     {
-      src: '/images/carousels/creative-process/272.png',
+      src: '/images/carousels/creative-process/3.png',
       alt: 'Entrega de imagen corporativa'
     }
   ],
