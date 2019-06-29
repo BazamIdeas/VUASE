@@ -20,7 +20,7 @@
             <p class="caption" style="text-align: justify; color: #666666;" v-if="!subServices.length">
               {{ service.dataService.description }} {{ brief.service.slug == "perfil-redes-sociales" ? "(" + brief.service.quantity + ") redes sociales" : "" }}
             </p>
-            <v-layout row wrap v-if="subServices">
+            <!--<v-layout row wrap v-if="subServices">
               <v-flex md11>
                 <v-layout row wrap v-for="sub in subServices" :key="sub.id">
                   <v-flex md12>
@@ -28,7 +28,7 @@
                   </v-flex>
                 </v-layout>
               </v-flex>
-            </v-layout>
+            </v-layout>-->
             <v-layout row wrap v-if="stationery">
               <v-flex md11>
                 <v-layout row wrap v-for="sub in stationery" :key="sub.id">
@@ -234,7 +234,7 @@
     <v-flex md12 xs12 class="my-3">
       <div style="height: 1px;"></div>
     </v-flex>
-    <v-flex md7>
+    <!--<v-flex md7>
       <v-layout row wrap>
         <v-flex md5 xs12>
           <v-subheader class="subheading font-weight-bold">Cupón de descuento:</v-subheader>
@@ -246,7 +246,7 @@
           <v-btn @click="validateCoupon" color="ma-0" :class="{ 'primary': coupon === null, 'success': coupon, 'warning': coupon === false }"  large style="margin-top: 3px !important">Validar</v-btn>
         </v-flex>
       </v-layout>
-    </v-flex>
+    </v-flex>-->
     <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
       <v-card>
         <v-card-title class="title font-weight-bold text-xs-center pb-0">

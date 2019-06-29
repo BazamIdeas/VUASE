@@ -15,7 +15,7 @@
               <v-flex class="my-0">
                 <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
                 <p class="text-xs-center caption" style="font-weight: 400;">
-                  {{portfolio.service.name}} - {{portfolio.location.name}}
+                  {{portfolio.service.name}}
                 </p>
               </v-flex>
             </v-card>
@@ -91,7 +91,21 @@
       }
     },
     computed: {
-      portfolios () { return this.$store.state.portfolios.list }
+      portfolios () {
+        if (this.$store.state.portfolios.list) {
+          return this.$store.state.portfolios.list.filter(function (e) {
+            return ![
+              'Alquimia Expediciones - Tours y recorridos de montaña',
+              'Corpeluva - Corporación educativa',
+              'Geoit - Consultaría de Negocios geográficos',
+              'Maremma - Heladería artesanal y cafetería.',
+              'Sergio Hedrera - Fotógrafo',
+              'Team Plus Interiorismo - Interiorismo Reformas y diseño de interiores'
+            ].includes(e.name)
+          })
+        }
+        return false
+      }
     }
   }
 </script>
