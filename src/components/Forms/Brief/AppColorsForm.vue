@@ -63,7 +63,9 @@
       }
     },
     created () {
-      document.documentElement.scrollTop = 0
+      if (process.client) {
+        document.documentElement.scrollTop = 0
+      }
     },
     computed: {
       brief () { return this.$store.state.brief.data }

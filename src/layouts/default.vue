@@ -39,7 +39,9 @@
           if (navigator.userAgent.indexOf('WebKit') !== -1) {
             document.body.scrollTop = 0
           }
-          document.documentElement.scrollTop = 0
+          if (process.client) {
+            document.documentElement.scrollTop = 0
+          }
         }
       }
     },

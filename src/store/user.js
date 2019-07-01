@@ -80,7 +80,7 @@ export const actions = {
         let comments = sketch.data.comments.map(x => {
           return {
             id: x.id,
-            attachment_uuid: 'http://api.liderlogos.com/v1/comments/attachment/' + x.attachment_uuid || false,
+            attachment_uuid: 'https://api.liderlogo.com/v1/comments/attachment/' + x.attachment_uuid || false,
             description: x.description,
             type: x.type
             // date: x.date
@@ -95,7 +95,7 @@ export const actions = {
           recommended: sketch.data.recommended,
           inks: sketch.data.inks,
           services: sketch.data.services,
-          files: sketch.data.files.map(x => 'http://api.liderlogos.com/v1/sketchs-files/attachment/' + x.uuid),
+          files: sketch.data.files.map(x => 'https://api.liderlogo.com/v1/sketchs-files/attachment/' + x.uuid),
           comments: comments
         }
 

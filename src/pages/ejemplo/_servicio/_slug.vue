@@ -140,7 +140,7 @@
     },
     data () {
       return {
-        urlHosting: 'http://api.liderlogos.com/v1/images/slug/'
+        urlHosting: 'https://api.liderlogo.com/v1/images/slug/'
       }
     },
     head () {

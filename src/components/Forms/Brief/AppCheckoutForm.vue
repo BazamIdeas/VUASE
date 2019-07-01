@@ -339,8 +339,9 @@
       this.gateway = this.gateways[0]
     },
     mounted () {
-      if (!window.document) return
-      document.documentElement.scrollTop = 0
+      if (process.client) {
+        document.documentElement.scrollTop = 0
+      }
     },
     watch: {
       chargePayMethods (val) {
