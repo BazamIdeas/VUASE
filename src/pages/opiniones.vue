@@ -217,7 +217,7 @@
             description: '“Magnifica experiencia, super recomendables y espero hacer muchos proyectos con ustedes.”'
           }, {
             stars: 5,
-            logo: '/images/testimonies/general/citta-cafe-1.jpg',
+            logo: '/images/testimonies/generales/citta-cafe-1.jpg',
             company: 'Citta Café',
             description: '“La imagen cumplió con las características que amerita nuestro negocio y superó nuestras expectativas.”'
           }, {
