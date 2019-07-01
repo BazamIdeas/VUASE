@@ -112,7 +112,7 @@
       var thisV = this
       setTimeout(() => {
         thisV.sliderHeight = thisV.$refs.creativeProcessBody[0].clientHeight + 20
-      }, 2000)
+      }, 4000)
     },
     props: {
       steps: {
