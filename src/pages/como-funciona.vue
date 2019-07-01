@@ -26,7 +26,7 @@
         </v-flex>
         <v-flex xs12 md2>
             <div :class="{ 'step-1': active === 1, 'step-2': active === 2, 'step-3': active === 3 }" class=" title-step start-button body-2 text-xs-center font-weight-bold">
-                <v-btn class="mb-0" color="" flat large> <span style="font-size: 18px; color: white;">COMENZAR</span> </v-btn>
+                <v-btn class="mb-0" @click="$router.push('/nuestros-servicios')" color="" flat large> <span style="font-size: 18px; color: white;">COMENZAR</span> </v-btn>
             </div>
         </v-flex>
       </v-layout>
