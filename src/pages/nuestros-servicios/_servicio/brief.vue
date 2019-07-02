@@ -45,7 +45,7 @@
         </v-flex>
         <v-flex xs6 style="position: relative">
           <v-btn :href="'tel:'+countryData.phone" block large class="elevation-0" style="margin: 0 !important; border-radius: 0px !important">
-            <v-icon>fa-phone-volume</v-icon> Llamadas
+            <v-icon>fa-phone-volume</v-icon> Llámanos
           </v-btn>
         </v-flex>
         <v-flex xs6 style="position: relative">
