@@ -7,7 +7,7 @@
         </v-flex>
         <style>
           .creative-process-carousel .v-carousel {
-            height: {{ sliderHeight }}px;
+            height: {{ sliderHeight }}px !important;
           }
         </style>
         <v-flex xs12 md8 class="creative-process-carousel mt-2">
@@ -111,7 +111,11 @@
     mounted () {
       var thisV = this
       setTimeout(() => {
-        thisV.sliderHeight = thisV.$refs.creativeProcessBody[0].clientHeight + 20
+        let height = thisV.$refs.creativeProcessBody[0].clientHeight
+
+        if (height !== undefined && height > 250) {
+          thisV.sliderHeight = height
+        }
       }, 4000)
     },
     props: {

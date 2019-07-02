@@ -9,7 +9,7 @@
         <div class="slider slider--initialised" style="position: relative;">
         </div>
         <div class="slider-field__markers">
-          <span v-for="value in values" @click="setStyle(attr.name, value, index, $event)" class="slider-field__markers__marker" :class="{ 'selected': brief.styles[attr.name] ? value === brief.styles[attr.name] : value === attr.default }"></span>
+          <span v-for="value in values" :key="value" @click="setStyle(attr.name, value, index, $event)" class="slider-field__markers__marker" :class="{ 'selected': brief.styles[attr.name] ? value === brief.styles[attr.name] : value === attr.default }"></span>
         </div>
       </div>
     </div>
@@ -37,6 +37,10 @@
         document.documentElement.scrollTop = 0
       }
     },
+    mounted () {
+      var brief = this.$storage.get('brief')
+      this.$emit('changed', Object.keys(brief.styles).length)
+    },
     computed: {
       brief () { return this.$store.state.brief.data }
     },
@@ -45,6 +49,7 @@
         var brief = this.$storage.get('brief')
         brief.styles[name] = v
         await this.$store.dispatch('brief/setData', brief)
+        this.$emit('changed', true)
       },
       dataActiveStyle (event) {
         event.currentTarget.setAttribute('data-active', event.currentTarget.getAttribute('data-active') === 'false' ? 'true' : 'false')
@@ -170,5 +175,12 @@
     top: -10px;
     opacity: 1;
     transition: all 0.2s;
+  }
+
+  @media (min-width: 240px) and (max-width: 800px) {
+    .slider-style {
+      margin-bottom: 60px;
+      padding: 0px 0%;
+    }
   }
 </style>

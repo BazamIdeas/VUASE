@@ -247,7 +247,7 @@
         </v-flex>
       </v-layout>
     </v-flex>-->
-    <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(gateways.length * 200) + 'px'" :width="(gateways.length * 200) + 'px'">
+    <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(400) + 'px'" :width="(400) + 'px'">
       <v-card>
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
           <p style="width: 100%; margin-bottom: 40px">ESCOGE TU MEDIO DE PAGO 100% SEGURO</p>

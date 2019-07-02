@@ -10,13 +10,17 @@
   export default {
     data () {
       return {
-        limit: 6
+        limit: 100
       }
     },
     created () {
       if (process.client) {
         document.documentElement.scrollTop = 0
       }
+    },
+    mounted () {
+      var brief = this.$storage.get('brief')
+      this.$emit('changed', brief.designs.length)
     },
     computed: {
       brief () { return this.$store.state.brief.data }
@@ -32,6 +36,7 @@
           }
         }
         await this.$store.dispatch('brief/setData', brief)
+        this.$emit('changed', true)
       }
     }
   }

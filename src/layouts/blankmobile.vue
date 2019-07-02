@@ -1,20 +1,14 @@
 <template>
   <v-app>
     <v-content>
-      <AppHeaderBrief/>
       <nuxt/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-  import AppHeaderBrief from '@/components/AppHeaderBrief.vue'
-
   export default {
-    scrollToTop: true,
-    components: {
-      AppHeaderBrief
-    }
+    scrollToTop: true
   }
 </script>
 

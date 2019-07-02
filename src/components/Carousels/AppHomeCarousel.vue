@@ -107,7 +107,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 700px;
+      min-height: 750px;
     }
 
     .theme2 .layers-container {

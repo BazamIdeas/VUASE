@@ -262,13 +262,13 @@
  @media (max-width: 480px) {
     .v-carousel.main-carousel {
       min-height: auto;
-      height: 670px !important;
+      height: 700px !important;
     }
  }
   @media (max-width: 960px) {
 
     .v-carousel.main-carousel {
-        height: 670px;
+        height: 700px;
         min-height: auto;
     }
 

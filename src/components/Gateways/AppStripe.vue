@@ -8,6 +8,7 @@
       :currency="currency.iso"
       :amount="amount * 100"
       :allow-remember-me="false"
+      locale="es"
       @done="done"
       @opened="opened"
       @closed="closed"

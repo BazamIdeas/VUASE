@@ -67,6 +67,10 @@
         document.documentElement.scrollTop = 0
       }
     },
+    mounted () {
+      var brief = this.$storage.get('brief')
+      this.$emit('changed', brief.colors.length)
+    },
     computed: {
       brief () { return this.$store.state.brief.data }
     },
@@ -81,6 +85,7 @@
           }
         }
         await this.$store.dispatch('brief/setData', brief)
+        this.$emit('changed', true)
       },
       setCustomColors (event) {
         if (this.timer) {
@@ -94,6 +99,7 @@
           context.$storage.set('brief', brief)
           await context.$store.dispatch('brief/setData', brief)
         }, 300)
+        this.$emit('changed', true)
       }
     }
   }
