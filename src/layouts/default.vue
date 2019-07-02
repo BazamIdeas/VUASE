@@ -18,6 +18,20 @@
           </v-flex>
         </v-layout>
       </v-container>
+      <v-toolbar class="brief-bottom-toolbar hidden-md-and-up" fixed style="z-index: 40000000; top: inherit;bottom: 0;">
+        <v-layout row wrap>
+          <v-flex xs6 style="position: relative">
+            <v-btn :href="'tel:'+countryData.phone" block large class="elevation-0" style="margin: 0 !important; border-radius: 0px !important">
+              <v-icon>fa-phone-volume</v-icon> Llámanos
+            </v-btn>
+          </v-flex>
+          <v-flex xs6 style="position: relative">
+            <v-btn color="green darken-3" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta" block large class="elevation-0 white--text" style="margin: 0 !important; border-radius: 0px !important">
+              <v-icon>fab fa-whatsapp</v-icon>&nbsp; Whatsapp
+            </v-btn>
+          </v-flex>
+        </v-layout>
+      </v-toolbar>
     </v-content>
   </v-app>
 </template>
@@ -107,6 +121,9 @@
         return false
       }
     },
+    computed: {
+      countryData () { return this.$store.state.countries.data }
+    },
     components: {
       AppHeader,
       AppFooter,
@@ -187,4 +204,19 @@
     z-index: 1000;
     bottom: 0;
   }
+
+  .brief-bottom-toolbar .v-toolbar__content {
+    padding: 0 !important;
+  }
+
+  @media (min-width: 240px) and (max-width: 960px) {
+    .brief-bottom-toolbar .v-toolbar__content {
+      height: 44px !important;
+    }
+
+    section.brief {
+      margin-bottom: 80px;
+    }
+  }
 </style>
+
