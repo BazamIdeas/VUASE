@@ -40,6 +40,7 @@
                 item-value="slug"
                 light
                 @change="go(item-value)"
+                solo flat
                 ></v-select>
               </v-flex>
             </v-layout>

@@ -1,35 +1,66 @@
 <template>
 	<v-flex xs12>
-    <v-container fluid grid-list-md class="mt-5 pb-0">
+    <v-container fluid grid-list-lg class="mt-2 pb-0">
       <v-flex xs12 class="mb-5">
         <AppHeading :number="'2'" :size="'display-1'" :title="title" />
       </v-flex>
-      <v-expansion-panel class="expansion-panel">
-        <!-- SHOW ONLY 4 -->
-        <v-expansion-panel-content v-if="showLess"
-          v-for="(item,i) in list.slice(0, 3)"
-          :key="i"
-          class="pt-1 pb-1"
-        >
-          <div slot="header" class="font-weight-bold">{{item.question}}</div>
-          <v-card class="response">
-            <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
-          </v-card>
-        </v-expansion-panel-content>
+      <v-layout row>
+        <v-flex xs12 md6 class="mb-5">
+          <v-expansion-panel class="expansion-panel">
+            <!-- SHOW ONLY 4 -->
+            <!--<v-expansion-panel-content v-if="showLess"
+              v-for="(item,i) in list.slice(0, 3)"
+              :key="i"
+              class="pt-1 pb-1"
+            >
+              <div slot="header" class="font-weight-bold">{{item.question}}</div>
+              <v-card class="response">
+                <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
+              </v-card>
+            </v-expansion-panel-content>-->
 
-        <!-- SHOW ALL -->
-        <v-expansion-panel-content v-if="!showLess"
-          v-for="(item,i) in list"
-          :key="i"
-          class="pt-1 pb-1"
-        >
-          <div slot="header" class="font-weight-bold">{{item.question}}</div>
-          <v-card class="response">
-            <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
-          </v-card>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-layout row d-flex justify-center v-show="list.lenght > 3">
+            <!-- SHOW ALL -->
+            <v-expansion-panel-content
+              v-for="(item,i) in list.slice(0, Math.ceil(list.length / 2))"
+              :key="i"
+              class="pt-1 pb-1"
+            >
+              <div slot="header" class="font-weight-bold">{{item.question}}</div>
+              <v-card class="response">
+                <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-flex>
+        <v-flex xs12 md6 class="mb-5">
+          <v-expansion-panel class="expansion-panel">
+            <!-- SHOW ONLY 4 -->
+            <!--<v-expansion-panel-content v-if="showLess"
+              v-for="(item,i) in list.slice(0, 3)"
+              :key="i"
+              class="pt-1 pb-1"
+            >
+              <div slot="header" class="font-weight-bold">{{item.question}}</div>
+              <v-card class="response">
+                <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
+              </v-card>
+            </v-expansion-panel-content>-->
+
+            <!-- SHOW ALL -->
+            <v-expansion-panel-content
+              v-for="(item,i) in list.slice(Math.ceil(list.length / 2))"
+              :key="i"
+              class="pt-1 pb-1"
+            >
+              <div slot="header" class="font-weight-bold">{{item.question}}</div>
+              <v-card class="response">
+                <v-card-text class="font-weight-medium" v-html="item.response"></v-card-text>
+              </v-card>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-flex>
+      </v-layout>
+      <!--<v-layout row d-flex justify-center v-show="list.lenght > 3">
         <v-flex xs5 sm2>
           <v-btn flat class="btn-simple" @click="showLess = !showLess">
             VER  
@@ -37,7 +68,7 @@
             <span v-if="!showLess" class="ml-1">MENOS</span>
           </v-btn>
         </v-flex>
-      </v-layout>
+      </v-layout>-->
     </v-container>
   </v-flex>
 </template>

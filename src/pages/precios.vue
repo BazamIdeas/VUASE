@@ -7,7 +7,7 @@
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
               <h2 class="font-weight-bold mb-2 text-xs-center" >Selecciona tu servicio</h2>
-              <v-select :items="services" @change="getBySlug" label="Seleccionar" v-model="service" solo></v-select>
+              <v-select :items="services" @change="getBySlug" label="Seleccionar" v-model="service" solo flat></v-select>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
               <div style="text-align: center">

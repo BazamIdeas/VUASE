@@ -67,6 +67,8 @@
             :error-messages="errors.collect('select')"
             data-vv-name="select"
             required
+            solo
+            flat
           ></v-select>
           </v-flex>
         </v-layout>
@@ -80,15 +82,15 @@
         </v-flex>
       </v-layout>
 
-      <v-flex xs12 md12 order-md1>
+      <v-flex xs12 md12 order-md1 class="text-xs-right">
         <v-btn type="submit" class="elevation-0 white--text" style="background-color: #F7941D;">enviar</v-btn>
       </v-flex>
       
-      <v-flex order-md2 xs12 md12 v-if="countryData">
+      <!--<v-flex order-md2 xs12 md12 v-if="countryData">
         <span>O puedes llamarnos al: </span>
         <a style="color:#1976d2" target="_new" :href="'tel:'+ countryData.phone"> +{{countryData.phone}}</a> 
         <span> o escribirnos vía <a style="color:#1976d2" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta">WhatsApp</a> </span>
-      </v-flex> 
+      </v-flex>-->
     </v-layout>
   </v-form>
 </template>

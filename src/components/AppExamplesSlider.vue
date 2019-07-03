@@ -21,6 +21,11 @@
       </v-flex>
       <img :alt="alt" src="/icons/puntos_de_fondo.svg" class="puntos" v-if="puntos">
     </v-layout>
+    <!--<v-layout row class="ma-0 hidden-md-and-up" style="position:relative">
+      <v-flex xs12 class="text-xs-right">
+        <img src="/images/icons/swipe-left.png" alt="swipe-left" width="40px" style="margin: 20px 20px 0">
+      </v-flex>
+    </v-layout>-->
   </v-container>
 </template>
 
@@ -32,7 +37,7 @@
         type: Array
       },
       initScroll: {
-        default: 0
+        default: 40
       },
       itemWidth: {
         default: '300px'
@@ -49,12 +54,11 @@
       hovered: {
         default: false
       },
-      alt: String,
-      hover: false
+      alt: String
     },
     mounted () {
-      // let el = this.$refs.examplesSliderScrollable
-      // el.scrollLeft += this.initScroll
+      let el = this.$refs.examplesSliderScrollable
+      el.scrollLeft += this.initScroll
     },
     methods: {
       scroll (event) {

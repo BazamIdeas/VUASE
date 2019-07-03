@@ -30,10 +30,10 @@
       <v-spacer class="hidden-sm-and-down"></v-spacer>
       <v-layout row wrap class="hidden-sm-and-down">
         <v-flex xs12 offset-md7 md5 style="position: relative" class="px-4">
-          <v-btn color="blue-grey darken-1" v-if="!changed && stepData.next && stepData.number < 4" @click="nextStep(stepData.next)" block class="elevation-1 white--text">Omitir</v-btn>
-          <v-btn color="primary" v-if="changed && stepData.next && stepData.number < 4" @click="nextStep(stepData.next)" block class="elevation-1">Continuar</v-btn>
-          <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true" block class="elevation-1">Continuar</v-btn>
-          <v-btn color="primary" v-if="stepData.number == 5" @click="setPay" block class="elevation-1">Pagar</v-btn>
+          <v-btn color="blue-grey darken-1" v-if="!changed && stepData.next && stepData.number < 4" @click="nextStep(stepData.next)" block class="elevation-0 white--text">Omitir</v-btn>
+          <v-btn color="primary" v-if="changed && stepData.next && stepData.number < 4" @click="nextStep(stepData.next)" block class="elevation-0">Continuar</v-btn>
+          <v-btn color="primary" v-if="stepData.number == 4" @click="submit = true" block class="elevation-0">Continuar</v-btn>
+          <v-btn color="primary" v-if="stepData.number == 5" @click="setPay" block class="elevation-0">Pagar</v-btn>
         </v-flex>
       </v-layout>
       <v-layout row wrap class="hidden-md-and-up">

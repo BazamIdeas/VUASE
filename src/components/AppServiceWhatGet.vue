@@ -29,11 +29,11 @@
                 
 
                 <v-flex xs12 v-if="item.description && !justOne" class="text-xs-justify" :class="{'mb-4': key !== column.length - 1}">
-                  <span class="caption font-weight-medium" v-html="item.description"></span>
+                  <span class="body-1 font-weight-medium" v-html="item.description"></span>
                 </v-flex>
                 <v-flex xs12 v-if="item.items && item.items.length" class="service-box-list"  :class="{'mb-4': key !== column.length - 1}">
                   <ul>
-                    <li v-for="(checkItem, i) in item.items" :key="i" v-html="checkItem" :class="{'subheading ml-3 mb-4': justOne, 'caption mb-2': !justOne}" class="font-weight-medium"></li>
+                    <li v-for="(checkItem, i) in item.items" :key="i" v-html="checkItem" :class="{'subheading ml-3 mb-4': justOne, 'body-1 mb-2': !justOne}" class="font-weight-medium"></li>
                   </ul>
                 </v-flex>
               </v-flex>

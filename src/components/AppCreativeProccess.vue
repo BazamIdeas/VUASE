@@ -112,8 +112,9 @@
       var thisV = this
       setTimeout(() => {
         let height = thisV.$refs.creativeProcessBody[0].clientHeight
+        console.log(height)
 
-        if (height !== undefined && height > 250) {
+        if (height !== undefined && height > 150) {
           thisV.sliderHeight = height
         }
       }, 4000)

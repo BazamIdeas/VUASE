@@ -6,13 +6,13 @@
       </v-flex>
       <v-flex md8 xs12>
         <label for="email">Correo electrónico laboral</label>
-        <v-text-field name="email" id="email" v-model="formFields.email.value" v-validate="'required|email'" :error-messages="errors.collect('email')" box></v-text-field>
+        <v-text-field name="email" id="email" v-model="formFields.email.value" v-validate="'required|email'" :error-messages="errors.collect('email')" solo flat></v-text-field>
         <label for="names">Nombres</label>
-        <v-text-field name="names" v-model="formFields.names.value" v-validate="'required'" :error-messages="errors.collect('names')" box></v-text-field>
+        <v-text-field name="names" v-model="formFields.names.value" v-validate="'required'" :error-messages="errors.collect('names')" solo flat></v-text-field>
         <label for="phone">Teléfono</label>
-        <v-text-field name="phone" id="phone" v-model="formFields.phone.value" v-validate="'required'" :error-messages="errors.collect('phone')" box></v-text-field>
+        <v-text-field name="phone" id="phone" v-model="formFields.phone.value" v-validate="'required'" :error-messages="errors.collect('phone')" solo flat></v-text-field>
         <label for="company">Nombre de tu empresa</label>
-        <v-text-field name="company" v-model="formFields.company.value" :error-messages="errors.collect('company')" box></v-text-field>
+        <v-text-field name="company" v-model="formFields.company.value" :error-messages="errors.collect('company')" solo flat></v-text-field>
       </v-flex>
       <v-flex md12 xs12 class="my-3">
         <div style="height: 1px; background: grey"></div>
@@ -23,8 +23,8 @@
       <v-flex md8 xs12>
         <template v-for="field in form">
           <label :for="field.name">{{ field.label }}</label>
-          <v-text-field :key="field.name" v-if="field.type === 'text' && formFields[field.name]" :ref="field.name" :id="field.name" v-model="formFields[field.name].value" box></v-text-field>
-          <v-textarea v-else-if="field.type === 'textarea' && formFields[field.name]" :ref="field.name" v-model="formFields[field.name].value" :id="field.name" box></v-textarea>
+          <v-text-field :key="field.name" v-if="field.type === 'text' && formFields[field.name]" :ref="field.name" :id="field.name" v-model="formFields[field.name].value" solo flat></v-text-field>
+          <v-textarea v-else-if="field.type === 'textarea' && formFields[field.name]" :ref="field.name" v-model="formFields[field.name].value" :id="field.name" solo flat></v-textarea>
           <div v-else-if="field.type === 'checkbox' && formFields[field.name]" class="my-3">
             <v-layout row wrap>
               <v-flex md6 v-for="option in field.options" :key="option">
@@ -35,23 +35,23 @@
           <div v-else-if="field.type === 'number' && formFields[field.name]" class="my-3">
             <v-layout row wrap>  
               <v-flex md12>
-                <v-text-field box v-model="formFields[field.name].value" :ref="field.name" :id="field.name" type="number"  min="0" :hint="formFields[field.name].hint"></v-text-field>
+                <v-text-field solo flat v-model="formFields[field.name].value" :ref="field.name" :id="field.name" type="number"  min="0" :hint="formFields[field.name].hint"></v-text-field>
               </v-flex>
             </v-layout>
           </div>
           <div v-else-if="field.type === 'select_tags' && formFields[field.name]" class="my-3">
             <v-layout row wrap>  
               <v-flex md12>
-                <v-select :items="field.options" v-model="formFields[field.name].value" multiple chips hint="Seleccione" persistent-hint></v-select>
+                <v-select :items="field.options" v-model="formFields[field.name].value" multiple chips hint="Seleccione" persistent-hint solo flat></v-select>
               </v-flex>
             </v-layout>
           </div>
           <div v-else-if="field.type === 'file' && formFields[field.name]">
             <v-layout row wrap>
               <v-flex md12>
-                <v-input prepend-icon="folder_open" :append-icon="formFields[field.name] ? 'close' : ''" @click:append="clearFile(field.name)" class="file my-3">
+                <v-input prepend-icon="folder_open" :append-icon="formFields[field.name] ? 'close' : ''" @click:append="clearFile(field.name)" class="file my-3" solo flat>
                   <input type="file" :ref="field.name" :id="field.name" :name="field.name" @change="setFile(field.name, $event)" style="display: none;">
-                  <p style="margin-bottom: 0; padding: 2px 16px; font-weight: 500; color: #737373;border: 2px solid #929292; border-radius: 5px; cursor: pointer">
+                  <p style="margin-bottom: 0; padding: 2px 16px; font-weight: 500; color: #737373;border: 2px solid #dedede; border-radius: 2px; cursor: pointer">
                     <label :for="field.name" v-if="formFields[field.name].value === null" style="cursor: pointer">Seleccionar Archivo </label>
                     <label :for="field.name" v-if="formFields[field.name].value !== null" style="cursor: pointer">{{ formFields[field.name].value.name }}</label>
                   </p>
@@ -179,7 +179,7 @@ label {
     font-weight: 500;
 }
 
-.v-text-field--box input, .v-text-field--outline input {
+.v-text-field--solo flat input, .v-text-field--outline input {
     margin-top: 11px;
 }
 </style>

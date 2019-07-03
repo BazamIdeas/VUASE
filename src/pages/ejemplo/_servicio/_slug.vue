@@ -8,7 +8,7 @@
             :interval="'3000'" 
             hide-controls hide-delimiters 
             style="height: 100%; width:100%;">
-            <v-carousel-item v-for="(item, i) in portfolio.images" :key="i"   :transition="'slide-x-transition'">
+            <v-carousel-item v-for="(item, i) in portfolio.images.slice(1)" :key="i"   :transition="'slide-x-transition'">
               <svg class="img-cuadrada-ejemplos" viewBox="0 0 100 100 " role="img" :aria-label="portfolio.name + ' Imagen'" :alt="portfolio.name + ' Imagen'" :style="'background: url(' + urlHosting + item.slug +')'"></svg>
             </v-carousel-item>
           </v-carousel>
@@ -41,12 +41,12 @@
               <v-chip class="cursor-pointer">
               {{portfolio.activity.name}}
               </v-chip>
-              <br>
+              <!--<br>
               <span class="mr-1 chip-title">País:</span>
-              <!-- @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.location.country.slug)" -->
+              @click="$router.push('/ejemplos/'+ portfolio.service.slug + '/' + portfolio.activity.sector.slug + '/' + portfolio.location.country.slug)"
               <v-chip class="cursor-pointer">
               {{portfolio.location.name}}
-              </v-chip>        
+              </v-chip>-->     
             </p>
           </div>          
         </v-flex>

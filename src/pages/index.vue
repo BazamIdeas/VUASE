@@ -78,11 +78,12 @@
         <!-- TESTIMONIOS -->  
         <AppTestimony :alt="alt" width="mt-5 mb-5 xs12 offset-md1 md10" :list="testimonies" />
         <v-flex xs12 md7>
+          <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
           <img :alt="alt" src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
-            <h2 class="font-weight-bold mb-4 mt-5 text-xs-center xs-text-size-30" style="font-size: 35px; line-height: 38px; color: #434343;">Servicios a agencias</h2>
+            <h2 class="font-weight-bold mb-4 mt-5 text-xs-center xs-text-size-30 hidden-md-and-down" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
             <p class="text-xs-center mb-5 font-weight-medum">
               Amplia tu portfolio de servicios rápidamente. Ponemos a disposición de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atención especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo. </p>
             <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
@@ -108,7 +109,8 @@
         <!-- <v-flex xs12 md7>
           <img src="/images/pages/profesional_services.png" :alt="alt" width="100%">
         </v-flex> -->
-
+      </v-layout>
+      <v-layout row wrapalign-end>
         <v-flex xs12 md5 mt-5>
           <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>

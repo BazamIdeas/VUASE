@@ -18,7 +18,7 @@ export const state = () => ({
         { url: '/como-funciona', title: 'CÓMO FUNCIONA' },
         { url: '/opiniones', title: 'OPINIONES' },
         { url: '/contacto', title: 'CONTACTO' },
-        { url: '/avisos-legales', title: 'AVISO LEGAL' }
+        { url: '/ejemplos', title: '1001 EJEMPLOS' }
 
       ],
       headerMovil: [

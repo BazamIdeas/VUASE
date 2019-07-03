@@ -209,3 +209,7 @@ a {
   background-position: center center !important;
   max-height: 100%;
 }
+
+.v-text-field > .v-input__control > .v-input__slot {
+  border: 1px solid #dedede;
+}

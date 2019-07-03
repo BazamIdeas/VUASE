@@ -48,11 +48,11 @@
             </v-btn>
           </v-flex>-->
           <v-layout row wrap align-center class="mx-0">
-            <v-flex xs12 offset-md1 md5 class="xs-order-2">
-              <h5 class="font-weight-regular">Copyright © 2019 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU</h5>
+            <v-flex xs12 offset-md1 md6 class="xs-order-2">
+              <h5 class="font-weight-normal">Copyright © 2019 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU | <a href="/avisos-legales" class="primary--text">Avisos Legales</a></h5>
             </v-flex>
             <v-spacer></v-spacer>
-            <v-flex xs12 md5 >
+            <v-flex xs12 md5>
               <v-btn target="_new" :href="red.url" slot="activator"  color="white" fab small class="elevation-1 ws-float-btn" v-for="(red, i) in redes" :key="i">
                 <v-icon>fab {{red.icon}}</v-icon>
               </v-btn>

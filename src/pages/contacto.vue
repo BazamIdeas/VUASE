@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-container fluid grid-list-md class="mt-5 pt-5 pb-0">
-      <v-layout row wrap>
+      <v-layout row wrap align-end>
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" class="img-contacto mt-5 mt-xs-0" :alt="alt" width="100%">
         </v-flex>

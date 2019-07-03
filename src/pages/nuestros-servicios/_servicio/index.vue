@@ -25,19 +25,20 @@
         <AppServiceWhatGet v-if="!dataService.hideWhatGet" title="¿Qué te llevas?" :service="dataService" :slug="service.slug" :price="service.price" :percentage="service.percentage" />
 
         <AppServiceOptions v-if="dataService.serviceOptions" :service-slug="serviceSlug" :addons="addons"  :img="dataService.serviceOptions.img" :color="dataService.serviceOptions.color" :logo="dataService.serviceOptions.logo" :price="service.price"/>
-        <!-- PACKS -->
-        <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
 
         <!-- TESTIMONIOS -->  
-        <AppTestimony :alt="alt" v-if="dataService.testimonies" :list="dataService.testimonies" />
+        <AppTestimony class="pt-5" :alt="alt" v-if="dataService.testimonies" :list="dataService.testimonies" />
 
         <!-- PREGUNTAS FRECUENTES -->  
         <AppExpansionPanels title="Preguntas frecuentes" v-if="dataService.frequentQuestions" :list="dataService.frequentQuestions" />
+
+        <!-- PACKS -->
+        <AppAddons v-if="dataService.packs" :title="dataService.packs.title" :first="dataService.packs.first" :last="dataService.packs.last" />
       </v-layout>
     </v-container>
 
     <!-- CONTACT FORM -->
-    <v-container fluid class="mt-5 pt-5 pb-0">
+    <v-container fluid class="mt-5 pt-5 pb-0" grid-list-md>
       <v-layout xs12 row wrap> 
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
