@@ -39,7 +39,7 @@
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i"
-            >
+             style="position: relative">
               <v-layout row wrap class="content-text-service-slider" ref="sliderbody">
                 <v-flex xs12 offset-xs0 md7 class="sliderbody-img">
                   <img width="100%" :alt="alt" class="mb-2" :src="item.url">
@@ -89,7 +89,7 @@
     }),
     props: ['id', 'service', 'slug', 'alt'],
     mounted () {
-      this.resizeSlider()
+      // this.resizeSlider()
     },
     computed: {
       comenzarUrl () {

@@ -5,14 +5,14 @@
         <v-flex xs12 class="mb-3 creative-process-title-container">
           <AppHeading :number="'2'" :size="'display-1'" :title="title" class="mb-1" />
         </v-flex>
-        <style>
+        <!--<style>
           .creative-process-carousel .v-carousel {
             height: {{ sliderHeight }}px !important;
           }
-        </style>
+        </style>-->
         <v-flex xs12 md8 class="creative-process-carousel mt-2">
-          <v-carousel :hide-delimiters="true" :cycle="false" :height="sliderHeight" @input="inputSlider">
-            <v-carousel-item v-for="(slide,i) in slides" :key="i">
+          <v-carousel :hide-delimiters="true" :cycle="false" style="height:auto" @input="inputSlider">
+            <v-carousel-item v-for="(slide,i) in slides" :key="i" style="position: relative">
               <div ref="creativeProcessBody">
                 <img width="100%" :src="slide.src">
               </div>

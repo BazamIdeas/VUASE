@@ -18,7 +18,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-      <v-toolbar class="brief-bottom-toolbar hidden-md-and-up" fixed style="z-index: 40000000; top: inherit;bottom: 0;">
+      <v-toolbar class="brief-bottom-toolbar hidden-md-and-up" fixed style="z-index: 400; top: inherit;bottom: 0;">
         <v-layout row wrap>
           <v-flex xs6 style="position: relative">
             <v-btn :href="'tel:'+countryData.phone" block large class="elevation-0" style="margin: 0 !important; border-radius: 0px !important">

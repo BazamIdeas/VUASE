@@ -110,7 +110,7 @@
           <img src="/images/pages/profesional_services.png" :alt="alt" width="100%">
         </v-flex> -->
       </v-layout>
-      <v-layout row wrapalign-end>
+      <v-layout row wrap align-end>
         <v-flex xs12 md5 mt-5>
           <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
         </v-flex>

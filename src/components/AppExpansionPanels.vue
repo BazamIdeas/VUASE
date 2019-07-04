@@ -4,7 +4,7 @@
       <v-flex xs12 class="mb-5">
         <AppHeading :number="'2'" :size="'display-1'" :title="title" />
       </v-flex>
-      <v-layout row>
+      <v-layout row wrap>
         <v-flex xs12 md6 class="mb-5">
           <v-expansion-panel class="expansion-panel">
             <!-- SHOW ONLY 4 -->
