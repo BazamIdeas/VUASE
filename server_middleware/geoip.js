@@ -3,14 +3,14 @@ const url = require('url')
 const Cookies = require('cookies')
 
 module.exports = function (req, res, next) {
-    //let cookies = new Cookies(req, res)
+    let cookies = new Cookies(req, res)
 
     let query = url.parse(req.url, true).query
 
     if (query && query.pais) {
         req.iso = query.pais
-        //cookies.set('liderlogo-iso', query.pais)
-        //req.cookies = cookies
+        cookies.set('liderlogo-iso', query.pais)
+        req.cookies = cookies
     } else {
         if (process.env.NODE_ENV === 'production') {
             let ip = req.headers['x-real-ip']
