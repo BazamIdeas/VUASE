@@ -12,7 +12,7 @@
         </style>-->
         <v-flex xs12 md8 class="creative-process-carousel mt-2">
           <v-carousel :hide-delimiters="true" :cycle="false" style="height:auto" @input="inputSlider">
-            <v-carousel-item v-for="(slide,i) in slides" :key="i" style="position: relative">
+            <v-carousel-item v-for="(slide,i) in slides" :key="i">
               <div ref="creativeProcessBody">
                 <img width="100%" :src="slide.src">
               </div>
