@@ -5,19 +5,20 @@ module.exports = function (req, res, next) {
   if (process.env.NODE_ENV === 'production') {
 
     if (!req.headers['user-agent'].match(/bot|crawl|slurp|spider/i)) {
-      let iso = req.iso
+      const iso = req.iso
 
-      let dominio = req.headers.host
-      let path = url.parse(req.url).pathname
+      const dominio = req.headers.host
+      const path = url.parse(req.url).pathname
+      const query = url.parse(req.url, true).query
   
-      if (iso === 'ES') {
+      if (iso === 'ES' && query && !query.pais) {
         if (dominio !== 'liderlogo.es') {
-          res.writeHead(301, {Location: 'https://liderlogo.es/' + path})
+          res.writeHead(301, {Location: 'https://www.liderlogo.es' + path})
           return res.end()
         }
       } else {
         if (dominio === 'liderlogo.es') {
-          res.writeHead(301, {Location: 'https://liderlogo.com/' + path})
+          res.writeHead(301, {Location: 'https://www.liderlogo.com' + path})
           return res.end()
         }
       }
