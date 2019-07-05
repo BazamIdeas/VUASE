@@ -19,8 +19,4 @@ export default function ({ $axios, store, req, redirect }) {
       console.log('axiosConfig: ' + prettyMessage)
     }
   })
-
-  /*  $axios.onResponse(res => {
-    console.log(res)
-  }) */
 }

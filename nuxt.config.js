@@ -4,8 +4,6 @@ const axios = require('axios')
 
 let axiosUrl = process.env.NODE_ENV === 'production' ? 'https://api.liderlogo.com/v1/' : 'http://api.liderlogos.com/v1/'
 
-console.log(process.env)
-
 module.exports = {
   srcDir: 'src/',
   serverMiddleware: [

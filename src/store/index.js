@@ -132,24 +132,6 @@ export const actions = {
     commit('TOGGLE_DRAWER', value)
   },
   async nuxtServerInit ({ dispatch, commit }, { $axios, req, app }) {
-    /* const GTM = {
-      ES: 'Espana',
-      AMERICA: 'Cualquier pais de america'
-    }
-
-    const GTMscript = {
-      head: 'console.log("' + (GTM[req.iso] ? GTM[req.iso] : GTM.AMERICA) + '")',
-      body: 'console.log("' + (GTM[req.iso] ? GTM[req.iso] : GTM.AMERICA) + '")'
-    }
-
-    app.head.script.push({
-      innerHTML: GTMscript.head
-    })
-
-    app.head.script.push({
-      innerHTML: GTMscript.body, body: true
-    }) */
-
     if (req.cookies && req.cookies.get('session_token')) {
       commit('SET_TOKEN', req.cookies.get('session_token'))
 

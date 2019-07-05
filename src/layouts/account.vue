@@ -38,14 +38,14 @@
     methods: {
       cookies () {
         if (process.browser) {
-          if (this.checkCookie('liderlogo-cookie')) {
-            if (this.getCookie('liderlogo-cookie') === 'ok') {
+          if (this.checkCookie('liderlogo_cookie')) {
+            if (this.getCookie('liderlogo_cookie') === 'ok') {
               this.cookieSetted = true
               return
             }
           }
 
-          this.setCookie('liderlogo-cookie', 'no', '30')
+          this.setCookie('liderlogo_cookie', 'no', '30')
           this.cookieSetted = false
         }
       }

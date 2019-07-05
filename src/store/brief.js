@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import axios from 'axios'
 const vueInstance = new Vue()
 
 export const state = () => ({
@@ -238,12 +239,15 @@ export const actions = {
       }
     }
 
-    let saveBrief, token
+    let location, saveBrief, token
 
     try {
+      // location = await axios.get('http://ip-api.com/json/' + this.$cookies.get('liderlogo_client_ip'))
+
       saveBrief = await this.$axios.$post('briefs', bodyFormData, {
         headers: {
-          'Content-Type': 'multipart/form-data'
+          'Content-Type': 'multipart/form-data',
+          // 'Location-Name': `${location.city}, ${location.regionName}, CP: ${location.zip}`
         }
       })
       token = saveBrief.client.token
