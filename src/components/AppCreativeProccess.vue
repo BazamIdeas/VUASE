@@ -5,17 +5,16 @@
         <v-flex xs12 class="mb-3 creative-process-title-container">
           <AppHeading :number="'2'" :size="'display-1'" :title="title" class="mb-1" />
         </v-flex>
-        <!--<style>
+        <style>
           .creative-process-carousel .v-carousel {
             height: {{ sliderHeight }}px !important;
           }
-        </style>-->
+        </style>
         <v-flex xs12 md8 class="creative-process-carousel mt-2">
-          <v-carousel :hide-delimiters="true" :cycle="false" style="height:auto" @input="inputSlider">
-            <v-carousel-item v-for="(slide,i) in slides" :key="i">
-              <div ref="creativeProcessBody">
-                <img width="100%" :src="slide.src">
-              </div>
+          <v-carousel :hide-delimiters="true" :cycle="false" @input="inputSlider">
+            <v-carousel-item v-for="(slide,i) in slides" :key="i+'a'">
+                <img width="100%" :src="slide.src" ref="creativeProcessBody">
+                {{i}}
             </v-carousel-item>
           </v-carousel>
         </v-flex>
@@ -25,7 +24,7 @@
             <v-flex xs12 md4 class="mb-2 mt-2 creative-process-title-container" v-if="alters.length">
               <AppHeading :number="'3'" size="title" title="LOGO" />
             </v-flex>
-            <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(step, i) in steps" :key="i" class="px-3" :class="{ 'actual-step': i === actualStep }">
+            <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(step, i) in steps" :key="i+'b'" class="px-3" :class="{ 'actual-step': i === actualStep }">
               <v-layout row>
                 <v-flex align-center d-flex>
                   <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
@@ -41,7 +40,7 @@
               </v-layout>
             </v-flex>
 
-            <v-flex xs12 sm12 md12 hidden-md-and-up v-for="(step,i) in steps" :key="i" class="px-3" v-show="i == actualStep">
+            <v-flex xs12 sm12 md12 hidden-md-and-up v-for="(step,i) in steps" :key="i+'c'" class="px-3" v-show="i == actualStep">
               <v-layout row>
                 <v-flex align-center d-flex>
                   <img class="img-process-step mr-2" width="40px" :src="step.icon" :alt="step.alt"/>
@@ -64,7 +63,7 @@
             <v-flex v-if="alters.length && actualStep >= 3" xs12 class="mb-2 creative-process-title-container">
               <AppHeading :number="'3'" size="title" title="WEB" />
             </v-flex>
-            <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(alter,i) in alters" :key="i" class="px-5" :class="{ 'actual-step': i === actualStep }">
+            <v-flex xs12 sm12 md12 hidden-sm-and-down v-for="(alter,i) in alters" :key="i+'d'" class="px-5" :class="{ 'actual-step': i === actualStep }">
               <v-layout row>
                 <v-flex align-center d-flex>
                   <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
@@ -80,7 +79,7 @@
               </v-layout>
             </v-flex>
 
-            <v-flex xs12 sm12 md12 hidden-md-and-up v-for="(alter,i) in alters" :key="i" class="px-5" v-show="i == actualStep">
+            <v-flex xs12 sm12 md12 hidden-md-and-up v-for="(alter,i) in alters" :key="i+'e'" class="px-5" v-show="i == actualStep">
               <v-layout row>
                 <v-flex align-center d-flex>
                   <img class="img-process-step mr-2" width="40px" :src="alter.icon" :alt="alter.alt"/>
@@ -110,14 +109,16 @@
     }),
     mounted () {
       var thisV = this
-      setTimeout(() => {
+      let i = 0
+      const intervalID = setInterval(() => {
         let height = thisV.$refs.creativeProcessBody[0].clientHeight
         console.log(height)
-
-        if (height !== undefined && height > 150) {
+        if (height !== null && height > 150) {
           thisV.sliderHeight = height
         }
-      }, 4000)
+
+        if (++i === 5) clearInterval(intervalID)
+      }, 2000)
     },
     props: {
       steps: {
