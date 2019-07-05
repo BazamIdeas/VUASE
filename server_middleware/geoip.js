@@ -7,7 +7,7 @@ module.exports = function (req, res, next) {
   const query = url.parse(req.url, true).query
   const cookies = new Cookies(req, res)
 
-  cookies.set('liderlogo_client_ip', ip)
+  cookies.set('liderlogo_client_ip', ip, { httpOnly: false })
   req.cookies = cookies
 
   if (query && query.pais) {

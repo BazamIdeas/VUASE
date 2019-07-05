@@ -1,5 +1,5 @@
 import Vue from 'vue'
-// import axios from 'axios'
+import axios from 'axios'
 const vueInstance = new Vue()
 
 export const state = () => ({
@@ -239,23 +239,22 @@ export const actions = {
       }
     }
 
-    /* let location, */ let saveBrief, token
+    let location, saveBrief, token
 
     try {
-      // location = await axios.get('http://ip-api.com/json/' + this.$cookies.get('liderlogo_client_ip'))
+      console.log(this.$cookies.get('liderlogo_client_ip'))
+      location = await axios.get('http://ip-api.com/json/' + this.$cookies.get('liderlogo_client_ip'))
 
       saveBrief = await this.$axios.$post('briefs', bodyFormData, {
         headers: {
-          'Content-Type': 'multipart/form-data'// ,
-          // 'Location-Name': `${location.city}, ${location.regionName}, CP: ${location.zip}`
+          'Content-Type': 'multipart/form-data',
+          'Location-Name': `${location.data.city}, ${location.data.regionName}, CP: ${location.data.zip}`
         }
       })
       token = saveBrief.client.token
     } catch (error) {
       return false
     }
-
-    console.log(token)
 
     if (token) {
       vueInstance.$cookies.set('token_session', token)

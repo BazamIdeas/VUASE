@@ -250,9 +250,6 @@
     background-size: 80% auto !important;
   }
 
-  .creative-process .creative-process-carousel .v-carousel__item { 
-  }
-
   .creative-process-title-container, .creative-process-title-container h2{ 
     margin-bottom: 0px !important;
   }
@@ -261,8 +258,6 @@
 @media (min-width: 481px) and (max-width: 639px) {
   .creative-process .creative-process-carousel .v-image__image--cover {
     background-size: 100% auto !important;
-  }
-  .creative-process .creative-process-carousel .v-carousel__item {
   }
 
   .creative-process-title-container, .creative-process-title-container h2{ 
