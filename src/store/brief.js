@@ -242,13 +242,12 @@ export const actions = {
     let location, saveBrief, token
 
     try {
-      console.log(this.$cookies.get('liderlogo_client_ip'))
-      location = await axios.get('http://ip-api.com/json/' + this.$cookies.get('liderlogo_client_ip'))
+      location = await axios.get('https://ipapi.co/' + this.$cookies.get('liderlogo_client_ip') + '/json/')
 
       saveBrief = await this.$axios.$post('briefs', bodyFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
-          'Location-Name': `${location.data.city}, ${location.data.regionName}, CP: ${location.data.zip}`
+          'Location-Name': `${location.data.city}, ${location.data.region}, CP: ${location.data.postal}`
         }
       })
       token = saveBrief.client.token
