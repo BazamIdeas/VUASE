@@ -142,7 +142,7 @@
                         <li class="my-3 body-2 font-weight-medium">Manuales de uso y edición.</li>
                         <li class="my-3 body-2 font-weight-medium">Servicio post venta gratuito.</li>
                     </ul>
-                    <v-expansion-panel :value="0" class="expansion-panel step-3 px-3">
+                    <v-expansion-panel :value="0" class="expansion-panel step-3 px-3ww">
                         <!-- SHOW ALL -->
                         <v-expansion-panel-content
                         v-for="(item,i) in step3list"

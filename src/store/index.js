@@ -150,7 +150,7 @@ export const actions = {
 
     let countriesObj = {}
 
-    let countries = await $axios.$get('countries')
+    let countries = await $axios.$get('countries?limit=1000')
 
     if (countries.length) {
       countries.forEach(country => {
