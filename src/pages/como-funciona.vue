@@ -8,7 +8,7 @@
     </v-container>
 
     <v-container fluid grid-list-md style="position:relative;" class="px-0">
-      <v-layout row wrap id="will-be-stick" class="mx-0">
+      <v-layout row wrap id="will-be-stick" class="mx-0 hidden-sm-and-down">
         <v-flex xs12 md3>
             <div :class="{ 'active': active === 1 }" class="pt-3 step-1 title-step body-2 text-xs-center font-weight-bold">
                 <span @click="activateStep(1)">1. Elabora un brief</span>
@@ -33,17 +33,18 @@
       <v-layout row wrap>
         <v-flex xs12 md10 offset-md1 id="paso-1">
             <v-layout row wrap class="paso paso-1 mt-5" style="background-image: url(images/pages/paso-1.svg)">
-                <v-flex xs12 md6 class="text-xs-center">
-                    <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.png" alt="">
+                <v-flex xs12 md6 class="text-xs-center py-5 ">
+                  <h2 class="active title-step step-1 py-5" style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>
+                  <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.png" alt="">
                 </v-flex>
-                <v-flex xs12 md6>
+                <v-flex xs12 md6 class="px-3">
                     <!--<h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>-->
                     <ul class="service-box-list">
                         <li class="my-3 body-2 font-weight-medium">Simple, ágil e intuitivo.</li>
                         <li class="my-3 body-2 font-weight-medium">Te llevará unos pocos minutos.</li>
                         <li class="my-3 body-2 font-weight-medium">Nos permitirá conocer cuales son tus necesidades, objetivos y preferencias. </li>
                     </ul>
-                    <v-expansion-panel :value="0" class="expansion-panel step-1">
+                    <v-expansion-panel :value="0" class="expansion-panel step-1 px-3 mb-5 pb-3">
                         <!-- SHOW ALL -->
                         <v-expansion-panel-content
                         v-for="(item,i) in step1list"
@@ -67,10 +68,10 @@
         </v-flex>
         <v-flex xs12 md10 offset-md1 id="paso-2">
             <v-layout row wrap class="paso paso-2 py-5" style="background-image: url(images/pages/paso-2.svg)">
-                <!--<v-flex xs12 class="text-xs-center mb-5">
-                    <h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe diseños <br  class="hidden-sm-and-down">ilimitados</h2>
-                </v-flex>-->
-                <v-flex xs12 md6>
+                <v-flex xs12 class="text-xs-center mb-5">
+                    <h2 class="active title-step step-2" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe diseños <br  class="hidden-sm-and-down">ilimitados</h2>
+                </v-flex>
+                <v-flex xs12 md6 class="px-3">
                     <h2>Conceptos</h2>
                     <ul class="service-box-list">
                         <li class="my-3 body-2 font-weight-medium">Originales</li>
@@ -80,7 +81,7 @@
                     <div class="text-xs-center">
                         <img width="80%" src="images/pages/propuestas-de-logo.png" alt="">
                     </div>
-                    <v-expansion-panel :value="0" class="expansion-panel step-2">
+                    <v-expansion-panel :value="0" class="expansion-panel step-2 px-3 mb-3">
                         <!-- SHOW ALL -->
                         <v-expansion-panel-content
                         v-for="(item,i) in step2list.slice(0,2)"
@@ -94,7 +95,7 @@
                         </v-expansion-panel-content>
                     </v-expansion-panel>
                 </v-flex>
-                <v-flex xs12 md6>
+                <v-flex xs12 md6 class="px-3">
                     <h2>Perfeccionamientos</h2>
                     <ul class="service-box-list">
                         <li class="my-3 body-2 font-weight-medium">Diseños y perfeccionamientos ilimitados.</li>
@@ -104,7 +105,7 @@
                     <div class="text-xs-center">
                         <img width="80%" src="images/pages/hacer-un-logotipo.png" alt="">
                     </div>
-                    <v-expansion-panel class="expansion-panel step-2">
+                    <v-expansion-panel class="expansion-panel step-2 px-3 mb-3">
                         <!-- SHOW ALL -->
                         <v-expansion-panel-content
                         v-for="(item,i) in step2list.slice(2)"
@@ -130,10 +131,10 @@
         <v-flex xs12 md10 offset-md1 id="paso-3">
             <v-layout row wrap class="paso paso-3 py-5" style="background-image: url(images/pages/paso-3.svg)">
                 <v-flex xs12 md6 class="text-xs-center">
-                    <img class="my-5" width="80%" src="images/pages/archivos-de-entrega-logo.png" alt="">
+                  <h2 class="active title-step step-3" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>
+                  <img class="my-5" width="80%" src="images/pages/archivos-de-entrega-logo.png" alt="">
                 </v-flex>
-                <v-flex xs12 md6>
-                    <!--<h2 class="mb-4" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>-->
+                <v-flex xs12 md6 class="px-3">
                     <p>Descarga tu proyecto listo para ser utilizado en gran variedad de formatos.</p>
                     <ul class="service-box-list">
                         <li class="my-3 body-2 font-weight-medium">Entrega completa editable para imprenta y uso digital.</li>
@@ -141,7 +142,7 @@
                         <li class="my-3 body-2 font-weight-medium">Manuales de uso y edición.</li>
                         <li class="my-3 body-2 font-weight-medium">Servicio post venta gratuito.</li>
                     </ul>
-                    <v-expansion-panel :value="0" class="expansion-panel step-3">
+                    <v-expansion-panel :value="0" class="expansion-panel step-3 px-3">
                         <!-- SHOW ALL -->
                         <v-expansion-panel-content
                         v-for="(item,i) in step3list"
@@ -491,10 +492,48 @@ ul.service-box-list {
         line-height: 31px !important;
         text-align: center;
     }
+
+    div#paso-1 > div {
+        background-size: 18% !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 0% !important;
+    }
+
+    div#paso-2 > div {
+        background-size: 28% !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 0% !important;
+    }
+
+    div#paso-3 > div {
+        background-size: 28% !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 0% !important;
+    }
+
+
   }
   @media (min-width: 481px) and (max-width: 639px) {
       .paso .boton {
           text-align: center;
+      }
+
+      div#paso-1 > div {
+        background-size: 18% !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 0% !important;
+      }
+
+      div#paso-2 > div {
+        background-size: 28% !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 0% !important;
+      }
+
+      div#paso-3 > div {
+        background-size: 28% !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 0% !important;
       }
   }
   @media (min-width: 640px) and (max-width: 1023px) {
