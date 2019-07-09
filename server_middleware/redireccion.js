@@ -1,7 +1,7 @@
-const url = require('url')
+// const url = require('url')
 
 module.exports = function (req, res, next) {
-  if (process.env.NODE_ENV === 'production') {
+  /* if (process.env.NODE_ENV === 'production') {
     if (!req.headers['user-agent'].match(/bot|crawl|slurp|spider/i)) {
       const iso = req.iso
 
@@ -23,7 +23,7 @@ module.exports = function (req, res, next) {
     }
   } else {
     console.log('Estas en: ' + req.iso + ' (server)')
-  }
+  } */
 
   next()
 }
