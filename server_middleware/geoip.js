@@ -14,7 +14,7 @@ module.exports = function (req, res, next) {
     req.iso = query.pais
   } else {
     const reader = new MMDBReader('src/static/GeoIP2-Country.mmdb')
-    req.iso = reader.lookup(ip).country.iso_code
+    req.iso = reader.lookup(ip) ? reader.lookup(ip).country.iso_code : 'US'
   }
 
   next()

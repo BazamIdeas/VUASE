@@ -1,6 +1,7 @@
 const url = require('url')
 
 module.exports = function (req, res, next) {
+  console.log(req.headers['user-agent'])
   if (process.env.NODE_ENV === 'production') {
     if (!req.headers['user-agent'].match(/bot|crawl|slurp|spider/i)) {
       const iso = req.iso
