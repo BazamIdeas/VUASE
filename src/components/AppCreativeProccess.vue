@@ -13,13 +13,14 @@
         <v-flex xs12 md8 class="creative-process-carousel mt-2">
           <v-carousel :hide-delimiters="true" :cycle="false" @input="inputSlider">
             <v-carousel-item v-for="(slide,i) in slides" :key="i+'a'">
-                <img width="100%" :src="slide.src" ref="creativeProcessBody">
-                {{i}}
+              <div class="px-5" ref="creativeProcessBody">
+                <img width="100%" :src="slide.src" >
+              </div>
             </v-carousel-item>
           </v-carousel>
         </v-flex>
 
-        <v-flex xs12 md4>
+        <v-flex xs12 md4 class="pt-3">
           <v-layout row wrap class="process-steps"  v-if="actualStep <= 2">
             <v-flex xs12 md4 class="mb-2 mt-2 creative-process-title-container" v-if="alters.length">
               <AppHeading :number="'3'" size="title" title="LOGO" />

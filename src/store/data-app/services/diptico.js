@@ -140,15 +140,15 @@ export const diptico = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/1.png',
+      src: '/images/carousels/creative-process/1.jpg',
       alt: 'Diseño de diptico'
     },
     {
-      src: '/images/carousels/creative-process/2.png',
+      src: '/images/carousels/creative-process/2.jpg',
       alt: 'Diseño de diptico'
     },
     {
-      src: '/images/carousels/creative-process/3.png',
+      src: '/images/carousels/creative-process/3.jpg',
       alt: 'Diseño de diptico'
     }
   ],

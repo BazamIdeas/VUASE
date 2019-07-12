@@ -224,15 +224,15 @@ export const logoEmpresa = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/1.png',
+      src: '/images/carousels/creative-process/1.jpg',
       alt: 'diseño de logo'
     },
     {
-      src: '/images/carousels/creative-process/2.png',
+      src: '/images/carousels/creative-process/2.jpg',
       alt: 'logo empresa'
     },
     {
-      src: '/images/carousels/creative-process/3.png',
+      src: '/images/carousels/creative-process/3.jpg',
       alt: 'diseño de logotipos'
     }
   ],
@@ -268,16 +268,13 @@ export const logoEmpresa = {
       { img: '/images/services-carousel/logo/Ategory.jpg' },
       { img: '/images/services-carousel/logo/pistachos-logo.jpg' },
       { img: '/images/services-carousel/logo/Bellek.jpg' },
-      { img: '/images/services-carousel/logo/Gorriz y Liberos.jpg' },
       { img: '/images/services-carousel/logo/Hotel.jpg' },
       { img: '/images/services-carousel/logo/Islas Canarias Air.jpg' },
       { img: '/images/services-carousel/logo/Omkel.jpg' },
       { img: '/images/services-carousel/logo/StemMedic.jpg' },
       { img: '/images/services-carousel/logo/6S Ropa Laboral.jpg' },
       { img: '/images/services-carousel/logo/Andes Facility.jpg' },
-      { img: '/images/services-carousel/logo/Caromax.jpg' },
       { img: '/images/services-carousel/logo/Colchonería El Cairo.jpg' },
-      { img: '/images/services-carousel/logo/Divino Alchemy.jpg' },
       { img: '/images/services-carousel/logo/1.-new-cool.jpg' },
       { img: '/images/services-carousel/logo/2.-chikas.jpg' },
       { img: '/images/services-carousel/logo/3.-family-tv.jpg' },
@@ -291,8 +288,7 @@ export const logoEmpresa = {
       { img: '/images/services-carousel/logo/ejemplo-logo-alimentos.jpg' },
       { img: '/images/services-carousel/logo/5.-stemmedic.jpg' },
       { img: '/images/services-carousel/logo/6.-antartik.jpg' },
-      { img: '/images/services-carousel/logo/12.-paralelo-0.jpg' },
-      { img: '/images/services-carousel/logo/13.-hostal-la-colegiata.jpg' }
+      { img: '/images/services-carousel/logo/12.-paralelo-0.jpg' }
     ]
   },
   packs: {

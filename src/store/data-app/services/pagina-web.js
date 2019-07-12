@@ -169,15 +169,15 @@ export const web = {
   ],
   creativeProcess: [
     {
-      src: '/images/carousels/creative-process/1.png',
+      src: '/images/carousels/creative-process/1.jpg',
       alt: 'Diseño de sitios web'
     },
     {
-      src: '/images/carousels/creative-process/2.png',
+      src: '/images/carousels/creative-process/2.jpg',
       alt: 'diseño de web'
     },
     {
-      src: '/images/carousels/creative-process/3.png',
+      src: '/images/carousels/creative-process/3.jpg',
       alt: 'desarrollo de web'
     }
   ],

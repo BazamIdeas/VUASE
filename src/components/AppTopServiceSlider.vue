@@ -45,29 +45,29 @@
                 </v-flex>
                 <v-flex xs12 offset-xs0 md4>
                   <v-layout row wrap>
-                    <v-flex xs12 sm4 md12 class="hidden-sm-and-down">
-                      <img width="80px" :alt="alt" class="mb-2" :src="service.icon">
+                    <v-flex xs12 sm4 md1 class="hidden-sm-and-down">
+                      <img width="100%" :alt="alt" class="mb-2 mr-2" :src="service.icon">
                     </v-flex>
-                    <v-flex xs12 sm8 md12 class="mb-2">
-                      <h1 class="font-weight-bold display-1" :style="'color:'+item.color">{{service.title}}</h1>
+                    <v-flex xs12 sm8 md11 class="mb-2">
+                      <h1 class="font-weight-bold display-1 ml-2" :style="'color:'+item.color">{{service.title}}</h1>
                     </v-flex>
                     <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
                       <span class="body-2" v-html="service.description"></span>
                     </v-flex>
-                    <v-flex xs12 v-if="service.list" class="service-box-list hidden-sm-and-down">
+                    <v-flex xs12 v-if="service.list" class="service-box-list hidden-sm-and-down mb-3">
                       <ul>
                         <li v-for="(checkItem, i) in service.list" :key="i" class="body-1 font-weight-medium mb-2">
-                          <v-icon :color="item.color" class="mr-3 font-weight-bold">check</v-icon> {{checkItem}}
+                          <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> {{checkItem}}
                           </li>
                       </ul>
                     </v-flex>
                     <v-layout xs12 row wrap>
-                      <v-flex xs12 sm4>
-                        <v-btn flat class="btn-simple ml-0" style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
-                      </v-flex>
                       <v-flex xs12 sm6 class="hidden-sm-and-down">
                         <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#que-te-ofrecemos')">¿QUÉ TE OFRECEMOS?</v-btn>
                         <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#como-funciona')">¿CÓMO FUNCIONA?</v-btn>
+                      </v-flex>
+                      <v-flex xs12 sm6>
+                        <v-btn flat round class="btn-simple mr-0 ml-2" block style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
                       </v-flex>
                     </v-layout>
                   </v-layout>
