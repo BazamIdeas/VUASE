@@ -3,7 +3,7 @@
     <!-- TOP SLIDER -->
     <v-container fluid class="mt-5 mb-0 pt-3 px-0 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
-        <AppTopServiceSlider :alt="alt" :id="service.id" :service="dataService" :slug="service.slug" />
+        <AppTopServiceSlider :price="service.price"  :alt="alt" :id="service.id" :service="dataService" :slug="service.slug" />
       </v-layout>
     </v-container>
 
@@ -50,7 +50,7 @@
     <v-container fluid class="mt-5 pt-5 pb-0" grid-list-md>
       <v-layout xs12 row wrap> 
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
+          <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex xs12 md6>
           <h2 class="font-weight-bold mb-4 display-1 text-xs-center" style=" color: #434343; ">¿Tienes alguna duda?</h2>

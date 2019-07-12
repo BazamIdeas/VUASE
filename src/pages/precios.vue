@@ -46,7 +46,7 @@
           <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MÁS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
+          <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex md6 class="my-5">
           <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-xs-center" number="2" size="display-1" title="¿Tienes alguna duda?" />

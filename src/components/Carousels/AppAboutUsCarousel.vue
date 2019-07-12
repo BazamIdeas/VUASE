@@ -7,7 +7,7 @@
           <v-btn flat outline class="px-2 mt-4" style="background-color: #004b7b !important; border-color: #004b7b; color: white; line-height: initial;">COMPRUEBALO</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img :alt="alt" class="animate-img" src="images/carousels/about_us1.png"></v-img>
+          <v-img :alt="alt" class="animate-img" src="images/carousels/about_us1.jpg"></v-img>
         </div>
       </div>
     </v-carousel-item>

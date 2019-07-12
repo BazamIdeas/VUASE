@@ -30,7 +30,7 @@
                 padding: 0 20px 0 40px;
               }
               .sliderbody-text {
-                padding: 50px 60px 0 10px;
+                padding: 30px 60px 0 10px;
               }
               .content-text-service-slider{
                 padding-top: 40px;
@@ -62,6 +62,18 @@
                         <li v-for="(checkItem, i) in service.list" :key="i" class="body-1 font-weight-medium mb-2">
                           <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> {{checkItem}}
                           </li>
+                        <li class="body-1 font-weight-medium mb-2">
+                          <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> Precio cerrado 
+                          <span class="font-weight-medium" v-if="price.currency.display == 'left'">
+                                {{price.currency.symbol}}
+                                {{price.value}}
+                              </span>
+
+                              <span style="color:#F7941F;" class="title font-weight-medium" v-if="price.currency.display == 'right'">
+                                {{price.value}}
+                                {{price.currency.symbol}}
+                              </span>
+                          </li>
                       </ul>
                     </v-flex>
                     <v-container fluid grid-list-md class="pa-0">
@@ -72,6 +84,20 @@
                         <v-flex xs12 sm7>
                           <v-btn flat round class="btn-simple" block style="border:none;" :style="'background: #004e7c; color:white !important;'" :to="comenzarUrl">OBTÉN TU DISEÑO</v-btn>
                         </v-flex>
+                        <!--<v-flex xs12>
+                          <h3 class="headline text-uppercase font-weight-bold">
+                            PRECIO CERRADO:
+                              <span :style="'color:'+item.color" class="display-1 font-weight-medium" v-if="price.currency.display == 'left'">
+                                {{price.currency.symbol}}
+                                {{price.value}}
+                              </span>
+
+                              <span style="color:#F7941F;" class="display-1 font-weight-medium" v-if="price.currency.display == 'right'">
+                                {{price.value}}
+                                {{price.currency.symbol}}
+                              </span>
+                          </h3>
+                        </v-flex>-->
                       </v-layout>
                     </v-container>
                   </v-layout>
@@ -90,7 +116,7 @@
     data: () => ({
       heightSlider: 0
     }),
-    props: ['id', 'service', 'slug', 'alt'],
+    props: ['id', 'service', 'price', 'slug', 'alt'],
     mounted () {
       this.resizeSlider()
     },

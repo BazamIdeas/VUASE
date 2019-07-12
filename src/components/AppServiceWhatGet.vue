@@ -74,7 +74,7 @@
                       </v-flex>
                     </v-layout>
                   </v-layout>
-                  <v-btn :style="'background:'+service.whatYouGet.color" dark class="mt-3 ml-0" :to="url">OBTÉN TU DISEÑO</v-btn>
+                  <v-btn flat round block style="border:none;" :style="'background: #004e7c; color:white !important;'" class="mt-3 ml-0 btn-simple" :to="url">OBTÉN TU DISEÑO</v-btn>
               </v-flex>
             </v-layout>
           </v-flex>

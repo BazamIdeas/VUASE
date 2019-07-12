@@ -42,7 +42,7 @@ export const logoEmpresa = {
     }
   ],
   whatYouGet: {
-    img: '/images/pages/logo-empresa/logo-empresa.png',
+    img: '/images/pages/logo-empresa/logo-empresa.jpg',
     color: '#47230e',
     columns: [
       [{

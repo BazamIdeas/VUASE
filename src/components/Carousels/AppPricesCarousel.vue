@@ -3,7 +3,7 @@
         <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img :alt="alt" class="animate-img" src="images/carousels/prices1.png"></v-img>
+          <v-img :alt="alt" class="animate-img" src="images/carousels/prices1.jpg"></v-img>
         </div>
 
         <div class="layer" id="hc-layer-0">   

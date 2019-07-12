@@ -35,7 +35,7 @@
             <v-layout row wrap class="paso paso-1 mt-5" style="background-image: url(images/pages/paso-1.svg)">
                 <v-flex xs12 md6 class="text-xs-center py-5 ">
                   <h2 class="active title-step step-1 py-5" style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>
-                  <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.png" alt="">
+                  <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.jpg" alt="">
                 </v-flex>
                 <v-flex xs12 md6 class="px-3">
                     <!--<h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>-->
@@ -206,7 +206,7 @@
         <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
         <v-flex xs12 md5 >
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
+          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>

@@ -15,7 +15,7 @@
                 </div>
                 <div class="section">  
                     <div id="hc-layer-3-item-1">
-                        <v-img :alt="alt" class="animate-img" src="images/pages/como-hacer-un-logo.png"></v-img>
+                        <v-img :alt="alt" class="animate-img" src="images/pages/como-hacer-un-logo.jpg"></v-img>
                     </div>
                 </div>
             </div>

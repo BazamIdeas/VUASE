@@ -88,7 +88,7 @@
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex xs12 md5 >
-          <img src="/images/pages/muchacho_contacto.png" width="100%">
+          <img src="/images/pages/muchacho_contacto.jpg" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-1 font-weight-bold mb-4  text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>

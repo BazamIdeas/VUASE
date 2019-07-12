@@ -25,7 +25,7 @@
                   Desarrollamos e invertimos en tecnología para brindarle a nuestros clientes nuestros servicios desde comodidad donde se encuentran ahorrando costes y ganando tiempo al contratar nuestros servicios.               </p>
             </v-flex>
             <v-flex xs12 md6>
-              <img  alt="Sobre Nosotros" src="/images/pages/dino_about_us.png" width="100%">
+              <img  alt="Sobre Nosotros" src="/images/pages/dino_about_us.jpg" width="100%">
             </v-flex>
           </v-layout>
         </v-flex>
