@@ -3,10 +3,16 @@ export const logoEmpresa = {
   titleSEO: 'Diseño de logo original y llamativo',
   descriptionSEO: 'Creamos tu logo hasta su entera aprobación, diseños ilimitados y asesoría gratuita, tenemos más de 15 años de experiencia diseñando marcas ¡Comienza ahora!',
   /* ** */
-  list: ['Creación de logo exclusivo, único y original realizado a tu medida', 'Entrega listo para utilizar donde necesites con su manual de marca ', 'Entrega de certificado de transferencia de derechos de autoría'],
-  title: 'Diseño de Logo',
-  description: `Logo original de tu entera conformidad.`,
-  shortDescription: `Logo original de tu entera conformidad.`,
+  list: ['Diseños de logos originales y exclusivos.', 'Creación de conceptos y perfeccionamientos ilimitados hasta tu entera aprobación.', 'Recibe tu logo en +20 de formatos listo para usar donde necesites.', 'Transferencia total de Copyright.', 'Manual de uso de tu marca.', 'Garantía de conformidad: puedes solicitar opciones de diseño sin tope o el reintegro total de tu dinero.'],
+  title: 'Diseño de Logo a Medida',
+  description: `<strong style="font-size: 16px">¿Buscando el logo perfecto? Estás en el sitio correcto.</strong><br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;En Liderlogo creamos el logo que tu marca necesita para destacar. Comienza
+  hoy, junto a nuestro equipo de profesionales, el camino hacia el éxito de tu
+  negocio.`,
+  shortDescription: `¿Buscando el logo perfecto? Estás en el sitio correcto.
+  En Liderlogo creamos el logo que tu marca necesita para destacar. Comienza
+  hoy, junto a nuestro equipo de profesionales, el camino hacia el éxito de tu
+  negocio.`,
   icon: '/icons/logo-a-medida.svg',
   whatWeOffer: [
     {
@@ -32,7 +38,7 @@ export const logoEmpresa = {
     }, {
       title: 'EXPERIENCIA & EXPECIALIZACIÓN',
       description: '',
-      icon: '/icons/equipo-interidisciplinario.svg'
+      icon: '/icons/16-anios.svg'
     }
   ],
   whatYouGet: {
@@ -198,10 +204,6 @@ export const logoEmpresa = {
   topSliderBgSize: '',
   topSlider: [
     {
-      url: '/images/pages/logo-empresa/extremadura-vending.jpg',
-      color: '#75BA50'
-    },
-    {
       url: '/images/pages/logo-empresa/azcapo.jpg',
       color: '#BA2700'
     },
@@ -212,10 +214,6 @@ export const logoEmpresa = {
     {
       url: '/images/pages/logo-empresa/malarrassa.jpg',
       color: '#7C7F81'
-    },
-    {
-      url: '/images/pages/logo-empresa/one-seagate.jpg',
-      color: '#0065AE'
     },
     {
       url: '/images/pages/logo-empresa/wellcan.jpg',

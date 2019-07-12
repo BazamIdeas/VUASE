@@ -74,7 +74,7 @@
                       </v-flex>
                     </v-layout>
                   </v-layout>
-                  <v-btn :style="'background:'+service.whatYouGet.color" dark class="mt-3 ml-0" :to="url">INICIAR MI PROYECTO</v-btn>
+                  <v-btn :style="'background:'+service.whatYouGet.color" dark class="mt-3 ml-0" :to="url">OBTÉN TU DISEÑO</v-btn>
               </v-flex>
             </v-layout>
           </v-flex>

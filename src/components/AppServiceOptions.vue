@@ -96,7 +96,7 @@
                       <h5 class="body-2">al finalizar</h5>
                     </v-flex>
                   </v-layout>
-                  <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0">INICIAR MI PROYECTO</v-btn>
+                  <v-btn :to="serviceSlug + '/cotizacion'" :style="'background:' + color" dark class="mt-3 ml-0">OBTÉN TU PROYECTO</v-btn>
                 </v-layout>
               </div>         
                 

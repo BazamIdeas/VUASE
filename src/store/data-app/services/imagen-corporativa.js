@@ -285,10 +285,10 @@ export const imagenCorporativa = {
       url: '/images/pages/imagen-corporativa/omkel.jpg',
       color: '#2B2A2A'
     },
-    {
+    /* {
       url: '/images/pages/imagen-corporativa/armel.jpg',
       color: '#248036'
-    },
+    }, */
     {
       url: '/images/pages/imagen-corporativa/bellek.jpg',
       color: '#2D678F'
@@ -370,14 +370,12 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/pistachos-pack.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup fisiocomas.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup islas canarias.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup tajinaste HD.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup umami.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Uroz.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup dulpy.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup hygge.jpg' },
-      { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
       { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/blackbird.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese.jpg' },
       { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },

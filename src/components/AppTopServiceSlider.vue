@@ -27,7 +27,10 @@
 
             @media (min-width: 960px) {
               .sliderbody-img {
-                padding: 0 60px 0 60px;
+                padding: 0 20px 0 40px;
+              }
+              .sliderbody-text {
+                padding: 50px 60px 0 10px;
               }
               .content-text-service-slider{
                 padding-top: 40px;
@@ -43,8 +46,8 @@
                 <v-flex xs12 offset-xs0 md7 class="sliderbody-img">
                   <img width="100%" :alt="alt" class="mb-2" :src="item.url">
                 </v-flex>
-                <v-flex xs12 offset-xs0 md4>
-                  <v-layout row wrap>
+                <v-flex xs12 offset-xs0 md5>
+                  <v-layout row wrap class="sliderbody-text">
                     <v-flex xs12 sm4 md1 class="hidden-sm-and-down">
                       <img width="100%" :alt="alt" class="mb-2 mr-2" :src="service.icon">
                     </v-flex>
@@ -54,22 +57,23 @@
                     <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
                       <span class="body-2" v-html="service.description"></span>
                     </v-flex>
-                    <v-flex xs12 v-if="service.list" class="service-box-list hidden-sm-and-down mb-3">
+                    <v-flex xs12 v-if="service.list" class="service-box-list mb-3">
                       <ul>
                         <li v-for="(checkItem, i) in service.list" :key="i" class="body-1 font-weight-medium mb-2">
                           <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> {{checkItem}}
                           </li>
                       </ul>
                     </v-flex>
-                    <v-layout xs12 row wrap>
-                      <v-flex xs12 sm6 class="hidden-sm-and-down">
-                        <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#que-te-ofrecemos')">¿QUÉ TE OFRECEMOS?</v-btn>
-                        <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#como-funciona')">¿CÓMO FUNCIONA?</v-btn>
-                      </v-flex>
-                      <v-flex xs12 sm6>
-                        <v-btn flat round class="btn-simple mr-0 ml-2" block style="border:none;" :style="'background:'+item.color + '; color:white !important;'" :to="comenzarUrl">COMENZAR</v-btn>
-                      </v-flex>
-                    </v-layout>
+                    <v-container fluid grid-list-md class="pa-0">
+                      <v-layout xs12 row wrap>
+                        <v-flex xs12 sm5>
+                          <v-btn flat class="btn-simple" block @click="$vuetify.goTo('#como-funciona')">¿CÓMO FUNCIONA?</v-btn>
+                        </v-flex>
+                        <v-flex xs12 sm7>
+                          <v-btn flat round class="btn-simple" block style="border:none;" :style="'background: #004e7c; color:white !important;'" :to="comenzarUrl">OBTÉN TU DISEÑO</v-btn>
+                        </v-flex>
+                      </v-layout>
+                    </v-container>
                   </v-layout>
                 </v-flex>
               </v-layout>
