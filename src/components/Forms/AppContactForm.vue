@@ -138,7 +138,7 @@
             email: this.email,
             message: this.message,
             page_view: this.category.name || this.page,
-            promo: this.offers,
+            promo: this.offers ? true : false,
             reseller: this.type_user || false
           }
 
