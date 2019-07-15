@@ -42,10 +42,10 @@
             </v-flex>
             <v-layout xs12 md4 row wrap justify-center class="mt-2 mb-0">
               <v-flex xs12 md6>
-                <v-radio key="type_user_false" label="Si" value="true" class="mt-0"></v-radio>
+                <v-radio key="type_user_false" label="Si" :value="true" class="mt-0"></v-radio>
               </v-flex>
               <v-flex xs12 md6 >
-                <v-radio key="type_user_true" label="No" value="false" class="mt-0"></v-radio>
+                <v-radio key="type_user_true" label="No" :value="false" class="mt-0"></v-radio>
               </v-flex>
             </v-layout>
           </v-radio-group>
@@ -138,7 +138,7 @@
             email: this.email,
             message: this.message,
             page_view: this.category.name || this.page,
-            promo: this.offers ? true : false,
+            promo: this.offers,
             reseller: this.type_user || false
           }
 
