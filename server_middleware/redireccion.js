@@ -12,7 +12,7 @@ module.exports = function (req, res, next) {
       console.log("Iso: " + iso)
       console.log("Dominio: " + dominio)
 
-      if (iso === 'JP' && query && !query.pais) {
+      if (iso === 'ES' && query && !query.pais) {
         if (dominio !== 'www.liderlogo.es' && dominio !== 'liderlogo.es') {
           res.writeHead(301, {Location: 'http://www.liderlogo.es' + path})
           return res.end()
