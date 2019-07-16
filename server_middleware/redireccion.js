@@ -13,12 +13,12 @@ module.exports = function (req, res, next) {
       console.log("Dominio: " + dominio)
 
       if (iso === 'JP' && query && !query.pais) {
-        if (dominio !== 'liderlogo.es') {
+        if (dominio !== 'www.liderlogo.es' || dominio !== 'liderlogo.es') {
           res.writeHead(301, {Location: 'https://www.liderlogo.es' + path})
           return res.end()
         }
       } else {
-        if (dominio === 'liderlogo.es') {
+        if (dominio === 'www.liderlogo.es' || dominio === 'liderlogo.es') {
           res.writeHead(301, {Location: 'https://www.liderlogo.com' + path})
           return res.end()
         }
