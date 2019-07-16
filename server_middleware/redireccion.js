@@ -14,12 +14,12 @@ module.exports = function (req, res, next) {
 
       if (iso === 'JP' && query && !query.pais) {
         if (dominio !== 'www.liderlogo.es' || dominio !== 'liderlogo.es') {
-          res.writeHead(301, {Location: 'https://www.liderlogo.es' + path})
+          res.writeHead(301, {Location: 'http://liderlogo.es' + path})
           return res.end()
         }
       } else {
         if (dominio === 'www.liderlogo.es' || dominio === 'liderlogo.es') {
-          res.writeHead(301, {Location: 'https://www.liderlogo.com' + path})
+          res.writeHead(301, {Location: 'http://liderlogo.com' + path})
           return res.end()
         }
       }
