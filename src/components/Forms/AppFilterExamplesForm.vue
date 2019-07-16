@@ -1,8 +1,7 @@
 <template>
   <v-layout row wrap>
-      <v-select :items="services" item-text="text" item-value="field" :value="paramsData.servicio" label="Servicio" @change="redirect($event, 'sectors/getAll', 1)" solo></v-select>
-    </v-flex>
-    </v-flex> -->
+    <!--  <v-select :items="services" item-text="text" item-value="field" :value="paramsData.servicio" label="Servicio" @change="redirect($event, 'sectors/getAll', 1)" solo></v-select>
+    </v-flex>-->
     <v-flex sm6 md4>
       <!-- :disabled="!(paramsData && paramsData.servicio)" -->
       <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
