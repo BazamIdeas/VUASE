@@ -1,9 +1,9 @@
 <template>
   <section>
     <!-- TOP SLIDER -->
-    <v-container fluid class="mt-5 mb-5 pt-3 px-0 pb-0" v-if="dataService.topSlider">
+    <v-container fluid class="mt-5 mb-0 pt-3 px-0 pb-0" v-if="dataService.topSlider">
       <v-layout row wrap>
-        <AppTopServiceSlider :alt="alt" :id="service.id" :service="dataService" :slug="service.slug" />
+        <AppTopServiceSlider :price="service.price"  :alt="alt" :id="service.id" :service="dataService" :slug="service.slug" />
       </v-layout>
     </v-container>
 
@@ -18,9 +18,18 @@
          <!-- CARACTERISTICAS -->  
         <AppServiceCharacteristics v-if="dataService.whatWeOffer" id="que-te-ofrecemos" title="¿Qué te ofrecemos?" :list="dataService.whatWeOffer" />
 
+      </v-layout>
+    </v-container>
+
+    <v-container fluid class="mt-3 pb-0">
+      <v-layout row wrap>
         <!-- PROCESO CREATIVO -->  
         <AppCreativeProccess class="px-3 " v-if="dataService.creativeProcess" id="como-funciona" title="¿Cómo funciona?" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
+      </v-layout>
+    </v-container>
 
+    <v-container grid-list-md class="mt-3 pb-0">
+      <v-layout row wrap>
         <!-- QUE TE LLEVAS -->  
         <AppServiceWhatGet v-if="!dataService.hideWhatGet" title="¿Qué te llevas?" :service="dataService" :slug="service.slug" :price="service.price" :percentage="service.percentage" />
 
@@ -41,7 +50,7 @@
     <v-container fluid class="mt-5 pt-5 pb-0" grid-list-md>
       <v-layout xs12 row wrap> 
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.png" class="img-contacto" alt="Contacto Liderlogo" width="100%">
+          <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
         <v-flex xs12 md6>
           <h2 class="font-weight-bold mb-4 display-1 text-xs-center" style=" color: #434343; ">¿Tienes alguna duda?</h2>

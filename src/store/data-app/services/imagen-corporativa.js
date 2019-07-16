@@ -6,7 +6,9 @@ export const imagenCorporativa = {
   list: ['Logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elija 6 piezas en nuestro menú de 65 opciones)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
   oferta: 'AHORRA 37%',
-  description: `Diseño del logo creado desde cero y hasta su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.`,
+  description: `¿Buscando presentar tu negocio con éxito? Pon la imagen de tu marca en manos de expertos. <br> <br> En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir. 
+  <br> Creación de logo diseñado  desde cero y hasta su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado. <br> Creación de logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con su manual de marca y certificado de derechos. <br> Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elija 6 piezas en nuestro menú de 65 opciones) <br> Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.
+  Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla <br> Garantía de conformidad: puedes solicitar opciones de diseño sin tope o el reintegro total de tu dinero.`,
   shortDescription: `Diseño del logo creado desde cero y hasta su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.`,
   icon: '/icons/pack-identidad.svg',
   whatWeOffer: [
@@ -285,10 +287,10 @@ export const imagenCorporativa = {
       url: '/images/pages/imagen-corporativa/omkel.jpg',
       color: '#2B2A2A'
     },
-    {
+    /* {
       url: '/images/pages/imagen-corporativa/armel.jpg',
       color: '#248036'
-    },
+    }, */
     {
       url: '/images/pages/imagen-corporativa/bellek.jpg',
       color: '#2D678F'
@@ -370,14 +372,12 @@ export const imagenCorporativa = {
       { img: '/images/services-carousel/pack-identidad/pistachos-pack.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup dream art.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Enprotech.jpg' },
-      { img: '/images/services-carousel/pack-identidad/mockup fisiocomas.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup islas canarias.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup tajinaste HD.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup umami.jpg' },
       { img: '/images/services-carousel/pack-identidad/Mockup Uroz.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup dulpy.jpg' },
       { img: '/images/services-carousel/pack-identidad/mockup hygge.jpg' },
-      { img: '/images/services-carousel/pack-identidad/gps seville tour 1.jpg' },
       { img: '/images/services-carousel/pack-rediseno-imagen-corporativa/blackbird.jpg' },
       { img: '/images/services-carousel/pack-identidad/maese.jpg' },
       { img: '/images/services-carousel/pack-identidad/rentum realty.jpg' },

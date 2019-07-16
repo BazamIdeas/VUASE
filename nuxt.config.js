@@ -164,6 +164,48 @@ module.exports = {
           })
         ]
       }
+
+      config.module.rules.unshift({
+        test: /\.(png|jpe?g|gif)$/,
+        use: {
+          loader: 'responsive-loader',
+          options: {
+            // disable: isDev,
+            placeholder: true,
+            quality: 85,
+            placeholderSize: 30,
+            name: 'img/[name].[hash:hex:7].[width].[ext]',
+            adapter: require('responsive-loader/sharp')
+          }
+        }
+      })
+
+      config.module.rules.forEach(value => {
+        if (String(value.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          // reduce to svg and webp, as other images are handled above
+          value.test = /\.(svg|webp)$/
+          // keep the configuration from image-webpack-loader here unchanged
+        }
+      })
+
+      config.module.rules.forEach(rule => {
+        if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          // add a second loader when loading images
+          rule.use.push({
+            loader: 'image-webpack-loader',
+            options: {
+              svgo: {
+                plugins: [
+                  // use these settings for internet explorer for proper scalable SVGs
+                  // https://css-tricks.com/scale-svg/
+                  { removeViewBox: false },
+                  { removeDimensions: true }
+                ]
+              }
+            }
+          })
+        }
+      })
     }
   }
 }

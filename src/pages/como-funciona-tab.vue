@@ -192,7 +192,7 @@
         <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
         <v-flex xs12 md5 >
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
+          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>

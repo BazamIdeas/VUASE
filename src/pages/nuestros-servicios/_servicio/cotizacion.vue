@@ -110,7 +110,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <v-toolbar class="hidden-sm-and-up" fixed style="top: inherit;bottom: 0;">
+    <v-toolbar class="hidden-sm-and-up" fixed style="top: inherit;bottom: 44px;">
       <div class="title font-weight-bold text-xs-center">
         <!-- {{ countryData.currency.symbol }} {{ total }} -->
         <span v-if="countryData.currency.display == 'left'">

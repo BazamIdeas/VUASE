@@ -112,7 +112,7 @@
       </v-layout>
       <v-layout row wrap align-end>
         <v-flex xs12 md5 mt-5>
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.png" width="100%">
+          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
