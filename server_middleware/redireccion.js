@@ -9,6 +9,9 @@ module.exports = function (req, res, next) {
       const path = url.parse(req.url).pathname
       const query = url.parse(req.url, true).query
 
+      console.log("Iso: " + iso)
+      console.log("Dominio: " + dominio)
+
       if (iso === 'JP' && query && !query.pais) {
         if (dominio !== 'liderlogo.es') {
           res.writeHead(301, {Location: 'https://www.liderlogo.es' + path})
