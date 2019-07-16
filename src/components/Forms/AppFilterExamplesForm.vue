@@ -1,19 +1,19 @@
 <template>
   <v-layout row wrap>
-    <v-flex sm12 md4>
       <v-select :items="services" item-text="text" item-value="field" :value="paramsData.servicio" label="Servicio" @change="redirect($event, 'sectors/getAll', 1)" solo></v-select>
     </v-flex>
+    </v-flex> -->
     <v-flex sm6 md4>
       <!-- :disabled="!(paramsData && paramsData.servicio)" -->
-      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
+      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
     </v-flex>
     <!--<v-flex md4>
       <v-select :items="activities" item-text="text" item-value="field" :value="paramsData.actividad" label="Actividad" :disabled="!(paramsData && paramsData.sector)" @change="redirect($event, 'countries/getAll', 3)" solo></v-select>
     </v-flex>-->
-    <v-flex sm6 md4>
+    <!-- <v-flex sm6 md4> -->
       <!-- :disabled="!(paramsData && paramsData.sector)" -->
-      <v-select :items="countries" item-text="text" item-value="field" :value="paramsData.actividad" label="Pais" @change="redirect($event, false, 3)" solo></v-select>
-    </v-flex>
+     <!--  <v-select :items="countries" item-text="text" item-value="field" :value="paramsData.actividad" label="Pais" @change="redirect($event, false, 3)" solo></v-select>
+    </v-flex> -->
     <!--<v-flex md4>
       <v-select :items="locations" item-text="text" item-value="field" :value="paramsData.localidad" label="Localidad" :disabled="!(paramsData && paramsData.pais)" @change="redirect($event, false, 5)" solo></v-select>
     </v-flex>-->

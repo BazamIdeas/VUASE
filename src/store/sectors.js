@@ -13,7 +13,7 @@ export const getters = {
     return state.list.find(el => el.slug === slug)
   },
   forSelectField (state) {
-    let formattedSectors = state.list.map(x => { return { text: x.name, field: x.slug } })
+    let formattedSectors = state.list.map(x => { return { text: x.name, field: x.slug, description: x.description } })
     return [{ text: 'Todos los sectores', field: 'sectores' }].concat(formattedSectors)
   }
 }
