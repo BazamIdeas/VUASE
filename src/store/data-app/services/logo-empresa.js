@@ -9,8 +9,7 @@ export const logoEmpresa = {
   &nbsp;&nbsp;&nbsp;&nbsp;En Liderlogo creamos el logo que tu marca necesita para destacar. Comienza
   hoy, junto a nuestro equipo de profesionales, el camino hacia el éxito de tu
   negocio.`,
-  shortDescription: `¿Buscando el logo perfecto? Estás en el sitio correcto.
-  En Liderlogo creamos el logo que tu marca necesita para destacar. Comienza
+  shortDescription: `En Liderlogo creamos el logo que tu marca necesita para destacar. Comienza
   hoy, junto a nuestro equipo de profesionales, el camino hacia el éxito de tu
   negocio.`,
   icon: '/icons/logo-a-medida.svg',

@@ -18,7 +18,7 @@
           <v-flex xs10 md6>
             <h1 class="headline font-weight-bold mb-1" style="color: #666666"> {{ service.dataService.title }} </h1>
             <p class="caption" style="text-align: justify; color: #666666;" v-if="!subServices.length">
-              <span v-html="service.dataService.description"></span> {{ brief.service.slug == "perfil-redes-sociales" ? "(" + brief.service.quantity + ") redes sociales" : "" }}
+              <span v-html="service.dataService.shortDescription"></span> {{ brief.service.slug == "perfil-redes-sociales" ? "(" + brief.service.quantity + ") redes sociales" : "" }}
             </p>
             <!--<v-layout row wrap v-if="subServices">
               <v-flex md11>
