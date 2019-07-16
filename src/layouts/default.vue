@@ -1,6 +1,6 @@
 <template>
   <v-app v-resize="hiddenOnResize">
-    <v-container class="px-0 py-1 amber darken-3" v-if="!alertSetted" fluid grid-list-md text-xs-center>
+    <!--<v-container class="px-0 py-1 amber darken-3" v-if="!alertSetted" fluid grid-list-md text-xs-center>
       <v-layout row align-center class="mx-1">
         <v-flex xs4>
         </v-flex>
@@ -11,7 +11,7 @@
           <v-icon @click="alertDismiss" style="cursor: pointer;">cancel</v-icon>
         </v-flex>
       </v-layout>
-    </v-container>
+    </v-container>-->
     <AppMobileNav/>
     <v-content>
       <AppHeader/>
