@@ -3,9 +3,9 @@
     <v-container grid-list-md class="ejemplos">
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
-        <!-- <v-flex xs12>
+        <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length" />
-        </v-flex> -->
+        </v-flex>
         <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
           <v-flex @click="goPortfolio('/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug, portfolio)" v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2 pointer">
             <v-card height="auto">

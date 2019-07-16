@@ -67,4 +67,4 @@ typings/
 # Nuxt generate
 dist
 
-sw.*
+nuxt.config.js
