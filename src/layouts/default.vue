@@ -1,5 +1,17 @@
 <template>
   <v-app v-resize="hiddenOnResize">
+    <v-container class="px-0 py-1 amber darken-3" v-if="!alertSetted" fluid grid-list-md text-xs-center>
+      <v-layout row align-center class="mx-1">
+        <v-flex xs4>
+        </v-flex>
+        <v-flex xs4 class="font-weight-bold white--text">
+          No cerramos por vacaciones
+        </v-flex>
+        <v-flex xs4 class="font-weight-bold white--text text-xs-right">
+          <v-icon @click="alertDismiss" style="cursor: pointer;">cancel</v-icon>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <AppMobileNav/>
     <v-content>
       <AppHeader/>
@@ -62,10 +74,12 @@
     mounted () {
       this.hiddenOnResize()
       this.cookies()
+      this.alert()
     },
     data () {
       return {
-        cookieSetted: true
+        cookieSetted: true,
+        alertSetted: true
       }
     },
     methods: {
@@ -82,6 +96,19 @@
           this.cookieSetted = false
         }
       },
+      alert () {
+        if (process.browser) {
+          if (this.checkCookie('liderlogo_alert')) {
+            if (this.getCookie('liderlogo_alert') === 'ok') {
+              this.cookieSetted = true
+              return
+            }
+          }
+
+          this.setCookie('liderlogo_alert', 'no', '30')
+          this.alertSetted = false
+        }
+      },
       hiddenOnResize () {
         if (window.innerWidth > 960) {
           this.$store.dispatch('toggleDrawer', false)
@@ -90,6 +117,10 @@
       acceptUserCookie () {
         this.setCookie('liderlogo_cookie', 'ok', '30')
         this.cookieSetted = true
+      },
+      alertDismiss () {
+        this.setCookie('liderlogo_alert', 'ok', '30')
+        this.alertSetted = true
       },
       getCookie (cname) {
         var name = cname + '='
