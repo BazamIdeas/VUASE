@@ -3,9 +3,9 @@
     <v-container grid-list-md class="ejemplos">
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
-        <v-flex xs12>
+        <!-- <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length" />
-        </v-flex>
+        </v-flex> -->
         <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
           <v-flex @click="goPortfolio('/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug, portfolio)" v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2 pointer">
             <v-card height="auto">
@@ -23,6 +23,16 @@
         </v-layout>
         <v-flex v-if="!portfolios.length">
           <h1 class="text-xs-center">No se encontraron portfolios</h1>
+        </v-flex>
+        <v-flex  xs12 class="my-3" text-xs-center>
+          <v-layout xs12 row wrap justify-center align-center >
+            <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
+              CONOCER MÁS SOBRE NUESTROS SERVICIOS
+            </v-btn>
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/ejemplos/'">
+              VER TODOS LOS EJEMPLOS
+            </v-btn>
+          </v-layout>
         </v-flex>
       </v-layout>
     </v-container>
@@ -121,4 +131,32 @@
 .pointer{
   cursor: pointer;
 }
+
+  .arrow-left, .arrow-right{
+    height: 70px;
+    width: 81%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 0px !important;
+    font-size: 13px !important;
+  }
+
+  .arrow-left::after, .arrow-right::after{
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .arrow-left::after {
+    border-right: 52px solid #0081c1;
+    content: '';
+    position: absolute;
+    left: -52px;
+  }
+
+  .arrow-right::after {
+    border-left: 52px solid #f7941d;
+    content: '';
+    position: absolute;
+    right: -52px;
+  }
 </style>

@@ -74,7 +74,7 @@
         </v-layout>
 
         <v-flex  xs12 class="my-3">
-          <v-layout xs12 row wrap justify-center>
+          <v-layout xs12 row wrap justify-center align-center>
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'+ serviceSlug">
               CONOCER MAS SOBRE EL SERVICIO
             </v-btn>
@@ -207,9 +207,11 @@
 
   .arrow-left, .arrow-right{
     height: 70px;
-    width: 400px;
+    width: 81%;
+    max-width: 400px;
     text-align: center;
     border-radius: 0px !important;
+    font-size: 13px !important;
   }
 
   .arrow-left::after, .arrow-right::after{
@@ -236,15 +238,6 @@
     max-height: calc( 80vw / 3 );
   }
 
-@media (min-width: 320px) and (max-width: 980px) {
-  
-  .arrow-left, .arrow-right{
-    width: 80%;
-  }
 
-  .arrow-left::after, .arrow-right::after{
-    display: none;
-  }
-}
 
 </style>

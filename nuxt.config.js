@@ -14,6 +14,7 @@ module.exports = {
     },
     '~~/server_middleware/geoip',
     '~~/server_middleware/redireccion',
+    '~~/server_middleware/redirecciones',
     function (req, res, next) {
       next()
     }
