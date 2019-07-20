@@ -218,6 +218,14 @@ export const actions = {
   setStep ({ commit }, data) {
     commit('SET_STEP', data)
   },
+  async getByID ({ commit }, id) {
+    try {
+      let brief = await this.$axios.$get('briefs/' + id)
+      return brief
+    } catch (error) {
+      return false
+    }
+  },
   async storeBrief ({ commit }) {
     let brief = vueInstance.$storage.get('brief')
     let bodyFormData = new FormData()

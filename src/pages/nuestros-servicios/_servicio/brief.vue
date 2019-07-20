@@ -16,7 +16,7 @@
           <AppStylesForm @changed="changedStep" v-if="stepData.number == 2"/>
           <AppColorsForm @changed="changedStep" v-if="stepData.number == 3"/>
           <AppBriefingForm :submit="submit" :slug="brief.service.slug" @submitBrief="submitBrief" v-if="stepData.number == 4 && brief.service.slug"/>
-          <AppCheckoutForm :slug="brief.service.slug" v-if="stepData.number == 5"/>
+          <AppCheckoutForm :slug="brief.service.slug" :cupon="query.cupon" v-if="stepData.number == 5"/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -65,8 +65,8 @@
       await store.dispatch('services/getAll')
       await store.dispatch('gateways/getAll')
     },
-    asyncData ({ params }) {
-      return { params: params }
+    asyncData ({ params, query }) {
+      return { params: params, query: query }
     },
     data () {
       return {
@@ -76,7 +76,18 @@
       }
     },
     async mounted () {
-      await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
+      const idBrief = this.query._id
+
+      if (idBrief) {
+        let briefByID = await this.$store.dispatch('brief/getByID', idBrief)
+        if (briefByID) {
+          await this.$store.dispatch('brief/setData', briefByID.data)
+          this.$storage.set('brief_key', briefByID.cookie)
+        }
+      } else {
+        await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
+      }
+
       await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
 
       if (!this.params.paso) {

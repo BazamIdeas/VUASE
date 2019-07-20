@@ -234,19 +234,6 @@
     <v-flex md12 xs12 class="my-3">
       <div style="height: 1px;"></div>
     </v-flex>
-    <!--<v-flex md7>
-      <v-layout row wrap>
-        <v-flex md5 xs12>
-          <v-subheader class="subheading font-weight-bold">Cupón de descuento:</v-subheader>
-        </v-flex>
-        <v-flex md4 xs7>
-          <v-text-field v-model="couponCode" placeholder="Cupón" solo></v-text-field>
-        </v-flex>
-        <v-flex md3 xs5>
-          <v-btn @click="validateCoupon" color="ma-0" :class="{ 'primary': coupon === null, 'success': coupon, 'warning': coupon === false }"  large style="margin-top: 3px !important">Validar</v-btn>
-        </v-flex>
-      </v-layout>
-    </v-flex>-->
     <v-dialog v-if="service" v-model="pay" min-width="600px" :max-width="(400) + 'px'" :width="(400) + 'px'">
       <v-card>
         <v-card-title class="title font-weight-bold text-xs-center pb-0">
@@ -326,7 +313,7 @@
 
 <script>
   export default {
-    props: ['slug'],
+    props: ['slug', 'cupon'],
     data () {
       return {
         couponCode: '',
@@ -342,6 +329,9 @@
       if (process.client) {
         document.documentElement.scrollTop = 0
       }
+
+      this.couponCode = this.cupon
+      this.validateCoupon()
     },
     watch: {
       chargePayMethods (val) {
