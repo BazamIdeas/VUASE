@@ -1,3503 +1,3443 @@
 const url = require('url')
 const redirecciones = [
   {
-    'path': '/logo/transporte/',
+    'path': '/logo/transporte',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/ferreteria/',
+    'path': '/logo/ferreteria',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/frutas/',
+    'path': '/logo/frutas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/muebles/',
+    'path': '/logo/muebles',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/aires-acondicionados/',
+    'path': '/logo/aires-acondicionados',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/pollos/',
+    'path': '/logo/pollos',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/carnicerias/',
+    'path': '/logo/carnicerias',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logotipos/informatica-comunicacion-tecnologia/',
+    'path': '/logotipos/informatica-comunicacion-tecnologia',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/jardineria/',
+    'path': '/logo/jardineria',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/chocolate/',
+    'path': '/logo/chocolate',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/nuestros-servicios/diseno-rotulos/',
-    'url': 'industria-autommotriz'
-  },
-  {
-    'path': '/logos/logotipo-para-contador-publico/',
+    'path': '/logos/logotipo-para-contador-publico',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/limpieza/',
+    'path': '/logo/limpieza',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/heladerias/',
+    'path': '/logo/heladerias',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/pastelerias/',
+    'path': '/logo/pastelerias',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logotipos/farmacia/',
+    'path': '/logotipos/farmacia',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/lacteos/',
+    'path': '/logo/lacteos',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/papelerias/',
+    'path': '/logo/papelerias',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/opticas/',
+    'path': '/logo/opticas',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/electricos/',
+    'path': '/logo/electricos',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/nutricion/',
+    'path': '/logo/nutricion',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/talleres/',
+    'path': '/logo/talleres',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/flores/',
+    'path': '/logo/flores',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logotipos/mantenimiento-limpieza/',
+    'path': '/logotipos/mantenimiento-limpieza',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/joyeria/',
+    'path': '/logo/joyeria',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/postre/',
+    'path': '/logo/postre',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/cerdo/',
+    'path': '/logo/cerdo',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/osos/',
+    'path': '/logo/osos',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-para-laboratorio-clinico-2/',
+    'path': '/logos/logo-para-laboratorio-clinico-2',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-de-comida-saludable/',
+    'path': '/logos/logo-de-comida-saludable',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/gasolineras/',
+    'path': '/logo/gasolineras',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logos/logo-de-huellas-de-perro/',
+    'path': '/logos/logo-de-huellas-de-perro',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/vidrio/',
+    'path': '/logo/vidrio',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-para-polleria/',
+    'path': '/logos/logo-para-polleria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/supermercado/',
+    'path': '/logo/supermercado',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-de-huella-de-oso/',
+    'path': '/logos/logo-de-huella-de-oso',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/mineria/',
+    'path': '/logo/mineria',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-silueta-de-montana/',
+    'path': '/logos/logo-silueta-de-montana',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/veterinarias/',
+    'path': '/logo/veterinarias',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/agencias-de-viajes/',
+    'path': '/logo/agencias-de-viajes',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/avion/',
+    'path': '/logo/avion',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/electricidad/',
+    'path': '/logo/electricidad',
     'url': 'industria'
   },
   {
-    'path': '/portfolio/logo-de-medicina-kinesiologia-y-rehabilitacion/',
+    'path': '/portfolio/logo-de-medicina-kinesiologia-y-rehabilitacion',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/quimica/',
+    'path': '/logo/quimica',
     'url': 'industria'
   },
   {
-    'path': '/logo/agua/',
+    'path': '/logo/agua',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/toros/',
+    'path': '/logo/toros',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/vacas/',
+    'path': '/logo/vacas',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logotipos/alimentos-bebida/',
+    'path': '/logotipos/alimentos-bebida',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-contador/',
+    'path': '/logos/logo-para-contador',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-para-empresas-de-limpieza-e-higiene/',
+    'path': '/logos/logo-para-empresas-de-limpieza-e-higiene',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/dulces/',
+    'path': '/logo/dulces',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-muela/',
+    'path': '/logos/logo-de-muela',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-de-seguridad-industrial/',
+    'path': '/logos/logo-de-seguridad-industrial',
     'url': 'industria'
   },
   {
-    'path': '/logo/bebidas/',
+    'path': '/logo/bebidas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/portfolio/logo-para-laboratorio-de-analisis-clinicos/',
+    'path': '/portfolio/logo-para-laboratorio-de-analisis-clinicos',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/construccion/',
+    'path': '/logo/construccion',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/mecanica/',
+    'path': '/logo/mecanica',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/consultoria/',
+    'path': '/logo/consultoria',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/bolsos/',
+    'path': '/logo/bolsos',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/computacion/',
+    'path': '/logo/computacion',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/librerias/',
+    'path': '/logo/librerias',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/laboratorio/',
+    'path': '/logo/laboratorio',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-para-empresa-de-refrigeracion/',
+    'path': '/logos/logo-para-empresa-de-refrigeracion',
     'url': 'industria'
   },
   {
-    'path': '/logo/mariscos/',
+    'path': '/logo/mariscos',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/licor/',
+    'path': '/logo/licor',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/comidas-caseras/',
+    'path': '/logo/comidas-caseras',
     'url': 'restaurant'
   },
   {
-    'path': '/logotipos/medio-ambiente-ecologia/',
+    'path': '/logotipos/medio-ambiente-ecologia',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-licores/',
+    'path': '/logos/logo-de-licores',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/portfolio/logo-de-limpieza-y-mantenimiento-en-empresas/',
+    'path': '/portfolio/logo-de-limpieza-y-mantenimiento-en-empresas',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/corazon/',
+    'path': '/logo/corazon',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/vinos/',
+    'path': '/logo/vinos',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-empresa-de-electrodomesticos/',
+    'path': '/logos/logo-para-empresa-de-electrodomesticos',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-para-empresa-de-multiservicios/',
+    'path': '/logos/logo-para-empresa-de-multiservicios',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-para-galletas/',
+    'path': '/logos/logo-para-galletas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/reloj/',
+    'path': '/logo/reloj',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-fruteria/',
+    'path': '/logos/logo-de-fruteria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logotipos/motor-coches/',
+    'path': '/logotipos/motor-coches',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/labial/',
+    'path': '/logo/labial',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/motos/',
+    'path': '/logo/motos',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/seguridad/',
+    'path': '/logo/seguridad',
     'url': 'seguridad'
   },
   {
-    'path': '/logo/danza/',
+    'path': '/logo/danza',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/alas/',
+    'path': '/logo/alas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-salon-de-fiestas-infantiles/',
+    'path': '/logos/logo-para-salon-de-fiestas-infantiles',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/pintores/',
+    'path': '/logo/pintores',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/enfermeria/',
+    'path': '/logo/enfermeria',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/cosmeticos/',
+    'path': '/logo/cosmeticos',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-huella-de-perro/',
+    'path': '/logos/logo-de-huella-de-perro',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/juguetes/',
+    'path': '/logo/juguetes',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-granjas-avicolas/',
+    'path': '/logos/logo-para-granjas-avicolas',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/guarderias/',
+    'path': '/logo/guarderias',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/naranjas/',
+    'path': '/logo/naranjas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/contabilidad/',
+    'path': '/logo/contabilidad',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/centro-estetica/',
+    'path': '/logo/centro-estetica',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/pesca/',
+    'path': '/logo/pesca',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/gimnasia-ritmica/',
+    'path': '/logo/gimnasia-ritmica',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/coctel/',
+    'path': '/logo/coctel',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/palomas/',
+    'path': '/logo/palomas',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-comida-saludable-2/',
+    'path': '/logos/logo-de-comida-saludable-2',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/electricista/',
+    'path': '/logo/electricista',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/queso/',
+    'path': '/logo/queso',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/reciclaje/',
+    'path': '/logo/reciclaje',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/cerrajeria/',
+    'path': '/logo/cerrajeria',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/tenis/',
+    'path': '/logo/tenis',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/asociaciones/',
+    'path': '/logo/asociaciones',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/ganaderia/',
+    'path': '/logo/ganaderia',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/palmera/',
+    'path': '/logo/palmera',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/fiesta/',
+    'path': '/logo/fiesta',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logos/logo-de-velas-aromaticas/',
+    'path': '/logos/logo-de-velas-aromaticas',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/fruteria/',
+    'path': '/logo/fruteria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-tienda-de-regalos/',
+    'path': '/logos/logo-de-tienda-de-regalos',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/bisuteria/',
+    'path': '/logo/bisuteria',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/ingenieria/',
+    'path': '/logo/ingenieria',
     'url': 'ingenieria'
   },
   {
-    'path': '/logos/logo-de-primeros-auxilios/',
+    'path': '/logos/logo-de-primeros-auxilios',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-para-autolavado-2/',
+    'path': '/logos/logo-para-autolavado-2',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logos/logo-de-donas/',
+    'path': '/logos/logo-de-donas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/matematicas/',
+    'path': '/logo/matematicas',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logo/logistica/',
+    'path': '/logo/logistica',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/blog/logo-tenologia/',
-    'url': 'tecnologia-y-telecomunicacion'
-  },
-  {
-    'path': '/logo/mariposas/',
+    'path': '/logo/mariposas',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/portfolio/logo-empresa-mantenimiento-mangueras-hidraulicas-maquinarias-pesadas-venta-instrumentos-medicion-equipos-electricos-herramientas-manuales-ferreteria-general/',
+    'path': '/portfolio/logo-empresa-mantenimiento-mangueras-hidraulicas-maquinarias-pesadas-venta-instrumentos-medicion-equipos-electricos-herramientas-manuales-ferreteria-general',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/chapa-y-pintura/',
+    'path': '/logo/chapa-y-pintura',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-para-un-vivero/',
+    'path': '/logos/logo-para-un-vivero',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/padel/',
+    'path': '/logo/padel',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/decoracion/',
+    'path': '/logo/decoracion',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logos/logo-de-frutas/',
+    'path': '/logos/logo-de-frutas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logotipo-para-agencia-de-viajes/',
+    'path': '/logos/logotipo-para-agencia-de-viajes',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/marisqueria/',
+    'path': '/logo/marisqueria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/baile/',
+    'path': '/logo/baile',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/cocineros/',
+    'path': '/logo/cocineros',
     'url': 'restaurant'
   },
   {
-    'path': '/logos/logo-para-restaurant-mexicano/',
+    'path': '/logos/logo-para-restaurant-mexicano',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/piscinas/',
+    'path': '/logo/piscinas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/camaron/',
+    'path': '/logo/camaron',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/transportes/',
+    'path': '/logo/transportes',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-hormiga/',
+    'path': '/logos/logo-de-hormiga',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/maquinas-excavadoras/',
+    'path': '/logo/maquinas-excavadoras',
     'url': 'industria'
   },
   {
-    'path': '/logo/caras/',
+    'path': '/logo/caras',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-justicia/',
+    'path': '/logos/logo-de-justicia',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/aviones/',
+    'path': '/logo/aviones',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-para-vivero/',
+    'path': '/logos/logo-para-vivero',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-caritas-felices/',
+    'path': '/logos/logo-caritas-felices',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/imprentas/',
+    'path': '/logo/imprentas',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logotipos/abstractos/',
+    'path': '/logotipos/abstractos',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/caza/',
+    'path': '/logo/caza',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/semilla/',
+    'path': '/logo/semilla',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/portfolio/folleto-para-reformas-inmobiliarias/',
+    'path': '/portfolio/folleto-para-reformas-inmobiliarias',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logo/piramide/',
+    'path': '/logo/piramide',
     'url': 'ingenieria'
   },
   {
-    'path': '/logo/cafe/',
+    'path': '/logo/cafe',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-parrilla-de-cerdo/',
+    'path': '/logos/logo-de-parrilla-de-cerdo',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/edificios/',
+    'path': '/logo/edificios',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logos/logo-empresa-de-limpieza-de-oficinas/',
+    'path': '/logos/logo-empresa-de-limpieza-de-oficinas',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/blog/buen-diseno-perfil-redes-sociales-atraer-clientes/',
+    'path': '/blog/buen-diseno-perfil-redes-sociales-atraer-clientes',
     'url': 'marketing-sicial-media'
   },
   {
-    'path': '/logos/logo-de-un-huevo/',
+    'path': '/logos/logo-de-un-huevo',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/zapaterias/',
+    'path': '/logo/zapaterias',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/agricola/',
+    'path': '/logo/agricola',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/camiones/',
+    'path': '/logo/camiones',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logo/familia/',
+    'path': '/logo/familia',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/floristeria/',
+    'path': '/logo/floristeria',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/carpinterias/',
+    'path': '/logo/carpinterias',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-albanil/',
+    'path': '/logos/logo-de-albanil',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/masaje/',
+    'path': '/logo/masaje',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/asado/',
+    'path': '/logo/asado',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/circo/',
+    'path': '/logo/circo',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-flores-de-bach/',
+    'path': '/logos/logo-flores-de-bach',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-para-lavanderia-2/',
+    'path': '/logos/logo-para-lavanderia-2',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/gallina/',
+    'path': '/logo/gallina',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/fontaneria/',
+    'path': '/logo/fontaneria',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/portfolio/logo-empresa-comercializadora-fertilizantes-plaguicidas-semillas-siembra/',
+    'path': '/portfolio/logo-empresa-comercializadora-fertilizantes-plaguicidas-semillas-siembra',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/espiral/',
+    'path': '/logo/espiral',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/pizzerias/',
+    'path': '/logo/pizzerias',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/bebes/',
+    'path': '/logo/bebes',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logo/lobo/',
+    'path': '/logo/lobo',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/depilacion/',
+    'path': '/logo/depilacion',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/helado/',
+    'path': '/logo/helado',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/autos/',
+    'path': '/logo/autos',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/playa/',
+    'path': '/logo/playa',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/balanza/',
+    'path': '/logo/balanza',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-bolas-de-billar/',
+    'path': '/logos/logo-de-bolas-de-billar',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/taco/',
+    'path': '/logo/taco',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/pasteles/',
+    'path': '/logo/pasteles',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/hoteles/',
+    'path': '/logo/hoteles',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/copas/',
+    'path': '/logo/copas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/mecanicos/',
+    'path': '/logo/mecanicos',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/portfolio/logo-para-empresa-de-mensajeria-ecologica/',
+    'path': '/portfolio/logo-para-empresa-de-mensajeria-ecologica',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-acuario/',
+    'path': '/logos/logo-de-acuario',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/sol/',
+    'path': '/logo/sol',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/cybercafe/',
+    'path': '/logo/cybercafe',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/engranaje/',
+    'path': '/logo/engranaje',
     'url': 'ingenieria'
   },
   {
-    'path': '/logo/gasolina/',
+    'path': '/logo/gasolina',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/salsa/',
+    'path': '/logo/salsa',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-con-camello/',
+    'path': '/logos/logo-con-camello',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/huevos/',
+    'path': '/logo/huevos',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/ciclismo/',
+    'path': '/logo/ciclismo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/25-aniversario/',
+    'path': '/logo/25-aniversario',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/carpinteria/',
+    'path': '/logo/carpinteria',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-para-electricista/',
+    'path': '/logos/logo-para-electricista',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/manos/',
+    'path': '/logo/manos',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/celular/',
+    'path': '/logo/celular',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/caballos/',
+    'path': '/logo/caballos',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-cejas/',
+    'path': '/logos/logo-de-cejas',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/planta/',
+    'path': '/logo/planta',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-para-ferreterias-2/',
+    'path': '/logos/logo-para-ferreterias-2',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/gruas/',
+    'path': '/logo/gruas',
     'url': 'ingenieria'
   },
   {
-    'path': '/logos/logo-de-paloma-mensajera/',
+    'path': '/logos/logo-de-paloma-mensajera',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/lavadoras/',
+    'path': '/logo/lavadoras',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/hospitales/',
+    'path': '/logo/hospitales',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/gas/',
+    'path': '/logo/gas',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-para-tienda-de-manualidades-2/',
+    'path': '/logos/logo-para-tienda-de-manualidades-2',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/bombillo/',
+    'path': '/logo/bombillo',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/aguilas/',
+    'path': '/logo/aguilas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/ambulancia/',
+    'path': '/logo/ambulancia',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/discotecas/',
+    'path': '/logo/discotecas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/sobre-liderlogo//',
-    'url': 'marketing-sicial-media'
-  },
-  {
-    'path': '/logos/logotipo-con-diseno-para-pescaderia/',
+    'path': '/logos/logotipo-con-diseno-para-pescaderia',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/trebol/',
+    'path': '/logo/trebol',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-para-charcuteria/',
+    'path': '/logos/logo-para-charcuteria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/zapato/',
+    'path': '/logo/zapato',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-de-trebol-de-cuatro-hojas/',
+    'path': '/logos/logo-de-trebol-de-cuatro-hojas',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/industriales/',
+    'path': '/logo/industriales',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-de-detergente/',
+    'path': '/logos/logo-de-detergente',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logos/logo-de-palmeras/',
+    'path': '/logos/logo-de-palmeras',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/aviso-legal//',
-    'url': 'asesoria-y-consultoria'
-  },
-  {
-    'path': '/logo/frio/',
+    'path': '/logo/frio',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-castillo/',
+    'path': '/logos/logo-castillo',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/catering/',
+    'path': '/logo/catering',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-centros-de-masajes/',
+    'path': '/logos/logo-para-centros-de-masajes',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/barcos/',
+    'path': '/logo/barcos',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-tejido/',
+    'path': '/logos/logo-de-tejido',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/atletismo/',
+    'path': '/logo/atletismo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/lampara/',
+    'path': '/logo/lampara',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logos/logo-empresas-ambientales/',
+    'path': '/logos/logo-empresas-ambientales',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/editoriales/',
+    'path': '/logo/editoriales',
     'url': 'marketing-sicial-media'
   },
   {
-    'path': '/logo/seguros/',
+    'path': '/logo/seguros',
     'url': 'seguridad'
   },
   {
-    'path': '/logos/logo-para-tienda-de-ropa-deportiva/',
+    'path': '/logos/logo-para-tienda-de-ropa-deportiva',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-desinfectante/',
+    'path': '/logos/logo-desinfectante',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logos/logo-para-productos-de-limpieza/',
+    'path': '/logos/logo-para-productos-de-limpieza',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logos/logo-electricistas/',
+    'path': '/logos/logo-electricistas',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/buda/',
+    'path': '/logo/buda',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/taxi/',
+    'path': '/logo/taxi',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/pluma/',
+    'path': '/logo/pluma',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/bienestar/',
+    'path': '/logo/bienestar',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logotipos/inmobiliaria-promocion-construccion/',
+    'path': '/logotipos/inmobiliaria-promocion-construccion',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logo/farmacias/',
+    'path': '/logo/farmacias',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/pan/',
+    'path': '/logo/pan',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/pared/',
+    'path': '/logo/pared',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/granja/',
+    'path': '/logo/granja',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/portfolio/logo-servicio-mantenimiento-electricidad-fontaneria-pintura-construccion-seca/',
+    'path': '/portfolio/logo-servicio-mantenimiento-electricidad-fontaneria-pintura-construccion-seca',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/arroz/',
+    'path': '/logo/arroz',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-cana-de-azucar/',
+    'path': '/logos/logo-de-cana-de-azucar',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-empresa-de-carteras/',
+    'path': '/logos/logo-para-empresa-de-carteras',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/comunicacion/',
+    'path': '/logo/comunicacion',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logos/logo-de-senderismo/',
+    'path': '/logos/logo-de-senderismo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/portfolio/logo-para-laboratorio-de-analisis-clinicos/',
+    'path': '/portfolio/logo-para-laboratorio-de-analisis-clinicos',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/diseno-de-logo-para-empresas-de-seguro-o-finanzas/',
+    'path': '/logos/diseno-de-logo-para-empresas-de-seguro-o-finanzas',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-carpintero/',
+    'path': '/logos/logo-de-carpintero',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-olas-del-mar/',
+    'path': '/logos/logo-de-olas-del-mar',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-comida-china/',
+    'path': '/logos/logo-comida-china',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/pasta/',
+    'path': '/logo/pasta',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/finanzas/',
+    'path': '/logo/finanzas',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-una-casa-de-dulces/',
+    'path': '/logos/logo-de-una-casa-de-dulces',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/cereales/',
+    'path': '/logo/cereales',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-pescaderia/',
+    'path': '/logos/logo-para-pescaderia',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logotipos/arte-diseno/',
+    'path': '/logotipos/arte-diseno',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/asesorias/',
+    'path': '/logo/asesorias',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/abeja/',
+    'path': '/logo/abeja',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/nuestros-servicios//',
-    'url': 'reparaciones-y-mantenimiento'
-  },
-  {
-    'path': '/logo/utiles-escolares/',
+    'path': '/logo/utiles-escolares',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logos/logo-con-ojos-de-buho/',
+    'path': '/logos/logo-con-ojos-de-buho',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/contador/',
+    'path': '/logo/contador',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-cubiertos/',
+    'path': '/logos/logo-de-cubiertos',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/grupos-musicales/',
+    'path': '/logo/grupos-musicales',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/electronica/',
+    'path': '/logo/electronica',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/vacaciones/',
+    'path': '/logo/vacaciones',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-para-empresa-de-telas/',
+    'path': '/logos/logo-para-empresa-de-telas',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/casas/',
+    'path': '/logo/casas',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-de-trenzas-de-zapatos/',
+    'path': '/logos/logo-de-trenzas-de-zapatos',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-con-gancho/',
+    'path': '/logos/logo-con-gancho',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-de-oveja/',
+    'path': '/logos/logo-de-oveja',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/piedra/',
+    'path': '/logo/piedra',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/cascos/',
+    'path': '/logo/cascos',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/aguila/',
+    'path': '/logo/aguila',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/delfines/',
+    'path': '/logo/delfines',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-textil/',
+    'path': '/logos/logo-textil',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/mujer/',
+    'path': '/logo/mujer',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logotipos/consultoria-finanzas-seguros/',
+    'path': '/logotipos/consultoria-finanzas-seguros',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/panaderias/',
+    'path': '/logo/panaderias',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logotipo-para-jugueteria/',
+    'path': '/logos/logotipo-para-jugueteria',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/montana/',
+    'path': '/logo/montana',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-para-empresa-de-electricidad/',
+    'path': '/logos/logo-para-empresa-de-electricidad',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/chino/',
+    'path': '/logo/chino',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-de-guantes-de-boxeo/',
+    'path': '/logos/logo-de-guantes-de-boxeo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-batido/',
+    'path': '/logos/logo-de-batido',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-ejercicios/',
+    'path': '/logos/logo-de-ejercicios',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-albanileria/',
+    'path': '/logos/logo-de-albanileria',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-para-oficina-contable/',
+    'path': '/logos/logo-para-oficina-contable',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-dinero/',
+    'path': '/logos/logo-de-dinero',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/peluche/',
+    'path': '/logo/peluche',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-con-escalera/',
+    'path': '/logos/logo-con-escalera',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/portfolio/logo-de-comercio-minorista-de-tabaco-y-estancos/',
+    'path': '/portfolio/logo-de-comercio-minorista-de-tabaco-y-estancos',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-de-toro-rojo/',
+    'path': '/logos/logo-de-toro-rojo',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-un-montacargas/',
+    'path': '/logos/logo-de-un-montacargas',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-de-baile-de-salon/',
+    'path': '/logos/logo-de-baile-de-salon',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/camioneta/',
+    'path': '/logo/camioneta',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/castillo/',
+    'path': '/logo/castillo',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/perros/',
+    'path': '/logo/perros',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-caja-de-primeros-auxilios/',
+    'path': '/logos/logo-de-caja-de-primeros-auxilios',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logotipos/decoracion/',
+    'path': '/logotipos/decoracion',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logotipos/comercio/',
+    'path': '/logotipos/comercio',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-para-empresas-de-aseo/',
+    'path': '/logos/logo-para-empresas-de-aseo',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/peces/',
+    'path': '/logo/peces',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/ladrillos/',
+    'path': '/logo/ladrillos',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/comercio-internacional/',
+    'path': '/logo/comercio-internacional',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logo/nieve/',
+    'path': '/logo/nieve',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/luna/',
+    'path': '/logo/luna',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-para-iglesia-2/',
+    'path': '/logos/logo-para-iglesia-2',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logos/logo-de-nieve/',
+    'path': '/logos/logo-de-nieve',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-chino/',
+    'path': '/logos/logo-chino',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-de-frutos-rojos/',
+    'path': '/logos/logo-de-frutos-rojos',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/diamantes/',
+    'path': '/logo/diamantes',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-tacones/',
+    'path': '/logos/logo-de-tacones',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/botellas/',
+    'path': '/logo/botellas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/neumaticos/',
+    'path': '/logo/neumaticos',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logos/logo-empresa-de-telecomunicaciones/',
+    'path': '/logos/logo-empresa-de-telecomunicaciones',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logos/logo-de-ortodoncia/',
+    'path': '/logos/logo-de-ortodoncia',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-tren/',
+    'path': '/logos/logo-tren',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-para-discotecas/',
+    'path': '/logos/logo-para-discotecas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-la-playa/',
+    'path': '/logos/logo-para-la-playa',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-maquinaria/',
+    'path': '/logos/logo-maquinaria',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-de-un-mostacho/',
+    'path': '/logos/logo-de-un-mostacho',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/bailarina/',
+    'path': '/logo/bailarina',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-perfumeria/',
+    'path': '/logos/logo-para-perfumeria',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/cocinas/',
+    'path': '/logo/cocinas',
     'url': 'restaurant'
   },
   {
-    'path': '/portfolio/folleto-para-instalaciones-electricas/',
+    'path': '/portfolio/folleto-para-instalaciones-electricas',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/joyas/',
+    'path': '/logo/joyas',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-hielo/',
+    'path': '/logos/logo-hielo',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/buses/',
+    'path': '/logo/buses',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logotipo-para-productora-audiovisual-y-cine/',
+    'path': '/logos/logotipo-para-productora-audiovisual-y-cine',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-empresa-de-banquetes/',
+    'path': '/logos/logo-para-empresa-de-banquetes',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/tomate/',
+    'path': '/logo/tomate',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/puertas/',
+    'path': '/logo/puertas',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/delfin/',
+    'path': '/logo/delfin',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-con-mariposa-de-colores/',
+    'path': '/logos/logo-con-mariposa-de-colores',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-vigilancia/',
+    'path': '/logos/logo-vigilancia',
     'url': 'seguridad'
   },
   {
-    'path': '/logo/mar/',
+    'path': '/logo/mar',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/paisaje/',
+    'path': '/logo/paisaje',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-para-payaso/',
+    'path': '/logos/logo-para-payaso',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/culturales/',
+    'path': '/logo/culturales',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logo/madera/',
+    'path': '/logo/madera',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-para-alquiler-de-equipos-de-sonido/',
+    'path': '/logos/logo-para-alquiler-de-equipos-de-sonido',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logo/medicamentos/',
+    'path': '/logo/medicamentos',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-de-deportes-extremos/',
+    'path': '/logos/logo-de-deportes-extremos',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-para-empresa-de-turismo/',
+    'path': '/logos/logo-para-empresa-de-turismo',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-con-lavadora/',
+    'path': '/logos/logo-con-lavadora',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/bicicletas/',
+    'path': '/logo/bicicletas',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-sillas-y-mesas-para-eventos/',
+    'path': '/logos/logo-de-sillas-y-mesas-para-eventos',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logos/logo-para-tienda-de-bebes/',
+    'path': '/logos/logo-para-tienda-de-bebes',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-empresa-de-topografia/',
+    'path': '/logos/logo-para-empresa-de-topografia',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-para-batidos-naturales/',
+    'path': '/logos/logo-para-batidos-naturales',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-ambulancia/',
+    'path': '/logos/logo-de-ambulancia',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-hawaiano-2/',
+    'path': '/logos/logo-hawaiano-2',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-con-cartas-de-poker/',
+    'path': '/logos/logo-con-cartas-de-poker',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-cisne/',
+    'path': '/logos/logo-cisne',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-casa-de-empeno/',
+    'path': '/logos/logo-de-casa-de-empeno',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-ojos-verdes/',
+    'path': '/logos/logo-de-ojos-verdes',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-taller-mecanico-automotriz/',
+    'path': '/logos/logo-de-taller-mecanico-automotriz',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logos/logo-para-centro-de-estetica/',
+    'path': '/logos/logo-para-centro-de-estetica',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-carita-feliz/',
+    'path': '/logos/logo-carita-feliz',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-para-tienda-de-espejos/',
+    'path': '/logos/logo-para-tienda-de-espejos',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-sabila/',
+    'path': '/logos/logo-sabila',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-lineas-perpendiculares/',
+    'path': '/logos/logo-de-lineas-perpendiculares',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/velocidad/',
+    'path': '/logo/velocidad',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/estetoscopio/',
+    'path': '/logo/estetoscopio',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/dinero/',
+    'path': '/logo/dinero',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/globo/',
+    'path': '/logo/globo',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/hielo/',
+    'path': '/logo/hielo',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-con-estrella-fugaz/',
+    'path': '/logos/logo-con-estrella-fugaz',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logotipos/medicina-salud-servicios-sanitarios/',
+    'path': '/logotipos/medicina-salud-servicios-sanitarios',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/sanitarios/',
+    'path': '/logo/sanitarios',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logos/logo-construccion-civil/',
+    'path': '/logos/logo-construccion-civil',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/deportivos/',
+    'path': '/logo/deportivos',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/flechas/',
+    'path': '/logo/flechas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logotipo-de-acuario-o-tienda-de-peceras/',
+    'path': '/logos/logotipo-de-acuario-o-tienda-de-peceras',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-cuadros-2/',
+    'path': '/logos/logo-de-cuadros-2',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/lentes/',
+    'path': '/logo/lentes',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-3d-para-empresa-constructora/',
+    'path': '/logos/logo-3d-para-empresa-constructora',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logotipo-para-arreglos-florales/',
+    'path': '/logos/logotipo-para-arreglos-florales',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/desinfectante/',
+    'path': '/logo/desinfectante',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/arboles/',
+    'path': '/logo/arboles',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/bambu/',
+    'path': '/logo/bambu',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/tubos/',
+    'path': '/logo/tubos',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-con-tuercas-para-ferreteria/',
+    'path': '/logos/logo-con-tuercas-para-ferreteria',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/brujula/',
+    'path': '/logo/brujula',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/leyes/',
+    'path': '/logo/leyes',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-teclado-de-piano/',
+    'path': '/logos/logo-de-teclado-de-piano',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/colmena/',
+    'path': '/logo/colmena',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-para-venta-de-telas/',
+    'path': '/logos/logo-para-venta-de-telas',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/luz/',
+    'path': '/logo/luz',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-mariposa-multicolor/',
+    'path': '/logos/logo-mariposa-multicolor',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-bienestar-familiar/',
+    'path': '/logos/logo-de-bienestar-familiar',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-un-pollo-asado/',
+    'path': '/logos/logo-de-un-pollo-asado',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/candado/',
+    'path': '/logo/candado',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-media-luna/',
+    'path': '/logos/logo-de-media-luna',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-para-acuarios/',
+    'path': '/logos/logo-para-acuarios',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/panaderia/',
+    'path': '/logo/panaderia',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/teclado/',
+    'path': '/logo/teclado',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/inmobiliarias/',
+    'path': '/logo/inmobiliarias',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logo/cine/',
+    'path': '/logo/cine',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-carne/',
+    'path': '/logos/logo-de-carne',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/margarita/',
+    'path': '/logo/margarita',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-de-gaviota/',
+    'path': '/logos/logo-de-gaviota',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/contacto//',
-    'url': 'asesoria-y-consultoria'
-  },
-  {
-    'path': '/logos/logo-de-sonrisa/',
+    'path': '/logos/logo-de-sonrisa',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/cerveceria/',
+    'path': '/logo/cerveceria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/reformas/',
+    'path': '/logo/reformas',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-ferreteria/',
+    'path': '/logos/logo-ferreteria',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-abstracto-con-ciervo/',
+    'path': '/logos/logo-abstracto-con-ciervo',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-caballito-de-mar/',
+    'path': '/logos/logo-de-caballito-de-mar',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logotipo-para-medicina-estetica/',
+    'path': '/logos/logotipo-para-medicina-estetica',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logotipo-de-audifonos/',
+    'path': '/logos/logotipo-de-audifonos',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/cangrejo/',
+    'path': '/logo/cangrejo',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/casas-rurales/',
+    'path': '/logo/casas-rurales',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-de-un-sombrero/',
+    'path': '/logos/logo-de-un-sombrero',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/portfolio/logo-cielo-fm/',
+    'path': '/portfolio/logo-cielo-fm',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/medio-ambiente/',
+    'path': '/logo/medio-ambiente',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/cartas/',
+    'path': '/logo/cartas',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/buceo/',
+    'path': '/logo/buceo',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-lavanderias/',
+    'path': '/logos/logo-para-lavanderias',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/parafarmacia/',
+    'path': '/logo/parafarmacia',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/clinica-veterinaria/',
+    'path': '/logo/clinica-veterinaria',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-tricolor/',
+    'path': '/logos/logo-tricolor',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-con-diseno-para-ferreteria/',
+    'path': '/logos/logo-con-diseno-para-ferreteria',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-computacion/',
+    'path': '/logos/logo-computacion',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logos/logo-para-curso-de-corte-y-costura/',
+    'path': '/logos/logo-para-curso-de-corte-y-costura',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/cinta/',
+    'path': '/logo/cinta',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-paracaidismo/',
+    'path': '/logos/logo-paracaidismo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/bares/',
+    'path': '/logo/bares',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/montanas/',
+    'path': '/logo/montanas',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-cd/',
+    'path': '/logos/logo-cd',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/cobranza/',
+    'path': '/logo/cobranza',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/cafeterias/',
+    'path': '/logo/cafeterias',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logotipos/dibujos/',
+    'path': '/logotipos/dibujos',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/colonias/',
+    'path': '/logo/colonias',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/albanileria/',
+    'path': '/logo/albanileria',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-espiga-de-trigo/',
+    'path': '/logos/logo-de-espiga-de-trigo',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-un-atardecer/',
+    'path': '/logos/logo-de-un-atardecer',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/economia/',
+    'path': '/logo/economia',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-para-empresas-de-computadoras/',
+    'path': '/logos/logo-para-empresas-de-computadoras',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/repuestos/',
+    'path': '/logo/repuestos',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/pintura/',
+    'path': '/logo/pintura',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/ave/',
+    'path': '/logo/ave',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/locomotora/',
+    'path': '/logo/locomotora',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/deportes-extremos/',
+    'path': '/logo/deportes-extremos',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logotipo-con-diseno-para-floristeria/',
+    'path': '/logos/logotipo-con-diseno-para-floristeria',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logos-de-mineria/',
+    'path': '/logos/logos-de-mineria',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-para-cooperativa/',
+    'path': '/logos/logo-para-cooperativa',
     'url': 'organizacion-sin-fin-de-lucro'
   },
   {
-    'path': '/logos/logo-con-racimo-de-uvas/',
+    'path': '/logos/logo-con-racimo-de-uvas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/filmacion/',
+    'path': '/logo/filmacion',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-brujula/',
+    'path': '/logos/logo-de-brujula',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/embalaje/',
+    'path': '/logo/embalaje',
     'url': 'industria'
   },
   {
-    'path': '/logo/huerta/',
+    'path': '/logo/huerta',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-de-siembra/',
+    'path': '/logos/logo-de-siembra',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/portfolio/rotulo-para-vehiculo-de-bebidas-de-jugos-de-fruta-naturales/',
+    'path': '/portfolio/rotulo-para-vehiculo-de-bebidas-de-jugos-de-fruta-naturales',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/burbujas/',
+    'path': '/logo/burbujas',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logotipo-con-cerezas/',
+    'path': '/logos/logotipo-con-cerezas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-electricista/',
+    'path': '/logos/logo-electricista',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/climatizacion/',
+    'path': '/logo/climatizacion',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-una-hada/',
+    'path': '/logos/logo-de-una-hada',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-naturista/',
+    'path': '/logos/logo-naturista',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-con-toga-y-birrete/',
+    'path': '/logos/logo-con-toga-y-birrete',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logos/logo-con-tomates/',
+    'path': '/logos/logo-con-tomates',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-hawaiano/',
+    'path': '/logos/logo-hawaiano',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/vigilancia/',
+    'path': '/logo/vigilancia',
     'url': 'seguridad'
   },
   {
-    'path': '/logo/campo/',
+    'path': '/logo/campo',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/servicio-tecnico/',
+    'path': '/logo/servicio-tecnico',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-la-selva/',
+    'path': '/logos/logo-de-la-selva',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-plantas/',
+    'path': '/logos/logo-plantas',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/furgoneta/',
+    'path': '/logo/furgoneta',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-duende/',
+    'path': '/logos/logo-de-duende',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-con-banderines/',
+    'path': '/logos/logo-con-banderines',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logos/logo-taller/',
+    'path': '/logos/logo-taller',
     'url': 'ingenieria'
   },
   {
-    'path': '/logos/logo-con-un-trebol/',
+    'path': '/logos/logo-con-un-trebol',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/blog/folletos-publicitarios-publicidades-alternativas/',
+    'path': '/blog/folletos-publicitarios-publicidades-alternativas',
     'url': 'marketing-sicial-media'
   },
   {
-    'path': '/logo/insecto/',
+    'path': '/logo/insecto',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-ceramica/',
+    'path': '/logos/logo-de-ceramica',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/persona/',
+    'path': '/logo/persona',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/salones-de-belleza/',
+    'path': '/logo/salones-de-belleza',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-manzanas/',
+    'path': '/logos/logo-de-manzanas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/tribales/',
+    'path': '/logo/tribales',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-obras-publicas/',
+    'path': '/logos/logo-obras-publicas',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-para-guarderias/',
+    'path': '/logos/logo-para-guarderias',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/americanos/',
+    'path': '/logo/americanos',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/mostacho/',
+    'path': '/logo/mostacho',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/paramedicos/',
+    'path': '/logo/paramedicos',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/nuestros-servicios//',
+    'path': '/logos/logo-de-media-luna-roja',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-media-luna-roja/',
-    'url': 'arte-y-fotografia'
-  },
-  {
-    'path': '/logos/logo-para-chef-o-cocineros/',
+    'path': '/logos/logo-para-chef-o-cocineros',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/congelados/',
+    'path': '/logo/congelados',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-bodegon/',
+    'path': '/logos/logo-para-bodegon',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-amanecer/',
+    'path': '/logos/logo-amanecer',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-para-maquinaria-agricola/',
+    'path': '/logos/logo-para-maquinaria-agricola',
     'url': 'industria'
   },
   {
-    'path': '/logo/carpa/',
+    'path': '/logo/carpa',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logo/jovenes/',
+    'path': '/logo/jovenes',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-laberinto/',
+    'path': '/logos/logo-laberinto',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-leon-rojo/',
+    'path': '/logos/logo-de-leon-rojo',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/cubiertos/',
+    'path': '/logo/cubiertos',
     'url': 'restaurant'
   },
   {
-    'path': '/logos/logo-de-una-medalla/',
+    'path': '/logos/logo-de-una-medalla',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-para-empresa-de-telefonia/',
+    'path': '/logos/logo-para-empresa-de-telefonia',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logos/logo-de-lazos/',
+    'path': '/logos/logo-de-lazos',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-ganado/',
+    'path': '/logos/logo-de-ganado',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-paisaje/',
+    'path': '/logos/logo-paisaje',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/teatro/',
+    'path': '/logo/teatro',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/pladur/',
+    'path': '/logo/pladur',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-para-marisqueria/',
+    'path': '/logos/logo-para-marisqueria',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-tienda-de-ropa-femenina/',
+    'path': '/logos/logo-para-tienda-de-ropa-femenina',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-de-pintor/',
+    'path': '/logos/logo-de-pintor',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/barco/',
+    'path': '/logo/barco',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/arco-iris/',
+    'path': '/logo/arco-iris',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/veleros/',
+    'path': '/logo/veleros',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/viento/',
+    'path': '/logo/viento',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-para-guarderia/',
+    'path': '/logos/logo-para-guarderia',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/ruedas/',
+    'path': '/logo/ruedas',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/agronomia/',
+    'path': '/logo/agronomia',
     'url': 'ingenieria'
   },
   {
-    'path': '/logos/logo-de-flor-violeta/',
+    'path': '/logos/logo-de-flor-violeta',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/corona/',
+    'path': '/logo/corona',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-del-ganado/',
+    'path': '/logos/logo-del-ganado',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-con-huellas-de-oso/',
+    'path': '/logos/logo-con-huellas-de-oso',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logotipo-con-uvas-para-produccion-de-vino/',
+    'path': '/logos/logotipo-con-uvas-para-produccion-de-vino',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/excavaciones/',
+    'path': '/logo/excavaciones',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-de-silueta-de-una-hada/',
+    'path': '/logos/logo-de-silueta-de-una-hada',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/blog/disenar-mejor-logotipo-hoteles/',
-    'url': 'hosteleria-y-alojamiento'
-  },
-  {
-    'path': '/logo/citricos/',
+    'path': '/logo/citricos',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logotipos/oficios/',
+    'path': '/logotipos/oficios',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logos/logo-de-pollo-frito/',
+    'path': '/logos/logo-de-pollo-frito',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-camarones/',
+    'path': '/logos/logo-de-camarones',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/tiro-al-blanco/',
+    'path': '/logo/tiro-al-blanco',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-con-una-cabra/',
+    'path': '/logos/logo-con-una-cabra',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-para-empresa-de-construccion-o-excavacion/',
+    'path': '/logos/logo-para-empresa-de-construccion-o-excavacion',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/parapente/',
+    'path': '/logo/parapente',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logotipos/hosteleria/',
+    'path': '/logotipos/hosteleria',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/sabila/',
+    'path': '/logo/sabila',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/portfolio/logo-para-empresa-de-comercio-internacional/',
+    'path': '/portfolio/logo-para-empresa-de-comercio-internacional',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logotipos/arquitectura/',
+    'path': '/logotipos/arquitectura',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/tornillo/',
+    'path': '/logo/tornillo',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/ballet/',
+    'path': '/logo/ballet',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/verdes/',
+    'path': '/logo/verdes',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/escudo/',
+    'path': '/logo/escudo',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-comida-gourmet/',
+    'path': '/logos/logo-de-comida-gourmet',
     'url': 'restaurant'
   },
   {
-    'path': '/logo/carga/',
+    'path': '/logo/carga',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logo/roca/',
+    'path': '/logo/roca',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-para-refrigeracion/',
+    'path': '/logos/logo-para-refrigeracion',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-de-barco-deportivo/',
+    'path': '/logos/logo-de-barco-deportivo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/caucho/',
+    'path': '/logo/caucho',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-de-una-montana-amarilla/',
+    'path': '/logos/logo-de-una-montana-amarilla',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-de-tiro-al-blanco/',
+    'path': '/logos/logo-de-tiro-al-blanco',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/musica/',
+    'path': '/logo/musica',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/rosados/',
+    'path': '/logo/rosados',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/girasol/',
+    'path': '/logo/girasol',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-de-audifonos/',
+    'path': '/logos/logo-de-audifonos',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/recreacion/',
+    'path': '/logo/recreacion',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-empresas-de-agua/',
+    'path': '/logos/logo-empresas-de-agua',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-maquillaje/',
+    'path': '/logos/logo-maquillaje',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-vaca/',
+    'path': '/logos/logo-vaca',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logos-de-dados/',
+    'path': '/logos/logos-de-dados',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-guepardo/',
+    'path': '/logos/logo-de-guepardo',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/gracioso/',
+    'path': '/logo/gracioso',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-cubos/',
+    'path': '/logos/logo-de-cubos',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-relojeria/',
+    'path': '/logos/logo-relojeria',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/hosteleria/',
+    'path': '/logo/hosteleria',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/universo/',
+    'path': '/logo/universo',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/blog/tag/',
+    'path': '/blog/tag',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/blog/disenar-mejor-logotipo-hoteles/',
-    'url': 'hosteleria-y-alojamiento'
-  },
-  {
-    'path': '/logos/logotipo-con-letra-p/',
+    'path': '/logos/logotipo-con-letra-p',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/rompecabezas/',
+    'path': '/logo/rompecabezas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/tierno/',
+    'path': '/logo/tierno',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/planeta/',
+    'path': '/logo/planeta',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-rehabilitacion/',
+    'path': '/logos/logo-de-rehabilitacion',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/oriental/',
+    'path': '/logo/oriental',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-de-espiral-rojo/',
+    'path': '/logos/logo-de-espiral-rojo',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-mujeres/',
+    'path': '/logos/logo-mujeres',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-cuadros-de-colores/',
+    'path': '/logos/logo-de-cuadros-de-colores',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/baloncesto/',
+    'path': '/logo/baloncesto',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-corazones/',
+    'path': '/logos/logo-de-corazones',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-naturaleza/',
+    'path': '/logos/logo-naturaleza',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-circuitos/',
+    'path': '/logos/logo-de-circuitos',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/lazo/',
+    'path': '/logo/lazo',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/blog/crea-identidad-corporativa-estos-sencillos-pasos-video/',
+    'path': '/blog/crea-identidad-corporativa-estos-sencillos-pasos-video',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/veterinarios/',
+    'path': '/logo/veterinarios',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-ingenieria-mecanica/',
+    'path': '/logos/logo-de-ingenieria-mecanica',
     'url': 'ingenieria'
   },
   {
-    'path': '/logos/logo-de-una-media-luna/',
+    'path': '/logos/logo-de-una-media-luna',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-apicultura/',
+    'path': '/logos/logo-para-apicultura',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-la-suerte/',
+    'path': '/logos/logo-de-la-suerte',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-espiral-naranja/',
+    'path': '/logos/logo-espiral-naranja',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-colchones/',
+    'path': '/logos/logo-de-colchones',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/combustible/',
+    'path': '/logo/combustible',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-traje-de-bano/',
+    'path': '/logos/logo-de-traje-de-bano',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-de-hilo-de-coser/',
+    'path': '/logos/logo-de-hilo-de-coser',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/alarmas/',
+    'path': '/logo/alarmas',
     'url': 'seguridad'
   },
   {
-    'path': '/logos/logo-de-asadores-de-carne/',
+    'path': '/logos/logo-de-asadores-de-carne',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-caballo-para-caballeriza/',
+    'path': '/logos/logo-de-caballo-para-caballeriza',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-para-empresas-de-ferretera/',
+    'path': '/logos/logo-para-empresas-de-ferretera',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-de-una-cometa/',
+    'path': '/logos/logo-de-una-cometa',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/jardin-de-infantes/',
+    'path': '/logo/jardin-de-infantes',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logo/extremo/',
+    'path': '/logo/extremo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/blog/project_category/',
+    'path': '/blog/project_category',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-artista-plastico/',
+    'path': '/logos/logo-para-artista-plastico',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/sintesis/',
+    'path': '/logo/sintesis',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-herradura/',
+    'path': '/logos/logo-de-herradura',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/boxeo/',
+    'path': '/logo/boxeo',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-flor-amarilla/',
+    'path': '/logos/logo-de-flor-amarilla',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logo/emergencia/',
+    'path': '/logo/emergencia',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/portfolio/folleto-para-venta-de-joyeria/',
+    'path': '/portfolio/folleto-para-venta-de-joyeria',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-con-payaso/',
+    'path': '/logos/logo-con-payaso',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/wp-content/uploads/',
-    'url': 'marketing-sicial-media'
-  },
-  {
-    'path': '/logo/diablo/',
+    'path': '/logo/diablo',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-italia/',
+    'path': '/logos/logo-de-italia',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/blog/mejorando-el-servicio-post-venta-a-traves-de-las-redes-sociales/',
-    'url': 'marketing-sicial-media'
-  },
-  {
-    'path': '/logos/logo-de-deportes-extremos-2/',
+    'path': '/logos/logo-de-deportes-extremos-2',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/cerradura/',
+    'path': '/logo/cerradura',
     'url': 'seguridad'
   },
   {
-    'path': '/logo/visto/',
+    'path': '/logo/visto',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/balon/',
+    'path': '/logo/balon',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-para-tienda-de-ropa-infantil/',
+    'path': '/logos/logo-para-tienda-de-ropa-infantil',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/dvd/',
+    'path': '/logo/dvd',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/ganado/',
+    'path': '/logo/ganado',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-medico-veterinario/',
+    'path': '/logos/logo-para-medico-veterinario',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-baston-de-caramelo/',
+    'path': '/logos/logo-de-baston-de-caramelo',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logotipo-para-zapateria/',
+    'path': '/logos/logotipo-para-zapateria',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/bloques/',
+    'path': '/logo/bloques',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/blog/crea-tus-perfiles-de-redes-sociales-con-liderlogo/',
-    'url': 'marketing-sicial-media'
-  },
-  {
-    'path': '/logo/gestores-administrativos/',
+    'path': '/logo/gestores-administrativos',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-con-tres-aros-naranja/',
+    'path': '/logos/logo-con-tres-aros-naranja',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-cabalgata/',
+    'path': '/logos/logo-de-cabalgata',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/portfolio/logo-de-comercializacion-de-pollos-vivos-y-en-canal/',
+    'path': '/portfolio/logo-de-comercializacion-de-pollos-vivos-y-en-canal',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-servicio-de-grua/',
+    'path': '/logos/logo-para-servicio-de-grua',
     'url': 'industria'
   },
   {
-    'path': '/logo/oveja/',
+    'path': '/logo/oveja',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logo/carnes/',
+    'path': '/logo/carnes',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/moto/',
+    'path': '/logo/moto',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/invierno/',
+    'path': '/logo/invierno',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/hoja/',
+    'path': '/logo/hoja',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/figurativo/',
+    'path': '/logo/figurativo',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-viento/',
+    'path': '/logos/logo-viento',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-velas/',
+    'path': '/logos/logo-de-velas',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logos/logo-de-cisne/',
+    'path': '/logos/logo-de-cisne',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logotipo-cono-de-helado/',
+    'path': '/logos/logotipo-cono-de-helado',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-una-media-naranja/',
+    'path': '/logos/logo-de-una-media-naranja',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-para-taller-mecanico/',
+    'path': '/logos/logo-para-taller-mecanico',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/aves/',
+    'path': '/logo/aves',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/nauticos/',
+    'path': '/logo/nauticos',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-una-mariposa/',
+    'path': '/logos/logo-de-una-mariposa',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/cubo/',
+    'path': '/logo/cubo',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-mariquita/',
+    'path': '/logos/logo-mariquita',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/academias/',
+    'path': '/logo/academias',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-silueta-de-carro-de-carga/',
+    'path': '/logos/logo-silueta-de-carro-de-carga',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logotipo-para-clases-de-teclado/',
+    'path': '/logos/logotipo-para-clases-de-teclado',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logos/logo-para-farmacia-3d/',
+    'path': '/logos/logo-para-farmacia-3d',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/portfolio/folleto-para-venta-de-joyeria/',
+    'path': '/portfolio/folleto-para-venta-de-joyeria',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/asiaticos/',
+    'path': '/logo/asiaticos',
     'url': 'turismo-y-viajes'
   },
   {
-    'path': '/logos/logo-de-combustible/',
+    'path': '/logos/logo-de-combustible',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-cangrejo/',
+    'path': '/logos/logo-de-cangrejo',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/ninos/',
+    'path': '/logo/ninos',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-estrellas-verdes/',
+    'path': '/logos/logo-de-estrellas-verdes',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/portfolio/logo-y-sitio-web-de-salud-nutricion-y-bienestar/',
+    'path': '/portfolio/logo-y-sitio-web-de-salud-nutricion-y-bienestar',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/mosca/',
+    'path': '/logo/mosca',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-con-dardo-y-diana/',
+    'path': '/logos/logo-con-dardo-y-diana',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/langosta/',
+    'path': '/logo/langosta',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-ventana/',
+    'path': '/logos/logo-ventana',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/papel/',
+    'path': '/logo/papel',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/soja/',
+    'path': '/logo/soja',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/sushi/',
+    'path': '/logo/sushi',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/formacion/',
+    'path': '/logo/formacion',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logo/morado/',
+    'path': '/logo/morado',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/anillos/',
+    'path': '/logo/anillos',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/remolque/',
+    'path': '/logo/remolque',
     'url': 'industria'
   },
   {
-    'path': '/logo/importacion/',
+    'path': '/logo/importacion',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logos/logo-de-pelotas-de-tenis/',
+    'path': '/logos/logo-de-pelotas-de-tenis',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-durazno/',
+    'path': '/logos/logo-de-durazno',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-peinado-con-afro/',
+    'path': '/logos/logo-de-peinado-con-afro',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-de-ahorro-energia/',
+    'path': '/logos/logo-de-ahorro-energia',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-publicidad-y-mercadeo/',
+    'path': '/logos/logo-publicidad-y-mercadeo',
     'url': 'marketing-sicial-media'
   },
   {
-    'path': '/logos/logo-de-lancha/',
+    'path': '/logos/logo-de-lancha',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-parapente/',
+    'path': '/logos/logo-de-parapente',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logotipo-de-drogueria/',
+    'path': '/logos/logotipo-de-drogueria',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/hada/',
+    'path': '/logo/hada',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/bodega/',
+    'path': '/logo/bodega',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/patines/',
+    'path': '/logo/patines',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-de-una-lupa-de-detective/',
+    'path': '/logos/logo-de-una-lupa-de-detective',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/portfolio/folleto-para-consultoria-en-energias-renovables/',
+    'path': '/portfolio/folleto-para-consultoria-en-energias-renovables',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-para-pintores/',
+    'path': '/logos/logo-para-pintores',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-para-corporaciones/',
+    'path': '/logos/logo-para-corporaciones',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-ganado-2/',
+    'path': '/logos/logo-de-ganado-2',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-nutricionista/',
+    'path': '/logos/logo-para-nutricionista',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-para-agencia-de-festejos/',
+    'path': '/logos/logo-para-agencia-de-festejos',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/monos/',
+    'path': '/logo/monos',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-una-foca/',
+    'path': '/logos/logo-de-una-foca',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-con-ventilador/',
+    'path': '/logos/logo-con-ventilador',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/futbolista/',
+    'path': '/logo/futbolista',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-nutricion-saludable/',
+    'path': '/logos/logo-nutricion-saludable',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/tuberias/',
+    'path': '/logo/tuberias',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-actividad-fisica/',
+    'path': '/logos/logo-de-actividad-fisica',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/sombrero/',
+    'path': '/logo/sombrero',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-forestal/',
+    'path': '/logos/logo-forestal',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/fontaneros/',
+    'path': '/logo/fontaneros',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/gimnasios/',
+    'path': '/logo/gimnasios',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/maquinaria/',
+    'path': '/logo/maquinaria',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-para-empresa-de-jardineria/',
+    'path': '/logos/logo-para-empresa-de-jardineria',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-de-franjas-de-colores/',
+    'path': '/logos/logo-de-franjas-de-colores',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/rosquillas/',
+    'path': '/logo/rosquillas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-equitacion/',
+    'path': '/logos/logo-de-equitacion',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logotipo-para-empresa-automotriz/',
+    'path': '/logos/logotipo-para-empresa-automotriz',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logo/distribucion/',
+    'path': '/logo/distribucion',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logos/logo-de-caza/',
+    'path': '/logos/logo-de-caza',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-empresa-de-entretenimiento/',
+    'path': '/logos/logo-para-empresa-de-entretenimiento',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-gallina-2/',
+    'path': '/logos/logo-de-gallina-2',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-de-un-abanico/',
+    'path': '/logos/logo-de-un-abanico',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logo-de-una-cruz-verde/',
+    'path': '/logos/logo-de-una-cruz-verde',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-trazos-de-pincel/',
+    'path': '/logos/logo-de-trazos-de-pincel',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-baile-urbano/',
+    'path': '/logos/logo-de-baile-urbano',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-con-letra-z/',
+    'path': '/logos/logo-con-letra-z',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/cuchillo/',
+    'path': '/logo/cuchillo',
     'url': 'restaurant'
   },
   {
-    'path': '/blog/tag/',
-    'url': 'arte-y-fotografia'
-  },
-  {
-    'path': '/logos/logo-de-pole-dance/',
+    'path': '/logos/logo-de-pole-dance',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logotipo-para-firma-personal/',
+    'path': '/logos/logotipo-para-firma-personal',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/gatos/',
+    'path': '/logo/gatos',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-torero/',
+    'path': '/logos/logo-torero',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-agua-potable/',
+    'path': '/logos/logo-de-agua-potable',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logos/logo-para-tiendas-infantiles/',
+    'path': '/logos/logo-para-tiendas-infantiles',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/exportacion/',
+    'path': '/logo/exportacion',
     'url': 'importacion-exportacion'
   },
   {
-    'path': '/logos/logo-jardinero/',
+    'path': '/logos/logo-jardinero',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-de-figura-concava/',
+    'path': '/logos/logo-de-figura-concava',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-buses/',
+    'path': '/logos/logo-de-buses',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-rectangulo-bicolor/',
+    'path': '/logos/logo-de-rectangulo-bicolor',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-sala-de-juegos/',
+    'path': '/logos/logo-para-sala-de-juegos',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-centro-comercial/',
+    'path': '/logos/logo-para-centro-comercial',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/musculos/',
+    'path': '/logo/musculos',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logos/logo-con-carruaje/',
+    'path': '/logos/logo-con-carruaje',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-con-cometa/',
+    'path': '/logos/logo-con-cometa',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/portfolio/folleto-para-consultoria-en-energias-renovables/',
+    'path': '/portfolio/folleto-para-consultoria-en-energias-renovables',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/portfolio/folleto-para-venta-de-sistemas-de-seguridad/',
+    'path': '/portfolio/folleto-para-venta-de-sistemas-de-seguridad',
     'url': 'seguridad'
   },
   {
-    'path': '/logo/hostales/',
+    'path': '/logo/hostales',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logos/logo-de-atun/',
+    'path': '/logos/logo-de-atun',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-enjuague/',
+    'path': '/logos/logo-de-enjuague',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/logo/paradores/',
+    'path': '/logo/paradores',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/portfolio/folleto-para-reformas-y-mantenimiento/',
+    'path': '/portfolio/folleto-para-reformas-y-mantenimiento',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-3d-para-productora-audiovisual/',
+    'path': '/logos/logo-3d-para-productora-audiovisual',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-aires-acondicionados/',
+    'path': '/logos/logo-para-aires-acondicionados',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-una-alga/',
+    'path': '/logos/logo-de-una-alga',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-alquiler-o-venta-de-casas/',
+    'path': '/logos/logo-para-alquiler-o-venta-de-casas',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logos/logo-de-pavo-real/',
+    'path': '/logos/logo-de-pavo-real',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-torres/',
+    'path': '/logos/logo-de-torres',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/escalada/',
+    'path': '/logo/escalada',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-estrellas-azules/',
+    'path': '/logos/logo-de-estrellas-azules',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/automocion/',
+    'path': '/logo/automocion',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/portfolio/logo-de-construccion-y-rehabilitacion-de-edificios/',
+    'path': '/portfolio/logo-de-construccion-y-rehabilitacion-de-edificios',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-de-un-liston/',
+    'path': '/logos/logo-de-un-liston',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/combinados/',
+    'path': '/logo/combinados',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logotipo-para-tienda-de-ninos/',
+    'path': '/logos/logotipo-para-tienda-de-ninos',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/rurales/',
+    'path': '/logo/rurales',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-abstracto-rectangular/',
+    'path': '/logos/logo-abstracto-rectangular',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/esfera/',
+    'path': '/logo/esfera',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-con-clave-de-sol/',
+    'path': '/logos/logo-con-clave-de-sol',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-ovalado/',
+    'path': '/logos/logo-ovalado',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/dorado/',
+    'path': '/logo/dorado',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logotipos/comercio-minorista/',
+    'path': '/logotipos/comercio-minorista',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/bonsai/',
+    'path': '/logo/bonsai',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-con-avion-de-papel/',
+    'path': '/logos/logo-con-avion-de-papel',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/mano/',
+    'path': '/logo/mano',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-de-arquero/',
+    'path': '/logos/logo-de-arquero',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/portfolio/rotulo-de-envase-para-la-comercializacion-de-alimentos-congelados/',
+    'path': '/portfolio/rotulo-de-envase-para-la-comercializacion-de-alimentos-congelados',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/arcos/',
+    'path': '/logo/arcos',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/sol/',
+    'path': '/logo/sol',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-con-canario/',
+    'path': '/logos/logo-con-canario',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logotipo-con-margarita-verde/',
+    'path': '/logos/logotipo-con-margarita-verde',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-espiral-azul/',
+    'path': '/logos/logo-espiral-azul',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-paisajes/',
+    'path': '/logos/logo-de-paisajes',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-de-torero/',
+    'path': '/logos/logo-de-torero',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-abstracto-de-redes-informaticas/',
+    'path': '/logos/logo-abstracto-de-redes-informaticas',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logo/maritimo/',
+    'path': '/logo/maritimo',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/portfolio/logo-de-comercializacion-de-pollos-vivos-y-en-canal/',
+    'path': '/portfolio/logo-de-comercializacion-de-pollos-vivos-y-en-canal',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-de-licores-2/',
+    'path': '/logos/logo-de-licores-2',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-exterminadores/',
+    'path': '/logos/logo-de-exterminadores',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-para-danza-clasica/',
+    'path': '/logos/logo-para-danza-clasica',
     'url': 'deportes-y-ejercicios'
   },
   {
-    'path': '/logo/gestorias/',
+    'path': '/logo/gestorias',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/carruajes/',
+    'path': '/logo/carruajes',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/centro-comercial/',
+    'path': '/logo/centro-comercial',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/humo/',
+    'path': '/logo/humo',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-con-flores-rosas/',
+    'path': '/logos/logo-con-flores-rosas',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/logos/logo-dentista/',
+    'path': '/logos/logo-dentista',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/alquiler/',
+    'path': '/logo/alquiler',
     'url': 'inmobiliaria'
   },
   {
-    'path': '/logos/logos-de-ceramicas/',
+    'path': '/logos/logos-de-ceramicas',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-de-lineas-curvas/',
+    'path': '/logos/logo-de-lineas-curvas',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-aves-volando/',
+    'path': '/logos/logo-de-aves-volando',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/rapidez/',
+    'path': '/logo/rapidez',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-de-una-bocina/',
+    'path': '/logos/logo-de-una-bocina',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/flamenco/',
+    'path': '/logo/flamenco',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/loteria/',
+    'path': '/logo/loteria',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-con-una-carreta/',
+    'path': '/logos/logo-con-una-carreta',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/alegres/',
+    'path': '/logo/alegres',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-de-ondas-de-radio/',
+    'path': '/logos/logo-de-ondas-de-radio',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-un-toldo/',
+    'path': '/logos/logo-de-un-toldo',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/atardecer/',
+    'path': '/logo/atardecer',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-con-cabanas/',
+    'path': '/logos/logo-con-cabanas',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logo/tienda-de-ninos/',
+    'path': '/logo/tienda-de-ninos',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logo/flecha/',
+    'path': '/logo/flecha',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/portfolio/folleto-para-empresa-de-construccion/',
+    'path': '/portfolio/folleto-para-empresa-de-construccion',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-de-fuente-de-agua/',
+    'path': '/logos/logo-de-fuente-de-agua',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/brillantes/',
+    'path': '/logo/brillantes',
     'url': 'decoracion-y-diseno-de-interiores'
   },
   {
-    'path': '/logo/bruja/',
+    'path': '/logo/bruja',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-con-toro-verde/',
+    'path': '/logos/logo-con-toro-verde',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/sol/',
+    'path': '/logo/sol',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-carroceria/',
+    'path': '/logos/logo-carroceria',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/portfolio/logo-de-asesoria-empresarial/',
+    'path': '/portfolio/logo-de-asesoria-empresarial',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/semicirculo/',
+    'path': '/logo/semicirculo',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-con-signo-de-exclamacion/',
+    'path': '/logos/logo-con-signo-de-exclamacion',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-para-agropecuarios/',
+    'path': '/logos/logo-para-agropecuarios',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-para-tienda-de-ninos/',
+    'path': '/logos/logo-para-tienda-de-ninos',
     'url': 'educacion-y-formacion'
   },
   {
-    'path': '/logotipos/nuevas-energias/',
+    'path': '/logotipos/nuevas-energias',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logo/jade/',
+    'path': '/logo/jade',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/portfolio/rotulo-de-envase-para-la-venta-de-alimentos-en-conserva/',
+    'path': '/portfolio/rotulo-de-envase-para-la-venta-de-alimentos-en-conserva',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logos/logo-de-semicirculos/',
+    'path': '/logos/logo-de-semicirculos',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/cuadro/',
+    'path': '/logo/cuadro',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-de-exclusividad/',
+    'path': '/logos/logo-de-exclusividad',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/portfolio/logo-centro-medico-especializado-inmunologia-medicina-regenerativa-estetica/',
+    'path': '/portfolio/logo-centro-medico-especializado-inmunologia-medicina-regenerativa-estetica',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logo/reparto/',
+    'path': '/logo/reparto',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/rocio/',
+    'path': '/logo/rocio',
     'url': 'hogar-y-jardin'
   },
   {
-    'path': '/blog/buen-diseno-perfil-redes-sociales-atraer-clientes/',
-    'url': 'marketing-sicial-media'
-  },
-  {
-    'path': '/logos/logo-de-focos/',
+    'path': '/logos/logo-de-focos',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/martillo/',
+    'path': '/logo/martillo',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logo/herraduras/',
+    'path': '/logo/herraduras',
     'url': 'industria'
   },
   {
-    'path': '/logos/logo-plano/',
+    'path': '/logos/logo-plano',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-caucheras/',
+    'path': '/logos/logo-para-caucheras',
     'url': 'industria'
   },
   {
-    'path': '/portfolio/papeleria-para-empresa-de-venta-alimentos-y-bebidas/',
+    'path': '/portfolio/papeleria-para-empresa-de-venta-alimentos-y-bebidas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/logo/facturas/',
+    'path': '/logo/facturas',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/medias/',
+    'path': '/logo/medias',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logos/logo-transporte-de-carga/',
+    'path': '/logos/logo-transporte-de-carga',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logos/logo-orfebreria/',
+    'path': '/logos/logo-orfebreria',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-pollera/',
+    'path': '/logos/logo-para-pollera',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/logo/temperatura/',
+    'path': '/logo/temperatura',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/aros/',
+    'path': '/logo/aros',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logos/logotipo-para-casa-de-apuestas/',
+    'path': '/logos/logotipo-para-casa-de-apuestas',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logo/recursos-renovables/',
+    'path': '/logo/recursos-renovables',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/portfolio/folleto-para-instalaciones-electricas/',
+    'path': '/portfolio/folleto-para-instalaciones-electricas',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/logos/logo-de-letras-sobrias/',
+    'path': '/logos/logo-de-letras-sobrias',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-con-vector-para-asesora-contable/',
+    'path': '/logos/logo-con-vector-para-asesora-contable',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logos/logo-de-un-caballero/',
+    'path': '/logos/logo-de-un-caballero',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logos/logo-para-productos-de-higiene/',
+    'path': '/logos/logo-para-productos-de-higiene',
     'url': 'limpieza-higiene'
   },
   {
-    'path': '/blog/psicologia-del-color-en-el-diseno/',
+    'path': '/blog/psicologia-del-color-en-el-diseno',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/cerrado/',
+    'path': '/logo/cerrado',
     'url': 'comercio-almacenes'
   },
   {
-    'path': '/logos/logo-de-can/',
+    'path': '/logos/logo-de-can',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logos/logo-de-ovejita/',
+    'path': '/logos/logo-de-ovejita',
     'url': 'agricultura-y-ganaderia'
   },
   {
-    'path': '/logos/logo-de-hojas-verdes-con-flores/',
+    'path': '/logos/logo-de-hojas-verdes-con-flores',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logo/ocio/',
+    'path': '/logo/ocio',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-albanileria/',
+    'path': '/logos/logo-albanileria',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logos/logo-de-camaras-sumergibles/',
+    'path': '/logos/logo-de-camaras-sumergibles',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/logo-con-pandereta/',
+    'path': '/logos/logo-con-pandereta',
     'url': 'arte-y-fotografia'
   },
   {
-    'path': '/logo/romantico/',
+    'path': '/logo/romantico',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-para-estetica-de-belleza/',
+    'path': '/logos/logo-para-estetica-de-belleza',
     'url': 'belleza-y-cuidado-personal'
   },
   {
-    'path': '/logos/logo-vigas/',
+    'path': '/logos/logo-vigas',
     'url': 'industria'
   },
   {
-    'path': '/portfolio/folleto-de-alimentos-y-bebidas/',
+    'path': '/portfolio/folleto-de-alimentos-y-bebidas',
     'url': 'alimentos-y-bebidas'
   },
   {
-    'path': '/portfolio/papeleria-para-empresa-de-construccion-de-inmuebles/',
+    'path': '/portfolio/papeleria-para-empresa-de-construccion-de-inmuebles',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/instalaciones/',
+    'path': '/logo/instalaciones',
     'url': 'reparaciones-y-mantenimiento'
   },
   {
-    'path': '/portfolio/logo-hobbie/',
+    'path': '/portfolio/logo-hobbie',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/sobre-liderlogo//',
-    'url': 'marketing-sicial-media'
-  },
-  {
-    'path': '/logo/oficinas/',
+    'path': '/logo/oficinas',
     'url': 'asesoria-y-consultoria'
   },
   {
-    'path': '/logo/autocares/',
+    'path': '/logo/autocares',
     'url': 'transporte-y-logistica'
   },
   {
-    'path': '/logo/albergue/',
+    'path': '/logo/albergue',
     'url': 'hosteleria-y-alojamiento'
   },
   {
-    'path': '/logos/logo-de-estrella-de-ocho-puntas/',
+    'path': '/logos/logo-de-estrella-de-ocho-puntas',
     'url': 'accesorios-y-glamour'
   },
   {
-    'path': '/logo/vegetacion/',
+    'path': '/logo/vegetacion',
     'url': 'medio-ambiente'
   },
   {
-    'path': '/logos/logo-lunares/',
+    'path': '/logos/logo-lunares',
     'url': 'ropa-y-moda'
   },
   {
-    'path': '/portfolio/papeleria-para-empresa-de-construccion-de-inmuebles/',
+    'path': '/portfolio/papeleria-para-empresa-de-construccion-de-inmuebles',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/pez/',
+    'path': '/logo/pez',
     'url': 'animales-y-mascotas'
   },
   {
-    'path': '/logo/cuarzos/',
+    'path': '/logo/cuarzos',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logos/logo-computarizado/',
+    'path': '/logos/logo-computarizado',
     'url': 'tecnologia-y-telecomunicacion'
   },
   {
-    'path': '/logos/logo-lacrado/',
+    'path': '/logos/logo-lacrado',
     'url': 'industria-autommotriz'
   },
   {
-    'path': '/logos/logo-de-aplanadora/',
+    'path': '/logos/logo-de-aplanadora',
     'url': 'construccion-y-arquitectura'
   },
   {
-    'path': '/logo/termometro/',
+    'path': '/logo/termometro',
     'url': 'salud-y-medicina'
   },
   {
-    'path': '/logos/logo-para-parque-infantil/',
+    'path': '/logos/logo-para-parque-infantil',
     'url': 'hobies-y-entretenimiento'
   },
   {
-    'path': '/logos/catalogo/',
+    'path': '/logos/catalogo',
     'url': 'marketing-sicial-media'
   }
 ]
@@ -3506,13 +3446,13 @@ module.exports = function (req, res, next) {
   // const dominio = req.headers.host
   const path = url.parse(req.url).pathname
 
-  redirecciones.forEach(redirect => {
-    if (path === redirect.path) {
+  for (const i in redirecciones) {
+    if (path === redirecciones[i].path) {
       // console.log(dominio + '/ejemplos/servicios/' + redirect.url)
-      res.writeHead(301, {Location: 'http://www.liderlogo.com' + '/ejemplos/servicios/' + redirect.url})
+      res.writeHead(301, {Location: 'http://www.liderlogo.com' + '/ejemplos/servicios/' + redirecciones[i].url})
       return res.end()
     }
-  })
+  }
 
   next()
 }

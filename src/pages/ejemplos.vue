@@ -27,7 +27,7 @@
         <v-flex  xs12 class="my-3" text-xs-center>
           <v-layout xs12 row wrap justify-center align-center >
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
-              CONOCER MÁS SOBRE NUESTROS SERVICIOS
+              CONOCER SOBRE EL SERVICIO
             </v-btn>
             <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/ejemplos/'">
               VER TODOS LOS EJEMPLOS

@@ -76,7 +76,7 @@
         <v-flex  xs12 class="my-3">
           <v-layout xs12 row wrap justify-center align-center>
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'+ serviceSlug">
-              CONOCER MAS SOBRE EL SERVICIO
+              CONOCER SOBRE EL SERVICIO
             </v-btn>
             <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" @click="selectService()">
               INICIAR MI PROYECTO AHORA
