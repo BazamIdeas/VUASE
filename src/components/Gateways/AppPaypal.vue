@@ -15,9 +15,10 @@
       var vueInstance = this
       paypal.Button.render({
         // Configure environment
-        env: 'sandbox',
+        env: 'production',
         client: {
-          sandbox: 'AVpLm3Mj781_AAa4M5gArCwllQ2LIv5WT6qccHJOjdbOMFOz_6fQmItQQbCWvXeeG3TS1qBA6a8_8NoV'
+          sandbox: 'AVpLm3Mj781_AAa4M5gArCwllQ2LIv5WT6qccHJOjdbOMFOz_6fQmItQQbCWvXeeG3TS1qBA6a8_8NoV',
+          production: 'AdgoodBb2HMzSaotggLuqwFKaPvto7pc3_WwtMuKBsOeWJW4rr5FupoyR2SOl_k5dgVFccmJHFeo-NGV'
         },
         // Customize button (optional)
         locale: 'es_ES',
