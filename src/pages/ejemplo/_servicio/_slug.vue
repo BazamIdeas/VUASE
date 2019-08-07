@@ -92,7 +92,7 @@
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-1 font-weight-bold mb-4  text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
-          <AppContactForm :page="'ejemplo portfolio ' + portfolio.name" />
+          <AppContactForm :page="'ejemplo portfolio '" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -107,28 +107,33 @@
     },
     asyncData ({ params }) {
       return {
-        name: 'EJEMPLO ' + params.slug.toUpperCase(),
+        // name: 'EJEMPLO ' + params.slug.toUpperCase(),
         serviceSlug: params.servicio,
         portfolioSlug: params.slug
       }
     },
     async mounted () {
-      await this.$store.dispatch('portfolios/getRelateds', this.portfolio.activity.slug)
+      console.log('adasw')
+      if (process.browser) {
+        await this.$store.dispatch('portfolios/getRelateds', this.portfolio.activity.slug)
+      }
     },
     methods: {
       async selectService () {
-        const brief = { service: { id: this.portfolio.service.id, name: this.portfolio.service.name, slug: this.portfolio.service.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
-        var target = null
-        // TODO: PENDIENTE
-        if (this.serviceSlug === 'logo-y-pagina-web' || this.serviceSlug === 'pagina-web') {
-          brief.subServices = []
-          target = 'cotizacion'
-        } else {
-          target = 'brief/disenos'
-        }
+        if (process.browser) {
+          const brief = { service: { id: this.portfolio.service.id, name: this.portfolio.service.name, slug: this.portfolio.service.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
+          var target = null
+          // TODO: PENDIENTE
+          if (this.serviceSlug === 'logo-y-pagina-web' || this.serviceSlug === 'pagina-web') {
+            brief.subServices = []
+            target = 'cotizacion'
+          } else {
+            target = 'brief/disenos'
+          }
 
-        this.$storage.set('brief', brief)
-        this.$router.push('/nuestros-servicios/' + this.serviceSlug + '/' + target)
+          this.$storage.set('brief', brief)
+          this.$router.push('/nuestros-servicios/' + this.serviceSlug + '/' + target)
+        }
       },
       goPortfolio (url, portfolio) {
         if (process.browser) {

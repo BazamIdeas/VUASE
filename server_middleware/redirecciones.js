@@ -3445,14 +3445,22 @@ const redirecciones = [
 module.exports = function (req, res, next) {
   // const dominio = req.headers.host
   const path = url.parse(req.url).pathname
+  let veri = false
+  const logos = path.indexOf('/logos/')
+  const logo = path.indexOf('/logo/')
+  const logotipos = path.indexOf('/logotipos/')
 
-  for (const i in redirecciones) {
-    if (path === redirecciones[i].path) {
-      // console.log(dominio + '/ejemplos/servicios/' + redirect.url)
-      res.writeHead(301, {Location: 'http://www.liderlogo.com' + '/ejemplos/servicios/' + redirecciones[i].url})
-      return res.end()
+  if (logo > -1 || logos > -1 || logotipos > -1) {
+    for (const i in redirecciones) {
+      if (path === redirecciones[i].path) {
+        veri = true
+        res.writeHead(301, {Location: 'http://www.liderlogo.com' + '/ejemplos/servicios/' + redirecciones[i].url})
+      }
     }
+    if (veri === false) {
+      res.writeHead(301, {Location: 'http://localhost:3000/ejemplos'})
+    }
+    return res.end()
   }
-
   next()
 }
