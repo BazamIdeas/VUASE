@@ -3458,7 +3458,7 @@ module.exports = function (req, res, next) {
       }
     }
     if (veri === false) {
-      res.writeHead(301, {Location: 'http://localhost:3000/ejemplos'})
+      res.writeHead(301, {Location: 'http://www.liderlogo.com' + '/ejemplo'})
     }
     return res.end()
   }
