@@ -3,7 +3,7 @@ const url = require('url')
 const Cookies = require('cookies')
 
 module.exports = function (req, res, next) {
-  const ip = req.headers['x-real-ip'] || '190.19.204.10'
+  const ip = req.headers['cf-connecting-ip'] || req.headers['x-real-ip'] || '190.19.204.10'
   const query = url.parse(req.url, true).query
   const cookies = new Cookies(req, res)
 
@@ -13,8 +13,8 @@ module.exports = function (req, res, next) {
   if (query && query.pais) {
     req.iso = query.pais
   } else {
-    const reader = new MMDBReader('src/static/GeoIP2-Country.mmdb')
-    req.iso = reader.lookup(ip) ? reader.lookup(ip).country.iso_code : 'US'
+    // const reader = new MMDBReader('src/static/GeoIP2-Country.mmdb')
+    req.iso = req.headers['cf-ipcountry'] ? req.headers['cf-ipcountry'] : 'US'
   }
 
   next()
