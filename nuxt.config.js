@@ -66,12 +66,11 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Liderlogo' },
-      { property: 'og:image', content: '/liderlogo.png' },
+      { property: 'og:image', content: '/liderlogo.png' }
       /* { property: 'og:url', content: '' },
       { property: 'og:title', content: '' },
       { property: 'og:description', content: 'Lorem Ipsum' },
       { hid: 'description', name: 'description', content: 'Lorem Ipsum' }, */
-      { content: 'noindex', name: 'robots' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/liderlogo.png' },

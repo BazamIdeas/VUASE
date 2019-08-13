@@ -21,8 +21,7 @@
         <v-flex xs12 md5 class="pl-3 mt-5 pl-xs-1 mt-xs-0" style="position:relative;">
           <div class="box-sticky">
             <AppHeading number="1" size="headline" :title="portfolio.name" align="center"/>
-            <p class="text-xs-justify mt-3" style="font-weight:500;">
-              {{portfolio.description}}
+            <p class="text-xs-justify mt-3" style="font-weight:500;" v-html="portfolio.description">
             </p>
             <p class="text-xs-justify mt-3" style="font-weight:500;">
               <span class="mr-1 chip-title" v-if= portfolio.service.name >Servicio:</span>
@@ -113,7 +112,6 @@
       }
     },
     async mounted () {
-      console.log('adasw')
       if (process.browser) {
         await this.$store.dispatch('portfolios/getRelateds', this.portfolio.activity.slug)
       }
@@ -153,8 +151,8 @@
         titleTemplate: this.portfolio ? this.portfolio.name + ' | %s' : '' || 'Ejemplo | %s',
         meta: [
           { property: 'og:title', content: this.portfolio ? this.portfolio.name : '' || 'Ejemplo' },
-          { property: 'og:description', content: this.portfolio ? this.portfolio.description : '' || 'Ejemplo' },
-          { hid: 'description', name: 'description', content: this.portfolio ? this.portfolio.description : '' || 'Ejemplo' }
+          { property: 'og:description', content: this.portfolio ? this.portfolio.description.substr(0, 160) : '' || 'Ejemplo' },
+          { hid: 'description', name: 'description', content: this.portfolio ? this.portfolio.description.substr(0, 160) : '' || 'Ejemplo' }
         ]
       }
     },
