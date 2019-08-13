@@ -67,6 +67,6 @@ typings/
 # Nuxt generate
 dist
 
-nuxt.config.js
-
+# Nuxt config
 src/app.html
+nuxt.config.js
