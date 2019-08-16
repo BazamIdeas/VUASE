@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
-    <AppHomeCarousel :alt="alt" :interval="interval" theme="2" />
+    <AppHomeCarousel :alt="alt" :interval="3000" theme="2" />
    
     <!-- PORTFAFOLIO -->
     <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
@@ -120,6 +120,8 @@
           <AppContactForm />
         </v-flex>
       </v-layout>
+      <AppHeading class="mb-3" number="3" size="display-1" title="En los medios"  />
+      <AppExamplesSlider  :hover-info="false" :alt="alt" :examples="medios" hovered="false" shadow="false" puntos="false" item-width="120" item-height="120"  class="mb-0 pb-2" />
     </v-container>
   </section>
 </template>
@@ -198,7 +200,15 @@
           logo: '/images/testimonies/rotulos/selpak - rotulo etiqueta.jpg',
           company: 'Selpak',
           description: 'Tengo el agrado de decir que es una empresa seria y responsable. Me gustó mucho el trabajo (diseño) y la amabilidad de todos sus departamentos que me tocó dialogar. Estoy muy convencido de que la empresa se interesa para poder entregar un buen servicio. Aprovecho de felicitar a sus trabajadores por la dedicación a la empresa.”'
-        }]
+        }],
+        medios: [
+          {img: '/images/medios/bolsamania.jpg'},
+          {img: '/images/medios/capital.jpg'},
+          {img: '/images/medios/eleconomista.jpg'},
+          {img: '/images/medios/europapress.jpg'},
+          {img: '/images/medios/finanzas.jpg'},
+          {img: '/images/medios/intereconomia.jpg'}
+        ]
       }
     },
     computed: {

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="1062.9 -22.8 313.5 303.2" enable-background="new 1062.9 -22.8 313.5 303.2" xml:space="preserve">
-<g>
-	<path fill="#676767" d="M1219.6-18.1c-81,0-146.9,65.9-146.9,146.9s65.9,146.9,146.9,146.9c81,0,146.9-65.9,146.9-146.9
-		S1300.6-18.1,1219.6-18.1z M1219.6,258.4c-71.5,0-129.6-58.1-129.6-129.6S1148.1-0.8,1219.6-0.8c71.5,0,129.6,58.1,129.6,129.6
-		S1291.1,258.4,1219.6,258.4z"/>
-	<path fill="#676767" d="M1301.2,68.2L1222,46.5c-1.6-0.4-3.2-0.4-4.8,0l-74.4,21.7c-3.8,1.1-6.3,4.5-6.3,8.4v101.4
-		c0,3.6,2.1,6.8,5.4,8.1l76.7,31.8c1.1,0.4,2.2,0.7,3.4,0.7c1.2,0,2.3-0.2,3.4-0.7l77-32.8c3.2-1.4,5.3-4.6,5.3-8.1V76.7
-		C1307.6,72.7,1305,69.3,1301.2,68.2z M1219.7,64.1l47.9,13.1l-12.6,4.2l-44.6-14.7L1219.7,64.1z M1218.9,93.6l-44.7-16.2l14.9-4.3
-		l46.5,15L1218.9,93.6z M1154,88.5l61,22.2v86.9l-61-25.3V88.5z M1230.2,196.8v-88.7l19.1-6.4v36.8l19.4-8.5V95.2L1290,88v83.3
-		L1230.2,196.8z"/>
-</g>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#676767;stroke-width:23;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#676767;stroke-width:23;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#676767;stroke-width:23;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#676767;}
+	.st5{fill:none;stroke:#676767;stroke-width:23;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M178.4,288.7h105.9v-47.8c0-7.1-2.8-13.9-7.8-18.9l-7.5-7.5V98.5H129.5v190.2l40.4,33.6
+	c2.7,2.2,6.7,0.3,6.7-3.1v-52.8l0,0c5-5,7.8-11.8,7.8-18.9V139l-54.9-40.4"/>
 </svg>

@@ -1,11 +1,86 @@
 <template>
 
   <v-carousel :interval="interval" hide-controls class="main-carousel theme2">
-    <v-carousel-item transition="none" reverse-transition="none">
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1">
-              <v-img :alt="alt" class="animate-img" src="images/carousels/embajador-de-la-marca.jpg"></v-img>
+              <v-img alt='diseño de logo original' src="images/carousels/liderlogo-empresa-de-diseño.jpg"></v-img>
+          </div>
+         <!--  <div  id="hc-layer-4-item-1">
+            <h2>"El diseño es el embajador silencioso de una marca" </h2>
+            <h5>- Paul Rand -</h5>
+          </div> -->
+        </div>
+
+        <div class="section">
+          <div id="hc-layer-1-item-1">
+            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+          </div>
+          <div id="hc-layer-2-item-1">
+            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
+            profesionales, a tu medida, ilimitados y hasta tu
+            completa conformidad.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+          </div>
+        </div>
+      </div>
+    </v-carousel-item>
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+      <div class="layers-container">
+        <div class="section">  
+          <div id="hc-layer-3-item-1">
+              <v-img alt='empresa de diseño de logo' src="images/carousels/embajador-de-la-marca.jpg"></v-img>
+          </div>
+         <!--  <div  id="hc-layer-4-item-1">
+            <h2>"El diseño es el embajador silencioso de una marca" </h2>
+            <h5>- Paul Rand -</h5>
+          </div> -->
+        </div>
+
+        <div class="section">
+          <div id="hc-layer-1-item-1">
+            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+          </div>
+          <div id="hc-layer-2-item-1">
+            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
+            profesionales, a tu medida, ilimitados y hasta tu
+            completa conformidad.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+          </div>
+        </div>
+      </div>
+    </v-carousel-item>
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+      <div class="layers-container">
+        <div class="section">  
+          <div id="hc-layer-3-item-1">
+              <v-img alt='empresa de diseño de logo' src="images/carousels/liderlogo-imagen-corporativa.jpg"></v-img>
+          </div>
+         <!--  <div  id="hc-layer-4-item-1">
+            <h2>"El diseño es el embajador silencioso de una marca" </h2>
+            <h5>- Paul Rand -</h5>
+          </div> -->
+        </div>
+
+        <div class="section">
+          <div id="hc-layer-1-item-1">
+            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+          </div>
+          <div id="hc-layer-2-item-1">
+            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
+            profesionales, a tu medida, ilimitados y hasta tu
+            completa conformidad.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+          </div>
+        </div>
+      </div>
+    </v-carousel-item>
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+      <div class="layers-container">
+        <div class="section">  
+          <div id="hc-layer-3-item-1">
+              <v-img alt='diseño de logo unico' src="images/carousels/liderlogo-diseño-de-logo-unico.jpg"></v-img>
           </div>
          <!--  <div  id="hc-layer-4-item-1">
             <h2>"El diseño es el embajador silencioso de una marca" </h2>
@@ -33,7 +108,7 @@
   export default {
     props: {
       interval: {
-        default: 8000,
+        default: 3000,
         type: Number
       },
       items: Array,

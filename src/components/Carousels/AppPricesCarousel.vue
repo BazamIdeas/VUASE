@@ -156,7 +156,7 @@
   @media (max-width: 960px) {
 
     .v-carousel.main-carousel {
-        height: 600px;
+        height: 500px;
         min-height: auto;
     }
 
@@ -210,7 +210,7 @@
 
   @media (min-width: 600px) and (max-width: 860px) {
     .v-carousel.main-carousel {
-        height: 680px;
+        height: 500px;
         min-height: auto;
     }
   }
@@ -218,14 +218,14 @@
   
   @media (min-width: 740px) and (max-width: 820px) {
     .v-carousel.main-carousel {
-        height: 780px;
+        height: 500px;
         min-height: auto;
     }
   }
 
   @media (min-width: 820px) and (max-width: 960px) {
     .v-carousel.main-carousel {
-        height: 850px;
+        height: 500px;
         min-height: auto;
     }
   }
@@ -233,7 +233,7 @@
 
   @media (min-width: 960px) {
     .v-carousel.main-carousel {
-      height: 600px;
+      height: 500px;
       min-height: auto;
     }
 
@@ -322,7 +322,7 @@
 
   @media (min-width: 1024px) {
     .v-carousel.main-carousel {
-      height: 750px;
+      height: 500x;
       min-height: auto;
     }
   }

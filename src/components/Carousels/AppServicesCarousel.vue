@@ -263,13 +263,13 @@
  @media (max-width: 480px) {
     .v-carousel.main-carousel {
       min-height: auto;
-      height: 700px !important;
+      height: 720px !important;
     }
  }
   @media (max-width: 960px) {
 
     .v-carousel.main-carousel {
-        height: 700px;
+        height: 540px;
         min-height: auto;
     }
 
@@ -323,7 +323,7 @@
 
   @media (min-width: 600px) and (max-width: 860px) {
     .v-carousel.main-carousel {
-        height: 680px;
+        height: 920px;
         min-height: auto;
     }
   }
@@ -331,14 +331,14 @@
   
   @media (min-width: 740px) and (max-width: 820px) {
     .v-carousel.main-carousel {
-        height: 730px;
+        height: 945px;
         min-height: auto;
     }
   }
 
   @media (min-width: 820px) and (max-width: 960px) {
     .v-carousel.main-carousel {
-        height: 780px;
+        height: 1010px;
         min-height: auto;
     }
   }
@@ -346,7 +346,7 @@
 
   @media (min-width: 960px) {
     .v-carousel.main-carousel {
-      height: 670px;
+      height: 540px;
       min-height: auto;
     }
 
@@ -371,8 +371,8 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 45%;
-      left: 5%;
+      width: 36%;
+      left: 10%;
       position: absolute;
     }
 
@@ -383,7 +383,7 @@
     div#hc-layer-0 {
       width: 38%;
       margin-right: 5%;
-      padding-top: 100px;
+      padding-top: 50px;
       z-index: 9999;
       text-align:center;
     }
@@ -399,7 +399,7 @@
 
   @media (min-width: 1024px) {
     .v-carousel.main-carousel {
-      height: 750px;
+      height: 540px;
       min-height: auto;
     }
   }

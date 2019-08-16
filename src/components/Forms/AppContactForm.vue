@@ -20,14 +20,14 @@
         </v-radio-group>
       </v-flex> -->
       
-      <v-flex xs12 sm6 md6 v-if="for_phone">
-        <v-text-field v-model="phone" v-validate="'required'" name="contact.phone" label="Telefono" placeholder="Telefono"
+      <v-flex xs12 sm12 md12 v-if="for_phone">
+        <v-text-field v-model="phone" v-validate="'required'" name="contact.phone" label="Teléfono" placeholder="Teléfono"
           :error-messages="errors.collect('contact.phone')" solo flat></v-text-field>
       </v-flex>
-      <v-flex xs12 sm6 md6 v-if="for_phone">
+      <!-- <v-flex xs12 sm6 md6 v-if="for_phone">
         <v-select :items="times" v-model="time" v-validate="'required'" name="contact.times" label="Horarios"
           placeholder="Horarios" :error-messages="errors.collect('contact.times')" solo flat></v-select>
-      </v-flex>
+      </v-flex> -->
       <v-flex xs12 :class="{'order-md1': contactPage}">
         <v-textarea v-model="message" v-validate="'required'" name="contact.message" :label="contactPage ? 'Comentanos algo más sobre el servicio que necesitas' : 'Escribe tu consulta o solicitud'" :error-messages="errors.collect('contact.message')" solo flat></v-textarea>
       </v-flex>
@@ -144,7 +144,7 @@
 
           if (this.for_phone) {
             contact.phone = this.phone
-            contact.schedule = this.time
+            contact.schedule = 'horario no especificado'
           }
 
           /* Adwords Data */

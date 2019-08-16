@@ -1,9 +1,9 @@
 <template>
   <section>
     <AppPricesCarousel/>
-    <v-container fluid grid-list-md class="mt-5 mt-xs-0">
+    <v-container fluid grid-list-md class="mt-0 pt-0 mt-xs-0">
       <v-layout row wrap>
-        <v-flex xs12 offset-md2 md8 class="mb-5 ">
+        <v-flex xs12 offset-md2 md8 class="mb-1 ">
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
               <h2 class="font-weight-bold mb-2 text-xs-center" >Selecciona tu servicio</h2>

@@ -173,6 +173,8 @@ export const rVestimenta = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/vestimenta/constacter-vestimenta.jpg' },
+      { img: '/images/services-carousel/vestimenta/judias-vestimenta.jpg' },
       { img: '/images/services-carousel/vestimenta/bichitos kids - rotulo vestimenta.jpg' },
       { img: '/images/services-carousel/vestimenta/club nautico pontevedra - rotulo vestimenta.jpg' },
       { img: '/images/services-carousel/vestimenta/ejemplo-rotulo-vestimenta-movil.jpg' },
