@@ -5,14 +5,14 @@
   "author": "Daniel Torres (danieljtorres94@gmail.com)",
   "private": true,
   "scripts": {
-    "dev": "nodemon --watch server_middleware --exec \"cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 nuxt\"",
+    "dev": "nodemon --watch server_middleware --exec \"cross-env NODE_ENV=development HOST=0.0.0.0 PORT=9090 nuxt\"",
     "build": "nuxt build --exec \"cross-env NODE_ENV=production\"",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.2.1",
     "@nuxtjs/axios": "5.3.6",
+    "@nuxtjs/component-cache": "^1.1.5",
     "@nuxtjs/google-tag-manager": "2.1.2",
     "@nuxtjs/pwa": "^2.4.0",
     "@nuxtjs/sitemap": "0.1.1",
@@ -24,16 +24,15 @@
     "cookie-universal-nuxt": "2.0.11",
     "cookies": "0.7.3",
     "cross-env": "5.2.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.0.0",
     "js-cookie": "2.2.0",
     "jwt-decode": "2.2.0",
+    "lazysizes": "^5.1.1",
     "mmdb-reader": "1.2.0",
     "mpm": "0.0.1",
     "npm": "^6.10.1",
     "nuxt": "1.0.0",
     "paypal-checkout": "4.0.233",
+    "shrink-ray-current": "^4.0.0",
     "vee-validate": "2.0.3",
     "vue-cookies": "1.5.7",
     "vue-stripe-checkout": "^1.2.6",
@@ -41,6 +40,7 @@
     "vuetify": "1.2.2"
   },
   "devDependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.2.1",
     "babel-eslint": "7.2.3",
     "babel-plugin-transform-imports": "1.4.1",
     "eslint": "4.3.0",
@@ -52,10 +52,13 @@
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
     "image-webpack-loader": "^5.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "nodemon": "1.18.4",
     "responsive-loader": "^1.2.0",
     "sharp": "^0.22.1",
     "stylus": "0.54.5",
-    "stylus-loader": "3.0.1"
+    "stylus-loader": "3.0.1",
+    "webp-loader": "^0.5.0"
   }
 }

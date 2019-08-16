@@ -5,12 +5,12 @@
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1">
-              <v-img :alt="alt" class="animate-img" src="images/carousels/embajador-de-la-marca.jpg"></v-img>
+
+            <figure class="picture">
+            <img data-src="images/carousels/embajador-de-la-marca.jpg" class=" animate-img lazyload"  :alt="alt">
+          </figure>
           </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
+
         </div>
 
         <div class="section">
@@ -50,6 +50,9 @@
 </style>
 
 <style scoped>
+img{
+  max-width:100%;
+}
   .v-carousel {
     box-shadow: none;
   }
