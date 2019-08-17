@@ -38,7 +38,7 @@
             }
 
           </style>
-          <v-carousel hide-delimiters v-once>
+          <v-carousel hide-delimiters>
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i">
