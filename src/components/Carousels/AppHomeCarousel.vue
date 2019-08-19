@@ -5,11 +5,16 @@
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1">
-              <img alt='diseño de logo original' v-lazy="require('~/static/images/carousels/liderlogo-empresa-de-diseño.jpg')"  >
+                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                  <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-empresa-de-diseño.jpeg"  >
+                </div>
+      </div>
 
+<!--               <img alt='diseño de logo original' v-lazy="require('~/static/images/carousels/liderlogo-empresa-de-diseño.jpeg')"  >
+ -->
 
-<!--               <v-img alt='diseño de logo original' src="images/carousels/liderlogo-empresa-de-diseño.jpg"></v-img>
- -->          </div>
+<!--               <v-img alt='liderlogo empresa de diseño' src="images/carousels/liderlogo-empresa-de-diseño.jpeg"></v-img>
+ -->         
          <!--  <div  id="hc-layer-4-item-1">
             <h2>"El diseño es el embajador silencioso de una marca" </h2>
             <h5>- Paul Rand -</h5>
@@ -23,7 +28,9 @@
           <div id="hc-layer-2-item-1">
             <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
             profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
+            completa conformidad.
+
+            </p>
             <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
           </div>
         </div>
@@ -33,15 +40,20 @@
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1">
-                          <img alt='empresa de diseño de logo' v-lazy="require('~/static/images/carousels/embajador-de-la-marca.jpg')"  >
+                              <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                  <img  alt='embajador de la marca' data-src="/images/carousels/embajador-de-la-marca.jpeg"  >
+            </div>
+        </div>
 
-<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/embajador-de-la-marca.jpg"></v-img>
+<!--                           <img alt='empresa de diseño de logo' v-lazy="require('~/static/images/carousels/embajador-de-la-marca.jpeg')"  >
+ -->
+<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/embajador-de-la-marca.jpeg"></v-img>
  -->          </div>
          <!--  <div  id="hc-layer-4-item-1">
             <h2>"El diseño es el embajador silencioso de una marca" </h2>
             <h5>- Paul Rand -</h5>
           </div> -->
-        </div>
+   
 
         <div class="section">
           <div id="hc-layer-1-item-1">
@@ -60,9 +72,12 @@
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1" >
-               <img  alt='empresa de diseño de logo' v-lazy="require('~/static/images/carousels/liderlogo-imagen-corporativa.jpg')"  >
-<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/liderlogo-imagen-corporativa.jpg"></v-img>
- -->          </div>
+                 <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                    <img  alt='imagen corporativa' data-src="/images/carousels/liderlogo-imagen-corporativa.jpeg"  >
+                </div>
+<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/liderlogo-imagen-corporativa.jpeg"></v-img>
+ -->        
+          </div>
          <!--  <div  id="hc-layer-4-item-1">
             <h2>"El diseño es el embajador silencioso de una marca" </h2>
             <h5>- Paul Rand -</h5>
@@ -86,9 +101,10 @@
       <div class="layers-container">
         <div class="section">  
           <div id="hc-layer-3-item-1">
-                           <img  alt='diseño de logo unico' v-lazy="require('~/static/images/carousels/liderlogo-diseño-de-logo-unico.jpg')"  >
-
-<!--               <v-img alt='diseño de logo unico' src="images/carousels/liderlogo-diseño-de-logo-unico.jpg"></v-img>
+            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                  <img  alt='diseño de logo unico' data-src="/images/carousels/liderlogo-diseño-de-logo-unico.jpeg"  >
+            </div>
+<!--               <v-img alt='diseño de logo unico' src="images/carousels/liderlogo-diseño-de-logo-unico.jpeg"></v-img>
  -->          </div>
          <!--  <div  id="hc-layer-4-item-1">
             <h2>"El diseño es el embajador silencioso de una marca" </h2>
@@ -135,6 +151,10 @@
 <style scoped>
   img{
     max-width:100%;
+  }
+  img[lazy=loading] {
+    filter: blur(10px);
+    transition: filter 0.7s;
   }
   .v-carousel {
     box-shadow: none;

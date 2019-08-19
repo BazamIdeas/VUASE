@@ -1,3 +1,6 @@
+*{
+  font-display: auto;
+}
 .display-4,
 .display-3,
 .headline,
@@ -11,7 +14,9 @@ h3,
 h4,
 h5,
 h6 {
+  
   font-family: 'Open Sans', sans-serif !important;
+  font-display: auto;
   color: #434343;
   cursor: default;
   letter-spacing: 0.3px;
@@ -19,12 +24,14 @@ h6 {
 
 h1, h2, .display-2, .display-1  {
   font-family: 'Merriweather', sans-serif !important;
+  font-display: auto;
   color: #434343;
   cursor: default;
 }
 
 .toasted.toast {
   font-family: 'Open Sans', sans-serif;
+  font-display: auto;
 }
 
 .toasted-container.top-right {

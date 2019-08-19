@@ -4,8 +4,8 @@
       <v-flex xs12 class="examples-slider-container pa-0" ref="examplesSliderContainer" :class="{'shadow': shadow}" >
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
           <v-layout row>
-            <v-flex @click="go(example.url)" v-for="(example, i) in computedObj" :key="i" class="example-slider-item" align-content-center @mouseover="hovered = true; inHover = i" @mouseleave="hovered = false; inHover = null">
-              <v-img :alt="example.service ? example.service : alt" :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
+            <v-flex @click="go(example.url)" v-for="(example, i) in completeExamples" :key="i" class="example-slider-item" align-content-center @mouseover="hovered = true; inHover = i" @mouseleave="hovered = false; inHover = null">
+              <v-img :alt="example.service ? example.service : alt" :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3 "></v-img>
               <v-chip v-if="example.tag && inHover !== i" :color="example.color" text-color="white" style="bottom: 20px; position: absolute; font-size: 15px;">{{example.tag}}</v-chip>
               <span class="hidden-box" v-if="hovered && hoverInfo" :style="'background-color:'+example.color+'; color:'+example.textColor">
                 <img :src="example.icon" :alt="alt" class="mb-2" width="100" height="80" />
@@ -34,6 +34,10 @@
   export default {
     data: () => ({
       itemsLimit: undefined,
+      completeExamples: {
+        default: [],
+        type: Array
+      },
       inHover: null
     }),
     props: {
@@ -64,18 +68,28 @@
       },
       alt: String
     },
+    created () {
+      this.completeExamples = this.examples
+
+      if (this.$device.isMobile) {
+        this.itemsLimit = 2
+        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.examples
+      } else if (this.$device.isTablet) {
+        this.itemsLimit = 3
+        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.examples
+      } else {
+        this.itemsLimit = 4
+        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.examples
+      }
+    },
     mounted () {
       let el = this.$refs.examplesSliderScrollable
       el.scrollLeft += this.initScroll
       this.itemsLimit = undefined
+      this.completeExamples = this.examples
     },
     computed: {
       computedObj: function () {
-        if (this.$device.isMobile) {
-          this.itemsLimit = 2
-        } else if (this.$device.isTablet) {
-          this.itemsLimit = 5
-        }
         var arr = this.examples
         return this.itemsLimit ? arr.slice(0, this.itemsLimit) : this.examples
       },
