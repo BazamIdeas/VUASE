@@ -4,7 +4,7 @@
       <v-flex xs12 class="examples-slider-container pa-0" ref="examplesSliderContainer" :class="{'shadow': shadow}" >
         <div class="examples-slider-scrollable" ref="examplesSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
           <v-layout row>
-            <v-flex @click="go(example.url)" v-for="(example, i) in examples" :key="i" class="example-slider-item" align-content-center @mouseover="hovered = true; inHover = i" @mouseleave="hovered = false; inHover = null">
+            <v-flex @click="go(example.url)" v-for="(example, i) in computedObj" :key="i" class="example-slider-item" align-content-center @mouseover="hovered = true; inHover = i" @mouseleave="hovered = false; inHover = null">
               <v-img :alt="example.service ? example.service : alt" :src="example.img" :height="itemHeight" :max-height="itemHeight" :width="itemWidth" :max-width="itemWidth" class="mr-3"></v-img>
               <v-chip v-if="example.tag && inHover !== i" :color="example.color" text-color="white" style="bottom: 20px; position: absolute; font-size: 15px;">{{example.tag}}</v-chip>
               <span class="hidden-box" v-if="hovered && hoverInfo" :style="'background-color:'+example.color+'; color:'+example.textColor">
@@ -19,6 +19,7 @@
           </v-layout>
         </div>
       </v-flex>
+
       <img :alt="alt" src="/icons/puntos_de_fondo.svg" class="puntos" v-if="puntos">
     </v-layout>
     <!--<v-layout row class="ma-0 hidden-md-and-up" style="position:relative">
@@ -32,6 +33,7 @@
 <script>
   export default {
     data: () => ({
+      itemsLimit: undefined,
       inHover: null
     }),
     props: {
@@ -65,6 +67,21 @@
     mounted () {
       let el = this.$refs.examplesSliderScrollable
       el.scrollLeft += this.initScroll
+      this.itemsLimit = undefined
+    },
+    computed: {
+      computedObj: function () {
+        if (this.$device.isMobile) {
+          this.itemsLimit = 2
+        } else if (this.$device.isTablet) {
+          this.itemsLimit = 5
+        }
+        var arr = this.examples
+        return this.itemsLimit ? arr.slice(0, this.itemsLimit) : this.examples
+      },
+      limit: function () {
+        return this.itemsLimit + 3
+      }
     },
     methods: {
       scroll (event) {
