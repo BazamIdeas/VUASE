@@ -79,7 +79,9 @@
         <AppTestimony :alt="alt" width="mt-5 mb-5 xs12 offset-md1 md10" :list="testimonies" />
         <v-flex xs12 md7>
           <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
-          <img :alt="alt" src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
+                   <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
+         <img :alt="alt" data-src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
+                </div>
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
@@ -112,7 +114,9 @@
       </v-layout>
       <v-layout row wrap align-end>
         <v-flex xs12 md5 mt-5>
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
+                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
+          <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
+                </div>
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>

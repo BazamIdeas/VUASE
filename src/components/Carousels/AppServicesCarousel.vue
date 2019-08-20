@@ -3,7 +3,10 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img :alt="alt" class="animate-img" src="images/carousels/services1.jpg"></v-img>
+             <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
+          <img :alt="alt" class="animate-img" data-src="images/carousels/services1.jpg">
+          </div>
+
         </div>
 
         <div class="layer" id="hc-layer-0">   
@@ -190,6 +193,9 @@
 </style>
 
 <style scoped>  
+  img{
+    max-width:100%;
+  }
   .v-carousel {
     box-shadow: none;
   }
