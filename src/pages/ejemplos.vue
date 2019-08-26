@@ -96,10 +96,12 @@
       }
     },
     head () {
+      const adb = this.params.sector ? this.params.sector.replace(/-/ig, ' ') : this.title
+      console.log(this.params)
       return {
         titleTemplate: this.title + ' | %s',
         meta: [
-          { property: 'og:title', content: this.title },
+          { property: 'og:title', content: adb },
           { property: 'og:description', content: this.description },
           { hid: 'description', name: 'description', content: this.description }
         ]
