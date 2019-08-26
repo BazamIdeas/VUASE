@@ -70,7 +70,7 @@ module.exports =
        },
        {
          'path': '/logo/papelerias/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/opticas/',
@@ -118,7 +118,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-de-comida-saludable/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/gasolineras/',
@@ -138,7 +138,7 @@ module.exports =
        },
        {
          'path': '/logo/supermercado/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-de-huella-de-oso/',
@@ -242,7 +242,7 @@ module.exports =
        },
        {
          'path': '/logo/librerias/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/laboratorio/',
@@ -262,7 +262,7 @@ module.exports =
        },
        {
          'path': '/logo/comidas-caseras/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logotipos/medio-ambiente-ecologia/',
@@ -286,7 +286,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-empresa-de-electrodomesticos/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-para-empresa-de-multiservicios/',
@@ -438,7 +438,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-de-tienda-de-regalos/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/bisuteria/',
@@ -514,11 +514,11 @@ module.exports =
        },
        {
          'path': '/logo/cocineros/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
-         'path': '/logos/logo-para-restaurant-mexicano/',
-         'url': 'restaurant'
+         'path': '/logos/logo-para-gastronomia-mexicano/',
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/piscinas/',
@@ -590,7 +590,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-de-parrilla-de-cerdo/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/edificios/',
@@ -602,7 +602,7 @@ module.exports =
        },
        {
          'path': '/blog/buen-diseno-perfil-redes-sociales-atraer-clientes/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logos/logo-de-un-huevo/',
@@ -802,7 +802,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-ferreterias-2/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/gruas/',
@@ -846,7 +846,7 @@ module.exports =
        },
        {
          'path': '/sobre-liderlogo//',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logos/logotipo-con-diseno-para-pescaderia/',
@@ -922,7 +922,7 @@ module.exports =
        },
        {
          'path': '/logo/editoriales/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logo/seguros/',
@@ -1022,7 +1022,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-comida-china/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/pasta/',
@@ -1034,7 +1034,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-de-una-casa-de-dulces/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/cereales/',
@@ -1074,7 +1074,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-de-cubiertos/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/grupos-musicales/',
@@ -1090,7 +1090,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-empresa-de-telas/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/casas/',
@@ -1102,7 +1102,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-con-gancho/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-de-oveja/',
@@ -1138,7 +1138,7 @@ module.exports =
        },
        {
          'path': '/logo/panaderias/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logotipo-para-jugueteria/',
@@ -1190,7 +1190,7 @@ module.exports =
        },
        {
          'path': '/portfolio/logo-de-comercio-minorista-de-tabaco-y-estancos/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-de-toro-rojo/',
@@ -1226,7 +1226,7 @@ module.exports =
        },
        {
          'path': '/logotipos/comercio/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-para-empresas-de-aseo/',
@@ -1322,7 +1322,7 @@ module.exports =
        },
        {
          'path': '/logo/cocinas/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/portfolio/folleto-para-instalaciones-electricas/',
@@ -1346,7 +1346,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-empresa-de-banquetes/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/tomate/',
@@ -1466,7 +1466,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-tienda-de-espejos/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-sabila/',
@@ -1578,7 +1578,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-venta-de-telas/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/luz/',
@@ -1654,7 +1654,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-ferreteria/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-abstracto-con-ciervo/',
@@ -1718,7 +1718,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-con-diseno-para-ferreteria/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-computacion/',
@@ -1738,7 +1738,7 @@ module.exports =
        },
        {
          'path': '/logo/bares/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/montanas/',
@@ -1922,7 +1922,7 @@ module.exports =
        },
        {
          'path': '/blog/folletos-publicitarios-publicidades-alternativas/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logo/insecto/',
@@ -1978,7 +1978,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-chef-o-cocineros/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/congelados/',
@@ -2014,7 +2014,7 @@ module.exports =
        },
        {
          'path': '/logo/cubiertos/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logos/logo-de-una-medalla/',
@@ -2182,7 +2182,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-de-comida-gourmet/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/logo/carga/',
@@ -2194,7 +2194,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-refrigeracion/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-de-barco-deportivo/',
@@ -2394,7 +2394,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-empresas-de-ferretera/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-de-una-cometa/',
@@ -2446,7 +2446,7 @@ module.exports =
        },
        {
          'path': '/wp-content/uploads/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logo/diablo/',
@@ -2458,7 +2458,7 @@ module.exports =
        },
        {
          'path': '/blog/mejorando-el-servicio-post-venta-a-traves-de-las-redes-sociales/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logos/logo-de-deportes-extremos-2/',
@@ -2506,7 +2506,7 @@ module.exports =
        },
        {
          'path': '/blog/crea-tus-perfiles-de-redes-sociales-con-liderlogo/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logo/gestores-administrativos/',
@@ -2598,7 +2598,7 @@ module.exports =
        },
        {
          'path': '/logo/academias/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-silueta-de-carro-de-carga/',
@@ -2706,7 +2706,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-publicidad-y-mercadeo/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logos/logo-de-lancha/',
@@ -2866,7 +2866,7 @@ module.exports =
        },
        {
          'path': '/logo/cuchillo/',
-         'url': 'restaurant'
+         'url': 'gastronomia'
        },
        {
          'path': '/blog/tag/',
@@ -2922,7 +2922,7 @@ module.exports =
        },
        {
          'path': '/logos/logo-para-centro-comercial/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/musculos/',
@@ -3042,7 +3042,7 @@ module.exports =
        },
        {
          'path': '/logotipos/comercio-minorista/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/bonsai/',
@@ -3062,7 +3062,7 @@ module.exports =
        },
        {
          'path': '/portfolio/rotulo-de-envase-para-la-comercializacion-de-alimentos-congelados/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/arcos/',
@@ -3126,7 +3126,7 @@ module.exports =
        },
        {
          'path': '/logo/centro-comercial/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/humo/',
@@ -3198,7 +3198,7 @@ module.exports =
        },
        {
          'path': '/logo/tienda-de-ninos/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logo/flecha/',
@@ -3290,7 +3290,7 @@ module.exports =
        },
        {
          'path': '/blog/buen-diseno-perfil-redes-sociales-atraer-clientes/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logos/logo-de-focos/',
@@ -3378,7 +3378,7 @@ module.exports =
        },
        {
          'path': '/logo/cerrado/',
-         'url': 'comercio-almacenes'
+         'url': 'tiendas'
        },
        {
          'path': '/logos/logo-de-can/',
@@ -3438,7 +3438,7 @@ module.exports =
        },
        {
          'path': '/sobre-liderlogo//',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        },
        {
          'path': '/logo/oficinas/',
@@ -3498,6 +3498,6 @@ module.exports =
        },
        {
          'path': '/logos/catalogo/',
-         'url': 'marketing-sicial-media'
+         'url': 'marketing-social-media'
        }
      ]
