@@ -4,7 +4,7 @@
       <v-layout xs12 row wrap class="testimonies">
         <v-carousel>
           <v-carousel-item
-            v-for="(item,i) in list"
+            v-for="(item,i) in completeExamples"
             :key="i"
             active-class="active-testimony"
             height="'350'"
@@ -39,7 +39,9 @@
                   ¿Qué opinan nuestros clientes?
                 </h2>
                 <img :alt="alt" class="--puntos" src="/icons/puntos_de_fondo.svg">
-                <img class="lt-img" :src="item.logo" :alt="item.company + ' Testimonio'">
+                <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                 <img class="lt-img" :data-src="item.logo" :alt="item.company + ' Testimonio'">
+                  </div>
               </v-flex>
             </v-layout>
           </v-carousel-item>
@@ -62,10 +64,27 @@
       alt: String
     },
     mounted () {
+      this.completeExamples = this.list
+      this.itemsLimit = undefined
     },
-    data () {
-      return {
-
+    data: () => ({
+      itemsLimit: undefined,
+      completeExamples: {
+        default: [],
+        type: Array
+      }
+    }),
+    created () {
+      this.completeExamples = this.list
+      if (this.$device.isMobile) {
+        this.itemsLimit = 1
+        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
+      } else if (this.$device.isTablet) {
+        this.itemsLimit = 1
+        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
+      } else {
+        this.itemsLimit = 1
+        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
       }
     },
     methods: {

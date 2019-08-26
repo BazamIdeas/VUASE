@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
-    <AppHomeCarousel :alt="alt" :interval="interval" theme="2" />
+    <AppHomeCarousel :alt="alt" :interval="3000" theme="2" />
    
     <!-- PORTFAFOLIO -->
     <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
@@ -79,7 +79,9 @@
         <AppTestimony :alt="alt" width="mt-5 mb-5 xs12 offset-md1 md10" :list="testimonies" />
         <v-flex xs12 md7>
           <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
-          <img :alt="alt" src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
+                   <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
+         <img :alt="alt" data-src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
+                </div>
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
@@ -112,7 +114,9 @@
       </v-layout>
       <v-layout row wrap align-end>
         <v-flex xs12 md5 mt-5>
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
+                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
+          <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
+                </div>
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
@@ -120,6 +124,8 @@
           <AppContactForm />
         </v-flex>
       </v-layout>
+      <AppHeading class="mb-3" number="3" size="display-1" title="En los medios"  />
+      <AppExamplesSlider  :hover-info="false" :alt="alt" :examples="medios" hovered="false" shadow="false" puntos="false" item-width="120" item-height="120"  class="mb-0 pb-2" />
     </v-container>
   </section>
 </template>
@@ -198,7 +204,15 @@
           logo: '/images/testimonies/rotulos/selpak - rotulo etiqueta.jpg',
           company: 'Selpak',
           description: 'Tengo el agrado de decir que es una empresa seria y responsable. Me gustó mucho el trabajo (diseño) y la amabilidad de todos sus departamentos que me tocó dialogar. Estoy muy convencido de que la empresa se interesa para poder entregar un buen servicio. Aprovecho de felicitar a sus trabajadores por la dedicación a la empresa.”'
-        }]
+        }],
+        medios: [
+          {img: '/images/medios/bolsamania.jpg'},
+          {img: '/images/medios/capital.jpg'},
+          {img: '/images/medios/eleconomista.jpg'},
+          {img: '/images/medios/europapress.jpg'},
+          {img: '/images/medios/finanzas.jpg'},
+          {img: '/images/medios/intereconomia.jpg'}
+        ]
       }
     },
     computed: {

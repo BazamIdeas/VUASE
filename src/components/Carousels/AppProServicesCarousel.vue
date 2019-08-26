@@ -10,7 +10,9 @@
           <v-btn to="/contacto" flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">Solicita una llamada</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
-          <v-img :alt="alt" class="animate-img" src="images/carousels/pro_services1.png"></v-img>
+
+          <v-img :alt="alt" class="animate-img" data-src="images/carousels/pro_services1.png"></v-img>
+
         </div>
       </div>
     </v-carousel-item>

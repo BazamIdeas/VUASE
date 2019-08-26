@@ -35,7 +35,9 @@
             <v-layout row wrap class="paso paso-1 mt-5" style="background-image: url(images/pages/paso-1.svg)">
                 <v-flex xs12 md6 class="text-xs-center py-5 ">
                   <h2 class="active title-step step-1 py-5" style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>
-                  <img class="my-5" width="80%" src="images/pages/como-hacer-un-logotipo.png" alt="">
+                    <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                  <img class="my-5" width="80%" data-src="images/pages/como-hacer-un-logotipo.png" alt="">
+                   </div>
                 </v-flex>
                 <v-flex xs12 md6 class="px-3">
                     <!--<h2 style="font-size: 50px; line-height: 45px; font-weight: 600;">Elabora <br class="hidden-sm-and-down">un brief</h2>-->
@@ -79,7 +81,10 @@
                         <li class="my-3 body-2 font-weight-medium">Exclusivos</li>
                     </ul>
                     <div class="text-xs-center">
-                        <img width="80%" src="images/pages/propuestas-de-logo.png" alt="">
+                        <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                        <img width="80%" data-src="images/pages/propuestas-de-logo.png" alt="">
+                          </div>
+
                     </div>
                     <v-expansion-panel :value="0" class="expansion-panel step-2 px-3 mb-3">
                         <!-- SHOW ALL -->
@@ -103,7 +108,9 @@
                         <li class="my-3 body-2 font-weight-medium">Devolución de dinero 100% garantizada.</li>
                     </ul>
                     <div class="text-xs-center">
-                        <img width="80%" src="images/pages/hacer-un-logotipo.png" alt="">
+                       <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">                     
+                        <img width="80%" data-src="images/pages/hacer-un-logotipo.png" alt="">
+                     </div>                          
                     </div>
                     <v-expansion-panel class="expansion-panel step-2 px-3 mb-3">
                         <!-- SHOW ALL -->
@@ -132,7 +139,11 @@
             <v-layout row wrap class="paso paso-3 py-5" style="background-image: url(images/pages/paso-3.svg)">
                 <v-flex xs12 md6 class="text-xs-center">
                   <h2 class="active title-step step-3" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>
-                  <img class="my-5" width="80%" src="images/pages/archivos-de-entrega-logo.png" alt="">
+                           <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+
+                  <img class="my-5" width="80%" data-src="images/pages/archivos-de-entrega-logo.png" alt="">
+                       </div>
+
                 </v-flex>
                 <v-flex xs12 md6 class="px-3">
                     <p>Descarga tu proyecto listo para ser utilizado en gran variedad de formatos.</p>
@@ -206,7 +217,11 @@
         <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
         <v-flex xs12 md5 >
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
+             <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+
+          <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
+          </div>
+
         </v-flex>
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>

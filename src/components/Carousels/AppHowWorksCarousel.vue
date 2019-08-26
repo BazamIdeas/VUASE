@@ -15,7 +15,10 @@
                 </div>
                 <div class="section">  
                     <div id="hc-layer-3-item-1">
-                        <v-img :alt="alt" class="animate-img" src="images/pages/como-hacer-un-logo.jpg"></v-img>
+                 <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                        <img :alt="alt" class="animate-img" data-src="images/pages/como-hacer-un-logo.jpg">
+                  </div>
+
                     </div>
                 </div>
             </div>
@@ -45,6 +48,9 @@
 </style>
 
 <style scoped>
+  img{
+    max-width:100%;
+  }
   .v-carousel {
     box-shadow: none;
     background: linear-gradient(to bottom, #fbfbfb, #fbfbfb 50%, #f5f5f5 75%, #ebebeb 100%);

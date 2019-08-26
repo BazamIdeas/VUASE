@@ -1,9 +1,9 @@
 <template>
   <section>
     <AppPricesCarousel/>
-    <v-container fluid grid-list-md class="mt-5 mt-xs-0">
+    <v-container fluid grid-list-md class="mt-0 pt-0 mt-xs-0">
       <v-layout row wrap>
-        <v-flex xs12 offset-md2 md8 class="mb-5 ">
+        <v-flex xs12 offset-md2 md8 class="mb-1 ">
           <v-layout row wrap>
             <v-flex xs12 offset-md6 md6>
               <h2 class="font-weight-bold mb-2 text-xs-center" >Selecciona tu servicio</h2>
@@ -11,7 +11,9 @@
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService">
               <div style="text-align: center">
-                <img :src="serviceObject.dataService.icon" :alt="serviceObject.slug + ' Liderlogo'" width="200" style="max-height: 150px">
+                    <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}"> 
+                <img :data-src="serviceObject.dataService.icon" :alt="serviceObject.slug + ' Liderlogo'" width="200" style="max-height: 150px">
+                   </div>
                 <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
                 <h5 class="subheading my-1" style="font-weight: 600" v-if="serviceObject.startWith" >A PARTIR DE</h5> 
                 <h2 class="price">
@@ -46,7 +48,11 @@
           <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MÁS</v-btn>
         </v-flex>
         <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
+          <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+
+          <img data-src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
+                   </div>
+
         </v-flex>
         <v-flex md6 class="my-5">
           <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-xs-center" number="2" size="display-1" title="¿Tienes alguna duda?" />
