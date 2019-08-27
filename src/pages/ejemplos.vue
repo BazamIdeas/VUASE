@@ -96,12 +96,15 @@
       }
     },
     head () {
-      const adb = this.params.sector ? this.params.sector.replace(/-/ig, ' ') : this.title
-      console.log(this.params)
+      const list = this.$store.state.portfolios.list
+      if (list.length > 0 && list[0].activity) {
+        this.title = list[0].activity.name
+        this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
+      }
       return {
         titleTemplate: this.title + ' | %s',
         meta: [
-          { property: 'og:title', content: adb },
+          { property: 'og:title', content: this.title },
           { property: 'og:description', content: this.description },
           { hid: 'description', name: 'description', content: this.description }
         ]
