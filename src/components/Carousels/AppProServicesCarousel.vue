@@ -1,18 +1,19 @@
 <template>
   <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel --pro">
-    <v-carousel-item transition="none" reverse-transition="none">
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
-        <div class="layer" id="hc-layer-1-item-1">
+        <div class="layer layer-up" id="hc-layer-1-item-1">
           <h1>Servicios a Agencias</h1>
         </div>
-        <div class="layer" id="hc-layer-2-item-1">
+        <div class="layer layer-up" id="hc-layer-2-item-1">
           <p class="body-2 mt-2">¿Eres agencia de diseño gráfico, web, Apps o simplemente deseas ampliar tus servicios y ganar más sin engrosar tu plantilla?</p>
           <v-btn to="/contacto" flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">Solicita una llamada</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
 
-          <v-img :alt="alt" class="animate-img" data-src="images/carousels/pro_services1.png"></v-img>
-
+                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+                  <img :alt="alt" class="animate-img" data-src="/images/carousels/pro_services1.jpg" >
+                </div> 
         </div>
       </div>
     </v-carousel-item>
@@ -33,6 +34,16 @@
 </script>
 
 <style scoped>
+.layer-up{ 
+  z-index: 5;
+}
+  img{
+    max-width:100%;
+  }
+  img[lazy=loading] {
+    filter: blur(10px);
+    transition: filter 0.7s;
+  }
   .v-carousel.main-carousel--pro {
       min-height: 680px;
   }
