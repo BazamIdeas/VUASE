@@ -114,7 +114,7 @@
 <script lang="js">
   export default {
     data: () => ({
-      heightSlider: 0
+      heightSlider: 700
     }),
     props: ['id', 'service', 'price', 'slug', 'alt'],
     mounted () {
@@ -140,7 +140,7 @@
         var thisV = this
         setTimeout(() => {
           thisV.heightSlider = thisV.$refs.sliderbody[0].clientHeight
-        }, 3000)
+        }, 1500)
       }
     }
   }

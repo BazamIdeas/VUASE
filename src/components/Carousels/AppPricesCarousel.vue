@@ -150,7 +150,7 @@
 @media (max-width: 480px) {
     .v-carousel.main-carousel {
       min-height: auto;
-      height: 500px !important;
+      height: 400px !important;
     }
  }
   @media (max-width: 960px) {

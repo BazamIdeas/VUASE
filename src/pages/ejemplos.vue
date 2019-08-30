@@ -3,6 +3,7 @@
     <v-container grid-list-md class="ejemplos">
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
+        <h1 class="mb-4">{{h1}}</h1>
         <!-- <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length" />
         </v-flex> -->
@@ -10,9 +11,8 @@
           <v-flex @click="goPortfolio('/ejemplo/'+ portfolio.service.slug +'/'+ portfolio.slug, portfolio)" v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2 pointer">
             <v-card height="auto">
               <div class="img-cuadrada-ejemplos-container" >
-                                    <div v-lazy-container="{ selector: 'svg', loading: 'default.jpeg'}">
                   <svg role="img" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " v-lazy:background-image="urlHosting + portfolio.images[0].slug"></svg>
-                                </div>
+
               </div>
               <v-flex class="my-0">
                 <h2 class="mb-1 px-1 text-xs-center subheading font-weight-medium">{{portfolio.name}}</h2>
@@ -31,11 +31,17 @@
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
               CONOCER SOBRE EL SERVICIO
             </v-btn>
-            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/ejemplos/'">
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/ejemplos'">
               VER TODOS LOS EJEMPLOS
             </v-btn>
           </v-layout>
         </v-flex>
+        <v-flex v-if="descriptionActivity">
+          <h2> {{h2}}</h2>
+          <p  class="text-xs-justify mt-3" style="font-weight:500;" v-html="descriptionActivity">
+          </p>
+        </v-flex>
+
       </v-layout>
     </v-container>
 
@@ -50,8 +56,11 @@
       return {
         urlHosting: 'https://api.liderlogo.com/v1/images/slug/',
         alt: 'Ejemplos de nuestros trabajos profesionales',
+        h1: 'Ejemplos de nuestros trabajos profesionales',
+        h2: false,
         description: 'Ejemplos de logos, imagen corporativa y páginas web, tenemos más de 15 años de experiencia diseñando marcas',
-        title: 'Ejemplos de nuestros trabajos profesionales'
+        title: 'Ejemplos de nuestros trabajos profesionales',
+        descriptionActivity: false
       }
     },
     asyncData ({ params }) {
@@ -62,7 +71,6 @@
       if (params.sector) await store.dispatch('sectors/activities/getAll')
       if (params.actividad) await store.dispatch('countries/getAll')
       if (params.pais) await store.dispatch('countries/locations/getAll') */
-      console.log(params)
       await store.dispatch('services/getAll')
       await store.dispatch('sectors/getAll')
       // await store.dispatch('sectors/activities/getAll')
@@ -97,9 +105,12 @@
     },
     head () {
       const list = this.$store.state.portfolios.list
-      if (list.length > 0 && list[0].activity) {
+      if (this.params.sector) {
         this.title = list[0].activity.name
+        this.h1 = 'Ejemplos de diseño de logo, imagen corporativa, folletos y sitios web de ' + list[0].activity.name
         this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
+        this.descriptionActivity = list[0].activity.description
+        this.h2 = 'Conoce como crear un logo y las herramientas de comunicación necesarias para ' + list[0].activity.name
       }
       return {
         titleTemplate: this.title + ' | %s',

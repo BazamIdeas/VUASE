@@ -250,7 +250,7 @@ export const logoWeb = {
   ],
   steps: [
     {
-      title: 'Escoge las funcionalidades de tu sitio web y completa un simple brief para el diseño de tu logo',
+      title: 'Escoge las funcionalidades de tu web y completa el brief para el diseño de tu logo',
       color: '#323c9e',
       icon: '/icons/creative-process-1.svg',
       description: 'Selecciona las funciones y completa unas simples preguntas para ayudar a los diseñadores a entender cuáles son tus necesidades y objetivos para el proyecto.',

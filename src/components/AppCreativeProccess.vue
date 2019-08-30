@@ -11,10 +11,10 @@
           }
         </style>
         <v-flex xs12 md8 class="creative-process-carousel mt-2">
-          <v-carousel :hide-delimiters="true" :cycle="false" @input="inputSlider">
+          <v-carousel  :cycle="false" @input="inputSlider">
             <v-carousel-item v-for="(slide,i) in slides" :key="i+'a'">
-              <div class="px-5" ref="creativeProcessBody">
-                <img width="100%" :src="slide.src" >
+              <div class="px-0" ref="creativeProcessBody" style="text-align:center;">
+                <img style="width:100%; max-width:600px;" :src="slide.src" >
               </div>
             </v-carousel-item>
           </v-carousel>
@@ -51,7 +51,7 @@
                 </v-flex>             
               </v-layout>
               <v-layout row>
-                <v-flex xs12>
+                <v-flex xs12 class="pt-2">
                   <p class="body-2">{{step.description}}</p>
                 </v-flex>
               </v-layout>
@@ -108,18 +108,10 @@
       sliderHeight: 500,
       actualStep: 0
     }),
-    mounted () {
-      var thisV = this
-      let i = 0
-      const intervalID = setInterval(() => {
-        let height = thisV.$refs.creativeProcessBody[0].clientHeight
-        console.log(height)
-        if (height !== null && height > 150) {
-          thisV.sliderHeight = height
-        }
-
-        if (++i === 5) clearInterval(intervalID)
-      }, 2000)
+    created () {
+      if (this.$device.isMobile) {
+        this.sliderHeight = 260
+      }
     },
     props: {
       steps: {
@@ -213,6 +205,15 @@
 
 
 <style lang="css">
+
+.v-carousel__prev {
+    left: -12px;
+}
+
+.v-carousel__next {
+    right: -12px;
+}
+
 .creative-process .creative-process-carousel .v-image__image--cover {
     background-size: auto !important; 
 }
