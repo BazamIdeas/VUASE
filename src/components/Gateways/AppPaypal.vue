@@ -34,7 +34,7 @@
           return actions.payment.create({
             transactions: [{
               amount: {
-                total: vueInstance.amount,
+                total: vueInstance.amount.toFixed(2),
                 currency: vueInstance.currency.iso
               }
             }]
