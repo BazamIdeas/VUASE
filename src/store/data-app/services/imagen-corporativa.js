@@ -1,9 +1,9 @@
 export const imagenCorporativa = {
   /* SEO */
   titleSEO: 'Imagen corporativa para empresas',
-  descriptionSEO: 'Logo original de su entera conformidad + papelería  + diseño de productos de merchandising + diseño de redes sociales+logo animado. ¡Comienza tu proyecto ahora!',
+  descriptionSEO: 'Logo original de tu entera conformidad + papelería  + diseño de productos de merchandising + diseño de redes sociales+logo animado. ¡Comienza tu proyecto ahora!',
   /* ** */
-  list: ['Creación de logo diseñado  desde cero y hasta su entera conformidad + diseños de su papelería en formato digital y papel + diseño de productos de merchandising + diseño de sus redes sociales + el diseño de su logo animado.', 'Creación de logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con su manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elija 6 piezas en nuestro menú de 65 opciones)', 'Diseño publicitario de sus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
+  list: ['Creación de logo diseñado  desde cero y hasta tu entera conformidad + diseños de tu papelería en formato digital y papel + diseño de productos de merchandising + diseño de tus redes sociales + el diseño de tu logo animado.', 'Creación de logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con tu manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elije 6 piezas en nuestro menú de 65 opciones)', 'Diseño publicitario de tus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
   title: 'Logo, imagen corporativa y logo animado',
   oferta: 'AHORRA 37%',
   description: `<strong style="font-size: 16px">¿Buscando presentar tu negocio con éxito? Pon la imagen de tu marca en manos de expertos.</strong> <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.`,
@@ -54,7 +54,7 @@ export const imagenCorporativa = {
           '<b>GIF</b> archivo en formato de imagen ideal para aplicaciones en redes sociales, mensajería instantánea, publicidad digital y sitios webs.',
           '<b>PNG</b> formato gráfico comprimido que permite almacenar imágenes con una mayor profundidad de contraste y otros importantes datos.',
           '<b>JPG</b> archivo en formato de imagen para impresión (300 dpi) y aplicación web (72 dpi).',
-          '<b>SVG</b> formato gráficos vectoriales bidimensionales ideales para su uso en Internet.',
+          '<b>SVG</b> formato gráficos vectoriales bidimensionales ideales para tu uso en Internet.',
           '<b>FAVICON</b> icono de página web que se muestra en la pestaña del navegador.',
           '<b>Cualquier otro formato requerido será facilitado, sin cargo adicional.</b>'
         ],
@@ -63,11 +63,11 @@ export const imagenCorporativa = {
         title: 'MANUAL DE USO DE LA MARCA',
         description: 'Documentación detallada donde se presenta la información necesaria para la utilización del logo.',
         items: [
-          'Explicación técnica y conceptual de su marca.',
+          'Explicación técnica y conceptual de tu marca.',
           'Construcción geométrica y elementos.',
           'Códigos de colores corporativos.',
           'Tipografías corporativas.',
-          'Usos correctos e incorrectos del logo y sus componentes del diseño.'
+          'Usos correctos e incorrectos del logo y tus componentes del diseño.'
         ],
         icon: '/icons/catalogo.svg'
       }, {
@@ -118,10 +118,10 @@ export const imagenCorporativa = {
       response: `Si, creamos y proponemos slogan comerciales para agregarle valor y notoriedad a tu marca comercial. Lo hacemos con mucho gusto y bonificado al 100% con la contratación de tu servicio de diseño de marca.`
     }, {
       question: 'Tengo una idea previa para el diseño de mi logo, ¿podrían diseñar mi marca en base a ello? ¿como les envio mi idea o boceto?',
-      response: `Si, podemos diseñar tu marca en base a tu idea previa, creamos conceptos profesionales del mismo en su conjunto, tanto en relación a su concepto gráfico, tipografía, colores y proporciones adecuados. También te presentamos, sin coste adicional diseños creados desde un punto de vista objetivo y distante que pudieran sorprenderlo con una solución de diseño que no hayas pensado y resuelvan eficientemente tu necesidad de identidad gráfica. Al momento de realizar tu pedido puedes adjuntar tu idea previa o nos la puedes enviar por WhatsApp o Email indicando el nombre de tu marca.`
+      response: `Si, podemos diseñar tu marca en base a tu idea previa, creamos conceptos profesionales del mismo en tu conjunto, tanto en relación a tu concepto gráfico, tipografía, colores y proporciones adecuados. También te presentamos, sin coste adicional diseños creados desde un punto de vista objetivo y distante que pudieran sorprenderlo con una solución de diseño que no hayas pensado y resuelvan eficientemente tu necesidad de identidad gráfica. Al momento de realizar tu pedido puedes adjuntar tu idea previa o nos la puedes enviar por WhatsApp o Email indicando el nombre de tu marca.`
     }, {
       question: 'Aún no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
-      response: 'Sí, puedes solicitar cualquier cambio antes de la entrega de su proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de su proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante su proyecto.'
+      response: 'Sí, puedes solicitar cualquier cambio antes de la entrega de tu proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de tu proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante tu proyecto.'
     }, {
       question: 'Aún no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
       response: 'Sí, sin problema mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de tu datos fiscales para tu contabilización.'
@@ -189,14 +189,14 @@ export const imagenCorporativa = {
       response: 'Si, luego de terminar con el diseño de tu logo te brindaremos nuevamente el listado de piezas disponibles y podrás escogerlas.'
     }, {
       question: '¿En qué formatos recibo mis diseños?',
-      response: `Cada elemento diseñado se entrega en el formato adecuado para su correcta utilización digital y/o impresión. Los formatos más habituales son: <br><br>
+      response: `Cada elemento diseñado se entrega en el formato adecuado para tu correcta utilización digital y/o impresión. Los formatos más habituales son: <br><br>
       ● PDF archivo vectorial editable, imprimible en cualquier tamaño y material.<br>
       ● AI archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.<br>
       ● EPS archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.<br>
       ● GIF: archivo en formato de imagen ideal para aplicaciones en redes sociales, mensajería instantánea, publicidad digital y sitios webs.<br>
       ● JPG archivo en formato de imagen para impresión (300 dpi) y aplicación web (72 dpi).<br>
       ● PNG: formato gráfico comprimido que permite almacenar imágenes con una mayor profundidad de contraste y otros importantes datos. <br>
-      ● SVG formato gráficos vectoriales bidimensionales ideales para su uso en Internet<br>
+      ● SVG formato gráficos vectoriales bidimensionales ideales para tu uso en Internet<br>
       ● FAVICON icono de página web que se muestra en la pestaña del navegador.<br>
       ● Microsoft Word<br>
       ● GIF Animado<br>
@@ -207,12 +207,12 @@ export const imagenCorporativa = {
       response: 'El logo se entrega en gran variedad de formatos listos para ser utilizado adecuadamente en imprenta profesional, documentos de Microsoft Word, Excel, Powerpoint, Outlook, Access, Open Office, sistemas de gestión empresarial, rotulación vehicular, de locales, de envases, de uniformes, publicidades impresas y digitales, sitios web, redes sociales, sistemas de mensajería instantánea,  emails , TV, pegatinas, sellos, bordados serigrafiados, es decir,  en todo sitio que necesites aplicarlo.'
     }, {
       question: '¿Por qué el pack es ecológico?',
-      response: `Porque hoy en día la comunicación de la empresas  se realiza prácticamente sin necesidad de imprimir, podrás enviar tus facturas, presupuestos, presentaciones de PPT, via email o publicarlas para su descarga.<br>
+      response: `Porque hoy en día la comunicación de la empresas  se realiza prácticamente sin necesidad de imprimir, podrás enviar tus facturas, presupuestos, presentaciones de PPT, via email o publicarlas para tu descarga.<br>
       Las carpetas, tarjetas, hojas de carta y sobres son los elementos que podes llegar a necesitar imprimir y para todo lo que necesites te brindamos formatos de imprenta editables.
       `
     }, {
       question: '¿Por qué el pack me hace ahorrar dinero y tiempo?',
-      response: `Porque en cualquier otra agencia deberías abonar 2 y hasta 3 veces más por el mismo servicio de diseño, papelería, merchandising y redes sociales. LiderLogo apoya a emprendedores y pequeñas empresas que adquieren su logo a que puedan disfrutar del mismo en la presentación profesional de los elementos de su empresa dentro de un mismo sistema gráfico.
+      response: `Porque en cualquier otra agencia deberías abonar 2 y hasta 3 veces más por el mismo servicio de diseño, papelería, merchandising y redes sociales. LiderLogo apoya a emprendedores y pequeñas empresas que adquieren tu logo a que puedan disfrutar del mismo en la presentación profesional de los elementos de tu empresa dentro de un mismo sistema gráfico.
       Los diseños se entregan en formatos digitales listos para usar.      
       `
     }, {
