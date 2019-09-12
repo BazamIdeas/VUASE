@@ -133,10 +133,16 @@
         if (newVal) {
           var vue = this
           this.$validator.validate().then(async function (valid) {
+            /* global dataLayer  */
+            /* eslint no-undef: "error" */
             if (valid) {
-              /* global dataLayer  */
-              /* eslint no-undef: "error" */
-              dataLayer.push({'event': 'newBrief'})
+              if (localStorage.getItem('utm_liderlogo')) {
+                let utm = JSON.parse(localStorage.getItem('utm_liderlogo'))
+                utm.event = 'newBrief'
+                dataLayer.push(utm)
+              } else {
+                dataLayer.push({'event': 'newBrief'})
+              }
               var brief = vue.$storage.get('brief')
               if (vue.formFields['stationery_pieces'] && vue.formFields['stationery_pieces'].value.length > 6) {
                 brief.subServices.push({ id: 310, name: 'Pieza adicional de papelería', slug: 'adicional-papeleria', quantity: vue.formFields['stationery_pieces'].value.length - 6 })
