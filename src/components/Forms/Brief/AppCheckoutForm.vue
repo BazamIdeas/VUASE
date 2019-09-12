@@ -463,9 +463,8 @@
     methods: {
       validateCoupon: async function () {
         let coupon
-
-        console.log(this.couponCode.length)
-        if (!this.couponCode.length) return
+        /* console.log('this.couponcode >>>>> ', this.couponCode) */
+        if (!this.couponCode) return
 
         try {
           coupon = await this.$axios.$get('/coupons/value/' + this.couponCode)

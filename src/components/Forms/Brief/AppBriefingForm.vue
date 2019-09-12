@@ -130,6 +130,7 @@
     },
     watch: {
       submit: function (newVal, oldVal) {
+        /*      console.log('watch submit', this.formFields) */
         if (newVal) {
           var vue = this
           this.$validator.validate().then(async function (valid) {
@@ -157,6 +158,7 @@
               }
 
               brief.information = vue.formFields
+              /* console.log('brief.information >>>>', brief.information) */
               await vue.$store.dispatch('brief/setData', brief)
 
               vue.$emit('submitBrief', true)
@@ -172,7 +174,7 @@
                 // else if ((offset - document.documentElement.scrollTop) <= 0) document.documentElement.scrollTop -= 2
                 else clearInterval(call)
               }, 0.1)
-
+              /*               console.log('watch submit end', this.formFields) */  
               vue.$emit('submitBrief', false)
             }
           })
