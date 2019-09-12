@@ -191,6 +191,10 @@ export const mutations = {
   },
   RELATEDS (state, data) {
     state.relateds = data
+  },
+
+  GET_ONE (state, data) {
+    state.portfolio = data
   }
 }
 
@@ -276,6 +280,17 @@ export const actions = {
     } catch (error) {
       console.log(error)
       commit('RELATEDS', [])
+    }
+  },
+  async getOne ({ rootGetters, commit, state }, slug) {
+    let url = 'portfolios?limit=10000'
+    try {
+      let portfolio = await this.$axios.$get(url)
+      let p = portfolio.find(el => el.slug === slug)
+      commit('GET_ONE', p)
+    } catch (error) {
+      console.log(error)
+      commit('GET_ONE', [])
     }
   }
 }

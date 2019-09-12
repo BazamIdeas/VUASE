@@ -54,7 +54,7 @@
     <v-container grid-list-md class="mt-3">
       <v-layout row wrap>
         <!-- RELACIONADOS -->
-        <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="3" title="Ejemplos relacionados" />
+        <!-- <AppHeading v-if="portfolios && portfolios.length" class="mb-5" size="display-1" number="3" title="Ejemplos relacionados" />
         <v-layout v-if="portfolios && portfolios.length" xs12 row wrap class="portfolios mb-5">
           <v-flex @click="goPortfolio('/ejemplo/'+ item.service.slug +'/'+ item.slug, item)"  v-for="(item) in portfolios.slice(0,3)" :key="item.id" xs12 sm6 md4 class="pr-2">
             <v-card>
@@ -70,7 +70,7 @@
               </v-flex>
             </v-card>
           </v-flex>
-        </v-layout>
+        </v-layout> -->
 
         <v-flex  xs12 class="my-3">
           <v-layout xs12 row wrap justify-center align-center>
@@ -101,7 +101,7 @@
 <script>
   export default {
     async fetch ({ store, params }) {
-      await store.dispatch('portfolios/getAll', params)
+      await store.dispatch('portfolios/getOne', params.slug)
       await store.dispatch('sectors/activities/getAll')
     },
     asyncData ({ params }) {
@@ -112,9 +112,9 @@
       }
     },
     async mounted () {
-      if (process.browser) {
+      /* if (process.browser) {
         await this.$store.dispatch('portfolios/getRelateds', this.portfolio.activity.slug)
-      }
+      } */
     },
     methods: {
       async selectService () {
@@ -165,8 +165,7 @@
         }
 
         if (p) return JSON.parse(p) */
-
-        return this.$store.state.portfolios.list.find(el => el.slug === this.portfolioSlug)
+        return this.$store.state.portfolios.portfolio
       },
       portfolios () {
         let portfolios = []
