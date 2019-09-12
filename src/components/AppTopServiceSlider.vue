@@ -63,8 +63,9 @@
                           <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> {{checkItem}}
                           </li>
                         <li class="body-1 font-weight-medium mb-2">
-                          <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> Precio cerrado 
-                          <span class="font-weight-medium" v-if="price.currency.display == 'left'">
+                          <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> 
+                          <strong>Precio cerrado 
+                          <span  v-if="price.currency.display == 'left'">
                                 {{price.currency.symbol}}
                                 {{price.value}}
                               </span>
@@ -73,6 +74,7 @@
                                 {{price.value}}
                                 {{price.currency.symbol}}
                               </span>
+                              </strong>
                           </li>
                       </ul>
                     </v-flex>
@@ -114,7 +116,7 @@
 <script lang="js">
   export default {
     data: () => ({
-      heightSlider: 0
+      heightSlider: 700
     }),
     props: ['id', 'service', 'price', 'slug', 'alt'],
     mounted () {
@@ -140,7 +142,7 @@
         var thisV = this
         setTimeout(() => {
           thisV.heightSlider = thisV.$refs.sliderbody[0].clientHeight
-        }, 3000)
+        }, 1500)
       }
     }
   }

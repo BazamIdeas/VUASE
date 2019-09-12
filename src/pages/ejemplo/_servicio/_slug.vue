@@ -158,13 +158,13 @@
     },
     computed: {
       portfolio () {
-        let p
+        /* let p
 
         if (process.browser) {
           p = localStorage.getItem('liderlogo_selected_portfolio')
         }
 
-        if (p) return JSON.parse(p)
+        if (p) return JSON.parse(p) */
 
         return this.$store.state.portfolios.list.find(el => el.slug === this.portfolioSlug)
       },

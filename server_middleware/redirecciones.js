@@ -66,7 +66,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/papelerias',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/opticas',
@@ -114,7 +114,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-de-comida-saludable',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/gasolineras',
@@ -134,7 +134,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/supermercado',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-de-huella-de-oso',
@@ -238,7 +238,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/librerias',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/laboratorio',
@@ -258,7 +258,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/comidas-caseras',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logotipos/medio-ambiente-ecologia',
@@ -282,7 +282,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-empresa-de-electrodomesticos',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-para-empresa-de-multiservicios',
@@ -434,7 +434,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-de-tienda-de-regalos',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/bisuteria',
@@ -506,11 +506,11 @@ const redirecciones = [
   },
   {
     'path': '/logo/cocineros',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
-    'path': '/logos/logo-para-restaurant-mexicano',
-    'url': 'restaurant'
+    'path': '/logos/logo-para-gastronomia-mexicano',
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/piscinas',
@@ -582,7 +582,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-de-parrilla-de-cerdo',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/edificios',
@@ -594,7 +594,7 @@ const redirecciones = [
   },
   {
     'path': '/blog/buen-diseno-perfil-redes-sociales-atraer-clientes',
-    'url': 'marketing-sicial-media'
+    'url': 'marketing-social-media'
   },
   {
     'path': '/logos/logo-de-un-huevo',
@@ -794,7 +794,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-ferreterias-2',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/gruas',
@@ -906,7 +906,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/editoriales',
-    'url': 'marketing-sicial-media'
+    'url': 'marketing-social-media'
   },
   {
     'path': '/logo/seguros',
@@ -1006,7 +1006,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-comida-china',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/pasta',
@@ -1018,7 +1018,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-de-una-casa-de-dulces',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/cereales',
@@ -1054,7 +1054,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-de-cubiertos',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/grupos-musicales',
@@ -1070,7 +1070,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-empresa-de-telas',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/casas',
@@ -1082,7 +1082,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-con-gancho',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-de-oveja',
@@ -1118,7 +1118,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/panaderias',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logotipo-para-jugueteria',
@@ -1170,7 +1170,7 @@ const redirecciones = [
   },
   {
     'path': '/portfolio/logo-de-comercio-minorista-de-tabaco-y-estancos',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-de-toro-rojo',
@@ -1206,7 +1206,7 @@ const redirecciones = [
   },
   {
     'path': '/logotipos/comercio',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-para-empresas-de-aseo',
@@ -1302,7 +1302,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/cocinas',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/portfolio/folleto-para-instalaciones-electricas',
@@ -1326,7 +1326,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-empresa-de-banquetes',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/tomate',
@@ -1446,7 +1446,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-tienda-de-espejos',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-sabila',
@@ -1558,7 +1558,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-venta-de-telas',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/luz',
@@ -1630,7 +1630,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-ferreteria',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-abstracto-con-ciervo',
@@ -1694,7 +1694,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-con-diseno-para-ferreteria',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-computacion',
@@ -1714,7 +1714,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/bares',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/montanas',
@@ -1898,7 +1898,7 @@ const redirecciones = [
   },
   {
     'path': '/blog/folletos-publicitarios-publicidades-alternativas',
-    'url': 'marketing-sicial-media'
+    'url': 'marketing-social-media'
   },
   {
     'path': '/logo/insecto',
@@ -1950,7 +1950,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-chef-o-cocineros',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/congelados',
@@ -1986,7 +1986,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/cubiertos',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logos/logo-de-una-medalla',
@@ -2150,7 +2150,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-de-comida-gourmet',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logo/carga',
@@ -2162,7 +2162,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-refrigeracion',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-de-barco-deportivo',
@@ -2358,7 +2358,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-empresas-de-ferretera',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-de-una-cometa',
@@ -2550,7 +2550,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/academias',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-silueta-de-carro-de-carga',
@@ -2658,7 +2658,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-publicidad-y-mercadeo',
-    'url': 'marketing-sicial-media'
+    'url': 'marketing-social-media'
   },
   {
     'path': '/logos/logo-de-lancha',
@@ -2818,7 +2818,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/cuchillo',
-    'url': 'restaurant'
+    'url': 'gastronomia'
   },
   {
     'path': '/logos/logo-de-pole-dance',
@@ -2870,7 +2870,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/logo-para-centro-comercial',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/musculos',
@@ -2990,7 +2990,7 @@ const redirecciones = [
   },
   {
     'path': '/logotipos/comercio-minorista',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/bonsai',
@@ -3010,7 +3010,7 @@ const redirecciones = [
   },
   {
     'path': '/portfolio/rotulo-de-envase-para-la-comercializacion-de-alimentos-congelados',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/arcos',
@@ -3074,7 +3074,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/centro-comercial',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/humo',
@@ -3146,7 +3146,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/tienda-de-ninos',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logo/flecha',
@@ -3322,7 +3322,7 @@ const redirecciones = [
   },
   {
     'path': '/logo/cerrado',
-    'url': 'comercio-almacenes'
+    'url': 'tiendas'
   },
   {
     'path': '/logos/logo-de-can',
@@ -3438,7 +3438,7 @@ const redirecciones = [
   },
   {
     'path': '/logos/catalogo',
-    'url': 'marketing-sicial-media'
+    'url': 'marketing-social-media'
   }
 ]
 

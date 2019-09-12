@@ -149,17 +149,17 @@
 
           /* Adwords Data */
 
-          let utmCampaign = this.$router.currentRoute.query.utm_campaign
+          let utmCampaign = this.$router.currentRoute.query.campaign
           if (utmCampaign) {
             contact.campaign = utmCampaign
           }
 
-          let utmMedium = this.$router.currentRoute.query.utm_medium
+          let utmMedium = this.$router.currentRoute.query.medium
           if (utmMedium) {
             contact.medium = utmMedium
           }
 
-          let utmSource = this.$router.currentRoute.query.utm_source
+          let utmSource = this.$router.currentRoute.query.source
           if (utmSource) {
             contact.source = utmSource
           }

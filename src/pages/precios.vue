@@ -27,7 +27,7 @@
               </div>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
-              <p class="subheading font-weight-medium">{{ serviceObject.dataService.description }}</p>
+              <p class="subheading font-weight-medium" v-html="serviceObject.dataService.description "></p>
               <ul>
                 <li v-for="(item, i) in serviceObject.dataService.list" :key="i" class="my-2 subheading font-weight-medium">{{item}}</li>
               </ul>

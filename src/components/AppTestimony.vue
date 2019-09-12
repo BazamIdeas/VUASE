@@ -39,9 +39,7 @@
                   ¿Qué opinan nuestros clientes?
                 </h2>
                 <img :alt="alt" class="--puntos" src="/icons/puntos_de_fondo.svg">
-                <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-                 <img class="lt-img" :data-src="item.logo" :alt="item.company + ' Testimonio'">
-                  </div>
+                 <img class="lt-img" :src="item.logo" :alt="item.company + ' Testimonio'">
               </v-flex>
             </v-layout>
           </v-carousel-item>
@@ -76,16 +74,8 @@
     }),
     created () {
       this.completeExamples = this.list
-      if (this.$device.isMobile) {
-        this.itemsLimit = 1
-        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
-      } else if (this.$device.isTablet) {
-        this.itemsLimit = 1
-        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
-      } else {
-        this.itemsLimit = 1
-        this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
-      }
+      this.itemsLimit = 1
+      this.completeExamples = this.itemsLimit ? this.completeExamples.slice(0, this.itemsLimit) : this.list
     },
     methods: {
 
