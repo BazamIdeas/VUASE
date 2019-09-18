@@ -1,5 +1,5 @@
 <template>
-  <form id="app" autocomplete="off">
+  <form id="app"   enctype="multipart/form-data" autocomplete="off">
     <v-layout row wrap class="px-2 mt-4 mb-5">
       <v-flex md4 xs12>
         <h1 class="heading"> Datos Básicos </h1>
@@ -99,6 +99,7 @@
     },
     async mounted () {
       var vue = this
+      console.log('mouted')
       await vue.getForm()
       if (vue.form) {
         vue.formFields.email.value = vue.brief.information['email'] ? vue.brief.information['email'].value : ''
@@ -120,8 +121,10 @@
     },
     methods: {
       setFile (name, event) {
-        console.log(event.target.files)
         this.formFields[name].value = event.target.files[0]
+        console.log('formfiels', this.formFields)
+        console.log('namefilefield', name)
+        console.log('formfiels', this.formFields[name])
       },
       clearFile (name) {
         this.formFields[name].value = null
