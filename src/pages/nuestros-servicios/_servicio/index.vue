@@ -69,8 +69,7 @@ export default {
       meta: [
         { property: 'og:title', content: this.dataService.titleSEO },
         { property: 'og:description', content: this.dataService.descriptionSEO },
-        { hid: 'description', name: 'description', content: this.dataService.descriptionSEO },
-        { content: 'index', name: 'robots' }
+        { hid: 'description', name: 'description', content: this.dataService.descriptionSEO }
       ]
     }
   },
