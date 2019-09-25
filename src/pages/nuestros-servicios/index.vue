@@ -95,7 +95,8 @@
         meta: [
           { property: 'og:title', content: this.title },
           { property: 'og:description', content: this.description },
-          { hid: 'description', name: 'description', content: this.description }
+          { hid: 'description', name: 'description', content: this.description },
+          { content: 'index', name: 'robots' }
         ]
       }
     },
