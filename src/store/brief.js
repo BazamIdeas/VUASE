@@ -212,9 +212,6 @@ export const getters = {
 }
 
 export const actions = {
-
-  
-
   setData ({ commit }, data) {
     commit('SET_DATA', data)
   },
@@ -230,10 +227,9 @@ export const actions = {
     }
   },
   async storeBrief ({ commit, rootState }) {
-
     let brief = vueInstance.$storage.get('brief')
     let bodyFormData = new FormData()
-    brief.information.logo_files.value =  rootState.brief.data.information.logo_files.value 
+    brief.information.logo_files.value = rootState.brief.data.information.logo_files.value
 
     bodyFormData.append('data', JSON.stringify(brief))
     bodyFormData.append('client', JSON.stringify({
@@ -247,7 +243,7 @@ export const actions = {
     for (let key in brief.information) {
       if (key.includes('files')) {
         if (brief.information[key].value) {
-          bodyFormData.append('files',  rootState.brief.data.information.logo_files.value)
+          bodyFormData.append('files', rootState.brief.data.information.logo_files.value)
         }
       }
     }
@@ -255,11 +251,9 @@ export const actions = {
     const ip = this.$cookies.get('liderlogo_client_ip')
 
     try {
-
       location = await axios.get('https://ipapi.co/' + ip + '/json/')
 
       saveBrief = await this.$axios.$post('briefs', bodyFormData, {
-        
         headers: {
           'Content-Type': 'multipart/form-data',
           'Location-Name': `${location.data.country}, ${location.data.city}, ${location.data.region}${location.data.postal ? ', CP:' + location.data.postal + ', ' : ', '}${'IP: ' + ip}`

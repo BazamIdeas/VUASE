@@ -105,8 +105,11 @@
     },
     head () {
       const list = this.$store.state.portfolios.list
+      console.log(list[0].activity.meta_description)
       if (this.params.sector) {
         this.title = list[0].activity.name
+        this.meta_title = list[0].activity.meta_title
+        this.meta_description = list[0].activity.meta_description
         this.h1 = 'Ejemplos de diseño de logo, imagen corporativa, folletos y sitios web de ' + list[0].activity.name
         this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
         this.descriptionActivity = list[0].activity.description
@@ -115,9 +118,9 @@
       return {
         titleTemplate: this.title + ' | %s',
         meta: [
-          { property: 'og:title', content: this.title },
-          { property: 'og:description', content: this.description },
-          { hid: 'description', name: 'description', content: this.description }
+          { property: 'og:title', content: this.meta_title ? this.meta_title : this.title },
+          { property: 'og:description', content: this.meta_description ? this.meta_description : this.description },
+          { hid: 'description', name: 'description', content: this.meta_description ? this.meta_description : this.description }
         ]
       }
     },

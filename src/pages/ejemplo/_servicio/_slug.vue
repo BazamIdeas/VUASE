@@ -112,6 +112,7 @@
       }
     },
     async mounted () {
+      console.log('here')
       /* if (process.browser) {
         await this.$store.dispatch('portfolios/getRelateds', this.portfolio.activity.slug)
       } */
@@ -147,12 +148,13 @@
       }
     },
     head () {
+      console.log(this.portfolio)
       return {
         titleTemplate: this.portfolio ? this.portfolio.name + ' | %s' : '' || 'Ejemplo | %s',
         meta: [
-          { property: 'og:title', content: this.portfolio ? this.portfolio.name : '' || 'Ejemplo' },
-          { property: 'og:description', content: this.portfolio ? this.portfolio.description.substr(0, 160) : '' || 'Ejemplo' },
-          { hid: 'description', name: 'description', content: this.portfolio ? this.portfolio.description.substr(0, 160) : '' || 'Ejemplo' }
+          { property: 'og:title', content: this.portfolio.meta_title ? this.portfolio.meta_title : this.portfolio.name.substr(0, 55) },
+          { property: 'og:description', content: this.portfolio.meta_description ? this.portfolio.meta_description : this.portfolio.description.substr(0, 160) },
+          { hid: 'description', name: 'description', content: this.portfolio.meta_description ? this.portfolio.meta_description : this.portfolio.description.substr(0, 160) }
         ]
       }
     },
