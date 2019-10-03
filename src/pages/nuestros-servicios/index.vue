@@ -39,7 +39,7 @@
                   <v-carousel-item v-for="(item, i) in layout.carousel" :key="i"   :transition="'slide-x-transition'"
                   reverse="true"
                   reverse-transition="slide-x-reverse-transition">
-                    <svg :alt="alt" class="img-cuadrada" viewBox="0 0 100 100 " :style="'background: url(' +item.src+')'"></svg>
+                    <svg :alt="alt" class="img-cuadrada"  viewBox="0 0 100 100 " :style="'background: url(' +item.src+')'"></svg>
                   </v-carousel-item>
                 </v-carousel>
               </v-flex>

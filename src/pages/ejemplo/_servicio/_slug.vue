@@ -242,6 +242,4 @@
     max-height: calc( 80vw / 3 );
   }
 
-
-
 </style>

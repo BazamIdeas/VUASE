@@ -101,7 +101,7 @@ a {
 }
 
 .img-cuadrada-ejemplos {
-  background-size: 100% 100% !important;
+  background-size: auto 100%  !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   max-height: 100%;
