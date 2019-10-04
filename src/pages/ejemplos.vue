@@ -10,11 +10,12 @@
         </v-layout>
         <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
           <v-flex v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
-            <v-card height="auto">
+            <v-card height="auto" class="mb-4">
               <div class="img-cuadrada-ejemplos-container" >
               <v-carousel
               :cycle= false
-               style="height: 370px;">
+              :hide-delimiters = true
+               class="img-cuadrada-ejemplos-carousel">
                 <v-carousel-item
                   v-for="(item,i) in portfolio.images" :key="i">
                 <svg role="img" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " v-lazy:background-image="urlHosting + item.slug"></svg>
@@ -29,18 +30,9 @@
                 <nuxt-link  v-if="!isMobile" class="caption" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
                 </v-flex>
                 <v-flex class="my-0" v-if="isMobile">
-                 <v-list>
-                  <v-list-group>
-                  <v-list-tile slot="activator">
-                    <v-list-tile-content>
-                     <p class="caption">{{portfolio.description}}</p> 
-                    </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon>{{portfolio.description}}</v-icon>
-                    </v-list-tile-action>
-                  </v-list-group>
-                 </v-list>
+                  
+                <read-more more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
+                  
                 </v-flex>
             </v-card>
           </v-flex>
@@ -122,6 +114,14 @@
         }
 
         this.$router.push(url)
+      },
+      parsePortfolio (portfolio) {
+        let parsed = ''
+
+        if (portfolio.description) {
+          parsed = portfolio.description.length > 25 ? portfolio.description.substring(0, 25) + '...' : portfolio.description
+        }
+        return parsed
       }
     },
     head () {
@@ -166,6 +166,22 @@
 </script>
 
 <style>
+
+  @media all and (max-width: 480px){
+      .img-cuadrada-ejemplos{
+        background-size: cover !important; 
+        
+  }
+    .img-cuadrada-ejemplos-container{
+    height:24rem !important;width:100%;
+  }
+
+    }
+
+   .img-cuadrada-ejemplos-carousel{
+   height: 370px;
+  }
+
 .ejemplos  .v-text-field__details {
   display: none;
 }
