@@ -6,7 +6,7 @@
       <AppFooter/>
       <!--<img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">-->
       <!-- COOKIES ACCEPT -->
-      <v-container class="cookies px-0" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
+<!--       <v-container class="cookies px-0" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
         <v-layout row wrap align-center class="mx-0">
           <v-flex xs12>
             <h2 class="title font-weight-medium mb-2 text-uppercase">AVISO DE COOKIES</h2>
@@ -19,7 +19,7 @@
             <v-btn @click="acceptUserCookie" class="elevation-0 white--text" style="background-color:#1976d2; line-height: 14px;" wrap>Aceptar</v-btn>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
     </v-content>
   </v-app>
 </template>

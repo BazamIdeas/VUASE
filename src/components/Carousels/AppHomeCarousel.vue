@@ -193,7 +193,7 @@
   .animate-img {
     animation: FadeIn 7.9s linear;
     animation-fill-mode: both;
-    animation-delay: 0.5s
+ 
   }
 
   /*ITEM-1*/
@@ -545,7 +545,6 @@
     transition: opacity .5s;
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-    opacity: 0;
-  }
+   }
 
 </style>

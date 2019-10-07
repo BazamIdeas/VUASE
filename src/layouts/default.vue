@@ -19,7 +19,7 @@
       <AppFooter/>
       <!--<img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">-->
       <!-- COOKIES ACCEPT -->
-      <v-container class="cookies px-0 py-1" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
+<!--       <v-container class="cookies px-0 py-1" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
         <v-layout row align-center class="mx-1">
           <v-flex>
             Utilizamos 
@@ -29,7 +29,7 @@
             <v-btn @click="acceptUserCookie" small class="elevation-0 white--text" style="background-color:#1976d2; line-height: 14px;" wrap>Aceptar</v-btn>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
       <v-toolbar class="brief-bottom-toolbar hidden-md-and-up" fixed style="z-index: 400; top: inherit;bottom: 0;">
         <v-layout row wrap>
           <v-flex xs6 style="position: relative">
