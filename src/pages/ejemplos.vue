@@ -126,8 +126,8 @@
     },
     head () {
       const list = this.$store.state.portfolios.list
-      console.log(list[0].activity.meta_description)
-      if (this.params.sector) {
+      console.log(list)
+      if (this.params.sector && list.length > 0) {
         this.title = list[0].activity.name
         this.meta_title = list[0].activity.meta_title
         this.meta_description = list[0].activity.meta_description
@@ -135,7 +135,7 @@
         this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
         this.descriptionActivity = list[0].activity.description
         this.h2 = 'Conoce como crear un logo y las herramientas de comunicación necesarias para ' + list[0].activity.name
-      }
+      } 
       return {
         titleTemplate: this.title + ' | %s',
         meta: [

@@ -5,6 +5,7 @@
     v-resize="showBorders" 
     row wrap 
     class="service-box-container px-3 pt-5 pb-2 xs-pt-2">
+    {{consoleThis(props)}}
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
       <img alt="Servicio Liderlogo" :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
@@ -12,14 +13,17 @@
         <span class="title" :class="{ 'outstanding': outstanding }" style="position: relative; top: 4px; font-weight: 600">
            <h5 class="subheading my-1" style="font-weight: 600" v-if="startWith" :class="{ 'outstanding': outstanding }">{{startWith}}</h5> 
           <span v-if="price.currency.display == 'left'">
-            {{price.currency.symbol}}
+           
+            {{price.currency.iso == "PYG" ? "₲" : price.currency.symbol}}
             {{price.value}}
+            
           </span>
 
           <span v-if="price.currency.display == 'right'">
             {{price.value}}
             {{price.currency.symbol}}
           </span>
+              {{consoleThis(price)}}
           <span v-if="oferta" style="font-weight: 400; font-size: 14px;">{{oferta}} </span>
         </span> 
         <!-- <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">
@@ -91,6 +95,9 @@
       this.showBorders()
     },
     methods: {
+      consoleThis (a) {
+        console.log(a)
+      },
       showBorders () {
         if (window.innerWidth > 960) {
           this.borders = true
