@@ -135,7 +135,7 @@
         this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
         this.descriptionActivity = list[0].activity.description
         this.h2 = 'Conoce como crear un logo y las herramientas de comunicación necesarias para ' + list[0].activity.name
-      } 
+      }
       return {
         titleTemplate: this.title + ' | %s',
         meta: [
