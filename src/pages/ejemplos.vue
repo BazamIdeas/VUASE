@@ -29,7 +29,7 @@
                 </p>
                 <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
                 </v-flex>
-                <v-flex class="my-0" v-if="isMobile">
+                <v-flex class="my-0 px-1" v-if="isMobile">
                   
                 <read-more class="text-xs px-1 " more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
                   

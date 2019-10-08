@@ -173,17 +173,18 @@
   @keyframes FadeIn { 
     0% {
       opacity: 0;
-      transform: scale(.1);
     }
     10% {
-      opacity: 1;
-      transform: scale(1.05);
+      opacity: 0.2;
     }
-    13% {
-      transform: scale(1);
+    25% {
+    opacity: 0.4;
     }
-    97% {
-      opacity: 1;
+    50% {
+    opacity: 0.6;
+    }
+    70% {
+      opacity: 0.8
     }
     100% {
       opacity: 1;
@@ -191,7 +192,7 @@
   }
 
   .animate-img {
-    animation: FadeIn 7.9s linear;
+    animation: FadeIn 1.7s linear;
     animation-fill-mode: both;
  
   }
