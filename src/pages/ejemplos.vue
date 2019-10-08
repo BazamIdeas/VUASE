@@ -24,14 +24,14 @@
               </div>
               <v-flex class="my-0">
               <h4 class="mb-1 px-1 text-xs font-weight-bold">{{portfolio.name}}</h4>
-                <p class="text-xs  mb-1" style="font-weight: 400;">
+                <p class="text-xs px-1  mb-1" style="font-weight: 400;">
                   {{portfolio.service.name}}
                 </p>
-                <nuxt-link  v-if="!isMobile" class="caption" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
+                <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
                 </v-flex>
                 <v-flex class="my-0" v-if="isMobile">
                   
-                <read-more more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
+                <read-more class="text-xs px-1 " more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
                   
                 </v-flex>
             </v-card>
