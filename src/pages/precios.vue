@@ -16,13 +16,17 @@
                    </div>
                 <p class="service-name mb-0">{{ serviceObject.dataService.title }}</p>
                 <h5 class="subheading my-1" style="font-weight: 600" v-if="serviceObject.startWith" >A PARTIR DE</h5> 
-                <h2 class="price">
+                <h2 class="price" v-if="serviceObject.price.currency.display == 'right'">
+                    {{serviceObject.price.currency.symbol + ' ' + serviceObject.price.value}}
+                  <!-- {{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }} -->                
+                </h2>
+                  <h2 class="price" v-if="serviceObject.price.currency.display == 'left'">
+                    {{serviceObject.price.currency.iso == "PYG" ? "₲ " + serviceObject.price.value : serviceObject.price.currency.symbol + ' ' + serviceObject.price.value}}
+
+            
                   <!-- {{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }} -->
-                  {{ 
-                    serviceObject.price.currency.display == 'right' ? 
-                    serviceObject.price.currency.symbol + ' ' + serviceObject.price.value : 
-                    serviceObject.price.value + ' ' + serviceObject.price.currency.symbol
-                  }}
+
+                  
                 </h2>
               </div>
             </v-flex>
