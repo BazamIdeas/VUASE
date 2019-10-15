@@ -16,7 +16,7 @@
                 Datos del responsable del tratamiento
               </p>
               <p class="text-xs-justify pl-4" style="font-weight: 400;">
-                OLMAX EUROPE, S.L.U.
+                SOLMAX EUROPE, S.L.U.
                 <br><br>
                 CIF : B644493018
                 <br><br>
