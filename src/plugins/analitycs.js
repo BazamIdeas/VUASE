@@ -9,6 +9,7 @@ export default ({ app, route }) => {
       utm.medium = route.query.medium
       utm.campaign = route.query.campaign
       utm.keyword = route.query.kw
+      localStorage.setItem('utm_liderlogo', JSON.stringify(utm))
     }
     utm.virtualPageURL = to.path
     dataLayer.push(utm)
