@@ -394,12 +394,13 @@
         const bodyI = document.body
 
         let willBeStick = document.querySelector('#will-be-stick')
-        if (bodyI.scrollTop >= willBeStick.getBoundingClientRect().top) {
+        console.log(willBeStick)
+        if (willBeStick && bodyI.scrollTop >= willBeStick.getBoundingClientRect().top) {
           if (!willBeStick.classList.contains('sticky')) {
             willBeStick.classList.add('sticky')
           }
         } else {
-          if (willBeStick.classList.contains('sticky')) {
+          if (willBeStick && willBeStick.classList.contains('sticky')) {
             willBeStick.classList.remove('sticky')
           }
         }
@@ -412,7 +413,7 @@
           let step2 = document.querySelector('#paso-2')
           let step3 = document.querySelector('#paso-3')
           let button = document.querySelector('.start-button')
-          if (bodyI.scrollTop >= step1.getBoundingClientRect().top - 90 && bodyI.scrollTop < step1.getBoundingClientRect().bottom - 150) {
+          if (step1 && bodyI.scrollTop >= step1.getBoundingClientRect().top - 90 && bodyI.scrollTop < step1.getBoundingClientRect().bottom - 150) {
             console.log('paso 1')
             if (!tStep1.classList.contains('active')) {
               tStep1.classList.add('active')
@@ -421,7 +422,7 @@
               button.classList.remove('step-2', 'step-3')
               button.classList.add('step-1')
             }
-          } else if (bodyI.scrollTop >= step2.getBoundingClientRect().top - 150 && bodyI.scrollTop < step2.getBoundingClientRect().bottom - 150) {
+          } else if (step2 && bodyI.scrollTop >= step2.getBoundingClientRect().top - 150 && bodyI.scrollTop < step2.getBoundingClientRect().bottom - 150) {
             console.log('paso 2')
             if (!tStep2.classList.contains('active')) {
               tStep1.classList.remove('active')
@@ -430,7 +431,7 @@
               button.classList.remove('step-1', 'step-3')
               button.classList.add('step-2')
             }
-          } else if (bodyI.scrollTop > step3.getBoundingClientRect().top - 150 && bodyI.scrollTop < step3.getBoundingClientRect().bottom) {
+          } else if (step3 && bodyI.scrollTop > step3.getBoundingClientRect().top - 150 && bodyI.scrollTop < step3.getBoundingClientRect().bottom) {
             console.log('paso 3')
             if (!tStep3.classList.contains('active')) {
               tStep1.classList.remove('active')
