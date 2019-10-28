@@ -24,7 +24,7 @@
       <v-btn target="_new" href="https://api.whatsapp.com/send?phone=34602253467&text=Hola%20tengo%20una%20consulta" slot="activator" fab light small class="elevation-1 ">
         <v-icon>fab fa-whatsapp</v-icon>
       </v-btn>
-      <span>933961704</span>
+      <span>602253467</span>
     </v-tooltip>
     <v-spacer class="hidden-sm-and-down"></v-spacer>
   </v-toolbar>
