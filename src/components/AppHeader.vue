@@ -21,7 +21,7 @@
       <span>{{ countryData.phone }}</span>
     </v-tooltip>
     <v-tooltip right color="white darken-3 light-blue--text text--darken-2" class="hidden-md-and-down">
-      <v-btn target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta" slot="activator" fab light small class="elevation-1 ">
+      <v-btn target="_new" href="https://api.whatsapp.com/send?phone=34602253467&text=Hola%20tengo%20una%20consulta" slot="activator" fab light small class="elevation-1 ">
         <v-icon>fab fa-whatsapp</v-icon>
       </v-btn>
       <span>933961704</span>
