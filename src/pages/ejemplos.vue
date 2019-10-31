@@ -4,9 +4,9 @@
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
         <h1 class="mb-4 px-4">{{h1}}</h1>
-        <!-- <v-flex xs12>
+         <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length" />
-        </v-flex> -->
+        </v-flex> 
         </v-layout>
         <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
           <v-flex v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
@@ -18,17 +18,21 @@
                class="img-cuadrada-ejemplos-carousel">
                 <v-carousel-item
                   v-for="(item,i) in portfolio.images" :key="i">
-                <svg role="img" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " v-lazy:background-image="urlHosting + item.slug"></svg>
+                   <nuxt-link  class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">  
+                      <svg role="img" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " v-lazy:background-image="urlHosting + item.slug"></svg>
+                    </nuxt-link>
                 </v-carousel-item>
               </v-carousel>
               </div>
               <v-flex class="my-0">
+               <nuxt-link  class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">  
               <h4 class="mb-1 px-1 text-xs font-weight-bold">{{portfolio.name}}</h4>
+              </nuxt-link>
                 <p class="text-xs px-1  mb-1" style="font-weight: 400;">
                   {{portfolio.service.name}}
                 </p>
-                <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
-                </v-flex>
+<!--                 <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
+ -->                </v-flex>
                 <v-flex class="my-0 px-1" v-if="isMobile">
                   
                 <read-more class="text-xs px-1 " more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
@@ -166,7 +170,9 @@
 </script>
 
 <style>
-
+a h4 {
+    cursor: pointer;
+}
   @media all and (max-width: 480px){
       .img-cuadrada-ejemplos{
         background-size: cover !important; 

@@ -4,8 +4,15 @@
     </v-flex>-->
     <v-flex sm6 md4>
       <!-- :disabled="!(paramsData && paramsData.servicio)" -->
-      <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
-    </v-flex>
+      <div>
+    <v-autocomplete
+      label="Sector o Actividad"
+      :items="sectors"
+      item-text="text" item-value="field" :value="paramsData.sector" @change="redirect($event, 'countries/getAll', 2)"
+    ></v-autocomplete>
+  </div>
+<!--       <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
+ -->    </v-flex>
     <!--<v-flex md4>
       <v-select :items="activities" item-text="text" item-value="field" :value="paramsData.actividad" label="Actividad" :disabled="!(paramsData && paramsData.sector)" @change="redirect($event, 'countries/getAll', 3)" solo></v-select>
     </v-flex>-->
