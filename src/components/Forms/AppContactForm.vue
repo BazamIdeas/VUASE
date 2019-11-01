@@ -89,7 +89,7 @@
       <!--<v-flex order-md2 xs12 md12 v-if="countryData">
         <span>O puedes llamarnos al: </span>
         <a style="color:#1976d2" target="_new" :href="'tel:'+ countryData.phone"> +{{countryData.phone}}</a> 
-        <span> o escribirnos vía <a style="color:#1976d2" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta">WhatsApp</a> </span>
+        <span> o escribirnos vía <a style="color:#1976d2" target="_new" href="https://api.whatsapp.com/send?phone=34602253467&text=Hola%20tengo%20una%20consulta">WhatsApp</a> </span>
       </v-flex>-->
     </v-layout>
   </v-form>

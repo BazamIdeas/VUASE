@@ -38,7 +38,7 @@
             </v-btn>
           </v-flex>
           <v-flex xs6 style="position: relative">
-            <v-btn color="green darken-3" target="_new" href="https://api.whatsapp.com/send?phone=34933961704&text=Hola%20tengo%20una%20consulta" block large class="elevation-0 white--text" style="margin: 0 !important; border-radius: 0px !important">
+            <v-btn color="green darken-3" target="_new" href="https://api.whatsapp.com/send?phone=34602253467&text=Hola%20tengo%20una%20consulta" block large class="elevation-0 white--text" style="margin: 0 !important; border-radius: 0px !important">
               <v-icon>fab fa-whatsapp</v-icon>&nbsp; Whatsapp
             </v-btn>
           </v-flex>
