@@ -1,12 +1,23 @@
 <template>
-  <v-layout row wrap>
+  <v-layout row wrap class="custom--alignment">
     <!--  <v-select :items="services" item-text="text" item-value="field" :value="paramsData.servicio" label="Servicio" @change="redirect($event, 'sectors/getAll', 1)" solo></v-select>
     </v-flex>-->
+        <v-flex sm6 md6>
+      <!-- :disabled="!(paramsData && paramsData.servicio)" -->
+      <div>
+       <h3>
+          Encuentra aquí los ejemplos de diseño de la actividad que buscas:
+       </h3>
+
+  </div>
+<!--       <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
+ -->    </v-flex>
     <v-flex sm6 md4>
       <!-- :disabled="!(paramsData && paramsData.servicio)" -->
       <div>
+        
     <v-autocomplete
-      label="Sector o Actividad"
+      label="Todas las actividades"
       :items="sectors"
       item-text="text" item-value="field" :value="paramsData.sector" @change="redirect($event, 'countries/getAll', 2)"
     ></v-autocomplete>
@@ -114,5 +125,14 @@
 </script>
 
 <style>
-  
+h3{
+  font-weight: 400;
+}
+.custom--alignment{
+      display: flex;
+    align-items: center;
+}
+  .v-select__slot input{
+    padding: .4rem;
+  }
 </style>
