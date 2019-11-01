@@ -9,7 +9,7 @@
         </v-flex> 
         </v-layout>
         <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
-          <v-flex v-for="(portfolio, key) in portfolios" :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
+          <v-flex v-for="(portfolio, key) in portfolios " :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
             <v-card height="auto" class="mb-4">
               <div class="img-cuadrada-ejemplos-container" >
               <v-carousel
