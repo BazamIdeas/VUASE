@@ -132,7 +132,7 @@ h3{
       display: flex;
     align-items: center;
 }
-  .v-select__slot input{
+  .v-input__slot {
     padding: .4rem;
   }
 </style>
