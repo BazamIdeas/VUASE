@@ -19,7 +19,7 @@
     <v-autocomplete
       label="Todas las actividades"
       :items="sectors"
-      item-text="text" item-value="field" :value="paramsData.sector" @change="redirect($event, 'countries/getAll', 2)"
+      item-text="text" solo=true item-value="field" :value="paramsData.sector" @change="redirect($event, 'countries/getAll', 2)"
     ></v-autocomplete>
   </div>
 <!--       <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
