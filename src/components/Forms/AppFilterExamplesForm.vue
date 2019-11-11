@@ -56,6 +56,9 @@
     watch: {
       '$route': function (to, from) {
         this.paramsData = to.params
+        if (this.paramsData !== undefined) {
+          window.localStorage.setItem('service', JSON.stringify(this.paramsData))
+        }
         this.$store.dispatch('portfolios/getAll', this.paramsData)
       }
     },
@@ -72,8 +75,7 @@
             var bottomOfWindow = scrollPosition + 600 >= offsetHeight
             // console.log(bottomOfWindow)
             if (bottomOfWindow && this.count >= 9) {
-              // console.log('listing')
-              // console.log(this.paramsData)
+              /* console.log('listing') */
               this.$store.dispatch('portfolios/getAll', this.paramsData)
             }
           }
@@ -93,7 +95,6 @@
         if (event === undefined || event === 'undefined') return
         /* if (action) this.$store.dispatch(action) */
         let route = this.$router.currentRoute.path.split('/').filter(el => el !== '')
-
         if (route[index]) {
           route.splice(index)
           route[index] = event
@@ -118,7 +119,7 @@
         if (index === 2 || index === 3) {
           route = route + '?no_r'
         }
-        this.$router.push(route)
+        this.$router.replace({path: route, force: true})
       }
     }
   }

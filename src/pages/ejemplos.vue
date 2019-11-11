@@ -94,6 +94,9 @@
     },
     mounted: function () {
       if (process.browser) {
+        if (this.$router.currentRoute.name === 'ejemplos') {
+          window.localStorage.removeItem('service')
+        }
         window.onscroll = () => {
           var offsetHeight = document.documentElement.offsetHeight
           var scrollPosition = document.documentElement.scrollTop + window.innerHeight
@@ -102,10 +105,18 @@
           var bottomOfWindow = scrollPosition + 400 >= offsetHeight
           // console.log(bottomOfWindow)
           if (bottomOfWindow && this.portfolios.length >= 8) {
-            console.log('listing')
+            if (window.localStorage.getItem('service') !== undefined) {
+              this.params = Object.assign(this.params, window.localStorage.getItem('service'))
+            }
             this.$store.dispatch('portfolios/getAll', this.params)
           }
         }
+      }
+    },
+    destroyed: function () {
+      const service = window.localStorage.getItem('service')
+      if (service) {
+        window.localStorage.removeItem('service')
       }
     },
     methods: {
