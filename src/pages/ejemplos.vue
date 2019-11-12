@@ -28,7 +28,7 @@
                 <p class="text-xs px-1  mb-1" style="font-weight: 400;">
                   {{portfolio.service.name}}
                 </p>
-<!--                  <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link> -->
+                  <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
                   </v-flex>
                 <v-flex class="my-0 px-1" v-if="isMobile">
                   
