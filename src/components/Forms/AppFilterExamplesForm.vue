@@ -19,7 +19,7 @@
     <v-autocomplete
       label="Todas las actividades"
       :items="sectors"
-      item-text="text" solo=true item-value="field" :value="paramsData.sector" @change="redirect($event, 'countries/getAll', 2)"
+      item-text="text" solo=true item-value="field" :value="paramsData.sector" @change="redirect($event, 'countries/getAll', 2, paramsData)"
     ></v-autocomplete>
   </div>
 <!--       <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
@@ -56,16 +56,19 @@
     watch: {
       '$route': function (to, from) {
         this.paramsData = to.params
-        if (this.paramsData !== undefined) {
-          window.localStorage.setItem('service', JSON.stringify(this.paramsData))
-        }
+        window.localStorage.setItem('service', JSON.stringify(this.paramsData))
         this.$store.dispatch('portfolios/getAll', this.paramsData)
       }
     },
     mounted: function () {
+      this.$root.$on('inSector', (bool) => {
+        if (bool && this.count >= 9) {
+          this.$store.dispatch('portfolios/getAll', this.paramsData)
+        }
+      })
       if (process.browser) {
-        var lastScrollTop = 0
-        window.onscroll = () => {
+      /* var lastScrollTop = 0
+      window.onscroll = () => {
           var st = window.pageYOffset || document.documentElement.scrollTop
           if (st > lastScrollTop) {
             var offsetHeight = document.documentElement.offsetHeight
@@ -75,12 +78,11 @@
             var bottomOfWindow = scrollPosition + 600 >= offsetHeight
             // console.log(bottomOfWindow)
             if (bottomOfWindow && this.count >= 9) {
-              /* console.log('listing') */
               this.$store.dispatch('portfolios/getAll', this.paramsData)
             }
           }
           lastScrollTop = st <= 0 ? 0 : st // For Mobile or negative scrolling
-        }
+        } */
       }
     },
     computed: {
@@ -91,7 +93,7 @@
       // locations () { return this.$store.getters['countries/locations/byCountry'](this.paramsData.pais) }
     },
     methods: {
-      redirect (event, action, index) {
+      redirect (event, action, index, sectorData) {
         if (event === undefined || event === 'undefined') return
         /* if (action) this.$store.dispatch(action) */
         let route = this.$router.currentRoute.path.split('/').filter(el => el !== '')
@@ -119,7 +121,8 @@
         if (index === 2 || index === 3) {
           route = route + '?no_r'
         }
-        this.$router.replace({path: route, force: true})
+        window.location.replace('ejemplos/servicios/' + event)
+        /* this.$router.replace({path: route, force: true}) */
       }
     }
   }

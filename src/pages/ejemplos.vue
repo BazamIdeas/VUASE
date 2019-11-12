@@ -3,7 +3,7 @@
     <v-container grid-list-md class="ejemplos">
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
-        <h1 class="mb-4 px-4">{{h1}}</h1>
+        <h1 class="mb-4 px-4">{{h1.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')}}</h1>
          <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length"/>
         </v-flex> 
@@ -42,6 +42,8 @@
           <h1 class="text-xs-center">No se encontraron portfolios</h1>
         </v-flex>
         <v-flex  xs12 class="my-3" text-xs-center>
+            <div v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }"></div>
+
           <v-layout xs12 row wrap justify-center align-center >
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
               CONOCER SOBRE EL SERVICIO
@@ -74,7 +76,12 @@
         description: 'Ejemplos de logos, imagen corporativa y páginas web, tenemos más de 15 años de experiencia diseñando marcas',
         title: 'Ejemplos de nuestros trabajos profesionales',
         descriptionActivity: false,
-        isMobile: this.$device.isMobile
+        isMobile: this.$device.isMobile,
+        intersectionOptions: {
+          root: null,
+          rootMargin: '0px 0px 0px 0px',
+          thresholds: [0]
+        }
       }
     },
     asyncData ({ params }) {
@@ -94,10 +101,7 @@
     },
     mounted: function () {
       if (process.browser) {
-        if (this.$router.currentRoute.name === 'ejemplos') {
-          window.localStorage.removeItem('service')
-        }
-        window.onscroll = () => {
+        /* window.onscroll = () => {
           var offsetHeight = document.documentElement.offsetHeight
           var scrollPosition = document.documentElement.scrollTop + window.innerHeight
 
@@ -105,21 +109,24 @@
           var bottomOfWindow = scrollPosition + 400 >= offsetHeight
           // console.log(bottomOfWindow)
           if (bottomOfWindow && this.portfolios.length >= 8) {
-            if (window.localStorage.getItem('service') !== undefined) {
-              this.params = Object.assign(this.params, window.localStorage.getItem('service'))
-            }
             this.$store.dispatch('portfolios/getAll', this.params)
           }
-        }
-      }
-    },
-    destroyed: function () {
-      const service = window.localStorage.getItem('service')
-      if (service) {
-        window.localStorage.removeItem('service')
+        } */
       }
     },
     methods: {
+      onWaypoint ({ going, direction }) {
+        // going: in, out
+        // direction: top, right, bottom, left
+        if (going === this.$waypointMap.GOING_IN && this.portfolios.length >= 8) {
+          if (this.$router.currentRoute.name === 'ejemplos') {
+            this.$store.dispatch('portfolios/getAll', this.params)
+          } else {
+            this.$root.$emit('inSector', true)
+          }
+          /* this.$store.dispatch('portfolios/getAll', this.params) */
+        }
+      },
       goTo (url) {
         this.$router.push({
           path: url
@@ -144,6 +151,7 @@
     head () {
       const list = this.$store.state.portfolios.list
       console.log(list)
+      console.log(this.params.sector)
       if (this.params.sector && list.length > 0) {
         this.title = list[0].activity.name
         this.meta_title = list[0].activity.meta_title

@@ -56,6 +56,7 @@
     "responsive-loader": "^1.2.0",
     "sharp": "^0.22.1",
     "stylus": "0.54.5",
-    "stylus-loader": "3.0.1"
+    "stylus-loader": "3.0.1",
+    "vue-waypoint": "^3.2.2"
   }
 }
