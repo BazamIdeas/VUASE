@@ -41,9 +41,7 @@
         <v-flex v-if="!portfolios.length">
           <h1 class="text-xs-center">No se encontraron portfolios</h1>
         </v-flex>
-        <v-flex  xs12 class="my-3" text-xs-center>
-            <div v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }"></div>
-
+        <v-flex  xs12 class="my-3" text-xs-center >
           <v-layout xs12 row wrap justify-center align-center >
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
               CONOCER SOBRE EL SERVICIO
@@ -76,12 +74,7 @@
         description: 'Ejemplos de logos, imagen corporativa y páginas web, tenemos más de 15 años de experiencia diseñando marcas',
         title: 'Ejemplos de nuestros trabajos profesionales',
         descriptionActivity: false,
-        isMobile: this.$device.isMobile,
-        intersectionOptions: {
-          root: null,
-          rootMargin: '0px 0px 0px 0px',
-          thresholds: [0]
-        }
+        isMobile: this.$device.isMobile
       }
     },
     asyncData ({ params }) {
@@ -101,24 +94,37 @@
     },
     mounted: function () {
       if (process.browser) {
-        /* window.onscroll = () => {
-          var offsetHeight = document.documentElement.offsetHeight
+        let lastScroll
+        window.onscroll = () => {
+          /* var offsetHeight = document.documentElement.offsetHeight
           var scrollPosition = document.documentElement.scrollTop + window.innerHeight
-
-          // console.log(scrollPosition + 600, offsetHeight)
-          var bottomOfWindow = scrollPosition + 400 >= offsetHeight
+          console.log(scrollPosition + 600, offsetHeight)
+          // var bottomOfWindow = scrollPosition + 400 >= offsetHeight
+          var bottomOfWindow = scrollPosition >= document.getElementsByClassName('arrow-left').pageYOffset
           // console.log(bottomOfWindow)
           if (bottomOfWindow && this.portfolios.length >= 8) {
-            this.$store.dispatch('portfolios/getAll', this.params)
+            alert('execute')
+             this.$store.dispatch('portfolios/getAll', this.params)
+          } */
+          /* let scrollPosition = document.documentElement.scrollTop + window.innerHeight */
+          let { top } = document.querySelector('.arrow-left').getBoundingClientRect()
+          /* console.log(scrollPosition) */
+          console.log(top)
+          var st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          if (st > lastScroll) {
+            if (top > 60 && top < 600) {
+              this.$store.dispatch('portfolios/getAll', this.params)
+            }
           }
-        } */
+          lastScroll = st <= 0 ? 0 : st
+        }
       }
     },
     methods: {
-      onWaypoint ({ going, direction }) {
+      onWaypoint () {
         // going: in, out
         // direction: top, right, bottom, left
-        if (going === this.$waypointMap.GOING_IN && this.portfolios.length >= 8) {
+        if (true && this.portfolios.length >= 8) {
           if (this.$router.currentRoute.name === 'ejemplos') {
             this.$store.dispatch('portfolios/getAll', this.params)
           } else {
