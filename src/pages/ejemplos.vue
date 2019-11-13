@@ -8,39 +8,38 @@
           <AppFilterExamplesForm :params="params" :count="portfolios.length"/>
         </v-flex> 
         </v-layout>
-        <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
-          <v-flex v-for="(portfolio, key) in portfolios " :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
-            <v-card height="auto" class="mb-4">
-              <div class="img-cuadrada-ejemplos-container" >
-              <v-carousel
-              :cycle= false
-              :hide-delimiters = true
-               class="img-cuadrada-ejemplos-carousel">
-                <v-carousel-item
-                  v-for="(item,i) in portfolio.images" :key="i">
-                      <svg role="img" @click="goTo('/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug)" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " v-lazy:background-image="urlHosting + item.slug"></svg>
-                </v-carousel-item>
-              </v-carousel>
-              </div>
-              <v-flex class="my-0">
-              <h4 class="mb-1 px-1 text-xs font-weight-bold" @click="goTo('/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug)" :aria-label="portfolio.name">{{portfolio.name}}</h4>
+          <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
+            <v-flex v-for="(portfolio, key) in portfolios " :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
+              <v-card height="auto" class="mb-4">
+                <div class="img-cuadrada-ejemplos-container" >
+                <v-carousel
+                :cycle= false
+                :hide-delimiters = true
+                class="img-cuadrada-ejemplos-carousel">
+                  <v-carousel-item
+                    v-for="(item,i) in portfolio.images" :key="i">
+                        <svg role="img" @click="goTo('/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug)" :aria-label="portfolio.name" :alt="portfolio.name" class="img-cuadrada-ejemplos" style="border-bottom: 1px solid #6a6a6a38;" viewBox="0 0 100 100 " v-lazy:background-image="urlHosting + item.slug"></svg>
+                  </v-carousel-item>
+                </v-carousel>
+                </div>
+                <v-flex class="my-0">
+                <h4 class="mb-1 px-1 text-xs font-weight-bold" @click="goTo('/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug)" :aria-label="portfolio.name">{{portfolio.name}}</h4>
 
-                <p class="text-xs px-1  mb-1" style="font-weight: 400;">
-                  {{portfolio.service.name}}
-                </p>
-                  <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
+                  <p class="text-xs px-1  mb-1" style="font-weight: 400;">
+                    {{portfolio.service.name}}
+                  </p>
+                    <nuxt-link  v-if="!isMobile" class="caption px-1" :to= "'/ejemplo/' + portfolio.service.slug + '/' + portfolio.slug" style="font-weight: bold; color: #898989;">Conocer más</nuxt-link>
+                     <span  v-else></span>
+                    </v-flex>
+                  <v-flex class="my-0 px-1" v-if="isMobile">
+                    
+                  <read-more class="text-xs px-1 " more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
+                    
                   </v-flex>
-                <v-flex class="my-0 px-1" v-if="isMobile">
-                  
-                <read-more class="text-xs px-1 " more-str="leer más" :text="portfolio.description" link="#" less-str="leer menos" :max-chars="35"></read-more>
-                  
-                </v-flex>
-            </v-card>
-          </v-flex>
-        </v-layout>
-        <v-flex v-if="!portfolios.length">
-          <h1 class="text-xs-center">No se encontraron portfolios</h1>
-        </v-flex>
+              </v-card>
+            </v-flex>
+          </v-layout>
+
         <v-flex  xs12 class="my-3" text-xs-center >
           <v-layout xs12 row wrap justify-center align-center >
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
@@ -51,11 +50,7 @@
             </v-btn>
           </v-layout>
         </v-flex>
-        <v-flex v-if="descriptionActivity">
-          <h2> {{h2}}</h2>
-          <p  class="text-xs-justify mt-3" style="font-weight:500;" v-html="descriptionActivity">
-          </p>
-        </v-flex>
+
     </v-container>
 
     <!--<AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
