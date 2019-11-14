@@ -1,5 +1,5 @@
 <template>
-  <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel">
+  <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel mt-5" >
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
@@ -30,7 +30,7 @@
 
 <style scoped>
   .v-carousel.main-carousel--pro {
-      min-height: 680px;
+      min-height: 420px;
   }
 
   .v-carousel {
@@ -99,6 +99,13 @@
     font-weight: 600;
   }
 
+@media (min-height: 300px)
+  {
+  .v-carousel.main-carousel {
+    height: 300px;
+    min-height: 400px;
+  }
+}
 
 
   @media (max-width: 600px) {
@@ -157,7 +164,7 @@
     }
 
     .v-carousel.profesional-services-slider {
-      height: 560px;
+      height: 420px;
     }
   }
 
@@ -217,8 +224,8 @@
     }
 
     .v-carousel.main-carousel {
-      height: 100vh;
-      min-height: 545px;
+      height: 420px;
+      min-height: 420px;
     }
   }
 
@@ -280,7 +287,7 @@
     }
 
     .v-carousel.main-carousel {
-      height: 100vh;
+      height: 420px;
       min-height: 854px;
     }
   }
