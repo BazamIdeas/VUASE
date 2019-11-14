@@ -3,7 +3,7 @@
     <v-container grid-list-md class="ejemplos">
       <v-layout row wrap>
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
-        <h1 class="mb-4 px-4">{{h1.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')}}</h1>
+        <h1 class="mb-4 px-4">{{h1}}</h1>
          <v-flex xs12>
           <AppFilterExamplesForm :params="params" :count="portfolios.length"/>
         </v-flex> 
@@ -50,7 +50,11 @@
             </v-btn>
           </v-layout>
         </v-flex>
-
+        <v-flex v-if="descriptionActivity">
+          <h2> {{h2}}</h2>
+          <p  class="text-xs-justify mt-3" style="font-weight:500;" v-html="descriptionActivity">
+          </p>
+        </v-flex>
     </v-container>
 
     <!--<AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
@@ -91,7 +95,10 @@
       if (process.browser) {
         let lastScroll
         window.onscroll = () => {
-          /* var offsetHeight = document.documentElement.offsetHeight
+          /* 
+          // uppercase primeras letras de frases
+          toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
+          var offsetHeight = document.documentElement.offsetHeight
           var scrollPosition = document.documentElement.scrollTop + window.innerHeight
           console.log(scrollPosition + 600, offsetHeight)
           // var bottomOfWindow = scrollPosition + 400 >= offsetHeight
