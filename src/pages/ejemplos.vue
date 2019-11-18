@@ -243,6 +243,11 @@ h3{
   }
 
     }
+      @media all and (min-width: 1900px){
+      .img-cuadrada-ejemplos{
+        background-size: cover !important;       
+           }
+      }
 
    .img-cuadrada-ejemplos-carousel{
    height: 370px;
