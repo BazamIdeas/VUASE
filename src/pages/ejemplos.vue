@@ -1,12 +1,31 @@
 <template>
   <section>
     <v-container grid-list-md class="ejemplos">
-      <v-layout row wrap>
+      <v-layout row wrap class="custom--alignment">
         <v-flex xs12 class="my-3 py-5 xs-pb-0"></v-flex>
-        <h1 class="mb-4 px-4">{{h1}}</h1>
-         <v-flex xs12>
-          <AppFilterExamplesForm :params="params" :count="portfolios.length"/>
-        </v-flex> 
+        <v-flex xs12>
+          <h1 class="mb-4 px-4">{{h1}}</h1>
+        </v-flex>
+                <v-flex sm6 md6>
+                  <div>
+                  <h3>
+                      Encuentra aquí los ejemplos de diseño de la actividad que buscas:
+                  </h3>
+
+              </div>
+                </v-flex>
+                <v-flex sm6 md4>
+                  <div>
+                    
+               <v-autocomplete
+                label="Todas las actividades"
+                :items="sectors"
+                item-text="text" solo=true item-value="field" :value="text" @change="setSector($event)"> -
+              ></v-autocomplete> 
+              </div>
+            <!--       <v-select :items="sectors" item-text="text" item-value="field" :value="paramsData.sector" label="Sector o Actividad"  @change="redirect($event, 'countries/getAll', 2)" solo></v-select>
+            -->   
+       </v-flex>
         </v-layout>
           <v-layout xs12 row wrap class="portfolios" v-if="portfolios && portfolios.length">
             <v-flex v-for="(portfolio, key) in portfolios " :key="portfolio.id + key" xs12 sm6 md4 class="pr-2">
@@ -45,8 +64,10 @@
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
               CONOCER SOBRE EL SERVICIO
             </v-btn>
-            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large="" :to="'/ejemplos'">
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large @click="goTo('ejemplos')">
+              
               VER TODOS LOS EJEMPLOS
+
             </v-btn>
           </v-layout>
         </v-flex>
@@ -76,6 +97,11 @@
         isMobile: this.$device.isMobile
       }
     },
+    watch: {
+      'params': function (to, from) {
+        console.log(to)
+      }
+    },
     asyncData ({ params }) {
       return { params: params }
     },
@@ -95,24 +121,8 @@
       if (process.browser) {
         let lastScroll
         window.onscroll = () => {
-          /* 
-          // uppercase primeras letras de frases
-          toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
-          var offsetHeight = document.documentElement.offsetHeight
-          var scrollPosition = document.documentElement.scrollTop + window.innerHeight
-          console.log(scrollPosition + 600, offsetHeight)
-          // var bottomOfWindow = scrollPosition + 400 >= offsetHeight
-          var bottomOfWindow = scrollPosition >= document.getElementsByClassName('arrow-left').pageYOffset
-          // console.log(bottomOfWindow)
-          if (bottomOfWindow && this.portfolios.length >= 8) {
-            alert('execute')
-             this.$store.dispatch('portfolios/getAll', this.params)
-          } */
-          /* let scrollPosition = document.documentElement.scrollTop + window.innerHeight */
           let { top } = document.querySelector('.arrow-left').getBoundingClientRect()
-          /* console.log(scrollPosition) */
-          console.log(top)
-          var st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          var st = window.pageYOffset || document.documentElement.scrollTop
           if (st > lastScroll) {
             if (top > 60 && top < 600) {
               this.$store.dispatch('portfolios/getAll', this.params)
@@ -123,22 +133,32 @@
       }
     },
     methods: {
-      onWaypoint () {
-        // going: in, out
-        // direction: top, right, bottom, left
-        if (true && this.portfolios.length >= 8) {
-          if (this.$router.currentRoute.name === 'ejemplos') {
-            this.$store.dispatch('portfolios/getAll', this.params)
-          } else {
-            this.$root.$emit('inSector', true)
-          }
-          /* this.$store.dispatch('portfolios/getAll', this.params) */
+      setSector (event) {
+        let data = {
+          'servicio': 'servicios',
+          'sector': event,
+          'offset': 0
+        }
+        this.params = data
+        if (event === 'sectores') {
+          history.replaceState({}, null, '')
+          /* window.location.replace('ejemplos') */
+          this.$router.replace('ejemplos')
+          this.$router.go()
+          this.$store.dispatch('portfolios/getAll')
+        } else {
+          history.replaceState({}, 'ejemplos', '/ejemplos/servicios/' + event)
+          this.$store.dispatch('portfolios/getAll', this.params)
         }
       },
       goTo (url) {
-        this.$router.push({
-          path: url
-        })
+        if (url === 'ejemplos ') {
+
+        } else {
+          this.$router.push({
+            path: url
+          })
+        }
       },
       goPortfolio (url, portfolio) {
         if (process.browser) {
@@ -179,6 +199,7 @@
       }
     },
     computed: {
+      sectors () { return this.$store.getters['sectors/forSelectField'] },
       portfolios () {
         if (this.$store.state.portfolios.list) {
           return this.$store.state.portfolios.list.filter(function (e) {
@@ -199,7 +220,13 @@
 </script>
 
 <style>
-
+.custom--alignment{
+      display: flex;
+    align-items: center;
+}
+h3{
+  font-weight: 400;
+}
  h4 {
     cursor: pointer;
 }

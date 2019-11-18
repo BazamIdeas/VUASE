@@ -55,12 +55,15 @@
     },
     watch: {
       '$route': function (to, from) {
-        this.paramsData = to.params
+        let imp = this.paramsData
+        /* this.paramsData = to.params */
+        console.log(imp)
         window.localStorage.setItem('service', JSON.stringify(this.paramsData))
-        this.$store.dispatch('portfolios/getAll', this.paramsData)
+        /* this.$store.dispatch('portfolios/getAll', this.paramsData) */
       }
     },
     mounted: function () {
+      console.log(this.services)
       this.$root.$on('inSector', (bool) => {
         if (bool && this.count >= 9) {
           this.$store.dispatch('portfolios/getAll', this.paramsData)
