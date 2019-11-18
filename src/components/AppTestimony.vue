@@ -14,7 +14,7 @@
           >
             <v-layout row wrap>
               <v-flex xs12 md6 order-xs2 order-md1>
-                <h2 class="display-1 xs-subheading font-weight-bold text-xs-center hidden-md-and-down" style="color:#434343; font-size: 33px;">
+                <h2 class="display-1  xs-subheading font-weight-bold text-xs-center hidden-md-and-down" style="color:#434343; font-size: 33px;">
                   ¿Qué opinan nuestros clientes?
                 </h2>
                 <v-layout class="mt-4" row d-flex justify-center>
@@ -176,4 +176,6 @@
     left: 28%;
     top: 19%;
 }
+
+
 </style>
