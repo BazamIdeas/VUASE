@@ -1,9 +1,9 @@
 <template>
   <section>
     <AppAboutUsCarousel />
-    <v-container fluid grid-list-md class="mt-5">
+    <v-container fluid grid-list-md class="mt-3">
       <v-layout row wrap>
-        <v-flex xs12 offset-md1 md10 class="mb-5">
+        <v-flex xs12 offset-md1 md10 class="mb-2">
           <v-layout row wrap>
             <v-flex xs12 md6>
               <!--<h1 class="font-weight-bold mb-5 text-uppercase" style="font-size: 30px; color: #004B7B">QUIÉNES SOMOS</h1>-->

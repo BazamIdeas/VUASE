@@ -224,7 +224,8 @@
       return {
         titleTemplate: this.title + ' | %s',
         meta: [
-          { property: 'og:title', content: this.title }
+          { property: 'og:title', content: this.title },
+          { content: 'noindex', name: 'robots' }
         ]
       }
     },
