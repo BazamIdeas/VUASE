@@ -577,13 +577,13 @@
       left: 8%;
     }
   }
-
+  
   @media (min-width: 1904px) {
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 45vw;
+        /* min-height: 45vw; */
     }
 
     .theme2 .layers-container {

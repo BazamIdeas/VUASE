@@ -21,15 +21,15 @@
             </v-flex>
 
             <v-flex xs12 sm6 md9>
-              <v-layout class="mt-4" row d-flex justify-center>
-                <div class="text-xs-center">
+              <v-layout class="mt-4"  d-flex justify-center  row >
+                <div class="text-xs-center text-lg-left">
                   <v-rating class="testimony-rating" :value="testimony.stars" readonly></v-rating>
                 </div>
               </v-layout>
-              <h3 class="subheading font-weight-medium text-xs-center mt-3 pb-2" style="color:rgb(151, 147, 147);">
+              <h3 class="subheading font-weight-medium text-xs-center text-lg-left mt-3 pb-2 " style="color:rgb(151, 147, 147);">
                 {{testimony.description}}
               </h3>
-              <h3 class="subheading font-weight-medium text-xs-center mt-0 pb-2" style="color:rgb(67, 67, 67);">
+              <h3 class="subheading font-weight-medium text-xs-center text-lg-left mt-0 pb-2 " style="color:rgb(67, 67, 67);">
                 {{testimony.company}}
               </h3>
             </v-flex>
@@ -857,6 +857,12 @@
     }
     .pr-xs-0{
       padding-right: 0 !important;
+    }
+  }
+
+  @media (min-width: 1900px){
+    .center-lg-start{
+      justify-items: start
     }
   }
 </style>

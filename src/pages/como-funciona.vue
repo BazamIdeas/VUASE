@@ -135,8 +135,8 @@
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 md10 offset-md1 id="paso-3">
-            <v-layout row wrap class="paso paso-3 py-5" style="background-image: url(images/pages/paso-3.svg)">
+        <v-flex xs12 md10 offset-md1 id="paso-3 asd">
+            <v-layout row wrap class="paso paso-3 py-5 mrgbtn" style="background-image: url(images/pages/paso-3.svg)">
                 <v-flex xs12 md6 class="text-xs-center">
                   <h2 class="active title-step step-3" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>
                            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
@@ -204,7 +204,7 @@
         </v-flex>-->
       </v-layout>
     </v-container>
-    <v-container grid-list-md class="pb-0">
+    <v-container grid-list-md class="pb-0 pdntp">
       <v-layout row wrap>
          <!-- CARACTERISTICAS -->  
         <AppServiceCharacteristics v-if="whatWeOffer" id="que-te-ofrecemos" title="Entonces, ¿Por qué LiderLogo debe ser mi proveedor?" :list="whatWeOffer" />
@@ -521,6 +521,7 @@ ul.service-box-list {
         background-size: 28% !important;
         background-repeat: no-repeat !important;
         background-position: 22% 0% !important;
+
     }
 
 
@@ -548,10 +549,14 @@ ul.service-box-list {
         background-position: 22% 0% !important;
       }
   }
-  @media (min-width: 640px) and (max-width: 1023px) {
-
+  /* @media (min-width: 640px) and (max-width: 1023px) {} */
+  @media (min-width: 1900px) {
+        div#paso-3 > div {
+        padding-bottom: 0;
+        margin-bottom: -3rem;
+        }
+        
   }
-
 </style>
 
 <style scoped>
