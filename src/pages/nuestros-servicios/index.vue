@@ -14,7 +14,7 @@
               'bt': layout.carousel && !container.noBorder,
               'bb': layout.carousel && !container.noBorder && container.layouts.length > 2, 
               'br': !layout.carousel && (index !== layout.services.length - 1) && !container.noBorder
-            }" 
+            }"
             v-for="(service, index) in layout.services" :key="service.slug" v-if="validateService(service)">
               <AppServiceBox
               :id="service.id" 

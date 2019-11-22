@@ -135,7 +135,7 @@
                 </v-flex>
             </v-layout>
         </v-flex>
-        <v-flex xs12 md10 offset-md1 id="paso-3 asd">
+        <v-flex xs12 md10 offset-md1 id="paso-3">
             <v-layout row wrap class="paso paso-3 py-5 mrgbtn" style="background-image: url(images/pages/paso-3.svg)">
                 <v-flex xs12 md6 class="text-xs-center">
                   <h2 class="active title-step step-3" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>

@@ -503,7 +503,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 53vw;
+        min-height: none;
     }
 
     .theme2 .layers-container {
@@ -539,6 +539,7 @@
 
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
+      height: 540px;
     }
   }
 
