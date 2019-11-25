@@ -1,6 +1,6 @@
 <template>
 
-  <v-carousel :interval="interval" hide-controls class="main-carousel theme2 ">
+  <v-carousel :interval="300000000000000" hide-controls class="main-carousel theme2 ">
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
         <div class="section">  
@@ -458,12 +458,14 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 53vw;
+        margin-top: 10%;
+        min-height: 540px;
+        /* min-height: 53vw; */
     }
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 10%;
+ 
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -498,17 +500,18 @@
     }
   }
 
-  @media (min-width: 1904px) {
+  @media (min-width: 1900px) {
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
         min-height: none;
+        margin-top: 10%;
     }
+
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 8%;
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
