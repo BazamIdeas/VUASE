@@ -73,9 +73,9 @@
                 <v-flex xs12 class="text-xs-center mb-5">
                     <h2 class="active title-step step-2" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe diseños <br  class="hidden-sm-and-down">ilimitados</h2>
                 </v-flex>
-                <v-flex xs12 md6 class="px-3">
-                    <h2>Conceptos</h2>
-                    <ul class="service-box-list">
+                <v-flex xs12 md6 class="px-3 ">
+                    <h2 class="lg6 flex  offset-lg2">Conceptos</h2>
+                    <ul class="service-box-list lg6 flex offset-lg2">
                         <li class="my-3 body-2 font-weight-medium">Originales</li>
                         <li class="my-3 body-2 font-weight-medium">Llamativos</li>
                         <li class="my-3 body-2 font-weight-medium">Exclusivos</li>
@@ -101,8 +101,8 @@
                     </v-expansion-panel>
                 </v-flex>
                 <v-flex xs12 md6 class="px-3">
-                    <h2>Perfeccionamientos</h2>
-                    <ul class="service-box-list">
+                    <h2 class="lg6 flex offset-lg2">Perfeccionamientos</h2>
+                    <ul class="service-box-list lg6 flex offset-lg2">
                         <li class="my-3 body-2 font-weight-medium">Diseños y perfeccionamientos ilimitados.</li>
                         <li class="my-3 body-2 font-weight-medium">Hasta que estés 100% conforme con tu proyecto.</li>
                         <li class="my-3 body-2 font-weight-medium">Devolución de dinero 100% garantizada.</li>
