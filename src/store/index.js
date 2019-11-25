@@ -6,7 +6,58 @@ export const state = () => ({
   app: {
     links: {
       header: [
-        { url: '/nuestros-servicios', title: 'Servicios' },
+        { url: '/nuestros-servicios',
+          title: 'Servicios',
+          sublinks: [
+            {
+              name: 'LOGO E IDENTIDAD',
+              links: [
+                { url: '/nuestros-servicios/imagen-corporativa', title: 'LOGO, IMAGEN CORPORATIVA Y LOGO ANIMADO' },
+                { url: '/nuestros-servicios/logo-empresa', title: 'LOGO' },
+                { url: '/nuestros-servicios/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
+                { url: '/nuestros-servicios/rediseno-de-logo', title: 'REDISEÑO DE LOGO' },
+                { url: '/nuestros-servicios/vectorizacion', title: 'VECTORIZACIÓN DE TU LOGO' }
+              ]
+            },
+            {
+              name: 'WEB Y APP',
+              links: [
+                { url: '/nuestros-servicios/logo-y-pagina-web', title: 'LOGO Y SITIO WEB' },
+                { url: '/nuestros-servicios/pagina-web', title: 'SITIO WEB PROFESIONAL' },
+                { url: '/nuestros-servicios/sitio-web-ecommerce', title: 'ECOMMERCE' },
+                { url: '/nuestros-servicios/desarrollo-de-app', title: 'APLICACIÓN MOVIL' },
+                { url: '/nuestros-servicios/presencia-web', title: 'PRESENCIA WEB' }
+              ]
+            }, {
+              name: 'FOLLETOS Y PUBLICIDADES',
+              links: [
+                { url: '/nuestros-servicios/flyer', title: 'FLYER' },
+                { url: '/nuestros-servicios/flyer-dos-caras', title: 'FLYER DOS CARAS' },
+                { url: '/nuestros-servicios/diptico', title: 'DÍPTICO' },
+                { url: '/nuestros-servicios/tripticos', title: 'TRÍPTICO' },
+                { url: '/nuestros-servicios/publicidad', title: 'PUBLICIDAD' },
+                { url: '/nuestros-servicios/catalogo', title: 'CATÁLOGO' }
+              ]
+            },
+            {
+              name: 'RÓTULOS',
+              links: [
+                { url: '/nuestros-servicios/rotulo-vehicular', title: 'RÓTULO VEHICULAR' },
+                { url: '/nuestros-servicios/rotulo-local', title: 'RÓTULO LOCAL' },
+                { url: '/nuestros-servicios/rotulo-banner', title: 'RÓTULO BANNER' },
+                { url: '/nuestros-servicios/packaging', title: 'RÓTULO ETIQUETA / PACKAGING' },
+                { url: '/nuestros-servicios/rotulo-vestimenta-uniforme', title: 'RÓTULO VESTIMENTA/UNIFORME' },
+                { url: '/nuestros-servicios/rotulo-furgoneta-camion', title: 'RÓTULO FURGONETA CAMION' }
+              ]
+            },
+            {
+              name: 'REDES SOCIALES',
+              links: [
+                { url: '/nuestros-servicios/perfil-redes-sociales', title: 'PERFILES DE REDES SOCIALES' }
+              ]
+            }
+          ]
+        },
         { url: '/como-funciona', title: 'Cómo Funciona' },
         { url: '/ejemplos', title: '1001 Ejemplos' },
         { url: '/opiniones', title: 'Opiniones' },
@@ -14,11 +65,8 @@ export const state = () => ({
       ],
       footer: [
         { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },
-        { url: '/nuestros-servicios', title: 'SERVICIOS' },
-        { url: '/como-funciona', title: 'CÓMO FUNCIONA' },
-        { url: '/opiniones', title: 'OPINIONES' },
-        { url: '/contacto', title: 'CONTACTO' },
-        { url: '/ejemplos', title: '1001 EJEMPLOS' }
+        { url: '/servicios-profesionales', title: 'SERVICIOS A AGENCIAS' },
+        { url: '/avisos-legales', title: 'AVISO LEGAL' }
 
       ],
       headerMovil: [

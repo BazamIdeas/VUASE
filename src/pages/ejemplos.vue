@@ -64,7 +64,7 @@
             <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
               CONOCER SOBRE EL SERVICIO
             </v-btn>
-            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large @click="goTo('ejemplos')">
+            <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large :to="'/ejemplos'">
               
               VER TODOS LOS EJEMPLOS
 
@@ -117,23 +117,15 @@
       // await store.dispatch('countries/locations/getAll')
       await store.dispatch('portfolios/getAll', params)
     },
-    mounted: function () {
-      if (process.browser) {
-        let lastScroll
-        window.onscroll = () => {
-          let { top } = document.querySelector('.arrow-left').getBoundingClientRect()
-          var st = window.pageYOffset || document.documentElement.scrollTop
-          if (st > lastScroll) {
-            if (top > 60 && top < 600) {
-              this.$store.dispatch('portfolios/getAll', this.params)
-            }
-          }
-          lastScroll = st <= 0 ? 0 : st
-        }
-      }
+
+    created () {
+      this.inicializar()
+    },
+    mounted () {
+      this.scroll()
     },
     methods: {
-      setSector (event) {
+      async setSector (event) {
         let data = {
           'servicio': 'servicios',
           'sector': event,
@@ -145,11 +137,12 @@
           /* window.location.replace('ejemplos') */
           this.$router.replace('ejemplos')
           this.$router.go()
-          this.$store.dispatch('portfolios/getAll')
+          await this.$store.dispatch('portfolios/getAll')
         } else {
           history.replaceState({}, 'ejemplos', '/ejemplos/servicios/' + event)
-          this.$store.dispatch('portfolios/getAll', this.params)
+          await this.$store.dispatch('portfolios/getAll', this.params)
         }
+        this.inicializar()
       },
       goTo (url) {
         if (url === 'ejemplos ') {
@@ -174,21 +167,36 @@
           parsed = portfolio.description.length > 25 ? portfolio.description.substring(0, 25) + '...' : portfolio.description
         }
         return parsed
+      },
+      scroll () {
+        if (process.browser) {
+          let lastScroll
+          window.onscroll = () => {
+            let { top } = document.querySelector('.arrow-left').getBoundingClientRect()
+            var st = window.pageYOffset || document.documentElement.scrollTop
+            if (st > lastScroll) {
+              if (top > 60 && top < 600) {
+                this.$store.dispatch('portfolios/getAll', this.params)
+              }
+            }
+            lastScroll = st <= 0 ? 0 : st
+          }
+        }
+      },
+      inicializar () {
+        const list = this.$store.state.portfolios.list
+        if (this.params.sector && list.length > 0) {
+          this.title = list[0].activity.name
+          this.meta_title = list[0].activity.meta_title
+          this.meta_description = list[0].activity.meta_description
+          this.h1 = 'Ejemplos de diseño de logo, imagen corporativa, folletos y sitios web de ' + list[0].activity.name
+          this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
+          this.descriptionActivity = list[0].activity.description
+          this.h2 = 'Conoce como crear un logo y las herramientas de comunicación necesarias para ' + list[0].activity.name
+        }
       }
     },
     head () {
-      const list = this.$store.state.portfolios.list
-      console.log(list)
-      console.log(this.params.sector)
-      if (this.params.sector && list.length > 0) {
-        this.title = list[0].activity.name
-        this.meta_title = list[0].activity.meta_title
-        this.meta_description = list[0].activity.meta_description
-        this.h1 = 'Ejemplos de diseño de logo, imagen corporativa, folletos y sitios web de ' + list[0].activity.name
-        this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
-        this.descriptionActivity = list[0].activity.description
-        this.h2 = 'Conoce como crear un logo y las herramientas de comunicación necesarias para ' + list[0].activity.name
-      }
       return {
         titleTemplate: this.title + ' | %s',
         meta: [

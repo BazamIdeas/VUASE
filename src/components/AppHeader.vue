@@ -4,9 +4,23 @@
     <v-toolbar-side-icon @click.stop="$store.dispatch('toggleDrawer')" class="hidden-md-and-up menu-burger"></v-toolbar-side-icon>
     <nuxt-link to="/" class="logo-header" style="height: 60px"><img src="~/assets/images/logo.png" height="60" alt="LiderLogo"></nuxt-link>
     <div class="px-4 hidden-sm-and-down">
-      <v-btn class="nav-item mx-0" v-for="(link, i) in links" :key="i" nuxt :to="link.url" flat>
-        <span class="nav-item-label">{{link.title}}</span>
-      </v-btn>
+      <v-menu open-on-hover :close-on-content-click="false" v-for="(link, i) in links" :key="i" offset-y bottom>
+        <v-btn slot="activator" class="nav-item mx-0"  nuxt :to="link.url" flat>
+          <span class="nav-item-label">{{link.title}}</span>
+        </v-btn>
+        <v-list v-if="link.sublinks">
+          <v-list-group v-for="(submenu, index) in link.sublinks" :key="index">
+              <v-list-tile  slot="activator" class="nav-item" style="font-family:Roboto !important">{{ submenu.name }}</v-list-tile >
+              <v-list>
+                <v-list-tile v-for="(servicios, index) in submenu.links" :key="index">
+                  <h5>
+                    <nuxt-link  style="font-family:Roboto !important;" :to="servicios.url">{{ servicios.title }}</nuxt-link >
+                  </h5>
+                </v-list-tile>
+              </v-list>
+          </v-list-group>
+        </v-list>
+      </v-menu>
       <!--<v-btn class="nav-item mx-0" v-if="isLoggedIn" nuxt to="/area-de-cliente" flat>
         <span class="nav-item-label">Mi cuenta</span>
       </v-btn>
@@ -33,6 +47,14 @@
 <script>
   export default {
     name: 'app-header',
+    data: () => ({
+      items: [
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' }
+      ]
+    }),
     computed: {
       links () { return this.$store.state.app.links.header },
       countryData () { return this.$store.state.countries.data }
