@@ -134,7 +134,7 @@
     },
     methods: {
       async selectService () {
-        const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug }, designs: [], styles: {}, colors: [], customColors: '', information: {} }
+        const brief = { service: { id: this.serviceObject.id, name: this.serviceObject.name, slug: this.serviceObject.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
         var target = null
 
         if (this.serviceObject.slug === 'logo-y-pagina-web' || this.serviceObject.slug === 'pagina-web') {
