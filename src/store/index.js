@@ -61,7 +61,8 @@ export const state = () => ({
         { url: '/como-funciona', title: 'Cómo Funciona' },
         { url: '/ejemplos', title: '1001 Ejemplos' },
         { url: '/opiniones', title: 'Opiniones' },
-        { url: '/precios', title: 'Precios' }
+        { url: '/precios', title: 'Precios' },
+        { url: '/contacto', title: 'Contacto' }
       ],
       footer: [
         { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },

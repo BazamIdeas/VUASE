@@ -80,11 +80,11 @@
             value: ''
           },
           company: {
-            label: 'Télefono',
+            label: 'Empresa',
             value: ''
           },
           phone: {
-            label: 'Empresa',
+            label: 'Télefono',
             value: ''
           }
         },

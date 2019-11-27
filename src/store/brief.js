@@ -229,7 +229,9 @@ export const actions = {
   async storeBrief ({ commit, rootState }) {
     let brief = vueInstance.$storage.get('brief')
     let bodyFormData = new FormData()
-    brief.information.logo_files.value = rootState.brief.data.information.logo_files.value
+    if (rootState.brief.data.information.logo_files) {
+      brief.information.logo_files.value = rootState.brief.data.information.logo_files.value
+    }
 
     bodyFormData.append('data', JSON.stringify(brief))
     bodyFormData.append('client', JSON.stringify({
@@ -243,7 +245,7 @@ export const actions = {
     for (let key in brief.information) {
       if (key.includes('files')) {
         if (brief.information[key].value) {
-          bodyFormData.append('files', rootState.brief.data.information.logo_files.value)
+          bodyFormData.append('files', brief.information[key].value)
         }
       }
     }
