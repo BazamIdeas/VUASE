@@ -91,26 +91,6 @@
             <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
           </div>
         </v-flex>
-
-        <!-- <v-flex xs12 offset-md1 md4 class="mt-5 pt-5 text-xs-center" style="position: relative">
-          <div>
-            <h2 class="font-weight-bold mb-4 mt-5 text-uppercase text-xs-center" style="font-size: 35px; line-height: 38px; color: #434343;">¿QUÉ OPINAN NUESTROS CLIENTES?</h2>
-            <v-carousel hide-delimiters class="rating-user">
-              <v-carousel-item>
-                <div class="text-xs-center">
-                  <v-rating :value="3" readonly></v-rating>
-                </div>
-                <p class="text-xs-center mb-5 px-5 pt-4 font-weight-bold">
-                  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500."
-                </p>
-              </v-carousel-item>
-            </v-carousel>
-          </div>
-        </v-flex> -->
-
-        <!-- <v-flex xs12 md7>
-          <img src="/images/pages/profesional_services.png" :alt="alt" width="100%">
-        </v-flex> -->
       </v-layout>
       <v-layout row wrap align-end>
         <v-flex xs12 md5 mt-5>
