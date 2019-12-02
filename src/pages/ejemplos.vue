@@ -78,8 +78,6 @@
         </v-flex>
     </v-container>
 
-    <!--<AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
-    <AppServicesGrid color="#F29F01" class="mb-4 pt-0"/>-->
   </section>
 </template>
 
@@ -243,11 +241,29 @@ h3{
   }
 
     }
-      @media all and (min-width: 1900px){
+    @media all and (max-width: 950px){
+      .img-cuadrada-ejemplos-carousel {
+          height: 370px !important;
+      }
+    }
+    @media all and  (min-width: 950px) and (max-width: 1260px){
+      .img-cuadrada-ejemplos-carousel {
+          height: 292px !important;
+      }
+    }
+    @media all and  (min-width: 1260px) and (max-width: 1900px){
+      .img-cuadrada-ejemplos-carousel {
+          height: 292px !important;
+      }
+    }
+
+
+    @media all and (min-width: 1900px){
       .img-cuadrada-ejemplos{
         background-size: cover !important;       
            }
       }
+      
 
    .img-cuadrada-ejemplos-carousel{
    height: 370px;
