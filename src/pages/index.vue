@@ -91,6 +91,8 @@
             <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
           </div>
         </v-flex>
+
+
       </v-layout>
       <v-layout row wrap align-end>
         <v-flex xs12 md5 mt-5>
@@ -98,11 +100,9 @@
           <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
                 </div>
         </v-flex>
-        <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
-          <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
+      
           <AppContactForm />
-        </v-flex>
+
       </v-layout>
       <AppHeading class="mb-3" number="3" size="display-1" title="En los medios"  />
       <AppExamplesSlider  :hover-info="false" :alt="alt" :examples="medios" hovered="false" shadow="false" puntos="false" item-width="120" item-height="120"  class="mb-0 pb-2" />

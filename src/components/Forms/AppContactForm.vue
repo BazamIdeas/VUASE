@@ -1,4 +1,7 @@
 <template>
+        <v-flex xs12 md6 class="mt-5 xs-mt-0">
+          <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
+          <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
   <v-form id="contact-form" @submit.prevent="submit">
     <v-layout row wrap>
       <v-flex xs12 sm6 md6>
@@ -93,6 +96,8 @@
       </v-flex>-->
     </v-layout>
   </v-form>
+        </v-flex>
+
 </template>
 
 <script>

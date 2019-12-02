@@ -58,11 +58,7 @@
                    </div>
 
         </v-flex>
-        <v-flex md6 class="my-5">
-          <AppHeading style="color: #303032;" class="font-weight-bold mb-3 text-xs-center" number="2" size="display-1" title="¿Tienes alguna duda?" />
-          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
-          <AppContactForm page="precios" />
-        </v-flex>
+          <AppContactForm  />
       </v-layout>
     </v-container>
   </section>
