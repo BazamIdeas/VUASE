@@ -52,10 +52,7 @@
         <v-flex xs12 md5>
           <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
         </v-flex>
-        <v-flex xs12 md6>
-          <h2 class="font-weight-bold mb-4 display-1 text-xs-center" style=" color: #434343; ">¿Tienes alguna duda?</h2>
           <AppContactForm :page="service.name" />
-        </v-flex>
       </v-layout>
     </v-container>
   </section>

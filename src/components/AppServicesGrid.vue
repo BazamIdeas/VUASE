@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-sm text-xs-center>
-    <v-layout row wrap>
-      <v-flex xs12 md12 >
+    <v-layout row wrap >
+      <v-flex xs12 sm12 lg10 offset-sm1  offset-lg1 >
         <v-layout row wrap class="services-grid">
           <v-flex xs12 md2 class="px-2 xs-no-border" style="border-left: 2px solid #cccccc; border-right: 2px solid #cccccc">
             <v-layout row wrap>

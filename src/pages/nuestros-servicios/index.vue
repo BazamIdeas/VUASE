@@ -14,7 +14,7 @@
               'bt': layout.carousel && !container.noBorder,
               'bb': layout.carousel && !container.noBorder && container.layouts.length > 2, 
               'br': !layout.carousel && (index !== layout.services.length - 1) && !container.noBorder
-            }" 
+            }"
             v-for="(service, index) in layout.services" :key="service.slug" v-if="validateService(service)">
               <AppServiceBox
               :id="service.id" 
@@ -227,4 +227,18 @@
       height: 360px !important;
     }
   }
+
+  .top-service-slider .v-carousel {
+    min-height: 70vh !important;
+    height: auto;
+}
+@media (min-width: 1900px){
+    .top-service-slider .v-carousel {
+    min-height: 70vh !important;
+    height: auto;
+}
+  .v-responsive.v-image.v-carousel__item {
+    height: 100% !important;
+}
+}
 </style>

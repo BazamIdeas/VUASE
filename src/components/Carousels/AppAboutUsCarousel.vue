@@ -33,6 +33,19 @@
       min-height: 420px;
   }
 
+  #hc-layer-3-item-1{
+    height: 540px;
+  }
+/*   .v-window__container {
+    height: 440px;
+} */
+  .v-window-item {
+    height: 540px;
+}
+
+   .v-window.v-carousel.main-carousel{
+      height: 0 !important;
+    }
   .v-carousel {
     box-shadow: none;
   }
@@ -292,7 +305,7 @@
     }
   }
 
-  @media (min-width: 1264px) and (max-width: 1904px) {
+  @media (min-width: 1264px){
 
     /*ITEM-1*/
     div#hc-layer-1-item-1 {
@@ -342,7 +355,11 @@
     }
   }
 
-  @media (min-width: 1904px) {}
+  @media (min-width: 1900px) {
+   .v-window.v-carousel.main-carousel{
+      height: 100% !important;
+    }
+  }
 
   .fade-enter-active,
   .fade-leave-active {

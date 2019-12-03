@@ -377,7 +377,7 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 36%;
+      width: 30%;
       left: 10%;
       position: absolute;
     }
@@ -409,7 +409,12 @@
       min-height: auto;
     }
   }
-
+  @media (min-width: 1900px) {
+      .v-carousel.main-carousel {
+      height: 540px !important;
+      min-height: auto;
+    }
+  }
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .5s;

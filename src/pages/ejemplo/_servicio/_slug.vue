@@ -89,10 +89,7 @@
         <v-flex xs12 md5 >
           <img src="/images/pages/muchacho_contacto.jpg" width="100%">
         </v-flex>
-        <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-1 font-weight-bold mb-4  text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
           <AppContactForm :page="'ejemplo portfolio '" />
-        </v-flex>
       </v-layout>
     </v-container>
   </section>

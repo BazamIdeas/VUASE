@@ -12,24 +12,24 @@
       <v-layout row wrap class="mt-5">
         <v-flex xs12 v-for="(testimony, i) in testimonies.slice(0, limit)" :key="i">
           <v-layout row wrap class="mb-xs-3">
-            <v-flex xs12 sm4 md3 @click="testimony.active = !testimony.active">
+            <v-flex xs12 sm4 md3  offset-lg2  @click="testimony.active = !testimony.active">
                   <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
 
-              <img :alt="'Testimonio ' + testimony.company"  :data-src="testimony.logo" class="p-testimony-logo">
+              <img :alt="'Testimonio ' + testimony.company"  :data-src="testimony.logo"  class="p-testimony-logo ">
                 </div>
 
             </v-flex>
 
-            <v-flex xs12 sm6 md9>
-              <v-layout class="mt-4" row d-flex justify-center>
-                <div class="text-xs-center">
+            <v-flex xs12 sm6 md9 lg5 >
+              <v-layout class="mt-4"  d-flex justify-center  row >
+                <div class="text-xs-center ">
                   <v-rating class="testimony-rating" :value="testimony.stars" readonly></v-rating>
                 </div>
               </v-layout>
-              <h3 class="subheading font-weight-medium text-xs-center mt-3 pb-2" style="color:rgb(151, 147, 147);">
+              <h3 class="subheading font-weight-medium text-xs-center  mt-3 pb-2 " style="color:rgb(151, 147, 147);">
                 {{testimony.description}}
               </h3>
-              <h3 class="subheading font-weight-medium text-xs-center mt-0 pb-2" style="color:rgb(67, 67, 67);">
+              <h3 class="subheading font-weight-medium text-xs-center  mt-0 pb-2 " style="color:rgb(67, 67, 67);">
                 {{testimony.company}}
               </h3>
             </v-flex>
@@ -857,6 +857,12 @@
     }
     .pr-xs-0{
       padding-right: 0 !important;
+    }
+  }
+
+  @media (min-width: 1900px){
+    .center-lg-start{
+      justify-items: start
     }
   }
 </style>

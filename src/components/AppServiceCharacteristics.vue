@@ -1,5 +1,5 @@
 <template lang="html">
-	<v-flex xs12>
+	<v-flex xs12 offset-lg2 lg8>
     <v-container fluid grid-list-md text-xs-center class="mt-4 pb-0">
       <v-layout row wrap align-center justify-center>
 				<v-flex xs12 class="mb-5">

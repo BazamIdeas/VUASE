@@ -458,12 +458,14 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 53vw;
+        margin-top: 10%;
+        min-height: 540px;
+        /* min-height: 53vw; */
     }
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 10%;
+ 
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -498,17 +500,18 @@
     }
   }
 
-  @media (min-width: 1904px) {
+  @media (min-width: 1900px) {
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 53vw;
+        min-height: none;
+        margin-top: 10%;
     }
+
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 8%;
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -539,6 +542,7 @@
 
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
+      height: 540px;
     }
   }
 

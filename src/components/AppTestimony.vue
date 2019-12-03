@@ -13,11 +13,11 @@
             prev-icon="arrow_left"
           >
             <v-layout row wrap>
-              <v-flex xs12 md6 order-xs2 order-md1>
-                <h2 class="display-1 xs-subheading font-weight-bold text-xs-center hidden-md-and-down" style="color:#434343; font-size: 33px;">
+              <v-flex class="justify-lg-center  mb-5" xs12 md6 order-xs2 order-md1>
+                <h2 class="display-1  xs-subheading font-weight-bold text-xs-center hidden-md-and-down" style="color:#434343; font-size: 33px;">
                   ¿Qué opinan nuestros clientes?
                 </h2>
-                <v-layout class="mt-4" row d-flex justify-center>
+                <v-layout class="mt-4 mt-lg-5 justify-lg-center" row d-flex justify-center>
                   <div class="text-xs-center">
                     <v-rating class="testimony-rating" :value="item.stars" readonly></v-rating>
                   </div>
@@ -122,6 +122,13 @@
   }
 }
 
+@media (min-width:1900px){
+  .justify-lg-center{
+    justify-content: center;
+    margin-top: 8%;
+  }
+}
+
 .testimonies .v-responsive__sizer, .testimonies .v-carousel__item {
   transition: unset !important;
   -webkit-transition: unset !important; 
@@ -176,4 +183,6 @@
     left: 28%;
     top: 19%;
 }
+
+
 </style>

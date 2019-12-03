@@ -73,9 +73,9 @@
                 <v-flex xs12 class="text-xs-center mb-5">
                     <h2 class="active title-step step-2" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe diseños <br  class="hidden-sm-and-down">ilimitados</h2>
                 </v-flex>
-                <v-flex xs12 md6 class="px-3">
-                    <h2>Conceptos</h2>
-                    <ul class="service-box-list">
+                <v-flex xs12 md6 class="px-3 ">
+                    <h2 class="lg6 flex  offset-lg2">Conceptos</h2>
+                    <ul class="service-box-list lg6 flex offset-lg2">
                         <li class="my-3 body-2 font-weight-medium">Originales</li>
                         <li class="my-3 body-2 font-weight-medium">Llamativos</li>
                         <li class="my-3 body-2 font-weight-medium">Exclusivos</li>
@@ -101,8 +101,8 @@
                     </v-expansion-panel>
                 </v-flex>
                 <v-flex xs12 md6 class="px-3">
-                    <h2>Perfeccionamientos</h2>
-                    <ul class="service-box-list">
+                    <h2 class="lg6 flex offset-lg2">Perfeccionamientos</h2>
+                    <ul class="service-box-list lg6 flex offset-lg2">
                         <li class="my-3 body-2 font-weight-medium">Diseños y perfeccionamientos ilimitados.</li>
                         <li class="my-3 body-2 font-weight-medium">Hasta que estés 100% conforme con tu proyecto.</li>
                         <li class="my-3 body-2 font-weight-medium">Devolución de dinero 100% garantizada.</li>
@@ -136,7 +136,7 @@
             </v-layout>
         </v-flex>
         <v-flex xs12 md10 offset-md1 id="paso-3">
-            <v-layout row wrap class="paso paso-3 py-5" style="background-image: url(images/pages/paso-3.svg)">
+            <v-layout row wrap class="paso paso-3 py-5 mrgbtn" style="background-image: url(images/pages/paso-3.svg)">
                 <v-flex xs12 md6 class="text-xs-center">
                   <h2 class="active title-step step-3" style="font-size: 50px; line-height: 45px; font-weight: 600;">Recibe tu <br  class="hidden-sm-and-down">proyecto</h2>
                            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
@@ -204,7 +204,7 @@
         </v-flex>-->
       </v-layout>
     </v-container>
-    <v-container grid-list-md class="pb-0">
+    <v-container grid-list-md class="pb-0 pdntp">
       <v-layout row wrap>
          <!-- CARACTERISTICAS -->  
         <AppServiceCharacteristics v-if="whatWeOffer" id="que-te-ofrecemos" title="Entonces, ¿Por qué LiderLogo debe ser mi proveedor?" :list="whatWeOffer" />
@@ -223,11 +223,7 @@
           </div>
 
         </v-flex>
-        <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
-          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
           <AppContactForm />
-        </v-flex>
       </v-layout>
     </v-container>
   </section>
@@ -394,7 +390,6 @@
         const bodyI = document.body
 
         let willBeStick = document.querySelector('#will-be-stick')
-        console.log(willBeStick)
         if (willBeStick && bodyI.scrollTop >= willBeStick.getBoundingClientRect().top) {
           if (!willBeStick.classList.contains('sticky')) {
             willBeStick.classList.add('sticky')
@@ -414,7 +409,6 @@
           let step3 = document.querySelector('#paso-3')
           let button = document.querySelector('.start-button')
           if (step1 && bodyI.scrollTop >= step1.getBoundingClientRect().top - 90 && bodyI.scrollTop < step1.getBoundingClientRect().bottom - 150) {
-            console.log('paso 1')
             if (!tStep1.classList.contains('active')) {
               tStep1.classList.add('active')
               tStep2.classList.remove('active')
@@ -423,7 +417,6 @@
               button.classList.add('step-1')
             }
           } else if (step2 && bodyI.scrollTop >= step2.getBoundingClientRect().top - 150 && bodyI.scrollTop < step2.getBoundingClientRect().bottom - 150) {
-            console.log('paso 2')
             if (!tStep2.classList.contains('active')) {
               tStep1.classList.remove('active')
               tStep3.classList.remove('active')
@@ -432,7 +425,6 @@
               button.classList.add('step-2')
             }
           } else if (step3 && bodyI.scrollTop > step3.getBoundingClientRect().top - 150 && bodyI.scrollTop < step3.getBoundingClientRect().bottom) {
-            console.log('paso 3')
             if (!tStep3.classList.contains('active')) {
               tStep1.classList.remove('active')
               tStep2.classList.remove('active')
@@ -525,6 +517,7 @@ ul.service-box-list {
         background-size: 28% !important;
         background-repeat: no-repeat !important;
         background-position: 22% 0% !important;
+
     }
 
 
@@ -552,10 +545,14 @@ ul.service-box-list {
         background-position: 22% 0% !important;
       }
   }
-  @media (min-width: 640px) and (max-width: 1023px) {
-
+  /* @media (min-width: 640px) and (max-width: 1023px) {} */
+  @media (min-width: 1900px) {
+        div#paso-3 > div {
+        padding-bottom: 0;
+        margin-bottom: -3rem;
+        }
+        
   }
-
 </style>
 
 <style scoped>
