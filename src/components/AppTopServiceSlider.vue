@@ -6,7 +6,7 @@
 
           <style>
             .top-service-slider .v-carousel {
-                min-height: {{ heightSlider + 'px'}};
+
                 height: auto;
             }
 
@@ -38,7 +38,7 @@
             }
 
           </style>
-          <v-carousel hide-delimiters>
+          <v-carousel :interval="300000000000000" hide-delimiters>
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i">
@@ -151,8 +151,20 @@
 <style>
 .top-service-slider .v-carousel{
   box-shadow: unset;
+ 
 }
+.v-window.v-carousel {
+    height: 100%;
+}.layout.content-text-service-slider.row.wrap {
+    height: 100%;
+}
+.top-service-slider img {
 
+   height: 100%;
+}
+.sliderbody-img{
+  height: 100%;
+}
 .top-service-slider .v-btn--small{
   width:20px !important;
   height: 20px !important;

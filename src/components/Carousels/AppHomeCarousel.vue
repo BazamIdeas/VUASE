@@ -1,6 +1,6 @@
 <template>
 
-  <v-carousel :interval="300000000000000" hide-controls class="main-carousel theme2 ">
+  <v-carousel :interval="interval" hide-controls class="main-carousel theme2 ">
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
         <div class="section">  

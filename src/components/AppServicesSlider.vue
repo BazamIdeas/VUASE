@@ -77,6 +77,10 @@
 </script>
 
 <style scoped>
+.top-service-slider {
+    height: 40rem;
+}
+
   .service-slider-container {
     overflow: hidden;
     position: relative;
@@ -130,4 +134,6 @@
       margin: 40px 0px 20px 0px;
     }
   }
+
+
 </style>
