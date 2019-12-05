@@ -2,7 +2,7 @@
 	<v-flex :class="width">
     <v-container fluid grid-list-md>
       <v-layout xs12 row wrap class="testimonies">
-        <v-carousel>
+        <v-carousel :interval="300000">
           <v-carousel-item
             v-for="(item,i) in completeExamples"
             :key="i"
@@ -184,5 +184,13 @@
     top: 19%;
 }
 
-
+.testimonies .v-window.v-carousel {
+    height: 100% !important;
+}
+.testimonies .v-window.v-carousel {
+    height: 100% !important;
+}
+ .testimonies   .v-image {
+    height: 100% !important;
+}
 </style>
