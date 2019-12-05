@@ -85,12 +85,7 @@
       </v-layout>
     </v-container>
     <v-container fluid grid-list-md>
-      <v-layout row wrap>
-        <v-flex xs12 md5 >
-          <img src="/images/pages/muchacho_contacto.jpg" width="100%">
-        </v-flex>
           <AppContactForm :page="'ejemplo portfolio '" />
-      </v-layout>
     </v-container>
   </section>
 </template>

@@ -187,15 +187,7 @@
     </v-container>
 
     <v-container fluid grid-list-md>
-      <v-layout row wrap>
-        <!-- TESTIMONIOS -->  
-        <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
-
-        <v-flex xs12 md5 >
-          <img alt="Contacto Liderlogo" class="img-contacto" src="/images/pages/muchacho_contacto.jpg" width="100%">
-        </v-flex>
           <AppContactForm />
-      </v-layout>
     </v-container>
   </section>
 </template>

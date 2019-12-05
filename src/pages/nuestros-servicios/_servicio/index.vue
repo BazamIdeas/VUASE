@@ -48,12 +48,7 @@
 
     <!-- CONTACT FORM -->
     <v-container fluid class="mt-5 pt-5 pb-0" grid-list-md>
-      <v-layout xs12 row wrap> 
-        <v-flex xs12 md5>
-          <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
-        </v-flex>
           <AppContactForm :page="service.name" />
-      </v-layout>
     </v-container>
   </section>
 </template>

@@ -1,4 +1,12 @@
+
 <template>
+      <v-layout row wrap align-end>
+         <v-flex xs12 md5 mt-5 class="img-contacto-container">
+                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
+          <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
+                </div>
+        </v-flex>
+      
         <v-flex xs12 md6 class="mt-5 xs-mt-0">
           <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
           <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
@@ -97,6 +105,8 @@
     </v-layout>
   </v-form>
         </v-flex>
+      </v-layout>
+
 
 </template>
 
@@ -137,7 +147,6 @@
       submit () {
         this.$validator.validate().then(async (result) => {
           if (!result) return
-
           var contact = {
             name: this.name,
             email: this.email,
@@ -146,34 +155,27 @@
             promo: this.offers,
             reseller: this.type_user || false
           }
-
           if (this.for_phone) {
             contact.phone = this.phone
             contact.schedule = 'horario no especificado'
           }
-
           /* Adwords Data */
-
           let utmCampaign = this.$router.currentRoute.query.campaign
           if (utmCampaign) {
             contact.campaign = utmCampaign
           }
-
           let utmMedium = this.$router.currentRoute.query.medium
           if (utmMedium) {
             contact.medium = utmMedium
           }
-
           let utmSource = this.$router.currentRoute.query.source
           if (utmSource) {
             contact.source = utmSource
           }
-
           this.$store.dispatch('user/contactForm', contact).then((res) => {
             console.log(res)
             this.$router.push('/gracias?por=contacto')
           })
-
           /* if (process.browser) {
              window.grecaptcha.ready(() => {
               let secret = '6Lf1944UAAAAAHmlC7K-rhNxkaSs1_qbLU7hIdaH'
@@ -182,10 +184,8 @@
                   secret: secret,
                   response: token
                 }
-
                 this.$axios.post('https://www.google.com/recaptcha/api/siteverify', response).then((res) => {
                   console.log('grecaptcha', res)
-
                 }).catch((err) => {
                   console.log(err)
                 })
@@ -202,7 +202,6 @@
   .no-messages .v-messages{
     display: none;
   }
-
   .v-radio label {
     font-size: 14px !important;
   }
@@ -211,4 +210,11 @@
   .ws-float-btn {
     background-color: #87C438 !important;
   }
+  .img-contacto{
+        max-width: 40rem;
+  }
+  .img-contacto-container{
+    text-align: end;
+  }
 </style>
+

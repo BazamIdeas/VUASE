@@ -51,13 +51,7 @@
 
           <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MÁS</v-btn>
         </v-flex>
-        <v-flex xs12 md5>
-          <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-
-          <img data-src="/images/pages/muchacho_contacto.jpg" class="img-contacto" alt="Contacto Liderlogo" width="100%">
-                   </div>
-
-        </v-flex>
+ 
           <AppContactForm  />
       </v-layout>
     </v-container>

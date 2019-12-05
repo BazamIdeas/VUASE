@@ -216,13 +216,7 @@
         <!-- TESTIMONIOS -->  
         <AppTestimony :alt="alt" width="mt-5 xs12 offset-md1 md10" :list="testimonies" />
 
-        <v-flex xs12 md5 >
-             <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
 
-          <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
-          </div>
-
-        </v-flex>
           <AppContactForm />
       </v-layout>
     </v-container>
