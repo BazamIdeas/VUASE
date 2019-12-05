@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
-    <AppHomeCarousel :alt="alt" :interval="3000" theme="2" />
+    <AppHomeCarousel :alt="alt" :interval="300000" theme="2" />
    
     <!-- PORTFAFOLIO -->
     <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
@@ -14,7 +14,7 @@
     <AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
     <AppServicesGrid color="#F29F01" class="mb-4 pt-0"/>
     
-    <!-- <AppHomeCreativeProccess title="¿Cómo Funciona?"/> -->
+    <!-- <AppHomeCreativeProccess title="¿Cómo F98yunciona?"/> -->
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
           <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué te ofrecemos?"  />
@@ -247,23 +247,7 @@
   @media (min-width: 320px) and (max-width: 980px) {
     .parallax-opacity { height: 1300px !important; }
   }
-
-
-/*   .parallax-opacity:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(249, 249, 249, 0.6);
-    position: absolute;
-    z-index: 2;
-  } */
-
-/*   .pluma-background {
-    position: relative;
-    background-image: url(/icons/pluma_de_fondo.svg);
-    background-position: center -50px;
-    background-size: 145%;
-  } */
+ 
 
   .dark-blue--text{
     color:#014E7B;
@@ -275,4 +259,5 @@
     justify-content: center;
     align-items: flex-start;
   }
+
 </style>

@@ -3,22 +3,14 @@
   <v-carousel :interval="interval" hide-controls class="main-carousel theme2 ">
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1 ">
                   <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
                   <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-empresa-de-diseño.jpeg"  >
                 </div> 
       </div>
 
-<!--               <img alt='diseño de logo original' v-lazy="require('~/static/images/carousels/liderlogo-empresa-de-diseño.jpeg')"  >
- -->
 
-<!--               <v-img alt='liderlogo empresa de diseño' src="images/carousels/liderlogo-empresa-de-diseño.jpeg"></v-img>
- -->         
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
         </div>
 
         <div class="section">
@@ -38,22 +30,15 @@
     </v-carousel-item>
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1 ">
                               <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
                   <img class="animate-img" alt='embajador de la marca' data-src="/images/carousels/embajador-de-la-marca.jpeg"  >
             </div>
         </div>
 
-<!--                           <img alt='empresa de diseño de logo' v-lazy="require('~/static/images/carousels/embajador-de-la-marca.jpeg')"  >
- -->
-<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/embajador-de-la-marca.jpeg"></v-img>
- -->          </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
-   
+           </div>
+ 
 
         <div class="section">
           <div id="hc-layer-1-item-1">
@@ -70,21 +55,17 @@
     </v-carousel-item>
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
-        <div class="section">  
+        <div class="section slider-img-container">  
           <div id="hc-layer-3-item-1" >
                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
                     <img  class="animate-img" alt='imagen corporativa' data-src="/images/carousels/liderlogo-imagen-corporativa.jpeg"  >
                 </div>
-<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/liderlogo-imagen-corporativa.jpeg"></v-img>
- -->        
+ 
           </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
+ 
         </div>
 
-        <div class="section">
+        <div class="section ">
           <div id="hc-layer-1-item-1">
             <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
           </div>
@@ -99,17 +80,14 @@
     </v-carousel-item>
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1  ">
             <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
                   <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-diseño-de-logo-unico.jpeg"  >
             </div>
-<!--               <v-img alt='diseño de logo unico' src="images/carousels/liderlogo-diseño-de-logo-unico.jpeg"></v-img>
- -->          </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
+       
+          </div>
+ 
         </div>
 
         <div class="section">
@@ -143,9 +121,18 @@
 </script>
 
 <style>
-  .theme2 .v-carousel__controls {
-    display: none;
-  }
+    .theme2 .v-carousel__controls {
+        display: none;
+    }
+    .main-carousel .v-image  {
+        height: auto !important;
+    }
+    .main-carousel .slider-img-container div{
+      text-align: center;
+    }
+    @media (min-width: 1900px) {
+ 
+    }
 </style>
 
 <style scoped>
@@ -544,6 +531,10 @@
       width: 90%;
       height: 540px;
     }
+  .v-responsive.v-image.v-carousel__item {
+        height: auto !important;
+    }
+
   }
 
   .fade-enter-active, .fade-leave-active {
@@ -551,5 +542,9 @@
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
    }
+  .main-carousel .v-image  {
+    height: auto !important;
+    text-align: center;
+}
 
 </style>
