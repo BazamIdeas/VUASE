@@ -1,5 +1,5 @@
 <template>
-	<v-flex xs12>
+	<v-flex xs12 lg10 offset-lg1>
     <v-container fluid grid-list-lg class="mt-2 pb-0">
       <v-flex xs12 class="mb-5">
         <AppHeading :number="'2'" :size="'display-1'" :title="title" />
