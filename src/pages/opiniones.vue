@@ -3,7 +3,7 @@
     <v-container grid-list-md class="mt-5">
       <v-layout row wrap class="mt-5">
         <v-flex xs12 md5 class="pr-5 pr-xs-0">
-          <h1 class="display-1 xs-headline mt-5 mb-5 font-weight-bold text-xs-center text-md-left">Nuestros Clientes Hablan por nosotros</h1>
+          <h1 class="display-1 xs-headline mt-5 mb-5 font-weight-bold text-xs-center text-md-left our-clients">Nuestros Clientes <br class="wrap-title"> Hablan por nosotros</h1>
         </v-flex>
         <v-flex xs12 md7>
           <iframe class="responsive-video" height="350px" src="https://www.youtube.com/embed/Ywm1mGab3Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -13,13 +13,10 @@
         <v-flex xs12 v-for="(testimony, i) in testimonies.slice(0, limit)" :key="i">
           <v-layout row wrap class="mb-xs-3">
             <v-flex xs12 sm4 md3  offset-lg2  @click="testimony.active = !testimony.active">
-                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-
+              <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
               <img :alt="'Testimonio ' + testimony.company"  :data-src="testimony.logo"  class="p-testimony-logo ">
                 </div>
-
             </v-flex>
-
             <v-flex xs12 sm6 md9 lg5 >
               <v-layout class="mt-4"  d-flex justify-center  row >
                 <div class="text-xs-center ">
@@ -840,6 +837,11 @@
  .responsive-video{
    width: 100%;
  }
+
+.wrap-title{
+  display: none;
+}
+
  @media (min-width: 320px) and (max-width: 980px) {
     .p-testimony-logo{ 
       height: auto;
@@ -864,5 +866,12 @@
     .center-lg-start{
       justify-items: start
     }
+    .wrap-title{
+      display: block;
+    }
+    .our-clients{
+          margin-left: 30%;
+    }
   }
+
 </style>

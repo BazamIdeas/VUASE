@@ -1,9 +1,23 @@
-<template>
-  <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel --pro">
+<template >
+<!--   <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel --pro">
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
         <div class="layer"  id="hc-layer-3-item-1">
-          <v-img :alt="alt" class="animate-img" src="images/carousels/pro_services1.jpg" ></v-img>
+          <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+             <img class="animate-img" :alt="alt" data-src="images/carousels/pro_services1.jpg"  >
+          </div> 
+        </div>
+
+      </div>
+    </v-carousel-item>
+  </v-carousel> -->
+    <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel app-pro-services-carousel mt-5" >
+    <v-carousel-item transition="none" reverse-transition="none">
+      <div class="layers-container">
+        <div class="layer" id="hc-layer-1-item-1">
+                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+             <img class="animate-img" :alt="alt" data-src="images/carousels/pro_services1.jpg"  >
+          </div> 
         </div>
         <div class="layer" id="hc-layer-1-item-1">
           <h1>Servicios a Agencias</h1>
@@ -31,6 +45,8 @@
 </script>
 
 <style scoped>
+
+
 .layer-up{ 
   z-index: 5;
 }
@@ -48,7 +64,9 @@
   .v-carousel {
     box-shadow: none;
   }
-
+  .v-carousel .v-window-item{
+    height: 100%;
+  }
   .layers-container {
     position: relative;
     width: 100%;
@@ -442,4 +460,33 @@
         min-height: auto;
     }
   }
+
+  
+</style>
+
+<style>
+/*   .app-pro-services-carousel .v-carousel{
+      min-height: 420px;
+  }
+
+ .app-pro-services-carousel  #hc-layer-3-item-1{
+    height: 540px;
+  }
+  .app-pro-services-carousel .v-window-item {
+    height: 540px;
+} */
+     .app-pro-services-carousel .v-carousel{
+      min-height: 420px;
+  }
+  .app-pro-services-carousel .v-window__container{
+          min-height: 420px;
+          height: 500px !important;
+  }
+
+  #hc-layer-3-item-1{
+    height: 540px;
+  }
+    .v-window-item {
+    height: 540px
+    }
 </style>

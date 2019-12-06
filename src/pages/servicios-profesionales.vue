@@ -3,7 +3,7 @@
     <AppProServicesCarousel />
     <v-container fluid grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 offset-md1 md10 class="mb-5">
+        <v-flex xs12 offset-md2 md8 class="mb-5">
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 py-5 hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/icons/pro_services_1.png" class="ml-5 mt-5">
@@ -24,7 +24,7 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md1 md10 class="mb-5">
+        <v-flex xs12 offset-md2 md8 class="mb-5">
           <v-layout row wrap>
             <v-flex xs12 md6 class="hidden-md-and-up" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img alt="Privacidad Garantizada" src="/images/icons/pro_services_2.png" class="ml-5 mt-2">
@@ -46,7 +46,7 @@
 
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md1 md10 class="mb-2 mb-xs-0">
+        <v-flex xs12 offset-md2 md8 class="mb-2 mb-xs-0">
           <v-layout row wrap>
             <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only" >
               <img alt="Recomendada por perfeccionistas" src="/images/icons/pro_services_3.png" class="ml-5 mt-5">
@@ -123,7 +123,7 @@
   .v-list__tile__content {
     font-weight: 600;
   }
-
+ 
   .service-box-list {
     display: flex;
     flex-flow: column;
@@ -157,6 +157,10 @@
 
   .profesional-services-slider{
     margin-top: 0px;
+  }
+ .profesional-services-slider.v-window__container{
+    min-height: 500px;
+    height: 500px;
   }
 
   @media (max-width: 600px) {

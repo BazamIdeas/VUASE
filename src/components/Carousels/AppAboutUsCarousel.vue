@@ -3,7 +3,7 @@
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>Diseñamos Marcas Exitosas</h1>
+          <h1>Diseñamos <br> Marcas br Exitosas</h1>
           <v-btn flat outline class="px-2 mt-4" style="background-color: #004b7b !important; border-color: #004b7b; color: white; line-height: initial;">COMPRUEBALO</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
