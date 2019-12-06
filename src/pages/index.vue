@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
-    <AppHomeCarousel :alt="alt" :interval="300000" theme="2" />
+    <AppHomeCarousel :alt="alt" :interval="3000" theme="2" />
    
     <!-- PORTFAFOLIO -->
     <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
@@ -80,8 +80,8 @@
         <v-flex xs12 md7>
           <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
                    <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
-         <img :alt="alt" data-src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
-                </div>
+         <img :alt="alt" class="profesional-services-img" data-src="/images/pages/profesional_services.jpg" >
+                </div> 
         </v-flex>
         <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
           <div>
@@ -199,7 +199,9 @@
     transform: translate(-62%, 130px) !important;
   }
 
-
+.profesional-services-img{
+                  width: 80%; margin: auto; display: block; max-width: 480px;
+                }
   @media (min-width: 320px) and (max-width: 980px) {
     .xs-no-border{
       border:none !important;
