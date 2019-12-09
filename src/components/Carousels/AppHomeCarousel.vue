@@ -124,10 +124,10 @@
     .theme2 .v-carousel__controls {
         display: none;
     }
-    .main-carousel .v-image  {
+    .main-carousel.theme2 .v-image  {
         height: auto !important;
     }
-    .main-carousel .slider-img-container div{
+    .main-carousel.theme2  .slider-img-container div{
       text-align: center;
     }
     @media (min-width: 1900px) {
