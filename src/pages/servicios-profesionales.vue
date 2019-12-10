@@ -1,12 +1,14 @@
-<template>
-  <section>
+<template >
+  <section class="profesional-services">
     <AppProServicesCarousel />
     <v-container fluid grid-list-md>
-      <v-layout row wrap>
+      <v-layout row wrap class="profesional-services-body">
         <v-flex xs12 offset-md2 md8 class="mb-5">
-          <v-layout row wrap>
+          <v-layout row wrap class="custom-alignment">
             <v-flex xs12 md6 class="pl-5 py-5 hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
-              <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/icons/pro_services_1.png" class="ml-5 mt-5">
+
+                              <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/icons/pro_services_1.png" class="ml-5  ">
+
               <AppHeading number="2" title="Gestionamos tus proyectos" size="display-1 xs-headline" align="left" margin="pl-5 mb-2"/>
               <p class="pl-5 body-2">
                 Nuestro equipo elabora y acompaña paso a paso tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia hoy tu negocio.
@@ -20,7 +22,9 @@
               </p>
             </v-flex>
             <v-flex xs12 md6>
-              <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/pages/objects_pro_services.png" width="100%">
+                            <div class="custom-alignment-img">
+                                           <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/pages/objects_pro_services.png" width="100%">
+              </div>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -163,9 +167,31 @@
     height: 500px;
   }
 
-  @media (max-width: 600px) {
-    .v-carousel.profesional-services-slider {
-      height: 560px;
+    @media (max-width: 600px) {
+      .v-carousel.profesional-services-slider {
+        height: 560px;
+      }
     }
+    @media (min-width: 960px) and (max-width: 1768px) {
+/*       .profesional-services .custom-alignment img {
+        height: 13rem;
+      } */
+      .profesional-services .custom-alignment {
+      align-items: center;
+      }
   }
+
+</style>
+
+<style>
+    @media (max-width: 348px) {
+        .v-carousel.main-carousel.--pro h1{
+          font-size: 1.7rem;
+          margin-left: 2rem;
+        }
+      .profesional-services-body h2{
+          font-size: 1.7rem !important;
+ 
+      }
+    }
 </style>

@@ -100,16 +100,18 @@
     color: #676767;
     font-weight: 400;
   }
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media  (max-width: 480px) {
+
+
     div#hc-layer-1-item-1 {
       font-size: 23px;
       line-height: 39px;
-      top: 64%;
+      top: 50%;
       text-align: center;
     }
     div#hc-layer-2-item-1 {
       font-size: 12px;
-      top: 77%;
+      top: 60%;
       line-height: 28px;
       text-align: center;
     }
@@ -349,6 +351,41 @@
       width: 55%;
       left: 30.5%;
       top: 4%;
+    }
+  }
+
+    @media (max-width: 348px) {
+        .v-carousel.main-carousel.--pro h1{
+          font-size: 1.7rem;
+          margin-left: 2rem;
+        }
+      .v-carousel.main-carousel.--pro .body-2{
+                margin-left: 1.5rem;
+      }
+    }
+    @media (min-width: 349px) and (max-width: 480px) {
+          .v-carousel.main-carousel.--pro #hc-layer-1-item-1 {
+             margin-left: 2rem;
+              font-size: 1.4rem;
+          }
+          .v-carousel.main-carousel.--pro .v-window-item {
+            height: 600px !important;
+        }
+      }
+    @media (max-width: 450px) {
+          .v-carousel.main-carousel.--pro {
+        margin-top: 5rem;
+        min-height: unset;
+      }
+    }
+  
+    @media  (min-width: 480px) and (max-width: 500){
+     div#hc-layer-1-item-1 {
+      top: 50% !important;
+    }
+    div#hc-layer-2-item-1 {
+      position: relative;
+      top: 60% !important;
     }
   }
   .fade-enter-active,
