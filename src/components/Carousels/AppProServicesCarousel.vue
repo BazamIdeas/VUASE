@@ -419,6 +419,9 @@
   .v-carousel.main-carousel.--pro .v-window-item{
         height: 500px;
   }
+  .v-carousel.main-carousel.--pro  {
+    min-height: auto; 
+}
 </style>
 
 <style >
