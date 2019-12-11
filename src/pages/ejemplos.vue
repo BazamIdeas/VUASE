@@ -71,7 +71,7 @@
             </v-btn>
           </v-layout>
         </v-flex>
-        <v-flex v-if="descriptionActivity">
+        <v-flex md8 offset-md2 v-if="descriptionActivity">
           <h2> {{h2}}</h2>
           <p  class="text-xs-justify mt-3" style="font-weight:500;" v-html="descriptionActivity">
           </p>
