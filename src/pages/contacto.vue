@@ -6,9 +6,9 @@
           <img src="/images/pages/muchacho_contacto.jpg" class="img-contacto mt-5 mt-xs-0" :alt="alt" width="100%">
         </v-flex>
         <v-flex xs12 md6 class="my-5 mt-xs-0">
-          <AppHeading number="2" title="¿Necesitas un consejo profesional?" size="font-weight-bold mb-1 text-uppercase text-xs-center" align="center"/>
+          <AppHeading number="2" title="¿EN QUE PODEMOS AYUDARTE? ¡CUENTANOS!" size="font-weight-bold mb-1 text-uppercase text-xs-center" align="center"/>
 
-          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="font-size: 12px; line-height: 20px;  padding: 0 30px;">Estamos para asesorarte gratis. Completa el formulario y un experto se pondrá en contacto contigo hoy.</h4>
+          <h4 class="font-weight-medium mb-4 text-uppercase text-xs-center theme--light v-label" style="font-size: 12px; line-height: 20px;  padding: 0 30px;">Para poder ayudarte gratiutamente, necesitamos que nos ayudes a saber mas sobre ti rellenando el formulario. Así uno de nuestros profesionales te contactará</h4>
 
           <AppContactForm contact-page="true" />
         </v-flex>

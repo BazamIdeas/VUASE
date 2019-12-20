@@ -23,15 +23,11 @@
 
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.
-
-            </p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -57,13 +53,11 @@
 
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -86,13 +80,11 @@
 
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -114,13 +106,11 @@
 
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>

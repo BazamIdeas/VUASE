@@ -3,11 +3,14 @@ export const redesSociales = {
   titleSEO: 'Diseño de perfil de redes sociales',
   descriptionSEO: 'Creación de perfiles para redes sociales, destaca tu imagen y haz la diferencia, ¡Comienza tu proyecto ahora!',
   /* ** */
-  list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
-  title: 'Perfiles de redes sociales',
-  description: `Portadas y avatars para destacar tu marca en.`,
-  shortDescription: `Portadas y avatars para destacar tu marca en.`,
+  list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram', 'Nuestro trabajo te sorprenderá, igual que nuestro precio cerrado de 95 euros'],
+  title: 'Destaca los perfiles profesionales de tus redes sociales',
+  description: `En Líderlogo sabemos que las redes sociales son parte del día a día de las empresas y negocios actuales. Son uno de los canales de comunicación inmediata más potentes en tu estrategia de Marketing y Comunicación.<br/><br/>En este servicio te incluimos los diseños de las portadas y avatars para mejorar la imagen de tu marca en:`,
+  descriptionPrice: '<strong style="font-size: 16px">Portadas y avatars para destacar tu marca en:</strong>',
+  shortDescription: `Portadas y avatars para destacar tu marca en:`,
   icon: '/icons/perfiles-redes-sociales.svg',
+  listServices: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
+  listPrices: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
   whatWeOffer: [
     {
       title: 'DISEÑO CORPORATIVO ORIGINAL',
@@ -40,17 +43,17 @@ export const redesSociales = {
     color: 'black',
     columns: [
       [{
-        title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: 'Portadas y avatars para destacar tu marca',
-        items: ['Creación 100% original y profesional de avatar y perfil.',
-          'Propuestas iniciales y perfeccionamientos ilimitados.',
-          'Atención y asesoramiento profesional personalizado.',
-          'Cuatro publicistas creando su imagen en redes sociales.',
-          'Diseño desde cero y hasta entera conformidad.',
-          'Entrega de diseños listos para implementar en formatos AI, JPG y GIF.',
-          'Manual de uso e implementación.',
-          'Garantía de entera conformidad y confidencialidad.',
-          'Soporte postventa por 2 años.'],
+        title: 'DISEÑAMOS DIFERENTES FORMATOS ADAPTADOS PARA TI',
+        description: 'En Líderlogo te entregaremos las portadas y los diseños de los avatars de tus redes sociales profesionales para potenciar la imagen de tu marca.',
+        items: ['Nuestros diseños están creados 100% de forma original y única para mostrar la imagen más profesional de tu negocio o marca personal.',
+          'Te mandamos propuestas iniciales e ilimitadas para que puedas elegir entre toda las creaciones que Líderlogo diseñaremos para ti.',
+          'Te damos atención y asesoramiento profesional personalizado para que la ocmunicación con nosotros sea más cercana.',
+          'Tendrás cuatro publicistas creando tu imagen para potenciar tus redes sociales profesionales.',
+          'Crearemos tus diseños desde cero y no terminaremos el trabajo hasta que estés completamente satisfecho.',
+          'Además, te entregamos los diseños listos para utilizar en tu imagen profesional en formatos AI, JPG y GIF.',
+          'Te entregaremos el Manual de uso e implementación para que tengas los detalles de todo el proceso de creación.',
+          'En Líderlogo te damos la garantía de conformidad y confidencialidad para que confíes en nosotros.',
+          'Y por si fuera poco, queremos seguir cuidando de ti, así que tendrás soporte postventa durante los siguientes 2 años a partir de la entrega del trabajo final.'],
         icon: '/icons/perfiles-redes-sociales.svg'
       }]
     ]

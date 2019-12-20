@@ -5,7 +5,7 @@
         <v-text-field class="newsletter-email" v-model="email" v-validate="'required|email'" name="contact.email" label="Correo electrónico" placeholder="Correo electrónico" solo flat></v-text-field>
       </v-flex>
       <v-flex xs12 md4>
-        <v-btn type="submit" class="elevation-0 white--text" style="margin:0px; height: 48px; background-color: #F7941D;">SUSCRIBIRME</v-btn>
+        <v-btn type="submit" class="elevation-0 white--text" style="margin:0px; height: 48px; background-color: #F7941D;">¡QUIERO SER EL PRIMERO!</v-btn>
       </v-flex>
     </v-layout>
   </v-form>

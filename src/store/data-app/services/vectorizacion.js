@@ -3,11 +3,14 @@ export const vectorizacion = {
   titleSEO: 'Vectorización de logo',
   descriptionSEO: 'Re-dibujamos tu logo de una imagen de baja resolución y la preparamos en archivos vectoriales para el uso que necesites.',
   /* ** */
-  list: ['Llevamos tu logo a alta resolución', 'Diseños en 24 hrs', 'Tu logo listo para usar en gran cantidad de formatos (editable e imágenes)', 'Manual corporativo de marca'],
-  title: 'Vectorización de tu Logo',
-  description: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,
-  shortDescription: `Redibujamos tu logo de una imagen de baja resolucion y la preparamos en archivos vectoriales para el uso que necesites.`,
+  list: ['Convertimos tu logo a alta resolución logrando una imagen increíble', 'Tendrás tu diseño en 24 horas', 'Te mandamos tu logo preparado para usar en una cantidad enorme de formatos (editables e imágenes)', 'Tendrás tu Manual corporativo de marca para que tengas todos los detalles', 'Nuestro precio cerrado para ti es de 90 euros'],
+  title: '¡Vectoriza tu logo!',
+  description: `En Líderlogo redibujamos tu logo desde una imagen con baja resolución y la mejoramos para que tu imagen de marca brille. Te preparamos el trabajo en archivos vectoriales para que puedas hacer uso de ello en el formato que necesites y para la plataforma que quieras.`,
+  shortDescription: `En este servicio transformamos tu logo. Convertimos la imagen de tu logo en baja resolucion y la preparamos y convertimos en archivos vectoriales para que puedas usarlo en diferentes plataformas y formatos.`,
+  descriptionPrice: '<strong style="font-size: 16px">`En este servicio transformamos tu logo. Convertimos la imagen de tu logo en baja resolucion y la preparamos y convertimos en archivos vectoriales para que puedas usarlo en diferentes plataformas y formatos.</strong><br/><br>Qué incluye:</br>',
   icon: '/icons/vectorizacion.svg',
+  listServices: ['Convertimos tu logo de baja calidad en alta resolución.', 'Tu diseño estará listo en 24 horas. Diseños creados y pensados para personas con poco tiempo y muchas ideas que deben llevar a cabo para hacer crecer su marca. La velocidad y la calidad no están reñidas.', 'Te diseñamos tu logo en diferentes formatos (editable e imágenes).', 'Te entregamos de forma exclusiva y unipersonal el manual corporativo de tu marca.'],
+  listPrices: ['Llevamos tu logo a alta resolución', 'Diseños en 24 hrs', 'Tu logo listo para usar en gran cantidad de formatos (editable e imágenes)', 'Manual corporativo de marca'],
   whatWeOffer: [
     {
       title: 'ATENCION PERSONALIZADA',
@@ -232,14 +235,14 @@ export const vectorizacion = {
     first: {
       image: '/images/pages/packs/addons-logo+pack-de-identidad.png',
       title: 'LOGO A MEDIDA + PACK DE IDENTIDAD DE 6 PIEZA + LOGO ANIMADO',
-      subtitle: 'LLEVA 6 PIEZAS AL PRECIO DE 2',
+      subtitle: '¡LLÉVATE 6 DISEÑOS AL PRECIO DE 2!',
       url: '/nuestros-servicios/imagen-corporativa',
       brief: '/nuestros-servicios/imagen-corporativa/brief/disenos'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
       title: 'LOGO + WEB',
-      subtitle: '50% OFF EN DISEÑO DE LOGO',
+      subtitle: '¡50% DE DESCUENTO EN EL DISEÑO DE TU LOGO!',
       url: '/nuestros-servicios/logo-y-pagina-web',
       brief: '/nuestros-servicios/logo-y-pagina-web/brief/disenos'
     }

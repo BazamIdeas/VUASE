@@ -65,7 +65,7 @@ export const state = () => ({
         { url: '/contacto', title: 'Contacto' }
       ],
       footer: [
-        { url: '/sobre-liderlogo', title: 'SOBRE LIDERLOGO' },
+        { url: '/sobre-liderlogo', title: 'NUESTRA HISTORIA' },
         { url: '/servicios-profesionales', title: 'SERVICIOS A AGENCIAS' },
         { url: '/avisos-legales', title: 'AVISO LEGAL' }
 

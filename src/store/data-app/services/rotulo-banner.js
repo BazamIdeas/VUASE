@@ -6,8 +6,11 @@ export const rBanner = {
   list: ['Diseño publicitario profesional e impactante.', 'Creaciones publicitarias y perfeccionamientos hasta entera conformidad.', 'Entrega de artes editables listas para imprimir.'],
   title: 'Diseño de Banner',
   description: `Un diseño publicitario ideal para destacar tu stand y llamar a los clientes visualmente. `,
+  descriptionPrice: '<strong style="font-size: 16px">¿Quieres pasar desapercibido? Entonces no nos encargues el diseño de tu banner para el stand de tu empresa. Porque si lo contratas en Líderlogo la imagen visual de tu negocio va a brillar.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Un diseño publicitario ideal para destacar tu stand y llamar a los clientes visualmente. `,
   icon: '/icons/rotulo-banner.svg',
+  listServices: ['Diseño publicitario profesional e impactante.', 'Creaciones publicitarias y perfeccionamientos hasta entera conformidad.', 'Entrega de artes editables listas para imprimir.'],
+  listPrices: ['Te garantizamos un diseño impresionante para tu negocio que llamará la atención a tus clientes y futuros clientes.', 'Creaciones ilimitadas. ¿Qué significa esto? Que hasta que no estés convencido de que es el diseño perfecto para tu negocio, no paramos de mejorar las versiones anteriores.', 'Y por si fuera poco, te entregamos los artes editables listos para imprimir. Nuestros diseños creados para tu negocio harán magia para tener una empresa que destaque.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',

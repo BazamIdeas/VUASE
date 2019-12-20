@@ -6,8 +6,11 @@ export const diptico = {
   title: 'Díptico',
   list: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diptico listo para usar (editable e imágenes)'],
   description: `La presentacion profesional de tu negocio en 4 caras`,
+  descriptionPrice: '<strong style="font-size: 16px">La presentacion profesional de tu negocio en 4 caras</strong><br><br>Qué incluye:</br>',
   icon: '/icons/diptico.svg',
   shortDescription: `La presentacion profesional de tu negocio en 4 caras`,
+  listServices: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diptico listo para usar (editable e imágenes)'],
+  listPrices: ['Diseños 100% exclusivos', 'Creaciones Ilimitadas', 'Diseños en 24 hrs', 'Tu diptico listo para usar (editable e imágenes)'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',

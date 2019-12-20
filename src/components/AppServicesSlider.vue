@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pb-2">
     <v-layout row>
       <v-flex xs12 class="service-slider-container" ref="serviceSliderContainer">
         <div class="service-slider-scrollable" ref="serviceSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">

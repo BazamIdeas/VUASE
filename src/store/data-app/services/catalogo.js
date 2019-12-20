@@ -6,8 +6,11 @@ export const catalogo = {
   title: 'Catálogo',
   list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu catálogo en formato digital listo para usarse digitalmente o impreso. '],
   description: `Presenta tus productos y servicios con el detalle que necesites`,
+  descriptionPrice: '<strong style="font-size: 16px">Presenta tus productos y servicios con el detalle que necesites</strong><br><br>Qué incluye:</br>',
   shortDescription: `Presenta tus productos y servicios con el detalle que necesites`,
   icon: '/icons/catalogo.svg',
+  listServices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu catálogo en formato digital listo para usarse digitalmente o impreso. '],
+  listPrices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu catálogo en formato digital listo para usarse digitalmente o impreso. '],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',

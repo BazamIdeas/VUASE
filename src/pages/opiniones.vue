@@ -3,7 +3,7 @@
     <v-container grid-list-md class="mt-5">
       <v-layout row wrap class="mt-5">
         <v-flex xs12 md5 class="pr-5 pr-xs-0">
-          <h1 class="display-1 xs-headline mt-5 mb-5 font-weight-bold text-xs-center text-md-left">Nuestros Clientes Hablan por nosotros</h1>
+          <h1 class="display-1 xs-headline mt-5 mb-5 font-weight-bold text-xs-center text-md-left">No vamos a intentar convencerte. Nuestros Clientes lo hacen por nosotros</h1>
         </v-flex>
         <v-flex xs12 md7>
           <iframe class="responsive-video" height="350px" src="https://www.youtube.com/embed/Ywm1mGab3Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

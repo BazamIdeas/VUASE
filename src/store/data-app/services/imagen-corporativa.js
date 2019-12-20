@@ -4,11 +4,14 @@ export const imagenCorporativa = {
   descriptionSEO: 'Logo original de tu entera conformidad + papelería  + diseño de productos de merchandising + diseño de redes sociales+logo animado. ¡Comienza tu proyecto ahora!',
   /* ** */
   list: ['Creación de logo diseñado  desde cero y hasta tu entera conformidad + diseños de tu papelería en formato digital y papel + diseño de productos de merchandising + diseño de tus redes sociales + el diseño de tu logo animado.', 'Creación de logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con tu manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elije 6 piezas en nuestro menú de 65 opciones)', 'Diseño publicitario de tus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
-  title: 'Logo, imagen corporativa y logo animado',
+  title: 'COMBO PROFESIONAL. LOGOTIPO, IMAGEN CORPORATIVA Y LOGO ANIMADO',
   oferta: 'AHORRA 37%',
   description: `<strong style="font-size: 16px">¿Buscando presentar tu negocio con éxito? Pon la imagen de tu marca en manos de expertos.</strong> <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.`,
-  shortDescription: `En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.`,
+  descriptionPrice: '<strong style="font-size: 16px">¿Buscando presentar tu negocio con éxito? Pon la imagen de tu marca en manos de expertos.</strong> <br>En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.<br><br>Qué incluye:</br>',
+  shortDescription: `En Liderlogo diseñamos tu logo, creamos la papelería y diseñamos los contenidos de tus redes sociales para no dejar a nadie indiferente con la imagen corporativa de tu marca.`,
   icon: '/icons/pack-identidad.svg',
+  listServices: ['Creación de logo diseñado desde su origen. Hacemos nacer el diseño de tu logotipo para que transmita la filosofía de tu marca tus valores.', 'Creamos los diseños de papelería en formato digital y papel.', 'Te preparamos los diseños de productos de merchandising.', 'Diseñamos los contenidos de tus redes sociales.', 'Tu logo animado también lo diseñamos para ti, para que destaques ante la competencia.', 'Creamos tu logo profesional para que no pase desapercibido. Tu logo creado y diseñado a medida. Además, te lo entregamos en diferentes formatos para que lo utilices donde necesites, ¡y con tu manual de marca y certificado de derechos incluido!', 'En este combo incluimos el diseño creativo y profesional seis piezas a elegir entre 65 opciones. Diseño creativo de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y todos los productos que necesites.', 'Los contenidos en las redes sociales necesitan ser creativos para dar resultados. En En Liderlogo creamos los diseños de tus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube, etc.', 'Nuestros logos animados están pensados para darle vida y movimiento a tu página web y que no sea un lugar aburrido. Pero no nos conformamos solo con eso. En Liderlogo también te diseñamos banners digitales, perfil de WhatsApp y protectores de pantalla.'],
+  listPrices: ['', '', '', '', '', '', '', '', '', ''],
   whatWeOffer: [
     {
       title: 'LOGO, PAPELERÍA Y MERCHANDISING, 100% ORIGINAL',
@@ -111,41 +114,45 @@ export const imagenCorporativa = {
   },
   frequentQuestions: [
     {
-      question: '¿Aún no tengo definido el nombre de mi marca, me pueden ayudar?',
-      response: `Si, de manera complementaria y gratuita proponemos nombres oportunos, efectivos y disponibles para tu marca comercial.`
+      question: 'Aún no tengo definido el nombre de mi marca, ¿me pueden ayudar en Líderlogo?',
+      response: `Sí, y además, sin coste. Nuestro equipo de profesionales creativos de Líderlogo está preparado para proponerte nombres efectivos y disponibles para tu marca. Te ayudamos a encontrar la solución a tu problema. Así de fácil.`
     }, {
-      question: '¿Podrían crear mi slogan comercial, que precio tiene?',
-      response: `Si, creamos y proponemos slogan comerciales para agregarle valor y notoriedad a tu marca comercial. Lo hacemos con mucho gusto y bonificado al 100% con la contratación de tu servicio de diseño de marca.`
+      question: '¿Podrían crear mi slogan comercial? ¿Qué precio tiene?',
+      response: `Sí. Nuestro equipo crea slogans comerciales para añadir valor y notoriedad a tu marca. En Líderlogo te propondremos diferentes sloganes par que puedas decidirte por alguno de ellos. Además, lo hacemos sumamente encantados y es un trabajo bonificado al 100% con la contratación de tu servicio de diseño de marca. Más facilidades imposible.`
     }, {
-      question: 'Tengo una idea previa para el diseño de mi logo, ¿podrían diseñar mi marca en base a ello? ¿como les envio mi idea o boceto?',
-      response: `Si, podemos diseñar tu marca en base a tu idea previa, creamos conceptos profesionales del mismo en tu conjunto, tanto en relación a tu concepto gráfico, tipografía, colores y proporciones adecuados. También te presentamos, sin coste adicional diseños creados desde un punto de vista objetivo y distante que pudieran sorprenderlo con una solución de diseño que no hayas pensado y resuelvan eficientemente tu necesidad de identidad gráfica. Al momento de realizar tu pedido puedes adjuntar tu idea previa o nos la puedes enviar por WhatsApp o Email indicando el nombre de tu marca.`
+      question: 'Tengo una idea para el diseño de mi logo, aunque no es la definitiva. ¿Podrían diseñar mi marca en base a ello? ¿Cómo les envío mi idea o boceto?',
+      response: `Sí. Podemos diseñar tu marca en base a tu idea inicial aunque no sea la definitiva. Nuestro equipo de creativos crea conceptos profesionales a través de la idea que nos mandas. Tanto el concepto gráfico, tipografía, colores, proporciones adecuadas, etc.<br/>
+      El equipo de profesionales de Líder logo te presentamos, sin coste adicional, diseños creados desde un punto de vista objetivo y profesional para que puedas ver otras opciones sorprendentes. Dando solución de diseño que a lo mejor no te has planteado, de tal manera que puedan resolver tu necesidad de identidad gráfica corporativa.</br>
+      Cuando nos mandes tu pedido, adjunta sin coste adicional tu idea o material que tengas para que lo trabajemos. Si te resulta más cómodo, mándanoslo por WhatsApp o email indicando el nombre de tu marca. Nos adaptamos a tus necesidades.
+      `
     }, {
-      question: 'Aún no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto?',
-      response: 'Sí, puedes solicitar cualquier cambio antes de la entrega de tu proyecto sin coste adicional. En todo momento usted tiene total autonomía e independencia para modificar cualquier elemento de tu proyecto. Usted dispone de un plazo de hasta 2 meses para llevar adelante tu proyecto.'
+      question: 'Aún no tengo los datos definitivos de mi empresa ¿puedo comenzar con el diseño del proyecto en Líderlogo??',
+      response: 'Sí. Puedes solicitar cualquier cambio antes de que te entreguemos tu proyecto definitivo. Los cambios son sin coste adicional. En Líderlogo tú tienes total control para modificar cualquier elemento de tu proyecto. En Líderlogo te damos un plazo de hasta 2 meses para llevar adelante tu proyecto. ¿te imaginas? Tienes tiempo de sobra para lograr un trabajo excelente'
     }, {
-      question: 'Aún no tengo los datos para que me facturen el proyecto, ¿pueden facturarlo más adelante?',
-      response: 'Sí, sin problema mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de tu datos fiscales para tu contabilización.'
+      question: 'Aún no tengo los datos fiscales para que me puedan facturar el proyecto. ¿Es posible recibir la factura con mis datos fiscales más adelante?',
+      response: 'Sí, es posible. En Líderlogo mantenemos abierto tu proyecto y te enviamos tu factura cuando dispongas de los datos fiscales para tu contabilidad. Nos adaptamos a ti.'
     }, {
-      question: '¿Cuantos conceptos de diseño recibo?',
-      response: `Creamos y perfeccionamos todos los bocetos que sean necesarios hasta que te encuentres 100% conforme con tu proyecto de identidad corporativa. Trabajamos a precio cerrado, puedes solicitar tantas opciones como sean necesarios hasta lograr tu diseño ideal.`
+      question: '¿Cuántos conceptos de diseño recibo al contratar vuestro servicio en Líderlogo?',
+      response: `Nuestro equipo de creativos y diseñadores crean y perfeccionan todos los bocetos que sean necesarios hasta que te encuentres 100% conforme con tu proyecto de identidad corporativa. En Líderlogo trabajamos a precio cerrado. Por lo tanto, puedes solicitar tantas opciones como sean necesarias hasta lograr el diseño que genere un momento WOW y no deje a nadie indiferente.`
     }, {
-      question: '¿Qué sucede si no me satisfacen los diseños?',
-      response: 'No hay problema, en pocos casos puede suceder y si no estás satisfecho volvemos a crear nuevos conceptos iniciales o te reintegramos el dinero abonado sin hacerte preguntas al respecto, como lo prefieras.'
+      question: '¿Qué pasa si no me gustan los diseños que me mandáis?',
+      response: 'No suele suceder, pero somos humanos y eso conlleva que nuestro trabajo no es perfecto al 1000%, como en todas las marcas. Y más cuando hablamos de diseño y creatividad. Si no estás satisfecho, volvemos a crear nuevos conceptos desde el principio o te reintegramos el dinero. Aquello que te sea más cómodo o que sea de tu preferencia. En Líderlogo siempre nos adaptamos a las necesidades de nuestros clientes.'
     }, {
-      question: '¿El logo que adquiero es exclusivo?',
-      response: 'El logo animado se puede utilizar en sitio web, redes sociales, fondos de email, presentaciones multimedia, presentaciones PPT, etc.'
+      question: '¿El logo que Líderlogo me entrega es exclusivo?',
+      response: 'Sí. El logo que nuestro equipo de Líderlogo prepara para nuestros clientes se crea de forma totalmente exclusiva y original. Además, te lo entregamos únicamente a ti acompañado de un certificado de transferencia total de derechos de autoría.'
     }, {
-      question: '¿Cuánto tiempo lleva realizar mi proyecto?',
-      response: 'Los proyectos llevan normalmente entre 1 y 4 días dependiendo la cantidad de conceptos que debemos crear hasta lograr tu entera conformidad. El cliente cuenta con un plazo de hasta 2 meses para realizar el proyecto.'
+      question: '¿Cuánto tiempo conlleva realizar mi proyecto en Líderlogo?',
+      response: 'Los proyectos que realizamos en Líderlogo normalmente se realizan entre 1 y 4 días, dependiendo de la cantidad de conceptos que debamos crear hasta lograr tu confirmación de proyecto definitivo. Tú como cliente cuentas con un plazo de hasta 2 meses para realizar el proyecto con nosotros.'
     }, {
       question: '¿Recibo los derechos de autor del diseño?',
       response: 'Si, con la entrega de tu proyecto recibe un certificado de completa transferencia de derechos sobre la autoría intelectual de los diseños. El copyright pasa a ser 100% tuyo por tiempo ilimitado.'
     }, {
       question: '¿Cómo recibo los bocetos, perfeccionamientos y entrega de mi proyecto?',
-      response: 'Los bocetos y perfeccionamientos los recibís vía email y WhatsApp, las entregas finales vía email y las podes descargar también desde nuestro apartado privado de clientes.'
+      response: 'Los bocetos que te creamos en Líderlogo, así como los perfeccionamientos los recibirás vía email y WhatsApp. En el caso de las entregas finales de tu proyecto, a través de email y las puedes descargar también desde nuestro apartado privado de clientes de Líderlogo.'
     }, {
-      question: '¿Cuáles son las piezas de papelería, redes sociales y merchandising que puedo solicitar que diseñen para mi proyecto?',
-      response: `Con tu contratación está incluida el diseño de  6 elementos de papelería, merchandising y redes sociales dentro del siguiente listado de opciones.: <br><br>
+      question: '¿Qué piezas de papelería, redes sociales y merchandising que puedo solicitar que Líderlogo diseñéis para mi proyecto?',
+      response: `Cuando contrates nuestros servicios te incluimos el diseño de 6 elementos de papelería, merchandising y redes sociales. Puedes elegir dentro del siguiente listado de opciones: <br><br>
+
       Block de notas 11 X 14,2 cm, <br>
       Bono o Vale<br>
       Caratula CD (cuadrado) 12cm x 12cm <br>
@@ -182,11 +189,11 @@ export const imagenCorporativa = {
       Bolígrafo, Bolsa (Determinar medida), Etiqueta 9 X 5, Etiqueta cierra bolsa, Gorro, Imán 9 X 5, Libreta, Llavero, Manteles individuales, Pad mouse, Paraguas, Pegatina coche, Pen Drive, Posavasos, Reloj, Señalador 7 X 29 CM, Taza.
       `
     }, {
-      question: '¿Puedo contratar más de 6 elementos de papelería, merchandising y redes sociales? ¿Como lo hago?',
-      response: 'Si podes, al momento de realizar tu pedido selecciona las piezas adicionales que desees y el sistema te sumará el coste de las mismas. Todas son muy accesibles.'
+      question: '¿Puedo contratar más de 6 elementos de papelería, merchandising y redes sociales ? ¿Cómo lo hago?',
+      response: 'Sí. Cuando realices tu pedido en Líderlogo, selecciona las piezas adicionales que desees y el sistema te sumará el coste de las que añadas a partir de las 6 que ya incluimos. ¡Estamos seguros de que vas a elegir más de 6!'
     }, {
-      question: 'Aún no he escogido las piezas de papelería, merchandising y redes sociales que deseo para mi proyecto, ¿puedo comenzar de todos modos?',
-      response: 'Si, luego de terminar con el diseño de tu logo te brindaremos nuevamente el listado de piezas disponibles y podrás escogerlas.'
+      question: 'Si aún no he escogido las piezas de papelería, merchandising y redes sociales que me gustaría para mi proyecto con Líderlogo, ¿puedo empezar igualmente?',
+      response: 'Sí, en Líderlogo te facilitamos el trabajo y nos adaptamos a tus necesidades. Una vez terminado el diseño de tu logo, te mandaremos de nuevo el listado de piezas disponibles y podrás escogerlas entonces.'
     }, {
       question: '¿En qué formatos recibo mis diseños?',
       response: `Cada elemento diseñado se entrega en el formato adecuado para tu correcta utilización digital y/o impresión. Los formatos más habituales son: <br><br>
@@ -203,45 +210,79 @@ export const imagenCorporativa = {
       ● FLA y SWF<br>
       `
     }, {
-      question: '¿En dónde podré utilizar mi logo?',
-      response: 'El logo se entrega en gran variedad de formatos listos para ser utilizado adecuadamente en imprenta profesional, documentos de Microsoft Word, Excel, Powerpoint, Outlook, Access, Open Office, sistemas de gestión empresarial, rotulación vehicular, de locales, de envases, de uniformes, publicidades impresas y digitales, sitios web, redes sociales, sistemas de mensajería instantánea,  emails , TV, pegatinas, sellos, bordados serigrafiados, es decir,  en todo sitio que necesites aplicarlo.'
+      question: '¿Dónde podré utilizar mi logo?',
+      response: 'El logo que te entregamos desde Líderlogo lo recibirás en una gran variedad de formatos preparados para ser utilizados de forma idónea en imprenta profesional, documentos de Microsoft Word, Excel, Powerpoint, Outlook, Access, Open Office, sistemas de gestión empresarial, rotulación vehicular, locales, envases, uniformes, publicidades impresas y digitales, sitios web, redes sociales, sistemas de mensajería instantánea, emails, TV, pegatinas, sellos, bordados serigrafiados, y muchas más superficies y plataformas.<br/> En Líderlogo pensamos por y para ti, para que te olvides del problema del diseño de tu logo y nos lo confíes a nosotros.'
     }, {
-      question: '¿Por qué el pack es ecológico?',
-      response: `Porque hoy en día la comunicación de la empresas  se realiza prácticamente sin necesidad de imprimir, podrás enviar tus facturas, presupuestos, presentaciones de PPT, via email o publicarlas para tu descarga.<br>
-      Las carpetas, tarjetas, hojas de carta y sobres son los elementos que podes llegar a necesitar imprimir y para todo lo que necesites te brindamos formatos de imprenta editables.
+      question: '¿Qué es lo del pack ecológico?',
+      response: `Hoy en día la comunicación de la empresas se realiza prácticamente sin necesidad de imprimir. Es por ello que en Líderlogo también miramos por el medioambiente y estamos concienciados con el planeta.<br/>
+      Con nosotros puedes enviar tus facturas, presupuestos, presentaciones de PPT, etc, a través de email o publicarlas para la descarga.<br/>
+      Ahora bien, las carpetas, tarjetas, hojas de carta y sobres son los elementos que seguramente necesitarás imprimir. Es por ello que en Líderlogo te facilitamos formatos de imprenta editables.
       `
     }, {
-      question: '¿Por qué el pack me hace ahorrar dinero y tiempo?',
-      response: `Porque en cualquier otra agencia deberías abonar 2 y hasta 3 veces más por el mismo servicio de diseño, papelería, merchandising y redes sociales. LiderLogo apoya a emprendedores y pequeñas empresas que adquieren tu logo a que puedan disfrutar del mismo en la presentación profesional de los elementos de tu empresa dentro de un mismo sistema gráfico.
-      Los diseños se entregan en formatos digitales listos para usar.      
+      question: '¿Por qué el pack ecológico de Líderlogo me hace ahorrar dinero y tiempo?',
+      response: `Porque después de tantos años dedicándonos al diseño de logotipos y a las creatividades para marcas, conocemos muy bien a nuestros competidores. Y sabemos que la mayoría de agencias tienen un coste dos y tres veces superior al nuestro por los mismos servicios de diseño, papelería, merchandising y redes sociales.<br/> 
+      En Líderlogo apoyamos a los emprendedores y a las pequeñas empresas para que puedan tener acceso a la adquisición de su logo. Para que puedan disfrutar de los mismos beneficios que otras grandes marcas, pero a un coste inferior. Y que además, puedan tener una imagen corporativa tan profesional como las marcas gigantes con grandes presupuestos.<br/>
+      En Líderlogo entregamos todos los diseños en formatos digitales preparados para utilizar en el mismo momento de su recepción.
       `
     }, {
-      question: '¿Por qué el logo animado distingue mi marca?',
-      response: `El logo animado es lo más moderno que existe en identidad visual corporativa, brinda la dimensión de tiempo y espacio a un diseño que de lo contrario se presenta como “congelado”. Es ideal para las más actuales formas de presentar la marca de manera digital: sitio web, redes sociales, fondos de email, presentaciones multimedia, presentaciones PPT, etc.      
+      question: '¿¿Por qué el logo animado que hacéis en Líderlogo distingue mi marca??',
+      response: `El logo animado es lo más moderno que existe en identidad visual corporativa actualmente.<br/>
+      Favorece la dimensión de tiempo y espacio a un diseño que, de lo contrario, se presenta como “congelado”. Una imagen visual dinámica siempre es mejor que una imagen estática. El logo animado que hacemos en Líderlogo da vida a tus contenidos.<br/>
+      Es perfecto para presentar la marca de manera digital, moderna, actual y dinámica en: tu sitio web, en tus redes sociales, en los fondos de email, en presentaciones multimedia, en presentaciones PPT, etc.<br/>
+      ¿Quieres ser diferente de tu competencia? En Líderlogo creamos y diseñamos tu logo animado para que tu imagen corporativa vaya un paso por delante.
       `
     }, {
-      question: '¿Dónde puedo utilizar el logo animado?',
-      response: `El logo animado se puede utilizar en sitio web, redes sociales, WhasApp, fondos de email, presentaciones multimedia, presentaciones PPT, protectores de pantalla, banners publicitarios, etc.      
+      question: '¿Dónde puedo utilizar mi logo animado?',
+      response: `El logo animado se puede utilizar en tu página web, en tus redes sociales, a través de WhasApp, para fondos de email, en presentaciones multimedia, en presentaciones PPT, como protector de pantalla, en banners publicitarios, etc.      
       `
     }, {
-      question: '¿Es necesario que nos reunamos para contratar el servicio?',
-      response: `Nuestra experiencia de 16 años y decenas de miles de proyectos realizados exitosamente nos indica que no es necesario, nuestra metodología de trabajo es simple y efectiva. Presentamos tres etapas que se llevan a cabo de la siguiente manera, en la primera fase estudiamos todas tus necesidades y preferencias, en la segunda fase es donde creamos y perfeccionamos conceptos hasta que estés 100% conforme y en la tercera etapa es donde descargas tu proyecto en todos los formatos que necesitas para poder utilizarlos con total autonomía e independencia. Conocemos que los proyectos avanzan sólo sobre lo concreto, al recibir el cliente conceptos y perfeccionamientos, soluciones eficientes y pragmáticas de calidad para satisfacer sus necesidades sin tener que esperar a reuniones y ni realizar traslados.       
+      question: '¿Es necesario que nos reunamos para contratar el servicio que necesito?',
+      response: `Nuestra experiencia de más de 16 años y decenas de miles de proyectos realizados de forma impecable y exitosa nos da la seguridad de que no es necesario. La metodología de trabajo en Líderlogo es simple y efectiva en todos los proyectos, tanto personales como profesionales.
+      <br/>
+      En Líderlogo llevamos a cabo tres etapas para tu proyecto:
+      1.    Estudiamos todas tus necesidades, preferencias, estilo y enfoque.
+      2.    Creamos y perfeccionamos los estilos creativos y conceptuales hasta que estés 100% conforme con el diseño.
+      3.    En este punto descargas tu proyecto en todos los formatos que necesites para poder utilizarlos con total autoría.
+      <br/>
+      Damos soluciones eficientes y pragmáticas de calidad para cubrir sus necesidades y satisfacer deseos profesionales sin tener que realizar reuniones ni traslados innecesarios. En Líderlogo nos gusta optimizar el recurso tiempo. No solo el nuestro, si no sobre todo el de nuestros clientes.     
       `
     }, {
-      question: '¿Como me contacto con quien lleva adelante la gestión de mi proyecto?',
-      response: `Lo podes hacer de manera telefónica, vía email, vía chat, vía WhastApp, videoconferencia de Skype, y desde nuestro apartado privado de clientes,  como lo decidas, estamos a tu disposición de lunes a viernes todo el día (no hacemos puente ni cerramos por vacaciones).       
+      question: '¿Como contacto directamente con quien lleva a cabo la gestión de mi proyecto?',
+      response: `Lo puedes hacer de manera telefónica, vía email, vía chat, vía WhastApp, videoconferencia de Skype, y desde nuestro apartado privado de clientes. En Líderlogo te facilitamos los recursos necesarios para tu comodidad.
+      <br/>
+      Nuestro horario es de lunes a viernes todo el día (no hacemos puente ni cerramos por vacaciones).    
       `
     }, {
-      question: '¿Existe un coste adicional a los informados?',
-      response: `No, nuestros precios son cerrados y sin costes adicionales ni ocultos.       
+      question: '¿Existe un coste adicional a los informados previamente por Líderlogo?',
+      response: `en Líderlogo se abona el 50% del coste total al comenzar el proyecto, y el 50% restante al finalizar el servicio.<br/>
+      Los sistemas de pago son a través de tarjeta de crédito o débito de manera segura en nuestro sitio web, o bien a través de teléfono, transferencia, depósito, PayPal, Stripe, etc. Si tienes dudas, nos puedes consultar poniéndote en contacto con nosotros.<br/>
+      En Líderlogo te facilitamos todos los recursos, incluidos los de pago.   
       `
     }, {
       question: '¿Cómo puedo abonar mi proyecto?',
       response: `Se abona el 50% al comenzar y el saldo restante al concluir el servicio. Lo podes abonar con tarjeta de credito o debito de manera segura en nuestro sitio web, por medio de teléfono,  transferencia, deposito, PayPal, Stripe, etc.       
       `
     }, {
-      question: '¿Por qué debe ser LiderLogo mi proveedor? ',
-      response: `Por qué somos una empresa que trabaja con compromiso y calidad desde hace más de una década y media brindando a sus clientes servicios de excelencia a un precio accesible y sin ningún coste adicional. Llevamos adelante tu proyecto de manera personalizada y por medio de profesionales expertos en cada materia, estamos siempre que nos necesitas y brindamos valor a tu empresa.       
+      question: '¿Por qué debe ser LiderLogo mi proveedor?',
+      response: `- Porque Líderlogo somos una empresa que trabaja con compromiso y calidad desde hace más de 16 años.
+      <br/>
+      - Porque ofrecemos a nuestros clientes unos servicios basados en la excelencia a un precio accesible y sin ningún coste adicional.
+      <br/>
+      - Porque llevamos adelante tu proyecto de manera sumamente personalizada y con profesionales especializados en cada materia.
+      <br/>
+      - Porque estamos siempre que nos necesitas.
+      <br/>
+      - Porque damos valor a tu marca y/o empresa. 
+      <br/>
+      - Porque mejoramos la imagen corporativa de tu marca.
+      <br/>
+      - Porque nos involucramos con tu proyecto como si fuera el nuestro propio.
+      <br/>
+      - Porque nos avalan más de 15.000 clientes en estos más de 16 años.
+      <br/>
+      - Porque para trabajar tu proyecto, primero nos gusta conocerte, saber más de ti, de tus inquietudes, de tus retos y ambiciones, no solo tu trabajo, servicios o productos. Es la manera de saber cuál es el mejor diseño para tu marca para poder transmitir tu esencia.
+      <br/>
+      - Porque trabajamos con pasión. Y eso no lo pueden decir todas las marcas. 
       `
     }
   ],
