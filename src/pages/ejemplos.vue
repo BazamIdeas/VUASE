@@ -261,7 +261,7 @@ h3{
     }
     @media all and  (min-width: 1260px) and (max-width: 1900px){
       .img-cuadrada-ejemplos-carousel {
-          height: 292px !important;
+          height: 27rem !important;
       }
     }
 
