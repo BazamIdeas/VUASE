@@ -7,7 +7,7 @@
           <style>
             .top-service-slider .v-carousel {
 
-                height: auto;
+                height: auto !important;
             }
 
             @media (min-width: 320px) and (max-width: 960px) {
@@ -44,7 +44,7 @@
               :key="i">
               <v-layout row wrap class="content-text-service-slider" ref="sliderbody">
                 <v-flex xs12 offset-xs0 md7 class="sliderbody-img">
-                  <img width="100%" :alt="alt" class="mb-2" :src="item.url">
+                  <img  :alt="alt" class="mb-2" :src="item.url">
                 </v-flex>
                 <v-flex xs12 offset-xs0 md5>
                   <v-layout row wrap class="sliderbody-text">
@@ -154,15 +154,14 @@
  
 }
 .v-window.v-carousel {
-    height: 100%;
+    height: 10rem !important; 
 }.layout.content-text-service-slider.row.wrap {
     height: 100%;
 }
 .top-service-slider img {
-
    height: 100%;
 }
-.sliderbody-img{
+.sliderbody-img img{
   height: 100%;
 }
 .top-service-slider .v-btn--small{
@@ -208,6 +207,10 @@
 .service-box-list li {
   padding-left: 0px;
 }
+.v-responsive.v-image.v-carousel__item {
+  height: 100% !important;
+}
+
 
 @media (min-width: 600px) and (max-width: 860px) {
   .content-text-service-slider{

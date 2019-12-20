@@ -317,4 +317,7 @@ h3{
   border:none;
   top: 40%;
 }
+  .v-carousel__prev i, .v-carousel__next i{
+    color:white;
+  }
 </style>
