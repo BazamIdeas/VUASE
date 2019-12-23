@@ -313,6 +313,7 @@ export default {
 }
 .profesional-services-slider {
   height: auto !important;
+  margin-top: -3rem !important;
 }
 .reduce-10-rem {
   margin-top: -10rem !important;
