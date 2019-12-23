@@ -33,9 +33,9 @@
             <v-layout align-center justify-center row class="container-carousel">
               <v-flex style="height: 420px;">
                 <v-carousel 
-                  :interval="'3000'" 
+                  :interval="'3000998'" 
                   hide-controls
-                  style="height: 100%;">
+                  style="height: 100%;" class="nuestro-servicio-carousel">
                   <v-carousel-item v-for="(item, i) in layout.carousel" :key="i"   :transition="'slide-x-transition'"
                   reverse="true"
                   reverse-transition="slide-x-reverse-transition">
@@ -154,8 +154,13 @@
     background-position: center center !important;
     max-height: 100%;
   }
+
 </style>
 <style>
+  .nuestro-servicio-carousel .v-responsive.v-image.v-carousel__item{
+        max-height: 30rem;
+        
+  }
   .container-carousel button {
     color: #a5a5a5 !important;
   }
