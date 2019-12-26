@@ -21,7 +21,7 @@
     <!-- <AppHomeCreativeProccess title="¿Cómo Funciona?"/> -->
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
-          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué te ofrecemos?"  />
+          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué podemos mejorar para la imagen de tu marca"/>
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
               <v-flex xs12 md4 class="ll-op">
@@ -69,7 +69,7 @@
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/16-anios.svg" class="icon-home" alt="Experiencia & Especialización">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Nuestra experiencia enfocada en t y para ti
+                    Nuestra experiencia enfocada en ti y para ti
                   </p>
                 </v-card>
               </v-flex>

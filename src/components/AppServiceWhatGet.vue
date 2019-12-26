@@ -44,7 +44,7 @@
               <v-flex class="ml-2">
                   <img alt="Diseño de logo e imagen corporativa" :src="service.whatYouGet.img"  width="100%"></img>
                   <h3 v-if="!service.whatYouGet.notShowPrice" class="headline font-weight-bold text-uppercase" :style="'color:'+service.whatYouGet.color">
-                    PRECIO CERRADO EN:
+                    NUESTRO PRECIO CERRADO PARA TI:
                   </h3>
                   <v-layout xs12 row d-flex class="mt-2 box-price" v-if="!service.whatYouGet.notShowPrice">
                     <v-flex xs6 text-xs-right v-if="finalPercertage > 0"> 
@@ -74,7 +74,7 @@
                       </v-flex>
                     </v-layout>
                   </v-layout>
-                  <v-btn flat round block style="border:none;" :style="'background: #004e7c; color:white !important;'" class="mt-3 ml-0 btn-simple" :to="url">OBTÉN TU DISEÑO</v-btn>
+                  <v-btn flat round block style="border:none;" :style="'background: #004e7c; color:white !important;'" class="mt-3 ml-0 btn-simple" :to="url">¡QUIERO MI DISEÑO!</v-btn>
               </v-flex>
             </v-layout>
           </v-flex>

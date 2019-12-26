@@ -3,10 +3,10 @@ export const imagenCorporativa = {
   titleSEO: 'Imagen corporativa para empresas',
   descriptionSEO: 'Logo original de tu entera conformidad + papelería  + diseño de productos de merchandising + diseño de redes sociales+logo animado. ¡Comienza tu proyecto ahora!',
   /* ** */
-  list: ['Creación de logo diseñado  desde cero y hasta tu entera conformidad + diseños de tu papelería en formato digital y papel + diseño de productos de merchandising + diseño de tus redes sociales + el diseño de tu logo animado.', 'Creación de logo llamativo y profesional realizado a tu medida entregado en gran variedad de formatos listo para utilizar donde necesites con tu manual de marca y certificado de derechos.', 'Diseño creativo y profesional de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (elije 6 piezas en nuestro menú de 65 opciones)', 'Diseño publicitario de tus perfiles de redes sociales Facebook, Instagram, Linkedin, Youtube.', 'Logo animado para brindarle vida y movimiento a tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla'],
-  title: 'COMBO PROFESIONAL. LOGOTIPO, IMAGEN CORPORATIVA Y LOGO ANIMADO',
+  list: ['Creamos el diseño de tu logo desde cero. En Líderlogo diseñamos las creatividades de tu papelería en formato digital y en formato papel. Diseñamos todos los productos de merchandising para tu empresa. Diseñamos los contenidos de tus redes sociales. Creamos y diseñamos tu logo animado para que tu marca destaque ante la competencia.', 'Creamos el logo profesional y personalizado a medida para tu marca. En Líderlogo te lo entregamos en diferentes formatos para utilizar en las plataformas que necesites, junto con tu manual de marca y certificado de derechos.', 'Nuestros diseños creativos y profesionales de tarjetas, hojas de carta, facturas, sobres, carpetas, fondos de email, gorras, bolígrafos, tazas, etiquetas y mucho más (puedes elegir 6 piezas en nuestro menú de 65 opciones diferentes) harán que tu marca destaque por encima de las demás.', 'En Líderlogo creamos el diseño publicitario de los contenidos para tus redes sociales: Facebook, Instagram, Linkedin y Youtube.', '¿Quieres tu logo animado para dar vida a tus diseños y contenidos? En Líderlogo te lo diseñamos y creamos para tu sitio web, banners digitales, perfil de WhatsApps y protectores de pantalla.', 'Nuestro precio no viene con sorpresas. Te damos un precio cerrado de 298 euros.'],
+  title: '¡Tenemos el Equipo Ganador para tu marca! Logotipo, imagen corporativa y logo animado',
   oferta: 'AHORRA 37%',
-  description: `<strong style="font-size: 16px">¿Buscando presentar tu negocio con éxito? Pon la imagen de tu marca en manos de expertos.</strong> <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.`,
+  description: `<strong style="font-size: 16px">Queremos que la imagen de tu marca tenga éxito. Ponla en nuestras manos para que lo logremos juntos.</strong> <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.`,
   descriptionPrice: '<strong style="font-size: 16px">¿Buscando presentar tu negocio con éxito? Pon la imagen de tu marca en manos de expertos.</strong> <br>En Liderlogo diseñamos el logo, la papelería y las redes sociales que necesitas para sobresalir.<br><br>Qué incluye:</br>',
   shortDescription: `En Liderlogo diseñamos tu logo, creamos la papelería y diseñamos los contenidos de tus redes sociales para no dejar a nadie indiferente con la imagen corporativa de tu marca.`,
   icon: '/icons/pack-identidad.svg',
@@ -14,32 +14,32 @@ export const imagenCorporativa = {
   listPrices: ['', '', '', '', '', '', '', '', '', ''],
   whatWeOffer: [
     {
-      title: 'LOGO, PAPELERÍA Y MERCHANDISING, 100% ORIGINAL',
-      description: 'Creaciones a medida, originales, únicas y llamativas.',
+      title: 'DISEÑOS ÚNICOS PARA TU MARCA, LOGO, PAPELERIA Y MERCHANDISING',
+      description: 'Toda la creatividad de tu logo en nuestras manos',
       icon: '/icons/logo-unico-original.svg'
     },
     {
-      title: 'PROPUESTAS ILIMITADAS',
-      description: 'Conceptos y perfeccionamientos hasta tu entera conformidad, a precio cerrado.',
+      title: 'PROPUESTAS INFINITAS',
+      description: 'Nuestro equipo de creativos piensa por tí.',
       icon: '/icons/propuestas-ilimitadas.svg'
     },
     {
-      title: 'DISEÑOS DE UN DÍA PARA OTRO',
-      description: 'Creamos conceptos y perfeccionamientos en 24 hs. ',
+      title: 'DISEÑOS DE HOY PARA MAÑANA',
+      description: 'Somos mas rápidos que Amazon',
       icon: '/icons/un-dia-para-el-otro.svg'
     },
     {
-      title: 'ATENCION PERSONALIZADA',
-      description: 'Un profesional liderando tu proyecto a disposición siempre.',
+      title: 'ATENCIÓN PERSONALIZADA',
+      description: 'Eres parte de nuestra familia',
       icon: '/icons/atencion-personalizada.svg'
     }, {
-      title: 'GARANTÍA DE CONFORMIDAD 100%',
-      description: 'En caso de disconformidad, se reintegra el dinero sin hacer preguntas.',
+      title: 'CONFÍA EN NOSOTROS',
+      description: 'Te garantizamos implicación de todo el equipo. Si no quedas conento, te devolvemos el dinero.',
       icon: '/icons/garantia-de-conformidad.svg'
     },
     {
-      title: '+40 PROFESIONALES',
-      description: 'Tu proyecto en manos de expertos especializados',
+      title: 'SOMOS UNA FAMILIA DE + DE 40 PROFESIONALES',
+      description: 'Deja tu proyecto en nuestras manos. Cuidemos tu marca como si fuera nuestra.',
       icon: '/icons/equipo-interidisciplinario.svg'
     }
   ],
@@ -426,16 +426,16 @@ export const imagenCorporativa = {
     ]
   },
   packs: {
-    title: 'Aprovecha nuestros servicios en:',
+    title: 'Aprovechate de nuestros servicios especiales para tu negocio:',
     first: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
-      title: 'DÍPTICO',
+      title: 'DÍPTICO PARA TU MARCA',
       url: '/nuestros-servicios/diptico',
       brief: '/nuestros-servicios/diptico/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/addons-logo+web.png',
-      title: 'LOGO + WEB',
+      title: 'COMBO CON TU LOGO Y PÁGINA WEB',
       url: '/nuestros-servicios/logo-y-pagina-web',
       brief: '/nuestros-servicios/logo-y-pagina-web/brief/disenos'
     }
