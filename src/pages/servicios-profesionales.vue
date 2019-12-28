@@ -3,32 +3,16 @@
   <section class="profesional-services mt-5">
     <div class="hidden-divider hidden-sm-only hidden-xs-only"></div>
     <AppProServicesCarousel />
-    <v-container fluid grid-list-md class="">
-      <v-layout row wrap class="profesional-services-body ">
-        <v-flex xs12 offset-md2 md8 class="mb-5">
-          <v-layout row wrap class="custom-alignment ">
-            <v-flex
-              xs12
-              md6
-              class="pl-5 py-5 hidden-sm-only hidden-xs-only"
-              style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;"
-            >
-              <img
-                alt="GESTIONAMOS TUS PROYECTOS"
-                src="/images/icons/pro_services_1.png"
-                class="ml-5"
-              />
-
-              <AppHeading
-                number="2"
-                title="Gestionamos tus proyectos"
-                size="display-1 xs-headline"
-                align="left"
-                margin="pl-5 mb-2"
-              />
-              <p
-                class="pl-5 body-2"
-              >Nuestro equipo elabora y acompaña paso a paso tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia hoy tu negocio.</p>
+    <v-container fluid grid-list-md>
+      <v-layout row wrap>
+        <v-flex xs12 offset-md1 md10 class="mb-5">
+          <v-layout row wrap>
+            <v-flex xs12 md6 class="pl-5 py-5 hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
+              <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/icons/pro_services_1.png" class="ml-5 mt-5">
+              <AppHeading number="2" title="Gestionamos tus proyectos para que tengas tiempo para ti" size="display-1 xs-headline" align="left" margin="pl-5 mb-2"/>
+              <p class="pl-5 body-2">
+                El equipo de profesionales de Líderlogo elaboramos y acompañamos paso a paso tus proyectos hasta tu total satisfacción y la de tus clientes. Te ayudamos para que no tengas que pensar ni crear. Déjanos la creatividad, el talento, la experiencia y las herramientas a nosotros. Haz crecer HOY tu negocio. Mañana es tarde.
+              </p>
             </v-flex>
             <v-flex
               xs12
@@ -65,27 +49,12 @@
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="mb-5">
           <v-layout row wrap>
-            <v-flex
-              xs12
-              md6
-              class="hidden-md-and-up"
-              style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;"
-            >
-              <img
-                alt="Privacidad Garantizada"
-                src="/images/icons/pro_services_2.png"
-                class="ml-5 mt-2"
-              />
-              <AppHeading
-                number="2"
-                title="Privacidad Garantizada"
-                size="display-1 xs-headline"
-                align="left"
-                margin="pl-5 mb-2"
-              />
-              <p
-                class="pl-5 body-2"
-              >Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre</p>
+            <v-flex xs12 md6 class="hidden-md-and-up" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
+              <img alt="Privacidad Garantizada" src="/images/icons/pro_services_2.png" class="ml-5 mt-2">
+              <AppHeading number="2" title="Te garantizamos total privacidad" size="display-1 xs-headline" align="left" margin="pl-5 mb-2"/>
+              <p class="pl-5 body-2">
+                ¿Quieres que en Líderlogo trabajemos para ti con marca blanca? Es la forma más sencilla y profesional para que presentes los proyectos a tus clientes como si fueran tuyos propios.<br/> Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes, como si fueran tuyos aplicando el margen que tu decidas, no nosotros. Con Líderlogo ganas siempre.
+              </p>
             </v-flex>
             <v-flex xs12 md6>
               <img
@@ -94,59 +63,24 @@
                 width="100%"
               />
             </v-flex>
-            <v-flex
-              xs12
-              md6
-              class="pl-5 py-5 text-xs-right hidden-sm-only hidden-xs-only"
-              style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;"
-            >
-              <img
-                alt="Privacidad Garantizada"
-                src="/images/icons/pro_services_2.png"
-                class="ml-5 mt-2"
-              />
-              <AppHeading
-                number="2"
-                title="Privacidad Garantizada"
-                size="display-1 xs-headline"
-                align="right"
-                margin="pl-5 mb-2"
-              />
-              <p
-                class="pl-5 body-2"
-              >Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre</p>
+            <v-flex xs12 md6 class="pl-5 py-5 text-xs-right  hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
+              <img alt="Privacidad Garantizada" src="/images/icons/pro_services_2.png" class="ml-5 mt-2">
+              <AppHeading number="2" title="Te garantizamos total privacidad" size="display-1 xs-headline" align="right" margin="pl-5 mb-2"/>
+              <p class="pl-5 body-2" >
+                Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre
+              </p>
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md2 md8 class="mb-2 mb-xs-0">
-          <v-layout row wrap class="reduce-space">
-            <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only">
-              <img
-                alt="Recomendada por perfeccionistas"
-                src="/images/icons/pro_services_3.png"
-                class="ml-5 mt-5"
-              />
-              <AppHeading
-                number="2"
-                title="Recomendada por perfeccionistas"
-                size="display-1 xs-headline"
-                align="left"
-                margin="pl-5"
-              />
+        <v-flex xs12 offset-md1 md10 class="mb-2 mb-xs-0">
+          <v-layout row wrap>
+            <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only" >
+              <img alt="Recomendada por perfeccionistas" src="/images/icons/pro_services_3.png" class="ml-5 mt-5">
+              <AppHeading number="2" title="Recomendada por profesionales exigentes" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
-            <v-flex xs12 md6 class="hidden-md-and-up">
-              <img
-                alt="Recomendada por perfeccionistas"
-                src="/images/icons/pro_services_3.png"
-                class="ml-5 mt-5"
-              />
-              <AppHeading
-                number="2"
-                title="Recomendada por perfeccionistas"
-                size="display-1 xs-headline"
-                align="left"
-                margin="pl-5"
-              />
+            <v-flex xs12 md6 class="hidden-md-and-up" >
+              <img alt="Recomendada por perfeccionistas" src="/images/icons/pro_services_3.png" class="ml-5 mt-5">
+              <AppHeading number="2" title="Recomendada por profesionales exigentes" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
             <v-flex xs12 offset-md1 md10>
               <v-carousel hide-delimiters class="profesional-services-slider">
@@ -176,44 +110,13 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex
-          xs12
-          offset-md2
-          md8
-          class="my-5 text-xs-center reduce-10-rem hidden-sm-only hidden-xs-only"
-        >
-          <AppHeading
-            number="2"
-            title="¿Listo para hacer crecer tu negocio? "
-            size="display-1"
-            align="center"
-            margin="pl-5 mb-2"
-          />
-          <v-btn
-            to="/contacto"
-            :large="true"
-            flat
-            outline
-            class="px-2"
-            style="background-color: #d00606 !important; border-color: #B80000; color: white;"
-          >Solicita ahora una llamada</v-btn>
+        <v-flex xs12 offset-md2 md8 class="my-5 text-xs-center hidden-sm-only hidden-xs-only">
+          <AppHeading number="2" title="¿Estás preparado para hacer crecer tu negocio ahora?" subtitle="¡Nosotros te ayudamos a conseguirlo!" size="display-1" align="center" margin="pl-5 mb-2"/>
+          <v-btn to="/contacto" :large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">¡TE LLAMAMOS!</v-btn>
         </v-flex>
-        <v-flex xs12 offset-md2 md8 class="mb-2 text-xs-center hidden-md-and-up">
-          <AppHeading
-            number="2"
-            title="¿Listo para hacer crecer tu negocio? "
-            size="display-1"
-            align="center"
-            margin=" mb-2"
-          />
-          <v-btn
-            to="/contacto"
-            :large="true"
-            flat
-            outline
-            class="px-2"
-            style="background-color: #d00606 !important; border-color: #B80000; color: white;"
-          >Solicita ahora una llamada</v-btn>
+        <v-flex xs12 offset-md2 md8 class="mb-2 text-xs-center  hidden-md-and-up">
+          <AppHeading number="2" title="¿Estás preparado para hacer crecer tu negocio ahora?" subtitle="¡Nosotros te ayudamos a conseguirlo!" size="display-1" align="center" margin=" mb-2"/>
+          <v-btn to="/contacto" :large="true" flat outline class="px-2" style="background-color: #d00606 !important; border-color: #B80000; color: white;">¡TE LLAMAMOS!</v-btn>
         </v-flex>
       </v-layout>
     </v-container>

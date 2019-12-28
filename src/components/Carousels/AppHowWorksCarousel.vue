@@ -6,11 +6,10 @@
             <div class="layers-container">
                 <div class="section">
                     <div id="hc-layer-1-item-1">
-                        <h1>¿Cómo <br class="hidden-sm-and-down">funciona?</h1>
+                        <h1>¿Cómo funcionamos <br class="hidden-sm-and-down">en Líderlogo?</h1>
                     </div>
                     <div id="hc-layer-2-item-1">
-                        <h3>Hacemos un gran trabajo creativo gracias a nuestra metodología de tres etapas y
-            nuestro equipo de expertos. Si quieres recibir un consejo <nuxt-link to="/contacto"><span style="color: #1976d2;">ponte en contacto</span></nuxt-link> con uno de nuestros asesores.</h3>
+                        <h3>Hacemos un gran trabajo basado en la creatividad, la perfección, la empatía con el cliente y la experiencia de los años que nos avalan a través de nuestra propia metodología de tres etapas. Si quieres recibir sugerencias profesionales de tu proyecto, <nuxt-link to="/contacto"><span style="color: #1976d2;">llámanos o escríbenos</span></nuxt-link> para que uno de los profesionales de Líderlogo te asesore de forma personalizada.</h3>
                     </div>
                 </div>
                 <div class="section">  

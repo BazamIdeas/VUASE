@@ -31,9 +31,9 @@
               </div>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
-              <p class="subheading font-weight-medium" v-html="serviceObject.dataService.description "></p>
+              <p class="subheading font-weight-medium" v-html="serviceObject.dataService.descriptionPrice "></p>
               <ul>
-                <li v-for="(item, i) in serviceObject.dataService.list" :key="i" class="my-2 subheading font-weight-medium">{{item}}</li>
+                <li v-for="(item, i) in serviceObject.dataService.listPrices" :key="i" class="my-2 subheading font-weight-medium">{{item}}</li>
               </ul>
               <div>
                 <v-btn flat :to="'/nuestros-servicios/'+serviceObject.slug" class="px-2" small style="color:#676767">
@@ -45,11 +45,11 @@
           </v-layout>
         </v-flex>
         <v-flex xs12 offset-md2 md8 class="my-5 mt-xs-0 pt-xs-0 text-xs-center">
-          <AppHeading style="color: #303032;" class="hidden-sm-and-down font-weight-bold text-xs-center mb-4" number="2" size="display-1" title="¿Eres agencia o revendedor? Descubre nuestro especial para profesionales del sector." />
+          <AppHeading style="color: #303032;" class="hidden-sm-and-down font-weight-bold text-xs-center mb-4" number="2" size="display-1" title="Si eres una agencia o un revendedor te presentamos nuestro especial para profesionales." />
 
           <AppHeading style="color: #303032;" class="hidden-md-and-up font-weight-bold text-xs-center mb-4" number="2" size="display-1" title="¿Eres agencia o revendedor?" />
 
-          <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">CONOCER MÁS</v-btn>
+          <v-btn to="/servicios-profesionales" flat outline class="px-2" style="background-color: #303032 !important; border-color: #303032; color: white;">¡QUIERO SABER MÁS!</v-btn>
         </v-flex>
  
           <AppContactForm  />

@@ -3,11 +3,14 @@ export const flyer = {
   titleSEO: 'Flyers y postales creativas para tu negocio',
   descriptionSEO: 'Creación de Flyers Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'Flyer',
-  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
-  description: `Flyers y postales creativas para tu negocio`,
+  title: '¡Quiero tener el diseño de mi Flyer!',
+  list: ['Creamos tus diseños 100% únicos y exclusivos', 'Diseñamos creaciones a medida y de forma ilimitada para que puedas elegir un abanico inmenso de diseños', 'Creamos tus diseños en 24 horas', 'Preparamos tu flyer en formato digital listo para utilizarse digitalmente o impreso', 'Pensarás que es un regalo. Te damos un precio cerrado de 129 euros'],
+  description: `En Líderlogo sabemos que no todo el mundo es digital. Y que el marketing y la publicidad convencional no han muerto. Siguen presentes en los negocios actuales para un público que su día a día también es analógico.<br/>Es por ello que nuestro equipo diseña y crea flyers y postales creativas para tu negocio, tanto digital como offline.<br/><br/>Qué incluye nuestra creación de flyers y postales:`,
+  descriptionPrice: '<strong style="font-size: 16px">Flyers y postales creativas para tu negocio</strong><br><br>Qué incluye:</br>',
   shortDescription: `Flyers y postales creativas para tu negocio`,
   icon: '/icons/flyer.svg',
+  listServices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
+  listPrices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
@@ -40,13 +43,13 @@ export const flyer = {
     color: '#3566B2',
     columns: [
       [{
-        title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `El diseño gráfico y publicitario de tu flyer promocional listo para imprimir y utilizar en medios digitales (redes sociales, WhatsApp, email y sitio web)<br>
-        Las medidas habituales para el formato impreso son de una de 10.5 x 15 cm, 15 x 21 cm, también se pueden diseñar a la medida que necesites.`,
+        title: '¿UN SOLO FORMATO? NO, GRACIAS. DISEÑAMOS EN DIVERSOS FORMATOS',
+        description: `En Líderlogo crearemos el diseño gráfico y publicitario de tu flyer promocional listo para imprimir y utilizar en medios digitales    (redes sociales, WhatsApp, email y tu página web).<br>
+        Te recomendamos las medidas habituales para el formato impreso, que son de 10.5 x 15 cm, 15 x 21 cm. Pero como en Líderlogo nos adaptamos a tus necesidades, también podemos diseñar tu flyer en la medida que necesites y mejor vaya con tu imagen de marca y tu empresa.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
-          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material que necesites para tu negocio.',
+          '<b>EPS</b> archivo vectorial editable utilizado en imprentas y compatible con diferentes programas de diseño.',
           '<b>PDF</b> Editable'
         ],
         icon: '/icons/flyer.svg'

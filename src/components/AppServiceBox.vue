@@ -34,6 +34,7 @@
       <p class="body-2 font-weight-medium">{{description}}</p>
     </v-flex>
     <v-flex xs12 v-if="list && list.length > 0 && list[0] != ''" class="service-box-list">
+      <h4 v-if="url !='perfil-redes-sociales'">Que incluye: </h4>
       <ul :class="{ 'outstanding': outstanding }">
         <li v-for="(item, i) in list" :key="i" class="my-3 body-2 font-weight-medium">{{item}}</li>
       </ul>

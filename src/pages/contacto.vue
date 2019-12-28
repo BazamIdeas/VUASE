@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-container fluid grid-list-md class="mt-5 pt-5 pb-0">
-          <AppContactForm />
+      <AppContactForm :contactPage="true"/>
     </v-container>
   </section>
 </template>
@@ -25,7 +25,7 @@
       return {
         alt: 'agencia de diseño grafico',
         description: 'Solicite una consulta profesional de diseño. Es gratis y no hay obligación de compra. Tenemos más de 15 años de experiencia diseñando marcas',
-        title: 'Agencia de diseño gráfico'
+        title: 'Consulta gratuita a agencia de diseño gráfico'
       }
     }
   }

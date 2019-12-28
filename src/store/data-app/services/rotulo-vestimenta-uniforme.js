@@ -6,8 +6,11 @@ export const rVestimenta = {
   list: ['Diseño corporativo de uniformes laborales.', 'Creaciones profesionales, de máxima calidad y ajustes ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo.', 'Tu diseño listo para bordar y/o serigrafiar en tus uniformes.'],
   title: 'Diseño de uniformes',
   description: `La indumentaria es parte esencial de la identidad corporativa de tu negocio y todos la querrán lucir.`,
+  descriptionPrice: '<strong style="font-size: 16px">La humanización de una marca empieza por el equipo humano que la crea. Haz que tus trabajadores sean la imagen de empresa vistiendo con la identidad de tu negocio.</strong><br><br>Qué incluye:</br>',
   shortDescription: `La indumentaria es parte esencial de la identidad corporativa de tu negocio y todos la querrán lucir.`,
   icon: '/icons/rotulo-vestimenta.svg',
+  listServices: ['Diseño corporativo de uniformes laborales.', 'Creaciones profesionales, de máxima calidad y ajustes ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo.', 'Tu diseño listo para bordar y/o serigrafiar en tus uniformes.'],
+  listPrices: ['Deja que el diseño corporativo de tus uniformes laborales hable de tu negocio en las personas de tu equipo que hacen la marca.', 'Creamos y diseñamos para ti con la máxima calidad y trabajamos los ajustes de forma  ilimitada donde incluir nuestra imaginación. ', 'En Líderlogo te entregamos los fotomontajes reales de tus diseños durante el proceso creativo para que estés tranquilo hasta tener el diseño final.', 'Te entregamos el diseño totalmente listo y preparado para bordar y/o serigrafiar en tus uniformes profesionales.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',

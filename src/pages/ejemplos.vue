@@ -87,7 +87,7 @@
       return {
         urlHosting: 'https://api.liderlogo.com/v1/images/slug/',
         alt: 'Ejemplos de nuestros trabajos profesionales',
-        h1: 'Ejemplos de nuestros trabajos profesionales',
+        h1: 'Descubre algunos de nuestros trabajos para marcas triunfadoras',
         h2: false,
         description: 'Ejemplos de logos, imagen corporativa y páginas web, tenemos más de 15 años de experiencia diseñando marcas',
         title: 'Ejemplos de nuestros trabajos profesionales',

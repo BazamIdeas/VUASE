@@ -80,8 +80,8 @@
             </v-layout>
           </v-flex>
           <v-flex>
-            <v-btn color="mt-5" to="/nuestros-servicios" class="boton-res elevation-0 white--text" :style="'background-color: ' + color" style="line-height: 14px;" wrap>
-              Descubre todas las <br>categorias de servicios
+            <v-btn color="mt-5" to="/nuestros-servicios" large class="boton-res elevation-0 white--text" :style="'background-color: ' + color" style="border-radius:25px; line-height: 14px;" wrap>
+              Descubre todo lo que <br/> podemos hacer por ti
             </v-btn>
           </v-flex>
         </v-layout>

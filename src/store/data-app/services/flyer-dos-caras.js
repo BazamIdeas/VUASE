@@ -3,11 +3,14 @@ export const flyerDosCaras = {
   titleSEO: 'Flyer llamativos con para tu negocio en ambas caras',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu Flyer , te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'Flyer dos caras',
-  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
-  description: `Flyer llamativos con para tu negocio en ambas caras`,
+  title: 'Tu Flyer a dos caras siempre es mejor para tu negocio',
+  list: ['Creamos tus diseños 100% únicos, personalizados y exclusivos', 'Diseñamos trabajos a medida y de forma ilimitada para que puedas elegir entre muchos diseños diseños', 'Creamos tus diseños en 24 horas. Garantizamos un trabajo rápido, ágil, de calidad y eficiente', 'Preparamos tu flyer en formato digital listo para utilizarse digitalmente o impreso', 'Pensarás que el precio es una broma, pero no lo es. Nuestro precio cerrado para ti es de 193 euros'],
+  description: `Sabemos que a veces una sola cara no es suficiente para incluir toda la información de tu negocio. Es por ello que en Líderlogo creamos flyers llamativos, creativos, únicos y personalizados para tu negocio en ambas caras. <br/><br/>Mira todo lo que incluye y el precio tan atractivo que tenemos para ti con tu flyer a dos caras:`,
+  descriptionPrice: '<strong style="font-size: 16px">Flyer llamativos con para tu negocio en ambas caras</strong><br/><br/>Qué incluye:</br>',
   shortDescription: `Flyer llamativos con para tu negocio en ambas caras`,
   icon: '/icons/flyer-dos-caras.svg',
+  listServices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
+  listPrices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu flyer en formato digital listo para usarse digitalmente o impreso.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
@@ -197,16 +200,16 @@ export const flyerDosCaras = {
     ]
   },
   packs: {
-    title: 'Aprovecha nuestros servicios en',
+    title: 'Descubre qué podemos mejorar por ti con',
     first: {
       image: '/images/pages/packs/flyer-retro-cafe.png',
-      title: 'FLYER',
+      title: 'EL FLYER PARA MEJORAR LA IMAGEN DE TU NEGOCIO',
       url: '/nuestros-servicios/flyer',
       brief: '/nuestros-servicios/flyer/brief/estilos'
     },
     last: {
       image: '/images/pages/packs/pack-diptico-gesvetia.png',
-      title: 'DÍPTICO',
+      title: 'QUE TUS CLIENTES SEPAN MÁS DE TI CON TU DÍPTICO',
       url: '/nuestros-servicios/diptico',
       brief: '/nuestros-servicios/diptico/brief/estilos'
     }

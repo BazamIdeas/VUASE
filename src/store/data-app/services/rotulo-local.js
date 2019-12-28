@@ -6,8 +6,11 @@ export const rLocal = {
   list: ['Diseño publicitario impactante', 'Conceptos y perfeccionamientos ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo del frente completo de tu local.', 'Entrega del diseño final en plantillas de corte digital para tu rotulista.'],
   title: 'Rótulo Local',
   description: `El frente del negocio en fundamental para que los clientes deseen entrar y comprar.`,
+  descriptionPrice: '<strong style="font-size: 16px">Persuade y motiva a entrar en tu local a clientes y futuros clientes con el rótulo de tu negocio.</strong><br><br>Qué incluye:</br>',
   shortDescription: `El frente del negocio en fundamental para que los clientes deseen entrar y comprar.`,
   icon: '/icons/rotulo-local.svg',
+  listServices: ['Diseño publicitario impactante', 'Conceptos y perfeccionamientos ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo del frente completo de tu local.', 'Entrega del diseño final en plantillas de corte digital para tu rotulista.'],
+  listPrices: ['Te garantizamos un diseño impactante que llame la atención a tus clientes y futuros clientes.', 'Creaciones ilimitadas. ¿Qué significa esto? Que hasta que no estés convencido de que es el diseño perfecto para tu negocio, no paramos de mejorar las versiones anteriores.', 'No te preocupes por cómo va a quedar, porque te mandaremos fotomontajes de tus diseños durante el proceso creativo de la fachada de tu local.', 'Te facilitamos el trabajo para tu rotulista. Te entregamos el diseño final con plantillas de corte digital.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',

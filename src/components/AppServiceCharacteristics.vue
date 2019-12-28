@@ -15,7 +15,7 @@
 						<div class="characteristic">
 							<img alt="Servicio Liderlogo" height="70px" width="80px" :src="item.icon" class="mb-3 mt-3 ">
                             <div class="mb-2">
-                                <h3 style="font-size:18px;" class="font-weight-bold" color="dark" :class="{'px-5': list.length <= 6}">{{ item.title }}</h3> 
+                                <h3 style="font-size:18px;" class="font-weight-bold" color="dark" :class="{'px-2': list.length <= 6}">{{ item.title }}</h3> 
                             </div>
 							<span class="body-2 mb-2" >{{ item.description }}</span>
 						</div>

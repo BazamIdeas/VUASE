@@ -3,11 +3,14 @@ export const publicidad = {
   titleSEO: 'Diseño publicitario profesional',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu publicidad, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'Publicidad',
-  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu publicidad en formato digital listo para usarse digitalmente o impreso.'],
-  description: `Comunica tu negocio donde necesites y que tu negocio crezca`,
+  title: 'Haz Publicidad para destacar tu negocio o marca personal',
+  list: ['Cremos diseños 100% exclusivos y únicos para tu marca o negocio', 'Todas las creaciones están hechas a medida. Pero además, ¡de forma ilimitada!', '¡Te entregamos tus diseños en 24 horas! Nadie lo entrega tan rápido y con tanta calidad', 'En Líderlogo te entregamos la publicidad de tu negocio en formato digital preparado para utilizar digitalmente o impreso', 'Esperamos que el precio te emocione y motive, porque estamos deseando trabajar para ti por un precio cerrado de 199 euros'],
+  description: `Comunicar tu negocio o tu marca personal es cada día más complicado. En Líderlogo lo sabemos, y por ello te ofrecemos un servicio para solucionar tus problemas de publicidad. Mira todo lo que estamos dispuestos a hacer por ti y para hacer crecer tu marca o empresa.`,
+  descriptionPrice: '<strong style="font-size: 16px">Comunica tu negocio donde necesites y que tu negocio crezca</strong><br><br>Qué incluye:</br>',
   shortDescription: `Comunica tu negocio donde necesites y que tu negocio crezca`,
   icon: '/icons/publicidades.svg',
+  listServices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu publicidad en formato digital listo para usarse digitalmente o impreso.'],
+  listPrices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu publicidad en formato digital listo para usarse digitalmente o impreso.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',
@@ -40,13 +43,13 @@ export const publicidad = {
     color: '#5690CC',
     columns: [
       [{
-        title: 'DISEÑO EN DIVERSOS FORMATOS',
-        description: `El diseño gráfico y publicitario de tu publicidad lista para ser utilizada en revistas, periódicos, guías, redes sociales, sitios webs y WhatsApp. Las medidas son adaptan a las necesidades del cliente en cada proyecto.`,
+        title: 'TE ENTREGAMOS TUS DISEÑOS EN MUCHOS FORMATOS',
+        description: `En Líderlogo somos conocedores del mercado. Sabemos que la competencia es una barrera en algunos casos. Para ello, el diseño gráfico de tu publicidad es importante para destacar la imagen de tu marca ante tus competidores.<br/><br/>Los creativos y profesionales de Líderlogo te entregamos tu publicidad lista para utilizar en revistas, periódicos, guías, redes sociales, páginas webs y WhatsApp. Adaptamos las medidas a tus necesidades en cada proyecto.`,
         items: [
           '<b>JPG</b> archivo en formato de imagen para impresión y aplicación web.',
-          '<b>AI</b> archivo vectorial editable del programa Adobe illustrator, imprimible en cualquier tamaño y material.',
-          '<b>EPS</b> archivo vectorial editable comunmente utilizado en imprentas y compatible con diferentes programas de diseño.',
-          '<b>PDF<b> editable'
+          '<b>AI</b> archivo vectorial editable en Adobe illustrator, imprimible en cualquier tamaño y material que necesites.',
+          '<b>EPS</b> archivo vectorial editable, habitualmente utilizado en imprentas y compatible con diferentes programas de diseño.',
+          '<b>PDF<b> editable para que puedas retocarlo tú personalmente en caso de que lo necesites.'
         ],
         icon: '/icons/publicidades.svg'
       }]

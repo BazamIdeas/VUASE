@@ -4,7 +4,7 @@
     <v-container grid-list-md text-xs-center class="px-0" style="background: white; border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);" >
       <v-layout row wrap align-center class="mx-0">
         <v-flex xs12 md7>
-           <h2 class="title font-weight-medium mb-2">Suscríbete a nuestro newsletter</h2>
+           <h2 class="title font-weight-medium mb-2">Sé el primero en descubrir nuestras novedades en la Newsletter</h2>
         </v-flex>
         <v-flex xs12 md5>
           <appNewsletterForm />

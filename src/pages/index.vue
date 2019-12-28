@@ -2,29 +2,32 @@
   <section class="content">
     <!-- <img src="/images/pages/franja_home.svg" alt="" style="position: absolute; width: 90%;"> -->
     <AppHomeCarousel :alt="alt" :interval="3000" theme="2" />
-   
     <!-- PORTFAFOLIO -->
-    <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
-      ¡Logos, Papelería, Webs, Apps y mucho más!
-    </h2>
+    <v-layout row wrap align-center>
+      <v-flex d-flex xs12 offset-md1 md10 class="pt-4">
+        <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
+          ¡Te van a encantar todos nuestros logos, diseño web, nuestras Apps a medida y la cantidad incalculable de Papelería que podemos crear para ti!
+        </h2>
+      </v-flex>
+    </v-layout>
 
     <AppExamplesSlider  :hover-info="true" :alt="alt" :examples="sliderExamples" hovered="true" shadow="true" puntos="true" item-width="320" item-height="320"  class="mb-5 pb-5" />
 
     <!-- QUE NECESITAS -->
-    <AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
+    <AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Tu negocio está adaptado para las necesidades de tus clientes. ¿Por qué tus diseños no? La esencia de tu negocio no es solo lo que les ofreces con tus productos o servicios, si no también lo que estimula su sentido visual para enamorarse de tu marca." />
     <AppServicesGrid color="#F29F01" class="mb-4 pt-0"/>
     
     <!-- <AppHomeCreativeProccess title="¿Cómo F98yunciona?"/> -->
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
-          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué te ofrecemos?"  />
+          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué podemos mejorar para la imagen de tu marca"/>
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
               <v-flex xs12 md4 class="ll-op">
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/logo-unico-original.svg" class="icon-home" alt="Diseños profesionales a la medida">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Diseños profesionales a la medida
+                    Diseños a medida para tu negocio o marca
                   </p>
                 </v-card>
               </v-flex>
@@ -32,7 +35,7 @@
                 <v-card flat class="px-4 my-4 ll-op text-xs-center" color="transparent">
                   <img src="/icons/atencion-personalizada-2.svg" class="icon-home" alt="Atención profesional personalizada">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Atención profesional personalizada
+                    Atención personalizada, que para eso eres parte de nuestra familia
                   </p>
                 </v-card>
               </v-flex>
@@ -40,7 +43,7 @@
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/un-dia-para-el-otro.svg" class="icon-home" alt="Diseños de un dia para otro">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Diseños de un día para otro
+                    Somos mas rápidos de Amazon.<br/> Diseños de un día para el otro
                   </p>
                 </v-card>
               </v-flex>
@@ -48,7 +51,7 @@
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/propuestas-ilimitadas.svg" class="icon-home" alt="Propuestas ilimitadas">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Propuestas ilimitadas
+                    Propuestas infinitas. Pensamos por ti
                   </p>
                 </v-card>
               </v-flex>
@@ -56,7 +59,7 @@
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/garantia-de-conformidad.svg" class="icon-home" alt="Garantía de conformidad">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Garantía de conformidad
+                    Confiarás en nosotros. Te lo garantizamos
                   </p>
                 </v-card>
               </v-flex>
@@ -65,7 +68,7 @@
                 <v-card flat class="px-4 my-4 text-xs-center" color="transparent">
                   <img src="/icons/16-anios.svg" class="icon-home" alt="Experiencia & Especialización">
                   <p class="subheading font-weight-medium text-xs-center dark-blue--text">
-                    Experiencia & Especialización
+                    Nuestra experiencia enfocada en ti y para ti
                   </p>
                 </v-card>
               </v-flex>
@@ -77,20 +80,31 @@
       <v-layout row wrap>
         <!-- TESTIMONIOS -->  
         <AppTestimony :alt="alt" width="mt-5 mb-5 xs12 offset-md1 md10" :list="testimonies" />
-        <v-flex xs12 md7>
-          <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
-                   <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
-         <img :alt="alt" class="profesional-services-img" data-src="/images/pages/profesional_services.jpg" >
-                </div> 
-        </v-flex>
-        <v-flex xs12 md4 class="mt-5 pt-5 mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
-          <div>
-            <h2 class="font-weight-bold mb-4 mt-5 text-xs-center xs-text-size-30 hidden-md-and-down" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
-            <p class="text-xs-center mb-5 font-weight-medum">
-              Amplia tu portfolio de servicios rápidamente. Ponemos a disposición de tu empresa todo nuestro conocimiento y servicios con marca blanca. Con nuestra atención especial para agencias y revendedores gana mercado y cautiva clientes desde hoy mismo. </p>
-            <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
-          </div>
-        </v-flex>
+        <v-layout class="pa-3">
+          <v-flex xs12 md6>
+            <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
+                    <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
+          <img :alt="alt" data-src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
+                  </div>
+          </v-flex>
+          <v-flex xs12 md6 class="mt-2  mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
+            <div>
+              <h2 class="font-weight-bold mb-2 mt-5 text-xs-center xs-text-size-30 hidden-md-and-down" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios para que tu negocio crezca</h2>
+              <h3 class="mb-2">Ayudamos a empresas como la tuya a tener un abanico más grande de servicios</h3>
+              <p class="text-xs-justify mb-5 font-weight-medum"  style="line-height: 25px;">
+                En Líder Logo queremos ayudarte a crecer. Tanto es así que ponemos a tu disposición todos nuestros años de experiencia en el sector del Marketing, Publicidad, Comunicación y Diseño para que tu empresa crezca más rápido que tu competencia.
+                <br/><br/>
+                Vivimos en un momento de mucha deslealtad profesional y feroz competencia. Seguro que lo has vivido en tu negocio. Pero también estamos en un momento de grandes oportunidades.
+                <br/><br/>
+                En Líder Logo somos conscientes de que nuestros fracasos hechos aprendizaje nos ayudaron a ser mejores, y junto nuestros éxitos profesionales, crecimos. Por ello queremos que te anticipes a las tendencias con nuestra ayuda.
+                <br/><br/>
+                Nuestra marca blanca de servicios está diseñada para empresas y negocios como el tuyo. No queremos ser los protagonistas. Queremos que lo seas tú.
+
+              </p>
+              <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
+            </div>
+          </v-flex>
+        </v-layout>
 
 
       </v-layout>
