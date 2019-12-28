@@ -6,7 +6,7 @@ export const rPackaging = {
   list: ['Diseños 100% llamativos y de alta calidad.', 'Creaciones y ajustes ilimitados.', 'Diseños en 24 hrs', 'Tu diseño de packaging listo para imprimir en formatos editables.'],
   title: 'Diseño de packaging',
   description: `Un diseño que da vida a tus productos y los hace irresistibles.`,
-  descriptionPrice: '<strong style="font-size: 16px">SUn diseño que da vida a tus productos y los hace irresistibles.</strong><br><br>Qué incluye:</br>',
+  descriptionPrice: '<strong style="font-size: 16px">Un diseño que da vida a tus productos y los hace irresistibles.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Un diseño que da vida a tus productos y los hace irresistibles.`,
   icon: '/icons/rotulo-etiqueta.svg',
   listServices: ['Diseños 100% llamativos y de alta calidad.', 'Creaciones y ajustes ilimitados.', 'Diseños en 24 hrs', 'Tu diseño de packaging listo para imprimir en formatos editables.'],
