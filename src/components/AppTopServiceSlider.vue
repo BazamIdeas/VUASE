@@ -6,8 +6,8 @@
 
           <style>
             .top-service-slider .v-carousel {
-
-                height: auto !important;
+                min-height: {{ heightSlider + 'px'}};
+                height: auto;
             }
 
             @media (min-width: 320px) and (max-width: 960px) {
@@ -38,13 +38,13 @@
             }
 
           </style>
-          <v-carousel :interval="300000000000000" hide-delimiters>
+          <v-carousel hide-delimiters>
             <v-carousel-item
               v-for="(item,i) in service.topSlider"
               :key="i">
               <v-layout row wrap class="content-text-service-slider" ref="sliderbody">
                 <v-flex xs12 offset-xs0 md7 class="sliderbody-img">
-                  <img  :alt="alt" class="mb-2" :src="item.url">
+                  <img width="100%" :alt="alt" class="mb-2" :src="item.url">
                 </v-flex>
                 <v-flex xs12 offset-xs0 md5>
                   <v-layout row wrap class="sliderbody-text">
@@ -151,19 +151,8 @@
 <style>
 .top-service-slider .v-carousel{
   box-shadow: unset;
- 
 }
-.v-window.v-carousel {
-    height: 10rem !important; 
-}.layout.content-text-service-slider.row.wrap {
-    height: 100%;
-}
-.top-service-slider img {
-   height: 100%;
-}
-.sliderbody-img img{
-  height: 100%;
-}
+
 .top-service-slider .v-btn--small{
   width:20px !important;
   height: 20px !important;
@@ -207,10 +196,6 @@
 .service-box-list li {
   padding-left: 0px;
 }
-.v-responsive.v-image.v-carousel__item {
-  height: 100% !important;
-}
-
 
 @media (min-width: 600px) and (max-width: 860px) {
   .content-text-service-slider{

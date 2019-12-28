@@ -258,17 +258,4 @@ export default {
   }
 }
 
-.top-service-slider .v-carousel {
-  min-height: 70vh !important;
-  height: auto;
-}
-@media (min-width: 1900px) {
-  .top-service-slider .v-carousel {
-    min-height: 70vh !important;
-    height: auto;
-  }
-  .v-responsive.v-image.v-carousel__item {
-    height: 100% !important;
-  }
-}
 </style>

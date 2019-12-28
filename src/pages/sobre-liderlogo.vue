@@ -41,6 +41,15 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: this.title + ' | %s',
+        meta: [
+          { property: 'og:title', content: this.title },
+          { content: 'noindex', name: 'robots' }
+        ]
+      }
+    },
     data () {
       return {
         alt: 'Liderlogo',

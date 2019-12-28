@@ -5,7 +5,6 @@
     v-resize="showBorders" 
     row wrap 
     class="service-box-container px-3 pt-5 pb-2 xs-pt-2">
-    {{consoleThis(props)}}
     <v-layout xs12 v-if="name" class="service-box-title" row align-center>
       <img alt="Servicio Liderlogo" :src="icon" height="70" width="70" class="mr-2">
       <v-flex>
@@ -23,7 +22,6 @@
             {{price.value}}
             {{price.currency.symbol}}
           </span>
-              {{consoleThis(price)}}
           <span v-if="oferta" style="font-weight: 400; font-size: 14px;">{{oferta}} </span>
         </span> 
         <!-- <v-btn flat small outline :class="{ 'outstanding-button': outstanding }" @click="selectService">

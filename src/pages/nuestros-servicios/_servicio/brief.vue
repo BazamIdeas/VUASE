@@ -60,6 +60,15 @@
 
 <script>
   export default {
+    head () {
+      return {
+        titleTemplate: this.stepData.title + this.brief.service.name,
+        meta: [
+          { property: 'og:title', content: this.stepData.title + this.brief.service.name },
+          { content: 'noindex', name: 'robots' }
+        ]
+      }
+    },
     layout: 'blank',
     async fetch ({ store }) {
       await store.dispatch('services/getAll')
