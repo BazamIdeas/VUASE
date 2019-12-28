@@ -1,15 +1,14 @@
 
 <template>
-      <v-layout row wrap align-end>
-         <v-flex xs12 md5 mt-5 class="img-contacto-container">
-                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
-          <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
-                </div>
-        </v-flex>
-      
-        <v-flex xs12 md6 class="mt-5 xs-mt-0">
-          <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¿Tienes alguna duda?</h2>
-          <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">Consulta GRATIS a nuestros expertos:</h4>
+  <v-layout row wrap align-end>
+    <v-flex xs12 md5 mt-5 class="img-contacto-container">
+      <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
+        <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
+      </div>
+    </v-flex>
+    <v-flex xs12 md6 class="mt-5 xs-mt-0">
+      <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¡Cuéntanos tus dudas para poder ayudarte!</h2>
+    <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">¿Qué te parece si un súper experto de nuestro equipo te asesora gratis?</h4>
   <v-form id="contact-form" @submit.prevent="submit">
     <v-layout row wrap>
       <v-flex xs12 sm6 md6>

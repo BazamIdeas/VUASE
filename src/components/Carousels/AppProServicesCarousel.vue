@@ -11,7 +11,7 @@
           <h1>Nuestros Servicios para Agencias como la tuya</h1>
         </div>
         <div class="layer layer-up" id="hc-layer-2-item-1">
-          <p class="body-2 mt-2">Si quieres ganar más sin incluir más personal en tu plantilla por falta de recursos, en Líderlogo tenemos la solución a tus problemas. Ayudamos a tu agencia de diseño gráfico para que puedas ampliar tus servicios con todas las facilidades.</p>
+          <p class="body-2 mt-5 pt-4">Si quieres ganar más sin incluir más personal en tu plantilla por falta de recursos, en Líderlogo tenemos la solución a tus problemas. Ayudamos a tu agencia de diseño gráfico para que puedas ampliar tus servicios con todas las facilidades.</p>
           <v-btn to="/contacto" flat outline class="px-2 mx-0 mt-4" style="background-color: #B80000 !important; border-color: #B80000; color: white;">¡TE LLAMAMOS!</v-btn>
         </div>
       </div>
@@ -252,7 +252,6 @@
       top: 17%;
     }
     .v-carousel.main-carousel {
-      height: 100vh;
       min-height: 545px;
     }
   }
@@ -306,7 +305,6 @@
       top: 17%;
     }
     .v-carousel.main-carousel {
-      height: 100vh;
       min-height: 854px;
     }
   }

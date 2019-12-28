@@ -4,7 +4,7 @@
     <AppHomeCarousel :alt="alt" :interval="3000" theme="2" />
     <!-- PORTFAFOLIO -->
     <v-layout row wrap align-center>
-      <v-flex d-flex xs12 offset-md1 md10 class="pt-4">
+      <v-flex d-flex xs12 offset-md1 md10 class="pt-5">
         <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
           ¡Te van a encantar todos nuestros logos, diseño web, nuestras Apps a medida y la cantidad incalculable de Papelería que podemos crear para ti!
         </h2>

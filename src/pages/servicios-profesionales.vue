@@ -1,14 +1,14 @@
 <template >
 
-  <section class="profesional-services mt-5">
+  <section class="profesional-services mt-1">
     <div class="hidden-divider hidden-sm-only hidden-xs-only"></div>
     <AppProServicesCarousel />
     <v-container fluid grid-list-md>
       <v-layout row wrap>
-        <v-flex xs12 offset-md1 md10 class="mb-5">
+        <v-flex xs12 offset-md1 md10 class="mb-1">
           <v-layout row wrap>
-            <v-flex xs12 md6 class="pl-5 py-5 hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
-              <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/icons/pro_services_1.png" class="ml-5 mt-5">
+            <v-flex xs12 md6 class="pl-5  hidden-sm-only hidden-xs-only" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
+              <img alt="GESTIONAMOS TUS PROYECTOS" src="/images/icons/pro_services_1.png" class="ml-5">
               <AppHeading number="2" title="Gestionamos tus proyectos para que tengas tiempo para ti" size="display-1 xs-headline" align="left" margin="pl-5 mb-2"/>
               <p class="pl-5 body-2">
                 El equipo de profesionales de Líderlogo elaboramos y acompañamos paso a paso tus proyectos hasta tu total satisfacción y la de tus clientes. Te ayudamos para que no tengas que pensar ni crear. Déjanos la creatividad, el talento, la experiencia y las herramientas a nosotros. Haz crecer HOY tu negocio. Mañana es tarde.
@@ -18,7 +18,7 @@
               xs12
               md6
               class="hidden-md-and-up"
-              style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;"
+              style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -150px 84px; background-size: cover;"
             >
               <img
                 alt="GESTIONAMOS TUS PROYECTOS"
@@ -27,14 +27,15 @@
               />
               <AppHeading
                 number="2"
-                title="Gestionamos tus proyectos"
+                title="Gestionamos tus proyectos para que tengas tiempo para ti"
                 size="display-1 xs-headline"
                 align="left"
                 margin="pl-5 mb-2"
               />
               <p
-                class="pl-5 body-2"
-              >Nuestro equipo elabora y te acompaña en cada paso de tus proyectos hasta tu entera conformidad y la de tus clientes. Aprovecha nuestra creatividad, talento, experiencia y herramientas. Potencia tu negocio.</p>
+                class="pl-5 body-2">
+                El equipo de profesionales de Líderlogo elaboramos y acompañamos paso a paso tus proyectos hasta tu total satisfacción y la de tus clientes. Te ayudamos para que no tengas que pensar ni crear. Déjanos la creatividad, el talento, la experiencia y las herramientas a nosotros. Haz crecer HOY tu negocio. Mañana es tarde.
+              </p>
             </v-flex>
             <v-flex xs12 md6>
               <div class="custom-alignment-img">
@@ -47,7 +48,7 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 offset-md2 md8 class="mb-5">
+        <v-flex xs12 offset-md2 md8 class="mb-5 mt-5">
           <v-layout row wrap>
             <v-flex xs12 md6 class="hidden-md-and-up" style="background-image: url(/icons/puntos_de_fondo.svg); background-position: -193px 160px; background-size: cover;">
               <img alt="Privacidad Garantizada" src="/images/icons/pro_services_2.png" class="ml-5 mt-2">
@@ -67,14 +68,14 @@
               <img alt="Privacidad Garantizada" src="/images/icons/pro_services_2.png" class="ml-5 mt-2">
               <AppHeading number="2" title="Te garantizamos total privacidad" size="display-1 xs-headline" align="right" margin="pl-5 mb-2"/>
               <p class="pl-5 body-2" >
-                Tus proyectos trabajado con marca blanca para que los presentes como propios. Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes. Aplica el margen que tu decidas y gana siempre
+                ¿Quieres que en Líderlogo trabajemos para ti con marca blanca? Es la forma más sencilla y profesional para que presentes los proyectos a tus clientes como si fueran tuyos propios.<br/> Disfruta de todos nuestros servicios y ponlos al servicio de tus clientes, como si fueran tuyos aplicando el margen que tu decidas, no nosotros. Con Líderlogo ganas siempre.
               </p>
             </v-flex>
           </v-layout>
         </v-flex>
         <v-flex xs12 offset-md1 md10 class="mb-2 mb-xs-0">
           <v-layout row wrap>
-            <v-flex xs12 md6 class="pl-5 pt-5 hidden-sm-only hidden-xs-only" >
+            <v-flex xs12 md6 class="pl-5  hidden-sm-only hidden-xs-only" >
               <img alt="Recomendada por perfeccionistas" src="/images/icons/pro_services_3.png" class="ml-5 mt-5">
               <AppHeading number="2" title="Recomendada por profesionales exigentes" size="display-1 xs-headline" align="left" margin="pl-5"/>
             </v-flex>
@@ -215,7 +216,6 @@ export default {
   height: 4rem;
 }
 .profesional-services-slider {
-  height: auto !important;
   margin-top: -3rem !important;
 }
 .reduce-10-rem {

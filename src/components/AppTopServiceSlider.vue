@@ -52,7 +52,7 @@
                       <img width="100%" :alt="alt" class="mb-2 mr-2" :src="service.icon">
                     </v-flex>
                     <v-flex xs12 sm8 md11 class="mb-2">
-                      <h1 class="font-weight-bold display-1 ml-2" :style="'color:'+item.color">{{service.title}}</h1>
+                      <h1 class="font-weight-bold display-1 ml-2" :style="'color:'+item.color">{{titleLanding}}</h1>
                     </v-flex>
                     <v-flex xs12 v-if="service.description" class="mb-2 text-xs-justify">
                       <span class="body-2" v-html="service.description"></span>
@@ -64,7 +64,7 @@
                           </li>
                         <li class="body-1 font-weight-medium mb-2">
                           <v-icon :color="item.color" class="font-weight-bold" style="font-size: 18px">check</v-icon> 
-                          <strong>Precio cerrado 
+                          <strong>Nuestro precio no viene con sorpresas. Te damos un precio cerrado de: 
                           <span  v-if="price.currency.display == 'left'">
                                 {{price.currency.symbol}}
                                 {{price.value}}
@@ -135,6 +135,9 @@
           if (this.slug.includes('logo') || this.slug === 'imagen-corporativa') return this.$router.currentRoute.path + '/brief/disenos'
           return this.$router.currentRoute.path + '/brief/estilos'
         }
+      },
+      titleLanding () {
+        return this.service.titleLanding ? this.service.titleLanding : this.service.title
       }
     },
     methods: {
