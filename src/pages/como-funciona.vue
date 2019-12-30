@@ -227,7 +227,7 @@
   export default {
     head () {
       return {
-        titleTemplate: this.title + ' | %s',
+        titleTemplate: this.title,
         meta: [
           { property: 'og:title', content: this.title },
           { property: 'og:description', content: this.description },
@@ -241,9 +241,9 @@
         active: 1,
         name: ' COMO FUNCIONA',
         interval: 8000,
-        alt: 'Diseño de logos e imagen corporativa para empresas',
+        alt: 'Como funcionamos en Liderlogo',
         description: 'Diseño de logos para empresas y profesionales, papelería, imagen corporativa y páginas web. Diseños ilimitados y Garantía 100%. ¡Haz crecer tu negocio!',
-        title: 'Diseño de logos e imagen corporativa para empresas',
+        title: 'Como funcionamos en Liderlogo ',
         testimonies: [{
           stars: 5,
           logo: '/images/testimonies/home/hotel-aixo.jpg',
@@ -301,7 +301,7 @@
           response: 'Prácticamente todo lo que necesites, logos, papelería, rótulos, folletos, redes sociales, sitios webs, apps y mucho más!, visita nuestras categorías de servicios.'
         }, {
           question: '¿Cómo completo el brief?',
-          response: 'Selecciona el <a href="/servicios" style="color:#4c55aa; font-weight: bold">servicio</a> que deseas contratar y sigue unos simples pasos.'
+          response: 'Selecciona el <a href="/nuestros-servicios" style="color:#4c55aa; font-weight: bold">servicio</a> que deseas contratar y sigue unos simples pasos.'
         }, {
           question: '¿Puedo completar mi brief por teléfono o email?',
           response: 'Si, <a href="/contacto" style="color:#4c55aa; font-weight: bold">ponte en contacto</a> con nuestros asesores en diseño.'

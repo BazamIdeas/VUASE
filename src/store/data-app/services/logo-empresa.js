@@ -5,7 +5,7 @@ export const logoEmpresa = {
   /* ** */
   list: ['Creamos por ti. Diseñamos tu logo. Logos originales y exclusivos enfocados a tu negocio o marca. Diseño pensado para transmitir tu esencia y los valores de tu marca.', 'Creación de conceptos y adaptaciones ilimitadas hasta que estés convencido de que tu logo no dejará indiferente a nadie.', 'Recibirás tu logo en más de veinte formatos diferentes preparado para usar en las plataformas y medios que necesites.', 'Te pasamos la transferencia total y absoluta del Copyright.', 'En Liderlogo tenemos la Garantía de conformidad. Eso significa que puedes solicitar tantas opciones de diseño como necesites o bien el reintegro total de tu dinero.', 'Espera, que eso no es todo. Tenemos un Precio Cerrado de 219€.'],
   title: 'DISEÑAMOS TU LOGO A MEDIDA',
-  titleLanding: 'DISEÑAMOS TU LOGO A MEDIDA PENSANDO EN TI Y EN TUS CLIENTES',
+  titleLanding: 'Diseñamos tu Logo a Medida pensando en Ti y en tus clientes',
   description: `<strong style="font-size: 16px">¿Buscas el logo perfecto? Quédate con nosotros.
   Déjanos que te descubramos qué podemos hacer por ti.</strong><br/>En Liderlogo creamos el logo que tu marca necesita para destacar ante tu competencia e impactar en tus clientes. No esperes a mañana, empieza hoy de la mano de nuestro equipo de profesionales
   El camino hacia el éxito de tu negocio lo marcas tú, no los demás. Empezando por tu logo.`,
@@ -37,7 +37,7 @@ export const logoEmpresa = {
       icon: '/icons/garantia-de-conformidad.svg'
     }, {
       title: 'EXPERIENCIA 100% AVALADA',
-      description: '',
+      description: 'Nuestra experiencia y especialización está avalada por los más de 15.000 clientes satisfechos.',
       icon: '/icons/16-anios.svg'
     }
   ],

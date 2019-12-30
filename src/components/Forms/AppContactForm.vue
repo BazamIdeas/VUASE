@@ -7,8 +7,8 @@
       </div>
     </v-flex>
     <v-flex xs12 md6 class="mt-5 xs-mt-0">
-      <h2 class="display-2 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">¡Cuéntanos tus dudas para poder ayudarte!</h2>
-    <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">¿Qué te parece si un súper experto de nuestro equipo te asesora gratis?</h4>
+      <h3 class="display-1 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">{{titleLanding}}</h3>
+    <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">{{subtitleLanding}}</h4>
   <v-form id="contact-form" @submit.prevent="submit">
     <v-layout row wrap>
       <v-flex xs12 sm6 md6>
@@ -140,6 +140,12 @@
       countryData () { return this.$store.state.countries.data },
       services () {
         return this.$store.state.services.list
+      },
+      titleLanding () {
+        return this.contactPage ? '¿En qué podemos ayudarte? ¡Cúentanos!' : '¿Necesitas un Consejo Profesional?'
+      },
+      subtitleLanding () {
+        return this.contactPage ? 'Para pder asesorarte y ayudarte gratuitamente, necesitamos que nos ayuydes a saber más sobre ti rellenando el formulario. Así uno de nuestros profesionales te contactará.' : 'ESTAMOS PARA ASESORARTE GRATIS. COMPLETA EL FORMULARIO Y UN EXPERTO SE PONDRÁ EN CONTACTO CONTIGO HOY.'
       }
     },
     methods: {

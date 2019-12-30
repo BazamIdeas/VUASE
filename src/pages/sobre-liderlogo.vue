@@ -35,7 +35,7 @@
             </v-flex>
             <v-flex xs12 md6>
               <img  alt="Sobre Nosotros" src="/images/pages/dino_about_us.jpg" width="100%">
-              <img  alt="Sobre Nosotros" src="/images/pages/dino_about_us.jpg" width="100%">
+              <img  alt="Sobre Nosotros" src="images/pages/como-hacer-un-logo.jpg" width="100%">
             </v-flex>
           </v-layout>
         </v-flex>
