@@ -24,7 +24,7 @@
     <v-container fluid class="mt-3 pb-0">
       <v-layout row wrap>
         <!-- PROCESO CREATIVO -->  
-        <AppCreativeProccess class="px-3 " v-if="dataService.creativeProcess" id="como-funciona" title="Descubre como funciona" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
+        <AppCreativeProccess class="px-3 " v-if="dataService.creativeProcess" id="como-funciona" title="Descubre cómo funciona" :slides="dataService.creativeProcess" :steps="dataService.steps" :alters="dataService.alters"  />
       </v-layout>
     </v-container>
 

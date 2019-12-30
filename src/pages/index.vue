@@ -20,7 +20,7 @@
     <!-- <AppHomeCreativeProccess title="¿Cómo F98yunciona?"/> -->
     <v-parallax src="/images/pages/home-5.svg" class="parallax-opacity">
         <v-layout row wrap align-center>
-          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué podemos mejorar para la imagen de tu marca"/>
+          <AppHeading class="mb-0" number="2" size="display-1" title="¿Qué podemos mejorar para la imagen de tu marca?"/>
           <v-flex d-flex xs12 offset-md2 md8>
             <v-layout align-center justify-center row wrap>
               <v-flex xs12 md4 class="ll-op">
@@ -109,7 +109,7 @@
 
       </v-layout>
           <AppContactForm />
-      <AppHeading class="mb-3" number="3" size="display-1" title="En los medios"  />
+      <AppHeading class="mb-3" number="3" size="display-1" title="Mira, ¡salimos en los medios!"  />
       <AppExamplesSlider  :hover-info="false" :alt="alt" :examples="medios" hovered="false" shadow="false" puntos="false" item-width="120" item-height="120"  class="mb-0 pb-2" />
     </v-container>
   </section>
