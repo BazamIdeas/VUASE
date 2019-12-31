@@ -71,15 +71,13 @@
             </v-btn>
           </v-layout>
         </v-flex>
-        <v-flex v-if="descriptionActivity">
+        <v-flex md8 offset-md2 v-if="descriptionActivity">
           <h2> {{h2}}</h2>
           <p  class="text-xs-justify mt-3" style="font-weight:500;" v-html="descriptionActivity">
           </p>
         </v-flex>
     </v-container>
 
-    <!--<AppHeading class="mb-3" number="2" size="display-1" title="¿Qué necesitas crear?" subtitle="Disfruta del diseño perfecto cualquiera sea tu necesidad. Potencia hoy tu negocio." />
-    <AppServicesGrid color="#F29F01" class="mb-4 pt-0"/>-->
   </section>
 </template>
 
@@ -89,7 +87,7 @@
       return {
         urlHosting: 'https://api.liderlogo.com/v1/images/slug/',
         alt: 'Ejemplos de nuestros trabajos profesionales',
-        h1: 'Ejemplos de nuestros trabajos profesionales',
+        h1: 'Descubre algunos de nuestros trabajos para marcas triunfadoras',
         h2: false,
         description: 'Ejemplos de logos, imagen corporativa y páginas web, tenemos más de 15 años de experiencia diseñando marcas',
         title: 'Ejemplos de nuestros trabajos profesionales',
@@ -99,7 +97,7 @@
     },
     watch: {
       'params': function (to, from) {
-        console.log(to)
+        // console.log(to)
       }
     },
     asyncData ({ params }) {
@@ -202,7 +200,8 @@
         meta: [
           { property: 'og:title', content: this.meta_title ? this.meta_title : this.title },
           { property: 'og:description', content: this.meta_description ? this.meta_description : this.description },
-          { hid: 'description', name: 'description', content: this.meta_description ? this.meta_description : this.description }
+          { hid: 'description', name: 'description', content: this.meta_description ? this.meta_description : this.description },
+          { content: 'noindex', name: 'robots' }
         ]
       }
     },
@@ -251,6 +250,29 @@ h3{
   }
 
     }
+    @media all and (max-width: 950px){
+      .img-cuadrada-ejemplos-carousel {
+          height: 370px !important;
+      }
+    }
+    @media all and  (min-width: 950px) and (max-width: 1260px){
+      .img-cuadrada-ejemplos-carousel {
+          height: 292px !important;
+      }
+    }
+    @media all and  (min-width: 1260px) and (max-width: 1900px){
+      .img-cuadrada-ejemplos-carousel {
+          height: 27rem !important;
+      }
+    }
+
+
+    @media all and (min-width: 1900px){
+      .img-cuadrada-ejemplos{
+        background-size: cover !important;       
+           }
+      }
+      
 
    .img-cuadrada-ejemplos-carousel{
    height: 370px;
@@ -296,4 +318,7 @@ h3{
   border:none;
   top: 40%;
 }
+  .v-carousel__prev i, .v-carousel__next i{
+    color:white;
+  }
 </style>

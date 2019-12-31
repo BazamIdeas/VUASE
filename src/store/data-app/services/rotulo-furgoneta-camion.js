@@ -5,9 +5,12 @@ export const rFurgoneta = {
   /* ** */
   title: 'Diseño Gráfico de furgoneta o camión',
   description: `Aprovecha al máximo tu espacio y promociona con éxito tu negocio.`,
+  descriptionPrice: '<strong style="font-size: 16px">¿Tienes una furgoneta o camión? En Líderlogo lo vestimos para que la imagen de tu marca viaje por todos lados. La publicidad digital funciona, pero la tradicional, también.</strong><br><br>Qué incluye:</br>',
   list: ['Diseño gráfico y publicitario completo de tu vehículo.', 'Creaciones y perfeccionamientos ilimitados.', 'Fotomontajes reales de tus diseños durante el proceso creativo.', 'Entrega del diseño final en variedad de formatos digitales editables.'],
   shortDescription: `Aprovecha al máximo tu espacio y promociona con exito tu negocio.`,
   icon: '/icons/rotulo-furgoneta.svg',
+  listServices: ['Diseño gráfico y publicitario completo de tu vehículo.', 'Creaciones y perfeccionamientos ilimitados.', 'Fotomontajes reales de tus diseños durante el proceso creativo.', 'Entrega del diseño final en variedad de formatos digitales editables.'],
+  listPrices: ['Olvídate del diseño gráfico y publicitario de tu vehículo, porque en Líderlogo lo hacermos de forma integral.', 'Creaciones ilimitadas. Hasta que no estés convencido de que es el diseño perfecto para tu negocio, no paramos de mejorar las versiones anteriores para tu furgoneta o camión.', 'En Líderlogo te entregamos los fotomontajes reales de tus diseños durante el proceso creativo para que estés tranquilo hasta tener el diseño final.', '¡Quédate tranquilo! Te entregaremos el diseño definitivo en diferentes formatos digitales editables para que puedas hacer uso de ellos con comodidad.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',

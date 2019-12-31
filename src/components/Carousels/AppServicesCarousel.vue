@@ -11,13 +11,14 @@
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
-            <h1>¿Qué necesitas diseñar?</h1>
+            <h1>¿Qué diseño quieres que creemos para ti?</h1>
+            <h6>En Liderlogo diseñamos tus sueños profesionales</h6>
           </div>
 
-          <div id="hc-layer-2-item-1" style="z-index: 99;">
-            <p class="body-2">Deja el diseño de tu imagen, en manos de profesionales, que te ofrecerán la más amplia gama de opciones</p>
+          <div id="hc-layer-2-item-1" class='pt-1' style="z-index: 99;">
+            <p class="body-2">Confía el diseño de tu imagen en nuestras manos profesionales. Empatizamos con tus necesidades para el diseño de logos empresa, el branding de tu marca personal o tu emprendimiento. Somos la solución a tus problemas.</p>
 
-            <v-layout row wrap align-center justify-center class="mt-5" style="z-index: 99;">
+            <v-layout row wrap align-center justify-center class="mt-2" style="z-index: 99;">
               <v-flex xs10>
                 <!-- <v-autocomplete
                   v-model="find"
@@ -377,7 +378,7 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 36%;
+      width: 30%;
       left: 10%;
       position: absolute;
     }
@@ -409,7 +410,12 @@
       min-height: auto;
     }
   }
-
+  @media (min-width: 1900px) {
+      .v-carousel.main-carousel {
+      height: 540px !important;
+      min-height: auto;
+    }
+  }
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .5s;

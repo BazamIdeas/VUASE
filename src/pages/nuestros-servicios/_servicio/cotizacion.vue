@@ -9,16 +9,16 @@
         <v-flex md7 offset-md1 class="mb-5">
           <v-layout row wrap>
             <v-flex md3 xs6 v-for="pkg in slugsPackages" :key="pkg" class="px-2 mb-2">
-              <v-card class="pa-3 package" :class="{ 'selected': selectedPkg(pkg) }">
-                <div role="img" aria-label="Liderlogo" class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }" @click="selectPack(pkg)">
+              <v-card class="pa-3 package" :class="{ 'selected': selectedPkg(pkg) }" @click="selectPack(pkg)">
+                <div role="img" aria-label="Liderlogo" class="package-img" style="width: 100%; position: relative; padding-top: 55%; margin-bottom: 14%;"  :style="{ backgroundImage: 'url(/images/quote/what_to_do/' + pkg + '.svg)' }"  @click="selectPack(pkg)" >
                 </div>
-                <div class="package-title">
+                <div class="package-title"  @click="selectPack(pkg)" >
                   <p class="body-2 text-xs-center mb-0">{{ packages[pkg].title }}</p>
                 </div>
               </v-card>
             </v-flex>
             <v-flex md12 class="mt-1">
-              <p class="headline font-weight-medium section-title" style="border-bottom: 2px solid #004b7b;">Detalles</p>
+              <p class="headline font-weight-medium section-title" style="border-bottom: 2px solid #004b7b;">Cosas que necesito para mi web</p>
             </v-flex>
             <v-flex md6 v-for="service in addons" v-if="addonsObject[service.slug].section === 'details'" :key="service.slug" class="pa-2">
               <v-card class="py-1 service-package" :class="{ 'selected': selectedAddon(service.slug) }">
@@ -171,37 +171,37 @@
         addonsSelected: [],
         packages: {
           'promocionar-un-servicio-o-producto': {
-            title: 'Promocionar un servicio o producto',
+            title: 'Promocionar mis servicios y/o productos',
             description: 'Es una herramienta sumamente eficiente para obtener nuevos clientes por medio de acciones marketing online. Tiene como principal beneficio lograr nuevos clientes potenciales y/o obtener que se realice una acción determinada que incremente sus ventas e interacción con el mercado.',
             sections: 1,
             services: ['diseno-y-desarrollo-de-seccion-web', 'pop-publicitario', 'hosting-por-un-ano']
           },
           'presentar-mi-empresa': {
-            title: 'Presentar mi empresa',
+            title: '¡Quiero presentar mi empresa al mundo!',
             description: 'Sitio de presencia en Internet ideal para brindar introducción de una pequeña empresa a la web. Diseño exclusivo compuesto por home page de bienvenida, carrousel de 6 imágenes, información introductoria de la actividad, sector de contacto con datos, formulario, mapa interactivo de Google y sector de avisos legales.',
             sections: 2,
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano']
           },
           'ofrecer-multiples-servicios': {
-            title: 'Ofrecer múltiples servicios',
+            title: 'Dar a conocer y ofrecer varios servicios',
             description: 'Es el sitio web perfecto para PyMes que desean ganar clientes en Internet. Incluye el diseño de hasta 5 secciones, como ser: reseña de la empresa, sector de contacto, mapa interactivo, galería imágenes o videos, descripción de servicios, noticias, etc.',
             sections: 5,
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'chat', 'seccion-de-noticias-o-publicaciones']
           },
           'dar-a-conocer-mis-proyectos-realizados': {
-            title: 'Dar a conocer mis proyectos realizados',
+            title: 'Que más personas conozcan los proyectos que he hecho',
             description: 'Además de mostrar la información de su empresa o actividad, incluye una galería donde podrá publicar proyectos junto a sus características, atributos y anexarle imágenes. Los mismos pueden ser filtrados según las variables que desee.',
             sections: 3,
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'galeria-de-proyectos']
           },
           'publicar-inmuebles-para-alquiler-o-venta': {
-            title: 'Publicar inmuebles para alquilar o venta',
+            title: 'Publicar un inmueble para alquilar o vender',
             description: 'Plataforma imprescindible si está en la industria de Bienes Raíces, permite: cargar propiedades junto a sus atributos y características, localización en mapa interactivo, búsqueda personalizada, listado de favoritas, publicar galería de fotos, entre otras funciones.',
             sections: 5,
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'plataforma-inmobiliaria']
           },
           'exhibir-un-menu-de-platos-o-comidas': {
-            title: 'Exhibir un menú de platos / comidas',
+            title: 'Dar a conocer nuestro menú gastronómico',
             description: 'De a conocer su restaurant o bar con un sitio web atractivo y profesional, además podrá agregar y modificar platos al menú cuando desee.',
             sections: 3,
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos']
@@ -213,7 +213,7 @@
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'catalogo-productos']
           },
           'vender-mis-productos-online': {
-            title: 'Vender mis productos online',
+            title: 'Quiero vender mis productos online',
             description: 'Es la opción ideal para vender en línea. Todo lo necesario para dar a conocer su negocio con una web Profesional + Diseño y programación de Catálogo de productos, con alta de 100 productos y la posibilidad de creación ilimitada de categorías y subcategorías, carro de compras, posibilidad de configurar distintos impuestos en función de país o el código postal de envío, ficha de productos completas, valoración de productos, integración con medios de pagos(Paypal, Paypal PRO, 2CO, Transferencia Bancaria, Pago contra entrega, etc), cupones de descuento por porcentaje o importe fijo, múltiples monedas.',
             sections: 5,
             services: ['diseno-y-desarrollo-de-seccion-web', 'hosting-por-un-ano', 'ecommerce']
@@ -225,7 +225,7 @@
             services: ['diseno-y-desarrollo-de-seccion-web', 'area-privada-para-clientes', 'hosting-por-un-ano']
           },
           'personalizado': {
-            title: 'Personalizado',
+            title: 'Quiero personalizar mi web paso a paso',
             description: '',
             sections: 0,
             services: []

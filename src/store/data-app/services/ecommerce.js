@@ -1,14 +1,17 @@
 export const ecommerce = {
   /* SEO */
-  titleSEO: 'Diseño y desarrollo de páginas web',
+  titleSEO: 'Diseño web de eCommerce y tiendas online',
   descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
   /* ** */
-  list: ['Diseño y desarrollo de sitio web exclusivo, original y avanzado.', 'Carro de compras con múltiples medios de pago y métodos de envío.', 'Integración con múltiples plataformas de comercio electrónico.', 'Autoadministrable.', 'Llave en mano.'],
-  title: 'Ecommerce',
-  description: `Es la opción ideal para vender en línea. Todo lo necesario para dar a comercializar tus productos y servicios mediante una tienda online de calidad.`,
+  list: ['Creamos el diseño y desarrollo de tu sitio web exclusivo, original, creativo y potente para vender más, y fidelizar mejor', 'Te incluimos el carrito de compra con múltiples sistemas de pago y diferentes métodos de envío de tus productos a los clientes', 'Olvídate de cotratar por otro lado la integración con múltiples plataformas de comercio electrónico. En Líderlogo está incluido en el precio', 'Nosotros creamos, y tú lo administras. La tienda online que creamos para ti es autoadministrable', 'Fácil. Sencillo. Profesional. Te damos llave en mano', 'Ahora es cuando más te sorprender. Tu ecommerce por un precio cerrado de 1.259 euros'],
+  title: 'Diseño web de eCommerce y tiendas online',
+  description: `Líderlogo no es una opción. Somos la decisión perfecta para para que vendas online. Creamos tu tienda online con todo lo necesario para comercializar y vender tus productos y servicios a través  de tu ecommerce de calidad.`,
+  descriptionPrice: '<strong style="font-size: 16px">`Es la opción ideal para vender en línea. Todo lo necesario para dar a comercializar tus productos y servicios mediante una tienda online de calidad.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Es la opción ideal para vender en línea. Todo lo necesario para dar a comercializar tus productos y servicios mediante una tienda online de calidad.`,
+  listPrices: ['Diseño y desarrollo de sitio web exclusivo, original y avanzado.', 'Carro de compras con múltiples medios de pago y métodos de envío.', 'Integración con múltiples plataformas de comercio electrónico.', 'Autoadministrable.', 'Llave en mano.'],
   icon: '/icons/ecommerce.svg',
   addonService: true,
+  listServices: ['Diseño y desarrollo de sitio web exclusivo, original y avanzado.', 'Carro de compras con múltiples medios de pago y métodos de envío.', 'Integración con múltiples plataformas de comercio electrónico.', 'Autoadministrable.', 'Llave en mano.'],
   whatWeOffer: [
     {
       title: 'DISEÑO WEB ÚNICO Y ORIGINAL',

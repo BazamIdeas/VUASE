@@ -6,8 +6,11 @@ export const rVehicular = {
   list: ['Diseño gráfico y publicitario completo de tu vehículo.', 'Creaciones y ajustes ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo.', 'Entrega del diseño final en plantillas de corte digital para tu rotulista.'],
   title: 'Diseño de Rótulo Vehicular',
   description: `Un diseño que promociona tu negocio donde vallas.`,
+  descriptionPrice: '<strong style="font-size: 16px">En Líderlogo creamos el diseño que llevará tu negocio allí donde lleguen tus sueños.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Un diseño que promociona tu negocio donde vallas.`,
   icon: '/icons/rotulo-vehicular.svg',
+  listServices: ['Diseño gráfico y publicitario completo de tu vehículo.', 'Creaciones y ajustes ilimitados.', 'Fotomontajes de tus diseños durante el proceso creativo.', 'Entrega del diseño final en plantillas de corte digital para tu rotulista.'],
+  listPrices: ['Olvídate del diseño gráfico y publicitario de tu vehículo, porque en Líderlogo lo hacermos de forma integral.', 'Creaciones ilimitadas. ¿Qué significa esto? Que hasta que no estés convencido de que es el diseño perfecto para tu negocio, no paramos de mejorar las versiones anteriores.', 'No te preocupes por cómo va a quedar, porque te mandaremos fotomontajes de tus diseños durante el proceso creativo de tu vehículo.', 'Te facilitamos el trabajo para tu rotulista. Te entregamos el diseño final con plantillas de corte digital.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',

@@ -4,11 +4,14 @@ export const disenoApp = {
   descriptionSEO: 'Desarrollamos su aplicación móvil para ayudar a aumentar la presencia en línea de su empresa, tenemos cientos de clientes satisfechos ¡Comienza ahora!',
   /* ** */
   startWith: 'A PARTIR DE:',
-  list: ['Fideliza a tus clientes', 'Aumenta la visibilidad de tu empresa', 'Ofrece otro canal de venta y contacto', 'Fortalece tu marca', 'Adáptate a posibles nuevos clientes. '],
+  list: ['Te ayuda a fidelizar a tus clientes', 'Aumenta la visibilidad y el posicionamientode tu empresa', 'Ofreces otro canal de venta y comunicación directa y humana', 'Fortalece tu marca digitalmente a través de la humanización', 'Te ayuda a adaptarte a los nuevos clientes de esta Era Digital', 'Lo más interesante: En Líderlogo te damos un precio cerrado de 800 euros'],
   title: 'Aplicación para Móviles',
-  description: `Desarrollar una aplicación móvil ayuda a aumentar la presencia en línea de tu empresa y conectarse con los usuarios a través de una nueva plataforma digital.`,
+  description: `Desarrollar una aplicación móvil ya no es exclusivo de las grandes marcas. Tú también puedes tener tu propia App para mejorar y potenciar la presencia digital de tu empresa. Además, te ayuda a conectar con los usuarios de tu marca y clientes de tu negocio. En Líderlogo te ayudamos a convertir la comunicación de tu empresa en una comunicación directa y humana a través de la Aplicación que crearemos para ti.<br/>Mira qué beneficios aporta tener una App:`,
+  descriptionPrice: '<strong style="font-size: 16px">Desarrollar una aplicación móvil ayuda a aumentar la presencia en línea de tu empresa y conectarse con los usuarios a través de una nueva plataforma digital.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Desarrolla una aplicación móvil para ayudar a aumentar la presencia en línea de su empresa y conectarse con los usuarios a través de una nueva plataforma digital`,
+  listPrices: ['Fideliza a tus clientes', 'Aumenta la visibilidad de tu empresa', 'Ofrece otro canal de venta y contacto', 'Fortalece tu marca', 'Adáptate a posibles nuevos clientes. '],
   icon: '/icons/app.svg',
+  listServices: ['Fideliza a tus clientes', 'Aumenta la visibilidad de tu empresa', 'Ofrece otro canal de venta y contacto', 'Fortalece tu marca', 'Adáptate a posibles nuevos clientes. '],
   whatWeOffer: [
     {
       title: 'ORIGINAL',
@@ -45,9 +48,9 @@ export const disenoApp = {
     columns: [
       [
         {
-          title: 'APLICACIÓN MOVIL',
-          description: 'Aplicación móvil lista para ser instalada en cualquier dispositivo Android y/o Ios, diseñada y desarrollada bajo un estricto proceso de planificación que se centra en las necesidades del usuario y garantiza que su experiencia móvil sea atractiva y conducente al logro de sus objetivos comerciales. ',
-          items: ['Instalador de la aplicación (.APK)', 'Disponible en para descarga en play store y iTunes', 'Código fuente para el mantenimiento y crecimiento de su app', 'Manual de uso e implementación', 'Garantía de entera conformidad y confidencialidad', 'Soporte postventa por 2 años.'],
+          title: '¿Qué te damos para que tu aplicación móvil destaque si nos contratas?',
+          description: 'En Líderlogo somos conscientes de que en esta Era Digital en la que nos encotramos, la competencia está a un clic. <br/>Por eso queremos ahorrarte tiempo, dinero y dolores de cabeza dejando el trabajo en las manos de nuestro equipo de profesionales, creativos y diseñadores natos.<br/><br/>Te entregaremos tu Aplicación móvil lista para instalarla en cualquier dispositivo Android.</br>En Líderlogo diseñamos y desarrollamos tu App bajo un estricto proceso de planificación y estrategia, centrándonos en tus necesidades y las de tus clientes. Garantizando que la Experiencia de Usuario sea atractiva, con una usabilidad potente y con el enfoque al logro de tus objetivos de empresa.',
+          items: ['Instalador de la aplicación (.APK)', 'Te la entregamos disponible para descargar en Play Store', 'Te entregamos el Código fuente para el mantenimiento y crecimiento de tu App', 'Manual de uso e implementación para que tengas los detalles de tu Aplicación Móvil', 'Garantía de conformidad y confidencialidad. Tu App es parte del crecimiento de tu negocio. La adaptaremos hasta estés completamente contento y satisfecho', 'En Líderlogo no te abandonamos. Te acompañamos con soporte postventa durante 2 años.'],
           icon: '/icons/app.svg'
         }
       ]

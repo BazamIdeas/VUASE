@@ -3,124 +3,80 @@
   <v-carousel :interval="interval" hide-controls class="main-carousel theme2 ">
     <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1">
-                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-                  <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-empresa-de-diseño.jpeg"  >
-                </div> 
-      </div>
-
-<!--               <img alt='diseño de logo original' v-lazy="require('~/static/images/carousels/liderlogo-empresa-de-diseño.jpeg')"  >
- -->
-
-<!--               <v-img alt='liderlogo empresa de diseño' src="images/carousels/liderlogo-empresa-de-diseño.jpeg"></v-img>
- -->         
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
-        </div>
-
-        <div class="section">
-          <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
-          </div>
-          <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.
-
-            </p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
-          </div>
-        </div>
-      </div>
-    </v-carousel-item>
-    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
-      <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1">
-                              <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-                  <img class="animate-img" alt='embajador de la marca' data-src="/images/carousels/embajador-de-la-marca.jpeg"  >
-            </div>
-        </div>
-
-<!--                           <img alt='empresa de diseño de logo' v-lazy="require('~/static/images/carousels/embajador-de-la-marca.jpeg')"  >
- -->
-<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/embajador-de-la-marca.jpeg"></v-img>
- -->          </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
-   
-
-        <div class="section">
-          <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
-          </div>
-          <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
-          </div>
-        </div>
-      </div>
-    </v-carousel-item>
-    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
-      <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1" >
-                 <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-                    <img  class="animate-img" alt='imagen corporativa' data-src="/images/carousels/liderlogo-imagen-corporativa.jpeg"  >
-                </div>
-<!--               <v-img alt='empresa de diseño de logo' src="images/carousels/liderlogo-imagen-corporativa.jpeg"></v-img>
- -->        
-          </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
-        </div>
-
-        <div class="section">
-          <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
-          </div>
-          <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
-          </div>
-        </div>
-      </div>
-    </v-carousel-item>
-    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
-      <div class="layers-container">
-        <div class="section">  
-          <div id="hc-layer-3-item-1">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1 ">
             <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-                  <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-diseño-de-logo-unico.jpeg"  >
-            </div>
-<!--               <v-img alt='diseño de logo unico' src="images/carousels/liderlogo-diseño-de-logo-unico.jpeg"></v-img>
- -->          </div>
-         <!--  <div  id="hc-layer-4-item-1">
-            <h2>"El diseño es el embajador silencioso de una marca" </h2>
-            <h5>- Paul Rand -</h5>
-          </div> -->
+              <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-empresa-de-diseño.jpeg"  >
+            </div> 
+          </div>
         </div>
-
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>Creatividad y talento <br class="hidden-sm-and-down"> para presentar tu negocio</h1>
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Obtén un diseño que amarás por ser capaz de todo. Diseños
-            profesionales, a tu medida, ilimitados y hasta tu
-            completa conformidad.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">CONOCER MÁS</v-btn>
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+          </div>
+        </div>
+      </div>
+    </v-carousel-item>
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+      <div class="layers-container">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1 ">
+            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+              <img class="animate-img" alt='embajador de la marca' data-src="/images/carousels/embajador-de-la-marca.jpeg"  >
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div id="hc-layer-1-item-1">
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+          </div>
+          <div id="hc-layer-2-item-1">
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+          </div>
+        </div>
+      </div>
+    </v-carousel-item>
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+      <div class="layers-container">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1" >
+            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+              <img  class="animate-img" alt='imagen corporativa' data-src="/images/carousels/liderlogo-imagen-corporativa.jpeg"  >
+                </div>
+              </div>
+            </div>
+        <div class="section ">
+          <div id="hc-layer-1-item-1">
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+          </div>
+          <div id="hc-layer-2-item-1">
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+          </div>
+        </div>
+      </div>
+    </v-carousel-item>
+    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+      <div class="layers-container">
+        <div class="section slider-img-container">  
+          <div id="hc-layer-3-item-1  ">
+            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+              <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-diseño-de-logo-unico.jpeg"  >
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div id="hc-layer-1-item-1">
+            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+          </div>
+          <div id="hc-layer-2-item-1">
+            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -143,9 +99,18 @@
 </script>
 
 <style>
-  .theme2 .v-carousel__controls {
-    display: none;
-  }
+    .theme2 .v-carousel__controls {
+        display: none;
+    }
+    .main-carousel.theme2 .v-image  {
+        height: auto !important;
+    }
+    .main-carousel.theme2  .slider-img-container div{
+      text-align: center;
+    }
+    @media (min-width: 1900px) {
+ 
+    }
 </style>
 
 <style scoped>
@@ -458,12 +423,14 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 53vw;
+        margin-top: 10%;
+        min-height: 540px;
+        /* min-height: 53vw; */
     }
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 10%;
+ 
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -487,7 +454,6 @@
 
     .theme2 div#hc-layer-2-item-1 {
       font-size: 10px;
-      width: 80%;
       line-height: 25px;
       letter-spacing: 0.5px;
       margin-top: 20px;
@@ -498,17 +464,18 @@
     }
   }
 
-  @media (min-width: 1904px) {
+  @media (min-width: 1900px) {
 
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: 53vw;
+        min-height: none;
+        margin-top: 10%;
     }
+
 
     .theme2 .layers-container {
       display: flex;
-      margin-top: 8%;
       margin-left: 10%;
       margin-right: 10%;
       width: 80% !important;
@@ -539,7 +506,12 @@
 
     .theme2 div#hc-layer-3-item-1 {
       width: 90%;
+      height: 540px;
     }
+  .v-responsive.v-image.v-carousel__item {
+        height: auto !important;
+    }
+
   }
 
   .fade-enter-active, .fade-leave-active {
@@ -547,5 +519,9 @@
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
    }
+  .main-carousel .v-image  {
+    height: auto !important;
+    text-align: center;
+}
 
 </style>

@@ -4,10 +4,13 @@ export const tripticos = {
   descriptionSEO: 'Creación de Tripticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'Tríptico',
-  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu folleto en formato digital listo para usarse digitalmente o impreso.'],
-  description: `Tu negocio, servicios y productos desplegados en 6 caras`,
+  list: ['Creamos tus diseños 100% únicos y exclusivos', 'Todas las creatividades realizadas a medida y ¡de forma ilimitada!', 'Vas a tener los diseños en 24 horas', 'Tu folleto o tríptico en formato digital preparado para poder hacer uso de él de forma digital o impreso', 'Queremos cuidarte y que te despreocupes por todo. Por eso, te damos un precio cerrado de 308 euros'],
+  description: `Tu negocio, servicios y productos desplegados en 6 caras. En Líderlogo sabemos que a veces un flyer o díptico no es suficiente para dar a conocer tu empresa. Todo aquello que quieres que sepan tus futuros clientes.<br/>Para ello, te presentamos nuestro servicio de diseño y creación del tríptico profesional que hará destacar tu empresa ante la competencia.`,
+  descriptionPrice: '<strong style="font-size: 16px">Tu negocio, servicios y productos desplegados en 6 caras</strong><br><br>Qué incluye:</br>',
   shortDescription: `Tu negocio, servicios y productos desplegados en 6 caras`,
   icon: '/icons/triptico.svg',
+  listServices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu folleto en formato digital listo para usarse digitalmente o impreso.'],
+  listPrices: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu folleto en formato digital listo para usarse digitalmente o impreso.'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO LLAMATIVO Y DE CALIDAD',

@@ -1,13 +1,16 @@
 export const web = {
   /* SEO */
-  titleSEO: 'Diseño y desarrollo de páginas web',
+  titleSEO: 'Diseño de sitios web profesionales',
   descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
   /* ** */
-  list: ['Desarrollo de sitio web profesional y a tu medida', 'Diseño gráfico y web avanzado', 'Asesoría especializada', 'Adaptable a todos los dispositivos', 'Autoadministrable', 'Publicado y funcionando'],
-  title: 'Sitio web profesional',
-  description: `Es el sitio web perfecto para emprendedores y PyMes que desean dar a conocer sus empresas y ganar clientes en Internet.`,
+  list: ['Desarrollamos tu página web profesional a medida según tus necesidades y las de tus clientes', 'Llevamos a cabo un diseño gráfico y web profesional que potencie tu imagen de marca', 'Te incluimos asesoría especializada y personalizada con nuestro equipo de creativos', 'Preparamos tu web profesional adaptada para todos los dispositivos', 'Autoadministrable. Administra tu página hasta el mínimo detalle. Tú tienes el control de tu negocio', 'Te la entregamos publicada y en pleno funcionamiento', 'En Líderlogo pensamos en ti. Por eso te damos un precio cerrado de 769 euros'],
+  title: 'Diseño de sitios web profesionales',
+  description: `En Líderlogo creamos, diseñamos y damos vida a tu página web para que emprendedores y Pymes tengan una carta de presentación acorde a sus negocios. Creamos tu sitio web perfecto para que tu empresa o tu marca personal destaque ante la competencia. No solo diseñamos tu imagen de marca, también te ayudamos a que tengas más clientes con ella. `,
   shortDescription: `Es el sitio web perfecto para emprendedores y PyMes que desean dar a conocer sus empresas y ganar clientes en Internet.`,
+  descriptionPrice: '<strong style="font-size: 16px">Es el sitio web perfecto para emprendedores y PyMes que desean dar a conocer sus empresas y ganar clientes en Internet.</strong><br><br>Qué incluye:</br>',
   icon: '/icons/sitio-web-profesional.svg',
+  listServices: ['Desarrollo de sitio web profesional y a tu medida', 'Diseño gráfico y web avanzado', 'Asesoría especializada', 'Adaptable a todos los dispositivos', 'Autoadministrable', 'Publicado y funcionando'],
+  listPrices: ['Desarrollo de sitio web profesional y a tu medida', 'Diseño gráfico y web avanzado', 'Asesoría especializada', 'Adaptable a todos los dispositivos', 'Autoadministrable', 'Publicado y funcionando'],
   whatWeOffer: [
     {
       title: 'DISEÑO WEB ÚNICO Y ORIGINAL',

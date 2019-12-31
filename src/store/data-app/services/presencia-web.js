@@ -3,12 +3,15 @@ export const presencia = {
   titleSEO: 'Diseño y desarrollo de páginas web',
   descriptionSEO: 'Diseñamos tu página web a medida hasta entera conformidad, tenemos 15 años de experiencia y miles de clientes satisfechos ¡Haz crecer tu negocio ahora!',
   /* ** */
-  list: ['Diseño, maquetación, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electrónico, alojamiento de sitio web'],
-  title: 'Presencia Web',
-  description: `Tu página web ideal para brindar la introducción de su empresa en internet`,
+  list: ['Creamos el diseño, maquetación, programación y publicación de tu página web profesional. Además, autogestionable para que tengas el control de tu negocio digital', 'Te incluimos el registro del dominio web, las casillas de correo electrónico y el alojamiento de tu sitio web profesional', 'No queremos que te gastes mucho dinero en dar el primer paso. Por ello en Líderlogo te damos un precio cerrado de 314 euros'],
+  title: 'Potencia y haz crecer tu marca con Presencia Web',
+  description: `En Líderlogo sabemos que la presencia digital de tu marca es la tarjeta de presentación para tus posibles clientes. Por eso queremos que te despreocupes y dejes en nuestras manos tu página web perfecta para mostrar tu empresa o emprendimiento en internet.<br/><br/> Qué incluye el trabajo de potenciar tu presencia web:`,
+  descriptionPrice: '<strong style="font-size: 16px">Si quieres el logo perfecto para que tu marca destaque ante tu competencia, no salgas de aquí. Estás en el sitio correcto.</strong><br/>En Liderlogo creamos el logo que tu marca necesita para triunfar. No dejes para mañana pudiendo comenzar hoy a hacer brillar tu empresa. Nuestro equipo de creativos profesionales te ayudarán a lograr el éxito de tu negocio.<br><br>Qué incluye:</br>',
   shortDescription: `Tu página web ideal para brindar la introducción de su empresa en Internet.`,
   icon: '/icons/ecommerce.svg',
   addonService: true,
+  listServices: ['Diseño, maquetación, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electrónico, alojamiento de sitio web'],
+  listPrices: ['Diseño, maquetación, programación y publicación de sitio web profesional autogestionable', 'Registro de dominio web, casillas de correo electrónico, alojamiento de sitio web'],
   whatWeOffer: [
     {
       title: 'DISEÑO PUBLICITARIO ÚNICO Y ORIGINAL',

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pb-2">
     <v-layout row>
       <v-flex xs12 class="service-slider-container" ref="serviceSliderContainer">
         <div class="service-slider-scrollable" ref="serviceSliderScrollable" data-scrollable @mouseover="scroll" @mouseout="clearScroll">
@@ -77,6 +77,10 @@
 </script>
 
 <style scoped>
+.top-service-slider {
+    height: 40rem;
+}
+
   .service-slider-container {
     overflow: hidden;
     position: relative;
@@ -130,4 +134,6 @@
       margin: 40px 0px 20px 0px;
     }
   }
+
+
 </style>

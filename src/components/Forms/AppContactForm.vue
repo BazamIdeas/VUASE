@@ -1,11 +1,21 @@
+
 <template>
+  <v-layout row wrap align-end>
+    <v-flex xs12 md5 mt-5 class="img-contacto-container">
+      <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">          
+        <img alt="Contacto Liderlogo" class="img-contacto" data-src="/images/pages/muchacho_contacto.jpg" width="100%">
+      </div>
+    </v-flex>
+    <v-flex xs12 md6 class="mt-5 xs-mt-0">
+      <h3 class="display-1 font-weight-bold mb-3 text-xs-center" style=" color: #434343;">{{titleLanding}}</h3>
+    <h4 class="font-weight-medium mb-4 text-xs-center theme--light v-label">{{subtitleLanding}}</h4>
   <v-form id="contact-form" @submit.prevent="submit">
     <v-layout row wrap>
       <v-flex xs12 sm6 md6>
         <v-text-field v-model="name" v-validate="'required'" name="contact.name" label="Nombre" placeholder="Nombre" :error-messages="errors.collect('contact.name')" solo flat></v-text-field>
       </v-flex>
       <v-flex xs12 sm6 md6>
-        <v-text-field v-model="email" v-validate="'required|email'" name="contact.email" label="Correo electrónico laboral" placeholder="Correo electrónico laboral" :error-messages="errors.collect('contact.email')" solo flat></v-text-field>
+        <v-text-field v-model="email" v-validate="'required|email'" name="contact.email" label="Tu correo profesional" placeholder="Tu correo profesional" :error-messages="errors.collect('contact.email')" solo flat></v-text-field>
       </v-flex>
       <!-- <v-flex xs12>
         <v-radio-group v-model="for_phone" class="ma-0">
@@ -29,7 +39,7 @@
           placeholder="Horarios" :error-messages="errors.collect('contact.times')" solo flat></v-select>
       </v-flex> -->
       <v-flex xs12 :class="{'order-md1': contactPage}">
-        <v-textarea v-model="message" v-validate="'required'" name="contact.message" :label="contactPage ? 'Comentanos algo más sobre el servicio que necesitas' : 'Escribe tu consulta o solicitud'" :error-messages="errors.collect('contact.message')" solo flat></v-textarea>
+        <v-textarea v-model="message" v-validate="'required'" name="contact.message" :label="contactPage ? 'Ayudanos a conocer más cómo podemos ayudarte y cuáles son tus necesidades' : 'Escribe tu consulta o solicitud'" :error-messages="errors.collect('contact.message')" solo flat></v-textarea>
       </v-flex>
 
       <!-- if contact page -->
@@ -76,7 +86,7 @@
         <v-flex xs12 md10 order-md2>
           <v-checkbox
             v-model="offers"
-            label="Ademas deseo conocer más sobre paquetes promocionales"
+            label="Me gustaría estar informado de vuestras promociones"
             required
           ></v-checkbox>
         </v-flex>
@@ -93,6 +103,10 @@
       </v-flex>-->
     </v-layout>
   </v-form>
+        </v-flex>
+      </v-layout>
+
+
 </template>
 
 <script>
@@ -126,13 +140,18 @@
       countryData () { return this.$store.state.countries.data },
       services () {
         return this.$store.state.services.list
+      },
+      titleLanding () {
+        return this.contactPage ? '¿En qué podemos ayudarte? ¡Cúentanos!' : '¿Necesitas un Consejo Profesional?'
+      },
+      subtitleLanding () {
+        return this.contactPage ? 'Para pder asesorarte y ayudarte gratuitamente, necesitamos que nos ayuydes a saber más sobre ti rellenando el formulario. Así uno de nuestros profesionales te contactará.' : 'ESTAMOS PARA ASESORARTE GRATIS. COMPLETA EL FORMULARIO Y UN EXPERTO SE PONDRÁ EN CONTACTO CONTIGO HOY.'
       }
     },
     methods: {
       submit () {
         this.$validator.validate().then(async (result) => {
           if (!result) return
-
           var contact = {
             name: this.name,
             email: this.email,
@@ -141,34 +160,27 @@
             promo: this.offers,
             reseller: this.type_user || false
           }
-
           if (this.for_phone) {
             contact.phone = this.phone
             contact.schedule = 'horario no especificado'
           }
-
           /* Adwords Data */
-
           let utmCampaign = this.$router.currentRoute.query.campaign
           if (utmCampaign) {
             contact.campaign = utmCampaign
           }
-
           let utmMedium = this.$router.currentRoute.query.medium
           if (utmMedium) {
             contact.medium = utmMedium
           }
-
           let utmSource = this.$router.currentRoute.query.source
           if (utmSource) {
             contact.source = utmSource
           }
-
           this.$store.dispatch('user/contactForm', contact).then((res) => {
             console.log(res)
             this.$router.push('/gracias?por=contacto')
           })
-
           /* if (process.browser) {
              window.grecaptcha.ready(() => {
               let secret = '6Lf1944UAAAAAHmlC7K-rhNxkaSs1_qbLU7hIdaH'
@@ -177,10 +189,8 @@
                   secret: secret,
                   response: token
                 }
-
                 this.$axios.post('https://www.google.com/recaptcha/api/siteverify', response).then((res) => {
                   console.log('grecaptcha', res)
-
                 }).catch((err) => {
                   console.log(err)
                 })
@@ -197,7 +207,6 @@
   .no-messages .v-messages{
     display: none;
   }
-
   .v-radio label {
     font-size: 14px !important;
   }
@@ -206,4 +215,11 @@
   .ws-float-btn {
     background-color: #87C438 !important;
   }
+  .img-contacto{
+        max-width: 40rem;
+  }
+  .img-contacto-container{
+    text-align: end;
+  }
 </style>
+

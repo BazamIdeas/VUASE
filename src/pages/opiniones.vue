@@ -3,7 +3,7 @@
     <v-container grid-list-md class="mt-5">
       <v-layout row wrap class="mt-5">
         <v-flex xs12 md5 class="pr-5 pr-xs-0">
-          <h1 class="display-1 xs-headline mt-5 mb-5 font-weight-bold text-xs-center text-md-left">Nuestros Clientes Hablan por nosotros</h1>
+          <h1 class="display-1 xs-headline mt-5 mb-5 font-weight-bold text-xs-center text-md-left">No vamos a intentar convencerte. Nuestros Clientes lo hacen por nosotros</h1>
         </v-flex>
         <v-flex xs12 md7>
           <iframe class="responsive-video" height="350px" src="https://www.youtube.com/embed/Ywm1mGab3Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -12,24 +12,21 @@
       <v-layout row wrap class="mt-5">
         <v-flex xs12 v-for="(testimony, i) in testimonies.slice(0, limit)" :key="i">
           <v-layout row wrap class="mb-xs-3">
-            <v-flex xs12 sm4 md3 @click="testimony.active = !testimony.active">
-                  <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-
-              <img :alt="'Testimonio ' + testimony.company"  :data-src="testimony.logo" class="p-testimony-logo">
+            <v-flex xs12 sm4 md3  offset-lg2  @click="testimony.active = !testimony.active">
+              <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
+              <img :alt="'Testimonio ' + testimony.company"  :data-src="testimony.logo"  class="p-testimony-logo ">
                 </div>
-
             </v-flex>
-
-            <v-flex xs12 sm6 md9>
-              <v-layout class="mt-4" row d-flex justify-center>
-                <div class="text-xs-center">
+            <v-flex xs12 sm6 md9 lg5 >
+              <v-layout class="mt-4"  d-flex justify-center  row >
+                <div class="text-xs-center ">
                   <v-rating class="testimony-rating" :value="testimony.stars" readonly></v-rating>
                 </div>
               </v-layout>
-              <h3 class="subheading font-weight-medium text-xs-center mt-3 pb-2" style="color:rgb(151, 147, 147);">
+              <h3 class="subheading font-weight-medium text-xs-center  mt-3 pb-2 " style="color:rgb(151, 147, 147);">
                 {{testimony.description}}
               </h3>
-              <h3 class="subheading font-weight-medium text-xs-center mt-0 pb-2" style="color:rgb(67, 67, 67);">
+              <h3 class="subheading font-weight-medium text-xs-center  mt-0 pb-2 " style="color:rgb(67, 67, 67);">
                 {{testimony.company}}
               </h3>
             </v-flex>
@@ -840,6 +837,11 @@
  .responsive-video{
    width: 100%;
  }
+
+.wrap-title{
+  display: none;
+}
+
  @media (min-width: 320px) and (max-width: 980px) {
     .p-testimony-logo{ 
       height: auto;
@@ -859,4 +861,17 @@
       padding-right: 0 !important;
     }
   }
+
+  @media (min-width: 1900px){
+    .center-lg-start{
+      justify-items: start
+    }
+    .wrap-title{
+      display: block;
+    }
+    .our-clients{
+          margin-left: 30%;
+    }
+  }
+
 </style>

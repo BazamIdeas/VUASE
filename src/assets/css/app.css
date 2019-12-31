@@ -185,6 +185,11 @@ a {
     padding: 0 15px;
   }
 }
+@media (min-width: 1900px) {
+  .img-contacto {
+ 
+  }
+}
 
 @media (min-width: 320px) and (max-width: 640px) {
   h2.display-2, h2.display-1 {
