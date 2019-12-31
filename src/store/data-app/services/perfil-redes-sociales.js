@@ -3,7 +3,7 @@ export const redesSociales = {
   titleSEO: 'Diseño de perfil de redes sociales',
   descriptionSEO: 'Creación de perfiles para redes sociales, destaca tu imagen y haz la diferencia, ¡Comienza tu proyecto ahora!',
   /* ** */
-  list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram', 'Nuestro trabajo te sorprenderá, igual que nuestro precio cerrado de 95 euros'],
+  list: ['Facebook', 'Twitter', 'YouTube', 'Linkedin', 'Pinterest', 'Instagram'],
   title: 'Destaca los perfiles profesionales de tus redes sociales',
   description: `En Líderlogo sabemos que las redes sociales son parte del día a día de las empresas y negocios actuales. Son uno de los canales de comunicación inmediata más potentes en tu estrategia de Marketing y Comunicación.<br/><br/>En este servicio te incluimos los diseños de las portadas y avatars para mejorar la imagen de tu marca en:`,
   descriptionPrice: '<strong style="font-size: 16px">Portadas y avatars para destacar tu marca en:</strong>',

@@ -123,7 +123,7 @@ export const imagenCorporativa = {
     }, {
       question: 'Tengo una idea para el diseño de mi logo, aunque no es la definitiva. ¿Podrían diseñar mi marca en base a ello? ¿Cómo les envío mi idea o boceto?',
       response: `Sí. Podemos diseñar tu marca en base a tu idea inicial aunque no sea la definitiva. Nuestro equipo de creativos crea conceptos profesionales a través de la idea que nos mandas. Tanto el concepto gráfico, tipografía, colores, proporciones adecuadas, etc.<br/>
-      El equipo de profesionales de Líder logo te presentamos, sin coste adicional, diseños creados desde un punto de vista objetivo y profesional para que puedas ver otras opciones sorprendentes. Dando solución de diseño que a lo mejor no te has planteado, de tal manera que puedan resolver tu necesidad de identidad gráfica corporativa.</br>
+      El equipo de profesionales de LíderLogo te presentamos, sin coste adicional, diseños creados desde un punto de vista objetivo y profesional para que puedas ver otras opciones sorprendentes. Dando solución de diseño que a lo mejor no te has planteado, de tal manera que puedan resolver tu necesidad de identidad gráfica corporativa.</br>
       Cuando nos mandes tu pedido, adjunta sin coste adicional tu idea o material que tengas para que lo trabajemos. Si te resulta más cómodo, mándanoslo por WhatsApp o email indicando el nombre de tu marca. Nos adaptamos a tus necesidades.
       `
     }, {

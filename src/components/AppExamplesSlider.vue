@@ -46,7 +46,7 @@
         type: Array
       },
       initScroll: {
-        default: 40
+        default: 10
       },
       itemWidth: {
         default: '300px'

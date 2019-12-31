@@ -5,7 +5,7 @@
     <!-- PORTFAFOLIO -->
     <v-layout row wrap align-center>
       <v-flex d-flex xs12 offset-md1 md10 class="pt-5">
-        <h2 class="mb-5 text-xs-center display-1 font-weight-bold xs-headline" >
+        <h2 class="mb-5 text-xs-center display-1 font-weight-bold " >
           ¡Te van a encantar todos nuestros logos, diseño web, nuestras Apps a medida y la cantidad incalculable de Papelería que podemos crear para ti!
         </h2>
       </v-flex>
@@ -79,24 +79,24 @@
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <!-- TESTIMONIOS -->  
-        <AppTestimony :alt="alt" width="mt-5 mb-5 xs12 offset-md1 md10" :list="testimonies" />
-        <v-layout class="pa-3">
-          <v-flex xs12 md6>
-            <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios a agencias</h2>
-                    <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
-          <img :alt="alt" data-src="/images/pages/profesional_services.jpg" style="width: 80%; margin: auto; display: block;">
-                  </div>
+        <AppTestimony :alt="alt" width="mt-4 mb-3 xs12 offset-md1 md10" :list="testimonies" />
+        <!-- SERVICIOS A AGENCIAS -->  
+          <v-flex xs12 offset-lg1 lg5>
+            <h2 class="font-weight-bold mb-3 text-xs-center xs-text-size-30 hidden-md-and-up" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios para que tu negocio crezca</h2>
+            <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">       
+              <img :alt="alt" class=" mt-5 mt-xs-0" data-src="/images/pages/profesional_services.jpg" style="width: 80%; max-width: 500px;  margin: auto; display: block;">
+            </div>
           </v-flex>
-          <v-flex xs12 md6 class="mt-2  mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
+          <v-flex xs12 lg5 class=" mt-xs-0 pt-xs-0 text-xs-center pluma-background" style="position: relative"> 
             <div>
               <h2 class="font-weight-bold mb-2 mt-5 text-xs-center xs-text-size-30 hidden-md-and-down" style="font-size: 35px; line-height: 38px; color: #434343; ">Servicios para que tu negocio crezca</h2>
               <h3 class="mb-2">Ayudamos a empresas como la tuya a tener un abanico más grande de servicios</h3>
-              <p class="text-xs-justify mb-5 font-weight-medum"  style="line-height: 25px;">
-                En Líder Logo queremos ayudarte a crecer. Tanto es así que ponemos a tu disposición todos nuestros años de experiencia en el sector del Marketing, Publicidad, Comunicación y Diseño para que tu empresa crezca más rápido que tu competencia.
+              <p class="body-3 text-xs-justify mb-5 font-weight-regular"  style="line-height: 25px;">
+                En LíderLogo queremos ayudarte a crecer. Tanto es así que ponemos a tu disposición todos nuestros años de experiencia en el sector del Marketing, Publicidad, Comunicación y Diseño para que tu empresa crezca más rápido que tu competencia.
                 <br/><br/>
                 Vivimos en un momento de mucha deslealtad profesional y feroz competencia. Seguro que lo has vivido en tu negocio. Pero también estamos en un momento de grandes oportunidades.
                 <br/><br/>
-                En Líder Logo somos conscientes de que nuestros fracasos hechos aprendizaje nos ayudaron a ser mejores, y junto nuestros éxitos profesionales, crecimos. Por ello queremos que te anticipes a las tendencias con nuestra ayuda.
+                En LíderLogo somos conscientes de que nuestros fracasos hechos aprendizaje nos ayudaron a ser mejores, y junto nuestros éxitos profesionales, crecimos. Por ello queremos que te anticipes a las tendencias con nuestra ayuda.
                 <br/><br/>
                 Nuestra marca blanca de servicios está diseñada para empresas y negocios como el tuyo. No queremos ser los protagonistas. Queremos que lo seas tú.
 
@@ -104,12 +104,9 @@
               <v-btn to="/servicios-profesionales" flat outline class="px-4" style="background-color: #703383 !important; border-color: #703383; color: white; ">Quiero conocer más</v-btn>
             </div>
           </v-flex>
-        </v-layout>
-
-
       </v-layout>
-          <AppContactForm />
-      <AppHeading class="mb-3" number="3" size="display-1" title="Mira, ¡salimos en los medios!"  />
+      <AppContactForm />
+      <AppHeading class="mb-3" number="2" size="display-1" title="Mira, ¡salimos en los medios!"  />
       <AppExamplesSlider  :hover-info="false" :alt="alt" :examples="medios" hovered="false" shadow="false" puntos="false" item-width="120" item-height="120"  class="mb-0 pb-2" />
     </v-container>
   </section>

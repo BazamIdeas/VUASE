@@ -21,7 +21,7 @@
 
               .top-service-slider .v-carousel__prev, .top-service-slider .v-carousel__next {
                 position: absolute;
-                top: {{service.arrowsTop || '30%'}};
+                top: 10%;
               }
             }
 

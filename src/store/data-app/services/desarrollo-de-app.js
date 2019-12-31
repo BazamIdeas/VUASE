@@ -4,7 +4,7 @@ export const disenoApp = {
   descriptionSEO: 'Desarrollamos su aplicación móvil para ayudar a aumentar la presencia en línea de su empresa, tenemos cientos de clientes satisfechos ¡Comienza ahora!',
   /* ** */
   startWith: 'A PARTIR DE:',
-  list: ['Te ayuda a fidelizar a tus clientes', 'Aumenta la visibilidad y el posicionamientode tu empresa', 'Ofreces otro canal de venta y comunicación directa y humana', 'Fortalece tu marca digitalmente a través de la humanización', 'Te ayuda a adaptarte a los nuevos clientes de esta Era Digital', 'Lo más interesante: En Líderlogo te damos un precio cerrado de 800 euros'],
+  list: ['Te ayuda a fidelizar a tus clientes', 'Aumenta la visibilidad y el posicionamientode tu empresa', 'Ofreces otro canal de venta y comunicación directa y humana', 'Fortalece tu marca digitalmente a través de la humanización', 'Te ayuda a adaptarte a los nuevos clientes de esta Era Digital'],
   title: 'Aplicación para Móviles',
   description: `Desarrollar una aplicación móvil ya no es exclusivo de las grandes marcas. Tú también puedes tener tu propia App para mejorar y potenciar la presencia digital de tu empresa. Además, te ayuda a conectar con los usuarios de tu marca y clientes de tu negocio. En Líderlogo te ayudamos a convertir la comunicación de tu empresa en una comunicación directa y humana a través de la Aplicación que crearemos para ti.<br/>Mira qué beneficios aporta tener una App:`,
   descriptionPrice: '<strong style="font-size: 16px">Desarrollar una aplicación móvil ayuda a aumentar la presencia en línea de tu empresa y conectarse con los usuarios a través de una nueva plataforma digital.</strong><br><br>Qué incluye:</br>',

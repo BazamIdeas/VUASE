@@ -2,9 +2,9 @@
   <div style="background: white;">
     <!-- NEWSLWTTER FORM -->
     <v-container grid-list-md text-xs-center class="px-0" style="background: white; border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);" >
-      <v-layout row wrap align-center class="mx-0">
+      <v-layout row wrap align-center class="mx-1">
         <v-flex xs12 md7>
-           <h2 class="title font-weight-medium mb-2">Sé el primero en descubrir nuestras novedades en la Newsletter</h2>
+           <p class="body- font-weight-medium mb-2 px-1">Sé el primero en descubrir nuestras novedades en la Newsletter:</p>
         </v-flex>
         <v-flex xs12 md5>
           <appNewsletterForm />
@@ -49,7 +49,7 @@
           </v-flex>-->
           <v-layout row wrap align-center class="mx-0">
             <v-flex xs12 offset-md1 md6 class="xs-order-2">
-              <h5 class="font-weight-normal">Copyright © 2019 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU </h5>
+              <h5 class="font-weight-normal">Copyright © 2020 Todos los Derechos Reservados. Liderlogo ® SOLMAX EUROPE, SLU </h5>
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs12 md5>
