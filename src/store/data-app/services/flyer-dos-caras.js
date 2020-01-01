@@ -4,7 +4,7 @@ export const flyerDosCaras = {
   descriptionSEO: 'Consigue aquí el mejor diseño para tu Flyer , te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'Tu Flyer a dos caras siempre es mejor para tu negocio',
-  list: ['Creamos tus diseños 100% únicos, personalizados y exclusivos', 'Diseñamos trabajos a medida y de forma ilimitada para que puedas elegir entre muchos diseños diseños', 'Creamos tus diseños en 24 horas. Garantizamos un trabajo rápido, ágil, de calidad y eficiente', 'Preparamos tu flyer en formato digital listo para utilizarse digitalmente o impreso', 'Pensarás que el precio es una broma, pero no lo es. Nuestro precio cerrado para ti es de 193 euros'],
+  list: ['Creamos tus diseños 100% únicos, personalizados y exclusivos', 'Diseñamos trabajos a medida y de forma ilimitada para que puedas elegir entre muchos diseños diseños', 'Creamos tus diseños en 24 horas. Garantizamos un trabajo rápido, ágil, de calidad y eficiente', 'Preparamos tu flyer en formato digital listo para utilizarse digitalmente o impreso'],
   description: `Sabemos que a veces una sola cara no es suficiente para incluir toda la información de tu negocio. Es por ello que en Líderlogo creamos flyers llamativos, creativos, únicos y personalizados para tu negocio en ambas caras. <br/><br/>Mira todo lo que incluye y el precio tan atractivo que tenemos para ti con tu flyer a dos caras:`,
   descriptionPrice: '<strong style="font-size: 16px">Flyer llamativos con para tu negocio en ambas caras</strong><br/><br/>Qué incluye:</br>',
   shortDescription: `Flyer llamativos con para tu negocio en ambas caras`,

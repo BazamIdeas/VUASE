@@ -4,13 +4,13 @@ export const redisenoLogo = {
   descriptionSEO: 'Renovamos tu logo hasta su entera aprobación, diseños ilimitados y asesoría gratuita, tenemos más de 15 años de experiencia diseñando marcas ¡Comienza ahora!',
   /* ** */
   list: ['Restyling de tu logo a la medida y hasta tu una entera conformidad.', 'Entrega de tu logo listo para utilizar donde necesites (+20 formatos)', 'Entrega de manual corporativa para la correcta aplicación de tu logo', 'Entrega de certificado de transferencia de derechos intelectuales de tu marca'],
-  title: 'REDISEÑAMOS TU LOGO',
+  title: 'Rediseñamos tu Logo',
   description: `Renovación de tu Logo hasta su entera aprobación.`,
   descriptionPrice: '<strong style="font-size: 16px">Renovación de tu Logo hasta su entera aprobación.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Renovación de tu Logo hasta su entera aprobación.`,
   icon: '/icons/redisenio.svg',
   listServices: ['Hacemos el restyling de tu logo a medida. Incluye todas las versiones y creaciones hasta llegar al definitivo.', 'Entregamos tu logo en más de 20 formatos para que hagas uso de él donde lo necesites en cada momento.', 'Te entregamos el manual corporativo para que tengas a mano la correcta aplicación y uso de tu logotipo.', 'Además, también te entregamos el certificado de transferencia de derechos intelectuales de tu marca.'],
-  listPrices: ['', '', '', '', '', '', '', '', '', ''],
+  listPrices: ['Restyling de tu logo a la medida y hasta tu una entera conformidad.', 'Entrega de tu logo listo para utilizar donde necesites (+20 formatos)', 'Entrega de manual corporativa para la correcta aplicación de tu logo', 'Entrega de certificado de transferencia de derechos intelectuales de tu marca'],
   whatWeOffer: [
     {
       title: 'LOGO 100% ÚNICO Y ORIGINAL',
@@ -94,7 +94,7 @@ export const redisenoLogo = {
     }, {
       question: 'Tengo una idea para el diseño de mi logo, aunque no es la definitiva. ¿Podrían diseñar mi marca en base a ello? ¿Cómo les envío mi idea o boceto?',
       response: `Sí. Podemos diseñar tu marca en base a tu idea inicial aunque no sea la definitiva. Nuestro equipo de creativos crea conceptos profesionales a través de la idea que nos mandas. Tanto el concepto gráfico, tipografía, colores, proporciones adecuadas, etc.<br/>
-      El equipo de profesionales de Líder logo te presentamos, sin coste adicional, diseños creados desde un punto de vista objetivo y profesional para que puedas ver otras opciones sorprendentes. Dando solución de diseño que a lo mejor no te has planteado, de tal manera que puedan resolver tu necesidad de identidad gráfica corporativa.</br>
+      El equipo de profesionales de LíderLogo te presentamos, sin coste adicional, diseños creados desde un punto de vista objetivo y profesional para que puedas ver otras opciones sorprendentes. Dando solución de diseño que a lo mejor no te has planteado, de tal manera que puedan resolver tu necesidad de identidad gráfica corporativa.</br>
       Cuando nos mandes tu pedido, adjunta sin coste adicional tu idea o material que tengas para que lo trabajemos. Si te resulta más cómodo, mándanoslo por WhatsApp o email indicando el nombre de tu marca. Nos adaptamos a tus necesidades.
       `
     }, {

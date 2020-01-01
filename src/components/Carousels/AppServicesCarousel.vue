@@ -11,8 +11,8 @@
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
-            <h1>¿Qué diseño quieres que creemos para ti?</h1>
-            <h6>En Liderlogo diseñamos tus sueños profesionales</h6>
+            <h1 class="display-1 px-1" >¿Qué diseño quieres que creemos para ti?</h1>
+            <h5 class="body-4 px-1">En Liderlogo diseñamos tus sueños profesionales</h5>
           </div>
 
           <div id="hc-layer-2-item-1" class='pt-1' style="z-index: 99;">
@@ -203,7 +203,7 @@
 
   .v-carousel.main-carousel {
       height: 114vh;
-      min-height: 640px;
+      min-height: 850px;
   }
 
   .layers-container {
@@ -270,13 +270,13 @@
  @media (max-width: 480px) {
     .v-carousel.main-carousel {
       min-height: auto;
-      height: 720px !important;
+      height: 850px !important;
     }
  }
   @media (max-width: 960px) {
 
     .v-carousel.main-carousel {
-        height: 540px;
+        height: 850px;
         min-height: auto;
     }
 

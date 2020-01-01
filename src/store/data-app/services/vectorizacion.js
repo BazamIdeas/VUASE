@@ -3,7 +3,7 @@ export const vectorizacion = {
   titleSEO: 'Vectorización de logo',
   descriptionSEO: 'Re-dibujamos tu logo de una imagen de baja resolución y la preparamos en archivos vectoriales para el uso que necesites.',
   /* ** */
-  list: ['Convertimos tu logo a alta resolución logrando una imagen increíble', 'Tendrás tu diseño en 24 horas', 'Te mandamos tu logo preparado para usar en una cantidad enorme de formatos (editables e imágenes)', 'Tendrás tu Manual corporativo de marca para que tengas todos los detalles', 'Nuestro precio cerrado para ti es de 90 euros'],
+  list: ['Convertimos tu logo a alta resolución logrando una imagen increíble', 'Tendrás tu diseño en 24 horas', 'Te mandamos tu logo preparado para usar en una cantidad enorme de formatos (editables e imágenes)', 'Tendrás tu Manual corporativo de marca para que tengas todos los detalles'],
   title: '¡Vectoriza tu logo!',
   description: `En Líderlogo redibujamos tu logo desde una imagen con baja resolución y la mejoramos para que tu imagen de marca brille. Te preparamos el trabajo en archivos vectoriales para que puedas hacer uso de ello en el formato que necesites y para la plataforma que quieras.`,
   shortDescription: `En este servicio transformamos tu logo. Convertimos la imagen de tu logo en baja resolucion y la preparamos y convertimos en archivos vectoriales para que puedas usarlo en diferentes plataformas y formatos.`,

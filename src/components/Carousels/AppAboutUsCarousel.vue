@@ -1,9 +1,9 @@
 <template>
-  <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel mt-5" >
+  <v-carousel :interval="interval" height="100%"  hide-controls hide-delimiters class="main-carousel mt-5" >
     <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
         <div class="layer" id="hc-layer-1-item-1">
-          <h1>Diseñamos <br> Marcas Exitosas</h1>
+          <h1 class="display-1 px-2">Diseñamos <br> Marcas Exitosas</h1>
           <v-btn flat outline class="px-2 mt-4" style="background-color: #004b7b !important; border-color: #004b7b; color: white; line-height: initial;">COMPRUEBALO</v-btn>
         </div>
         <div class="layer" id="hc-layer-3-item-1">
@@ -29,23 +29,7 @@
 
 
 <style scoped>
-  .v-carousel.main-carousel--pro {
-      min-height: 420px;
-  }
 
-  #hc-layer-3-item-1{
-    height: 540px;
-  }
-/*   .v-window__container {
-    height: 440px;
-} */
-  .v-window-item {
-    height: 540px;
-}
-
-   .v-window.v-carousel.main-carousel{
-      height: 0 !important;
-    }
   .v-carousel {
     box-shadow: none;
   }
@@ -112,29 +96,44 @@
     font-weight: 600;
   }
 
-@media (min-height: 300px)
-  {
   .v-carousel.main-carousel {
     height: 300px;
-    min-height: 400px;
+    min-height: 420px;
   }
+
+
+@media (max-width: 320px)
+  {
+
+  div#hc-layer-1-item-1 {
+      top: 60%;
+      left: 5%;
+      text-align: center;
+    }
+
+  div#hc-layer-3-item-1 {
+      width: 95%;
+      top: 11%;
+      left: 5%;
+    }
 }
 
 
-  @media (max-width: 600px) {
+  @media (min-width: 321px) and (max-width: 600px) {
 
     /*ITEM-1*/
     div#hc-layer-1-item-1 {
       font-size: 28px;
       line-height: 39px;
       top: 60%;
+      left: 14%;
       text-align: center;
     }
 
     div#hc-layer-1-item-1 {
       font-size: 23px;
       line-height: 39px;
-      top: 49%;
+      top: 68%;
     }
 
     div#hc-layer-2-item-1 {
@@ -150,9 +149,9 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 75%;
+      width: 90%;
       top: 11%;
-      left: 14%;
+      left: 10%;
     }
 
     /*ITEM-2*/
@@ -210,7 +209,7 @@
     }
 
     div#hc-layer-3-item-1 {
-        width: 40%;
+        width: 60%;
         top: 12%;
         left: 6%;
     }
@@ -273,7 +272,7 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 60%;
+      width: 65%;
       top: 15%;
       left: 20%;
     }
@@ -313,7 +312,7 @@
       width: 44%;
       line-height: 55px;
       top: 32%;
-      left: 49%;
+      left: 65%;
     }
 
     div#hc-layer-2-item-1 {
@@ -326,7 +325,7 @@
     }
 
     div#hc-layer-3-item-1 {
-      width: 48%;
+      width: 65%;
       left: 7%;
       top: 9%;
     }
@@ -353,14 +352,15 @@
       left: 30.5%;
       top: 4%;
     }
-  }
 
-  @media (min-width: 1900px) {
-   .v-window.v-carousel.main-carousel{
-      height: 100% !important;
+    .v-carousel.main-carousel {
+      height: 120vh;
+      max-height: 780px;
     }
   }
 
+  @media (min-width: 1900px) {
+   
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .5s;
@@ -372,5 +372,6 @@
   /* .fade-leave-active below version 2.1.8 */
   {
     opacity: 0;
+  }
   }
 </style>

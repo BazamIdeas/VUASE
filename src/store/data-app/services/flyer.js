@@ -4,7 +4,7 @@ export const flyer = {
   descriptionSEO: 'Creación de Flyers Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: '¡Quiero tener el diseño de mi Flyer!',
-  list: ['Creamos tus diseños 100% únicos y exclusivos', 'Diseñamos creaciones a medida y de forma ilimitada para que puedas elegir un abanico inmenso de diseños', 'Creamos tus diseños en 24 horas', 'Preparamos tu flyer en formato digital listo para utilizarse digitalmente o impreso', 'Pensarás que es un regalo. Te damos un precio cerrado de 129 euros'],
+  list: ['Creamos tus diseños 100% únicos y exclusivos', 'Diseñamos creaciones a medida y de forma ilimitada para que puedas elegir un abanico inmenso de diseños', 'Creamos tus diseños en 24 horas', 'Preparamos tu flyer en formato digital listo para utilizarse digitalmente o impreso'],
   description: `En Líderlogo sabemos que no todo el mundo es digital. Y que el marketing y la publicidad convencional no han muerto. Siguen presentes en los negocios actuales para un público que su día a día también es analógico.<br/>Es por ello que nuestro equipo diseña y crea flyers y postales creativas para tu negocio, tanto digital como offline.<br/><br/>Qué incluye nuestra creación de flyers y postales:`,
   descriptionPrice: '<strong style="font-size: 16px">Flyers y postales creativas para tu negocio</strong><br><br>Qué incluye:</br>',
   shortDescription: `Flyers y postales creativas para tu negocio`,

@@ -12,11 +12,11 @@
         </div>
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+            <h1 class = "display-1">La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+            <p class="body-3 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En LíderLogo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 40px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -32,11 +32,11 @@
         </div>
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+            <h1 class = "display-1">La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+            <p class="body-3 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En LíderLogo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 40px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -52,11 +52,11 @@
             </div>
         <div class="section ">
           <div id="hc-layer-1-item-1">
-            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+            <h1 class = "display-1">La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+            <p class="body-3 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En LíderLogo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 40px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -72,11 +72,11 @@
         </div>
         <div class="section">
           <div id="hc-layer-1-item-1">
-            <h1>La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
+            <h1 class = "display-1">La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>
           <div id="hc-layer-2-item-1">
-            <p class="body-2 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En Líder Logo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
-            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 59px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
+            <p class="body-3 ">Estamos en la Era Digital del Diseño. Pero no todos los diseños son capaces de persuadir, motivar y estimular a tus clientes para comprar. En LíderLogo tenemos la capacidad de realizar el diseño a medida que provocará la admiración de tus clientes hacia tu marca, tus productos y servicios para comprar más y sentirse parte de tu negocio.</p>
+            <v-btn flat class="btn-simple" style="border: none; background: rgb(184, 0, 0); position: relative; margin-top: 40px; color: white !important; margin-left: 0; border:none; background:#2f3292;" to="/nuestros-servicios">Descubre lo que podemos hacer por ti</v-btn>
           </div>
         </div>
       </div>
@@ -108,9 +108,7 @@
     .main-carousel.theme2  .slider-img-container div{
       text-align: center;
     }
-    @media (min-width: 1900px) {
- 
-    }
+
 </style>
 
 <style scoped>
@@ -179,7 +177,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 750px;
+      min-height: 945px;
     }
 
     .theme2 .layers-container {
@@ -232,7 +230,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
       height: auto;
-      min-height: 700px;
+      min-height: 830px;
     }
 
     .theme2 .layers-container {
@@ -327,28 +325,28 @@
   @media (min-width: 600px) and (max-width: 740px) {
     .v-carousel.main-carousel {
       height: auto;
-      min-height: 700px;
+      min-height: 830px;
     }
   }
 
-  @media (min-width: 740px) and (max-width: 820px) {
+  @media (min-width: 740px) and (max-width: 830px) {
     .v-carousel.main-carousel {
         height: auto;
-        min-height: 700px;
+        min-height: 750px;
     }
   }
 
-  @media (min-width: 820px) and (max-width: 960px) {
+  @media (min-width: 830px) and (max-width: 960px) {
     .v-carousel.main-carousel {
         height: auto;
-        min-height: 700px;
+        min-height: 750px;
     }
   }
 
   @media (min-width: 1024px) and (max-width: 1264px) {
 
     .v-carousel.main-carousel {
-      height: 700px;
+      height: 830px;
       min-height: auto;
     }
 
@@ -423,7 +421,7 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        margin-top: 10%;
+        margin-top: 80px;
         min-height: 540px;
         /* min-height: 53vw; */
     }
@@ -469,8 +467,8 @@
     /* theme 2 */
     .theme2.v-carousel.main-carousel {
         height: auto;
-        min-height: none;
-        margin-top: 10%;
+        min-height: 550px;
+        margin-top: 5%;
     }
 
 
@@ -493,7 +491,7 @@
     .theme2 div#hc-layer-1-item-1 {
       font-size: 44px;
       width: 100%;
-      margin-top: 50px;
+      margin-top: 100px;
       line-height: 56px;
     }
 

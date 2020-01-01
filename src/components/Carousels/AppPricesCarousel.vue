@@ -8,7 +8,7 @@
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
-            <h1>Creamos el mejor diseño para ti</h1>
+            <h1 class="display-1 px-2">Creamos el mejor diseño para ti</h1>
           </div>
 
           <div id="hc-layer-2-item-1" style="z-index: 99;">

@@ -10,7 +10,7 @@
         <h6 v-if="number=='6'" :class="'font-weight-bold mb-2 text-xs-' + align + ' ' + size + ' ' + ccolor + ' ' + margin" :style="{color: color}">{{ title }}</h6>
       </v-flex>
       <v-flex v-if="subtitle" md6 :offset-md3="align === 'center'" :offset-md8="align === 'right'" offset-xs1 xs10>
-        <p :class="'body-2 font-weight-regular text-xs-' + align">
+        <p :class="'body-3 font-weight-regular text-xs-' + align">
           {{ subtitle }}
         </p>
       </v-flex>

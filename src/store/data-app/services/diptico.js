@@ -4,7 +4,7 @@ export const diptico = {
   descriptionSEO: 'Creación de Dipticos Profesionales para Empresas, te ofrecemos diseños ilimitados hasta tu entera conformidad. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'Díptico',
-  list: ['Todos los diseños son 100% únicos y exclusivos.', 'Todas las creaciones necesarias hasta llegar al diseño que te enamore.', 'Te entregamos los diseños en 24 horas.', 'Tu díptico llega a tus manos preparado para utilizar en el momento de su entrega (te lo damos editable y con las imágenes).', 'No te sorprendas si te decimos que tiene un precio cerrado de 219 euros. ¡Sin trucos!'],
+  list: ['Todos los diseños son 100% únicos y exclusivos.', 'Todas las creaciones necesarias hasta llegar al diseño que te enamore.', 'Te entregamos los diseños en 24 horas.', 'Tu díptico llega a tus manos preparado para utilizar en el momento de su entrega (te lo damos editable y con las imágenes).'],
   description: `El Líderlogo creamos y diseñamos la presentacion profesional de tu negocio unificadas en 4 caras. La información que quieras mostrar de tus productos y servicios a tus clientes y futuros clientes, condensadas en un único diseño.`,
   descriptionPrice: '<strong style="font-size: 16px">La presentacion profesional de tu negocio en 4 caras</strong><br><br>En serte servicio de Líderlogo, te incluimos:</br>',
   icon: '/icons/diptico.svg',

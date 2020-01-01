@@ -4,7 +4,7 @@ export const publicidad = {
   descriptionSEO: 'Consigue aquí el mejor diseño para tu publicidad, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
   title: 'Haz Publicidad para destacar tu negocio o marca personal',
-  list: ['Cremos diseños 100% exclusivos y únicos para tu marca o negocio', 'Todas las creaciones están hechas a medida. Pero además, ¡de forma ilimitada!', '¡Te entregamos tus diseños en 24 horas! Nadie lo entrega tan rápido y con tanta calidad', 'En Líderlogo te entregamos la publicidad de tu negocio en formato digital preparado para utilizar digitalmente o impreso', 'Esperamos que el precio te emocione y motive, porque estamos deseando trabajar para ti por un precio cerrado de 199 euros'],
+  list: ['Cremos diseños 100% exclusivos y únicos para tu marca o negocio', 'Todas las creaciones están hechas a medida. Pero además, ¡de forma ilimitada!', '¡Te entregamos tus diseños en 24 horas! Nadie lo entrega tan rápido y con tanta calidad', 'En Líderlogo te entregamos la publicidad de tu negocio en formato digital preparado para utilizar digitalmente o impreso'],
   description: `Comunicar tu negocio o tu marca personal es cada día más complicado. En Líderlogo lo sabemos, y por ello te ofrecemos un servicio para solucionar tus problemas de publicidad. Mira todo lo que estamos dispuestos a hacer por ti y para hacer crecer tu marca o empresa.`,
   descriptionPrice: '<strong style="font-size: 16px">Comunica tu negocio donde necesites y que tu negocio crezca</strong><br><br>Qué incluye:</br>',
   shortDescription: `Comunica tu negocio donde necesites y que tu negocio crezca`,
