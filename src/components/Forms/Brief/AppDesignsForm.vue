@@ -19,7 +19,7 @@
       }
     },
     mounted () {
-      var brief = this.$storage.get('brief')
+      const brief = this.$storage.get('brief') ? this.$storage.get('brief') : this.$store.state.brief.data
       this.$emit('changed', brief.designs.length)
     },
     computed: {
