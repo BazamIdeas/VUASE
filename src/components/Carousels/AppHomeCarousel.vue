@@ -41,16 +41,16 @@
         </div>
       </div>
     </v-carousel-item>
-    <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
+  <v-carousel-item transition="fade-transition" reverse-transition="fade-transition">
       <div class="layers-container">
         <div class="section slider-img-container">  
-          <div id="hc-layer-3-item-1" >
+          <div id="hc-layer-3-item-1  ">
             <div v-lazy-container="{ selector: 'img', loading: 'default.jpeg'}">
-              <img  class="animate-img" alt='imagen corporativa' data-src="/images/carousels/liderlogo-imagen-corporativa.jpeg"  >
-                </div>
-              </div>
+              <img class="animate-img" alt='diseño de logo unico' data-src="/images/carousels/liderlogo-imagen-corporativa.jpeg" >
             </div>
-        <div class="section ">
+          </div>
+        </div>
+        <div class="section">
           <div id="hc-layer-1-item-1">
             <h1 class = "display-1">La creatividad y el talento nunca antes habían ido tan unidos en tu negocio</h1>
           </div>

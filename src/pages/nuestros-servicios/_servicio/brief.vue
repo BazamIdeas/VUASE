@@ -62,9 +62,9 @@
   export default {
     head () {
       return {
-        titleTemplate: this.stepData.title + this.brief.service.name,
+        titleTemplate: 'Brief de diseño | ' +this.brief.service.name,
         meta: [
-          { property: 'og:title', content: this.stepData.title + this.brief.service.name },
+          { property: 'og:title', content: this.stepData.title + ' ' + this.brief.service.name },
           { content: 'noindex', name: 'robots' }
         ]
       }
@@ -94,7 +94,11 @@
           this.$storage.set('brief_key', briefByID.cookie)
         }
       } else {
-        await this.$store.dispatch('brief/setData', this.$storage.get('brief'))
+      //const service = await this.$store.getters['services/getBySlug'](this.params.servicio)
+      //console.log(service)
+      const brief = this.$storage.get('brief') ? this.$storage.get('brief') : this.brief
+
+      await this.$store.dispatch('brief/setData', brief)
       }
 
       await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
@@ -119,9 +123,12 @@
         await this.$store.dispatch('brief/setStep', this.$store.getters['brief/getStepByKey'](this.params.paso).number)
       }
     },
-    computed: {
+    computed: { 
       countryData () { return this.$store.state.countries.data },
-      brief () { return this.$store.state.brief.data },
+      brief () { 
+        const service = this.$store.getters['services/getBySlug'](this.params.servicio)
+        return this.$store.state.brief.data.service.slug ? this.$store.state.brief.data : { service: {  name: service.name, slug: service.slug, quantity: 1 }, designs: [], styles: {}, colors: [], customColors: '', information: {}, subServices: [] }
+      },
       stepData () { return this.$store.getters['brief/getStepByKey'](this.params.paso) },
       showBack () {
         if (this.brief.service.slug) {
