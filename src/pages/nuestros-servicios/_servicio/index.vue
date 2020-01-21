@@ -8,7 +8,7 @@
     </v-container>
 
     <!-- CAROUSEL -->
-    <AppHeading :number="'2'" v-if="dataService.carousel && dataService.carousel.items1" :size="'display-1'" title="Estilos y diseños adaptados a tus necesidades" class="mb-5 pt-4" />
+    <AppHeading :number="'2'" v-if="dataService.carousel && dataService.carousel.items1" :size="'display-1'" title="Creamos y personalizamos el diseño perfecto para tu marca" class="mb-5 pt-4" />
     <AppExamplesSlider :alt="alt" item-width="350" item-height="350" v-if="dataService.carousel && dataService.carousel.items1" :examples="dataService.carousel.items1" init-scroll="75" />
     <!-- <AppExamplesSlider class="mt-2" v-if="dataService.carousel.items2" :examples="dataService.carousel.items2" init-scroll="170" /> -->
 
@@ -16,7 +16,7 @@
     <v-container grid-list-md class="mt-3 pb-0">
       <v-layout row wrap>
          <!-- CARACTERISTICAS -->  
-        <AppServiceCharacteristics v-if="dataService.whatWeOffer" id="que-te-ofrecemos" title="¿Qué te ofrecemos para mejorar tu negocio?" :list="dataService.whatWeOffer" />
+        <AppServiceCharacteristics v-if="dataService.whatWeOffer" id="que-te-ofrecemos" title="¿Qué podemos mejorar para la imagen de tu marca?" :list="dataService.whatWeOffer" />
 
       </v-layout>
     </v-container>

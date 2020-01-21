@@ -3,9 +3,16 @@ export const catalogo = {
   titleSEO: 'Diseño de Catalogo original y llamativo',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu catalogo, te ofrecemos diseños ilimitados hasta tu entera conformidad y asesoría gratuita. ¡Comienza ahora tu proyecto!',
   /* ** */
-  title: 'Catálogo',
-  list: ['Diseños 100% exclusivos', 'Creaciones a tu medida y de forma ilimitada.', 'Diseños en 24 hrs', 'Tu catálogo en formato digital listo para usarse digitalmente o impreso. '],
-  description: `Presenta tus productos y servicios con el detalle que necesites`,
+  title: 'Tu Catálogo de productos profesional',
+  list: ['Diseños 100% exclusivos y únicos para tu empresa o marca personal', 'Creaciones a medida y de forma ilimitada para tu negocio', 'Te entregamos los diseños de tu catálogo en 24 horas', 'Tu catálogo en formato digital preparado para utilizar digitalmente o impreso'],
+  description: `Líderlogo estamos especializados en la creación de catálogos de productos y servicios
+  para las marcas más potentes del mercado en muchos sectores. Ello nos ha dado la
+  profesionalidad y experiencia para conocer bien cada necesidad de los diferentes
+  sectores y públicos.<br/>
+  Te recomendamos presenta tus productos y servicios con el máximo de profesionalidad
+  proyectando los valores de la marca y las necesidades que soluciona cada producto a
+  través de un diseño único.<br/>
+  Este servicio incluye:`,
   descriptionPrice: '<strong style="font-size: 16px">Presenta tus productos y servicios con el detalle que necesites</strong><br><br>Qué incluye:</br>',
   shortDescription: `Presenta tus productos y servicios con el detalle que necesites`,
   icon: '/icons/catalogo.svg',

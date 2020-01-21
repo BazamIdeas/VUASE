@@ -3,8 +3,8 @@ export const logoWeb = {
   titleSEO: 'Diseño de logo y página web',
   descriptionSEO: 'Consigue aquí el mejor diseño para tu logo original de tu entera conformidad y sitio web listo para lanzar su negocio. ¡Comienza ahora tu proyecto!',
   /* ** */
-  list: ['Creaciones ilimitadas', 'Logo exclusivo realizado a tu medida listo para utilizar donde necesites', 'Diseño, maquetación, programación y publicación de sitio web profesional autogestionable, registro de dominio web, casillas de correo electronico, alojamiento de sitio web'],
-  title: 'Diseño de Logo y Página Web',
+  list: ['Creaciones y diseños ilimitados hasta que te enamores de lo que hemos creado por ti.', 'Logotipo exclusivo hecho a medida. Preparado para destacar tu empresa en la plataforma que necesites.', 'En Líderlogo pensamos, creamos y diseñamos tu página web. La maquetamos, programamos y publicamos tu web profesional. Te la entregamos autogestionable, el registro del dominio web, las casillas de correo electrónico y tu alojamiento de sitio web.'],
+  title: 'Creamos y diseñamos tu logo y tu página web',
   description: `Creamos y diseñamos tu logo para que sea original y único. Súmale a esto el diseño de tu sitio web para destacar ante tu competencia y ganar en visibilidad a través del diseño conceptual.`,
   descriptionPrice: '<strong style="font-size: 16px">Creamos y diseñamos tu logo para que sea original y único. Súmale a esto el diseño de tu sitio web para destacar ante tu competencia y ganar en visibilidad a través del diseño conceptual.</strong><br><br>Qué incluye:</br>',
   shortDescription: `Creamos y diseñamos tu logo para que sea original y único. Súmale a esto el diseño de tu sitio web para destacar ante tu competencia y ganar en visibilidad a través del diseño conceptual.`,
