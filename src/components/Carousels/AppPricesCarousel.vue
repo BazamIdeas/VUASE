@@ -2,9 +2,9 @@
   <v-carousel :interval="interval" height="100%"  hide-controls class="main-carousel">
         <v-carousel-item transition="none" reverse-transition="none">
       <div class="layers-container">
-        <div class="layer" id="hc-layer-3-item-1">
+        <!-- <div class="layer" id="hc-layer-3-item-1">
           <v-img :alt="alt" class="animate-img" src="images/carousels/prices1.jpg"></v-img>
-        </div>
+        </div> -->
 
         <div class="layer" id="hc-layer-0">   
           <div id="hc-layer-1-item-1">
@@ -81,12 +81,14 @@
 
   /*ITEM-1*/
   div#hc-layer-1-item-1>* {
-    color: #8cc63f;
+    color: #434343;
+    font-size: 45px !important;
     font-weight: 700;
   }
 
   div#hc-layer-2-item-1>* {
-    color: #000000;
+    color: #434343;
+    padding-top:10px;
     font-weight: 600;
   }
 
@@ -166,7 +168,10 @@
     }
 
     div#hc-layer-0{
+      padding-top: 155px;
+      padding-bottom: 60px;
       text-align: center;
+      background-image:url("/images/carousels/prices1.jpg");
       width: 100%;
     }
 
@@ -259,10 +264,11 @@
 
 
     div#hc-layer-0 {
-      width: 38%;
-      margin-right: 5%;
-      padding-top: 100px;
+      width: 100%;
+      padding-top: 60px;
       z-index: 9999;
+      text-align: center;
+      padding-bottom: 60px;
     }
 
     /*ITEM-1*/
