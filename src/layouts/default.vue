@@ -17,6 +17,7 @@
       <AppHeader/>
       <nuxt/>
       <AppFooter/>
+      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ac78bcb6-5e0a-45c3-b8a6-36ace5f8c1e0"/>
       <!--<img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">-->
       <!-- COOKIES ACCEPT -->
 <!--       <v-container class="cookies px-0 py-1" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
@@ -52,6 +53,7 @@
   import AppHeader from '@/components/AppHeader.vue'
   import AppFooter from '@/components/AppFooter.vue'
   import AppMobileNav from '@/components/AppMobileNav.vue'
+  
 
   export default {
     scrollToTop: true,
@@ -112,6 +114,7 @@
       hiddenOnResize () {
         if (window.innerWidth > 960) {
           this.$store.dispatch('toggleDrawer', false)
+          console.log('maybehere')
         }
       },
       acceptUserCookie () {
