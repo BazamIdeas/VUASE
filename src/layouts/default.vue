@@ -12,15 +12,18 @@
         </v-flex>
       </v-layout>
     </v-container>-->
-    <AppMobileNav/>
+    <AppMobileNav />
     <v-content>
-      <AppHeader/>
-      <nuxt/>
-      <AppFooter/>
-      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ac78bcb6-5e0a-45c3-b8a6-36ace5f8c1e0"/>
+      <AppHeader />
+      <nuxt />
+      <AppFooter />
+      <script
+        id="ze-snippet"
+        src="https://static.zdassets.com/ekr/snippet.js?key=ac78bcb6-5e0a-45c3-b8a6-36ace5f8c1e0"
+      />
       <!--<img class="chat-cloud" src="/icons/nube_de_chat.svg" alt="">-->
       <!-- COOKIES ACCEPT -->
-<!--       <v-container class="cookies px-0 py-1" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
+      <!--       <v-container class="cookies px-0 py-1" v-if="!cookieSetted" fluid grid-list-md text-xs-center>
         <v-layout row align-center class="mx-1">
           <v-flex>
             Utilizamos 
@@ -30,16 +33,34 @@
             <v-btn @click="acceptUserCookie" small class="elevation-0 white--text" style="background-color:#1976d2; line-height: 14px;" wrap>Aceptar</v-btn>
           </v-flex>
         </v-layout>
-      </v-container> -->
-      <v-toolbar class="brief-bottom-toolbar hidden-md-and-up" fixed style="z-index: 400; top: inherit;bottom: 0;">
+      </v-container>-->
+      <v-toolbar
+        class="brief-bottom-toolbar hidden-md-and-up"
+        fixed
+        style="z-index: 400; top: inherit;bottom: 0;"
+      >
         <v-layout row wrap>
           <v-flex xs6 style="position: relative">
-            <v-btn :href="'tel:'+countryData.phone" block large class="elevation-0" style="margin: 0 !important; border-radius: 0px !important">
-              <v-icon>fa-phone-volume</v-icon> Llámanos
+            <v-btn
+              :href="'tel:'+countryData.phone"
+              block
+              large
+              class="elevation-0"
+              style="margin: 0 !important; border-radius: 0px !important"
+            >
+              <v-icon>fa-phone-volume</v-icon>Llámanos
             </v-btn>
           </v-flex>
           <v-flex xs6 style="position: relative">
-            <v-btn color="green darken-3" target="_new" href="https://api.whatsapp.com/send?phone=34602253467&text=Hola%20tengo%20una%20consulta" block large class="elevation-0 white--text" style="margin: 0 !important; border-radius: 0px !important">
+            <v-btn
+              color="green darken-3"
+              target="_new"
+              href="https://api.whatsapp.com/send?phone=34602253467&text=Hola%20tengo%20una%20consulta"
+              block
+              large
+              class="elevation-0 white--text"
+              style="margin: 0 !important; border-radius: 0px !important"
+            >
               <v-icon>fab fa-whatsapp</v-icon>&nbsp; Whatsapp
             </v-btn>
           </v-flex>
@@ -50,207 +71,219 @@
 </template>
 
 <script>
-  import AppHeader from '@/components/AppHeader.vue'
-  import AppFooter from '@/components/AppFooter.vue'
-  import AppMobileNav from '@/components/AppMobileNav.vue'
-  
+import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
+import AppMobileNav from "@/components/AppMobileNav.vue";
 
-  export default {
-    scrollToTop: true,
-    watch: {
-      $route (to, from) {
-        if (to.path !== '/nuestros-servicios') {
-          if ('scrollingElement' in document) {
-            document.scrollingElement.scrollTop = 0
-          }
-          // Fallback for legacy browsers
-          if (navigator.userAgent.indexOf('WebKit') !== -1) {
-            document.body.scrollTop = 0
-          }
-          if (process.client) {
-            document.documentElement.scrollTop = 0
-          }
+export default {
+  scrollToTop: true,
+  watch: {
+    $route(to, from) {
+      if (to.path !== "/nuestros-servicios") {
+        if ("scrollingElement" in document) {
+          document.scrollingElement.scrollTop = 0;
+        }
+        // Fallback for legacy browsers
+        if (navigator.userAgent.indexOf("WebKit") !== -1) {
+          document.body.scrollTop = 0;
+        }
+        if (process.client) {
+          document.documentElement.scrollTop = 0;
         }
       }
-    },
-    mounted () {
-      this.hiddenOnResize()
-      this.cookies()
-      this.alert()
-    },
-    data () {
-      return {
-        cookieSetted: true,
-        alertSetted: true
-      }
-    },
-    methods: {
-      cookies () {
-        if (process.browser) {
-          if (this.checkCookie('liderlogo_cookie')) {
-            if (this.getCookie('liderlogo_cookie') === 'ok') {
-              this.cookieSetted = true
-              return
-            }
-          }
-
-          this.setCookie('liderlogo_cookie', 'no', '30')
-          this.cookieSetted = false
-        }
-      },
-      alert () {
-        if (process.browser) {
-          if (this.checkCookie('liderlogo_alert')) {
-            if (this.getCookie('liderlogo_alert') === 'ok') {
-              this.cookieSetted = true
-              return
-            }
-          }
-
-          this.setCookie('liderlogo_alert', 'no', '30')
-          this.alertSetted = false
-        }
-      },
-      hiddenOnResize () {
-        if (window.innerWidth > 960) {
-          this.$store.dispatch('toggleDrawer', false)
-          console.log('maybehere')
-        }
-      },
-      acceptUserCookie () {
-        this.setCookie('liderlogo_cookie', 'ok', '30')
-        this.cookieSetted = true
-      },
-      alertDismiss () {
-        this.setCookie('liderlogo_alert', 'ok', '30')
-        this.alertSetted = true
-      },
-      getCookie (cname) {
-        var name = cname + '='
-        var decodedCookie = decodeURIComponent(document.cookie)
-        var ca = decodedCookie.split(';')
-        var length = ca.length
-        for (var i = 0; i < length; i++) {
-          var c = ca[i]
-          while (c.charAt(0) === ' ') {
-            c = c.substring(1)
-          }
-          if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length)
-          }
-        }
-        return ''
-      },
-      setCookie (cname, cvalue, exdays) {
-        var d = new Date()
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000))
-        var expires = 'expires=' + d.toUTCString()
-        document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
-      },
-      checkCookie (cookieName) {
-        var cookie = this.getCookie(cookieName)
-        if (cookie !== '') {
-          return true
-        }
-        return false
-      }
-    },
-    computed: {
-      countryData () { return this.$store.state.countries.data }
-    },
-    components: {
-      AppHeader,
-      AppFooter,
-      AppMobileNav
     }
+  },
+  mounted() {
+    this.hiddenOnResize();
+    this.cookies();
+    this.alert();
+  },
+  data() {
+    return {
+      cookieSetted: true,
+      alertSetted: true
+    };
+  },
+  methods: {
+    cookies() {
+      if (process.browser) {
+        if (this.checkCookie("liderlogo_cookie")) {
+          if (this.getCookie("liderlogo_cookie") === "ok") {
+            this.cookieSetted = true;
+            return;
+          }
+        }
+
+        this.setCookie("liderlogo_cookie", "no", "30");
+        this.cookieSetted = false;
+      }
+    },
+    alert() {
+      if (process.browser) {
+        if (this.checkCookie("liderlogo_alert")) {
+          if (this.getCookie("liderlogo_alert") === "ok") {
+            this.cookieSetted = true;
+            return;
+          }
+        }
+
+        this.setCookie("liderlogo_alert", "no", "30");
+        this.alertSetted = false;
+      }
+    },
+    hiddenOnResize() {
+      if (window.innerWidth > 960) {
+        this.$store.dispatch("toggleDrawer", false);
+        console.log("maybehere");
+      }
+    },
+    acceptUserCookie() {
+      this.setCookie("liderlogo_cookie", "ok", "30");
+      this.cookieSetted = true;
+    },
+    alertDismiss() {
+      this.setCookie("liderlogo_alert", "ok", "30");
+      this.alertSetted = true;
+    },
+    getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(";");
+      var length = ca.length;
+      for (var i = 0; i < length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    },
+    setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    },
+    checkCookie(cookieName) {
+      var cookie = this.getCookie(cookieName);
+      if (cookie !== "") {
+        return true;
+      }
+      return false;
+    }
+  },
+  computed: {
+    countryData() {
+      return this.$store.state.countries.data;
+    }
+  },
+  components: {
+    AppHeader,
+    AppFooter,
+    AppMobileNav
   }
+};
 </script>
 
 <style>
-  div#app {
-    background: #fbfbfb;
-  }
-  
-  .chat-cloud {
-    width: 100px;
-    position: fixed;
-    bottom: -15px;
-    left: 90%;
-    z-index: 999;
-  }
+div#app {
+  background: #fbfbfb;
+}
 
-  .v-carousel.rating-user, .v-carousel.profesional-services-slider {
-    height: 210px;
-    box-shadow: none;
-  }
+.chat-cloud {
+  width: 100px;
+  position: fixed;
+  bottom: -15px;
+  left: 90%;
+  z-index: 999;
+}
 
-  .v-carousel.profesional-services-slider {
-    height: 400px;
-  }
+.v-carousel.rating-user,
+.v-carousel.profesional-services-slider {
+  height: 210px;
+  box-shadow: none;
+}
 
-  .v-carousel__prev, .v-carousel__next {
-    position: absolute;
-    top: 90%;
-    z-index: 1;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-42%);
-    border: 2px solid grey;
-  }
+.v-carousel.profesional-services-slider {
+  height: 400px;
+}
 
-  .v-carousel.profesional-services-slider .v-carousel__prev, .v-carousel.profesional-services-slider  .v-carousel__next {
-    top: 48%;
-  }
+.v-carousel__prev,
+.v-carousel__next {
+  position: absolute;
+  top: 90%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-42%);
+  border: 2px solid grey;
+}
 
-  .v-carousel.rating-user .v-btn .v-btn__content .v-icon, .v-carousel.profesional-services-slider .v-btn .v-btn__content .v-icon{
-    color: inherit;
-    font-size: 25px !important;
-    color: grey
-  }
+.v-carousel.profesional-services-slider .v-carousel__prev,
+.v-carousel.profesional-services-slider .v-carousel__next {
+  top: 48%;
+}
 
-  .v-carousel.rating-user .v-btn:before, .v-carousel.profesional-services-slider .v-btn:before {
-    opacity: 0;
-  }
+.v-carousel.rating-user .v-btn .v-btn__content .v-icon,
+.v-carousel.profesional-services-slider .v-btn .v-btn__content .v-icon {
+  color: inherit;
+  font-size: 25px !important;
+  color: grey;
+}
 
-  .v-carousel.rating-user .v-btn--icon:before, .v-carousel.profesional-services-slider .v-btn--icon:before {
-    border-radius: 0%;
-  }
+.v-carousel.rating-user .v-btn:before,
+.v-carousel.profesional-services-slider .v-btn:before {
+  opacity: 0;
+}
 
-  .v-carousel.rating-user .v-carousel__prev {
-    left: 180px;
-  }
+.v-carousel.rating-user .v-btn--icon:before,
+.v-carousel.profesional-services-slider .v-btn--icon:before {
+  border-radius: 0%;
+}
 
-  .v-carousel.rating-user .v-carousel__next {
-    right: 180px;
-  }
+.v-carousel.rating-user .v-carousel__prev {
+  left: 180px;
+}
 
-  .v-rating .v-icon {
-    font-size: 38px;
-  }
+.v-carousel.rating-user .v-carousel__next {
+  right: 180px;
+}
 
-  .v-rating .v-icon {
-    color: #FF9800 !important
-  }
+.v-rating .v-icon {
+  font-size: 38px;
+}
 
-  .cookies{
-    background: white;
-    border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);
-    position: fixed;
-    z-index: 1000;
-    bottom: 0;
-  }
+.v-rating .v-icon {
+  color: #ff9800 !important;
+}
 
+.cookies {
+  background: white;
+  border-bottom: 0.5px solid rgba(192, 192, 192, 0.4);
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+}
+
+.brief-bottom-toolbar .v-toolbar__content {
+  padding: 0 !important;
+}
+
+@media (min-width: 240px) and (max-width: 960px) {
   .brief-bottom-toolbar .v-toolbar__content {
-    padding: 0 !important;
+    height: 44px !important;
   }
 
-  @media (min-width: 240px) and (max-width: 960px) {
-    .brief-bottom-toolbar .v-toolbar__content {
-      height: 44px !important;
-    }
-
-    section.brief {
-      margin-bottom: 80px;
-    }
+  section.brief {
+    margin-bottom: 80px;
   }
+}
+@media (max-width: 960px) {
+  iframe#launcher.zEWidget-launcher {
+    display: none;
+  }
+}
 </style>
 
