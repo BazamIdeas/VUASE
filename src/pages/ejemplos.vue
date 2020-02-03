@@ -61,7 +61,7 @@
 
         <v-flex  xs12 class="my-3" text-xs-center >
           <v-layout xs12 row wrap justify-center align-center >
-            <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios/'">
+            <v-btn class="arrow-left subheading" color="#0081c1" dark depressed large :to="'/nuestros-servicios'">
               CONOCER SOBRE EL SERVICIO
             </v-btn>
             <v-btn class="arrow-right subheading" color="rgb(247, 148, 29)" depressed dark large :to="'/ejemplos'">
@@ -187,10 +187,10 @@
           this.title = list[0].activity.name
           this.meta_title = list[0].activity.meta_title
           this.meta_description = list[0].activity.meta_description
-          this.h1 = 'Ejemplos de diseño de logo, imagen corporativa, folletos y sitios web de ' + list[0].activity.name
+          this.h1 = 'Diseño de logo de ' + list[0].activity.name
           this.description = list[0].activity.description && list[0].activity.description.length > 0 ? list[0].activity.description.substring(0, 160) : this.description
           this.descriptionActivity = list[0].activity.description
-          this.h2 = 'Conoce como crear un logo y las herramientas de comunicación necesarias para ' + list[0].activity.name
+          this.h2 = 'Ejemplos de logo para ' + list[0].activity.name
         }
       }
     },

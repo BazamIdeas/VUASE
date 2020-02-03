@@ -151,7 +151,7 @@
                 Los usuarios y/o clientes podrán dirigirse a la autoridad de control local que corresponda si considera que el tratamiento realizado respecto de sus datos personales no ha sido realizado conforme a la legislación vigente.
                 <br><br>
                 La autoridad de control de protección de datos en España es la Agencia Española de Protección de Datos, cuyos datos de contacto se encuentran disponibles en su página web, en concreto en 
-                <a href="http://www.agpd.es/portalwebAGPD/CanalDelCiudadano/contacteciudadano/index-ides-idphp.php" style="font-weight: 400;">http://www.agpd.es/portalwebAGPD/CanalDelCiudadano/contacteciudadano/index-ides-idphp.php
+                <a href="https://www.aepd.es/es" style="font-weight: 400;">https://www.aepd.es/es
                </a>
               </p>
 
