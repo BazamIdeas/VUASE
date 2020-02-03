@@ -55,3 +55,6 @@ User-agent: *
 Disallow: /index2.php
 User-agent: Cliqzbot
 Disallow: /
+
+Sitemap: https://www.liderlogo.es/sitemap.xml 
+Sitemap: https://www.liderlogo.es/blog/sitemap_index.xml 

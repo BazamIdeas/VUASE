@@ -209,7 +209,7 @@ export const catalogo = {
     first: {
       image: '/images/pages/packs/oferta-triptico-gloss.jpg',
       title: 'TRÍPTICO',
-      url: '/nuestros-servicios/triptico',
+      url: '/nuestros-servicios/tripticos',
       brief: '/nuestros-servicios/triptico/brief/estilos'
     },
     last: {
