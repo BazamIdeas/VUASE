@@ -453,9 +453,10 @@
           for (let subService of this.brief.subServices) {
             cartObject.services.push({ id: subService.id, quantity: subService.quantity || 1 })
           }
-        } else {
-          cartObject.services.push({ id: this.service.id, quantity: this.service.quantity || 1 })
-        }
+        } 
+        
+        cartObject.services.push({ id: this.service.id, quantity: this.service.quantity || 1 })
+
 
         return cartObject
       }
