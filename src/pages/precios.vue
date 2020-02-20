@@ -33,7 +33,6 @@
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
               <p class="subheading font-weight-medium" v-html="serviceObject.dataService.descriptionPrice "></p>
               <ul>
-                asdadsasdasdasd
                 <li v-for="(item, i) in serviceObject.dataService.listPrices" :key="i" class="my-2 subheading font-weight-medium">{{item}}</li>
               </ul>
               <div>
