@@ -19,7 +19,7 @@
                     
                <v-autocomplete
                 label="Todas las actividades"
-                :items="sectors"
+                :items="computedSectors"
                 item-text="text" solo=true item-value="field" :value="text" @change="setSector($event)"> -
               ></v-autocomplete> 
               </div>
@@ -206,6 +206,12 @@
       }
     },
     computed: {
+      computedSectors(){
+        return this.sectors.map(el => {
+          el.text = el.text.toLowerCase()
+          return el;
+        })
+      },
       sectors () { return this.$store.getters['sectors/forSelectField'] },
       portfolios () {
         if (this.$store.state.portfolios.list) {
