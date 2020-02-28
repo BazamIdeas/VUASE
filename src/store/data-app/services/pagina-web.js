@@ -154,6 +154,10 @@ export const web = {
   topSliderBgSize: '80%',
   topSlider: [
     {
+      url: '/images/pages/pagina-web/muenisimo.jpg',
+      color: '#C2532F'
+    },
+    {
       url: '/images/pages/pagina-web/truekeling.jpg',
       color: '#000000'
     },
@@ -209,6 +213,7 @@ export const web = {
   ],
   carousel: {
     items1: [
+      { img: '/images/services-carousel/web/ejemplo-web-muenisimo.jpg' },
       { img: '/images/services-carousel/web/Mockup poolzone_c.jpg' },
       { img: '/images/services-carousel/web/ejemplo-web-hitech.jpg' },
       { img: '/images/services-carousel/web/ejemplo-web-kelediciones.jpg' },

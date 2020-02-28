@@ -21,8 +21,11 @@
       </v-layout>
     </v-container>
     <v-toolbar class="brief-bottom-toolbar" fixed style="top: inherit;bottom: 0;">
-      <v-layout row wrap class="hidden-sm-and-down">
-        <v-flex md12 style="position: relative;" class="px-4">
+      <v-layout md6 row wrap class="hidden-sm-and-down">
+         <v-flex md3 style="position: relative;" class="px-4">
+
+        </v-flex>
+        <v-flex md9 style="position: right;" class="px-4">
           <img src="/images/icons/check.svg" width="37px" style="float: left; margin-right: 10px">
           <p class="font-weight-bold" style="margin:0; line-height: 18px;">Devolución del dinero 100% garantizada <br><small style="font-weight: normal !important">Un diseño que te encante o te devolvemos el dinero</small></p>
         </v-flex>
