@@ -152,13 +152,13 @@
 @media (max-width: 480px) {
     .v-carousel.main-carousel {
       min-height: auto;
-      height: 400px !important;
+      height: 370px !important;
     }
  }
   @media (max-width: 960px) {
 
     .v-carousel.main-carousel {
-        height: 500px;
+        height: 370px!important;
         min-height: auto;
     }
 
@@ -215,7 +215,7 @@
 
   @media (min-width: 600px) and (max-width: 860px) {
     .v-carousel.main-carousel {
-        height: 500px;
+        height: 370px!important;
         min-height: auto;
     }
   }
@@ -223,14 +223,14 @@
   
   @media (min-width: 740px) and (max-width: 820px) {
     .v-carousel.main-carousel {
-        height: 500px;
+        height: 370px!important;
         min-height: auto;
     }
   }
 
   @media (min-width: 820px) and (max-width: 960px) {
     .v-carousel.main-carousel {
-        height: 500px;
+        height: 370px!important;
         min-height: auto;
     }
   }
@@ -238,7 +238,7 @@
 
   @media (min-width: 960px) {
     .v-carousel.main-carousel {
-      height: 500px;
+      height: 370px!important;
       min-height: auto;
     }
 
