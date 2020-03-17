@@ -3,8 +3,8 @@
   <div style="text-align: center; padding: 5px; background: #c7c5c1;">
     En LiderLogo 
     <span style="font-weight: 800;">no cerramos,</span> 
-    seguimos trabajando para ti y para que 
-    <span style="padding: 4px; background: #fdc779; font-weight: 800; font-style: oblique;">tú negocio crezca</span>
+    seguimos trabajando online para ti y para que 
+    <span style="padding: 4px; background: #fdc779; font-weight: 800; font-style: oblique;">tu negocio crezca</span>
   </div>
   <v-toolbar class="transparent" height="100" flat style="position:absolute; z-index: 4;">
     <v-spacer class="hidden-sm-and-down"></v-spacer>
