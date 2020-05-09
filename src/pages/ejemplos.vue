@@ -200,8 +200,7 @@
         meta: [
           { property: 'og:title', content: this.meta_title ? this.meta_title : this.title },
           { property: 'og:description', content: this.meta_description ? this.meta_description : this.description },
-          { hid: 'description', name: 'description', content: this.meta_description ? this.meta_description : this.description },
-          { content: 'noindex', name: 'robots' }
+          { hid: 'description', name: 'description', content: this.meta_description ? this.meta_description : this.description }
         ]
       }
     },

@@ -22,12 +22,12 @@
                 </h2>
                   <h2 class="price" v-if="serviceObject.price.currency.display == 'left'">
                     {{serviceObject.price.currency.iso == "PYG" ? "₲ " + serviceObject.price.value : serviceObject.price.currency.symbol + ' ' + serviceObject.price.value}}
-
             
                   <!-- {{ serviceObject.price.currency.symbol }} {{ serviceObject.price.value }} -->
 
                   
                 </h2>
+                <span v-if="tax > 0" style="font-weight: 700;">+ IVA </span>
               </div>
             </v-flex>
             <v-flex xs12 md6 v-if="serviceObject && serviceObject.dataService" class="service-box-list">
@@ -120,7 +120,8 @@
         }
 
         return servicesArray
-      }
+      },
+      tax () { return this.$store.state.countries.data.tax },
     },
     methods: {
       async selectService () {

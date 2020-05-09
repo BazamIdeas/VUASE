@@ -74,6 +74,7 @@
                                 {{price.value}}
                                 {{price.currency.symbol}}
                               </span>
+                              <span v-if="tax > 0" style="font-weight: 700;">+ IVA </span>
                               </strong>
                           </li>
                       </ul>
@@ -138,7 +139,8 @@
       },
       titleLanding () {
         return this.service.titleLanding ? this.service.titleLanding : this.service.title
-      }
+      },
+      tax () { return this.$store.state.countries.data.tax },
     },
     methods: {
       resizeSlider () {
