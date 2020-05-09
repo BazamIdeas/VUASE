@@ -48,7 +48,7 @@
                   </h3>
                   <v-layout xs12 row d-flex class="mt-2 box-price" v-if="!service.whatYouGet.notShowPrice">
                     <v-flex xs6 text-xs-right v-if="finalPercertage > 0"> 
-                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">
+                      <h3  class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">
                         <span v-if="price.currency.display == 'left'">
                           {{price.currency.symbol}}
                           {{price.value}}
@@ -59,11 +59,12 @@
                           {{price.currency.symbol}}
                         </span>
                       </h3>
+                      <span v-if="tax > 0" style="font-weight: 700;" :style="'color:'+service.whatYouGet.color">+ IVA </span>
                     </v-flex>
                     <v-flex xs12 v-if="!finalPercertage > 0"> 
-                      <h3 style="color:#F7941F;" class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
+                      <h3 class="display-1 font-weight-medium"  :style="'color:'+service.whatYouGet.color">{{price.currency.symbol}} {{price.value}}</h3>
                     </v-flex>
-                    <v-layout xs6 row d-flex v-if="finalPercertage > 0">
+                    <v-layout xs6 row d-flex align-center v-if="finalPercertage > 0" style="margin-top:0;">
                       <v-flex xs5 style="border-right:1px solid silver;" class="mr-2">
                         <h3 class="title">{{percentage}}%</h3>
                         <h5 class="body-2">al iniciar</h5>
@@ -124,7 +125,8 @@
       },
       justOne () {
         return this.service.whatYouGet.columns.length === 1
-      }
+      },
+      tax () { return this.$store.state.countries.data.tax }
     }
   }
 </script>

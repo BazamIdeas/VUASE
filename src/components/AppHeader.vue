@@ -35,7 +35,7 @@
         <span class="nav-item-label">Login</span>
       </v-btn>-->
     </div>
-    <v-tooltip right color="white darken-3 light-blue--text text--darken-2" class="hidden-md-and-down">
+    <v-tooltip v-if="countryData.phone > 0" right color="white darken-3 light-blue--text text--darken-2" class="hidden-md-and-down">
       <v-btn :href="'tel:'+countryData.phone" slot="activator" fab light small class="elevation-1 ">
         <v-icon>fa-phone-volume</v-icon>
       </v-btn>
