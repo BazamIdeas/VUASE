@@ -3,7 +3,7 @@
   <div style="text-align: center; padding: 5px; background: #c7c5c1;">
     Lleva tu negocio 
     <span style="font-weight: 800;">a internet hoy,</span> 
-    consulta por nuestraa ofertas de 
+    consulta por nuestras ofertas de 
     <span style="padding: 4px; background: #fdc779; font-weight: 800; font-style: oblique;">sitios webs profesionales</span>
   </div>
   <v-toolbar class="transparent" height="100" flat style="position:absolute; z-index: 4;">
