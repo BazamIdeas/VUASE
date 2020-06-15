@@ -1,10 +1,10 @@
 <template>
 <div>
   <div style="text-align: center; padding: 5px; background: #c7c5c1;">
-    En LiderLogo 
-    <span style="font-weight: 800;">no cerramos,</span> 
-    seguimos trabajando online para ti y para que 
-    <span style="padding: 4px; background: #fdc779; font-weight: 800; font-style: oblique;">tu negocio crezca</span>
+    Lleva tu negocio 
+    <span style="font-weight: 800;">a internet hoy,</span> 
+    consulta por nuestraa ofertas de 
+    <span style="padding: 4px; background: #fdc779; font-weight: 800; font-style: oblique;">sitios webs profesionales</span>
   </div>
   <v-toolbar class="transparent" height="100" flat style="position:absolute; z-index: 4;">
     <v-spacer class="hidden-sm-and-down"></v-spacer>
