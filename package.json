@@ -19,7 +19,7 @@
     "@nuxtjs/sitemap": "0.1.1",
     "@nuxtjs/toast": "3.0.1",
     "agile_crm": "1.2.5",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "body-parser": "1.18.3",
     "cookie-parser": "1.4.3",
     "cookie-universal-nuxt": "2.0.11",
