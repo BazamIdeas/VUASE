@@ -54,7 +54,7 @@
     "image-webpack-loader": "^5.0.0",
     "nodemon": "1.18.4",
     "responsive-loader": "^1.2.0",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.1"
   }
